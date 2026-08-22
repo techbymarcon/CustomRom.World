@@ -57,6 +57,7 @@ export const ROM_NAMES = [
   "DerpFest",
   "Project Elixir",
   "RisingOS",
+  "InfinityX",
   "VoltageOS",
   "SuperiorOS",
   "Resurrection Remix",
