@@ -168,7 +168,7 @@ function RomForm({
   const createFn = useServerFn(createRom);
   const navigate = useNavigate();
   const [romName, setRomName] = useState<string>(ROM_NAMES[0]!);
-  const [version, setVersion] = useState<string>(ANDROID_VERSIONS[ANDROID_VERSIONS.length - 1]);
+  const [version, setVersion] = useState<string>(ANDROID_VERSIONS[ANDROID_VERSIONS.length - 1]!);
   const [downloadUrl, setDownloadUrl] = useState("");
   const [madeBy, setMadeBy] = useState("");
   const [foundOn, setFoundOn] = useState("");
