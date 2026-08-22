@@ -145,3 +145,16 @@
     color: var(--color-foreground);
   }
 }
+
+@theme inline {
+  --color-fog-a: var(--fog-a);
+  --color-fog-b: var(--fog-b);
+}
+
+@utility fog-layer {
+  position: absolute;
+  inset: -20%;
+  pointer-events: none;
+  filter: blur(60px);
+  will-change: transform, opacity, filter;
+}
