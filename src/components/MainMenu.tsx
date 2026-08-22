@@ -180,8 +180,10 @@ export function MainMenu() {
         <span className="block h-1.5 w-7 rounded-full bg-foreground" />
       </button>
 
-      {open && (
-        <div className="fixed inset-0 z-50 overflow-y-auto bg-background/40 backdrop-blur-2xl">
+      {open &&
+        createPortal(
+          <div className="fixed inset-0 z-[90] overflow-y-auto bg-background/40 backdrop-blur-2xl">
+
           <div className="flex min-h-full flex-col px-6 py-8">
             <div className="flex items-center justify-between">
               {session && (
