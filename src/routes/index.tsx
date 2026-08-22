@@ -155,6 +155,77 @@ function Index() {
             </p>
           </div>
         </section>
+
+        <section id="devices" className="px-5 pb-24">
+          <div className="rounded-4xl border-2 border-primary bg-card/70 px-7 py-12 backdrop-blur-md">
+            <h2 className="text-4xl font-extrabold leading-tight">
+              <EditableText
+                contentKey="devices.heading.accent"
+                defaultValue="Browse"
+                defaultColor="oklch(0.55 0.24 264)"
+              />
+              <br />
+              <EditableText contentKey="devices.heading.rest" defaultValue="Devices" />
+            </h2>
+            <p className="mt-8 text-xl leading-relaxed text-foreground/90">
+              <EditableText
+                contentKey="devices.body"
+                defaultValue="Custom ROM builds are organised by device, so you can find exactly what fits your phone. Each device page collects the available ROMs, their Android version and the maintainer behind the build."
+              />
+            </p>
+            <ul className="mt-8 grid gap-3 text-lg text-foreground/90">
+              <li className="rounded-2xl border border-primary/40 bg-background/30 px-5 py-4">
+                <EditableText contentKey="devices.item.1" defaultValue="Google Pixel series" />
+              </li>
+              <li className="rounded-2xl border border-primary/40 bg-background/30 px-5 py-4">
+                <EditableText contentKey="devices.item.2" defaultValue="Xiaomi, Redmi and POCO" />
+              </li>
+              <li className="rounded-2xl border border-primary/40 bg-background/30 px-5 py-4">
+                <EditableText contentKey="devices.item.3" defaultValue="OnePlus, Samsung and more" />
+              </li>
+            </ul>
+          </div>
+        </section>
+
+        <section id="features" className="px-5 pb-24">
+          <div className="rounded-4xl border-2 border-primary bg-card/70 px-7 py-12 backdrop-blur-md">
+            <h2 className="text-4xl font-extrabold leading-tight">
+              <EditableText
+                contentKey="features.heading.accent"
+                defaultValue="Explore"
+                defaultColor="oklch(0.55 0.24 264)"
+              />
+              <br />
+              <EditableText contentKey="features.heading.rest" defaultValue="Features" />
+            </h2>
+            <p className="mt-8 text-xl leading-relaxed text-foreground/90">
+              <EditableText
+                contentKey="features.body"
+                defaultValue="Custom ROMs go far beyond stock Android. Here is what most of the builds archived here bring to your device."
+              />
+            </p>
+            <ul className="mt-8 grid gap-3 text-lg text-foreground/90">
+              <li className="rounded-2xl border border-primary/40 bg-background/30 px-5 py-4">
+                <EditableText
+                  contentKey="features.item.1"
+                  defaultValue="Deep theming: colours, fonts, icons and lock screen layouts"
+                />
+              </li>
+              <li className="rounded-2xl border border-primary/40 bg-background/30 px-5 py-4">
+                <EditableText
+                  contentKey="features.item.2"
+                  defaultValue="Newer Android versions on devices left behind by the manufacturer"
+                />
+              </li>
+              <li className="rounded-2xl border border-primary/40 bg-background/30 px-5 py-4">
+                <EditableText
+                  contentKey="features.item.3"
+                  defaultValue="Less bloat, better battery life and finer control over performance"
+                />
+              </li>
+            </ul>
+          </div>
+        </section>
       </main>
     </div>
   );
