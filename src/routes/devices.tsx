@@ -1,4 +1,4 @@
-import { createFileRoute } from "@tanstack/react-router";
+import { createFileRoute, Link } from "@tanstack/react-router";
 
 import { EditableText } from "@/components/Editable";
 import { Fog } from "@/components/Fog";
@@ -75,15 +75,25 @@ function DevicesPage() {
           </p>
 
           <div className="mt-10 grid grid-cols-2 gap-4 sm:grid-cols-3">
-            {BRANDS.map((brand) => (
-              <button
-                key={brand}
-                disabled
-                className="rounded-full border-2 border-primary bg-background/40 px-4 py-4 text-base font-bold text-foreground backdrop-blur-sm transition-colors hover:bg-primary/15 disabled:cursor-not-allowed disabled:opacity-60 sm:text-lg"
-              >
-                {brand}
-              </button>
-            ))}
+            {BRANDS.map((brand) =>
+              brand === "Samsung" ? (
+                <Link
+                  key={brand}
+                  to="/devices/samsung"
+                  className="rounded-full border-2 border-primary bg-background/40 px-4 py-4 text-base font-bold text-foreground backdrop-blur-sm transition-colors hover:bg-primary/15 sm:text-lg"
+                >
+                  {brand}
+                </Link>
+              ) : (
+                <button
+                  key={brand}
+                  disabled
+                  className="rounded-full border-2 border-primary bg-background/40 px-4 py-4 text-base font-bold text-foreground backdrop-blur-sm transition-colors hover:bg-primary/15 disabled:cursor-not-allowed disabled:opacity-60 sm:text-lg"
+                >
+                  {brand}
+                </button>
+              ),
+            )}
           </div>
         </section>
       </main>
