@@ -8,16 +8,17 @@ import wordmarkAsset from "@/assets/customrom-world-menu.png.asset.json";
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "Evolution X — Evolve your Android device" },
+      { title: "Custom Rom World: Find your new Rom!" },
       {
         name: "description",
         content:
-          "Pixel UI, customization and more. Evolution X is a custom Android ROM bringing a clean Pixel experience with deep personalization.",
+          "Customrom.world Is a community driven archive for Custom Roms of all types and of different devices. We aspire to be the biggest Custom Rom archive and an active thread for who's interested!",
       },
-      { property: "og:title", content: "Evolution X — Evolve your Android device" },
+      { property: "og:title", content: "Custom Rom World: Find your new Rom!" },
       {
         property: "og:description",
-        content: "Pixel UI, customization & more. We are Evolution X.",
+        content:
+          "Customrom.world Is a community driven archive for Custom Roms of all types and of different devices. We aspire to be the biggest Custom Rom archive and an active thread for who's interested!",
       },
     ],
   }),
