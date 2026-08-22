@@ -3,6 +3,7 @@ import { createFileRoute, Link } from "@tanstack/react-router";
 import { EditableText } from "@/components/Editable";
 import { Fog } from "@/components/Fog";
 import { Header } from "@/components/Header";
+import { slugify } from "@/lib/roms";
 
 const SERIES: { title: string; models: string[] }[] = [
   {
@@ -288,13 +289,14 @@ function SamsungPage() {
               </h2>
               <div className="mt-5 grid grid-cols-2 gap-3 sm:grid-cols-3">
                 {series.models.map((model) => (
-                  <button
+                  <Link
                     key={model}
-                    disabled
-                    className="rounded-full border-2 border-primary bg-background/40 px-3 py-3 text-sm font-bold text-foreground backdrop-blur-sm transition-colors hover:bg-primary/15 disabled:cursor-not-allowed disabled:opacity-60 sm:text-base"
+                    to="/devices/samsung/$model"
+                    params={{ model: slugify(model) }}
+                    className="rounded-full border-2 border-primary bg-background/40 px-3 py-3 text-sm font-bold text-foreground backdrop-blur-sm transition-colors hover:bg-primary/15 sm:text-base"
                   >
                     {model}
-                  </button>
+                  </Link>
                 ))}
               </div>
             </div>
