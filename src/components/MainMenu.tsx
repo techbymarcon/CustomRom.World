@@ -174,7 +174,7 @@ export function MainMenu() {
   const { session, profile, avatarUrl, isAdmin, editMode, setEditMode } = useSite();
 
   const itemClass =
-    "block w-full py-5 text-3xl font-semibold uppercase tracking-wide transition-colors";
+    "block w-full rounded-2xl px-4 py-3 text-2xl font-semibold uppercase tracking-wide transition-colors hover:bg-primary/10";
 
   return (
     <>
@@ -184,11 +184,11 @@ export function MainMenu() {
           setPanel("menu");
           setOpen(true);
         }}
-        className="flex shrink-0 flex-col items-end gap-2 p-2"
+        className="flex shrink-0 flex-col items-end gap-[5px] p-1.5"
       >
-        <span className="block h-1.5 w-6 rounded-full bg-foreground" />
-        <span className="block h-1.5 w-9 rounded-full bg-foreground" />
-        <span className="block h-1.5 w-7 rounded-full bg-foreground" />
+        <span className="block h-1 w-4 rounded-full bg-foreground" />
+        <span className="block h-1 w-6 rounded-full bg-foreground" />
+        <span className="block h-1 w-5 rounded-full bg-foreground" />
       </button>
 
       {open &&
@@ -217,9 +217,12 @@ export function MainMenu() {
               </button>
             </div>
 
-            <div className="flex flex-1 flex-col items-center justify-center py-10 text-center">
+            <div
+              key={panel}
+              className="flex flex-1 animate-fade-in flex-col items-center justify-center py-10 text-center"
+            >
               {panel === "menu" && (
-                <nav className="w-full max-w-xs animate-scale-in">
+                <nav className="flex w-full max-w-xs flex-col gap-2">
                   <button
                     onClick={() => setOpen(false)}
                     className={`${itemClass} text-primary`}
