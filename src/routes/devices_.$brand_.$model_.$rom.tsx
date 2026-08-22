@@ -5,6 +5,8 @@ import { AndroidCover, RomCover } from "@/components/AndroidCover";
 import { Fog } from "@/components/Fog";
 import { Header } from "@/components/Header";
 import { getRom } from "@/lib/roms.functions";
+import { ROM_TYPE_LABELS } from "@/lib/roms";
+
 
 export const Route = createFileRoute("/devices_/$brand_/$model_/$rom")({
   head: () => ({
