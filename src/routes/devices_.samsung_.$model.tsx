@@ -9,7 +9,8 @@ import { Fog } from "@/components/Fog";
 import { Header } from "@/components/Header";
 import { useSite } from "@/lib/site";
 import { createRom, deleteRom, listRoms } from "@/lib/roms.functions";
-import { ANDROID_VERSIONS, ROM_NAMES, slugify } from "@/lib/roms";
+import { ANDROID_LOGOS, ANDROID_VERSIONS, ROM_NAMES, slugify } from "@/lib/roms";
+import { RomButtonParticles } from "@/components/RomButtonParticles";
 
 export const Route = createFileRoute("/devices_/samsung_/$model")({
   head: () => ({
