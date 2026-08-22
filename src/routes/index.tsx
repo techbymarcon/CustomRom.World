@@ -19,8 +19,18 @@ export const Route = createFileRoute("/")({
         content:
           "Customrom.world Is a community driven archive for Custom Roms of all types and of different devices. We aspire to be the biggest Custom Rom archive and an active thread for who's interested!",
       },
+      { property: "og:type", content: "website" },
+      { property: "og:url", content: "https://customrom.world/" },
+      { name: "twitter:title", content: "Custom Rom World: Find your new Rom!" },
+      {
+        name: "twitter:description",
+        content:
+          "A community driven archive of Custom Roms for all kinds of devices — find the perfect Rom for your phone.",
+      },
     ],
+    links: [{ rel: "canonical", href: "https://customrom.world/" }],
   }),
+
   component: Index,
 });
 

@@ -20,20 +20,29 @@ const BRANDS = [
 export const Route = createFileRoute("/devices")({
   head: () => ({
     meta: [
-      { title: "Devices — Custom Rom World" },
+      { title: "Devices by Brand — Custom Rom World" },
       {
         name: "description",
         content:
-          "Pick your phone brand and browse the available devices and custom ROMs on Custom Rom World.",
+          "Pick your phone brand — Pixel, Samsung, Xiaomi, OnePlus and more — and browse the devices and custom ROMs archived on Custom Rom World.",
       },
-      { property: "og:title", content: "Devices — Custom Rom World" },
+      { property: "og:title", content: "Devices by Brand — Custom Rom World" },
       {
         property: "og:description",
         content:
-          "Pick your phone brand and browse the available devices and custom ROMs on Custom Rom World.",
+          "Pick your phone brand — Pixel, Samsung, Xiaomi, OnePlus and more — and browse the devices and custom ROMs archived on Custom Rom World.",
+      },
+      { property: "og:type", content: "website" },
+      { property: "og:url", content: "https://customrom.world/devices" },
+      { name: "twitter:title", content: "Devices by Brand — Custom Rom World" },
+      {
+        name: "twitter:description",
+        content: "Choose your phone brand and see the available devices and their custom ROMs.",
       },
     ],
+    links: [{ rel: "canonical", href: "https://customrom.world/devices" }],
   }),
+
   component: DevicesPage,
 });
 

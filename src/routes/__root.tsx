@@ -80,16 +80,13 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "Custom Rom World: Find your new Rom!" },
-      { name: "description", content: "Customrom.world Is a community driven archive for Custom Roms of all types and of different devices. We aspire to be the biggest Custom Rom archive and an active thread for who's interested!" },
-      { name: "author", content: "Lovable" },
-      { property: "og:title", content: "Custom Rom World: Find your new Rom!" },
-      { property: "og:description", content: "Customrom.world Is a community driven archive for Custom Roms of all types and of different devices. We aspire to be the biggest Custom Rom archive and an active thread for who's interested!" },
+      { name: "author", content: "Custom Rom World" },
+      { property: "og:site_name", content: "Custom Rom World" },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
-      { name: "twitter:site", content: "@Lovable" },
       { name: "google-site-verification", content: "NC6kKqtvbOE3Xdw_XtOvvB8Q6jDVzjC6GkEqFbms5xw" },
     ],
+
     links: [
       {
         rel: "stylesheet",
