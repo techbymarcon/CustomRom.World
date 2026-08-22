@@ -38,6 +38,60 @@ export type Database = {
         }
         Relationships: []
       }
+      roms: {
+        Row: {
+          additional_info: string | null
+          android_version: string
+          brand: string
+          created_at: string
+          created_by: string | null
+          device_name: string
+          device_slug: string
+          download_url: string
+          found_on: string
+          id: string
+          installation_guide: string | null
+          made_by: string
+          rom_name: string
+          slug: string
+          updated_at: string
+        }
+        Insert: {
+          additional_info?: string | null
+          android_version: string
+          brand: string
+          created_at?: string
+          created_by?: string | null
+          device_name: string
+          device_slug: string
+          download_url: string
+          found_on: string
+          id?: string
+          installation_guide?: string | null
+          made_by: string
+          rom_name: string
+          slug: string
+          updated_at?: string
+        }
+        Update: {
+          additional_info?: string | null
+          android_version?: string
+          brand?: string
+          created_at?: string
+          created_by?: string | null
+          device_name?: string
+          device_slug?: string
+          download_url?: string
+          found_on?: string
+          id?: string
+          installation_guide?: string | null
+          made_by?: string
+          rom_name?: string
+          slug?: string
+          updated_at?: string
+        }
+        Relationships: []
+      }
       site_content: {
         Row: {
           color: string | null
