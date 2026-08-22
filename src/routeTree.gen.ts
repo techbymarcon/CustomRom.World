@@ -13,6 +13,8 @@ import { Route as IndexRouteImport } from './routes/index'
 import { Route as DevicesRouteImport } from './routes/devices'
 import { Route as SitemapDotxmlRouteImport } from './routes/sitemap[.]xml'
 import { Route as DevicesSamsungRouteImport } from './routes/devices_.samsung'
+import { Route as DevicesSamsungModelRouteImport } from './routes/devices_.samsung_.$model'
+import { Route as DevicesSamsungModelRomRouteImport } from './routes/devices_.samsung_.$model_.$rom'
 
 const IndexRoute = IndexRouteImport.update({
   id: '/',
@@ -34,18 +36,32 @@ const DevicesSamsungRoute = DevicesSamsungRouteImport.update({
   path: '/devices/samsung',
   getParentRoute: () => rootRouteImport,
 } as any)
+const DevicesSamsungModelRoute = DevicesSamsungModelRouteImport.update({
+  id: '/devices_/samsung_/$model',
+  path: '/devices/samsung/$model',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const DevicesSamsungModelRomRoute = DevicesSamsungModelRomRouteImport.update({
+  id: '/devices_/samsung_/$model_/$rom',
+  path: '/devices/samsung/$model/$rom',
+  getParentRoute: () => rootRouteImport,
+} as any)
 
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
   '/devices': typeof DevicesRoute
   '/sitemap.xml': typeof SitemapDotxmlRoute
   '/devices/samsung': typeof DevicesSamsungRoute
+  '/devices/samsung/$model': typeof DevicesSamsungModelRoute
+  '/devices/samsung/$model/$rom': typeof DevicesSamsungModelRomRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
   '/devices': typeof DevicesRoute
   '/sitemap.xml': typeof SitemapDotxmlRoute
   '/devices/samsung': typeof DevicesSamsungRoute
+  '/devices/samsung/$model': typeof DevicesSamsungModelRoute
+  '/devices/samsung/$model/$rom': typeof DevicesSamsungModelRomRoute
 }
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
@@ -53,13 +69,34 @@ export interface FileRoutesById {
   '/devices': typeof DevicesRoute
   '/sitemap.xml': typeof SitemapDotxmlRoute
   '/devices_/samsung': typeof DevicesSamsungRoute
+  '/devices_/samsung_/$model': typeof DevicesSamsungModelRoute
+  '/devices_/samsung_/$model_/$rom': typeof DevicesSamsungModelRomRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
-  fullPaths: '/' | '/devices' | '/sitemap.xml' | '/devices/samsung'
+  fullPaths:
+    | '/'
+    | '/devices'
+    | '/sitemap.xml'
+    | '/devices/samsung'
+    | '/devices/samsung/$model'
+    | '/devices/samsung/$model/$rom'
   fileRoutesByTo: FileRoutesByTo
-  to: '/' | '/devices' | '/sitemap.xml' | '/devices/samsung'
-  id: '__root__' | '/' | '/devices' | '/sitemap.xml' | '/devices_/samsung'
+  to:
+    | '/'
+    | '/devices'
+    | '/sitemap.xml'
+    | '/devices/samsung'
+    | '/devices/samsung/$model'
+    | '/devices/samsung/$model/$rom'
+  id:
+    | '__root__'
+    | '/'
+    | '/devices'
+    | '/sitemap.xml'
+    | '/devices_/samsung'
+    | '/devices_/samsung_/$model'
+    | '/devices_/samsung_/$model_/$rom'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
@@ -67,6 +104,8 @@ export interface RootRouteChildren {
   DevicesRoute: typeof DevicesRoute
   SitemapDotxmlRoute: typeof SitemapDotxmlRoute
   DevicesSamsungRoute: typeof DevicesSamsungRoute
+  DevicesSamsungModelRoute: typeof DevicesSamsungModelRoute
+  DevicesSamsungModelRomRoute: typeof DevicesSamsungModelRomRoute
 }
 
 declare module '@tanstack/react-router' {
@@ -99,6 +138,20 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof DevicesSamsungRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/devices_/samsung_/$model': {
+      id: '/devices_/samsung_/$model'
+      path: '/devices/samsung/$model'
+      fullPath: '/devices/samsung/$model'
+      preLoaderRoute: typeof DevicesSamsungModelRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/devices_/samsung_/$model_/$rom': {
+      id: '/devices_/samsung_/$model_/$rom'
+      path: '/devices/samsung/$model/$rom'
+      fullPath: '/devices/samsung/$model/$rom'
+      preLoaderRoute: typeof DevicesSamsungModelRomRouteImport
+      parentRoute: typeof rootRouteImport
+    }
   }
 }
 
@@ -107,6 +160,8 @@ const rootRouteChildren: RootRouteChildren = {
   DevicesRoute: DevicesRoute,
   SitemapDotxmlRoute: SitemapDotxmlRoute,
   DevicesSamsungRoute: DevicesSamsungRoute,
+  DevicesSamsungModelRoute: DevicesSamsungModelRoute,
+  DevicesSamsungModelRomRoute: DevicesSamsungModelRomRoute,
 }
 export const routeTree = rootRouteImport
   ._addFileChildren(rootRouteChildren)
