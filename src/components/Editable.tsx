@@ -1,5 +1,6 @@
 import { useEffect, useRef, useState, type ElementType, type ReactNode } from "react";
 import { Pencil } from "lucide-react";
+import { toast } from "sonner";
 
 import { useSite } from "@/lib/site";
 import { supabase } from "@/integrations/supabase/client";
@@ -17,8 +18,8 @@ function EditorShell({
 }) {
   if (!open) return null;
   return (
-    <div className="fixed inset-0 z-[100] flex items-end justify-center bg-black/60 p-4 sm:items-center">
-      <div className="w-full max-w-md rounded-3xl border-2 border-primary bg-card p-6 shadow-2xl">
+    <div className="fixed inset-0 z-[100] flex animate-fade-in items-end justify-center bg-black/60 p-4 backdrop-blur-sm sm:items-center">
+      <div className="w-full max-w-md animate-scale-in rounded-3xl border-2 border-primary bg-card p-6 shadow-2xl">
         <div className="mb-4 flex items-center justify-between">
           <h3 className="text-lg font-bold">{title}</h3>
           <button onClick={onClose} className="text-sm text-muted-foreground hover:text-foreground">
