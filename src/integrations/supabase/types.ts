@@ -43,51 +43,66 @@ export type Database = {
           additional_info: string | null
           android_version: string
           brand: string
+          codename: string | null
           created_at: string
           created_by: string | null
           device_name: string
           device_slug: string
-          download_url: string
+          download_url: string | null
           found_on: string
           id: string
           installation_guide: string | null
           made_by: string
+          official_status: string | null
           rom_name: string
+          rom_type: string | null
+          rom_version: string | null
           slug: string
+          source_url: string | null
           updated_at: string
         }
         Insert: {
           additional_info?: string | null
           android_version: string
           brand: string
+          codename?: string | null
           created_at?: string
           created_by?: string | null
           device_name: string
           device_slug: string
-          download_url: string
+          download_url?: string | null
           found_on: string
           id?: string
           installation_guide?: string | null
           made_by: string
+          official_status?: string | null
           rom_name: string
+          rom_type?: string | null
+          rom_version?: string | null
           slug: string
+          source_url?: string | null
           updated_at?: string
         }
         Update: {
           additional_info?: string | null
           android_version?: string
           brand?: string
+          codename?: string | null
           created_at?: string
           created_by?: string | null
           device_name?: string
           device_slug?: string
-          download_url?: string
+          download_url?: string | null
           found_on?: string
           id?: string
           installation_guide?: string | null
           made_by?: string
+          official_status?: string | null
           rom_name?: string
+          rom_type?: string | null
+          rom_version?: string | null
           slug?: string
+          source_url?: string | null
           updated_at?: string
         }
         Relationships: []

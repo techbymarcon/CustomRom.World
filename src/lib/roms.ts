@@ -166,12 +166,23 @@ export type Rom = {
   brand: string;
   device_slug: string;
   device_name: string;
+  codename: string | null;
   slug: string;
   rom_name: string;
+  rom_version: string | null;
   android_version: string;
-  download_url: string;
+  rom_type: "aosp" | "skin-port" | null;
+  source_url: string | null;
+  download_url: string | null;
   made_by: string;
   found_on: string;
+  official_status: "official" | "unofficial" | null;
   installation_guide: string | null;
   additional_info: string | null;
 };
+
+export const ROM_TYPE_LABELS: Record<"aosp" | "skin-port", string> = {
+  aosp: "AOSP / custom ROM",
+  "skin-port": "Manufacturer skin port",
+};
+

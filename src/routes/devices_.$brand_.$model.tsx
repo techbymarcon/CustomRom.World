@@ -10,7 +10,9 @@ import { Header } from "@/components/Header";
 import { useSite } from "@/lib/site";
 import { deviceNameFromSlug, getBrand } from "@/lib/devices";
 import { createRom, deleteRom, listRoms } from "@/lib/roms.functions";
-import { ANDROID_LOGOS, ANDROID_VERSIONS, ROM_NAMES, slugify } from "@/lib/roms";
+import { ANDROID_LOGOS, ANDROID_VERSIONS, ROM_NAMES, ROM_TYPE_LABELS } from "@/lib/roms";
+import { normalizeRomFamily, romSlug, romTypeForFamily } from "@/lib/rom-import";
+
 import { RomButtonParticles } from "@/components/RomButtonParticles";
 
 export const Route = createFileRoute("/devices_/$brand_/$model")({
@@ -154,13 +156,22 @@ function ModelPage() {
                     params={{ brand, model, rom: rom.slug }}
                     className="relative z-10 min-w-0 flex-1 pr-12"
                   >
-                    <p className="truncate text-lg font-bold">{rom.rom_name}</p>
+                    <p className="truncate text-lg font-bold">
+                      {rom.rom_name}
+                      {rom.rom_version ? ` ${rom.rom_version}` : ""}
+                    </p>
                     <p className={`mt-1 text-sm ${highlight ? toneText : "text-primary"}`}>
                       {rom.android_version}
+                    </p>
+                    <p className="mt-0.5 truncate text-xs text-muted-foreground">
+                      {rom.rom_type ? ROM_TYPE_LABELS[rom.rom_type] : "ROM"}
+                      {rom.official_status ? ` · ${rom.official_status}` : ""}
+                      {rom.codename ? ` · ${rom.codename}` : ""}
                     </p>
                     {highlight && (
                       <p className={`mt-0.5 text-xs font-bold ${toneText}`}>{highlight.label}</p>
                     )}
+
                   </Link>
                   {isAdmin && (
                     <button
@@ -210,6 +221,10 @@ function RomForm({
   const navigate = useNavigate();
   const [romName, setRomName] = useState<string>(ROM_NAMES[0]!);
   const [version, setVersion] = useState<string>(ANDROID_VERSIONS[ANDROID_VERSIONS.length - 1]!);
+  const [romVersion, setRomVersion] = useState("");
+  const [codename, setCodename] = useState("");
+  const [sourceUrl, setSourceUrl] = useState("");
+  const [official, setOfficial] = useState<"" | "official" | "unofficial">("");
   const [downloadUrl, setDownloadUrl] = useState("");
   const [madeBy, setMadeBy] = useState("");
   const [foundOn, setFoundOn] = useState("");
@@ -218,23 +233,35 @@ function RomForm({
   const [saving, setSaving] = useState(false);
 
   const submit = async () => {
-    if (!downloadUrl.trim() || !madeBy.trim() || !foundOn.trim()) {
-      toast.error("Download link, Made by and Found on are required.");
+    if (!madeBy.trim() || !foundOn.trim()) {
+      toast.error("Made by and Found on are required.");
+      return;
+    }
+    if (!downloadUrl.trim() && !sourceUrl.trim()) {
+      toast.error("Add a download link or at least the source page URL.");
       return;
     }
     setSaving(true);
-    const slug = slugify(`${romName}-${version}`);
+    const family = normalizeRomFamily(romName) ?? romName;
+    const slug = romSlug(family, romVersion.trim() || null, version);
     const res = await createFn({
       data: {
         brand,
         device_slug: model,
         device_name: deviceName,
+        codename: codename.trim() || null,
         slug,
         rom_name: romName,
+        rom_version: romVersion.trim() || null,
         android_version: version,
-        download_url: downloadUrl.trim(),
+        rom_type: normalizeRomFamily(romName)
+          ? romTypeForFamily(normalizeRomFamily(romName)!)
+          : "aosp",
+        source_url: sourceUrl.trim() || null,
+        download_url: downloadUrl.trim() || null,
         made_by: madeBy.trim(),
         found_on: foundOn.trim(),
+        official_status: official || null,
         installation_guide: guide.trim() || null,
         additional_info: extra.trim() || null,
       },
@@ -248,6 +275,7 @@ function RomForm({
     onSaved();
     void navigate({ to: "/devices/$brand/$model/$rom", params: { brand, model, rom: slug } });
   };
+
 
   return (
     <div className="fixed inset-0 z-[100] flex animate-fade-in items-start justify-center overflow-y-auto bg-black/60 p-4 backdrop-blur-sm">
@@ -295,9 +323,30 @@ function RomForm({
             <AndroidCover version={version} />
           </div>
 
-          <Field label="Download link" value={downloadUrl} onChange={setDownloadUrl} />
+          <Field
+            label="ROM version (e.g. 7.64 — leave blank if unknown)"
+            value={romVersion}
+            onChange={setRomVersion}
+          />
+          <Field label="Device codename (optional)" value={codename} onChange={setCodename} />
+          <Field label="Source page URL" value={sourceUrl} onChange={setSourceUrl} />
+          <Field label="Download link (optional)" value={downloadUrl} onChange={setDownloadUrl} />
           <Field label="Made by" value={madeBy} onChange={setMadeBy} />
           <Field label="Found on" value={foundOn} onChange={setFoundOn} />
+
+          <label className="text-sm font-bold">
+            Official status
+            <select
+              value={official}
+              onChange={(e) => setOfficial(e.target.value as typeof official)}
+              className="mt-1 w-full rounded-xl border border-input bg-background p-2.5 text-sm"
+            >
+              <option value="">unknown</option>
+              <option value="official">official</option>
+              <option value="unofficial">unofficial</option>
+            </select>
+          </label>
+
 
           <label className="text-sm font-bold">
             Installation guide
