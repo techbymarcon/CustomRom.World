@@ -1,4 +1,4 @@
-import { ANDROID_LOGOS } from "@/lib/roms";
+import { ANDROID_LOGOS, ROM_LOGOS } from "@/lib/roms";
 
 const PARTICLES = [
   { left: 6, size: 5, delay: 0, dur: 1.6 },
