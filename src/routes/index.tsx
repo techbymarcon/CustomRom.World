@@ -86,9 +86,12 @@ function Index() {
     <div className="relative min-h-screen bg-background text-foreground">
       <Fog />
 
-      <header className="relative z-10 flex items-center justify-between px-6 pt-8">
-        <EvoLogo className="h-14 w-auto text-foreground" />
-        <button aria-label="Open menu" className="flex flex-col items-end gap-2 p-2">
+      <header className="relative z-10 grid grid-cols-[minmax(0,1fr)_auto] items-center gap-4 px-6 pt-8 sm:flex sm:flex-wrap sm:justify-between">
+        <EvoLogo className="h-10 w-auto text-foreground sm:h-12 md:h-14" />
+        <button
+          aria-label="Open menu"
+          className="flex shrink-0 flex-col items-end gap-2 p-2"
+        >
           <span className="block h-1.5 w-6 rounded-full bg-foreground" />
           <span className="block h-1.5 w-9 rounded-full bg-foreground" />
           <span className="block h-1.5 w-7 rounded-full bg-foreground" />
