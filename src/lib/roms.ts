@@ -98,6 +98,7 @@ export const ROM_NAMES = [
   "MagicOS",
   "CyanogenMod",
   "AOSP",
+  "Rom package",
 ] as const;
 
 export const ANDROID_LOGOS: Record<string, string> = {
