@@ -156,13 +156,22 @@ function ModelPage() {
                     params={{ brand, model, rom: rom.slug }}
                     className="relative z-10 min-w-0 flex-1 pr-12"
                   >
-                    <p className="truncate text-lg font-bold">{rom.rom_name}</p>
+                    <p className="truncate text-lg font-bold">
+                      {rom.rom_name}
+                      {rom.rom_version ? ` ${rom.rom_version}` : ""}
+                    </p>
                     <p className={`mt-1 text-sm ${highlight ? toneText : "text-primary"}`}>
                       {rom.android_version}
+                    </p>
+                    <p className="mt-0.5 truncate text-xs text-muted-foreground">
+                      {rom.rom_type ? ROM_TYPE_LABELS[rom.rom_type] : "ROM"}
+                      {rom.official_status ? ` · ${rom.official_status}` : ""}
+                      {rom.codename ? ` · ${rom.codename}` : ""}
                     </p>
                     {highlight && (
                       <p className={`mt-0.5 text-xs font-bold ${toneText}`}>{highlight.label}</p>
                     )}
+
                   </Link>
                   {isAdmin && (
                     <button
