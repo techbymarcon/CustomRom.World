@@ -149,6 +149,7 @@ export const ROM_LOGOS: Record<string, string> = {
   ColorOS: rColorOS.url,
   "Realme UI": rRealmeUI.url,
   "Funtouch OS": rFuntouch.url,
+  "Rom package": rRomPackage.url,
 };
 
 
