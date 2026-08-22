@@ -101,6 +101,19 @@ export const ANDROID_LOGOS: Record<string, string> = {
   "Android 16": a16.url,
 };
 
+export const ROM_LOGOS: Record<string, string> = {
+  InfinityX: rInfinityX.url,
+  SuperiorOS: rSuperiorOS.url,
+  "Resurrection Remix": rResurrection.url,
+  "Havoc-OS": rHavocOS.url,
+  "Paranoid Android": rParanoid.url,
+  CalyxOS: rCalyxOS.url,
+  GrapheneOS: rGrapheneOS.url,
+  "/ e / OS": rEOS.url,
+  "iodéOS": rIodeOS.url,
+  DivestOS: rDivestOS.url,
+};
+
 
 export function slugify(input: string): string {
   return input
