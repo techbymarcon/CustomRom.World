@@ -15,6 +15,16 @@ import a13 from "@/assets/android/android-13.svg.asset.json";
 import a14 from "@/assets/android/android-14.svg.asset.json";
 import a15 from "@/assets/android/android-15.svg.asset.json";
 import a16 from "@/assets/android/android-16.svg.asset.json";
+import rInfinityX from "@/assets/roms/infinityx.jpg.asset.json";
+import rDivestOS from "@/assets/roms/divestos.jpg.asset.json";
+import rIodeOS from "@/assets/roms/iodeos.png.asset.json";
+import rEOS from "@/assets/roms/e-os.png.asset.json";
+import rGrapheneOS from "@/assets/roms/grapheneos.png.asset.json";
+import rCalyxOS from "@/assets/roms/calyxos.png.asset.json";
+import rParanoid from "@/assets/roms/paranoidandroid.svg.asset.json";
+import rSuperiorOS from "@/assets/roms/superioros.png.asset.json";
+import rResurrection from "@/assets/roms/resurrectionremix.png.asset.json";
+import rHavocOS from "@/assets/roms/havocos.png.asset.json";
 
 export const ANDROID_VERSIONS = [
   "Android 2.3 Gingerbread",
