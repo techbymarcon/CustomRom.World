@@ -8,30 +8,31 @@ import { AndroidCover, RomCover } from "@/components/AndroidCover";
 import { Fog } from "@/components/Fog";
 import { Header } from "@/components/Header";
 import { useSite } from "@/lib/site";
+import { deviceNameFromSlug, getBrand } from "@/lib/devices";
 import { createRom, deleteRom, listRoms } from "@/lib/roms.functions";
 import { ANDROID_LOGOS, ANDROID_VERSIONS, ROM_NAMES, slugify } from "@/lib/roms";
 import { RomButtonParticles } from "@/components/RomButtonParticles";
 
-export const Route = createFileRoute("/devices_/samsung_/$model")({
+export const Route = createFileRoute("/devices_/$brand_/$model")({
   head: () => ({
     meta: [
-      { title: "Samsung device ROMs — Custom Rom World" },
+      { title: "Device ROMs — Custom Rom World" },
       {
         name: "description",
         content:
-          "Every custom ROM archived for this Samsung Galaxy model, with Android version, download link and installation guide.",
+          "Every custom ROM archived for this device, with Android version, download link and installation guide.",
       },
-      { property: "og:title", content: "Samsung device ROMs — Custom Rom World" },
+      { property: "og:title", content: "Device ROMs — Custom Rom World" },
       {
         property: "og:description",
-        content: "Browse the custom ROMs archived for this Samsung Galaxy model.",
+        content: "Browse the custom ROMs archived for this device.",
       },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
-      { name: "twitter:title", content: "Samsung device ROMs — Custom Rom World" },
+      { name: "twitter:title", content: "Device ROMs — Custom Rom World" },
       {
         name: "twitter:description",
-        content: "Browse the custom ROMs archived for this Samsung Galaxy model.",
+        content: "Browse the custom ROMs archived for this device.",
       },
     ],
   }),
@@ -42,22 +43,27 @@ function titleFromSlug(slug: string) {
   return slug
     .split("-")
     .map((part) =>
-      part === "plus" ? "+" : part.length <= 2 ? part.toUpperCase() : part[0]!.toUpperCase() + part.slice(1),
+      part === "plus"
+        ? "+"
+        : part.length <= 2
+          ? part.toUpperCase()
+          : part[0]!.toUpperCase() + part.slice(1),
     )
     .join(" ")
     .replace(/ \+/g, "+");
 }
 
 function ModelPage() {
-  const { model } = Route.useParams();
-  const deviceName = titleFromSlug(model);
+  const { brand, model } = Route.useParams();
+  const brandName = getBrand(brand)?.name ?? titleFromSlug(brand);
+  const deviceName = deviceNameFromSlug(brand, model) ?? titleFromSlug(model);
   const { isAdmin } = useSite();
   const queryClient = useQueryClient();
   const [open, setOpen] = useState(false);
 
   const romsQuery = useQuery({
-    queryKey: ["roms", "samsung", model],
-    queryFn: () => listRoms({ data: { brand: "samsung", device_slug: model } }),
+    queryKey: ["roms", brand, model],
+    queryFn: () => listRoms({ data: { brand, device_slug: model } }),
   });
 
   const removeFn = useServerFn(deleteRom);
@@ -69,7 +75,7 @@ function ModelPage() {
         return;
       }
       toast.success("ROM page deleted");
-      await queryClient.invalidateQueries({ queryKey: ["roms", "samsung", model] });
+      await queryClient.invalidateQueries({ queryKey: ["roms", brand, model] });
     },
   });
 
@@ -91,10 +97,11 @@ function ModelPage() {
 
           <div className="mt-6 flex flex-wrap justify-center gap-3">
             <Link
-              to="/devices/samsung"
+              to="/devices/$brand"
+              params={{ brand }}
               className="inline-block rounded-full border-2 border-primary bg-background/40 px-4 py-2 text-sm font-bold backdrop-blur-sm transition-colors hover:bg-primary/15"
             >
-              ← All Samsung models
+              ← All {brandName} models
             </Link>
             {isAdmin && (
               <button
@@ -143,8 +150,8 @@ function ModelPage() {
                   )}
 
                   <Link
-                    to="/devices/samsung/$model/$rom"
-                    params={{ model, rom: rom.slug }}
+                    to="/devices/$brand/$model/$rom"
+                    params={{ brand, model, rom: rom.slug }}
                     className="relative z-10 min-w-0 flex-1 pr-12"
                   >
                     <p className="truncate text-lg font-bold">{rom.rom_name}</p>
@@ -172,11 +179,12 @@ function ModelPage() {
 
       {open && (
         <RomForm
+          brand={brand}
           model={model}
           deviceName={deviceName}
           onClose={() => setOpen(false)}
           onSaved={async () => {
-            await queryClient.invalidateQueries({ queryKey: ["roms", "samsung", model] });
+            await queryClient.invalidateQueries({ queryKey: ["roms", brand, model] });
             setOpen(false);
           }}
         />
@@ -186,11 +194,13 @@ function ModelPage() {
 }
 
 function RomForm({
+  brand,
   model,
   deviceName,
   onClose,
   onSaved,
 }: {
+  brand: string;
   model: string;
   deviceName: string;
   onClose: () => void;
@@ -216,7 +226,7 @@ function RomForm({
     const slug = slugify(`${romName}-${version}`);
     const res = await createFn({
       data: {
-        brand: "samsung",
+        brand,
         device_slug: model,
         device_name: deviceName,
         slug,
@@ -236,7 +246,7 @@ function RomForm({
     }
     toast.success("ROM page published");
     onSaved();
-    void navigate({ to: "/devices/samsung/$model/$rom", params: { model, rom: slug } });
+    void navigate({ to: "/devices/$brand/$model/$rom", params: { brand, model, rom: slug } });
   };
 
   return (

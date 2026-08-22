@@ -6,26 +6,26 @@ import { Fog } from "@/components/Fog";
 import { Header } from "@/components/Header";
 import { getRom } from "@/lib/roms.functions";
 
-export const Route = createFileRoute("/devices_/samsung_/$model_/$rom")({
+export const Route = createFileRoute("/devices_/$brand_/$model_/$rom")({
   head: () => ({
     meta: [
       { title: "Custom ROM page — Custom Rom World" },
       {
         name: "description",
         content:
-          "ROM details, download link, installation guide and additional info for this Samsung Galaxy custom ROM.",
+          "ROM details, download link, installation guide and additional info for this custom ROM.",
       },
       { property: "og:title", content: "Custom ROM page — Custom Rom World" },
       {
         property: "og:description",
-        content: "ROM details, download link and installation guide for this Samsung Galaxy device.",
+        content: "ROM details, download link and installation guide for this device.",
       },
       { property: "og:type", content: "article" },
       { name: "twitter:card", content: "summary_large_image" },
       { name: "twitter:title", content: "Custom ROM page — Custom Rom World" },
       {
         name: "twitter:description",
-        content: "ROM details, download link and installation guide for this Samsung Galaxy device.",
+        content: "ROM details, download link and installation guide for this device.",
       },
     ],
   }),
@@ -44,10 +44,10 @@ function Bubble({ title, children }: { title: string; children: React.ReactNode 
 }
 
 function RomPage() {
-  const { model, rom: romSlug } = Route.useParams();
+  const { brand, model, rom: romSlug } = Route.useParams();
   const query = useQuery({
-    queryKey: ["rom", "samsung", model, romSlug],
-    queryFn: () => getRom({ data: { brand: "samsung", device_slug: model, slug: romSlug } }),
+    queryKey: ["rom", brand, model, romSlug],
+    queryFn: () => getRom({ data: { brand, device_slug: model, slug: romSlug } }),
   });
   const rom = query.data?.rom ?? null;
 
@@ -122,8 +122,8 @@ function RomPage() {
 
           <div className="mt-8">
             <Link
-              to="/devices/samsung/$model"
-              params={{ model }}
+              to="/devices/$brand/$model"
+              params={{ brand, model }}
               className="inline-block rounded-full border-2 border-primary bg-background/40 px-4 py-2 text-sm font-bold backdrop-blur-sm transition-colors hover:bg-primary/15"
             >
               ← Back to device
