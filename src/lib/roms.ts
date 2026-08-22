@@ -1,3 +1,13 @@
+import a23 from "@/assets/android/android-2.3.webp.asset.json";
+import a30 from "@/assets/android/android-3.0.webp.asset.json";
+import a40 from "@/assets/android/android-4.0.webp.asset.json";
+import a41 from "@/assets/android/android-4.1.svg.asset.json";
+import a44 from "@/assets/android/android-4.4.webp.asset.json";
+import a50 from "@/assets/android/android-5.0.webp.asset.json";
+import a60 from "@/assets/android/android-6.0.svg.asset.json";
+import a70 from "@/assets/android/android-7.0.svg.asset.json";
+import a80 from "@/assets/android/android-8.0.svg.asset.json";
+import a9 from "@/assets/android/android-9.svg.asset.json";
 import a10 from "@/assets/android/android-10.svg.asset.json";
 import a11 from "@/assets/android/android-11.svg.asset.json";
 import a12 from "@/assets/android/android-12.svg.asset.json";
@@ -7,6 +17,16 @@ import a15 from "@/assets/android/android-15.svg.asset.json";
 import a16 from "@/assets/android/android-16.svg.asset.json";
 
 export const ANDROID_VERSIONS = [
+  "Android 2.3 Gingerbread",
+  "Android 3.0 Honeycomb",
+  "Android 4.0 Ice Cream Sandwich",
+  "Android 4.1 Jelly Bean",
+  "Android 4.4 KitKat",
+  "Android 5.0 Lollipop",
+  "Android 6.0 Marshmallow",
+  "Android 7.0 Nougat",
+  "Android 8.0 Oreo",
+  "Android 9 Pie",
   "Android 10",
   "Android 11",
   "Android 12",
@@ -51,6 +71,16 @@ export const ROM_NAMES = [
 ] as const;
 
 export const ANDROID_LOGOS: Record<string, string> = {
+  "Android 2.3 Gingerbread": a23.url,
+  "Android 3.0 Honeycomb": a30.url,
+  "Android 4.0 Ice Cream Sandwich": a40.url,
+  "Android 4.1 Jelly Bean": a41.url,
+  "Android 4.4 KitKat": a44.url,
+  "Android 5.0 Lollipop": a50.url,
+  "Android 6.0 Marshmallow": a60.url,
+  "Android 7.0 Nougat": a70.url,
+  "Android 8.0 Oreo": a80.url,
+  "Android 9 Pie": a9.url,
   "Android 10": a10.url,
   "Android 11": a11.url,
   "Android 12": a12.url,
@@ -59,6 +89,7 @@ export const ANDROID_LOGOS: Record<string, string> = {
   "Android 15": a15.url,
   "Android 16": a16.url,
 };
+
 
 export function slugify(input: string): string {
   return input
