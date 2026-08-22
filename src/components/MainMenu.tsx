@@ -217,9 +217,12 @@ export function MainMenu() {
               </button>
             </div>
 
-            <div className="flex flex-1 flex-col items-center justify-center py-10 text-center">
+            <div
+              key={panel}
+              className="flex flex-1 animate-fade-in flex-col items-center justify-center py-10 text-center"
+            >
               {panel === "menu" && (
-                <nav className="w-full max-w-xs animate-scale-in">
+                <nav className="flex w-full max-w-xs flex-col gap-2">
                   <button
                     onClick={() => setOpen(false)}
                     className={`${itemClass} text-primary`}
