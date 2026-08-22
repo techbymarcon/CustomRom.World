@@ -25,6 +25,16 @@ import rParanoid from "@/assets/roms/paranoidandroid.svg.asset.json";
 import rSuperiorOS from "@/assets/roms/superioros.png.asset.json";
 import rResurrection from "@/assets/roms/resurrectionremix.png.asset.json";
 import rHavocOS from "@/assets/roms/havocos.png.asset.json";
+import rRisingOS from "@/assets/roms/risingos.jpg.asset.json";
+import rVoltageOS from "@/assets/roms/voltageos.jpg.asset.json";
+import rDerpFest from "@/assets/roms/derpfest.jpg.asset.json";
+import rPixelOS from "@/assets/roms/pixelos.png.asset.json";
+import rEvolutionX from "@/assets/roms/evolutionx.png.asset.json";
+import rArrowOS from "@/assets/roms/arrowos.jpg.asset.json";
+import rPixelExperience from "@/assets/roms/pixelexperience.png.asset.json";
+import rCrDroid from "@/assets/roms/crdroid.png.asset.json";
+import rLineageOS from "@/assets/roms/lineageos.png.asset.json";
+import rCyanogenMod from "@/assets/roms/cyanogenmod.webp.asset.json";
 
 export const ANDROID_VERSIONS = [
   "Android 2.3 Gingerbread",
