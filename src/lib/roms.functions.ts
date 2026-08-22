@@ -1,9 +1,11 @@
 import { createServerFn } from "@tanstack/react-start";
 import { requireSupabaseAuth } from "@/integrations/supabase/auth-middleware";
+import type { RomCandidate } from "./rom-import";
 import type { Rom } from "./roms";
 
 const SELECT =
-  "id, brand, device_slug, device_name, slug, rom_name, android_version, download_url, made_by, found_on, installation_guide, additional_info";
+  "id, brand, device_slug, device_name, codename, slug, rom_name, rom_version, android_version, rom_type, source_url, download_url, made_by, found_on, official_status, installation_guide, additional_info";
+
 
 export const listRoms = createServerFn({ method: "GET" })
   .inputValidator((input: { brand: string; device_slug: string }) => input)
