@@ -1,4 +1,4 @@
-import { useRef, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { createPortal } from "react-dom";
 
 import { toast } from "sonner";
@@ -171,10 +171,20 @@ function AccountPanel() {
 export function MainMenu() {
   const [open, setOpen] = useState(false);
   const [panel, setPanel] = useState<Panel>("menu");
+  const [mounted, setMounted] = useState(false);
+  const [scrolled, setScrolled] = useState(false);
   const { session, profile, avatarUrl, isAdmin, editMode, setEditMode } = useSite();
 
+  useEffect(() => {
+    setMounted(true);
+    const onScroll = () => setScrolled(window.scrollY > 8);
+    onScroll();
+    window.addEventListener("scroll", onScroll, { passive: true });
+    return () => window.removeEventListener("scroll", onScroll);
+  }, []);
+
   const itemClass =
-    "block w-full rounded-xl px-3 py-2 text-xl font-semibold uppercase tracking-wide transition-colors hover:bg-primary/10 sm:text-2xl";
+    "block w-full rounded-xl px-3 py-1.5 text-xl font-semibold uppercase tracking-wide transition-colors hover:bg-primary/10 sm:text-2xl";
 
   const barBase =
     "absolute left-0 block h-[3px] rounded-full bg-foreground transition-all duration-300 ease-[cubic-bezier(0.22,1,0.36,1)]";
@@ -207,18 +217,26 @@ export function MainMenu() {
     </button>
   );
 
+  // At the top of the page the toggle sits inline in the header, perfectly
+  // aligned with the logo. Once the user scrolls (or opens the menu) it floats.
+  const floating = mounted && (open || scrolled);
+
   return (
     <>
-      {/* Spacer keeps header layout stable; the real toggle floats above the overlay. */}
-      <div className="h-4 w-5 shrink-0 sm:h-5 sm:w-6 md:h-[22px] md:w-7" aria-hidden />
+      {floating ? (
+        <div className="h-4 w-5 shrink-0 sm:h-5 sm:w-6 md:h-[22px] md:w-7" aria-hidden />
+      ) : (
+        toggle
+      )}
 
-      {typeof document !== "undefined" &&
+      {floating &&
         createPortal(
           <div className="pointer-events-none fixed inset-x-0 top-0 z-[110] flex justify-end px-6 pt-8">
             <div className="pointer-events-auto">{toggle}</div>
           </div>,
           document.body,
         )}
+
 
       {open &&
         createPortal(
@@ -241,10 +259,11 @@ export function MainMenu() {
 
             <div
               key={panel}
-              className="flex flex-1 animate-panel-in flex-col items-center justify-center py-8 text-center"
+              className="flex flex-1 animate-panel-in flex-col items-center justify-center py-6 text-center"
             >
               {panel === "menu" && (
-                <nav className="flex w-full max-w-xs flex-col gap-1.5">
+                <nav className="flex w-full max-w-xs flex-col gap-1">
+
                   <button
                     onClick={() => setOpen(false)}
                     className={`${itemClass} text-primary`}
