@@ -13,11 +13,17 @@ export const Route = createFileRoute("/sitemap.xml")({
   server: {
     handlers: {
       GET: async () => {
+        const { BRANDS } = await import("@/lib/devices");
         const entries: SitemapEntry[] = [
           { path: "/", changefreq: "weekly", priority: "1.0" },
           { path: "/devices", changefreq: "weekly", priority: "0.8" },
-          { path: "/devices/samsung", changefreq: "weekly", priority: "0.7" },
+          ...BRANDS.map((b) => ({
+            path: `/devices/${b.slug}`,
+            changefreq: "weekly" as const,
+            priority: "0.7",
+          })),
         ];
+
 
         const urls = entries.map((e) =>
           [
