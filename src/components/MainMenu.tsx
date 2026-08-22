@@ -1,5 +1,6 @@
 import { useEffect, useRef, useState } from "react";
 import { createPortal } from "react-dom";
+import { Link } from "@tanstack/react-router";
 
 import { toast } from "sonner";
 
@@ -264,12 +265,21 @@ export function MainMenu() {
               {panel === "menu" && (
                 <nav className="flex w-full max-w-xs flex-col gap-1">
 
-                  <button
+                  <Link
+                    to="/"
                     onClick={() => setOpen(false)}
                     className={`${itemClass} text-primary`}
                   >
                     <EditableText contentKey="menu.home" defaultValue="HOME" />
-                  </button>
+                  </Link>
+
+                  <Link
+                    to="/devices"
+                    onClick={() => setOpen(false)}
+                    className={itemClass}
+                  >
+                    <EditableText contentKey="menu.devices" defaultValue="DEVICES" />
+                  </Link>
 
                   {session ? (
                     <button onClick={() => setPanel("account")} className={itemClass}>
