@@ -174,7 +174,7 @@ export function MainMenu() {
   const { session, profile, avatarUrl, isAdmin, editMode, setEditMode } = useSite();
 
   const itemClass =
-    "block w-full py-5 text-3xl font-semibold uppercase tracking-wide transition-colors";
+    "block w-full rounded-2xl px-4 py-3 text-2xl font-semibold uppercase tracking-wide transition-colors hover:bg-primary/10";
 
   return (
     <>
@@ -184,11 +184,11 @@ export function MainMenu() {
           setPanel("menu");
           setOpen(true);
         }}
-        className="flex shrink-0 flex-col items-end gap-2 p-2"
+        className="flex shrink-0 flex-col items-end gap-[5px] p-1.5"
       >
-        <span className="block h-1.5 w-6 rounded-full bg-foreground" />
-        <span className="block h-1.5 w-9 rounded-full bg-foreground" />
-        <span className="block h-1.5 w-7 rounded-full bg-foreground" />
+        <span className="block h-1 w-4 rounded-full bg-foreground" />
+        <span className="block h-1 w-6 rounded-full bg-foreground" />
+        <span className="block h-1 w-5 rounded-full bg-foreground" />
       </button>
 
       {open &&
