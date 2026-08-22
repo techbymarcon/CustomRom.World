@@ -10,7 +10,9 @@ import { Header } from "@/components/Header";
 import { useSite } from "@/lib/site";
 import { deviceNameFromSlug, getBrand } from "@/lib/devices";
 import { createRom, deleteRom, listRoms } from "@/lib/roms.functions";
-import { ANDROID_LOGOS, ANDROID_VERSIONS, ROM_NAMES, slugify } from "@/lib/roms";
+import { ANDROID_LOGOS, ANDROID_VERSIONS, ROM_NAMES, ROM_TYPE_LABELS } from "@/lib/roms";
+import { normalizeRomFamily, romSlug, romTypeForFamily } from "@/lib/rom-import";
+
 import { RomButtonParticles } from "@/components/RomButtonParticles";
 
 export const Route = createFileRoute("/devices_/$brand_/$model")({
