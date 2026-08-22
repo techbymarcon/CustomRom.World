@@ -6,7 +6,7 @@ import { Fog } from "@/components/Fog";
 import { Header } from "@/components/Header";
 import { getRom } from "@/lib/roms.functions";
 
-export const Route = createFileRoute("/devices_/samsung/$model/$rom")({
+export const Route = createFileRoute("/devices_/samsung_/$model_/$rom")({
   head: () => ({
     meta: [
       { title: "Custom ROM page — Custom Rom World" },

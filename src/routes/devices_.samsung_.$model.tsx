@@ -11,7 +11,7 @@ import { useSite } from "@/lib/site";
 import { createRom, deleteRom, listRoms } from "@/lib/roms.functions";
 import { ANDROID_VERSIONS, ROM_NAMES, slugify } from "@/lib/roms";
 
-export const Route = createFileRoute("/devices_/samsung/$model")({
+export const Route = createFileRoute("/devices_/samsung_/$model")({
   head: () => ({
     meta: [
       { title: "Samsung device ROMs — Custom Rom World" },
@@ -164,7 +164,7 @@ function RomForm({
 }) {
   const createFn = useServerFn(createRom);
   const navigate = useNavigate();
-  const [romName, setRomName] = useState<string>(ROM_NAMES[0]);
+  const [romName, setRomName] = useState<string>(ROM_NAMES[0]!);
   const [version, setVersion] = useState<string>(ANDROID_VERSIONS[ANDROID_VERSIONS.length - 1]);
   const [downloadUrl, setDownloadUrl] = useState("");
   const [madeBy, setMadeBy] = useState("");
