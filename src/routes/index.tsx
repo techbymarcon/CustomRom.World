@@ -120,20 +120,6 @@ function Index() {
             />
           </div>
 
-          <div className="mt-8 flex flex-col items-center gap-3">
-            <a
-              href="#devices"
-              className="w-full max-w-[19rem] rounded-full border-2 border-primary bg-background/40 py-4 text-lg font-bold backdrop-blur-sm transition-colors hover:bg-primary/15"
-            >
-              <EditableText contentKey="cta.devices" defaultValue="Browse Devices" />
-            </a>
-            <a
-              href="#features"
-              className="w-full max-w-[19rem] rounded-full border-2 border-primary bg-background/40 py-4 text-lg font-bold backdrop-blur-sm transition-colors hover:bg-primary/15"
-            >
-              <EditableText contentKey="cta.features" defaultValue="Explore Features" />
-            </a>
-          </div>
         </section>
 
         <section id="about" className="px-5 pb-24 pt-24">
