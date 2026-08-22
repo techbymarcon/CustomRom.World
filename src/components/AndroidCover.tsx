@@ -48,12 +48,16 @@ export function AndroidCover({ version }: { version: string }) {
 }
 
 export function RomCover({ romName }: { romName: string }) {
+  const logo = ROM_LOGOS[romName];
   return (
     <div className="relative flex aspect-square w-full items-center justify-center overflow-hidden rounded-3xl border-2 border-primary bg-background/50 p-6 text-center backdrop-blur-sm">
-      <span className="text-2xl font-extrabold leading-tight text-primary sm:text-3xl">
-        {romName}
-      </span>
-
+      {logo ? (
+        <img src={logo} alt={`${romName} logo`} className="h-full w-full object-contain" />
+      ) : (
+        <span className="text-2xl font-extrabold leading-tight text-primary sm:text-3xl">
+          {romName}
+        </span>
+      )}
     </div>
   );
 }
