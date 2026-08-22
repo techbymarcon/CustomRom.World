@@ -256,8 +256,9 @@ export function MainMenu() {
               )}
             </div>
           </div>
-        </div>
-      )}
+        </div>,
+          document.body,
+        )}
     </>
   );
 }
