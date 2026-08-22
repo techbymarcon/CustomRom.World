@@ -1,6 +1,7 @@
 import { useRef, useState } from "react";
 import { createPortal } from "react-dom";
 import { X } from "lucide-react";
+import { toast } from "sonner";
 
 import { supabase } from "@/integrations/supabase/client";
 import { signUpWithHandle } from "@/lib/auth.functions";
@@ -25,6 +26,7 @@ function AuthPanel({ onDone }: { onDone: () => void }) {
         const result = await signUpWithHandle({ data: { handle, password } });
         if (!result.ok) {
           setError(result.error);
+          toast.error(result.error);
           return;
         }
       }
@@ -34,8 +36,10 @@ function AuthPanel({ onDone }: { onDone: () => void }) {
       });
       if (signInError) {
         setError("Wrong handle or password.");
+        toast.error("Wrong handle or password.");
         return;
       }
+      toast.success(mode === "signup" ? "Account created. You're in!" : "Welcome back!");
       onDone();
     } finally {
       setBusy(false);
@@ -115,6 +119,9 @@ function AccountPanel() {
     if (!up.error) {
       await supabase.from("profiles").update({ avatar_url: path }).eq("id", session.user.id);
       refreshProfile();
+      toast.success("Profile picture updated");
+    } else {
+      toast.error("Couldn't upload that file");
     }
     setBusy(false);
   }
@@ -149,7 +156,10 @@ function AccountPanel() {
         {busy ? "Uploading…" : "Upload picture or GIF"}
       </button>
       <button
-        onClick={signOut}
+        onClick={async () => {
+          await signOut();
+          toast("Logged out");
+        }}
         className="mt-3 w-full rounded-full border border-input py-3 text-sm font-semibold"
       >
         Log out
@@ -183,7 +193,7 @@ export function MainMenu() {
 
       {open &&
         createPortal(
-          <div className="fixed inset-0 z-[90] overflow-y-auto bg-background/40 backdrop-blur-2xl">
+          <div className="fixed inset-0 z-[90] animate-fade-in overflow-y-auto bg-background/40 backdrop-blur-2xl">
 
           <div className="flex min-h-full flex-col px-6 py-8">
             <div className="flex items-center justify-between">
@@ -209,7 +219,7 @@ export function MainMenu() {
 
             <div className="flex flex-1 flex-col items-center justify-center py-10 text-center">
               {panel === "menu" && (
-                <nav className="w-full max-w-xs">
+                <nav className="w-full max-w-xs animate-scale-in">
                   <button
                     onClick={() => setOpen(false)}
                     className={`${itemClass} text-primary`}
@@ -233,6 +243,7 @@ export function MainMenu() {
                       <button
                         onClick={() => {
                           setEditMode(!editMode);
+                          toast(editMode ? "Edit mode off" : "Edit mode on");
                           setOpen(false);
                         }}
                         className="mx-auto mt-2 rounded-full border-2 border-primary bg-primary/15 px-6 py-3 text-sm font-bold uppercase"
