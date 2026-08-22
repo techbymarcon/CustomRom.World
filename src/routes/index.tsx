@@ -101,7 +101,7 @@ function Index() {
       <main className="relative z-10">
         <section className="px-6 pt-24 text-center">
           <h1 className="text-5xl font-extrabold leading-[1.05] tracking-tight">
-            <span className="text-primary">Evolve</span> your Android device
+            <span className="text-primary">Custom Romming</span> made simple
           </h1>
 
           <p className="mt-12 text-xl leading-snug text-foreground/90">
