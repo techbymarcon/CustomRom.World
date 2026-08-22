@@ -265,12 +265,13 @@ export function MainMenu() {
               {panel === "menu" && (
                 <nav className="flex w-full max-w-xs flex-col gap-1">
 
-                  <button
+                  <Link
+                    to="/"
                     onClick={() => setOpen(false)}
                     className={`${itemClass} text-primary`}
                   >
                     <EditableText contentKey="menu.home" defaultValue="HOME" />
-                  </button>
+                  </Link>
 
                   <Link
                     to="/devices"
