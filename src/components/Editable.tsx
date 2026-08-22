@@ -106,6 +106,7 @@ export function EditableText({
             onClick={async () => {
               setSaving(true);
               await save(contentKey, { text_value: draftText, color: draftColor });
+              toast.success("Saved for everyone");
               setSaving(false);
               setOpen(false);
             }}
@@ -117,6 +118,7 @@ export function EditableText({
             onClick={async () => {
               setSaving(true);
               await save(contentKey, { text_value: null, color: null });
+              toast("Text reset to default");
               setSaving(false);
               setOpen(false);
             }}
@@ -159,7 +161,7 @@ export function EditableImage({
     <img
       src={src}
       alt={alt}
-      style={{ width: `${width}px` }}
+      style={{ width: `min(${width}px, 100%)` }}
       className={`h-auto max-w-full object-contain ${className}`}
     />
   );
@@ -184,7 +186,12 @@ export function EditableImage({
             const upload = await supabase.storage.from("site-images").upload(path, file, {
               upsert: true,
             });
-            if (!upload.error) await save(contentKey, { image_url: path });
+            if (!upload.error) {
+              await save(contentKey, { image_url: path });
+              toast.success("Image updated for everyone");
+            } else {
+              toast.error("Upload failed. Try another file.");
+            }
             setBusy(false);
             setOpen(false);
           }}
@@ -206,6 +213,7 @@ export function EditableImage({
             onClick={async () => {
               setBusy(true);
               await save(contentKey, { width: draftWidth });
+              toast.success("Size saved for everyone");
               setBusy(false);
               setOpen(false);
             }}
@@ -217,6 +225,7 @@ export function EditableImage({
             onClick={async () => {
               setBusy(true);
               await save(contentKey, { image_url: null, width: null });
+              toast("Image reset to default");
               setBusy(false);
               setOpen(false);
             }}
