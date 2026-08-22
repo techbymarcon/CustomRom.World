@@ -66,11 +66,14 @@ export const saveSiteContent = createServerFn({ method: "POST" })
     }) => input,
   )
   .handler(async ({ data, context }) => {
-    const patch: Record<string, unknown> = { key: data.key, updated_by: context.userId };
-    if (data.text_value !== undefined) patch["text_value"] = data.text_value;
-    if (data.color !== undefined) patch["color"] = data.color;
-    if (data.image_url !== undefined) patch["image_url"] = data.image_url;
-    if (data.width !== undefined) patch["width"] = data.width;
+    const patch = {
+      key: data.key,
+      updated_by: context.userId,
+      ...(data.text_value !== undefined ? { text_value: data.text_value } : {}),
+      ...(data.color !== undefined ? { color: data.color } : {}),
+      ...(data.image_url !== undefined ? { image_url: data.image_url } : {}),
+      ...(data.width !== undefined ? { width: data.width } : {}),
+    };
 
     const { error } = await context.supabase.from("site_content").upsert(patch, {
       onConflict: "key",
