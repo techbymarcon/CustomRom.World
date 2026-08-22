@@ -1,6 +1,9 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { useEffect, useState } from "react";
 import { EvoLogo } from "@/components/EvoLogo";
+import { EditableImage, EditableText } from "@/components/Editable";
+import { MainMenu } from "@/components/MainMenu";
+import logoAsset from "@/assets/evo-logo.png.asset.json";
 
 export const Route = createFileRoute("/")({
   head: () => ({
