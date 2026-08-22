@@ -1,6 +1,9 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { useEffect, useState } from "react";
 import { EvoLogo } from "@/components/EvoLogo";
+import { EditableImage, EditableText } from "@/components/Editable";
+import { MainMenu } from "@/components/MainMenu";
+import logoAsset from "@/assets/evo-logo.png.asset.json";
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -87,25 +90,31 @@ function Index() {
       <Fog />
 
       <header className="relative z-10 grid grid-cols-[minmax(0,1fr)_auto] items-center gap-4 px-6 pt-8 sm:flex sm:flex-wrap sm:justify-between">
-        <EvoLogo className="h-10 w-auto text-foreground sm:h-12 md:h-14" />
-        <button
-          aria-label="Open menu"
-          className="flex shrink-0 flex-col items-end gap-2 p-2"
-        >
-          <span className="block h-1.5 w-6 rounded-full bg-foreground" />
-          <span className="block h-1.5 w-9 rounded-full bg-foreground" />
-          <span className="block h-1.5 w-7 rounded-full bg-foreground" />
-        </button>
+        <EditableImage
+          contentKey="header.logo"
+          defaultSrc={logoAsset.url}
+          defaultWidth={132}
+          alt="Evolution X logo"
+        />
+        <MainMenu />
       </header>
 
       <main className="relative z-10">
         <section className="px-6 pt-24 text-center">
           <h1 className="text-5xl font-extrabold leading-[1.05] tracking-tight">
-            <span className="text-primary">Custom Romming</span> made simple
+            <EditableText
+              contentKey="hero.title.accent"
+              defaultValue="Custom Romming"
+              defaultColor="oklch(0.55 0.24 264)"
+            />{" "}
+            <EditableText contentKey="hero.title.rest" defaultValue="made simple" />
           </h1>
 
           <p className="mt-12 text-xl leading-snug text-foreground/90">
-            Pixel UI, Customization &amp; more.
+            <EditableText
+              contentKey="hero.subtitle"
+              defaultValue="Pixel UI, Customization & more."
+            />
             <br />
             We are
             <br />
@@ -117,13 +126,13 @@ function Index() {
               href="#devices"
               className="w-full max-w-[19rem] rounded-full border-2 border-primary bg-background/40 py-5 text-lg font-bold backdrop-blur-sm transition-colors hover:bg-primary/15"
             >
-              Browse Devices
+              <EditableText contentKey="cta.devices" defaultValue="Browse Devices" />
             </a>
             <a
               href="#features"
               className="w-full max-w-[19rem] rounded-full border-2 border-primary bg-background/40 py-5 text-lg font-bold backdrop-blur-sm transition-colors hover:bg-primary/15"
             >
-              Explore Features
+              <EditableText contentKey="cta.features" defaultValue="Explore Features" />
             </a>
           </div>
         </section>
@@ -131,15 +140,19 @@ function Index() {
         <section id="about" className="px-5 pb-24 pt-24">
           <div className="rounded-4xl border-2 border-primary bg-card/70 px-7 py-12 backdrop-blur-md">
             <h2 className="text-4xl font-extrabold leading-tight">
-              <span className="text-primary">About</span>
+              <EditableText
+                contentKey="about.heading.accent"
+                defaultValue="About"
+                defaultColor="oklch(0.55 0.24 264)"
+              />
               <br />
-              Evolution X
+              <EditableText contentKey="about.heading.rest" defaultValue="Evolution X" />
             </h2>
             <p className="mt-8 text-xl leading-relaxed text-foreground/90">
-              Evolution X is a custom Android ROM focused on a clean Pixel experience,
-              paired with deep customization. It brings the look and feel of Google
-              Pixel devices to a wide range of hardware, with extra features that let
-              you shape every part of your interface.
+              <EditableText
+                contentKey="about.body"
+                defaultValue="Evolution X is a custom Android ROM focused on a clean Pixel experience, paired with deep customization. It brings the look and feel of Google Pixel devices to a wide range of hardware, with extra features that let you shape every part of your interface."
+              />
             </p>
           </div>
         </section>
