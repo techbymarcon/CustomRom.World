@@ -5,7 +5,7 @@ export function EvoLogo({ className = "" }: { className?: string }) {
     <img
       src={logoAsset.url}
       alt="Evolution X logo"
-      className={`h-full w-auto object-contain ${className}`}
+      className={`w-auto object-contain ${className}`}
     />
   );
 }
