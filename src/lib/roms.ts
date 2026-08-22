@@ -15,6 +15,13 @@ import a13 from "@/assets/android/android-13.svg.asset.json";
 import a14 from "@/assets/android/android-14.svg.asset.json";
 import a15 from "@/assets/android/android-15.svg.asset.json";
 import a16 from "@/assets/android/android-16.svg.asset.json";
+import a17 from "@/assets/android/android-17.png.asset.json";
+import rOneUI from "@/assets/roms/oneui.png.asset.json";
+import rHyperOS from "@/assets/roms/hyperos.webp.asset.json";
+import rMIUI from "@/assets/roms/miui.png.asset.json";
+import rColorOS from "@/assets/roms/coloros.png.asset.json";
+import rRealmeUI from "@/assets/roms/realmeui.png.asset.json";
+import rFuntouch from "@/assets/roms/funtouchos.webp.asset.json";
 import rInfinityX from "@/assets/roms/infinityx.jpg.asset.json";
 import rDivestOS from "@/assets/roms/divestos.jpg.asset.json";
 import rIodeOS from "@/assets/roms/iodeos.png.asset.json";
@@ -110,6 +117,7 @@ export const ANDROID_LOGOS: Record<string, string> = {
   "Android 14": a14.url,
   "Android 15": a15.url,
   "Android 16": a16.url,
+  "Android 17": a17.url,
 };
 
 export const ROM_LOGOS: Record<string, string> = {
@@ -133,6 +141,12 @@ export const ROM_LOGOS: Record<string, string> = {
   crDroid: rCrDroid.url,
   LineageOS: rLineageOS.url,
   CyanogenMod: rCyanogenMod.url,
+  "One UI": rOneUI.url,
+  HyperOS: rHyperOS.url,
+  MIUI: rMIUI.url,
+  ColorOS: rColorOS.url,
+  "Realme UI": rRealmeUI.url,
+  "Funtouch OS": rFuntouch.url,
 };
 
 

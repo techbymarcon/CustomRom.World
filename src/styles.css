@@ -146,9 +146,16 @@
   }
 }
 
+:root {
+  --android-16: oklch(0.8 0.13 220);
+  --android-17: oklch(0.62 0.24 320);
+}
+
 @theme inline {
   --color-fog-a: var(--fog-a);
   --color-fog-b: var(--fog-b);
+  --color-android-16: var(--android-16);
+  --color-android-17: var(--android-17);
 }
 
 @keyframes panel-in {
