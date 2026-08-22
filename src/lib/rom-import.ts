@@ -197,6 +197,14 @@ export function parseAndroidVersion(input: string | null | undefined): string | 
   for (const [re, label] of named) {
     if (re.test(text)) return label;
   }
+
+  // XDA-style bracket convention: "[ROM][11][UNOFFICIAL] ..." — the bare number in
+  // brackets is the Android platform version. Only accepted in that exact shape.
+  const bracket = /\[(\d{1,2})(?:\.0)?\]/.exec(text);
+  if (bracket) {
+    const major = Number(bracket[1]);
+    if (major >= 10 && major <= ANDROID_MAX) return `Android ${major}`;
+  }
   return null;
 }
 
