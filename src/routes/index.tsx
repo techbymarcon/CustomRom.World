@@ -84,9 +84,9 @@ function Index() {
         <EditableImage
           contentKey="header.logo"
           defaultSrc={logoAsset.url}
-          defaultWidth={150}
+          defaultWidth={104}
           alt="Evolution X logo"
-          className="max-w-[45vw] sm:max-w-[14rem]"
+          className="max-w-[32vw] sm:max-w-[9rem]"
         />
         <MainMenu />
       </header>
