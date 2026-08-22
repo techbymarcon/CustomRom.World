@@ -141,6 +141,12 @@ export const ROM_LOGOS: Record<string, string> = {
   crDroid: rCrDroid.url,
   LineageOS: rLineageOS.url,
   CyanogenMod: rCyanogenMod.url,
+  "One UI": rOneUI.url,
+  HyperOS: rHyperOS.url,
+  MIUI: rMIUI.url,
+  ColorOS: rColorOS.url,
+  "Realme UI": rRealmeUI.url,
+  "Funtouch OS": rFuntouch.url,
 };
 
 
