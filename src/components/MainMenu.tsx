@@ -1,6 +1,6 @@
 import { useRef, useState } from "react";
 import { createPortal } from "react-dom";
-import { X } from "lucide-react";
+
 import { toast } from "sonner";
 
 import { supabase } from "@/integrations/supabase/client";
@@ -174,29 +174,58 @@ export function MainMenu() {
   const { session, profile, avatarUrl, isAdmin, editMode, setEditMode } = useSite();
 
   const itemClass =
-    "block w-full rounded-2xl px-4 py-3 text-2xl font-semibold uppercase tracking-wide transition-colors hover:bg-primary/10";
+    "block w-full rounded-xl px-3 py-2 text-xl font-semibold uppercase tracking-wide transition-colors hover:bg-primary/10 sm:text-2xl";
+
+  const barBase =
+    "absolute left-0 block h-[3px] rounded-full bg-foreground transition-all duration-300 ease-[cubic-bezier(0.22,1,0.36,1)]";
+
+  const toggle = (
+    <button
+      aria-label={open ? "Close menu" : "Open menu"}
+      aria-expanded={open}
+      onClick={() => {
+        if (!open) setPanel("menu");
+        setOpen((v) => !v);
+      }}
+      className="relative h-4 w-5 shrink-0 sm:h-5 sm:w-6 md:h-[22px] md:w-7"
+    >
+      <span
+        className={`${barBase} ${
+          open ? "top-1/2 w-full -translate-y-1/2 rotate-45" : "top-0 w-3/4"
+        }`}
+      />
+      <span
+        className={`${barBase} top-1/2 w-full -translate-y-1/2 ${
+          open ? "scale-x-0 opacity-0" : "opacity-100"
+        }`}
+      />
+      <span
+        className={`${barBase} ${
+          open ? "top-1/2 w-full -translate-y-1/2 -rotate-45" : "bottom-0 w-1/2"
+        }`}
+      />
+    </button>
+  );
 
   return (
     <>
-      <button
-        aria-label="Open menu"
-        onClick={() => {
-          setPanel("menu");
-          setOpen(true);
-        }}
-        className="flex shrink-0 flex-col items-end gap-[5px] p-1.5"
-      >
-        <span className="block h-1 w-4 rounded-full bg-foreground" />
-        <span className="block h-1 w-6 rounded-full bg-foreground" />
-        <span className="block h-1 w-5 rounded-full bg-foreground" />
-      </button>
+      {/* Spacer keeps header layout stable; the real toggle floats above the overlay. */}
+      <div className="h-4 w-5 shrink-0 sm:h-5 sm:w-6 md:h-[22px] md:w-7" aria-hidden />
+
+      {typeof document !== "undefined" &&
+        createPortal(
+          <div className="pointer-events-none fixed inset-x-0 top-0 z-[110] flex justify-end px-6 pt-8">
+            <div className="pointer-events-auto">{toggle}</div>
+          </div>,
+          document.body,
+        )}
 
       {open &&
         createPortal(
           <div className="fixed inset-0 z-[90] animate-fade-in overflow-y-auto bg-background/40 backdrop-blur-2xl">
 
           <div className="flex min-h-full flex-col px-6 py-8">
-            <div className="flex items-center justify-between">
+            <div className="flex h-11 items-center justify-between">
               {session && (
                 <div className="h-11 w-11 overflow-hidden rounded-full border border-primary/70">
                   {avatarUrl ? (
@@ -208,21 +237,14 @@ export function MainMenu() {
                   )}
                 </div>
               )}
-              <button
-                aria-label="Close menu"
-                onClick={() => setOpen(false)}
-                className="ml-auto p-2"
-              >
-                <X className="h-9 w-9" />
-              </button>
             </div>
 
             <div
               key={panel}
-              className="flex flex-1 animate-fade-in flex-col items-center justify-center py-10 text-center"
+              className="flex flex-1 animate-panel-in flex-col items-center justify-center py-8 text-center"
             >
               {panel === "menu" && (
-                <nav className="flex w-full max-w-xs flex-col gap-2">
+                <nav className="flex w-full max-w-xs flex-col gap-1.5">
                   <button
                     onClick={() => setOpen(false)}
                     className={`${itemClass} text-primary`}
