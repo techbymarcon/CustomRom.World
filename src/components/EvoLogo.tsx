@@ -1,10 +1,10 @@
-import logoAsset from "@/assets/evo-logo.png.asset.json";
+import logoAsset from "@/assets/customrom-world-menu.png.asset.json";
 
 export function EvoLogo({ className = "" }: { className?: string }) {
   return (
     <img
       src={logoAsset.url}
-      alt="Evolution X logo"
+      alt="CustomRom.world logo"
       className={`w-auto object-contain ${className}`}
     />
   );
