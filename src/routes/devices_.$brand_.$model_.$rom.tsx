@@ -73,11 +73,27 @@ function RomPage() {
                 </span>
                 <span className="rounded-full border-2 border-primary bg-background/40 px-3 py-1 text-sm font-bold backdrop-blur-sm">
                   {rom.rom_name}
+                  {rom.rom_version ? ` ${rom.rom_version}` : ""}
                 </span>
+                {rom.rom_type && (
+                  <span className="rounded-full border-2 border-primary/60 bg-background/40 px-3 py-1 text-sm font-bold backdrop-blur-sm">
+                    {ROM_TYPE_LABELS[rom.rom_type]}
+                  </span>
+                )}
+                {rom.official_status && (
+                  <span className="rounded-full border-2 border-primary/60 bg-background/40 px-3 py-1 text-sm font-bold capitalize backdrop-blur-sm">
+                    {rom.official_status}
+                  </span>
+                )}
               </div>
 
               <h1 className="mt-4 text-3xl font-extrabold leading-tight tracking-tight sm:text-4xl">
-                <span className="text-primary">{rom.rom_name}</span> for {rom.device_name}
+                <span className="text-primary">
+                  {rom.rom_name}
+                  {rom.rom_version ? ` ${rom.rom_version}` : ""}
+                </span>{" "}
+                for {rom.device_name}
+                {rom.codename ? ` (${rom.codename})` : ""}
               </h1>
 
               <div className="mt-6 grid grid-cols-2 gap-4">
@@ -85,14 +101,25 @@ function RomPage() {
                 <AndroidCover version={rom.android_version} />
               </div>
 
-              <a
-                href={rom.download_url}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="mt-6 inline-block w-full rounded-full bg-primary px-6 py-3 text-base font-extrabold text-primary-foreground"
-              >
-                Download
-              </a>
+              {rom.download_url ? (
+                <a
+                  href={rom.download_url}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="mt-6 inline-block w-full rounded-full bg-primary px-6 py-3 text-base font-extrabold text-primary-foreground"
+                >
+                  Download
+                </a>
+              ) : rom.source_url ? (
+                <a
+                  href={rom.source_url}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="mt-6 inline-block w-full rounded-full border-2 border-primary bg-background/40 px-6 py-3 text-base font-extrabold backdrop-blur-sm"
+                >
+                  View downloads on source page
+                </a>
+              ) : null}
 
               <Bubble title="ROM details">
                 <ul className="grid gap-1.5">
@@ -100,7 +127,21 @@ function RomPage() {
                     <span className="font-bold">Custom Rom Name:</span> {rom.rom_name}
                   </li>
                   <li>
+                    <span className="font-bold">ROM Version:</span>{" "}
+                    {rom.rom_version ?? "unknown"}
+                  </li>
+                  <li>
                     <span className="font-bold">Android Version:</span> {rom.android_version}
+                  </li>
+                  <li>
+                    <span className="font-bold">Type:</span>{" "}
+                    {rom.rom_type ? ROM_TYPE_LABELS[rom.rom_type] : "unknown"}
+                  </li>
+                  <li>
+                    <span className="font-bold">Codename:</span> {rom.codename ?? "unknown"}
+                  </li>
+                  <li>
+                    <span className="font-bold">Status:</span> {rom.official_status ?? "unknown"}
                   </li>
                   <li>
                     <span className="font-bold">Made by:</span> {rom.made_by}
@@ -108,8 +149,22 @@ function RomPage() {
                   <li>
                     <span className="font-bold">Found on:</span> {rom.found_on}
                   </li>
+                  {rom.source_url && (
+                    <li className="truncate">
+                      <span className="font-bold">Source:</span>{" "}
+                      <a
+                        href={rom.source_url}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="text-primary underline"
+                      >
+                        {rom.source_url}
+                      </a>
+                    </li>
+                  )}
                 </ul>
               </Bubble>
+
 
               {rom.installation_guide && (
                 <Bubble title="Installation Guide">{rom.installation_guide}</Bubble>
