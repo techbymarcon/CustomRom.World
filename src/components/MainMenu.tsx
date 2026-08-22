@@ -174,21 +174,37 @@ export function MainMenu() {
   const { session, profile, avatarUrl, isAdmin, editMode, setEditMode } = useSite();
 
   const itemClass =
-    "block w-full rounded-2xl px-4 py-3 text-2xl font-semibold uppercase tracking-wide transition-colors hover:bg-primary/10";
+    "block w-full rounded-xl px-3 py-2 text-xl font-semibold uppercase tracking-wide transition-colors hover:bg-primary/10 sm:text-2xl";
+
+  const barBase =
+    "absolute left-0 block h-[3px] rounded-full bg-foreground transition-all duration-300 ease-[cubic-bezier(0.22,1,0.36,1)]";
 
   return (
     <>
       <button
-        aria-label="Open menu"
+        aria-label={open ? "Close menu" : "Open menu"}
+        aria-expanded={open}
         onClick={() => {
-          setPanel("menu");
-          setOpen(true);
+          if (!open) setPanel("menu");
+          setOpen((v) => !v);
         }}
-        className="flex shrink-0 flex-col items-end gap-[5px] p-1.5"
+        className="relative z-[110] h-5 w-6 shrink-0 sm:h-6 sm:w-7"
       >
-        <span className="block h-1 w-4 rounded-full bg-foreground" />
-        <span className="block h-1 w-6 rounded-full bg-foreground" />
-        <span className="block h-1 w-5 rounded-full bg-foreground" />
+        <span
+          className={`${barBase} ${
+            open ? "top-1/2 w-full -translate-y-1/2 rotate-45" : "top-0 w-3/4"
+          }`}
+        />
+        <span
+          className={`${barBase} top-1/2 w-full -translate-y-1/2 ${
+            open ? "scale-x-0 opacity-0" : "opacity-100"
+          }`}
+        />
+        <span
+          className={`${barBase} ${
+            open ? "top-1/2 w-full -translate-y-1/2 -rotate-45" : "bottom-0 w-1/2"
+          }`}
+        />
       </button>
 
       {open &&
