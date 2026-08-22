@@ -2,7 +2,7 @@ import { createFileRoute } from "@tanstack/react-router";
 import { useEffect, useState } from "react";
 import { EditableImage, EditableText } from "@/components/Editable";
 import { MainMenu } from "@/components/MainMenu";
-import logoAsset from "@/assets/evo-logo.png.asset.json";
+import logoAsset from "@/assets/customrom-world-v2.png.asset.json";
 import wordmarkAsset from "@/assets/customrom-world.png.asset.json";
 
 export const Route = createFileRoute("/")({
@@ -85,7 +85,7 @@ function Index() {
           contentKey="header.logo"
           defaultSrc={logoAsset.url}
           defaultWidth={88}
-          alt="Evolution X logo"
+          alt="CustomRom.world logo"
           className="max-w-[24vw] sm:max-w-[6rem] md:max-w-[7rem]"
         />
         <MainMenu />
