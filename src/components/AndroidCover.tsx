@@ -43,10 +43,6 @@ export function AndroidCover({ version }: { version: string }) {
           <span className="text-center text-xl font-extrabold text-primary">{version}</span>
         )}
       </div>
-
-      <span className="absolute bottom-2 left-1/2 -translate-x-1/2 rounded-full border border-primary bg-background/70 px-3 py-1 text-xs font-bold tracking-wide">
-        {version}
-      </span>
     </div>
   );
 }
@@ -57,9 +53,7 @@ export function RomCover({ romName }: { romName: string }) {
       <span className="text-2xl font-extrabold leading-tight text-primary sm:text-3xl">
         {romName}
       </span>
-      <span className="absolute bottom-2 left-1/2 -translate-x-1/2 rounded-full border border-primary bg-background/70 px-3 py-1 text-xs font-bold tracking-wide">
-        Custom ROM
-      </span>
+
     </div>
   );
 }
