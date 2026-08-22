@@ -272,6 +272,14 @@ export function MainMenu() {
                     <EditableText contentKey="menu.home" defaultValue="HOME" />
                   </button>
 
+                  <Link
+                    to="/devices"
+                    onClick={() => setOpen(false)}
+                    className={itemClass}
+                  >
+                    <EditableText contentKey="menu.devices" defaultValue="DEVICES" />
+                  </Link>
+
                   {session ? (
                     <button onClick={() => setPanel("account")} className={itemClass}>
                       @{profile?.username ?? "account"}
