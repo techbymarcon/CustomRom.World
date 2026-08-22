@@ -92,7 +92,7 @@ function Index() {
       </header>
 
       <main className="relative z-10">
-        <section className="px-6 pt-24 text-center">
+        <section className="px-6 pt-10 text-center">
           <h1 className="animate-fade-in text-5xl font-extrabold leading-[1.05] tracking-tight">
             <EditableText
               contentKey="hero.title.accent"
@@ -102,14 +102,14 @@ function Index() {
             <EditableText contentKey="hero.title.rest" defaultValue="made simple" />
           </h1>
 
-          <p className="mt-12 text-xl leading-snug text-foreground/90">
+          <p className="mt-4 text-xl leading-snug text-foreground/90">
             <EditableText
               contentKey="hero.subtitle"
               defaultValue="find the perfect Rom for your device"
             />
           </p>
 
-          <div className="mt-16 flex animate-fade-in justify-center">
+          <div className="mt-8 flex animate-fade-in justify-center">
             <EditableImage
               contentKey="hero.wordmark"
               defaultSrc={wordmarkAsset.url}
@@ -119,16 +119,16 @@ function Index() {
             />
           </div>
 
-          <div className="mt-16 flex flex-col items-center gap-5">
+          <div className="mt-8 flex flex-col items-center gap-3">
             <a
               href="#devices"
-              className="w-full max-w-[19rem] rounded-full border-2 border-primary bg-background/40 py-5 text-lg font-bold backdrop-blur-sm transition-colors hover:bg-primary/15"
+              className="w-full max-w-[19rem] rounded-full border-2 border-primary bg-background/40 py-4 text-lg font-bold backdrop-blur-sm transition-colors hover:bg-primary/15"
             >
               <EditableText contentKey="cta.devices" defaultValue="Browse Devices" />
             </a>
             <a
               href="#features"
-              className="w-full max-w-[19rem] rounded-full border-2 border-primary bg-background/40 py-5 text-lg font-bold backdrop-blur-sm transition-colors hover:bg-primary/15"
+              className="w-full max-w-[19rem] rounded-full border-2 border-primary bg-background/40 py-4 text-lg font-bold backdrop-blur-sm transition-colors hover:bg-primary/15"
             >
               <EditableText contentKey="cta.features" defaultValue="Explore Features" />
             </a>
