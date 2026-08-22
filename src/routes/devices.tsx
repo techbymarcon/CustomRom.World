@@ -3,19 +3,8 @@ import { createFileRoute, Link } from "@tanstack/react-router";
 import { EditableText } from "@/components/Editable";
 import { Fog } from "@/components/Fog";
 import { Header } from "@/components/Header";
+import { BRANDS } from "@/lib/devices";
 
-const BRANDS = [
-  "Google Pixel",
-  "Samsung",
-  "Sony",
-  "Motorola",
-  "Poco",
-  "Xiaomi",
-  "Redmi",
-  "OnePlus",
-  "Nothing",
-  "Asus",
-];
 
 export const Route = createFileRoute("/devices")({
   head: () => ({
