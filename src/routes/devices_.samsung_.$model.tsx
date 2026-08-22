@@ -63,7 +63,10 @@ function ModelPage() {
   const remove = useMutation({
     mutationFn: (id: string) => removeFn({ data: { id } }),
     onSuccess: async (res) => {
-      if (!res.ok) return toast.error(res.error);
+      if (!res.ok) {
+        toast.error(res.error);
+        return;
+      }
       toast.success("ROM page deleted");
       await queryClient.invalidateQueries({ queryKey: ["roms", "samsung", model] });
     },
