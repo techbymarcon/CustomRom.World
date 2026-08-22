@@ -42,6 +42,7 @@ import rPixelExperience from "@/assets/roms/pixelexperience.png.asset.json";
 import rCrDroid from "@/assets/roms/crdroid.png.asset.json";
 import rLineageOS from "@/assets/roms/lineageos.png.asset.json";
 import rCyanogenMod from "@/assets/roms/cyanogenmod.webp.asset.json";
+import rRomPackage from "@/assets/roms/rompackage.png.asset.json";
 
 export const ANDROID_VERSIONS = [
   "Android 2.3 Gingerbread",
