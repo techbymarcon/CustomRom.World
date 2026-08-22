@@ -210,6 +210,10 @@ function RomForm({
   const navigate = useNavigate();
   const [romName, setRomName] = useState<string>(ROM_NAMES[0]!);
   const [version, setVersion] = useState<string>(ANDROID_VERSIONS[ANDROID_VERSIONS.length - 1]!);
+  const [romVersion, setRomVersion] = useState("");
+  const [codename, setCodename] = useState("");
+  const [sourceUrl, setSourceUrl] = useState("");
+  const [official, setOfficial] = useState<"" | "official" | "unofficial">("");
   const [downloadUrl, setDownloadUrl] = useState("");
   const [madeBy, setMadeBy] = useState("");
   const [foundOn, setFoundOn] = useState("");
@@ -218,23 +222,35 @@ function RomForm({
   const [saving, setSaving] = useState(false);
 
   const submit = async () => {
-    if (!downloadUrl.trim() || !madeBy.trim() || !foundOn.trim()) {
-      toast.error("Download link, Made by and Found on are required.");
+    if (!madeBy.trim() || !foundOn.trim()) {
+      toast.error("Made by and Found on are required.");
+      return;
+    }
+    if (!downloadUrl.trim() && !sourceUrl.trim()) {
+      toast.error("Add a download link or at least the source page URL.");
       return;
     }
     setSaving(true);
-    const slug = slugify(`${romName}-${version}`);
+    const family = normalizeRomFamily(romName) ?? romName;
+    const slug = romSlug(family, romVersion.trim() || null, version);
     const res = await createFn({
       data: {
         brand,
         device_slug: model,
         device_name: deviceName,
+        codename: codename.trim() || null,
         slug,
         rom_name: romName,
+        rom_version: romVersion.trim() || null,
         android_version: version,
-        download_url: downloadUrl.trim(),
+        rom_type: normalizeRomFamily(romName)
+          ? romTypeForFamily(normalizeRomFamily(romName)!)
+          : "aosp",
+        source_url: sourceUrl.trim() || null,
+        download_url: downloadUrl.trim() || null,
         made_by: madeBy.trim(),
         found_on: foundOn.trim(),
+        official_status: official || null,
         installation_guide: guide.trim() || null,
         additional_info: extra.trim() || null,
       },
@@ -248,6 +264,7 @@ function RomForm({
     onSaved();
     void navigate({ to: "/devices/$brand/$model/$rom", params: { brand, model, rom: slug } });
   };
+
 
   return (
     <div className="fixed inset-0 z-[100] flex animate-fade-in items-start justify-center overflow-y-auto bg-black/60 p-4 backdrop-blur-sm">
