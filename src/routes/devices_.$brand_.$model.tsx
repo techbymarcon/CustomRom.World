@@ -314,9 +314,30 @@ function RomForm({
             <AndroidCover version={version} />
           </div>
 
-          <Field label="Download link" value={downloadUrl} onChange={setDownloadUrl} />
+          <Field
+            label="ROM version (e.g. 7.64 — leave blank if unknown)"
+            value={romVersion}
+            onChange={setRomVersion}
+          />
+          <Field label="Device codename (optional)" value={codename} onChange={setCodename} />
+          <Field label="Source page URL" value={sourceUrl} onChange={setSourceUrl} />
+          <Field label="Download link (optional)" value={downloadUrl} onChange={setDownloadUrl} />
           <Field label="Made by" value={madeBy} onChange={setMadeBy} />
           <Field label="Found on" value={foundOn} onChange={setFoundOn} />
+
+          <label className="text-sm font-bold">
+            Official status
+            <select
+              value={official}
+              onChange={(e) => setOfficial(e.target.value as typeof official)}
+              className="mt-1 w-full rounded-xl border border-input bg-background p-2.5 text-sm"
+            >
+              <option value="">unknown</option>
+              <option value="official">official</option>
+              <option value="unofficial">unofficial</option>
+            </select>
+          </label>
+
 
           <label className="text-sm font-bold">
             Installation guide
