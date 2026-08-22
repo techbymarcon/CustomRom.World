@@ -117,6 +117,7 @@ export const ANDROID_LOGOS: Record<string, string> = {
   "Android 14": a14.url,
   "Android 15": a15.url,
   "Android 16": a16.url,
+  "Android 17": a17.url,
 };
 
 export const ROM_LOGOS: Record<string, string> = {
