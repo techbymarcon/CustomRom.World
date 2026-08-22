@@ -88,6 +88,7 @@ export const ROM_NAMES = [
   "OriginOS",
   "Nothing OS",
   "MagicOS",
+  "CyanogenMod",
   "AOSP",
 ] as const;
 
@@ -122,6 +123,16 @@ export const ROM_LOGOS: Record<string, string> = {
   "/ e / OS": rEOS.url,
   "iodéOS": rIodeOS.url,
   DivestOS: rDivestOS.url,
+  RisingOS: rRisingOS.url,
+  VoltageOS: rVoltageOS.url,
+  DerpFest: rDerpFest.url,
+  PixelOS: rPixelOS.url,
+  "Evolution X": rEvolutionX.url,
+  ArrowOS: rArrowOS.url,
+  "Pixel Experience": rPixelExperience.url,
+  crDroid: rCrDroid.url,
+  LineageOS: rLineageOS.url,
+  CyanogenMod: rCyanogenMod.url,
 };
 
 
