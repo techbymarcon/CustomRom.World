@@ -112,29 +112,59 @@ function ModelPage() {
                 No ROMs archived for this device yet.
               </p>
             )}
-            {roms.map((rom) => (
-              <div
-                key={rom.id}
-                className="flex items-center justify-between gap-3 rounded-3xl border-2 border-primary bg-background/40 p-4 text-left backdrop-blur-sm"
-              >
-                <Link
-                  to="/devices/samsung/$model/$rom"
-                  params={{ model, rom: rom.slug }}
-                  className="min-w-0 flex-1"
+            {roms.map((rom) => {
+              const highlight =
+                rom.android_version === "Android 17"
+                  ? ({ label: "powered by Android 17", tone: "17" } as const)
+                  : rom.android_version === "Android 16"
+                    ? ({ label: "powered by Android 16", tone: "16" } as const)
+                    : null;
+              const logo = highlight ? ANDROID_LOGOS[rom.android_version] : undefined;
+              const toneText = highlight?.tone === "17" ? "text-android-17" : "text-android-16";
+              const toneBorder =
+                highlight?.tone === "17" ? "border-android-17" : "border-android-16";
+
+              return (
+                <div
+                  key={rom.id}
+                  className={`relative flex items-center justify-between gap-3 overflow-hidden rounded-3xl border-2 bg-background/40 p-4 text-left backdrop-blur-sm ${
+                    highlight ? toneBorder : "border-primary"
+                  }`}
                 >
-                  <p className="truncate text-lg font-bold">{rom.rom_name}</p>
-                  <p className="mt-1 text-sm text-primary">{rom.android_version}</p>
-                </Link>
-                {isAdmin && (
-                  <button
-                    onClick={() => remove.mutate(rom.id)}
-                    className="rounded-full border border-destructive px-3 py-1.5 text-xs font-bold text-destructive"
+                  {highlight && <RomButtonParticles tone={highlight.tone} />}
+
+                  {highlight && logo && (
+                    <img
+                      src={logo}
+                      alt={`${rom.android_version} logo`}
+                      className="pointer-events-none absolute right-2 top-2 h-10 w-10 object-contain sm:h-12 sm:w-12"
+                    />
+                  )}
+
+                  <Link
+                    to="/devices/samsung/$model/$rom"
+                    params={{ model, rom: rom.slug }}
+                    className="relative z-10 min-w-0 flex-1 pr-12"
                   >
-                    Delete
-                  </button>
-                )}
-              </div>
-            ))}
+                    <p className="truncate text-lg font-bold">{rom.rom_name}</p>
+                    <p className={`mt-1 text-sm ${highlight ? toneText : "text-primary"}`}>
+                      {rom.android_version}
+                    </p>
+                    {highlight && (
+                      <p className={`mt-0.5 text-xs font-bold ${toneText}`}>{highlight.label}</p>
+                    )}
+                  </Link>
+                  {isAdmin && (
+                    <button
+                      onClick={() => remove.mutate(rom.id)}
+                      className="relative z-10 rounded-full border border-destructive px-3 py-1.5 text-xs font-bold text-destructive"
+                    >
+                      Delete
+                    </button>
+                  )}
+                </div>
+              );
+            })}
           </div>
         </section>
       </main>
