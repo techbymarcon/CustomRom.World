@@ -1,4 +1,4 @@
-import { createFileRoute } from "@tanstack/react-router";
+import { createFileRoute, Link } from "@tanstack/react-router";
 
 import { EditableText } from "@/components/Editable";
 import { Fog } from "@/components/Fog";
