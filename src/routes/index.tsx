@@ -1,9 +1,9 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { useEffect, useState } from "react";
-import { EvoLogo } from "@/components/EvoLogo";
 import { EditableImage, EditableText } from "@/components/Editable";
 import { MainMenu } from "@/components/MainMenu";
 import logoAsset from "@/assets/evo-logo.png.asset.json";
+import wordmarkAsset from "@/assets/customrom-world.png.asset.json";
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -75,15 +75,6 @@ function Fog() {
   );
 }
 
-function Wordmark({ className = "" }: { className?: string }) {
-  return (
-    <span className={`inline-flex items-baseline gap-1 ${className}`}>
-      <EvoLogo className="h-[0.95em] w-auto -mb-[0.05em] text-foreground" />
-      <span className="font-extrabold italic tracking-tight">volution X</span>
-    </span>
-  );
-}
-
 function Index() {
   return (
     <div className="relative min-h-screen bg-background text-foreground">
@@ -93,15 +84,16 @@ function Index() {
         <EditableImage
           contentKey="header.logo"
           defaultSrc={logoAsset.url}
-          defaultWidth={132}
+          defaultWidth={150}
           alt="Evolution X logo"
+          className="max-w-[45vw] sm:max-w-[14rem]"
         />
         <MainMenu />
       </header>
 
       <main className="relative z-10">
         <section className="px-6 pt-24 text-center">
-          <h1 className="text-5xl font-extrabold leading-[1.05] tracking-tight">
+          <h1 className="animate-fade-in text-5xl font-extrabold leading-[1.05] tracking-tight">
             <EditableText
               contentKey="hero.title.accent"
               defaultValue="Custom Romming"
@@ -115,13 +107,19 @@ function Index() {
               contentKey="hero.subtitle"
               defaultValue="Pixel UI, Customization & more."
             />
-            <br />
-            We are
-            <br />
-            <Wordmark className="mt-1 text-4xl" />
           </p>
 
-          <div className="mt-14 flex flex-col items-center gap-5">
+          <div className="mt-16 flex animate-fade-in justify-center">
+            <EditableImage
+              contentKey="hero.wordmark"
+              defaultSrc={wordmarkAsset.url}
+              defaultWidth={520}
+              alt="CustomRom.world by techbymarcon"
+              className="max-w-[86vw] sm:max-w-[32rem]"
+            />
+          </div>
+
+          <div className="mt-16 flex flex-col items-center gap-5">
             <a
               href="#devices"
               className="w-full max-w-[19rem] rounded-full border-2 border-primary bg-background/40 py-5 text-lg font-bold backdrop-blur-sm transition-colors hover:bg-primary/15"

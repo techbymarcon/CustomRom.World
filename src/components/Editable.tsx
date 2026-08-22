@@ -1,5 +1,6 @@
 import { useEffect, useRef, useState, type ElementType, type ReactNode } from "react";
 import { Pencil } from "lucide-react";
+import { toast } from "sonner";
 
 import { useSite } from "@/lib/site";
 import { supabase } from "@/integrations/supabase/client";
@@ -17,8 +18,8 @@ function EditorShell({
 }) {
   if (!open) return null;
   return (
-    <div className="fixed inset-0 z-[100] flex items-end justify-center bg-black/60 p-4 sm:items-center">
-      <div className="w-full max-w-md rounded-3xl border-2 border-primary bg-card p-6 shadow-2xl">
+    <div className="fixed inset-0 z-[100] flex animate-fade-in items-end justify-center bg-black/60 p-4 backdrop-blur-sm sm:items-center">
+      <div className="w-full max-w-md animate-scale-in rounded-3xl border-2 border-primary bg-card p-6 shadow-2xl">
         <div className="mb-4 flex items-center justify-between">
           <h3 className="text-lg font-bold">{title}</h3>
           <button onClick={onClose} className="text-sm text-muted-foreground hover:text-foreground">
@@ -105,6 +106,7 @@ export function EditableText({
             onClick={async () => {
               setSaving(true);
               await save(contentKey, { text_value: draftText, color: draftColor });
+              toast.success("Saved for everyone");
               setSaving(false);
               setOpen(false);
             }}
@@ -116,6 +118,7 @@ export function EditableText({
             onClick={async () => {
               setSaving(true);
               await save(contentKey, { text_value: null, color: null });
+              toast("Text reset to default");
               setSaving(false);
               setOpen(false);
             }}
@@ -158,7 +161,7 @@ export function EditableImage({
     <img
       src={src}
       alt={alt}
-      style={{ width: `${width}px` }}
+      style={{ width: `min(${width}px, 100%)` }}
       className={`h-auto max-w-full object-contain ${className}`}
     />
   );
@@ -183,7 +186,12 @@ export function EditableImage({
             const upload = await supabase.storage.from("site-images").upload(path, file, {
               upsert: true,
             });
-            if (!upload.error) await save(contentKey, { image_url: path });
+            if (!upload.error) {
+              await save(contentKey, { image_url: path });
+              toast.success("Image updated for everyone");
+            } else {
+              toast.error("Upload failed. Try another file.");
+            }
             setBusy(false);
             setOpen(false);
           }}
@@ -205,6 +213,7 @@ export function EditableImage({
             onClick={async () => {
               setBusy(true);
               await save(contentKey, { width: draftWidth });
+              toast.success("Size saved for everyone");
               setBusy(false);
               setOpen(false);
             }}
@@ -216,6 +225,7 @@ export function EditableImage({
             onClick={async () => {
               setBusy(true);
               await save(contentKey, { image_url: null, width: null });
+              toast("Image reset to default");
               setBusy(false);
               setOpen(false);
             }}
