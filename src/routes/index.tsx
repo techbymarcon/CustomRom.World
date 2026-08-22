@@ -37,7 +37,7 @@ function Fog() {
   const hueShift = y * 0.35;
 
   return (
-    <div className="pointer-events-none fixed inset-0 -z-10 overflow-hidden">
+    <div className="pointer-events-none fixed inset-0 z-0 overflow-hidden">
       <div
         className="fog-layer"
         style={{
@@ -86,7 +86,7 @@ function Index() {
     <div className="relative min-h-screen bg-background text-foreground">
       <Fog />
 
-      <header className="flex items-center justify-between px-6 pt-8">
+      <header className="relative z-10 flex items-center justify-between px-6 pt-8">
         <EvoLogo className="h-14 w-auto text-foreground" />
         <button aria-label="Open menu" className="flex flex-col items-end gap-2 p-2">
           <span className="block h-1.5 w-6 rounded-full bg-foreground" />
@@ -95,7 +95,7 @@ function Index() {
         </button>
       </header>
 
-      <main>
+      <main className="relative z-10">
         <section className="px-6 pt-24 text-center">
           <h1 className="text-5xl font-extrabold leading-[1.05] tracking-tight">
             <span className="text-primary">Evolve</span> your Android device
