@@ -173,3 +173,28 @@
   filter: blur(60px);
   will-change: transform, opacity, filter;
 }
+
+@keyframes particle-rise {
+  0% {
+    transform: translateY(105%) rotate(45deg);
+    opacity: 0;
+  }
+  12% {
+    opacity: 0.9;
+  }
+  80% {
+    opacity: 0.5;
+  }
+  100% {
+    transform: translateY(-15%) rotate(45deg);
+    opacity: 0;
+  }
+}
+
+@utility particle-rise {
+  bottom: 0;
+  animation-name: particle-rise;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  border-radius: 2px;
+}
