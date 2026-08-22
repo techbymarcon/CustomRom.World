@@ -259,10 +259,11 @@ export function MainMenu() {
 
             <div
               key={panel}
-              className="flex flex-1 animate-panel-in flex-col items-center justify-center py-8 text-center"
+              className="flex flex-1 animate-panel-in flex-col items-center justify-center py-6 text-center"
             >
               {panel === "menu" && (
-                <nav className="flex w-full max-w-xs flex-col gap-1.5">
+                <nav className="flex w-full max-w-xs flex-col gap-1">
+
                   <button
                     onClick={() => setOpen(false)}
                     className={`${itemClass} text-primary`}
