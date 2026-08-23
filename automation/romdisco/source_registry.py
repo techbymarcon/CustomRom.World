@@ -299,7 +299,71 @@ SOURCES: tuple[Source, ...] = (
            "https://flash.android.com", 85),
 )
 
+# ---------------- extra firmware database ----------------
+SOURCES = SOURCES + (
+    Source("romprovider", "ROM Provider", "firmware_database", "romprovider.com",
+           "https://romprovider.com", 60),
+)
+
+#: Direct, source-specific device pages probed *before* any web search.
+_DEVICE_URLS: dict[str, tuple[str, ...]] = {
+    "lineageos_dl": ("https://download.lineageos.org/devices/{code}",
+                     "https://download.lineageos.org/devices/{code}/builds"),
+    "lineageos_site": ("https://wiki.lineageos.org/devices/{code}",),
+    "crdroid_site": ("https://crdroid.net/{code}",),
+    "pe_dl": ("https://get.pixelexperience.org/{code}",),
+    "evox_site": ("https://evolution-x.org/downloads/{code}",),
+    "arrow_site": ("https://arrowos.net/download/{code}",),
+    "pixelos_site": ("https://pixelos.net/download/{code}",),
+    "elixir_site": ("https://projectelixiros.com/device/{code}",),
+    "rr_site": ("https://resurrectionremix.com/downloads/{code}",),
+    "calyx_site": ("https://calyxos.org/install/devices/{code}/",),
+    "graphene_site": ("https://grapheneos.org/releases#{code}",),
+    "xfu": ("https://xiaomifirmwareupdater.com/miui/{code}/",
+            "https://xiaomifirmwareupdater.com/hyperos/{code}/"),
+    "hyperosupdates": ("https://hyperosupdates.com/{code}/",),
+    "mifirm": ("https://mifirm.net/model/{code}",),
+    "samfw": ("https://samfw.com/firmware/{slug}",),
+    "sfirmware": ("https://sfirmware.com/samsung-{slug}",),
+    "oxygenupdater": ("https://oxygenupdater.com/devices/",),
+}
+
+#: Source-specific search patterns (device pages, threads, project/file pages).
+_QUERY_TEMPLATES: dict[str, tuple[str, ...]] = {
+    "xda": ("site:xdaforums.com {code} ROM",
+            "site:xdaforums.com {q} {code}",
+            "site:xdaforums.com {code} firmware download"),
+    "fourpda": ("site:4pda.to {q} {code}",),
+    "sourceforge": ("site:sourceforge.net {code} files",
+                    "site:sourceforge.net {code} rom"),
+    "afh": ("site:androidfilehost.com {code}",),
+    "github": ("site:github.com {code} device tree releases",),
+    "gitlab": ("site:gitlab.com {code} android",),
+    "samfw": ("site:samfw.com {q} firmware",),
+    "sammobile": ("site:sammobile.com/firmwares {q}",),
+    "samfrew": ("site:samfrew.com {q}",),
+    "xfu": ("site:xiaomifirmwareupdater.com {code}",),
+    "hyperosupdates": ("site:hyperosupdates.com {code}",),
+    "romprovider": ("site:romprovider.com {q} firmware",),
+    "nothing_community": ("site:nothing.community {q} ota",),
+    "oxygenupdater": ("site:oxygenupdater.com {q}",),
+    "realmefirmware": ("site:realmefirmware.com {q}",),
+    "oppofw": ("site:oppo-firmware.com {q}",),
+    "firmwarefile": ("site:firmwarefile.com {q} firmware",),
+    "archive": ("site:archive.org {code} rom",),
+}
+
+SOURCES = tuple(
+    replace(
+        s,
+        device_urls=s.device_urls or _DEVICE_URLS.get(s.id, ()),
+        query_templates=s.query_templates or _QUERY_TEMPLATES.get(s.id, ()),
+    )
+    for s in SOURCES
+)
+
 _BY_ID = {s.id: s for s in SOURCES}
+
 
 
 class SourceRegistry:
