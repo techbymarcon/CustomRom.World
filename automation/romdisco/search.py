@@ -50,6 +50,25 @@ def _fetch(url: str, timeout: float = 15.0, headers: dict[str, str] | None = Non
         return 0, ""
 
 
+def fetch_page(url: str, timeout: float = 15.0) -> tuple[str, str] | None:
+    """Fetch a direct source page. Returns (title, text) or None on any failure.
+
+    Used for source-first probing: a 404/403/timeout simply means the device page
+    does not exist on that source, never a fabricated candidate.
+    """
+    if os.environ.get("ROMDISCO_OFFLINE"):
+        return None
+    status, body = _fetch(url, timeout=timeout)
+    if status != 200 or not body:
+        return None
+    title_m = re.search(r"<title[^>]*>(.*?)</title>", body, re.S | re.I)
+    title = _strip_tags(title_m.group(1)) if title_m else ""
+    body = re.sub(r"<(script|style)[^>]*>.*?</\1>", " ", body, flags=re.S | re.I)
+    links = " ".join(re.findall(r'href="([^"]+\.(?:zip|img|tar|tar\.md5|xz))"', body, re.I))
+    text = re.sub(r"\s+", " ", _strip_tags(body))[:8000]
+    return title, f"{text} {links}".strip()
+
+
 def _strip_tags(text: str) -> str:
     return html.unescape(re.sub(r"<[^>]+>", " ", text)).strip()
 
