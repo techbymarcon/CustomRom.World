@@ -4,7 +4,8 @@ from __future__ import annotations
 
 import unittest
 
-from .discovery import build_queries, discover
+from .discovery import (build_fallback_queries, build_probe_urls, build_queries,
+                        build_source_queries, discover)
 from .extract import (normalize_family, parse_android_version, parse_build_date,
                       parse_rom_version)
 from .models import Candidate, Device
@@ -63,6 +64,100 @@ class SourceRegistryTest(unittest.TestCase):
     def test_normalize_url(self) -> None:
         self.assertEqual(normalize_url("HTTPS://WWW.XdaForums.com/t/abc/?utm_source=x#post-1"),
                          "https://xdaforums.com/t/abc")
+
+
+class SourceClassTest(unittest.TestCase):
+    def test_rejected_domains_explicit(self) -> None:
+        for host in ("mi.com", "mistoreitalia.com", "amazon.com", "aranzulla.it",
+                     "wikipedia.org", "unieuro.it", "www.mi.com"):
+            with self.subTest(host=host):
+                self.assertFalse(registry.is_registered(f"https://{host}/xiaomi-pad-5-nabu-rom"))
+
+    def test_accepted_hosts_explicit(self) -> None:
+        for url in ("https://xdaforums.com/t/nabu-rom.1/",
+                    "https://github.com/LineageOS",
+                    "https://github.com/LineageOS/android_device_xiaomi_nabu",
+                    "https://sourceforge.net/projects/crdroid/files/nabu/",
+                    "https://androidfilehost.com/?fid=1",
+                    "https://romprovider.com/samsung-firmware/"):
+            with self.subTest(url=url):
+                self.assertTrue(registry.is_registered(url), url)
+
+    def test_approved_subdomains_inherit(self) -> None:
+        for url, sid in (("https://mirrorbits.lineageos.org/full/nabu/", "lineageos_site"),
+                         ("https://wiki.lineageos.org/devices/nabu", "lineageos_site"),
+                         ("https://files.xdaforums.com/attachments/x.zip", "xda"),
+                         ("https://crdroid.net.cdn.crdroid.net/nabu", "crdroid_site")):
+            with self.subTest(url=url):
+                source = registry.match_url(url)
+                self.assertIsNotNone(source, url)
+                assert source is not None
+                self.assertEqual(source.id, sid)
+
+    def test_lookalike_domains_rejected(self) -> None:
+        for url in ("https://lineageos.org.rom-download.xyz/nabu",
+                    "https://not-lineageos.org/nabu",
+                    "https://xdaforums.com.free-roms.net/t/nabu",
+                    "https://github.com.evil.io/LineageOS",
+                    "https://fake-grapheneos.org/releases"):
+            with self.subTest(url=url):
+                self.assertIsNone(registry.match_url(url), url)
+
+    def test_source_classes(self) -> None:
+        expected = {
+            "lineageos_dl": "OFFICIAL",
+            "lineageos_site": "OFFICIAL",
+            "lineageos_gh": "DEVELOPMENT",
+            "xfu": "FIRMWARE_DATABASE",
+            "xda": "COMMUNITY",
+            "afh": "DOWNLOAD_HOST",
+            "mega": "DOWNLOAD_HOST",
+            "gdrive": "DOWNLOAD_HOST",
+            "telegram": "ARCHIVE_MIRROR",
+            "wayback": "ARCHIVE_MIRROR",
+        }
+        for sid, cls in expected.items():
+            source = registry.get(sid)
+            assert source is not None, sid
+            self.assertEqual(source.source_class, cls, sid)
+
+    def test_file_hosts_rank_below_official(self) -> None:
+        official = registry.get("lineageos_dl")
+        firmware = registry.get("xfu")
+        afh = registry.get("afh")
+        mega = registry.get("mega")
+        assert official and firmware and afh and mega
+        self.assertGreater(official.authority, firmware.authority)
+        self.assertGreater(firmware.authority, afh.authority)
+        self.assertGreater(afh.authority, mega.authority)
+        self.assertTrue(official.is_authoritative)
+        self.assertFalse(afh.is_authoritative)
+        self.assertFalse(mega.is_authoritative)
+        self.assertFalse(mega.can_verify)
+
+
+class SourceFirstDiscoveryTest(unittest.TestCase):
+    def test_probe_urls_are_registered_and_device_specific(self) -> None:
+        urls = build_probe_urls(NABU, registry)
+        self.assertTrue(urls)
+        for url in urls:
+            self.assertTrue(registry.is_registered(url), url)
+        self.assertIn("https://download.lineageos.org/devices/nabu", urls)
+        self.assertIn("https://crdroid.net/nabu", urls)
+
+    def test_source_queries_come_first(self) -> None:
+        source_queries = build_source_queries(NABU, registry)
+        queries = build_queries(NABU, registry, max_queries=500)
+        self.assertTrue(all(q.startswith("site:") for q in source_queries[:5]))
+        self.assertEqual(queries[:len(source_queries)], source_queries)
+        fallback = build_fallback_queries(NABU)
+        self.assertGreater(queries.index(fallback[0]), 0)
+
+    def test_no_fallback_mode_is_source_only(self) -> None:
+        queries = build_queries(NABU, registry, max_queries=500, include_fallback=False)
+        self.assertTrue(queries)
+        for q in queries:
+            self.assertTrue(q.startswith("site:"), q)
 
 
 class ExtractTest(unittest.TestCase):
