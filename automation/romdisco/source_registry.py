@@ -122,11 +122,25 @@ class Source:
 
 
 
+#: Source-specific search patterns. ``{q}`` = quoted device name,
+#: ``{code}`` = codename, ``{slug}`` = slugified device name.
+GITHUB_QUERIES = (
+    "site:{host}{prefix} {code}",
+    "site:{host}{prefix} {code} releases",
+    "site:{host}{prefix} device_{code}",
+)
+
+
 def _gh(org: str, family: str, sid: str, trust: int = 85) -> Source:
     return Source(
         id=sid, name=f"{family} on GitHub", kind="official_code", host="github.com",
         canonical_url=f"https://github.com/{org}", trust=trust,
         path_prefixes=(f"/{org}/",), family=family,
+        device_urls=(
+            f"https://github.com/{org}?q={{code}}&type=all",
+            f"https://github.com/search?q=org%3A{org}+{{code}}&type=repositories",
+        ),
+        query_templates=GITHUB_QUERIES,
     )
 
 
@@ -135,7 +149,10 @@ def _gl(group: str, family: str, sid: str) -> Source:
         id=sid, name=f"{family} on GitLab", kind="official_code", host="gitlab.com",
         canonical_url=f"https://gitlab.com/{group}", trust=85,
         path_prefixes=(f"/{group}/",), family=family,
+        device_urls=(f"https://gitlab.com/groups/{group}/-/search?search={{code}}",),
+        query_templates=GITHUB_QUERIES,
     )
+
 
 
 SOURCES: tuple[Source, ...] = (
