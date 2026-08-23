@@ -1,0 +1,946 @@
+{
+  "metadata": {
+    "schema_version": 2,
+    "generator": "romdisco",
+    "created_at": "2026-08-23T18:45:04+00:00",
+    "updated_at": "2026-08-23T18:45:04+00:00",
+    "counts": {
+      "devices": 1,
+      "roms": 0,
+      "sources": 72,
+      "verified": 0,
+      "candidates": 0
+    }
+  },
+  "devices": [
+    {
+      "name": "Xiaomi Pad 5",
+      "codename": "nabu",
+      "manufacturer": "Xiaomi",
+      "aliases": [],
+      "id": "xiaomi:nabu"
+    }
+  ],
+  "sources": [
+    {
+      "id": "lineageos_site",
+      "name": "LineageOS",
+      "kind": "official_project",
+      "host": "lineageos.org",
+      "canonical_url": "https://lineageos.org",
+      "trust": 98,
+      "path_prefixes": [],
+      "family": "LineageOS",
+      "include_subdomains": false,
+      "can_verify": true
+    },
+    {
+      "id": "lineageos_dl",
+      "name": "LineageOS Downloads",
+      "kind": "official_download",
+      "host": "download.lineageos.org",
+      "canonical_url": "https://download.lineageos.org",
+      "trust": 100,
+      "path_prefixes": [],
+      "family": "LineageOS",
+      "include_subdomains": false,
+      "can_verify": true
+    },
+    {
+      "id": "lineageos_gh",
+      "name": "LineageOS on GitHub",
+      "kind": "official_code",
+      "host": "github.com",
+      "canonical_url": "https://github.com/LineageOS",
+      "trust": 90,
+      "path_prefixes": [
+        "/LineageOS/"
+      ],
+      "family": "LineageOS",
+      "include_subdomains": false,
+      "can_verify": true
+    },
+    {
+      "id": "lineageos_gerrit",
+      "name": "LineageOS Gerrit",
+      "kind": "official_code",
+      "host": "review.lineageos.org",
+      "canonical_url": "https://review.lineageos.org",
+      "trust": 80,
+      "path_prefixes": [],
+      "family": "LineageOS",
+      "include_subdomains": false,
+      "can_verify": true
+    },
+    {
+      "id": "crdroid_site",
+      "name": "crDroid",
+      "kind": "official_project",
+      "host": "crdroid.net",
+      "canonical_url": "https://crdroid.net",
+      "trust": 98,
+      "path_prefixes": [],
+      "family": "crDroid",
+      "include_subdomains": false,
+      "can_verify": true
+    },
+    {
+      "id": "crdroid_gh",
+      "name": "crDroid on GitHub",
+      "kind": "official_code",
+      "host": "github.com",
+      "canonical_url": "https://github.com/crdroidandroid",
+      "trust": 85,
+      "path_prefixes": [
+        "/crdroidandroid/"
+      ],
+      "family": "crDroid",
+      "include_subdomains": false,
+      "can_verify": true
+    },
+    {
+      "id": "pe_dl",
+      "name": "Pixel Experience Downloads",
+      "kind": "official_download",
+      "host": "get.pixelexperience.org",
+      "canonical_url": "https://get.pixelexperience.org",
+      "trust": 100,
+      "path_prefixes": [],
+      "family": "Pixel Experience",
+      "include_subdomains": false,
+      "can_verify": true
+    },
+    {
+      "id": "pe_gh",
+      "name": "Pixel Experience on GitHub",
+      "kind": "official_code",
+      "host": "github.com",
+      "canonical_url": "https://github.com/PixelExperience",
+      "trust": 85,
+      "path_prefixes": [
+        "/PixelExperience/"
+      ],
+      "family": "Pixel Experience",
+      "include_subdomains": false,
+      "can_verify": true
+    },
+    {
+      "id": "evox_site",
+      "name": "Evolution X",
+      "kind": "official_project",
+      "host": "evolution-x.org",
+      "canonical_url": "https://evolution-x.org",
+      "trust": 98,
+      "path_prefixes": [],
+      "family": "Evolution X",
+      "include_subdomains": false,
+      "can_verify": true
+    },
+    {
+      "id": "evox_cdn",
+      "name": "Evolution X CDN",
+      "kind": "official_download",
+      "host": "cdn.evolution-x.org",
+      "canonical_url": "https://cdn.evolution-x.org",
+      "trust": 100,
+      "path_prefixes": [],
+      "family": "Evolution X",
+      "include_subdomains": false,
+      "can_verify": true
+    },
+    {
+      "id": "evox_gh",
+      "name": "Evolution X on GitHub",
+      "kind": "official_code",
+      "host": "github.com",
+      "canonical_url": "https://github.com/Evolution-X",
+      "trust": 85,
+      "path_prefixes": [
+        "/Evolution-X/"
+      ],
+      "family": "Evolution X",
+      "include_subdomains": false,
+      "can_verify": true
+    },
+    {
+      "id": "arrow_site",
+      "name": "ArrowOS",
+      "kind": "official_project",
+      "host": "arrowos.net",
+      "canonical_url": "https://arrowos.net",
+      "trust": 96,
+      "path_prefixes": [],
+      "family": "ArrowOS",
+      "include_subdomains": false,
+      "can_verify": true
+    },
+    {
+      "id": "arrow_gh",
+      "name": "ArrowOS on GitHub",
+      "kind": "official_code",
+      "host": "github.com",
+      "canonical_url": "https://github.com/ArrowOS",
+      "trust": 85,
+      "path_prefixes": [
+        "/ArrowOS/"
+      ],
+      "family": "ArrowOS",
+      "include_subdomains": false,
+      "can_verify": true
+    },
+    {
+      "id": "pixelos_site",
+      "name": "PixelOS",
+      "kind": "official_project",
+      "host": "pixelos.net",
+      "canonical_url": "https://pixelos.net",
+      "trust": 96,
+      "path_prefixes": [],
+      "family": "PixelOS",
+      "include_subdomains": false,
+      "can_verify": true
+    },
+    {
+      "id": "pixelos_gh",
+      "name": "PixelOS on GitHub",
+      "kind": "official_code",
+      "host": "github.com",
+      "canonical_url": "https://github.com/PixelOS-AOSP",
+      "trust": 85,
+      "path_prefixes": [
+        "/PixelOS-AOSP/"
+      ],
+      "family": "PixelOS",
+      "include_subdomains": false,
+      "can_verify": true
+    },
+    {
+      "id": "derpfest_gh",
+      "name": "DerpFest on GitHub",
+      "kind": "official_code",
+      "host": "github.com",
+      "canonical_url": "https://github.com/DerpFest-AOSP",
+      "trust": 85,
+      "path_prefixes": [
+        "/DerpFest-AOSP/"
+      ],
+      "family": "DerpFest",
+      "include_subdomains": false,
+      "can_verify": true
+    },
+    {
+      "id": "elixir_site",
+      "name": "Project Elixir",
+      "kind": "official_project",
+      "host": "projectelixiros.com",
+      "canonical_url": "https://projectelixiros.com",
+      "trust": 95,
+      "path_prefixes": [],
+      "family": "Project Elixir",
+      "include_subdomains": false,
+      "can_verify": true
+    },
+    {
+      "id": "elixir_gh",
+      "name": "Project Elixir on GitHub",
+      "kind": "official_code",
+      "host": "github.com",
+      "canonical_url": "https://github.com/ProjectElixir",
+      "trust": 85,
+      "path_prefixes": [
+        "/ProjectElixir/"
+      ],
+      "family": "Project Elixir",
+      "include_subdomains": false,
+      "can_verify": true
+    },
+    {
+      "id": "risingos_gh",
+      "name": "RisingOS on GitHub",
+      "kind": "official_code",
+      "host": "github.com",
+      "canonical_url": "https://github.com/RisingOS-Revived",
+      "trust": 85,
+      "path_prefixes": [
+        "/RisingOS-Revived/"
+      ],
+      "family": "RisingOS",
+      "include_subdomains": false,
+      "can_verify": true
+    },
+    {
+      "id": "voltageos_gh",
+      "name": "VoltageOS on GitHub",
+      "kind": "official_code",
+      "host": "github.com",
+      "canonical_url": "https://github.com/VoltageOS",
+      "trust": 85,
+      "path_prefixes": [
+        "/VoltageOS/"
+      ],
+      "family": "VoltageOS",
+      "include_subdomains": false,
+      "can_verify": true
+    },
+    {
+      "id": "superioros_gh",
+      "name": "SuperiorOS on GitHub",
+      "kind": "official_code",
+      "host": "github.com",
+      "canonical_url": "https://github.com/SuperiorOS",
+      "trust": 85,
+      "path_prefixes": [
+        "/SuperiorOS/"
+      ],
+      "family": "SuperiorOS",
+      "include_subdomains": false,
+      "can_verify": true
+    },
+    {
+      "id": "rr_site",
+      "name": "Resurrection Remix",
+      "kind": "official_project",
+      "host": "resurrectionremix.com",
+      "canonical_url": "https://resurrectionremix.com",
+      "trust": 92,
+      "path_prefixes": [],
+      "family": "Resurrection Remix",
+      "include_subdomains": false,
+      "can_verify": true
+    },
+    {
+      "id": "rr_gh",
+      "name": "Resurrection Remix on GitHub",
+      "kind": "official_code",
+      "host": "github.com",
+      "canonical_url": "https://github.com/ResurrectionRemix",
+      "trust": 85,
+      "path_prefixes": [
+        "/ResurrectionRemix/"
+      ],
+      "family": "Resurrection Remix",
+      "include_subdomains": false,
+      "can_verify": true
+    },
+    {
+      "id": "havoc_gh",
+      "name": "Havoc-OS on GitHub",
+      "kind": "official_code",
+      "host": "github.com",
+      "canonical_url": "https://github.com/Havoc-OS",
+      "trust": 85,
+      "path_prefixes": [
+        "/Havoc-OS/"
+      ],
+      "family": "Havoc-OS",
+      "include_subdomains": false,
+      "can_verify": true
+    },
+    {
+      "id": "aospa_site",
+      "name": "Paranoid Android",
+      "kind": "official_project",
+      "host": "paranoidandroid.co",
+      "canonical_url": "https://paranoidandroid.co",
+      "trust": 95,
+      "path_prefixes": [],
+      "family": "Paranoid Android",
+      "include_subdomains": false,
+      "can_verify": true
+    },
+    {
+      "id": "aospa_gh",
+      "name": "Paranoid Android on GitHub",
+      "kind": "official_code",
+      "host": "github.com",
+      "canonical_url": "https://github.com/AOSPA",
+      "trust": 85,
+      "path_prefixes": [
+        "/AOSPA/"
+      ],
+      "family": "Paranoid Android",
+      "include_subdomains": false,
+      "can_verify": true
+    },
+    {
+      "id": "calyx_site",
+      "name": "CalyxOS",
+      "kind": "official_project",
+      "host": "calyxos.org",
+      "canonical_url": "https://calyxos.org",
+      "trust": 97,
+      "path_prefixes": [],
+      "family": "CalyxOS",
+      "include_subdomains": false,
+      "can_verify": true
+    },
+    {
+      "id": "calyx_gh",
+      "name": "CalyxOS on GitHub",
+      "kind": "official_code",
+      "host": "github.com",
+      "canonical_url": "https://github.com/CalyxOS",
+      "trust": 85,
+      "path_prefixes": [
+        "/CalyxOS/"
+      ],
+      "family": "CalyxOS",
+      "include_subdomains": false,
+      "can_verify": true
+    },
+    {
+      "id": "graphene_site",
+      "name": "GrapheneOS",
+      "kind": "official_project",
+      "host": "grapheneos.org",
+      "canonical_url": "https://grapheneos.org",
+      "trust": 97,
+      "path_prefixes": [],
+      "family": "GrapheneOS",
+      "include_subdomains": false,
+      "can_verify": true
+    },
+    {
+      "id": "graphene_gh",
+      "name": "GrapheneOS on GitHub",
+      "kind": "official_code",
+      "host": "github.com",
+      "canonical_url": "https://github.com/GrapheneOS",
+      "trust": 85,
+      "path_prefixes": [
+        "/GrapheneOS/"
+      ],
+      "family": "GrapheneOS",
+      "include_subdomains": false,
+      "can_verify": true
+    },
+    {
+      "id": "eos_site",
+      "name": "/e/OS",
+      "kind": "official_project",
+      "host": "e.foundation",
+      "canonical_url": "https://e.foundation/e-os",
+      "trust": 95,
+      "path_prefixes": [
+        "/e-os"
+      ],
+      "family": "/e/OS",
+      "include_subdomains": false,
+      "can_verify": true
+    },
+    {
+      "id": "eos_gl",
+      "name": "/e/OS on GitLab",
+      "kind": "official_code",
+      "host": "gitlab.com",
+      "canonical_url": "https://gitlab.com/e",
+      "trust": 85,
+      "path_prefixes": [
+        "/e/"
+      ],
+      "family": "/e/OS",
+      "include_subdomains": false,
+      "can_verify": true
+    },
+    {
+      "id": "eos_gh",
+      "name": "/e/OS on GitHub",
+      "kind": "official_code",
+      "host": "github.com",
+      "canonical_url": "https://github.com/eeos",
+      "trust": 85,
+      "path_prefixes": [
+        "/eeos/"
+      ],
+      "family": "/e/OS",
+      "include_subdomains": false,
+      "can_verify": true
+    },
+    {
+      "id": "iode_site",
+      "name": "iodeOS",
+      "kind": "official_project",
+      "host": "iode.tech",
+      "canonical_url": "https://iode.tech",
+      "trust": 94,
+      "path_prefixes": [],
+      "family": "iodeOS",
+      "include_subdomains": false,
+      "can_verify": true
+    },
+    {
+      "id": "iode_gl",
+      "name": "iodeOS on GitLab",
+      "kind": "official_code",
+      "host": "gitlab.com",
+      "canonical_url": "https://gitlab.com/iode",
+      "trust": 85,
+      "path_prefixes": [
+        "/iode/"
+      ],
+      "family": "iodeOS",
+      "include_subdomains": false,
+      "can_verify": true
+    },
+    {
+      "id": "iode_gh",
+      "name": "iodeOS on GitHub",
+      "kind": "official_code",
+      "host": "github.com",
+      "canonical_url": "https://github.com/iodeOS",
+      "trust": 85,
+      "path_prefixes": [
+        "/iodeOS/"
+      ],
+      "family": "iodeOS",
+      "include_subdomains": false,
+      "can_verify": true
+    },
+    {
+      "id": "divest_gh",
+      "name": "DivestOS on GitHub",
+      "kind": "official_code",
+      "host": "github.com",
+      "canonical_url": "https://github.com/Divested-Mobile",
+      "trust": 85,
+      "path_prefixes": [
+        "/Divested-Mobile/"
+      ],
+      "family": "DivestOS",
+      "include_subdomains": false,
+      "can_verify": true
+    },
+    {
+      "id": "divest_gl",
+      "name": "DivestOS on GitLab",
+      "kind": "official_code",
+      "host": "gitlab.com",
+      "canonical_url": "https://gitlab.com/divested-mobile",
+      "trust": 85,
+      "path_prefixes": [
+        "/divested-mobile/"
+      ],
+      "family": "DivestOS",
+      "include_subdomains": false,
+      "can_verify": true
+    },
+    {
+      "id": "samfw",
+      "name": "SamFW",
+      "kind": "firmware_database",
+      "host": "samfw.com",
+      "canonical_url": "https://samfw.com",
+      "trust": 80,
+      "path_prefixes": [],
+      "family": "One UI",
+      "include_subdomains": false,
+      "can_verify": true
+    },
+    {
+      "id": "sammobile",
+      "name": "SamMobile Firmwares",
+      "kind": "firmware_database",
+      "host": "sammobile.com",
+      "canonical_url": "https://www.sammobile.com/firmwares",
+      "trust": 78,
+      "path_prefixes": [
+        "/firmwares"
+      ],
+      "family": "One UI",
+      "include_subdomains": true,
+      "can_verify": true
+    },
+    {
+      "id": "sfirmware",
+      "name": "SFirmware",
+      "kind": "firmware_database",
+      "host": "sfirmware.com",
+      "canonical_url": "https://sfirmware.com",
+      "trust": 72,
+      "path_prefixes": [],
+      "family": "One UI",
+      "include_subdomains": false,
+      "can_verify": true
+    },
+    {
+      "id": "samfrew",
+      "name": "Samfrew",
+      "kind": "firmware_database",
+      "host": "samfrew.com",
+      "canonical_url": "https://samfrew.com",
+      "trust": 70,
+      "path_prefixes": [],
+      "family": "One UI",
+      "include_subdomains": false,
+      "can_verify": true
+    },
+    {
+      "id": "xfu",
+      "name": "Xiaomi Firmware Updater",
+      "kind": "firmware_database",
+      "host": "xiaomifirmwareupdater.com",
+      "canonical_url": "https://xiaomifirmwareupdater.com",
+      "trust": 85,
+      "path_prefixes": [],
+      "family": null,
+      "include_subdomains": false,
+      "can_verify": true
+    },
+    {
+      "id": "hyperosupdates",
+      "name": "HyperOS Updates",
+      "kind": "firmware_database",
+      "host": "hyperosupdates.com",
+      "canonical_url": "https://hyperosupdates.com",
+      "trust": 78,
+      "path_prefixes": [],
+      "family": "HyperOS",
+      "include_subdomains": false,
+      "can_verify": true
+    },
+    {
+      "id": "mifirm",
+      "name": "MiFirm",
+      "kind": "firmware_database",
+      "host": "mifirm.net",
+      "canonical_url": "https://mifirm.net",
+      "trust": 72,
+      "path_prefixes": [],
+      "family": null,
+      "include_subdomains": false,
+      "can_verify": true
+    },
+    {
+      "id": "xmfirmware",
+      "name": "XM Firmware Updater",
+      "kind": "firmware_database",
+      "host": "xmfirmwareupdater.com",
+      "canonical_url": "https://xmfirmwareupdater.com",
+      "trust": 72,
+      "path_prefixes": [],
+      "family": null,
+      "include_subdomains": false,
+      "can_verify": true
+    },
+    {
+      "id": "oppofw",
+      "name": "Oppo Firmware",
+      "kind": "firmware_database",
+      "host": "oppo-firmware.com",
+      "canonical_url": "https://oppo-firmware.com",
+      "trust": 70,
+      "path_prefixes": [],
+      "family": "ColorOS",
+      "include_subdomains": false,
+      "can_verify": true
+    },
+    {
+      "id": "firmwarefile",
+      "name": "FirmwareFile",
+      "kind": "firmware_database",
+      "host": "firmwarefile.com",
+      "canonical_url": "https://firmwarefile.com",
+      "trust": 62,
+      "path_prefixes": [],
+      "family": null,
+      "include_subdomains": false,
+      "can_verify": true
+    },
+    {
+      "id": "oxygenupdater",
+      "name": "Oxygen Updater",
+      "kind": "firmware_database",
+      "host": "oxygenupdater.com",
+      "canonical_url": "https://oxygenupdater.com",
+      "trust": 82,
+      "path_prefixes": [],
+      "family": "OxygenOS",
+      "include_subdomains": false,
+      "can_verify": true
+    },
+    {
+      "id": "oneplusroms",
+      "name": "OnePlus ROMs",
+      "kind": "firmware_database",
+      "host": "oneplusroms.com",
+      "canonical_url": "https://oneplusroms.com",
+      "trust": 65,
+      "path_prefixes": [],
+      "family": "OxygenOS",
+      "include_subdomains": false,
+      "can_verify": true
+    },
+    {
+      "id": "realmefirmware",
+      "name": "Realme Firmware",
+      "kind": "firmware_database",
+      "host": "realmefirmware.com",
+      "canonical_url": "https://realmefirmware.com",
+      "trust": 68,
+      "path_prefixes": [],
+      "family": "Realme UI",
+      "include_subdomains": false,
+      "can_verify": true
+    },
+    {
+      "id": "nothing_community",
+      "name": "Nothing Community",
+      "kind": "firmware_database",
+      "host": "nothing.community",
+      "canonical_url": "https://nothing.community",
+      "trust": 75,
+      "path_prefixes": [],
+      "family": "Nothing OS",
+      "include_subdomains": false,
+      "can_verify": true
+    },
+    {
+      "id": "xda",
+      "name": "XDA Forums",
+      "kind": "community",
+      "host": "xdaforums.com",
+      "canonical_url": "https://xdaforums.com",
+      "trust": 70,
+      "path_prefixes": [],
+      "family": null,
+      "include_subdomains": false,
+      "can_verify": false
+    },
+    {
+      "id": "fourpda",
+      "name": "4PDA",
+      "kind": "community",
+      "host": "4pda.to",
+      "canonical_url": "https://4pda.to",
+      "trust": 55,
+      "path_prefixes": [],
+      "family": null,
+      "include_subdomains": false,
+      "can_verify": false
+    },
+    {
+      "id": "github",
+      "name": "GitHub",
+      "kind": "community",
+      "host": "github.com",
+      "canonical_url": "https://github.com",
+      "trust": 50,
+      "path_prefixes": [],
+      "family": null,
+      "include_subdomains": false,
+      "can_verify": false
+    },
+    {
+      "id": "gitlab",
+      "name": "GitLab",
+      "kind": "community",
+      "host": "gitlab.com",
+      "canonical_url": "https://gitlab.com",
+      "trust": 50,
+      "path_prefixes": [],
+      "family": null,
+      "include_subdomains": false,
+      "can_verify": false
+    },
+    {
+      "id": "sourceforge",
+      "name": "SourceForge",
+      "kind": "community",
+      "host": "sourceforge.net",
+      "canonical_url": "https://sourceforge.net",
+      "trust": 68,
+      "path_prefixes": [],
+      "family": null,
+      "include_subdomains": true,
+      "can_verify": false
+    },
+    {
+      "id": "afh",
+      "name": "AndroidFileHost",
+      "kind": "community",
+      "host": "androidfilehost.com",
+      "canonical_url": "https://androidfilehost.com",
+      "trust": 60,
+      "path_prefixes": [],
+      "family": null,
+      "include_subdomains": false,
+      "can_verify": false
+    },
+    {
+      "id": "archive",
+      "name": "Internet Archive",
+      "kind": "community",
+      "host": "archive.org",
+      "canonical_url": "https://archive.org",
+      "trust": 55,
+      "path_prefixes": [],
+      "family": null,
+      "include_subdomains": false,
+      "can_verify": false
+    },
+    {
+      "id": "wayback",
+      "name": "Wayback Machine",
+      "kind": "community",
+      "host": "web.archive.org",
+      "canonical_url": "https://web.archive.org",
+      "trust": 55,
+      "path_prefixes": [],
+      "family": null,
+      "include_subdomains": false,
+      "can_verify": false
+    },
+    {
+      "id": "reddit",
+      "name": "Reddit",
+      "kind": "mirror",
+      "host": "reddit.com",
+      "canonical_url": "https://reddit.com",
+      "trust": 20,
+      "path_prefixes": [],
+      "family": null,
+      "include_subdomains": true,
+      "can_verify": false
+    },
+    {
+      "id": "telegram",
+      "name": "Telegram",
+      "kind": "mirror",
+      "host": "t.me",
+      "canonical_url": "https://t.me",
+      "trust": 20,
+      "path_prefixes": [],
+      "family": null,
+      "include_subdomains": false,
+      "can_verify": false
+    },
+    {
+      "id": "telegram_me",
+      "name": "Telegram",
+      "kind": "mirror",
+      "host": "telegram.me",
+      "canonical_url": "https://telegram.me",
+      "trust": 20,
+      "path_prefixes": [],
+      "family": null,
+      "include_subdomains": false,
+      "can_verify": false
+    },
+    {
+      "id": "gdrive",
+      "name": "Google Drive",
+      "kind": "mirror",
+      "host": "drive.google.com",
+      "canonical_url": "https://drive.google.com",
+      "trust": 15,
+      "path_prefixes": [],
+      "family": null,
+      "include_subdomains": false,
+      "can_verify": false
+    },
+    {
+      "id": "mega",
+      "name": "MEGA",
+      "kind": "mirror",
+      "host": "mega.nz",
+      "canonical_url": "https://mega.nz",
+      "trust": 15,
+      "path_prefixes": [],
+      "family": null,
+      "include_subdomains": false,
+      "can_verify": false
+    },
+    {
+      "id": "mediafire",
+      "name": "MediaFire",
+      "kind": "mirror",
+      "host": "mediafire.com",
+      "canonical_url": "https://mediafire.com",
+      "trust": 15,
+      "path_prefixes": [],
+      "family": null,
+      "include_subdomains": false,
+      "can_verify": false
+    },
+    {
+      "id": "aosp_docs",
+      "name": "Android Open Source Project",
+      "kind": "reference",
+      "host": "source.android.com",
+      "canonical_url": "https://source.android.com",
+      "trust": 90,
+      "path_prefixes": [],
+      "family": null,
+      "include_subdomains": false,
+      "can_verify": false
+    },
+    {
+      "id": "aosp_git",
+      "name": "android.googlesource.com",
+      "kind": "reference",
+      "host": "android.googlesource.com",
+      "canonical_url": "https://android.googlesource.com",
+      "trust": 90,
+      "path_prefixes": [],
+      "family": null,
+      "include_subdomains": false,
+      "can_verify": false
+    },
+    {
+      "id": "aosp_mirror",
+      "name": "aosp-mirror",
+      "kind": "reference",
+      "host": "github.com",
+      "canonical_url": "https://github.com/aosp-mirror",
+      "trust": 85,
+      "path_prefixes": [
+        "/aosp-mirror/"
+      ],
+      "family": null,
+      "include_subdomains": false,
+      "can_verify": false
+    },
+    {
+      "id": "aosp_review",
+      "name": "AOSP Gerrit",
+      "kind": "reference",
+      "host": "android-review.googlesource.com",
+      "canonical_url": "https://android-review.googlesource.com",
+      "trust": 85,
+      "path_prefixes": [],
+      "family": null,
+      "include_subdomains": false,
+      "can_verify": false
+    },
+    {
+      "id": "pixel_images",
+      "name": "Google Pixel factory images",
+      "kind": "official_download",
+      "host": "developers.google.com",
+      "canonical_url": "https://developers.google.com/android/images",
+      "trust": 95,
+      "path_prefixes": [
+        "/android/images",
+        "/android/ota"
+      ],
+      "family": null,
+      "include_subdomains": false,
+      "can_verify": true
+    },
+    {
+      "id": "flash_android",
+      "name": "Android Flash Tool",
+      "kind": "reference",
+      "host": "flash.android.com",
+      "canonical_url": "https://flash.android.com",
+      "trust": 85,
+      "path_prefixes": [],
+      "family": null,
+      "include_subdomains": false,
+      "can_verify": false
+    }
+  ],
+  "roms": [],
+  "candidates": [],
+  "rejections": []
+}
