@@ -10,7 +10,7 @@ needs to be touched.
 
 from __future__ import annotations
 
-from dataclasses import dataclass, asdict
+from dataclasses import dataclass, asdict, replace
 from typing import Any, Iterable, Literal, Optional
 from urllib.parse import urlsplit, urlunsplit
 
@@ -107,8 +107,9 @@ class Source:
                 return False
         if not self.path_prefixes:
             return True
-        p = path if path.startswith("/") else "/" + path
-        return any(p.lower().startswith(prefix.lower()) for prefix in self.path_prefixes)
+        p = (path if path.startswith("/") else "/" + path).lower()
+        return any(p.startswith(prefix.lower()) or p == prefix.lower().rstrip("/")
+                   for prefix in self.path_prefixes)
 
     def to_json(self) -> dict[str, Any]:
         d = asdict(self)
@@ -390,9 +391,9 @@ class SourceRegistry:
         if not matches:
             return None
         # most specific: longest matching path prefix, then highest trust
-        def specificity(s: Source) -> tuple[int, int]:
+        def specificity(s: Source) -> tuple[int, int, int]:
             longest = max((len(p) for p in s.path_prefixes), default=0)
-            return (longest, s.trust)
+            return (1 if host == s.host else 0, longest, s.trust)
         return max(matches, key=specificity)
 
     def is_registered(self, url: str) -> bool:
@@ -411,6 +412,14 @@ class SourceRegistry:
             if src:
                 hits = [src]
         return hits
+
+    def by_class(self, source_class: str) -> list[Source]:
+        return [s for s in self.sources if s.source_class == source_class]
+
+    def authoritative(self) -> list[Source]:
+        """Sources probed/searched first, ranked by authority."""
+        return sorted((s for s in self.sources if s.is_authoritative),
+                      key=lambda s: -s.authority)
 
     def search_hosts(self) -> list[Source]:
         """Sources worth issuing domain-scoped searches against."""
