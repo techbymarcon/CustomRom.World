@@ -8,7 +8,7 @@ import sys
 from typing import Optional
 
 from .database import DEFAULT_PATH, Database
-from .discovery import build_queries, discover
+from .discovery import build_plan, discover
 from .models import Device
 from .search import FixtureBackend, NullBackend, default_backend
 from .source_registry import registry
@@ -30,22 +30,32 @@ def cmd_discover(args: argparse.Namespace) -> int:
     db = Database(args.db)
     db.upsert_device(device)
 
+    plan = build_plan(device, registry, max_queries=args.max_queries,
+                      include_fallback=not args.no_fallback)
     if args.dry_run:
-        for query in build_queries(device, registry, max_queries=args.max_queries):
+        print("# direct source pages (probed first)")
+        for url in plan.probe_urls:
+            print(url)
+        print("\n# source-scoped / fallback queries")
+        for query in plan.queries:
             print(query)
         return 0
 
     candidates, discarded = discover(device, backend=_backend(args), reg=registry,
-                                     per_query=args.per_query, max_queries=args.max_queries)
+                                     per_query=args.per_query, max_queries=args.max_queries,
+                                     probe=not args.no_probe,
+                                     include_fallback=not args.no_fallback)
     db.set_candidates(device, candidates)
     db.save()
     print(f"device            : {device.name} ({device.codename})")
+    print(f"source pages probed: {0 if args.no_probe else len(plan.probe_urls)}")
     print(f"candidates kept   : {len(candidates)}")
     print(f"discarded (unregistered domains): {len(discarded)}")
     if args.verbose:
         for candidate in candidates:
             source = registry.match_url(candidate.url)
-            print(f"  [{source.id if source else '?'}] {candidate.url}")
+            label = f"{source.id} / {source.source_class}" if source else "?"
+            print(f"  [{label}] {candidate.url}")
     print(f"saved -> {db.path}\nnext: validate")
     return 0
 
@@ -102,7 +112,7 @@ def cmd_list_sources(args: argparse.Namespace) -> int:
     sources = registry.by_kind(args.kind) if args.kind else list(registry.sources)
     for source in sorted(sources, key=lambda s: (s.kind, -s.trust, s.host)):
         prefixes = ",".join(source.path_prefixes) or "*"
-        print(f"{source.kind:<18} trust={source.trust:>3} verify={'Y' if source.can_verify else 'n'} "
+        print(f"{source.source_class:<18} {source.kind:<18} trust={source.trust:>3} verify={'Y' if source.can_verify else 'n'} "
               f"{source.host}{'' if prefixes == '*' else ' ' + prefixes}")
     print(f"\n{len(sources)} sources")
     return 0
@@ -137,6 +147,10 @@ def build_parser() -> argparse.ArgumentParser:
     d.add_argument("--max-queries", type=int, default=60)
     d.add_argument("--fixture", help="JSON fixture file instead of live search")
     d.add_argument("--offline", action="store_true", help="no network, yields zero candidates")
+    d.add_argument("--no-probe", action="store_true",
+                   help="skip direct source-page probing (search only)")
+    d.add_argument("--no-fallback", action="store_true",
+                   help="registered-source queries only, no generic web search")
     d.add_argument("--dry-run", action="store_true", help="print the generated queries only")
     d.add_argument("-v", "--verbose", action="store_true")
     d.set_defaults(func=cmd_discover)

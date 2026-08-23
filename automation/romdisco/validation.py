@@ -45,6 +45,37 @@ BUILD_EVIDENCE: tuple[tuple[re.Pattern[str], str], ...] = (
 
 GENERIC_PAGE_PATHS = ("/", "/downloads", "/download", "/devices", "/index.html")
 
+#: Minimum evidence score required before a candidate becomes a ROM entry.
+MIN_EVIDENCE_SCORE = 5
+
+
+def score_candidate(candidate: Candidate, device: Device, source: Source, *,
+                    strong_device: bool, name_hit: bool, code_hit: bool,
+                    family: Optional[str], build_signals: list[str],
+                    generic_page: bool) -> int:
+    """Additive evidence score. Source class contributes, but never alone."""
+    score = 0
+    if strong_device:
+        score += 3 if source.is_authoritative else 2
+    if code_hit:
+        score += 1
+    if name_hit:
+        score += 2
+    if family:
+        score += 2
+    if "artifact_link" in build_signals or "artifact_extension" in build_signals:
+        score += 2
+    if "checksum" in build_signals or "build_metadata" in build_signals:
+        score += 1
+    if "download_link" in build_signals or "download_section" in build_signals:
+        score += 1
+    score += {"OFFICIAL": 3, "FIRMWARE_DATABASE": 2, "DEVELOPMENT": 2,
+              "COMMUNITY": 1, "REFERENCE": 0, "DOWNLOAD_HOST": 0,
+              "ARCHIVE_MIRROR": 0}.get(source.source_class, 0)
+    if generic_page:
+        score -= 3
+    return score
+
 
 @dataclass
 class ValidationOutcome:
@@ -145,6 +176,18 @@ def validate_candidate(candidate: Candidate, device: Device, *,
     rom_version = (parse_rom_version(candidate.title, family)
                    or parse_rom_version(candidate.text, family))
     build_date = parse_build_date(candidate.title) or parse_build_date(candidate.text)
+
+    haystack_l = f"{candidate.url} {haystack}".lower()
+    code_hit = bool(re.search(rf"\b{re.escape(device.codename.lower())}\b", haystack_l))
+    name_hit = any(e.kind == "device_name_match" for e in evidence)
+    generic_page = path in GENERIC_PAGE_PATHS
+    score = score_candidate(candidate, device, source, strong_device=strong_device,
+                            name_hit=name_hit, code_hit=code_hit, family=family,
+                            build_signals=build_signals, generic_page=generic_page)
+    if score < MIN_EVIDENCE_SCORE:
+        return ValidationOutcome(rejection=Rejection(
+            candidate.url, f"insufficient evidence (score {score} < {MIN_EVIDENCE_SCORE})"))
+    evidence.append(Evidence("evidence_score", str(score), sid, candidate.url))
 
     has_artifact = bool(artifacts or candidate.download_url)
     verified = (source.can_verify and strong_device) or (has_artifact and strong_device)
