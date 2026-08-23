@@ -29,6 +29,41 @@ VERIFYING_KINDS: frozenset[str] = frozenset(
     {"official_project", "official_download", "official_code", "firmware_database"}
 )
 
+#: Coarse source classes used for ranking / authority decisions.
+SourceClass = Literal[
+    "OFFICIAL", "DEVELOPMENT", "FIRMWARE_DATABASE", "COMMUNITY",
+    "DOWNLOAD_HOST", "ARCHIVE_MIRROR", "REFERENCE",
+]
+
+KIND_TO_CLASS: dict[str, str] = {
+    "official_project": "OFFICIAL",
+    "official_download": "OFFICIAL",
+    "official_code": "DEVELOPMENT",
+    "firmware_database": "FIRMWARE_DATABASE",
+    "community": "COMMUNITY",
+    "mirror": "ARCHIVE_MIRROR",
+    "reference": "REFERENCE",
+}
+
+#: Pure file hosts / mirrors: they may carry a download URL, never authority.
+DOWNLOAD_HOST_IDS: frozenset[str] = frozenset(
+    {"afh", "gdrive", "mega", "mediafire"}
+)
+ARCHIVE_IDS: frozenset[str] = frozenset({"archive", "wayback", "reddit", "telegram",
+                                         "telegram_me"})
+
+#: Higher = more authoritative. Official projects outrank everything, file hosts
+#: and mirrors sit at the bottom and can never establish that a ROM exists.
+CLASS_AUTHORITY: dict[str, int] = {
+    "OFFICIAL": 6,
+    "FIRMWARE_DATABASE": 5,
+    "DEVELOPMENT": 4,
+    "COMMUNITY": 3,
+    "REFERENCE": 2,
+    "DOWNLOAD_HOST": 1,
+    "ARCHIVE_MIRROR": 0,
+}
+
 
 @dataclass(frozen=True)
 class Source:
@@ -40,13 +75,33 @@ class Source:
     trust: int                      # 0-100
     path_prefixes: tuple[str, ...] = ()   # empty -> whole host allowed
     family: Optional[str] = None          # ROM family this source is authoritative for
-    include_subdomains: bool = False
+    include_subdomains: bool = True        # subdomains inherit the trust class
+    device_urls: tuple[str, ...] = ()      # direct probe templates ({codename}, {slug})
+    query_templates: tuple[str, ...] = ()  # source-specific search patterns
 
     @property
     def can_verify(self) -> bool:
         return self.kind in VERIFYING_KINDS
 
+    @property
+    def source_class(self) -> str:
+        if self.id in DOWNLOAD_HOST_IDS:
+            return "DOWNLOAD_HOST"
+        if self.id in ARCHIVE_IDS:
+            return "ARCHIVE_MIRROR"
+        return KIND_TO_CLASS.get(self.kind, "COMMUNITY")
+
+    @property
+    def authority(self) -> int:
+        """Combined ranking: class first, trust as tie-breaker."""
+        return CLASS_AUTHORITY.get(self.source_class, 0) * 1000 + self.trust
+
+    @property
+    def is_authoritative(self) -> bool:
+        return self.source_class in {"OFFICIAL", "FIRMWARE_DATABASE", "DEVELOPMENT"}
+
     def matches(self, host: str, path: str) -> bool:
+        """Exact host, or a real subdomain of it — never a lookalike suffix."""
         if host != self.host:
             if not (self.include_subdomains and host.endswith("." + self.host)):
                 return False
@@ -58,8 +113,13 @@ class Source:
     def to_json(self) -> dict[str, Any]:
         d = asdict(self)
         d["path_prefixes"] = list(self.path_prefixes)
+        d["device_urls"] = list(self.device_urls)
+        d["query_templates"] = list(self.query_templates)
         d["can_verify"] = self.can_verify
+        d["source_class"] = self.source_class
+        d["authority"] = self.authority
         return d
+
 
 
 def _gh(org: str, family: str, sid: str, trust: int = 85) -> Source:
