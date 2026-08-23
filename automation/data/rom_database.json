@@ -3,13 +3,13 @@
     "schema_version": 2,
     "generator": "romdisco",
     "created_at": "2026-08-23T18:45:04+00:00",
-    "updated_at": "2026-08-23T18:45:04+00:00",
+    "updated_at": "2026-08-23T19:47:21+00:00",
     "counts": {
       "devices": 1,
       "roms": 0,
-      "sources": 72,
+      "sources": 73,
       "verified": 0,
-      "candidates": 0
+      "candidates": 50
     }
   },
   "devices": [
@@ -17,7 +17,9 @@
       "name": "Xiaomi Pad 5",
       "codename": "nabu",
       "manufacturer": "Xiaomi",
-      "aliases": [],
+      "aliases": [
+        "Mi Pad 5"
+      ],
       "id": "xiaomi:nabu"
     }
   ],
@@ -31,8 +33,14 @@
       "trust": 98,
       "path_prefixes": [],
       "family": "LineageOS",
-      "include_subdomains": false,
-      "can_verify": true
+      "include_subdomains": true,
+      "device_urls": [
+        "https://wiki.lineageos.org/devices/{code}"
+      ],
+      "query_templates": [],
+      "can_verify": true,
+      "source_class": "OFFICIAL",
+      "authority": 6098
     },
     {
       "id": "lineageos_dl",
@@ -43,8 +51,15 @@
       "trust": 100,
       "path_prefixes": [],
       "family": "LineageOS",
-      "include_subdomains": false,
-      "can_verify": true
+      "include_subdomains": true,
+      "device_urls": [
+        "https://download.lineageos.org/devices/{code}",
+        "https://download.lineageos.org/devices/{code}/builds"
+      ],
+      "query_templates": [],
+      "can_verify": true,
+      "source_class": "OFFICIAL",
+      "authority": 6100
     },
     {
       "id": "lineageos_gh",
@@ -57,8 +72,19 @@
         "/LineageOS/"
       ],
       "family": "LineageOS",
-      "include_subdomains": false,
-      "can_verify": true
+      "include_subdomains": true,
+      "device_urls": [
+        "https://github.com/LineageOS?q={code}&type=all",
+        "https://github.com/search?q=org%3ALineageOS+{code}&type=repositories"
+      ],
+      "query_templates": [
+        "site:{host}{prefix} {code}",
+        "site:{host}{prefix} {code} releases",
+        "site:{host}{prefix} device_{code}"
+      ],
+      "can_verify": true,
+      "source_class": "DEVELOPMENT",
+      "authority": 4090
     },
     {
       "id": "lineageos_gerrit",
@@ -69,8 +95,12 @@
       "trust": 80,
       "path_prefixes": [],
       "family": "LineageOS",
-      "include_subdomains": false,
-      "can_verify": true
+      "include_subdomains": true,
+      "device_urls": [],
+      "query_templates": [],
+      "can_verify": true,
+      "source_class": "DEVELOPMENT",
+      "authority": 4080
     },
     {
       "id": "crdroid_site",
@@ -81,8 +111,14 @@
       "trust": 98,
       "path_prefixes": [],
       "family": "crDroid",
-      "include_subdomains": false,
-      "can_verify": true
+      "include_subdomains": true,
+      "device_urls": [
+        "https://crdroid.net/{code}"
+      ],
+      "query_templates": [],
+      "can_verify": true,
+      "source_class": "OFFICIAL",
+      "authority": 6098
     },
     {
       "id": "crdroid_gh",
@@ -95,8 +131,19 @@
         "/crdroidandroid/"
       ],
       "family": "crDroid",
-      "include_subdomains": false,
-      "can_verify": true
+      "include_subdomains": true,
+      "device_urls": [
+        "https://github.com/crdroidandroid?q={code}&type=all",
+        "https://github.com/search?q=org%3Acrdroidandroid+{code}&type=repositories"
+      ],
+      "query_templates": [
+        "site:{host}{prefix} {code}",
+        "site:{host}{prefix} {code} releases",
+        "site:{host}{prefix} device_{code}"
+      ],
+      "can_verify": true,
+      "source_class": "DEVELOPMENT",
+      "authority": 4085
     },
     {
       "id": "pe_dl",
@@ -107,8 +154,14 @@
       "trust": 100,
       "path_prefixes": [],
       "family": "Pixel Experience",
-      "include_subdomains": false,
-      "can_verify": true
+      "include_subdomains": true,
+      "device_urls": [
+        "https://get.pixelexperience.org/{code}"
+      ],
+      "query_templates": [],
+      "can_verify": true,
+      "source_class": "OFFICIAL",
+      "authority": 6100
     },
     {
       "id": "pe_gh",
@@ -121,8 +174,19 @@
         "/PixelExperience/"
       ],
       "family": "Pixel Experience",
-      "include_subdomains": false,
-      "can_verify": true
+      "include_subdomains": true,
+      "device_urls": [
+        "https://github.com/PixelExperience?q={code}&type=all",
+        "https://github.com/search?q=org%3APixelExperience+{code}&type=repositories"
+      ],
+      "query_templates": [
+        "site:{host}{prefix} {code}",
+        "site:{host}{prefix} {code} releases",
+        "site:{host}{prefix} device_{code}"
+      ],
+      "can_verify": true,
+      "source_class": "DEVELOPMENT",
+      "authority": 4085
     },
     {
       "id": "evox_site",
@@ -133,8 +197,14 @@
       "trust": 98,
       "path_prefixes": [],
       "family": "Evolution X",
-      "include_subdomains": false,
-      "can_verify": true
+      "include_subdomains": true,
+      "device_urls": [
+        "https://evolution-x.org/downloads/{code}"
+      ],
+      "query_templates": [],
+      "can_verify": true,
+      "source_class": "OFFICIAL",
+      "authority": 6098
     },
     {
       "id": "evox_cdn",
@@ -145,8 +215,12 @@
       "trust": 100,
       "path_prefixes": [],
       "family": "Evolution X",
-      "include_subdomains": false,
-      "can_verify": true
+      "include_subdomains": true,
+      "device_urls": [],
+      "query_templates": [],
+      "can_verify": true,
+      "source_class": "OFFICIAL",
+      "authority": 6100
     },
     {
       "id": "evox_gh",
@@ -159,8 +233,19 @@
         "/Evolution-X/"
       ],
       "family": "Evolution X",
-      "include_subdomains": false,
-      "can_verify": true
+      "include_subdomains": true,
+      "device_urls": [
+        "https://github.com/Evolution-X?q={code}&type=all",
+        "https://github.com/search?q=org%3AEvolution-X+{code}&type=repositories"
+      ],
+      "query_templates": [
+        "site:{host}{prefix} {code}",
+        "site:{host}{prefix} {code} releases",
+        "site:{host}{prefix} device_{code}"
+      ],
+      "can_verify": true,
+      "source_class": "DEVELOPMENT",
+      "authority": 4085
     },
     {
       "id": "arrow_site",
@@ -171,8 +256,14 @@
       "trust": 96,
       "path_prefixes": [],
       "family": "ArrowOS",
-      "include_subdomains": false,
-      "can_verify": true
+      "include_subdomains": true,
+      "device_urls": [
+        "https://arrowos.net/download/{code}"
+      ],
+      "query_templates": [],
+      "can_verify": true,
+      "source_class": "OFFICIAL",
+      "authority": 6096
     },
     {
       "id": "arrow_gh",
@@ -185,8 +276,19 @@
         "/ArrowOS/"
       ],
       "family": "ArrowOS",
-      "include_subdomains": false,
-      "can_verify": true
+      "include_subdomains": true,
+      "device_urls": [
+        "https://github.com/ArrowOS?q={code}&type=all",
+        "https://github.com/search?q=org%3AArrowOS+{code}&type=repositories"
+      ],
+      "query_templates": [
+        "site:{host}{prefix} {code}",
+        "site:{host}{prefix} {code} releases",
+        "site:{host}{prefix} device_{code}"
+      ],
+      "can_verify": true,
+      "source_class": "DEVELOPMENT",
+      "authority": 4085
     },
     {
       "id": "pixelos_site",
@@ -197,8 +299,14 @@
       "trust": 96,
       "path_prefixes": [],
       "family": "PixelOS",
-      "include_subdomains": false,
-      "can_verify": true
+      "include_subdomains": true,
+      "device_urls": [
+        "https://pixelos.net/download/{code}"
+      ],
+      "query_templates": [],
+      "can_verify": true,
+      "source_class": "OFFICIAL",
+      "authority": 6096
     },
     {
       "id": "pixelos_gh",
@@ -211,8 +319,19 @@
         "/PixelOS-AOSP/"
       ],
       "family": "PixelOS",
-      "include_subdomains": false,
-      "can_verify": true
+      "include_subdomains": true,
+      "device_urls": [
+        "https://github.com/PixelOS-AOSP?q={code}&type=all",
+        "https://github.com/search?q=org%3APixelOS-AOSP+{code}&type=repositories"
+      ],
+      "query_templates": [
+        "site:{host}{prefix} {code}",
+        "site:{host}{prefix} {code} releases",
+        "site:{host}{prefix} device_{code}"
+      ],
+      "can_verify": true,
+      "source_class": "DEVELOPMENT",
+      "authority": 4085
     },
     {
       "id": "derpfest_gh",
@@ -225,8 +344,19 @@
         "/DerpFest-AOSP/"
       ],
       "family": "DerpFest",
-      "include_subdomains": false,
-      "can_verify": true
+      "include_subdomains": true,
+      "device_urls": [
+        "https://github.com/DerpFest-AOSP?q={code}&type=all",
+        "https://github.com/search?q=org%3ADerpFest-AOSP+{code}&type=repositories"
+      ],
+      "query_templates": [
+        "site:{host}{prefix} {code}",
+        "site:{host}{prefix} {code} releases",
+        "site:{host}{prefix} device_{code}"
+      ],
+      "can_verify": true,
+      "source_class": "DEVELOPMENT",
+      "authority": 4085
     },
     {
       "id": "elixir_site",
@@ -237,8 +367,14 @@
       "trust": 95,
       "path_prefixes": [],
       "family": "Project Elixir",
-      "include_subdomains": false,
-      "can_verify": true
+      "include_subdomains": true,
+      "device_urls": [
+        "https://projectelixiros.com/device/{code}"
+      ],
+      "query_templates": [],
+      "can_verify": true,
+      "source_class": "OFFICIAL",
+      "authority": 6095
     },
     {
       "id": "elixir_gh",
@@ -251,8 +387,19 @@
         "/ProjectElixir/"
       ],
       "family": "Project Elixir",
-      "include_subdomains": false,
-      "can_verify": true
+      "include_subdomains": true,
+      "device_urls": [
+        "https://github.com/ProjectElixir?q={code}&type=all",
+        "https://github.com/search?q=org%3AProjectElixir+{code}&type=repositories"
+      ],
+      "query_templates": [
+        "site:{host}{prefix} {code}",
+        "site:{host}{prefix} {code} releases",
+        "site:{host}{prefix} device_{code}"
+      ],
+      "can_verify": true,
+      "source_class": "DEVELOPMENT",
+      "authority": 4085
     },
     {
       "id": "risingos_gh",
@@ -265,8 +412,19 @@
         "/RisingOS-Revived/"
       ],
       "family": "RisingOS",
-      "include_subdomains": false,
-      "can_verify": true
+      "include_subdomains": true,
+      "device_urls": [
+        "https://github.com/RisingOS-Revived?q={code}&type=all",
+        "https://github.com/search?q=org%3ARisingOS-Revived+{code}&type=repositories"
+      ],
+      "query_templates": [
+        "site:{host}{prefix} {code}",
+        "site:{host}{prefix} {code} releases",
+        "site:{host}{prefix} device_{code}"
+      ],
+      "can_verify": true,
+      "source_class": "DEVELOPMENT",
+      "authority": 4085
     },
     {
       "id": "voltageos_gh",
@@ -279,8 +437,19 @@
         "/VoltageOS/"
       ],
       "family": "VoltageOS",
-      "include_subdomains": false,
-      "can_verify": true
+      "include_subdomains": true,
+      "device_urls": [
+        "https://github.com/VoltageOS?q={code}&type=all",
+        "https://github.com/search?q=org%3AVoltageOS+{code}&type=repositories"
+      ],
+      "query_templates": [
+        "site:{host}{prefix} {code}",
+        "site:{host}{prefix} {code} releases",
+        "site:{host}{prefix} device_{code}"
+      ],
+      "can_verify": true,
+      "source_class": "DEVELOPMENT",
+      "authority": 4085
     },
     {
       "id": "superioros_gh",
@@ -293,8 +462,19 @@
         "/SuperiorOS/"
       ],
       "family": "SuperiorOS",
-      "include_subdomains": false,
-      "can_verify": true
+      "include_subdomains": true,
+      "device_urls": [
+        "https://github.com/SuperiorOS?q={code}&type=all",
+        "https://github.com/search?q=org%3ASuperiorOS+{code}&type=repositories"
+      ],
+      "query_templates": [
+        "site:{host}{prefix} {code}",
+        "site:{host}{prefix} {code} releases",
+        "site:{host}{prefix} device_{code}"
+      ],
+      "can_verify": true,
+      "source_class": "DEVELOPMENT",
+      "authority": 4085
     },
     {
       "id": "rr_site",
@@ -305,8 +485,14 @@
       "trust": 92,
       "path_prefixes": [],
       "family": "Resurrection Remix",
-      "include_subdomains": false,
-      "can_verify": true
+      "include_subdomains": true,
+      "device_urls": [
+        "https://resurrectionremix.com/downloads/{code}"
+      ],
+      "query_templates": [],
+      "can_verify": true,
+      "source_class": "OFFICIAL",
+      "authority": 6092
     },
     {
       "id": "rr_gh",
@@ -319,8 +505,19 @@
         "/ResurrectionRemix/"
       ],
       "family": "Resurrection Remix",
-      "include_subdomains": false,
-      "can_verify": true
+      "include_subdomains": true,
+      "device_urls": [
+        "https://github.com/ResurrectionRemix?q={code}&type=all",
+        "https://github.com/search?q=org%3AResurrectionRemix+{code}&type=repositories"
+      ],
+      "query_templates": [
+        "site:{host}{prefix} {code}",
+        "site:{host}{prefix} {code} releases",
+        "site:{host}{prefix} device_{code}"
+      ],
+      "can_verify": true,
+      "source_class": "DEVELOPMENT",
+      "authority": 4085
     },
     {
       "id": "havoc_gh",
@@ -333,8 +530,19 @@
         "/Havoc-OS/"
       ],
       "family": "Havoc-OS",
-      "include_subdomains": false,
-      "can_verify": true
+      "include_subdomains": true,
+      "device_urls": [
+        "https://github.com/Havoc-OS?q={code}&type=all",
+        "https://github.com/search?q=org%3AHavoc-OS+{code}&type=repositories"
+      ],
+      "query_templates": [
+        "site:{host}{prefix} {code}",
+        "site:{host}{prefix} {code} releases",
+        "site:{host}{prefix} device_{code}"
+      ],
+      "can_verify": true,
+      "source_class": "DEVELOPMENT",
+      "authority": 4085
     },
     {
       "id": "aospa_site",
@@ -345,8 +553,12 @@
       "trust": 95,
       "path_prefixes": [],
       "family": "Paranoid Android",
-      "include_subdomains": false,
-      "can_verify": true
+      "include_subdomains": true,
+      "device_urls": [],
+      "query_templates": [],
+      "can_verify": true,
+      "source_class": "OFFICIAL",
+      "authority": 6095
     },
     {
       "id": "aospa_gh",
@@ -359,8 +571,19 @@
         "/AOSPA/"
       ],
       "family": "Paranoid Android",
-      "include_subdomains": false,
-      "can_verify": true
+      "include_subdomains": true,
+      "device_urls": [
+        "https://github.com/AOSPA?q={code}&type=all",
+        "https://github.com/search?q=org%3AAOSPA+{code}&type=repositories"
+      ],
+      "query_templates": [
+        "site:{host}{prefix} {code}",
+        "site:{host}{prefix} {code} releases",
+        "site:{host}{prefix} device_{code}"
+      ],
+      "can_verify": true,
+      "source_class": "DEVELOPMENT",
+      "authority": 4085
     },
     {
       "id": "calyx_site",
@@ -371,8 +594,14 @@
       "trust": 97,
       "path_prefixes": [],
       "family": "CalyxOS",
-      "include_subdomains": false,
-      "can_verify": true
+      "include_subdomains": true,
+      "device_urls": [
+        "https://calyxos.org/install/devices/{code}/"
+      ],
+      "query_templates": [],
+      "can_verify": true,
+      "source_class": "OFFICIAL",
+      "authority": 6097
     },
     {
       "id": "calyx_gh",
@@ -385,8 +614,19 @@
         "/CalyxOS/"
       ],
       "family": "CalyxOS",
-      "include_subdomains": false,
-      "can_verify": true
+      "include_subdomains": true,
+      "device_urls": [
+        "https://github.com/CalyxOS?q={code}&type=all",
+        "https://github.com/search?q=org%3ACalyxOS+{code}&type=repositories"
+      ],
+      "query_templates": [
+        "site:{host}{prefix} {code}",
+        "site:{host}{prefix} {code} releases",
+        "site:{host}{prefix} device_{code}"
+      ],
+      "can_verify": true,
+      "source_class": "DEVELOPMENT",
+      "authority": 4085
     },
     {
       "id": "graphene_site",
@@ -397,8 +637,14 @@
       "trust": 97,
       "path_prefixes": [],
       "family": "GrapheneOS",
-      "include_subdomains": false,
-      "can_verify": true
+      "include_subdomains": true,
+      "device_urls": [
+        "https://grapheneos.org/releases#{code}"
+      ],
+      "query_templates": [],
+      "can_verify": true,
+      "source_class": "OFFICIAL",
+      "authority": 6097
     },
     {
       "id": "graphene_gh",
@@ -411,8 +657,19 @@
         "/GrapheneOS/"
       ],
       "family": "GrapheneOS",
-      "include_subdomains": false,
-      "can_verify": true
+      "include_subdomains": true,
+      "device_urls": [
+        "https://github.com/GrapheneOS?q={code}&type=all",
+        "https://github.com/search?q=org%3AGrapheneOS+{code}&type=repositories"
+      ],
+      "query_templates": [
+        "site:{host}{prefix} {code}",
+        "site:{host}{prefix} {code} releases",
+        "site:{host}{prefix} device_{code}"
+      ],
+      "can_verify": true,
+      "source_class": "DEVELOPMENT",
+      "authority": 4085
     },
     {
       "id": "eos_site",
@@ -425,8 +682,12 @@
         "/e-os"
       ],
       "family": "/e/OS",
-      "include_subdomains": false,
-      "can_verify": true
+      "include_subdomains": true,
+      "device_urls": [],
+      "query_templates": [],
+      "can_verify": true,
+      "source_class": "OFFICIAL",
+      "authority": 6095
     },
     {
       "id": "eos_gl",
@@ -439,8 +700,18 @@
         "/e/"
       ],
       "family": "/e/OS",
-      "include_subdomains": false,
-      "can_verify": true
+      "include_subdomains": true,
+      "device_urls": [
+        "https://gitlab.com/groups/e/-/search?search={code}"
+      ],
+      "query_templates": [
+        "site:{host}{prefix} {code}",
+        "site:{host}{prefix} {code} releases",
+        "site:{host}{prefix} device_{code}"
+      ],
+      "can_verify": true,
+      "source_class": "DEVELOPMENT",
+      "authority": 4085
     },
     {
       "id": "eos_gh",
@@ -453,8 +724,19 @@
         "/eeos/"
       ],
       "family": "/e/OS",
-      "include_subdomains": false,
-      "can_verify": true
+      "include_subdomains": true,
+      "device_urls": [
+        "https://github.com/eeos?q={code}&type=all",
+        "https://github.com/search?q=org%3Aeeos+{code}&type=repositories"
+      ],
+      "query_templates": [
+        "site:{host}{prefix} {code}",
+        "site:{host}{prefix} {code} releases",
+        "site:{host}{prefix} device_{code}"
+      ],
+      "can_verify": true,
+      "source_class": "DEVELOPMENT",
+      "authority": 4085
     },
     {
       "id": "iode_site",
@@ -465,8 +747,12 @@
       "trust": 94,
       "path_prefixes": [],
       "family": "iodeOS",
-      "include_subdomains": false,
-      "can_verify": true
+      "include_subdomains": true,
+      "device_urls": [],
+      "query_templates": [],
+      "can_verify": true,
+      "source_class": "OFFICIAL",
+      "authority": 6094
     },
     {
       "id": "iode_gl",
@@ -479,8 +765,18 @@
         "/iode/"
       ],
       "family": "iodeOS",
-      "include_subdomains": false,
-      "can_verify": true
+      "include_subdomains": true,
+      "device_urls": [
+        "https://gitlab.com/groups/iode/-/search?search={code}"
+      ],
+      "query_templates": [
+        "site:{host}{prefix} {code}",
+        "site:{host}{prefix} {code} releases",
+        "site:{host}{prefix} device_{code}"
+      ],
+      "can_verify": true,
+      "source_class": "DEVELOPMENT",
+      "authority": 4085
     },
     {
       "id": "iode_gh",
@@ -493,8 +789,19 @@
         "/iodeOS/"
       ],
       "family": "iodeOS",
-      "include_subdomains": false,
-      "can_verify": true
+      "include_subdomains": true,
+      "device_urls": [
+        "https://github.com/iodeOS?q={code}&type=all",
+        "https://github.com/search?q=org%3AiodeOS+{code}&type=repositories"
+      ],
+      "query_templates": [
+        "site:{host}{prefix} {code}",
+        "site:{host}{prefix} {code} releases",
+        "site:{host}{prefix} device_{code}"
+      ],
+      "can_verify": true,
+      "source_class": "DEVELOPMENT",
+      "authority": 4085
     },
     {
       "id": "divest_gh",
@@ -507,8 +814,19 @@
         "/Divested-Mobile/"
       ],
       "family": "DivestOS",
-      "include_subdomains": false,
-      "can_verify": true
+      "include_subdomains": true,
+      "device_urls": [
+        "https://github.com/Divested-Mobile?q={code}&type=all",
+        "https://github.com/search?q=org%3ADivested-Mobile+{code}&type=repositories"
+      ],
+      "query_templates": [
+        "site:{host}{prefix} {code}",
+        "site:{host}{prefix} {code} releases",
+        "site:{host}{prefix} device_{code}"
+      ],
+      "can_verify": true,
+      "source_class": "DEVELOPMENT",
+      "authority": 4085
     },
     {
       "id": "divest_gl",
@@ -521,8 +839,18 @@
         "/divested-mobile/"
       ],
       "family": "DivestOS",
-      "include_subdomains": false,
-      "can_verify": true
+      "include_subdomains": true,
+      "device_urls": [
+        "https://gitlab.com/groups/divested-mobile/-/search?search={code}"
+      ],
+      "query_templates": [
+        "site:{host}{prefix} {code}",
+        "site:{host}{prefix} {code} releases",
+        "site:{host}{prefix} device_{code}"
+      ],
+      "can_verify": true,
+      "source_class": "DEVELOPMENT",
+      "authority": 4085
     },
     {
       "id": "samfw",
@@ -533,8 +861,16 @@
       "trust": 80,
       "path_prefixes": [],
       "family": "One UI",
-      "include_subdomains": false,
-      "can_verify": true
+      "include_subdomains": true,
+      "device_urls": [
+        "https://samfw.com/firmware/{slug}"
+      ],
+      "query_templates": [
+        "site:samfw.com {q} firmware"
+      ],
+      "can_verify": true,
+      "source_class": "FIRMWARE_DATABASE",
+      "authority": 5080
     },
     {
       "id": "sammobile",
@@ -548,7 +884,13 @@
       ],
       "family": "One UI",
       "include_subdomains": true,
-      "can_verify": true
+      "device_urls": [],
+      "query_templates": [
+        "site:sammobile.com/firmwares {q}"
+      ],
+      "can_verify": true,
+      "source_class": "FIRMWARE_DATABASE",
+      "authority": 5078
     },
     {
       "id": "sfirmware",
@@ -559,8 +901,14 @@
       "trust": 72,
       "path_prefixes": [],
       "family": "One UI",
-      "include_subdomains": false,
-      "can_verify": true
+      "include_subdomains": true,
+      "device_urls": [
+        "https://sfirmware.com/samsung-{slug}"
+      ],
+      "query_templates": [],
+      "can_verify": true,
+      "source_class": "FIRMWARE_DATABASE",
+      "authority": 5072
     },
     {
       "id": "samfrew",
@@ -571,8 +919,14 @@
       "trust": 70,
       "path_prefixes": [],
       "family": "One UI",
-      "include_subdomains": false,
-      "can_verify": true
+      "include_subdomains": true,
+      "device_urls": [],
+      "query_templates": [
+        "site:samfrew.com {q}"
+      ],
+      "can_verify": true,
+      "source_class": "FIRMWARE_DATABASE",
+      "authority": 5070
     },
     {
       "id": "xfu",
@@ -583,8 +937,17 @@
       "trust": 85,
       "path_prefixes": [],
       "family": null,
-      "include_subdomains": false,
-      "can_verify": true
+      "include_subdomains": true,
+      "device_urls": [
+        "https://xiaomifirmwareupdater.com/miui/{code}/",
+        "https://xiaomifirmwareupdater.com/hyperos/{code}/"
+      ],
+      "query_templates": [
+        "site:xiaomifirmwareupdater.com {code}"
+      ],
+      "can_verify": true,
+      "source_class": "FIRMWARE_DATABASE",
+      "authority": 5085
     },
     {
       "id": "hyperosupdates",
@@ -595,8 +958,16 @@
       "trust": 78,
       "path_prefixes": [],
       "family": "HyperOS",
-      "include_subdomains": false,
-      "can_verify": true
+      "include_subdomains": true,
+      "device_urls": [
+        "https://hyperosupdates.com/{code}/"
+      ],
+      "query_templates": [
+        "site:hyperosupdates.com {code}"
+      ],
+      "can_verify": true,
+      "source_class": "FIRMWARE_DATABASE",
+      "authority": 5078
     },
     {
       "id": "mifirm",
@@ -607,8 +978,14 @@
       "trust": 72,
       "path_prefixes": [],
       "family": null,
-      "include_subdomains": false,
-      "can_verify": true
+      "include_subdomains": true,
+      "device_urls": [
+        "https://mifirm.net/model/{code}"
+      ],
+      "query_templates": [],
+      "can_verify": true,
+      "source_class": "FIRMWARE_DATABASE",
+      "authority": 5072
     },
     {
       "id": "xmfirmware",
@@ -619,8 +996,12 @@
       "trust": 72,
       "path_prefixes": [],
       "family": null,
-      "include_subdomains": false,
-      "can_verify": true
+      "include_subdomains": true,
+      "device_urls": [],
+      "query_templates": [],
+      "can_verify": true,
+      "source_class": "FIRMWARE_DATABASE",
+      "authority": 5072
     },
     {
       "id": "oppofw",
@@ -631,8 +1012,14 @@
       "trust": 70,
       "path_prefixes": [],
       "family": "ColorOS",
-      "include_subdomains": false,
-      "can_verify": true
+      "include_subdomains": true,
+      "device_urls": [],
+      "query_templates": [
+        "site:oppo-firmware.com {q}"
+      ],
+      "can_verify": true,
+      "source_class": "FIRMWARE_DATABASE",
+      "authority": 5070
     },
     {
       "id": "firmwarefile",
@@ -643,8 +1030,14 @@
       "trust": 62,
       "path_prefixes": [],
       "family": null,
-      "include_subdomains": false,
-      "can_verify": true
+      "include_subdomains": true,
+      "device_urls": [],
+      "query_templates": [
+        "site:firmwarefile.com {q} firmware"
+      ],
+      "can_verify": true,
+      "source_class": "FIRMWARE_DATABASE",
+      "authority": 5062
     },
     {
       "id": "oxygenupdater",
@@ -655,8 +1048,16 @@
       "trust": 82,
       "path_prefixes": [],
       "family": "OxygenOS",
-      "include_subdomains": false,
-      "can_verify": true
+      "include_subdomains": true,
+      "device_urls": [
+        "https://oxygenupdater.com/devices/"
+      ],
+      "query_templates": [
+        "site:oxygenupdater.com {q}"
+      ],
+      "can_verify": true,
+      "source_class": "FIRMWARE_DATABASE",
+      "authority": 5082
     },
     {
       "id": "oneplusroms",
@@ -667,8 +1068,12 @@
       "trust": 65,
       "path_prefixes": [],
       "family": "OxygenOS",
-      "include_subdomains": false,
-      "can_verify": true
+      "include_subdomains": true,
+      "device_urls": [],
+      "query_templates": [],
+      "can_verify": true,
+      "source_class": "FIRMWARE_DATABASE",
+      "authority": 5065
     },
     {
       "id": "realmefirmware",
@@ -679,8 +1084,14 @@
       "trust": 68,
       "path_prefixes": [],
       "family": "Realme UI",
-      "include_subdomains": false,
-      "can_verify": true
+      "include_subdomains": true,
+      "device_urls": [],
+      "query_templates": [
+        "site:realmefirmware.com {q}"
+      ],
+      "can_verify": true,
+      "source_class": "FIRMWARE_DATABASE",
+      "authority": 5068
     },
     {
       "id": "nothing_community",
@@ -691,8 +1102,14 @@
       "trust": 75,
       "path_prefixes": [],
       "family": "Nothing OS",
-      "include_subdomains": false,
-      "can_verify": true
+      "include_subdomains": true,
+      "device_urls": [],
+      "query_templates": [
+        "site:nothing.community {q} ota"
+      ],
+      "can_verify": true,
+      "source_class": "FIRMWARE_DATABASE",
+      "authority": 5075
     },
     {
       "id": "xda",
@@ -703,8 +1120,16 @@
       "trust": 70,
       "path_prefixes": [],
       "family": null,
-      "include_subdomains": false,
-      "can_verify": false
+      "include_subdomains": true,
+      "device_urls": [],
+      "query_templates": [
+        "site:xdaforums.com {code} ROM",
+        "site:xdaforums.com {q} {code}",
+        "site:xdaforums.com {code} firmware download"
+      ],
+      "can_verify": false,
+      "source_class": "COMMUNITY",
+      "authority": 3070
     },
     {
       "id": "fourpda",
@@ -715,8 +1140,14 @@
       "trust": 55,
       "path_prefixes": [],
       "family": null,
-      "include_subdomains": false,
-      "can_verify": false
+      "include_subdomains": true,
+      "device_urls": [],
+      "query_templates": [
+        "site:4pda.to {q} {code}"
+      ],
+      "can_verify": false,
+      "source_class": "COMMUNITY",
+      "authority": 3055
     },
     {
       "id": "github",
@@ -727,8 +1158,14 @@
       "trust": 50,
       "path_prefixes": [],
       "family": null,
-      "include_subdomains": false,
-      "can_verify": false
+      "include_subdomains": true,
+      "device_urls": [],
+      "query_templates": [
+        "site:github.com {code} device tree releases"
+      ],
+      "can_verify": false,
+      "source_class": "COMMUNITY",
+      "authority": 3050
     },
     {
       "id": "gitlab",
@@ -739,8 +1176,14 @@
       "trust": 50,
       "path_prefixes": [],
       "family": null,
-      "include_subdomains": false,
-      "can_verify": false
+      "include_subdomains": true,
+      "device_urls": [],
+      "query_templates": [
+        "site:gitlab.com {code} android"
+      ],
+      "can_verify": false,
+      "source_class": "COMMUNITY",
+      "authority": 3050
     },
     {
       "id": "sourceforge",
@@ -752,7 +1195,14 @@
       "path_prefixes": [],
       "family": null,
       "include_subdomains": true,
-      "can_verify": false
+      "device_urls": [],
+      "query_templates": [
+        "site:sourceforge.net {code} files",
+        "site:sourceforge.net {code} rom"
+      ],
+      "can_verify": false,
+      "source_class": "COMMUNITY",
+      "authority": 3068
     },
     {
       "id": "afh",
@@ -763,8 +1213,14 @@
       "trust": 60,
       "path_prefixes": [],
       "family": null,
-      "include_subdomains": false,
-      "can_verify": false
+      "include_subdomains": true,
+      "device_urls": [],
+      "query_templates": [
+        "site:androidfilehost.com {code}"
+      ],
+      "can_verify": false,
+      "source_class": "DOWNLOAD_HOST",
+      "authority": 1060
     },
     {
       "id": "archive",
@@ -775,8 +1231,14 @@
       "trust": 55,
       "path_prefixes": [],
       "family": null,
-      "include_subdomains": false,
-      "can_verify": false
+      "include_subdomains": true,
+      "device_urls": [],
+      "query_templates": [
+        "site:archive.org {code} rom"
+      ],
+      "can_verify": false,
+      "source_class": "ARCHIVE_MIRROR",
+      "authority": 55
     },
     {
       "id": "wayback",
@@ -787,8 +1249,12 @@
       "trust": 55,
       "path_prefixes": [],
       "family": null,
-      "include_subdomains": false,
-      "can_verify": false
+      "include_subdomains": true,
+      "device_urls": [],
+      "query_templates": [],
+      "can_verify": false,
+      "source_class": "ARCHIVE_MIRROR",
+      "authority": 55
     },
     {
       "id": "reddit",
@@ -800,7 +1266,11 @@
       "path_prefixes": [],
       "family": null,
       "include_subdomains": true,
-      "can_verify": false
+      "device_urls": [],
+      "query_templates": [],
+      "can_verify": false,
+      "source_class": "ARCHIVE_MIRROR",
+      "authority": 20
     },
     {
       "id": "telegram",
@@ -811,8 +1281,12 @@
       "trust": 20,
       "path_prefixes": [],
       "family": null,
-      "include_subdomains": false,
-      "can_verify": false
+      "include_subdomains": true,
+      "device_urls": [],
+      "query_templates": [],
+      "can_verify": false,
+      "source_class": "ARCHIVE_MIRROR",
+      "authority": 20
     },
     {
       "id": "telegram_me",
@@ -823,8 +1297,12 @@
       "trust": 20,
       "path_prefixes": [],
       "family": null,
-      "include_subdomains": false,
-      "can_verify": false
+      "include_subdomains": true,
+      "device_urls": [],
+      "query_templates": [],
+      "can_verify": false,
+      "source_class": "ARCHIVE_MIRROR",
+      "authority": 20
     },
     {
       "id": "gdrive",
@@ -835,8 +1313,12 @@
       "trust": 15,
       "path_prefixes": [],
       "family": null,
-      "include_subdomains": false,
-      "can_verify": false
+      "include_subdomains": true,
+      "device_urls": [],
+      "query_templates": [],
+      "can_verify": false,
+      "source_class": "DOWNLOAD_HOST",
+      "authority": 1015
     },
     {
       "id": "mega",
@@ -847,8 +1329,12 @@
       "trust": 15,
       "path_prefixes": [],
       "family": null,
-      "include_subdomains": false,
-      "can_verify": false
+      "include_subdomains": true,
+      "device_urls": [],
+      "query_templates": [],
+      "can_verify": false,
+      "source_class": "DOWNLOAD_HOST",
+      "authority": 1015
     },
     {
       "id": "mediafire",
@@ -859,8 +1345,12 @@
       "trust": 15,
       "path_prefixes": [],
       "family": null,
-      "include_subdomains": false,
-      "can_verify": false
+      "include_subdomains": true,
+      "device_urls": [],
+      "query_templates": [],
+      "can_verify": false,
+      "source_class": "DOWNLOAD_HOST",
+      "authority": 1015
     },
     {
       "id": "aosp_docs",
@@ -871,8 +1361,12 @@
       "trust": 90,
       "path_prefixes": [],
       "family": null,
-      "include_subdomains": false,
-      "can_verify": false
+      "include_subdomains": true,
+      "device_urls": [],
+      "query_templates": [],
+      "can_verify": false,
+      "source_class": "REFERENCE",
+      "authority": 2090
     },
     {
       "id": "aosp_git",
@@ -883,8 +1377,12 @@
       "trust": 90,
       "path_prefixes": [],
       "family": null,
-      "include_subdomains": false,
-      "can_verify": false
+      "include_subdomains": true,
+      "device_urls": [],
+      "query_templates": [],
+      "can_verify": false,
+      "source_class": "REFERENCE",
+      "authority": 2090
     },
     {
       "id": "aosp_mirror",
@@ -897,8 +1395,12 @@
         "/aosp-mirror/"
       ],
       "family": null,
-      "include_subdomains": false,
-      "can_verify": false
+      "include_subdomains": true,
+      "device_urls": [],
+      "query_templates": [],
+      "can_verify": false,
+      "source_class": "REFERENCE",
+      "authority": 2085
     },
     {
       "id": "aosp_review",
@@ -909,8 +1411,12 @@
       "trust": 85,
       "path_prefixes": [],
       "family": null,
-      "include_subdomains": false,
-      "can_verify": false
+      "include_subdomains": true,
+      "device_urls": [],
+      "query_templates": [],
+      "can_verify": false,
+      "source_class": "REFERENCE",
+      "authority": 2085
     },
     {
       "id": "pixel_images",
@@ -924,8 +1430,12 @@
         "/android/ota"
       ],
       "family": null,
-      "include_subdomains": false,
-      "can_verify": true
+      "include_subdomains": true,
+      "device_urls": [],
+      "query_templates": [],
+      "can_verify": true,
+      "source_class": "OFFICIAL",
+      "authority": 6095
     },
     {
       "id": "flash_android",
@@ -936,11 +1446,534 @@
       "trust": 85,
       "path_prefixes": [],
       "family": null,
-      "include_subdomains": false,
-      "can_verify": false
+      "include_subdomains": true,
+      "device_urls": [],
+      "query_templates": [],
+      "can_verify": false,
+      "source_class": "REFERENCE",
+      "authority": 2085
+    },
+    {
+      "id": "romprovider",
+      "name": "ROM Provider",
+      "kind": "firmware_database",
+      "host": "romprovider.com",
+      "canonical_url": "https://romprovider.com",
+      "trust": 60,
+      "path_prefixes": [],
+      "family": null,
+      "include_subdomains": true,
+      "device_urls": [],
+      "query_templates": [
+        "site:romprovider.com {q} firmware"
+      ],
+      "can_verify": true,
+      "source_class": "FIRMWARE_DATABASE",
+      "authority": 5060
     }
   ],
   "roms": [],
-  "candidates": [],
+  "candidates": [
+    {
+      "url": "https://download.lineageos.org/devices/nabu",
+      "title": "LineageOS Downloads",
+      "text": "LineageOS Downloads",
+      "source_id": "lineageos_dl",
+      "download_url": null,
+      "download_links": [],
+      "query": "direct:source",
+      "device_id": "xiaomi:nabu"
+    },
+    {
+      "url": "https://download.lineageos.org/devices/nabu/builds",
+      "title": "LineageOS Downloads",
+      "text": "LineageOS Downloads",
+      "source_id": "lineageos_dl",
+      "download_url": null,
+      "download_links": [],
+      "query": "direct:source",
+      "device_id": "xiaomi:nabu"
+    },
+    {
+      "url": "https://crdroid.net/nabu",
+      "title": "crDroid.net - Download crDroid for supported devices",
+      "text": "crDroid.net - Download crDroid for supported devices crDroid --> Home Blog Translations Stats Support us Legal Contact Download --> Ready to download? Below you can find a list with official supported devices. Choose your device and get started using crDroid Search device Asus Google HTC LG LeEco Lenovo Meizu Motorola Nintendo Nokia Nothing OnePlus Poco Realme Redmi Samsung Sony Wileyfox Xiaomi Show all versions not just latest supported Asus X00P Asus Zenfone Max M1 Download crDroid 7 | Android 11 Last build: 2022-03-09 X00QD Zenfone 5 Download crDroid 6 | Android 10 crDroid 7 | Android 11 crDroid 8 | Android 12 crDroid 9 | Android 13 Last build: 2023-05-20 X00TD Zenfone Max Pro M1 Download crDroid 6 | Android 10 crDroid 7 | Android 11 crDroid 8 | Android 12 Last build: 2022-05-24 X01BD Zenfone Max Pro M2 Download crDroid 6 | Android 10 crDroid 7 | Android 11 crDroid 8 | Android 12 Last build: 2022-04-17 Z01R ASUS ZenFone 5Z Download crDroid 7 | Android 11 crDroid 8 | Android 12 crDroid 9 | Android 13 Last build: 2022-11-13 Google akita Pixel 8a Download crDroid 10 | Android 14 crDroid 11 | Android 15 crDroid 12 | Android 16 Last build: 2026-08-09 angler Nexus 6P Download crDroid 6 | Android 10 Last build: 2020-04-19 barbet Pixel 5a Download crDroid 9 | Android 13 crDroid 10 | Android 14 crDroid 11 | Android 15 crDroid 12 | Android 16 Last build: 2026-06-29 blazer Pixel 10 Pro Download crDroid 12 | Android 16 Last build: 2026-06-07 blueline Pixel 3 Download crDroid 11 | Android 15 Last build: 2026-05-25 bonito Pixel 3a XL Download crDroid 11 | Android 15 Last build: 2026-05-25 bramble Pixel 4a 5G Download crDroid 9 | Android 13 crDroid 10 | Android 14 crDroid 11 | Android 15 crDroid 12 | Android 16 Last build: 2026-06-29 caiman Pixel 9 Pro Download crDroid 11 | Android 15 crDroid 12 | Android 16 Last build: 2026-08-09 cheetah Pixel 7 Pro Download crDroid 9 | Android 13 crDroid 10 | Android 14 crDroid 11 | Android 15 crDroid 12 | Android 16 Last build: 2026-08-15 comet Pixel 9 Pro Fold Download crDroid 11 | Android 15 crDroid 12 | Android 16 Last build: 2026-08-09 coral Pixel 4XL Download crDroid 9 | Android 13 crDroid 10 | Android 14 Last build: 2024-05-11 crosshatch Pixel 3 XL Download crDroid 11 | Android 15 Last build: 2026-05-25 flox Nexus 7 2013 Download crDroid 7 | Android 11 Last build: 2024-02-16 frankel Pixel 10 Download crDroid 12 | Android 16 Last build: 2026-06-07 hammerhead Nexus 5 Download crDroid 6 | Android 10 crDroid 7 | Android 11 Last build: 2022-06-17 husky Pixel 8 Pro Download crDroid 10 | Android 14 crDroid 11 | Android 15 crDroid 12 | Android 16 Last build: 2026-08-09 komodo Pixel 9 Pro XL Download crDroid 11 | Android 15 crDroid 12 | Android 16 Last build: 2026-08-09 lynx Pixel 7a Download crDroid 9 | Android 13 crDroid 10 | Android 14 crDroid 11 | Android 15 crDroid 12 | Android 16 Last build: 2026-08-15 mustang Pixel 10 Pro XL Download crDroid 12 | Android 16 Last build: 2026-06-07 oriole Pixel 6 Download crDroid 10 | Android 14 crDroid 12 | Android 16 Last build: 2026-06-07 panther Pixel 7 Download crDroid 9 | Android 13 crDroid 10 | Android 14 crDroid 11 | Android 15 crDroid 12 | Android 16 Last build: 2026-08-16 rango Pixel 10 Pro Fold Download crDroid 12 | Android 16 Last build: 2026-06-07 raven Pixel 6 Pro Download crDroid 10 | Android 14 crDroid 12 | Android 16 Last build: 2026-06-07 redfin Pixel 5 Download crDroid 9 | Android 13 crDroid 10 | Android 14 crDroid 11 | Android 15 crDroid 12 | Android 16 Last build: 2026-06-29 sargo Pixel 3a Download crDroid 11 | Android 15 Last build: 2026-05-26 shamu Nexus 6 Download crDroid 6 | Android 10 crDroid 7 | Android 11 Last build: 2022-06-16 shiba Pixel 8 Download crDroid 10 | Android 14 crDroid 11 | Android 15 crDroid 12 | Android 16 Last build: 2026-08-09 taimen Pixel 2 XL Download crDroid 8 | Android 12 crDroid 9 | Android 13 crDroid 10 | Android 14 crDroid 11 | Android 15 Last build: 2026-05-18 tegu Pixel 9a Download crDroid 12 | Android 16 Last build: 2026-08-09 tokay Pixel 9 Download crDroid 11 | Android 15 crDroid 12 | Android 16 Last build: 2026-08-09 walleye Pixel 2 Download crDroid 8 | Android 12 crDroid 9 | Android 13 crDroid 10 | Android 14 crDroid 11 | Android 15 Last build: 2026-05-18 HTC hima HTC One M9 Download crDroid 7 | Android 11 Last build: 2022-11-04 m8 One M8 Download crDroid 6 | Android 10 Last build: 2020-11-11 m8d One M8d Download crDroid 6 | Android 10 Last build: 2020-11-11 LG d850 LG G3 (AT&T) Download crDroid 6 | Android 10 Last build: 2020-11-11 d851 LG G3 (T-Mobile) Download crDroid 6 | Android 10 Last build: 2020-11-11 d852 LG G3 (Canada) Download crDroid 6 | Android 10 Last build: 2020-11-11 d855 LG G3 (International) Download crDroid 6 | Android 10 Last build: 2020-11-11 f400 LG G3 (Korea) Download crDroid 6 | Android 10 Last build: 2020-11-11 g3ds LG G3 (dualsim) Download crDroid 6 | Android 10 Last build: 2020-11-11 ls990 LG G3 (Sprint) Download crDroid 6 | Android 10 crDroid 7 | Android 11 Last build: 2021-09-14 vs985 LG G3 (Verizon) Download crDroid 6 | Android 10 Last build: 2020-11-11 LeEco x2 LeEco Le Max 2 Download crDroid 6 | Android 10 crDroid 7 | Android 11 Last build: 2021-01-07 Lenovo heart Lenovo Z5Pro GT Download crDroid 6 | Android 10 Last build: 2020-12-19 z2_plus Lenovo ZUK Z2 Plus Download crDroid 6 | Android 10 crDroid 7 | Android 11 crDroid 8 | Android 12 Last build: 2022-07-24 zippo Lenovo Z6 Pro Download crDroid 8 | Android 12 crDroid 9 | Android 13 crDroid 10 | Android 14 crDroid 11 | Android 15 Last build: 2024-12-17 Meizu m1852 Meizu X8 Download crDroid 6 | Android 10 crDroid 7 | Android 11 Last build: 2021-05-09 m1872 Meizu 16X Download crDroid 6 | Android 10 Last build: 2020-10-17 m1882 Meizu 16th Download crDroid 6 | Android 10 crDroid 7 | Android 11 Last build: 2021-05-29 Motorola ahannah Moto E5 Plus Download crDroid 8 | Android 12 Last build: 2022-09-15 ali Moto G6 Download crDroid 7 | Android 11 crDroid 8 | Android 12 Last build: 2023-01-29 beckham Moto Z3 Play Download crDroid 7 | Android 11 crDroid 10 | Android 14 Last build: 2024-03-12 berlin Motorola Edge 20 Download crDroid 10 | Android 14 Last build: 2024-03-14 channel Moto g7 Play Download crDroid 6 | Android 10 crDroid 9 | Android 13 crDroid 10 | Android 14 crDroid 11 | Android 15 Last build: 2025-05-05 chef Motorola One Power Download crDroid 8 | Android 12 crDroid 9 | Android 13 crDroid 10 | Android 14 Last build: 2024-02-16 cypfq Moto G51 5G Download crDroid 10 | Android 14 Last build: 2024-05-15 deen Motorola One Download crDroid 8 | Android 12 Last build: 2023-04-14 devon Motorola G32 Download crDroid 9 | Android 13 crDroid 10 | Android 14 crDroid 11 | Android 15 Last build: 2024-11-19 dubai Motorola Edge 30 Download crDroid 11 | Android 15 Last build: 2025-05-16 evert Moto G6 Plus Download crDroid 10 | Android 14 Last build: 2024-03-12 fogo Moto G (2024) Download crDroid 12 | Android 16 Last build: 2025-12-28 hanoip Moto G60/G40F Download crDroid 10 | Android 14 Last build: 2024-07-28 hawao Motorola G42 Download crDroid 9 | Android 13 crDroid 10 | Android 14 crDroid 11 | Android 15 Last build: 2024-11-19 kane Moto One Vision Download crDroid 8 | Android 12 Last build: 2022-08-13 kiev Moto G 5G Download crDroid 11 | Android 15 Last build: 2025-06-18 lake Moto G 7 Plus Download crDroid 7 | Android 11 crDroid 10 | Android 14 Last build: 2024-03-12 nio Moto G100 Download crDroid 10 | Android 14 crDroid 11 | Android 15 Last build: 2025-06-30 ocean Moto G7 Power Download crDroid 6 | Android 10 crDroid 9 | Android 13 crDroid 10 | Android 14 crDroid 11 | Android 15 Last build: 2025-05-05 osprey Moto G 2015 Download crDroid 6 | Android 10 Last build: 2020-12-17 payton Motorola X4 Download crDroid 7 | Android 11 Last build: 2021-05-14 potter Moto G5 Plus Download crDroid 6 | Android 10 crDroid 7 | Android 11 Last build: 2022-12-13 pstar Moto Edge 20 Pro Download crDroid 10 | Android 14 crDroid 11 | Android 15 Last build: 2025-06-30 rhannah Moto E5 Plus D",
+      "source_id": "crdroid_site",
+      "download_url": null,
+      "download_links": [],
+      "query": "direct:source",
+      "device_id": "xiaomi:nabu"
+    },
+    {
+      "url": "https://grapheneos.org/releases",
+      "title": "Releases | GrapheneOS",
+      "text": "Releases | GrapheneOS GrapheneOS Features Install Build Usage FAQ Releases Source History Articles Donate Contact Releases Table of contents About the releases Release announcements Devices Pixel 10a Pixel 10 Pro Fold Pixel 10 Pro XL Pixel 10 Pro Pixel 10 Pixel 9a Pixel 9 Pro Fold Pixel 9 Pro XL Pixel 9 Pro Pixel 9 Pixel 8a Pixel 8 Pro Pixel 8 Pixel Fold Pixel Tablet Pixel 7a Pixel 7 Pro Pixel 7 Pixel 6a Pixel 6 Pro Pixel 6 Changelog 2026081300 2026080500 2026072900 2026071500 2026071100 2026070500 2026062800 2026062300 2026062200 2026062100 2026061800 2026061600 2026060600 2026060100 2026052400 2026050900 2026050700 2026050600 2026050400 2026042100 2026040800 2026040600 2026040300 2026032000 2026030700 2026030500 2026030200 2026030100 2026021200 2026020600 2026020400 2026012800 2026012100 2026011300 2026011000 2026010800 2025122500 2025121700 2025121200 2025121000 2025120400 2025112100 2025111800 2025110800 2025110600 2025102800 2025102600 2025102300 2025102200 2025100900 2025100300 2025092700 2025092500 2025091900 2025091000 2025090800 2025090600 2025090500 2025090300 2025090200 2025081400 2025081300 2025080600 2025080400 2025073000 2025072800 2025072700 2025071900 2025070800 2025070700 2025070600 2025070500 2025070301 2025070300 2025070100 2025063000 2025062700 2025062000 2025061900 2025061600 2025061500 2025061300 2025061000 2025060200 2025060100 2025052800 2025052000 2025051900 2025050700 2025050500 2025050300 2025042500 2025041100 2025040700 2025040400 2025032500 2025032100 2025031400 2025031300 2025030900 2025030800 2025030700 2025030500 2025030300 2025030200 2025030100 2025022800 2025022700 2025021100 2025020500 2025020300 2025020200 2025012700 2025012600 2025011500 2025010700 2024123000 2024121200 2024120900 2024120702 2024120701 2024120700 2024120400 2024120200 2024112700 2024111800 2024111700 2024110700 2024110400 2024103100 2024102400 2024102100 2024102000 2024101900 2024101801 2024101800 2024101701 2024101700 2024101600 2024101200 2024100800 2024092900 2024091900 2024091700 2024090400 2024083100 2024082200 2024082000 2024080600 2024080500 2024080200 2024080100 2024073100 2024072800 2024071600 2024071200 2024070900 2024070201 2024070200 2024062700 2024062000 2024061400 2024061300 2024061200 2024060500 2024060400 2024053100 2024052100 2024051500 2024050900 2024050700 2024050300 2024042200 2024042100 2024042000 2024040900 2024040300 2024040200 2024032100 2024031400 2024031100 2024030900 2024030800 2024030700 2024030600 2024030300 2024022800 2024022600 2024022300 2024020500 2024012600 2024011600 2024011300 2024010400 2023123100 2023123000 2023121200 2023120800 2023120701 2023120700 2023120400 2023112900 2023112600 2023111500 2023110700 2023103100 2023103000 2023102300 2023101300 2023101100 2023100900 2023100800 2023100300 2023100100 2023091800 2023090600 2023090200 2023080800 2023080700 2023072600 2023072400 2023071100 2023070500 2023062800 2023062300 2023061402 2023061400 2023060700 2023052900 2023052800 2023051600 2023050500 2023050100 2023042900 2023041100 2023040400 2023032600 2023032000 2023031500 2023031300 2023030400 2023022300 2023021000 2023020600 2023020200 2023012500 2023011000 2023010300 2022122700 2022122000 2022121400 2022121100 2022120700 2022120600 2022120300 2022113000 2022112500 2022111800 2022111000 2022110800 2022110600 2022110400 2022102800 2022102600 2022102300 2022101800 2022101600 2022101500 2022101400 2022101200 2022100300 2022092800 2022092300 2022092200 2022092000 2022091400 2022091300 2022090600 2022090400 2022083000 2022082400 2022082301 2022082300 2022082200 2022082100 2022081800 2022081600 2022080900 2022080500 2022080300 2022073000 2022072700 2022072000 2022071300 2022071100 2022070800 2022070600 2022063000 2022062200 2022061600 2022060701 2022060700 2022053100 2022052500 2022051100 2022050800 2022050700 2022050301 2022050300 2022043000 2022042600 2022042000 2022041900 2022041600 2022041300 2022041100 2022040400 2022033013 2022032715 2022032110 2022031103 2022030801 2022030501 2022030219 2022022818 2022021721 2022021602 2022021415 2022021314 2022020800 2022013120 2022013010 2022011423 2022011009 2022010500 2021122018 2021121602 2021121012 2021120717 2021112404 2021112123 2021112021 2021111414 2021110617 2021110507 2021110122 2021102613 2021102503 2021102300 2021102203 2021102020 2021100606 2021100502 2021100103 2021092612 2021092220 2021091407 2021090819 2021090401 2021082501 2021081822 2021081411 2021.08.09.02 2021.08.03.03 2021.07.26.20 2021.07.19.18 2021.07.16.19 2021.07.07.19 2021.06.20.20 2021.06.09.13 2021.06.08.06 2021.05.29.09 2021.05.19.06 2021.05.16.04 2021.05.04.01 2021.04.22.20 2021.04.16.04 2021.04.05.20 2021.03.30.02 2021.03.19.14 2021.03.06.00 2021.03.02.10 2021.02.26.16 2021.02.23.15 2021.02.19.15 2021.02.07.17 2021.02.06.05 2021.02.02.09 2021.01.23.03 2021.01.05.03 2020.12.12.03 2020.12.08.08 2020.11.27.15 2020.11.25.22 2020.11.05.18 2020.11.03.03 2020.10.23.04 2020.10.06.02 2020.10.01.23 2020.09.29.20 2020.09.25.00 2020.09.18.13 2020.09.11.14 2020.09.10.05 2020.08.07.01 2020.08.03.22 2020.07.06.20 2020.06.22.21 2020.06.02.02 2020.05.29.00 2020.05.23.12 2020.05.05.02 2020.04.14.23 2020.04.13.21 2020.04.07.10 2020.03.23.22 2020.03.04.16 2020.03.03.03 2020.02.07.19 2020.02.04.01 2020.01.06.21 2019.12.02.23 2019.11.05.23 2019.11.04.23 2019.10.07.21 2019.09.25.00 2019.09.23.19 2019.09.21.18 2019.09.18.14 2019.08.25.15 2019.08.05.19 2019.07.16.22 2019.07.01.21 2019.06.23.05 2019.06.14.02 2019.06.03.18 2019.05.18.20 2019.05.08.15 2019.05.07.00 2019.04.01.19 2019.03.05.03 About the releases These releases are available as both tags in the source code repositories and official builds. The factory images are used for the initial installation and can be verified with OpenSSH. See the installation page for details. GrapheneOS uses automatic over-the-air updates, but full update packages are listed below for uncommon use cases like never connecting the device to the internet. A full update package can upgrade from any past version to the new version. The over-the-air updates use delta update packages when available. Those aren't currently linked below but may be in the future once they're being used more consistently. Update packages are not for performing the initial installation and you should ignore incorrect guides trying to use them to install the OS. The update packages have an internal signature verified by the update client (or recovery when sideloading). Downgrade attacks are also prevented, and downgrades cannot be done unless a special downgrade update package has been signed with the release key. The internal payload for update_engine is also signed, providing another layer of signature verification and downgrade protection. Verified boot and the hardware-backed keystore also act as a final layer of protection. Releases are tested by the developers and are then pushed out via the Alpha channel. The release is then pushed out via the Beta channel shortly afterwards. Finally, the release is then pushed out via the Stable channel after being tested by users using the Beta channel. In some cases, problems are caught during Beta channel testing and a new release is made via the Beta channel to replace the aborted one. In general, it's not possible to downgrade unless a downgrade update package is generated, so use the Stable channel if you cannot tolerate dealing with temporary issues while a new release for the Beta channel is being created. Release announcements Releases are announced on this page and included in an atom feed usable from any standard feed reader app. A release announcement indicates that the source code tags are available and that the official builds will soon be pushed out via the Alpha channel. The main place to discuss the releases are the threads posted on our our discussion forum with the Announcements tag . The announcements are also posted from the @GrapheneOS X account , the @GrapheneOS Mastodon account , the @grapheneos.org Bluesky account , the official subreddit , an",
+      "source_id": "graphene_site",
+      "download_url": null,
+      "download_links": [],
+      "query": "direct:source",
+      "device_id": "xiaomi:nabu"
+    },
+    {
+      "url": "https://projectelixiros.com/device/nabu",
+      "title": "Project Elixir [Custom ROM]",
+      "text": "Project Elixir [Custom ROM]",
+      "source_id": "elixir_site",
+      "download_url": null,
+      "download_links": [],
+      "query": "direct:source",
+      "device_id": "xiaomi:nabu"
+    },
+    {
+      "url": "https://xiaomifirmwareupdater.com/miui/nabu",
+      "title": "xiaomifirmwareupdater.com - This website is for sale! - xiaomifirmwareupdater Resources and Information.",
+      "text": "xiaomifirmwareupdater.com - This website is for sale! - xiaomifirmwareupdater Resources and Information.",
+      "source_id": "xfu",
+      "download_url": null,
+      "download_links": [],
+      "query": "direct:source",
+      "device_id": "xiaomi:nabu"
+    },
+    {
+      "url": "https://xiaomifirmwareupdater.com/hyperos/nabu",
+      "title": "xiaomifirmwareupdater.com - This website is for sale! - xiaomifirmwareupdater Resources and Information.",
+      "text": "xiaomifirmwareupdater.com - This website is for sale! - xiaomifirmwareupdater Resources and Information.",
+      "source_id": "xfu",
+      "download_url": null,
+      "download_links": [],
+      "query": "direct:source",
+      "device_id": "xiaomi:nabu"
+    },
+    {
+      "url": "https://github.com/LineageOS?q=nabu&type=all",
+      "title": "LineageOS · GitHub",
+      "text": "LineageOS · GitHub Skip to content Navigation Menu Sign in Appearance settings LineageOS Platform AI CODE CREATION GitHub Copilot Write better code with AI GitHub Copilot app Direct agents from issue to merge MCP Registry Integrate external tools DEVELOPER WORKFLOWS Actions Automate any workflow Codespaces Instant dev environments Issues Plan and track work Code Review Manage code changes Code Quality Enforce quality at merge APPLICATION SECURITY GitHub Advanced Security Find and fix vulnerabilities Code security Secure your code as you build Secret protection Stop leaks before they start EXPLORE Why GitHub Documentation Blog Changelog Marketplace View all features Solutions BY COMPANY SIZE Enterprises Small and medium teams Startups Nonprofits BY USE CASE App Modernization DevSecOps DevOps CI/CD View all use cases BY INDUSTRY Healthcare Financial services Manufacturing Government View all industries View all solutions Resources EXPLORE BY TOPIC AI Software Development DevOps Security View all topics EXPLORE BY TYPE Customer stories Events & webinars Ebooks & reports Business insights GitHub Skills SUPPORT & SERVICES Documentation Customer support Community forum Trust center Partners View all resources Open Source COMMUNITY GitHub Sponsors Fund open source developers PROGRAMS Security Lab Maintainer Community Accelerator GitHub Stars Archive Program REPOSITORIES Topics Trending Collections Enterprise ENTERPRISE SOLUTIONS Enterprise platform AI-powered developer platform AVAILABLE ADD-ONS GitHub Advanced Security Enterprise-grade security features Copilot for Business Enterprise-grade AI features Premium Support Enterprise-grade 24/7 support Pricing Search / Sign in Sign up Appearance settings You signed in with another tab or window. Reload to refresh your session. You signed out in another tab or window. Reload to refresh your session. You switched accounts on another tab or window. Reload to refresh your session. Dismiss alert {{ message }} Uh oh! There was an error while loading. Please reload this page . Uh oh! There was an error while loading. Please reload this page . LineageOS A free and open-source operating system for various devices, based on the Android mobile platform. This is a mirror of https://review.lineageos.org/ 6.3k followers https://www.lineageos.org Mastodon @LineageOS@fosstodon.org devrel@lineageos.org Overview Repositories Projects Packages People More Overview Repositories Projects Packages People Pinned Loading issues issues Public Issue Tracker Python 18 6 charter charter Public 214 45 hudson hudson Public Python 140 87 android android Public 4.6k 1.9k lineage_wiki lineage_wiki Public SCSS 859 542 www www Public SCSS 54 31 Repositories --> Loading Type Select type All Public Sources Forks Archived Mirrors Templates Language Select language All AIDL Assembly Batchfile BitBake C C++ CSS Go Groff HTML Java JavaScript Kotlin M4 Makefile Objective-C Perl Python Rust SCSS Shell Starlark TypeScript Vim Script Sort Select order Last updated Name Stars 0 results for all repositories matching nabu sorted by last updated Clear filter No repositories matched your search. People View all Top languages Loading… Uh oh! There was an error while loading. Please reload this page . Most used topics Loading… Uh oh! There was an error while loading. Please reload this page . Footer © 2026 GitHub, Inc. Footer navigation Terms Privacy Security Status Community Docs Contact Manage cookies Do not share my personal information You can’t perform that action at this time.",
+      "source_id": "lineageos_gh",
+      "download_url": null,
+      "download_links": [],
+      "query": "direct:source",
+      "device_id": "xiaomi:nabu"
+    },
+    {
+      "url": "https://github.com/search?q=org%3ALineageOS+nabu&type=repositories",
+      "title": "Repository search results · GitHub",
+      "text": "Repository search results · GitHub Skip to content Navigation Menu Sign in Appearance settings Platform AI CODE CREATION GitHub Copilot Write better code with AI GitHub Copilot app Direct agents from issue to merge MCP Registry Integrate external tools DEVELOPER WORKFLOWS Actions Automate any workflow Codespaces Instant dev environments Issues Plan and track work Code Review Manage code changes Code Quality Enforce quality at merge APPLICATION SECURITY GitHub Advanced Security Find and fix vulnerabilities Code security Secure your code as you build Secret protection Stop leaks before they start EXPLORE Why GitHub Documentation Blog Changelog Marketplace View all features Solutions BY COMPANY SIZE Enterprises Small and medium teams Startups Nonprofits BY USE CASE App Modernization DevSecOps DevOps CI/CD View all use cases BY INDUSTRY Healthcare Financial services Manufacturing Government View all industries View all solutions Resources EXPLORE BY TOPIC AI Software Development DevOps Security View all topics EXPLORE BY TYPE Customer stories Events & webinars Ebooks & reports Business insights GitHub Skills SUPPORT & SERVICES Documentation Customer support Community forum Trust center Partners View all resources Open Source COMMUNITY GitHub Sponsors Fund open source developers PROGRAMS Security Lab Maintainer Community Accelerator GitHub Stars Archive Program REPOSITORIES Topics Trending Collections Enterprise ENTERPRISE SOLUTIONS Enterprise platform AI-powered developer platform AVAILABLE ADD-ONS GitHub Advanced Security Enterprise-grade security features Copilot for Business Enterprise-grade AI features Premium Support Enterprise-grade 24/7 support Pricing Search / Sign in Sign up Appearance settings You signed in with another tab or window. Reload to refresh your session. You signed out in another tab or window. Reload to refresh your session. You switched accounts on another tab or window. Reload to refresh your session. Dismiss alert {{ message }} repositories Search Results · org:LineageOS nabu Filter by Code ... ( ... ) results Repositories 0 ( 0 ) results Issues results Pull requests results Discussions results Users results More Advanced search Filter: Repositories 0 ( 0 ) 0 results ( 63 ms ) 0 results in LineageOS (press backspace or delete to remove) Sort by: Best match Filter Your search did not match any repositories Try one of the tips below to find more repositories Search across an organization Saved searches You could try an advanced search . You can’t perform that action at this time.",
+      "source_id": "github",
+      "download_url": null,
+      "download_links": [],
+      "query": "direct:source",
+      "device_id": "xiaomi:nabu"
+    },
+    {
+      "url": "https://github.com/crdroidandroid?q=nabu&type=all",
+      "title": "crDroid Android · GitHub",
+      "text": "crDroid Android · GitHub Skip to content Navigation Menu Sign in Appearance settings crdroidandroid Platform AI CODE CREATION GitHub Copilot Write better code with AI GitHub Copilot app Direct agents from issue to merge MCP Registry Integrate external tools DEVELOPER WORKFLOWS Actions Automate any workflow Codespaces Instant dev environments Issues Plan and track work Code Review Manage code changes Code Quality Enforce quality at merge APPLICATION SECURITY GitHub Advanced Security Find and fix vulnerabilities Code security Secure your code as you build Secret protection Stop leaks before they start EXPLORE Why GitHub Documentation Blog Changelog Marketplace View all features Solutions BY COMPANY SIZE Enterprises Small and medium teams Startups Nonprofits BY USE CASE App Modernization DevSecOps DevOps CI/CD View all use cases BY INDUSTRY Healthcare Financial services Manufacturing Government View all industries View all solutions Resources EXPLORE BY TOPIC AI Software Development DevOps Security View all topics EXPLORE BY TYPE Customer stories Events & webinars Ebooks & reports Business insights GitHub Skills SUPPORT & SERVICES Documentation Customer support Community forum Trust center Partners View all resources Open Source COMMUNITY GitHub Sponsors Fund open source developers PROGRAMS Security Lab Maintainer Community Accelerator GitHub Stars Archive Program REPOSITORIES Topics Trending Collections Enterprise ENTERPRISE SOLUTIONS Enterprise platform AI-powered developer platform AVAILABLE ADD-ONS GitHub Advanced Security Enterprise-grade security features Copilot for Business Enterprise-grade AI features Premium Support Enterprise-grade 24/7 support Pricing Search / Sign in Sign up Appearance settings You signed in with another tab or window. Reload to refresh your session. You signed out in another tab or window. Reload to refresh your session. You switched accounts on another tab or window. Reload to refresh your session. Dismiss alert {{ message }} Uh oh! There was an error while loading. Please reload this page . Uh oh! There was an error while loading. Please reload this page . crDroid Android After-market highly customized Android platform for select devices Verified We've verified that the organization crdroidandroid controls the domain: crdroid.net Learn more about verified organizations 1.9k followers https://crdroid.net contact@crdroid.net Overview Repositories Projects Packages People More Overview Repositories Projects Packages People README.md crDroid Android Stability - Performance - Control 🔗 Quick Links ⬇️ Download ✨ Features ❤️ Support us 📝 Blog 💬 Community 🐞 Issues 🛠️ Build yourself 📱 About crDroid crDroid is a custom Android ROM built for stability, performance, and user control. You get a clean Android base with smart features that improve daily use. The goal is simple: ⚡ Fast system. 🧱 Reliable behavior. 🎛️ Full user choice. crDroid emphasizes consistency across devices. Nearly every part of the system is customizable: Status bar Quick settings Navigation & gestures Lockscreen System theming Your device, your rules! 🚀 Performance first Performance matters. crDroid keeps things smooth without dumb or aggressive tweaks. Battery life stays balanced. Animations stay fluid. No gimmicks. 🔐 Security you can trust Security stays up to date. crDroid closely tracks AOSP and ships recent Android security patches. 🌍 Open Source & Community driven crDroid is fully open source. Development happens in the open. Maintainers, developers, and users collaborate transparently. If you want control without sacrificing stability, crDroid is built for you. ⚠️ Warning — Read This Attention users: Flashing custom ROMs always carries risk, especially when the project is fully/partially closed source or lacks public accountability . Such ROMs — including DerpFest — do not provide full source availability or independent review, making it difficult for users to verify what is actually running on their devices. They are usually published by notorious authors banned on major Android communities. You cannot verify what code is running on your device. That means higher risk of privacy issues, data leakage and unauthorized access to personal information Bottom line: ✅ Choose ROMs with publicly available source code ✅ Review commits and development activity ✅ Consider maintainer reputation and community trust Attention developers: Do not accept contributions from banned or unverified individuals. Avoid commits with unclear or incorrect authorship. Use changes only from established, fully open source, trusted sources with transparent commit history. Review full details here Pinned Loading android android Public Build crDroid and some general information 697 274 crdroid_features crdroid_features Public our main features (why you love us) 333 58 issue_tracker issue_tracker Public all crDroid related issues should go here 25 3 rules-and-guidelines rules-and-guidelines Public Rules and guidelines for maintainers 9 3 install_docs install_docs Public Install docs for devices 15 78 build_targets build_targets Public This repo is used to store build targets for automated builds 15 56 Repositories --> Loading Type Select type All Public Sources Forks Archived Mirrors Templates Language Select language All Assembly C C++ CSS Go HTML Java Kotlin Makefile PHP Python Roff Rust Shell Starlark Sort Select order Last updated Name Stars 2 results for all repositories matching nabu sorted by last updated Clear filter Showing 2 of 2 repositories android_device_xiaomi_nabu Public Forked from Kfkcome/android_device_xiaomi_nabu Uh oh! There was an error while loading. Please reload this page . crdroidandroid/android_device_xiaomi_nabu's past year of commit activity Shell 2 6 0 0 Updated Jul 19, 2026 android_kernel_xiaomi_nabu Public Forked from Kfkcome/android_kernel_xiaomi_nabu Uh oh! There was an error while loading. Please reload this page . crdroidandroid/android_kernel_xiaomi_nabu's past year of commit activity C 2 6 0 0 Updated Oct 14, 2025 People Top languages Loading… Uh oh! There was an error while loading. Please reload this page . Most used topics Loading… Uh oh! There was an error while loading. Please reload this page . Developer Program Member Footer © 2026 GitHub, Inc. Footer navigation Terms Privacy Security Status Community Docs Contact Manage cookies Do not share my personal information You can’t perform that action at this time.",
+      "source_id": "crdroid_gh",
+      "download_url": null,
+      "download_links": [],
+      "query": "direct:source",
+      "device_id": "xiaomi:nabu"
+    },
+    {
+      "url": "https://github.com/search?q=org%3Acrdroidandroid+nabu&type=repositories",
+      "title": "Repository search results · GitHub",
+      "text": "Repository search results · GitHub Skip to content Navigation Menu Sign in Appearance settings Platform AI CODE CREATION GitHub Copilot Write better code with AI GitHub Copilot app Direct agents from issue to merge MCP Registry Integrate external tools DEVELOPER WORKFLOWS Actions Automate any workflow Codespaces Instant dev environments Issues Plan and track work Code Review Manage code changes Code Quality Enforce quality at merge APPLICATION SECURITY GitHub Advanced Security Find and fix vulnerabilities Code security Secure your code as you build Secret protection Stop leaks before they start EXPLORE Why GitHub Documentation Blog Changelog Marketplace View all features Solutions BY COMPANY SIZE Enterprises Small and medium teams Startups Nonprofits BY USE CASE App Modernization DevSecOps DevOps CI/CD View all use cases BY INDUSTRY Healthcare Financial services Manufacturing Government View all industries View all solutions Resources EXPLORE BY TOPIC AI Software Development DevOps Security View all topics EXPLORE BY TYPE Customer stories Events & webinars Ebooks & reports Business insights GitHub Skills SUPPORT & SERVICES Documentation Customer support Community forum Trust center Partners View all resources Open Source COMMUNITY GitHub Sponsors Fund open source developers PROGRAMS Security Lab Maintainer Community Accelerator GitHub Stars Archive Program REPOSITORIES Topics Trending Collections Enterprise ENTERPRISE SOLUTIONS Enterprise platform AI-powered developer platform AVAILABLE ADD-ONS GitHub Advanced Security Enterprise-grade security features Copilot for Business Enterprise-grade AI features Premium Support Enterprise-grade 24/7 support Pricing Search / Sign in Sign up Appearance settings You signed in with another tab or window. Reload to refresh your session. You signed out in another tab or window. Reload to refresh your session. You switched accounts on another tab or window. Reload to refresh your session. Dismiss alert {{ message }} repositories Search Results · org:crdroidandroid nabu Filter by Code ... ( ... ) results Repositories 0 ( 0 ) results Issues results Pull requests results Discussions results Users results More Advanced search Filter: Repositories 0 ( 0 ) 0 results ( 51 ms ) 0 results in crdroidandroid (press backspace or delete to remove) Sort by: Best match Filter Your search did not match any repositories Try one of the tips below to find more repositories Search across an organization Saved searches You could try an advanced search . You can’t perform that action at this time.",
+      "source_id": "github",
+      "download_url": null,
+      "download_links": [],
+      "query": "direct:source",
+      "device_id": "xiaomi:nabu"
+    },
+    {
+      "url": "https://github.com/PixelExperience?q=nabu&type=all",
+      "title": "PixelExperience · GitHub",
+      "text": "PixelExperience · GitHub Skip to content Navigation Menu Sign in Appearance settings PixelExperience Platform AI CODE CREATION GitHub Copilot Write better code with AI GitHub Copilot app Direct agents from issue to merge MCP Registry Integrate external tools DEVELOPER WORKFLOWS Actions Automate any workflow Codespaces Instant dev environments Issues Plan and track work Code Review Manage code changes Code Quality Enforce quality at merge APPLICATION SECURITY GitHub Advanced Security Find and fix vulnerabilities Code security Secure your code as you build Secret protection Stop leaks before they start EXPLORE Why GitHub Documentation Blog Changelog Marketplace View all features Solutions BY COMPANY SIZE Enterprises Small and medium teams Startups Nonprofits BY USE CASE App Modernization DevSecOps DevOps CI/CD View all use cases BY INDUSTRY Healthcare Financial services Manufacturing Government View all industries View all solutions Resources EXPLORE BY TOPIC AI Software Development DevOps Security View all topics EXPLORE BY TYPE Customer stories Events & webinars Ebooks & reports Business insights GitHub Skills SUPPORT & SERVICES Documentation Customer support Community forum Trust center Partners View all resources Open Source COMMUNITY GitHub Sponsors Fund open source developers PROGRAMS Security Lab Maintainer Community Accelerator GitHub Stars Archive Program REPOSITORIES Topics Trending Collections Enterprise ENTERPRISE SOLUTIONS Enterprise platform AI-powered developer platform AVAILABLE ADD-ONS GitHub Advanced Security Enterprise-grade security features Copilot for Business Enterprise-grade AI features Premium Support Enterprise-grade 24/7 support Pricing Search / Sign in Sign up Appearance settings You signed in with another tab or window. Reload to refresh your session. You signed out in another tab or window. Reload to refresh your session. You switched accounts on another tab or window. Reload to refresh your session. Dismiss alert {{ message }} This organization was marked as archived by an administrator on Apr 19, 2024. It is no longer maintained. Uh oh! There was an error while loading. Please reload this page . Uh oh! There was an error while loading. Please reload this page . PixelExperience AOSP based ROM, with Google apps included and all Pixel goodies 1.6k followers Brazil https://get.pixelexperience.org https://t.me/PixelExperience X @PixelExpRom Overview Repositories Projects Packages People More Overview Repositories Projects Packages People Pinned Loading official_devices official_devices Public archive Official devices 483 205 android-issues android-issues Public archive Issue tracker 98 42 wiki wiki Public archive SCSS 71 87 docs docs Public archive 35 15 manifest manifest Public archive 236 220 vendor_aosp vendor_aosp Public archive Shell 38 147 Repositories --> Loading Type Select type All Public Sources Forks Archived Mirrors Templates Language Select language All Assembly C C++ CSS Go HTML Java Kotlin Makefile Python Raku Rust SCSS Shell Sort Select order Last updated Name Stars 0 results for all repositories matching nabu sorted by last updated Clear filter No repositories matched your search. People Top languages Loading… Uh oh! There was an error while loading. Please reload this page . Most used topics Loading… Uh oh! There was an error while loading. Please reload this page . Footer © 2026 GitHub, Inc. Footer navigation Terms Privacy Security Status Community Docs Contact Manage cookies Do not share my personal information You can’t perform that action at this time.",
+      "source_id": "pe_gh",
+      "download_url": null,
+      "download_links": [],
+      "query": "direct:source",
+      "device_id": "xiaomi:nabu"
+    },
+    {
+      "url": "https://github.com/search?q=org%3APixelExperience+nabu&type=repositories",
+      "title": "Repository search results · GitHub",
+      "text": "Repository search results · GitHub Skip to content Navigation Menu Sign in Appearance settings Platform AI CODE CREATION GitHub Copilot Write better code with AI GitHub Copilot app Direct agents from issue to merge MCP Registry Integrate external tools DEVELOPER WORKFLOWS Actions Automate any workflow Codespaces Instant dev environments Issues Plan and track work Code Review Manage code changes Code Quality Enforce quality at merge APPLICATION SECURITY GitHub Advanced Security Find and fix vulnerabilities Code security Secure your code as you build Secret protection Stop leaks before they start EXPLORE Why GitHub Documentation Blog Changelog Marketplace View all features Solutions BY COMPANY SIZE Enterprises Small and medium teams Startups Nonprofits BY USE CASE App Modernization DevSecOps DevOps CI/CD View all use cases BY INDUSTRY Healthcare Financial services Manufacturing Government View all industries View all solutions Resources EXPLORE BY TOPIC AI Software Development DevOps Security View all topics EXPLORE BY TYPE Customer stories Events & webinars Ebooks & reports Business insights GitHub Skills SUPPORT & SERVICES Documentation Customer support Community forum Trust center Partners View all resources Open Source COMMUNITY GitHub Sponsors Fund open source developers PROGRAMS Security Lab Maintainer Community Accelerator GitHub Stars Archive Program REPOSITORIES Topics Trending Collections Enterprise ENTERPRISE SOLUTIONS Enterprise platform AI-powered developer platform AVAILABLE ADD-ONS GitHub Advanced Security Enterprise-grade security features Copilot for Business Enterprise-grade AI features Premium Support Enterprise-grade 24/7 support Pricing Search / Sign in Sign up Appearance settings You signed in with another tab or window. Reload to refresh your session. You signed out in another tab or window. Reload to refresh your session. You switched accounts on another tab or window. Reload to refresh your session. Dismiss alert {{ message }} repositories Search Results · org:PixelExperience nabu Filter by Code ... ( ... ) results Repositories 0 ( 0 ) results Issues results Pull requests results Discussions results Users results More Advanced search Filter: Repositories 0 ( 0 ) 0 results ( 37 ms ) 0 results in PixelExperience (press backspace or delete to remove) Sort by: Best match Filter Your search did not match any repositories Try one of the tips below to find more repositories Search across an organization Saved searches You could try an advanced search . You can’t perform that action at this time.",
+      "source_id": "github",
+      "download_url": null,
+      "download_links": [],
+      "query": "direct:source",
+      "device_id": "xiaomi:nabu"
+    },
+    {
+      "url": "https://github.com/Evolution-X?q=nabu&type=all",
+      "title": "Evolution X · GitHub",
+      "text": "Evolution X · GitHub Skip to content Navigation Menu Sign in Appearance settings Evolution-X Platform AI CODE CREATION GitHub Copilot Write better code with AI GitHub Copilot app Direct agents from issue to merge MCP Registry Integrate external tools DEVELOPER WORKFLOWS Actions Automate any workflow Codespaces Instant dev environments Issues Plan and track work Code Review Manage code changes Code Quality Enforce quality at merge APPLICATION SECURITY GitHub Advanced Security Find and fix vulnerabilities Code security Secure your code as you build Secret protection Stop leaks before they start EXPLORE Why GitHub Documentation Blog Changelog Marketplace View all features Solutions BY COMPANY SIZE Enterprises Small and medium teams Startups Nonprofits BY USE CASE App Modernization DevSecOps DevOps CI/CD View all use cases BY INDUSTRY Healthcare Financial services Manufacturing Government View all industries View all solutions Resources EXPLORE BY TOPIC AI Software Development DevOps Security View all topics EXPLORE BY TYPE Customer stories Events & webinars Ebooks & reports Business insights GitHub Skills SUPPORT & SERVICES Documentation Customer support Community forum Trust center Partners View all resources Open Source COMMUNITY GitHub Sponsors Fund open source developers PROGRAMS Security Lab Maintainer Community Accelerator GitHub Stars Archive Program REPOSITORIES Topics Trending Collections Enterprise ENTERPRISE SOLUTIONS Enterprise platform AI-powered developer platform AVAILABLE ADD-ONS GitHub Advanced Security Enterprise-grade security features Copilot for Business Enterprise-grade AI features Premium Support Enterprise-grade 24/7 support Pricing Search / Sign in Sign up Appearance settings You signed in with another tab or window. Reload to refresh your session. You signed out in another tab or window. Reload to refresh your session. You switched accounts on another tab or window. Reload to refresh your session. Dismiss alert {{ message }} Uh oh! There was an error while loading. Please reload this page . Uh oh! There was an error while loading. Please reload this page . Evolution X Android ROM that aims to replicate the Google Pixel experience, with added customization. Based on the @LineageOS Project. 1.2k followers Philippines https://evolution-x.org https://cdn.evolution-x.org X @EvolutionXROM https://discord.gg/Evolution-X Overview Repositories Projects Packages People More Overview Repositories Projects Packages People README.md 🔵 Current Focus: Android 17 Development is centered on the Android 17 ( cnb ) branch — new features, fixes, and device bring-up land there first. Android 16 ( bka ) and Android 15 ( vic ) remain actively maintained on a stability-focused cadence for the bulk of supported devices. ✨ What Makes Evolution X Great Evolution X blends the best of Pixel with feature-rich customization, built on a clean LineageOS foundation. 🌟 Pixel Exclusive Wallpapers, clock styles, boot animations, sound effects, unlimited Google Photos backup & more — straight from Pixel, on your device 🛠️ Deep Customization Freeform windows, Sidebar, App Lock, per-app volume, icon packs, font switching, and hundreds of UI tweaks — all configured through Evolver , our in-house settings app 🔁 Always Up To Date Monthly Android security patches, fast rebases, and consistent stable releases — no dead ROMs here 🌍 Translated by the Community Localized into dozens of languages by volunteers worldwide via Crowdin — making the ROM accessible to everyone 🧠 Active Community Thousands of users and maintainers across Discord and Telegram — help is always close 📱 Wide Device Support Android 15 through 17 branches — 100+ actively maintained devices, backed by a global team 🔓 Fully Open Source Every line of code is public. Audit it, fork it, learn from it — your device, your rules 📱 Supported Android Versions Branch Status Security Patch Devices Supported Manifest 🔵 Android 17 August 2026 3 (early bring-up) cnb 🟣 Android 16 QPR2 August 2026 45 bka 🟢 Android 15 August 2026 3 vic ⚪ Android 14 August 2026 0 (no longer actively maintained) udc Device counts reflect entries flagged currently_maintained: true in the OTA builds directory for each branch — dropped/unmaintained devices are excluded. Confirm current counts there before publishing, as they shift as devices land or drop. 📊 At a Glance 🔗 Important Links Resource Link 📦 Manifest https://github.com/Evolution-X/manifest 📦 Android 17 Manifest (cnb) https://github.com/Evolution-X/manifest/tree/cnb ⚙️ Evolver (Settings App) https://github.com/Evolution-X/packages_apps_Evolver 📁 Devices Org https://github.com/Evolution-X-Devices 📱 Supported Devices https://evolution-x.org/devices ✨ Features https://evolution-x.org/features 📥 Downloads https://cdn.evolution-x.org 📖 Wiki https://wiki.evolution-x.org 📰 Blog https://evolution-x.org/blog 🐦 Twitter / X https://x.com/EvolutionXROM 🌍 Translations https://crowdin.com/project/Evolution_X 🚀 Getting Started 📲 How to flash Evolution X on your device Check if your device is supported at evolution-x.org/devices Download the latest build from cdn.evolution-x.org — Android 17 (cnb) builds are the primary focus, so check there first for the newest features Boot into a custom recovery (e.g. TWRP or OrangeFox) Flash the ROM zip, optionally flash GApps if not included Wipe cache/dalvik and reboot For detailed instructions, visit the Wiki . ⚠️ Always back up your data before flashing. Flashing a custom ROM will void your warranty. 🔧 Becoming a device maintainer Interested in maintaining Evolution X for your device? We're especially looking for help bringing devices up on the Android 17 (cnb) branch. Reach out on Discord and contact Onelots or Manidweep . ⚙️ Contributing to Evolver, our settings app Most of the user-facing customization in Evolution X lives in Evolver , our settings app. If you're comfortable with Java/Kotlin and Android UI work, this is one of the most approachable places to start contributing — from small preference-screen cleanups to new Compose-based features. Fork packages_apps_Evolver and check the cnb branch for the latest work Browse open issues or ask in Discord for good first tasks Submit a pull request — Gerrit-style commit messages are appreciated 🌍 Contributing translations Evolution X is localized by volunteers on Crowdin . If you speak a language other than English, you can help make the ROM accessible to more people around the world. How to get started: Visit the project at crowdin.com/project/Evolution_X Create a free Crowdin account or sign in Select your language from the list Start translating strings — no technical knowledge required! Translations are reviewed and merged into the ROM regularly 💡 Every contribution counts — even a few translated strings help users in your region have a better experience. 👥 Contributors Evolution X is built by contributors across the entire org — manifest, frameworks, device trees, and Evolver , our settings app where most user-facing features take shape. Core manifest & frameworks Evolver (Settings App) 🔐 Security & Transparency Evolution X is fully open source . Every line of code is publicly available for review — from system components to build scripts. We believe users have the right to inspect what's running on their devices. When choosing a custom ROM, we recommend: ✅ Verifying that source code is publicly available ✅ Reviewing recent commit history and development activity ✅ Checking maintainer reputation and community trust 💖 Support the Project If you find Evolution X useful, consider supporting the developers: ⭐ Thanks for checking out Evolution X! Now focused on Android 17 — let's keep evolving Android together 🚀 Want to help in your language? Join us on Crowdin → Pinned Loading manifest manifest Public Repo manifest for syncing source 79 70 OTA OTA Public Over-the-air updates and infrastructure device configs 46 71 frameworks_base frameworks_base Public Forked from aosp-mirror/platform_frameworks_base Java",
+      "source_id": "evox_gh",
+      "download_url": null,
+      "download_links": [],
+      "query": "direct:source",
+      "device_id": "xiaomi:nabu"
+    },
+    {
+      "url": "https://github.com/search?q=org%3AEvolution-X+nabu&type=repositories",
+      "title": "Repository search results · GitHub",
+      "text": "Repository search results · GitHub Skip to content Navigation Menu Sign in Appearance settings Platform AI CODE CREATION GitHub Copilot Write better code with AI GitHub Copilot app Direct agents from issue to merge MCP Registry Integrate external tools DEVELOPER WORKFLOWS Actions Automate any workflow Codespaces Instant dev environments Issues Plan and track work Code Review Manage code changes Code Quality Enforce quality at merge APPLICATION SECURITY GitHub Advanced Security Find and fix vulnerabilities Code security Secure your code as you build Secret protection Stop leaks before they start EXPLORE Why GitHub Documentation Blog Changelog Marketplace View all features Solutions BY COMPANY SIZE Enterprises Small and medium teams Startups Nonprofits BY USE CASE App Modernization DevSecOps DevOps CI/CD View all use cases BY INDUSTRY Healthcare Financial services Manufacturing Government View all industries View all solutions Resources EXPLORE BY TOPIC AI Software Development DevOps Security View all topics EXPLORE BY TYPE Customer stories Events & webinars Ebooks & reports Business insights GitHub Skills SUPPORT & SERVICES Documentation Customer support Community forum Trust center Partners View all resources Open Source COMMUNITY GitHub Sponsors Fund open source developers PROGRAMS Security Lab Maintainer Community Accelerator GitHub Stars Archive Program REPOSITORIES Topics Trending Collections Enterprise ENTERPRISE SOLUTIONS Enterprise platform AI-powered developer platform AVAILABLE ADD-ONS GitHub Advanced Security Enterprise-grade security features Copilot for Business Enterprise-grade AI features Premium Support Enterprise-grade 24/7 support Pricing Search / Sign in Sign up Appearance settings You signed in with another tab or window. Reload to refresh your session. You signed out in another tab or window. Reload to refresh your session. You switched accounts on another tab or window. Reload to refresh your session. Dismiss alert {{ message }} repositories Search Results · org:Evolution-X nabu Filter by Code ... ( ... ) results Repositories 0 ( 0 ) results Issues results Pull requests results Discussions results Users results More Advanced search Filter: Repositories 0 ( 0 ) 0 results ( 56 ms ) 0 results in Evolution-X (press backspace or delete to remove) Sort by: Best match Filter Your search did not match any repositories Try one of the tips below to find more repositories Search across an organization Saved searches You could try an advanced search . You can’t perform that action at this time.",
+      "source_id": "github",
+      "download_url": null,
+      "download_links": [],
+      "query": "direct:source",
+      "device_id": "xiaomi:nabu"
+    },
+    {
+      "url": "https://github.com/ArrowOS?q=nabu&type=all",
+      "title": "ArrowOS · GitHub",
+      "text": "ArrowOS · GitHub Skip to content Navigation Menu Sign in Appearance settings ArrowOS Platform AI CODE CREATION GitHub Copilot Write better code with AI GitHub Copilot app Direct agents from issue to merge MCP Registry Integrate external tools DEVELOPER WORKFLOWS Actions Automate any workflow Codespaces Instant dev environments Issues Plan and track work Code Review Manage code changes Code Quality Enforce quality at merge APPLICATION SECURITY GitHub Advanced Security Find and fix vulnerabilities Code security Secure your code as you build Secret protection Stop leaks before they start EXPLORE Why GitHub Documentation Blog Changelog Marketplace View all features Solutions BY COMPANY SIZE Enterprises Small and medium teams Startups Nonprofits BY USE CASE App Modernization DevSecOps DevOps CI/CD View all use cases BY INDUSTRY Healthcare Financial services Manufacturing Government View all industries View all solutions Resources EXPLORE BY TOPIC AI Software Development DevOps Security View all topics EXPLORE BY TYPE Customer stories Events & webinars Ebooks & reports Business insights GitHub Skills SUPPORT & SERVICES Documentation Customer support Community forum Trust center Partners View all resources Open Source COMMUNITY GitHub Sponsors Fund open source developers PROGRAMS Security Lab Maintainer Community Accelerator GitHub Stars Archive Program REPOSITORIES Topics Trending Collections Enterprise ENTERPRISE SOLUTIONS Enterprise platform AI-powered developer platform AVAILABLE ADD-ONS GitHub Advanced Security Enterprise-grade security features Copilot for Business Enterprise-grade AI features Premium Support Enterprise-grade 24/7 support Pricing Search / Sign in Sign up Appearance settings You signed in with another tab or window. Reload to refresh your session. You signed out in another tab or window. Reload to refresh your session. You switched accounts on another tab or window. Reload to refresh your session. Dismiss alert {{ message }} Uh oh! There was an error while loading. Please reload this page . Uh oh! There was an error while loading. Please reload this page . ArrowOS AOSP forked android custom operating system. Contribute here: https://review.arrowos.net 416 followers https://www.arrowos.net X @arrow_os https://review.arrowos.net arrowos.contact@gmail.com Overview Repositories Packages People More Overview Repositories Packages People Pinned Loading android_manifest android_manifest Public ArrowOS manifest - your journey starts here! GottaSyncThemAll 145 86 documentation documentation Public This includes infomation regarding maintainer criteria, thread template and compilation guide etc 19 5 arrow_infrastructure_devices arrow_infrastructure_devices Public List of devices officially supported by ArrowOS | For adding new devices and submit patch to our codereview (gerrit) 4 7 arrow_ota arrow_ota Public automated ArrowOS OTA api | This is not mirrored on codereview - PR/direct push ONLY Python 21 7 android_frameworks_base android_frameworks_base Public Java 21 101 android_vendor_arrow android_vendor_arrow Public Makefile 22 61 Repositories --> Loading Type Select type All Public Sources Forks Archived Mirrors Templates Language Select language All Assembly C C++ CSS Go HTML Java Kotlin M4 Makefile Objective-C Python Raku Rust Shell Sort Select order Last updated Name Stars 0 results for all repositories matching nabu sorted by last updated Clear filter No repositories matched your search. People Top languages Loading… Uh oh! There was an error while loading. Please reload this page . Most used topics Loading… Uh oh! There was an error while loading. Please reload this page . Footer © 2026 GitHub, Inc. Footer navigation Terms Privacy Security Status Community Docs Contact Manage cookies Do not share my personal information You can’t perform that action at this time.",
+      "source_id": "arrow_gh",
+      "download_url": null,
+      "download_links": [],
+      "query": "direct:source",
+      "device_id": "xiaomi:nabu"
+    },
+    {
+      "url": "https://github.com/search?q=org%3AArrowOS+nabu&type=repositories",
+      "title": "Repository search results · GitHub",
+      "text": "Repository search results · GitHub Skip to content Navigation Menu Sign in Appearance settings Platform AI CODE CREATION GitHub Copilot Write better code with AI GitHub Copilot app Direct agents from issue to merge MCP Registry Integrate external tools DEVELOPER WORKFLOWS Actions Automate any workflow Codespaces Instant dev environments Issues Plan and track work Code Review Manage code changes Code Quality Enforce quality at merge APPLICATION SECURITY GitHub Advanced Security Find and fix vulnerabilities Code security Secure your code as you build Secret protection Stop leaks before they start EXPLORE Why GitHub Documentation Blog Changelog Marketplace View all features Solutions BY COMPANY SIZE Enterprises Small and medium teams Startups Nonprofits BY USE CASE App Modernization DevSecOps DevOps CI/CD View all use cases BY INDUSTRY Healthcare Financial services Manufacturing Government View all industries View all solutions Resources EXPLORE BY TOPIC AI Software Development DevOps Security View all topics EXPLORE BY TYPE Customer stories Events & webinars Ebooks & reports Business insights GitHub Skills SUPPORT & SERVICES Documentation Customer support Community forum Trust center Partners View all resources Open Source COMMUNITY GitHub Sponsors Fund open source developers PROGRAMS Security Lab Maintainer Community Accelerator GitHub Stars Archive Program REPOSITORIES Topics Trending Collections Enterprise ENTERPRISE SOLUTIONS Enterprise platform AI-powered developer platform AVAILABLE ADD-ONS GitHub Advanced Security Enterprise-grade security features Copilot for Business Enterprise-grade AI features Premium Support Enterprise-grade 24/7 support Pricing Search / Sign in Sign up Appearance settings You signed in with another tab or window. Reload to refresh your session. You signed out in another tab or window. Reload to refresh your session. You switched accounts on another tab or window. Reload to refresh your session. Dismiss alert {{ message }} repositories Search Results · org:ArrowOS nabu Filter by Code ... ( ... ) results Repositories 0 ( 0 ) results Issues results Pull requests results Discussions results Users results More Advanced search Filter: Repositories 0 ( 0 ) 0 results ( 43 ms ) 0 results in ArrowOS (press backspace or delete to remove) Sort by: Best match Filter Your search did not match any repositories Try one of the tips below to find more repositories Search across an organization Saved searches You could try an advanced search . You can’t perform that action at this time.",
+      "source_id": "github",
+      "download_url": null,
+      "download_links": [],
+      "query": "direct:source",
+      "device_id": "xiaomi:nabu"
+    },
+    {
+      "url": "https://github.com/PixelOS-AOSP?q=nabu&type=all",
+      "title": "PixelOS · GitHub",
+      "text": "PixelOS · GitHub Skip to content Navigation Menu Sign in Appearance settings PixelOS-AOSP Platform AI CODE CREATION GitHub Copilot Write better code with AI GitHub Copilot app Direct agents from issue to merge MCP Registry Integrate external tools DEVELOPER WORKFLOWS Actions Automate any workflow Codespaces Instant dev environments Issues Plan and track work Code Review Manage code changes Code Quality Enforce quality at merge APPLICATION SECURITY GitHub Advanced Security Find and fix vulnerabilities Code security Secure your code as you build Secret protection Stop leaks before they start EXPLORE Why GitHub Documentation Blog Changelog Marketplace View all features Solutions BY COMPANY SIZE Enterprises Small and medium teams Startups Nonprofits BY USE CASE App Modernization DevSecOps DevOps CI/CD View all use cases BY INDUSTRY Healthcare Financial services Manufacturing Government View all industries View all solutions Resources EXPLORE BY TOPIC AI Software Development DevOps Security View all topics EXPLORE BY TYPE Customer stories Events & webinars Ebooks & reports Business insights GitHub Skills SUPPORT & SERVICES Documentation Customer support Community forum Trust center Partners View all resources Open Source COMMUNITY GitHub Sponsors Fund open source developers PROGRAMS Security Lab Maintainer Community Accelerator GitHub Stars Archive Program REPOSITORIES Topics Trending Collections Enterprise ENTERPRISE SOLUTIONS Enterprise platform AI-powered developer platform AVAILABLE ADD-ONS GitHub Advanced Security Enterprise-grade security features Copilot for Business Enterprise-grade AI features Premium Support Enterprise-grade 24/7 support Pricing Search / Sign in Sign up Appearance settings You signed in with another tab or window. Reload to refresh your session. You signed out in another tab or window. Reload to refresh your session. You switched accounts on another tab or window. Reload to refresh your session. Dismiss alert {{ message }} Uh oh! There was an error while loading. Please reload this page . Uh oh! There was an error while loading. Please reload this page . PixelOS An AOSP based ROM aiming to provide the best of Pixel Verified We've verified that the organization PixelOS-AOSP controls the domain: pixelos.net Learn more about verified organizations 1k followers India https://pixelos.net X @PixelOSROM support@pixelos.net Sponsor Overview Repositories Projects Packages People More Overview Repositories Projects Packages People Pinned Loading official_devices official_devices Public 22 20 android_manifest android_manifest Public 23 33 android_frameworks_base android_frameworks_base Public Java 7 57 android_packages_apps_Settings android_packages_apps_Settings Public Java 6 36 Repositories --> Loading Type Select type All Public Sources Forks Archived Mirrors Templates Language Select language All Assembly C C++ CSS Go HTML Java Kotlin Makefile MDX Python Rust Shell TypeScript Sort Select order Last updated Name Stars 0 results for all repositories matching nabu sorted by last updated Clear filter No repositories matched your search. People Sponsors Top languages Loading… Uh oh! There was an error while loading. Please reload this page . Most used topics Loading… Uh oh! There was an error while loading. Please reload this page . Footer © 2026 GitHub, Inc. Footer navigation Terms Privacy Security Status Community Docs Contact Manage cookies Do not share my personal information You can’t perform that action at this time.",
+      "source_id": "pixelos_gh",
+      "download_url": null,
+      "download_links": [],
+      "query": "direct:source",
+      "device_id": "xiaomi:nabu"
+    },
+    {
+      "url": "https://github.com/search?q=org%3APixelOS-AOSP+nabu&type=repositories",
+      "title": "Repository search results · GitHub",
+      "text": "Repository search results · GitHub Skip to content Navigation Menu Sign in Appearance settings Platform AI CODE CREATION GitHub Copilot Write better code with AI GitHub Copilot app Direct agents from issue to merge MCP Registry Integrate external tools DEVELOPER WORKFLOWS Actions Automate any workflow Codespaces Instant dev environments Issues Plan and track work Code Review Manage code changes Code Quality Enforce quality at merge APPLICATION SECURITY GitHub Advanced Security Find and fix vulnerabilities Code security Secure your code as you build Secret protection Stop leaks before they start EXPLORE Why GitHub Documentation Blog Changelog Marketplace View all features Solutions BY COMPANY SIZE Enterprises Small and medium teams Startups Nonprofits BY USE CASE App Modernization DevSecOps DevOps CI/CD View all use cases BY INDUSTRY Healthcare Financial services Manufacturing Government View all industries View all solutions Resources EXPLORE BY TOPIC AI Software Development DevOps Security View all topics EXPLORE BY TYPE Customer stories Events & webinars Ebooks & reports Business insights GitHub Skills SUPPORT & SERVICES Documentation Customer support Community forum Trust center Partners View all resources Open Source COMMUNITY GitHub Sponsors Fund open source developers PROGRAMS Security Lab Maintainer Community Accelerator GitHub Stars Archive Program REPOSITORIES Topics Trending Collections Enterprise ENTERPRISE SOLUTIONS Enterprise platform AI-powered developer platform AVAILABLE ADD-ONS GitHub Advanced Security Enterprise-grade security features Copilot for Business Enterprise-grade AI features Premium Support Enterprise-grade 24/7 support Pricing Search / Sign in Sign up Appearance settings You signed in with another tab or window. Reload to refresh your session. You signed out in another tab or window. Reload to refresh your session. You switched accounts on another tab or window. Reload to refresh your session. Dismiss alert {{ message }} repositories Search Results · org:PixelOS-AOSP nabu Filter by Code ... ( ... ) results Repositories 0 ( 0 ) results Issues results Pull requests results Discussions results Users results More Advanced search Filter: Repositories 0 ( 0 ) 0 results ( 50 ms ) 0 results in PixelOS-AOSP (press backspace or delete to remove) Sort by: Best match Filter Your search did not match any repositories Try one of the tips below to find more repositories Search across an organization Saved searches You could try an advanced search . You can’t perform that action at this time.",
+      "source_id": "github",
+      "download_url": null,
+      "download_links": [],
+      "query": "direct:source",
+      "device_id": "xiaomi:nabu"
+    },
+    {
+      "url": "https://github.com/DerpFest-AOSP?q=nabu&type=all",
+      "title": "DerpFest AOSP · GitHub",
+      "text": "DerpFest AOSP · GitHub Skip to content Navigation Menu Sign in Appearance settings DerpFest-AOSP Platform AI CODE CREATION GitHub Copilot Write better code with AI GitHub Copilot app Direct agents from issue to merge MCP Registry Integrate external tools DEVELOPER WORKFLOWS Actions Automate any workflow Codespaces Instant dev environments Issues Plan and track work Code Review Manage code changes Code Quality Enforce quality at merge APPLICATION SECURITY GitHub Advanced Security Find and fix vulnerabilities Code security Secure your code as you build Secret protection Stop leaks before they start EXPLORE Why GitHub Documentation Blog Changelog Marketplace View all features Solutions BY COMPANY SIZE Enterprises Small and medium teams Startups Nonprofits BY USE CASE App Modernization DevSecOps DevOps CI/CD View all use cases BY INDUSTRY Healthcare Financial services Manufacturing Government View all industries View all solutions Resources EXPLORE BY TOPIC AI Software Development DevOps Security View all topics EXPLORE BY TYPE Customer stories Events & webinars Ebooks & reports Business insights GitHub Skills SUPPORT & SERVICES Documentation Customer support Community forum Trust center Partners View all resources Open Source COMMUNITY GitHub Sponsors Fund open source developers PROGRAMS Security Lab Maintainer Community Accelerator GitHub Stars Archive Program REPOSITORIES Topics Trending Collections Enterprise ENTERPRISE SOLUTIONS Enterprise platform AI-powered developer platform AVAILABLE ADD-ONS GitHub Advanced Security Enterprise-grade security features Copilot for Business Enterprise-grade AI features Premium Support Enterprise-grade 24/7 support Pricing Search / Sign in Sign up Appearance settings You signed in with another tab or window. Reload to refresh your session. You signed out in another tab or window. Reload to refresh your session. You switched accounts on another tab or window. Reload to refresh your session. Dismiss alert {{ message }} Uh oh! There was an error while loading. Please reload this page . Uh oh! There was an error while loading. Please reload this page . DerpFest AOSP One of the last open source custom ROMs contributing code instead of donation fraud. Verified We've verified that the organization DerpFest-AOSP controls the domain: derpfest.org Learn more about verified organizations 424 followers Germany https://derpfest.org/ Overview Repositories Projects Packages People More Overview Repositories Projects Packages People README.md DerpFest AOSP Welcome to DerpFest AOSP! We are an AOSP based custom ROM, twisted with the latest features from all over the Android development community. Quality and stability is our first priority as we are dedicated to bringing you the best Android has to offer, strongly inspired by AOSiP We currently support Android 16 QPR2, with the latest security patches from Google. Status: August 2026 Besides we kinda lowkey support Android 13 QPR3, with the backported latest security patches from Google. Status: July 2026 Maybe what you need Manifest for Android 16 Manifest for Android 13 Device sources Telegram Warning Be aware! Some people try to abuse this open source community for their own enrichment. Thats why you can see many of our contributions in other ROMs with the wrong author. For example in CrDroid and Evolution-X . Please be careful when cherry-picking and correct this for the mutual respect in this community. Pinned Loading android_manifest android_manifest Public This is the new manifest repo. The old branches are on https://github.com/DerpFest-AOSP/manifest 14 18 android_frameworks_base android_frameworks_base Public This is the new frameworks base repo. The old branches are on https://github.com/DerpFest-AOSP/frameworks_base Java 2 10 android_packages_apps_Settings android_packages_apps_Settings Public This is the new packages apps Settings repo. The old branches are on https://github.com/DerpFest-AOSP/packages_apps_Settings Java 2 4 android_packages_apps_DerpFestCustomizations android_packages_apps_DerpFestCustomizations Public Kotlin 2 8 android_packages_apps_GameSpace android_packages_apps_GameSpace Public This is the new packages apps GameSpace repo. The old branches are on https://github.com/DerpFest-AOSP/packages_apps_GameSpace Kotlin 1 2 android_vendor_derpfest android_vendor_derpfest Public This is the new vendor derpfest repo. The old branches are on https://github.com/DerpFest-AOSP/vendor_derp CSS 5 6 Repositories --> Loading Type Select type All Public Sources Forks Archived Mirrors Templates Language Select language All AIDL Assembly Batchfile C C++ CSS Go HTML Java JavaScript Kotlin M4 Makefile Perl Python Raku Rust Shell Starlark TypeScript Sort Select order Last updated Name Stars 0 results for all repositories matching nabu sorted by last updated Clear filter No repositories matched your search. People Top languages Loading… Uh oh! There was an error while loading. Please reload this page . Most used topics Loading… Uh oh! There was an error while loading. Please reload this page . Footer © 2026 GitHub, Inc. Footer navigation Terms Privacy Security Status Community Docs Contact Manage cookies Do not share my personal information You can’t perform that action at this time.",
+      "source_id": "derpfest_gh",
+      "download_url": null,
+      "download_links": [],
+      "query": "direct:source",
+      "device_id": "xiaomi:nabu"
+    },
+    {
+      "url": "https://github.com/search?q=org%3ADerpFest-AOSP+nabu&type=repositories",
+      "title": "Repository search results · GitHub",
+      "text": "Repository search results · GitHub Skip to content Navigation Menu Sign in Appearance settings Platform AI CODE CREATION GitHub Copilot Write better code with AI GitHub Copilot app Direct agents from issue to merge MCP Registry Integrate external tools DEVELOPER WORKFLOWS Actions Automate any workflow Codespaces Instant dev environments Issues Plan and track work Code Review Manage code changes Code Quality Enforce quality at merge APPLICATION SECURITY GitHub Advanced Security Find and fix vulnerabilities Code security Secure your code as you build Secret protection Stop leaks before they start EXPLORE Why GitHub Documentation Blog Changelog Marketplace View all features Solutions BY COMPANY SIZE Enterprises Small and medium teams Startups Nonprofits BY USE CASE App Modernization DevSecOps DevOps CI/CD View all use cases BY INDUSTRY Healthcare Financial services Manufacturing Government View all industries View all solutions Resources EXPLORE BY TOPIC AI Software Development DevOps Security View all topics EXPLORE BY TYPE Customer stories Events & webinars Ebooks & reports Business insights GitHub Skills SUPPORT & SERVICES Documentation Customer support Community forum Trust center Partners View all resources Open Source COMMUNITY GitHub Sponsors Fund open source developers PROGRAMS Security Lab Maintainer Community Accelerator GitHub Stars Archive Program REPOSITORIES Topics Trending Collections Enterprise ENTERPRISE SOLUTIONS Enterprise platform AI-powered developer platform AVAILABLE ADD-ONS GitHub Advanced Security Enterprise-grade security features Copilot for Business Enterprise-grade AI features Premium Support Enterprise-grade 24/7 support Pricing Search / Sign in Sign up Appearance settings You signed in with another tab or window. Reload to refresh your session. You signed out in another tab or window. Reload to refresh your session. You switched accounts on another tab or window. Reload to refresh your session. Dismiss alert {{ message }} repositories Search Results · org:DerpFest-AOSP nabu Filter by Code ... ( ... ) results Repositories 0 ( 0 ) results Issues results Pull requests results Discussions results Users results More Advanced search Filter: Repositories 0 ( 0 ) 0 results ( 42 ms ) 0 results in DerpFest-AOSP (press backspace or delete to remove) Sort by: Best match Filter Your search did not match any repositories Try one of the tips below to find more repositories Search across an organization Saved searches You could try an advanced search . You can’t perform that action at this time.",
+      "source_id": "github",
+      "download_url": null,
+      "download_links": [],
+      "query": "direct:source",
+      "device_id": "xiaomi:nabu"
+    },
+    {
+      "url": "https://github.com/ProjectElixir?q=nabu&type=all",
+      "title": "ProjectElixir · GitHub",
+      "text": "ProjectElixir · GitHub Skip to content Navigation Menu Sign in Appearance settings ProjectElixir Platform AI CODE CREATION GitHub Copilot Write better code with AI GitHub Copilot app Direct agents from issue to merge MCP Registry Integrate external tools DEVELOPER WORKFLOWS Actions Automate any workflow Codespaces Instant dev environments Issues Plan and track work Code Review Manage code changes Code Quality Enforce quality at merge APPLICATION SECURITY GitHub Advanced Security Find and fix vulnerabilities Code security Secure your code as you build Secret protection Stop leaks before they start EXPLORE Why GitHub Documentation Blog Changelog Marketplace View all features Solutions BY COMPANY SIZE Enterprises Small and medium teams Startups Nonprofits BY USE CASE App Modernization DevSecOps DevOps CI/CD View all use cases BY INDUSTRY Healthcare Financial services Manufacturing Government View all industries View all solutions Resources EXPLORE BY TOPIC AI Software Development DevOps Security View all topics EXPLORE BY TYPE Customer stories Events & webinars Ebooks & reports Business insights GitHub Skills SUPPORT & SERVICES Documentation Customer support Community forum Trust center Partners View all resources Open Source COMMUNITY GitHub Sponsors Fund open source developers PROGRAMS Security Lab Maintainer Community Accelerator GitHub Stars Archive Program REPOSITORIES Topics Trending Collections Enterprise ENTERPRISE SOLUTIONS Enterprise platform AI-powered developer platform AVAILABLE ADD-ONS GitHub Advanced Security Enterprise-grade security features Copilot for Business Enterprise-grade AI features Premium Support Enterprise-grade 24/7 support Pricing Search / Sign in Sign up Appearance settings You signed in with another tab or window. Reload to refresh your session. You signed out in another tab or window. Reload to refresh your session. You switched accounts on another tab or window. Reload to refresh your session. Dismiss alert {{ message }} Uh oh! There was an error while loading. Please reload this page . Uh oh! There was an error while loading. Please reload this page . ProjectElixir Overview Repositories Projects Packages People More Overview Repositories Projects Packages People 0 results for all repositories matching nabu sorted by last updated Clear filter No repositories matched your search. People This organization has no public members. You must be a member to see who’s a part of this organization. Top languages Loading… Uh oh! There was an error while loading. Please reload this page . Most used topics Loading… Uh oh! There was an error while loading. Please reload this page . Footer © 2026 GitHub, Inc. Footer navigation Terms Privacy Security Status Community Docs Contact Manage cookies Do not share my personal information You can’t perform that action at this time.",
+      "source_id": "elixir_gh",
+      "download_url": null,
+      "download_links": [],
+      "query": "direct:source",
+      "device_id": "xiaomi:nabu"
+    },
+    {
+      "url": "https://github.com/search?q=org%3AProjectElixir+nabu&type=repositories",
+      "title": "Repository search results · GitHub",
+      "text": "Repository search results · GitHub Skip to content Navigation Menu Sign in Appearance settings Platform AI CODE CREATION GitHub Copilot Write better code with AI GitHub Copilot app Direct agents from issue to merge MCP Registry Integrate external tools DEVELOPER WORKFLOWS Actions Automate any workflow Codespaces Instant dev environments Issues Plan and track work Code Review Manage code changes Code Quality Enforce quality at merge APPLICATION SECURITY GitHub Advanced Security Find and fix vulnerabilities Code security Secure your code as you build Secret protection Stop leaks before they start EXPLORE Why GitHub Documentation Blog Changelog Marketplace View all features Solutions BY COMPANY SIZE Enterprises Small and medium teams Startups Nonprofits BY USE CASE App Modernization DevSecOps DevOps CI/CD View all use cases BY INDUSTRY Healthcare Financial services Manufacturing Government View all industries View all solutions Resources EXPLORE BY TOPIC AI Software Development DevOps Security View all topics EXPLORE BY TYPE Customer stories Events & webinars Ebooks & reports Business insights GitHub Skills SUPPORT & SERVICES Documentation Customer support Community forum Trust center Partners View all resources Open Source COMMUNITY GitHub Sponsors Fund open source developers PROGRAMS Security Lab Maintainer Community Accelerator GitHub Stars Archive Program REPOSITORIES Topics Trending Collections Enterprise ENTERPRISE SOLUTIONS Enterprise platform AI-powered developer platform AVAILABLE ADD-ONS GitHub Advanced Security Enterprise-grade security features Copilot for Business Enterprise-grade AI features Premium Support Enterprise-grade 24/7 support Pricing Search / Sign in Sign up Appearance settings You signed in with another tab or window. Reload to refresh your session. You signed out in another tab or window. Reload to refresh your session. You switched accounts on another tab or window. Reload to refresh your session. Dismiss alert {{ message }} repositories Search Results · org:ProjectElixir nabu Filter by Code ... ( ... ) results Repositories 0 ( 0 ) results Issues results Pull requests results Discussions results Users results More Advanced search Filter: Repositories 0 ( 0 ) 0 results ( 64 ms ) 0 results in ProjectElixir (press backspace or delete to remove) Sort by: Best match Filter Your search did not match any repositories Try one of the tips below to find more repositories Search across an organization Saved searches You could try an advanced search . You can’t perform that action at this time.",
+      "source_id": "github",
+      "download_url": null,
+      "download_links": [],
+      "query": "direct:source",
+      "device_id": "xiaomi:nabu"
+    },
+    {
+      "url": "https://github.com/RisingOS-Revived?q=nabu&type=all",
+      "title": "Rising Revived OSS · GitHub",
+      "text": "Rising Revived OSS · GitHub Skip to content Navigation Menu Sign in Appearance settings RisingOS-Revived Platform AI CODE CREATION GitHub Copilot Write better code with AI GitHub Copilot app Direct agents from issue to merge MCP Registry Integrate external tools DEVELOPER WORKFLOWS Actions Automate any workflow Codespaces Instant dev environments Issues Plan and track work Code Review Manage code changes Code Quality Enforce quality at merge APPLICATION SECURITY GitHub Advanced Security Find and fix vulnerabilities Code security Secure your code as you build Secret protection Stop leaks before they start EXPLORE Why GitHub Documentation Blog Changelog Marketplace View all features Solutions BY COMPANY SIZE Enterprises Small and medium teams Startups Nonprofits BY USE CASE App Modernization DevSecOps DevOps CI/CD View all use cases BY INDUSTRY Healthcare Financial services Manufacturing Government View all industries View all solutions Resources EXPLORE BY TOPIC AI Software Development DevOps Security View all topics EXPLORE BY TYPE Customer stories Events & webinars Ebooks & reports Business insights GitHub Skills SUPPORT & SERVICES Documentation Customer support Community forum Trust center Partners View all resources Open Source COMMUNITY GitHub Sponsors Fund open source developers PROGRAMS Security Lab Maintainer Community Accelerator GitHub Stars Archive Program REPOSITORIES Topics Trending Collections Enterprise ENTERPRISE SOLUTIONS Enterprise platform AI-powered developer platform AVAILABLE ADD-ONS GitHub Advanced Security Enterprise-grade security features Copilot for Business Enterprise-grade AI features Premium Support Enterprise-grade 24/7 support Pricing Search / Sign in Sign up Appearance settings You signed in with another tab or window. Reload to refresh your session. You signed out in another tab or window. Reload to refresh your session. You switched accounts on another tab or window. Reload to refresh your session. Dismiss alert {{ message }} Uh oh! There was an error while loading. Please reload this page . Uh oh! There was an error while loading. Please reload this page . Rising Revived OSS Customizable, Beautiful, Refined #RiseUP #Rising_forever Verified We've verified that the organization RisingOS-Revived controls the domain: risingosrevived.tech Learn more about verified organizations 202 followers http://risingosrevived.tech/ https://t.me/RisingRevived Sponsor Overview Repositories Projects Packages People More Overview Repositories Projects Packages People Pinned Loading android android Public Revived version of all goodies! 74 42 risingOS_changelogs risingOS_changelogs Public 10 Repositories --> Loading Type Select type All Public Sources Forks Archived Mirrors Templates Language Select language All Assembly C C++ CSS Go HTML Java Kotlin Makefile Python Shell Starlark Sort Select order Last updated Name Stars 0 results for all repositories matching nabu sorted by last updated Clear filter No repositories matched your search. People Top languages Loading… Uh oh! There was an error while loading. Please reload this page . Most used topics Loading… Uh oh! There was an error while loading. Please reload this page . Footer © 2026 GitHub, Inc. Footer navigation Terms Privacy Security Status Community Docs Contact Manage cookies Do not share my personal information You can’t perform that action at this time.",
+      "source_id": "risingos_gh",
+      "download_url": null,
+      "download_links": [],
+      "query": "direct:source",
+      "device_id": "xiaomi:nabu"
+    },
+    {
+      "url": "https://github.com/search?q=org%3ARisingOS-Revived+nabu&type=repositories",
+      "title": "Repository search results · GitHub",
+      "text": "Repository search results · GitHub Skip to content Navigation Menu Sign in Appearance settings Platform AI CODE CREATION GitHub Copilot Write better code with AI GitHub Copilot app Direct agents from issue to merge MCP Registry Integrate external tools DEVELOPER WORKFLOWS Actions Automate any workflow Codespaces Instant dev environments Issues Plan and track work Code Review Manage code changes Code Quality Enforce quality at merge APPLICATION SECURITY GitHub Advanced Security Find and fix vulnerabilities Code security Secure your code as you build Secret protection Stop leaks before they start EXPLORE Why GitHub Documentation Blog Changelog Marketplace View all features Solutions BY COMPANY SIZE Enterprises Small and medium teams Startups Nonprofits BY USE CASE App Modernization DevSecOps DevOps CI/CD View all use cases BY INDUSTRY Healthcare Financial services Manufacturing Government View all industries View all solutions Resources EXPLORE BY TOPIC AI Software Development DevOps Security View all topics EXPLORE BY TYPE Customer stories Events & webinars Ebooks & reports Business insights GitHub Skills SUPPORT & SERVICES Documentation Customer support Community forum Trust center Partners View all resources Open Source COMMUNITY GitHub Sponsors Fund open source developers PROGRAMS Security Lab Maintainer Community Accelerator GitHub Stars Archive Program REPOSITORIES Topics Trending Collections Enterprise ENTERPRISE SOLUTIONS Enterprise platform AI-powered developer platform AVAILABLE ADD-ONS GitHub Advanced Security Enterprise-grade security features Copilot for Business Enterprise-grade AI features Premium Support Enterprise-grade 24/7 support Pricing Search / Sign in Sign up Appearance settings You signed in with another tab or window. Reload to refresh your session. You signed out in another tab or window. Reload to refresh your session. You switched accounts on another tab or window. Reload to refresh your session. Dismiss alert {{ message }} repositories Search Results · org:RisingOS-Revived nabu Filter by Code ... ( ... ) results Repositories 0 ( 0 ) results Issues results Pull requests results Discussions results Users results More Advanced search Filter: Repositories 0 ( 0 ) 0 results ( 36 ms ) 0 results in RisingOS-Revived (press backspace or delete to remove) Sort by: Best match Filter Your search did not match any repositories Try one of the tips below to find more repositories Search across an organization Saved searches You could try an advanced search . You can’t perform that action at this time.",
+      "source_id": "github",
+      "download_url": null,
+      "download_links": [],
+      "query": "direct:source",
+      "device_id": "xiaomi:nabu"
+    },
+    {
+      "url": "https://github.com/VoltageOS?q=nabu&type=all",
+      "title": "VoltageOS · GitHub",
+      "text": "VoltageOS · GitHub Skip to content Navigation Menu Sign in Appearance settings VoltageOS Platform AI CODE CREATION GitHub Copilot Write better code with AI GitHub Copilot app Direct agents from issue to merge MCP Registry Integrate external tools DEVELOPER WORKFLOWS Actions Automate any workflow Codespaces Instant dev environments Issues Plan and track work Code Review Manage code changes Code Quality Enforce quality at merge APPLICATION SECURITY GitHub Advanced Security Find and fix vulnerabilities Code security Secure your code as you build Secret protection Stop leaks before they start EXPLORE Why GitHub Documentation Blog Changelog Marketplace View all features Solutions BY COMPANY SIZE Enterprises Small and medium teams Startups Nonprofits BY USE CASE App Modernization DevSecOps DevOps CI/CD View all use cases BY INDUSTRY Healthcare Financial services Manufacturing Government View all industries View all solutions Resources EXPLORE BY TOPIC AI Software Development DevOps Security View all topics EXPLORE BY TYPE Customer stories Events & webinars Ebooks & reports Business insights GitHub Skills SUPPORT & SERVICES Documentation Customer support Community forum Trust center Partners View all resources Open Source COMMUNITY GitHub Sponsors Fund open source developers PROGRAMS Security Lab Maintainer Community Accelerator GitHub Stars Archive Program REPOSITORIES Topics Trending Collections Enterprise ENTERPRISE SOLUTIONS Enterprise platform AI-powered developer platform AVAILABLE ADD-ONS GitHub Advanced Security Enterprise-grade security features Copilot for Business Enterprise-grade AI features Premium Support Enterprise-grade 24/7 support Pricing Search / Sign in Sign up Appearance settings You signed in with another tab or window. Reload to refresh your session. You signed out in another tab or window. Reload to refresh your session. You switched accounts on another tab or window. Reload to refresh your session. Dismiss alert {{ message }} Uh oh! There was an error while loading. Please reload this page . Uh oh! There was an error while loading. Please reload this page . VoltageOS 176 followers https://www.voltageos.com/ Overview Repositories Projects Packages People More Overview Repositories Projects Packages People README.md Voltage OS We currently support Android 17, with the latest security patches from Google. Status: August 2026 Manifest Device sources Support Pinned Loading manifest manifest Public 46 31 maintainership maintainership Public 1 frameworks_base_new frameworks_base_new Public Forked from VoltageOS-staging/frameworks_base_new Java 2 20 packages_apps_Settings packages_apps_Settings Public Java 3 28 packages_apps_Powerhub packages_apps_Powerhub Public Java 4 20 vendor_voltage vendor_voltage Public Makefile 19 59 Repositories --> Loading Type Select type All Public Sources Forks Archived Mirrors Templates Language Select language All AIDL Assembly Batchfile C C++ Go HTML Java Kotlin Makefile Perl Python Rust Shell TypeScript Sort Select order Last updated Name Stars 0 results for all repositories matching nabu sorted by last updated Clear filter No repositories matched your search. People Top languages Loading… Uh oh! There was an error while loading. Please reload this page . Most used topics Loading… Uh oh! There was an error while loading. Please reload this page . Footer © 2026 GitHub, Inc. Footer navigation Terms Privacy Security Status Community Docs Contact Manage cookies Do not share my personal information You can’t perform that action at this time.",
+      "source_id": "voltageos_gh",
+      "download_url": null,
+      "download_links": [],
+      "query": "direct:source",
+      "device_id": "xiaomi:nabu"
+    },
+    {
+      "url": "https://github.com/SuperiorOS?q=nabu&type=all",
+      "title": "Superior OS · GitHub",
+      "text": "Superior OS · GitHub Skip to content Navigation Menu Sign in Appearance settings SuperiorOS Platform AI CODE CREATION GitHub Copilot Write better code with AI GitHub Copilot app Direct agents from issue to merge MCP Registry Integrate external tools DEVELOPER WORKFLOWS Actions Automate any workflow Codespaces Instant dev environments Issues Plan and track work Code Review Manage code changes Code Quality Enforce quality at merge APPLICATION SECURITY GitHub Advanced Security Find and fix vulnerabilities Code security Secure your code as you build Secret protection Stop leaks before they start EXPLORE Why GitHub Documentation Blog Changelog Marketplace View all features Solutions BY COMPANY SIZE Enterprises Small and medium teams Startups Nonprofits BY USE CASE App Modernization DevSecOps DevOps CI/CD View all use cases BY INDUSTRY Healthcare Financial services Manufacturing Government View all industries View all solutions Resources EXPLORE BY TOPIC AI Software Development DevOps Security View all topics EXPLORE BY TYPE Customer stories Events & webinars Ebooks & reports Business insights GitHub Skills SUPPORT & SERVICES Documentation Customer support Community forum Trust center Partners View all resources Open Source COMMUNITY GitHub Sponsors Fund open source developers PROGRAMS Security Lab Maintainer Community Accelerator GitHub Stars Archive Program REPOSITORIES Topics Trending Collections Enterprise ENTERPRISE SOLUTIONS Enterprise platform AI-powered developer platform AVAILABLE ADD-ONS GitHub Advanced Security Enterprise-grade security features Copilot for Business Enterprise-grade AI features Premium Support Enterprise-grade 24/7 support Pricing Search / Sign in Sign up Appearance settings You signed in with another tab or window. Reload to refresh your session. You signed out in another tab or window. Reload to refresh your session. You switched accounts on another tab or window. Reload to refresh your session. Dismiss alert {{ message }} Uh oh! There was an error while loading. Please reload this page . Uh oh! There was an error while loading. Please reload this page . Superior OS A16 QPR-2 183 followers India https://superioros.github.io superioros123@gmail.com Overview Repositories Projects Packages People More Overview Repositories Projects Packages People Pinned Loading manifest manifest Public The Tracker 😎 102 38 frameworks_base frameworks_base Public Forked from LineageOS/android_frameworks_base Java 3 packages_apps_Settings packages_apps_Settings Public Forked from LineageOS/android_packages_apps_Settings Java packages_apps_SuperiorLab packages_apps_SuperiorLab Public Java 1 workflow_superior workflow_superior Public Shell Repositories --> Loading Type Select type All Public Sources Forks Archived Mirrors Templates Language Select language All Assembly C C++ CSS Go HTML Java JavaScript Kotlin M4 Makefile Python Raku Rust Shell TypeScript Vim Script Sort Select order Last updated Name Stars 0 results for all repositories matching nabu sorted by last updated Clear filter No repositories matched your search. People Top languages Loading… Uh oh! There was an error while loading. Please reload this page . Most used topics Loading… Uh oh! There was an error while loading. Please reload this page . Footer © 2026 GitHub, Inc. Footer navigation Terms Privacy Security Status Community Docs Contact Manage cookies Do not share my personal information You can’t perform that action at this time.",
+      "source_id": "superioros_gh",
+      "download_url": null,
+      "download_links": [],
+      "query": "direct:source",
+      "device_id": "xiaomi:nabu"
+    },
+    {
+      "url": "https://github.com/ResurrectionRemix?q=nabu&type=all",
+      "title": "Resurrection Remix OS · GitHub",
+      "text": "Resurrection Remix OS · GitHub Skip to content Navigation Menu Sign in Appearance settings ResurrectionRemix Platform AI CODE CREATION GitHub Copilot Write better code with AI GitHub Copilot app Direct agents from issue to merge MCP Registry Integrate external tools DEVELOPER WORKFLOWS Actions Automate any workflow Codespaces Instant dev environments Issues Plan and track work Code Review Manage code changes Code Quality Enforce quality at merge APPLICATION SECURITY GitHub Advanced Security Find and fix vulnerabilities Code security Secure your code as you build Secret protection Stop leaks before they start EXPLORE Why GitHub Documentation Blog Changelog Marketplace View all features Solutions BY COMPANY SIZE Enterprises Small and medium teams Startups Nonprofits BY USE CASE App Modernization DevSecOps DevOps CI/CD View all use cases BY INDUSTRY Healthcare Financial services Manufacturing Government View all industries View all solutions Resources EXPLORE BY TOPIC AI Software Development DevOps Security View all topics EXPLORE BY TYPE Customer stories Events & webinars Ebooks & reports Business insights GitHub Skills SUPPORT & SERVICES Documentation Customer support Community forum Trust center Partners View all resources Open Source COMMUNITY GitHub Sponsors Fund open source developers PROGRAMS Security Lab Maintainer Community Accelerator GitHub Stars Archive Program REPOSITORIES Topics Trending Collections Enterprise ENTERPRISE SOLUTIONS Enterprise platform AI-powered developer platform AVAILABLE ADD-ONS GitHub Advanced Security Enterprise-grade security features Copilot for Business Enterprise-grade AI features Premium Support Enterprise-grade 24/7 support Pricing Search / Sign in Sign up Appearance settings You signed in with another tab or window. Reload to refresh your session. You signed out in another tab or window. Reload to refresh your session. You switched accounts on another tab or window. Reload to refresh your session. Dismiss alert {{ message }} Uh oh! There was an error while loading. Please reload this page . Uh oh! There was an error while loading. Please reload this page . Resurrection Remix OS Overview Repositories Projects Packages People More Overview Repositories Projects Packages People Pinned Loading Resurrection_packages_apps_Settings Resurrection_packages_apps_Settings Public Android settings app for Resurrection Remix Java 143 375 android_frameworks_base android_frameworks_base Public Resurrection Remix Frameworks Java 118 279 android_vendor_resurrection android_vendor_resurrection Public CSS 174 267 android_build android_build Public Makefile 80 154 platform_manifest platform_manifest Public Resurrection Remix Android Manifest 350 358 Repositories --> Loading Type Select type All Public Sources Forks Archived Mirrors Templates Language Select language All C C++ CSS Go Groff HTML Java Kotlin Makefile Perl 6 Shell Smali Sort Select order Last updated Name Stars 0 results for all repositories matching nabu sorted by last updated Clear filter No repositories matched your search. People Top languages Loading… Uh oh! There was an error while loading. Please reload this page . Most used topics Loading… Uh oh! There was an error while loading. Please reload this page . Footer © 2026 GitHub, Inc. Footer navigation Terms Privacy Security Status Community Docs Contact Manage cookies Do not share my personal information You can’t perform that action at this time.",
+      "source_id": "rr_gh",
+      "download_url": null,
+      "download_links": [],
+      "query": "direct:source",
+      "device_id": "xiaomi:nabu"
+    },
+    {
+      "url": "https://github.com/Havoc-OS?q=nabu&type=all",
+      "title": "Havoc-OS · GitHub",
+      "text": "Havoc-OS · GitHub Skip to content Navigation Menu Sign in Appearance settings Havoc-OS Platform AI CODE CREATION GitHub Copilot Write better code with AI GitHub Copilot app Direct agents from issue to merge MCP Registry Integrate external tools DEVELOPER WORKFLOWS Actions Automate any workflow Codespaces Instant dev environments Issues Plan and track work Code Review Manage code changes Code Quality Enforce quality at merge APPLICATION SECURITY GitHub Advanced Security Find and fix vulnerabilities Code security Secure your code as you build Secret protection Stop leaks before they start EXPLORE Why GitHub Documentation Blog Changelog Marketplace View all features Solutions BY COMPANY SIZE Enterprises Small and medium teams Startups Nonprofits BY USE CASE App Modernization DevSecOps DevOps CI/CD View all use cases BY INDUSTRY Healthcare Financial services Manufacturing Government View all industries View all solutions Resources EXPLORE BY TOPIC AI Software Development DevOps Security View all topics EXPLORE BY TYPE Customer stories Events & webinars Ebooks & reports Business insights GitHub Skills SUPPORT & SERVICES Documentation Customer support Community forum Trust center Partners View all resources Open Source COMMUNITY GitHub Sponsors Fund open source developers PROGRAMS Security Lab Maintainer Community Accelerator GitHub Stars Archive Program REPOSITORIES Topics Trending Collections Enterprise ENTERPRISE SOLUTIONS Enterprise platform AI-powered developer platform AVAILABLE ADD-ONS GitHub Advanced Security Enterprise-grade security features Copilot for Business Enterprise-grade AI features Premium Support Enterprise-grade 24/7 support Pricing Search / Sign in Sign up Appearance settings You signed in with another tab or window. Reload to refresh your session. You signed out in another tab or window. Reload to refresh your session. You switched accounts on another tab or window. Reload to refresh your session. Dismiss alert {{ message }} Uh oh! There was an error while loading. Please reload this page . Uh oh! There was an error while loading. Please reload this page . Havoc-OS 173 followers India https://havoc-os.com anushekprasal@gmail.com Overview Repositories Projects Packages People More Overview Repositories Projects Packages People Pinned Loading android_manifest android_manifest Public 124 107 android_frameworks_base android_frameworks_base Public Java 25 117 android_packages_apps_ConfigCenter android_packages_apps_ConfigCenter Public Java 6 67 android_vendor_havoc android_vendor_havoc Public CSS 18 68 OTA OTA Public Havoc-OS OTA Automation 11 34 Devices Devices Public 39 33 Repositories --> Loading Type Select type All Public Sources Forks Archived Mirrors Templates Language Select language All AIDL Assembly C C++ CSS Go HTML Java Kotlin Makefile Objective-C Perl Python Shell Vim Script Sort Select order Last updated Name Stars 0 results for all repositories matching nabu sorted by last updated Clear filter No repositories matched your search. People Top languages Loading… Uh oh! There was an error while loading. Please reload this page . Most used topics Loading… Uh oh! There was an error while loading. Please reload this page . Footer © 2026 GitHub, Inc. Footer navigation Terms Privacy Security Status Community Docs Contact Manage cookies Do not share my personal information You can’t perform that action at this time.",
+      "source_id": "havoc_gh",
+      "download_url": null,
+      "download_links": [],
+      "query": "direct:source",
+      "device_id": "xiaomi:nabu"
+    },
+    {
+      "url": "https://github.com/AOSPA?q=nabu&type=all",
+      "title": "AOSPA · GitHub",
+      "text": "AOSPA · GitHub Skip to content Navigation Menu Sign in Appearance settings AOSPA Platform AI CODE CREATION GitHub Copilot Write better code with AI GitHub Copilot app Direct agents from issue to merge MCP Registry Integrate external tools DEVELOPER WORKFLOWS Actions Automate any workflow Codespaces Instant dev environments Issues Plan and track work Code Review Manage code changes Code Quality Enforce quality at merge APPLICATION SECURITY GitHub Advanced Security Find and fix vulnerabilities Code security Secure your code as you build Secret protection Stop leaks before they start EXPLORE Why GitHub Documentation Blog Changelog Marketplace View all features Solutions BY COMPANY SIZE Enterprises Small and medium teams Startups Nonprofits BY USE CASE App Modernization DevSecOps DevOps CI/CD View all use cases BY INDUSTRY Healthcare Financial services Manufacturing Government View all industries View all solutions Resources EXPLORE BY TOPIC AI Software Development DevOps Security View all topics EXPLORE BY TYPE Customer stories Events & webinars Ebooks & reports Business insights GitHub Skills SUPPORT & SERVICES Documentation Customer support Community forum Trust center Partners View all resources Open Source COMMUNITY GitHub Sponsors Fund open source developers PROGRAMS Security Lab Maintainer Community Accelerator GitHub Stars Archive Program REPOSITORIES Topics Trending Collections Enterprise ENTERPRISE SOLUTIONS Enterprise platform AI-powered developer platform AVAILABLE ADD-ONS GitHub Advanced Security Enterprise-grade security features Copilot for Business Enterprise-grade AI features Premium Support Enterprise-grade 24/7 support Pricing Search / Sign in Sign up Appearance settings You signed in with another tab or window. Reload to refresh your session. You signed out in another tab or window. Reload to refresh your session. You switched accounts on another tab or window. Reload to refresh your session. Dismiss alert {{ message }} Uh oh! There was an error while loading. Please reload this page . Uh oh! There was an error while loading. Please reload this page . AOSPA Team Paranoid Android Verified We've verified that the organization AOSPA controls the domain: paranoidandroid.co Learn more about verified organizations 558 followers https://paranoidandroid.co/ X @paranoidaospa Overview Repositories Packages People More Overview Repositories Packages People Pinned Loading manifest manifest Public AOSPA/PA global manifest 174 264 android_vendor_aospa android_vendor_aospa Public Makefile 15 240 android_build android_build Public Makefile 57 177 android_frameworks_av android_frameworks_av Public C++ 12 85 android_device_qcom_common android_device_qcom_common Public Makefile 34 142 android_frameworks_base-old android_frameworks_base-old Public Java 3 36 Repositories --> Loading Type Select type All Public Sources Forks Archived Mirrors Templates Language Select language All ApacheConf Assembly C C++ Go HTML Java Kotlin M4 Makefile Objective-C Perl 6 Python Shell Starlark Vue Sort Select order Last updated Name Stars 0 results for all repositories matching nabu sorted by last updated Clear filter No repositories matched your search. People Top languages Loading… Uh oh! There was an error while loading. Please reload this page . Most used topics Loading… Uh oh! There was an error while loading. Please reload this page . Footer © 2026 GitHub, Inc. Footer navigation Terms Privacy Security Status Community Docs Contact Manage cookies Do not share my personal information You can’t perform that action at this time.",
+      "source_id": "aospa_gh",
+      "download_url": null,
+      "download_links": [],
+      "query": "direct:source",
+      "device_id": "xiaomi:nabu"
+    },
+    {
+      "url": "https://github.com/CalyxOS?q=nabu&type=all",
+      "title": "CalyxOS · GitHub",
+      "text": "CalyxOS · GitHub Skip to content Navigation Menu Sign in Appearance settings CalyxOS Platform AI CODE CREATION GitHub Copilot Write better code with AI GitHub Copilot app Direct agents from issue to merge MCP Registry Integrate external tools DEVELOPER WORKFLOWS Actions Automate any workflow Codespaces Instant dev environments Issues Plan and track work Code Review Manage code changes Code Quality Enforce quality at merge APPLICATION SECURITY GitHub Advanced Security Find and fix vulnerabilities Code security Secure your code as you build Secret protection Stop leaks before they start EXPLORE Why GitHub Documentation Blog Changelog Marketplace View all features Solutions BY COMPANY SIZE Enterprises Small and medium teams Startups Nonprofits BY USE CASE App Modernization DevSecOps DevOps CI/CD View all use cases BY INDUSTRY Healthcare Financial services Manufacturing Government View all industries View all solutions Resources EXPLORE BY TOPIC AI Software Development DevOps Security View all topics EXPLORE BY TYPE Customer stories Events & webinars Ebooks & reports Business insights GitHub Skills SUPPORT & SERVICES Documentation Customer support Community forum Trust center Partners View all resources Open Source COMMUNITY GitHub Sponsors Fund open source developers PROGRAMS Security Lab Maintainer Community Accelerator GitHub Stars Archive Program REPOSITORIES Topics Trending Collections Enterprise ENTERPRISE SOLUTIONS Enterprise platform AI-powered developer platform AVAILABLE ADD-ONS GitHub Advanced Security Enterprise-grade security features Copilot for Business Enterprise-grade AI features Premium Support Enterprise-grade 24/7 support Pricing Search / Sign in Sign up Appearance settings You signed in with another tab or window. Reload to refresh your session. You signed out in another tab or window. Reload to refresh your session. You switched accounts on another tab or window. Reload to refresh your session. Dismiss alert {{ message }} Uh oh! There was an error while loading. Please reload this page . Uh oh! There was an error while loading. Please reload this page . CalyxOS A mobile phone operating system built with \"Privacy by Design\". A project of The Calyx Institute https://calyxinstitute.org 325 followers Brooklyn, NY, USA https://calyxos.org/ Mastodon @calyxos@fosstodon.org X @calyxinstitute Sponsor Overview Repositories Packages People More Overview Repositories Packages People Pinned Loading calyxos calyxos Public HTML 149 8 platform_manifest platform_manifest Public 16 12 vendor_calyx vendor_calyx Public Shell 8 7 Repositories --> Loading Type Select type All Public Sources Forks Archived Mirrors Templates Language Select language All Assembly Batchfile C C++ CSS Dockerfile Go HTML Java JavaScript Kotlin M4 Makefile Perl Python Ruby Rust Shell Starlark TypeScript Vue Sort Select order Last updated Name Stars 0 results for all repositories matching nabu sorted by last updated Clear filter No repositories matched your search. People Sponsors Private Sponsor Top languages Loading… Uh oh! There was an error while loading. Please reload this page . Most used topics Loading… Uh oh! There was an error while loading. Please reload this page . Footer © 2026 GitHub, Inc. Footer navigation Terms Privacy Security Status Community Docs Contact Manage cookies Do not share my personal information You can’t perform that action at this time.",
+      "source_id": "calyx_gh",
+      "download_url": null,
+      "download_links": [],
+      "query": "direct:source",
+      "device_id": "xiaomi:nabu"
+    },
+    {
+      "url": "https://github.com/GrapheneOS?q=nabu&type=all",
+      "title": "GrapheneOS · GitHub",
+      "text": "GrapheneOS · GitHub Skip to content Navigation Menu Sign in Appearance settings GrapheneOS Platform AI CODE CREATION GitHub Copilot Write better code with AI GitHub Copilot app Direct agents from issue to merge MCP Registry Integrate external tools DEVELOPER WORKFLOWS Actions Automate any workflow Codespaces Instant dev environments Issues Plan and track work Code Review Manage code changes Code Quality Enforce quality at merge APPLICATION SECURITY GitHub Advanced Security Find and fix vulnerabilities Code security Secure your code as you build Secret protection Stop leaks before they start EXPLORE Why GitHub Documentation Blog Changelog Marketplace View all features Solutions BY COMPANY SIZE Enterprises Small and medium teams Startups Nonprofits BY USE CASE App Modernization DevSecOps DevOps CI/CD View all use cases BY INDUSTRY Healthcare Financial services Manufacturing Government View all industries View all solutions Resources EXPLORE BY TOPIC AI Software Development DevOps Security View all topics EXPLORE BY TYPE Customer stories Events & webinars Ebooks & reports Business insights GitHub Skills SUPPORT & SERVICES Documentation Customer support Community forum Trust center Partners View all resources Open Source COMMUNITY GitHub Sponsors Fund open source developers PROGRAMS Security Lab Maintainer Community Accelerator GitHub Stars Archive Program REPOSITORIES Topics Trending Collections Enterprise ENTERPRISE SOLUTIONS Enterprise platform AI-powered developer platform AVAILABLE ADD-ONS GitHub Advanced Security Enterprise-grade security features Copilot for Business Enterprise-grade AI features Premium Support Enterprise-grade 24/7 support Pricing Search / Sign in Sign up Appearance settings You signed in with another tab or window. Reload to refresh your session. You signed out in another tab or window. Reload to refresh your session. You switched accounts on another tab or window. Reload to refresh your session. Dismiss alert {{ message }} Uh oh! There was an error while loading. Please reload this page . Uh oh! There was an error while loading. Please reload this page . GrapheneOS Security and privacy focused mobile OS with Android app compatibility. We focus on developing substantial privacy and security improvements. Verified We've verified that the organization GrapheneOS controls the domain: grapheneos.org Learn more about verified organizations 9.1k followers Toronto, Ontario, Canada https://grapheneos.org/ X @GrapheneOS Mastodon @GrapheneOS@grapheneos.social LinkedIn company/grapheneos Facebook GrapheneOS contact@grapheneos.org Overview Repositories Projects Packages People More Overview Repositories Projects Packages People Pinned Loading platform_manifest platform_manifest Public Repo manifest for the GrapheneOS mobile privacy and security hardening project. 535 185 hardened_malloc hardened_malloc Public Hardened allocator designed for modern systems. It has integration into Android's Bionic libc and can be used externally with musl and glibc as a dynamic library for use on other Linux-based platfo… C 2k 158 os-issue-tracker os-issue-tracker Public Issue tracker for GrapheneOS Android Open Source Project hardening work. Standalone projects like Auditor, AttestationServer and hardened_malloc have their own dedicated trackers. 607 32 Auditor Auditor Public Hardware-based attestation and intrusion detection app for Android. It provides both local verification with another Android device via QR codes and optional scheduled server-based verification wit… Java 686 114 platform_bionic platform_bionic Public Hardened Android standard C library. Some of the past hardening has not yet been ported from Marshmallow, Nougat and Oreo to this Android Pie repository. Most is available via archived tags in http… Assembly 171 52 Vanadium Vanadium Public Privacy and security enhanced releases of Chromium for GrapheneOS. Vanadium provides the WebView and standard user-facing browser on GrapheneOS. It depends on hardening in other GrapheneOS reposito… Python 2.1k 132 Repositories --> Loading Type Select type All Public Sources Forks Archived Mirrors Templates Language Select language All Assembly C C++ Go HTML Java Kotlin Python Rust Shell TypeScript Sort Select order Last updated Name Stars 0 results for all repositories matching nabu sorted by last updated Clear filter No repositories matched your search. People Top languages Loading… Uh oh! There was an error while loading. Please reload this page . Most used topics Loading… Uh oh! There was an error while loading. Please reload this page . Footer © 2026 GitHub, Inc. Footer navigation Terms Privacy Security Status Community Docs Contact Manage cookies Do not share my personal information You can’t perform that action at this time.",
+      "source_id": "graphene_gh",
+      "download_url": null,
+      "download_links": [],
+      "query": "direct:source",
+      "device_id": "xiaomi:nabu"
+    },
+    {
+      "url": "https://github.com/eeos?q=nabu&type=all",
+      "title": "eeos · GitHub",
+      "text": "eeos · GitHub Skip to content Navigation Menu Sign in Appearance settings Platform AI CODE CREATION GitHub Copilot Write better code with AI GitHub Copilot app Direct agents from issue to merge MCP Registry Integrate external tools DEVELOPER WORKFLOWS Actions Automate any workflow Codespaces Instant dev environments Issues Plan and track work Code Review Manage code changes Code Quality Enforce quality at merge APPLICATION SECURITY GitHub Advanced Security Find and fix vulnerabilities Code security Secure your code as you build Secret protection Stop leaks before they start EXPLORE Why GitHub Documentation Blog Changelog Marketplace View all features Solutions BY COMPANY SIZE Enterprises Small and medium teams Startups Nonprofits BY USE CASE App Modernization DevSecOps DevOps CI/CD View all use cases BY INDUSTRY Healthcare Financial services Manufacturing Government View all industries View all solutions Resources EXPLORE BY TOPIC AI Software Development DevOps Security View all topics EXPLORE BY TYPE Customer stories Events & webinars Ebooks & reports Business insights GitHub Skills SUPPORT & SERVICES Documentation Customer support Community forum Trust center Partners View all resources Open Source COMMUNITY GitHub Sponsors Fund open source developers PROGRAMS Security Lab Maintainer Community Accelerator GitHub Stars Archive Program REPOSITORIES Topics Trending Collections Enterprise ENTERPRISE SOLUTIONS Enterprise platform AI-powered developer platform AVAILABLE ADD-ONS GitHub Advanced Security Enterprise-grade security features Copilot for Business Enterprise-grade AI features Premium Support Enterprise-grade 24/7 support Pricing Search / Sign in Sign up Appearance settings You signed in with another tab or window. Reload to refresh your session. You signed out in another tab or window. Reload to refresh your session. You switched accounts on another tab or window. Reload to refresh your session. Dismiss alert {{ message }} eeos Follow Overview Repositories 1 Projects 0 Packages 0 Stars 1 More Overview Repositories Projects Packages Stars eeos Follow eeos Follow 1 follower · 0 following Block or report user Block or report eeos --> Block user Prevent this user from interacting with your repositories and sending you notifications. Learn more about blocking users . You must be logged in to block users. Add an optional note Maximum 250 characters. Please don’t include any personal information such as legal names or email addresses. Markdown is supported. This note will only be visible to you. Block user Report abuse Contact GitHub support about this user’s behavior. Learn more about reporting abuse . Report abuse Overview Repositories 1 Projects 0 Packages 0 Stars 1 More Overview Repositories Projects Packages Stars Popular repositories Loading Pokus Pokus Public Wireframes 1 Something went wrong, please refresh the page to try again. If the problem persists, check the GitHub status page or contact support . Uh oh! There was an error while loading. Please reload this page . Footer © 2026 GitHub, Inc. Footer navigation Terms Privacy Security Status Community Docs Contact Manage cookies Do not share my personal information You can’t perform that action at this time.",
+      "source_id": "eos_gh",
+      "download_url": null,
+      "download_links": [],
+      "query": "direct:source",
+      "device_id": "xiaomi:nabu"
+    },
+    {
+      "url": "https://github.com/Divested-Mobile?q=nabu&type=all",
+      "title": "DivestOS Mobile · GitHub",
+      "text": "DivestOS Mobile · GitHub Skip to content Navigation Menu Sign in Appearance settings Divested-Mobile Platform AI CODE CREATION GitHub Copilot Write better code with AI GitHub Copilot app Direct agents from issue to merge MCP Registry Integrate external tools DEVELOPER WORKFLOWS Actions Automate any workflow Codespaces Instant dev environments Issues Plan and track work Code Review Manage code changes Code Quality Enforce quality at merge APPLICATION SECURITY GitHub Advanced Security Find and fix vulnerabilities Code security Secure your code as you build Secret protection Stop leaks before they start EXPLORE Why GitHub Documentation Blog Changelog Marketplace View all features Solutions BY COMPANY SIZE Enterprises Small and medium teams Startups Nonprofits BY USE CASE App Modernization DevSecOps DevOps CI/CD View all use cases BY INDUSTRY Healthcare Financial services Manufacturing Government View all industries View all solutions Resources EXPLORE BY TOPIC AI Software Development DevOps Security View all topics EXPLORE BY TYPE Customer stories Events & webinars Ebooks & reports Business insights GitHub Skills SUPPORT & SERVICES Documentation Customer support Community forum Trust center Partners View all resources Open Source COMMUNITY GitHub Sponsors Fund open source developers PROGRAMS Security Lab Maintainer Community Accelerator GitHub Stars Archive Program REPOSITORIES Topics Trending Collections Enterprise ENTERPRISE SOLUTIONS Enterprise platform AI-powered developer platform AVAILABLE ADD-ONS GitHub Advanced Security Enterprise-grade security features Copilot for Business Enterprise-grade AI features Premium Support Enterprise-grade 24/7 support Pricing Search / Sign in Sign up Appearance settings You signed in with another tab or window. Reload to refresh your session. You signed out in another tab or window. Reload to refresh your session. You switched accounts on another tab or window. Reload to refresh your session. Dismiss alert {{ message }} Uh oh! There was an error while loading. Please reload this page . Uh oh! There was an error while loading. Please reload this page . DivestOS Mobile A more private and more secure aftermarket mobile operating system • Mirrored on https://gitlab.com/divested-mobile & https://codeberg.org/divested-mobile Verified We've verified that the organization Divested-Mobile controls the domain: divestos.org Learn more about verified organizations 396 followers https://divestos.org Overview Repositories Packages People More Overview Repositories Packages People Pinned Loading DivestOS-Build DivestOS-Build Public archive Everything needed to build DivestOS, a more private and more secure aftermarket mobile operating system. Shell 239 36 CVE_Checker CVE_Checker Public archive A tool for downloading, checking, and applying (CVE) patches to a repository. Java 53 10 Hypatia Hypatia Public archive A realtime malware scanner Java 658 61 Repositories --> Loading Type Select type All Public Sources Forks Archived Mirrors Templates Language Select language All HTML Java JavaScript Makefile PHP Python Shell Sort Select order Last updated Name Stars 0 results for all repositories matching nabu sorted by last updated Clear filter No repositories matched your search. People Top languages Loading… Uh oh! There was an error while loading. Please reload this page . Most used topics Loading… Uh oh! There was an error while loading. Please reload this page . Footer © 2026 GitHub, Inc. Footer navigation Terms Privacy Security Status Community Docs Contact Manage cookies Do not share my personal information You can’t perform that action at this time.",
+      "source_id": "divest_gh",
+      "download_url": null,
+      "download_links": [],
+      "query": "direct:source",
+      "device_id": "xiaomi:nabu"
+    },
+    {
+      "url": "https://download.lineageos.org/",
+      "title": "Devices | LineageOS Downloads",
+      "text": "",
+      "source_id": "lineageos_dl",
+      "download_url": null,
+      "download_links": [],
+      "query": "site:download.lineageos.org nabu LineageOS",
+      "device_id": "xiaomi:nabu"
+    },
+    {
+      "url": "https://download.lineageos.org/devices",
+      "title": "Devices | LineageOS Downloads",
+      "text": "",
+      "source_id": "lineageos_dl",
+      "download_url": null,
+      "download_links": [],
+      "query": "site:download.lineageos.org nabu LineageOS",
+      "device_id": "xiaomi:nabu"
+    },
+    {
+      "url": "https://download.lineageos.org/%EF%BC%89",
+      "title": "Devices | LineageOS Downloads",
+      "text": "",
+      "source_id": "lineageos_dl",
+      "download_url": null,
+      "download_links": [],
+      "query": "site:download.lineageos.org nabu LineageOS",
+      "device_id": "xiaomi:nabu"
+    },
+    {
+      "url": "https://download.lineageos.org/flash",
+      "title": "Flash Tools | LineageOS Downloads",
+      "text": "",
+      "source_id": "lineageos_dl",
+      "download_url": null,
+      "download_links": [],
+      "query": "site:download.lineageos.org nabu LineageOS",
+      "device_id": "xiaomi:nabu"
+    },
+    {
+      "url": "https://download.lineageos.org/%7B%7B",
+      "title": "LineageOS Downloads",
+      "text": "",
+      "source_id": "lineageos_dl",
+      "download_url": null,
+      "download_links": [],
+      "query": "site:download.lineageos.org nabu LineageOS",
+      "device_id": "xiaomi:nabu"
+    },
+    {
+      "url": "https://download.lineageos.org/changes",
+      "title": "Devices | LineageOS Downloads",
+      "text": "",
+      "source_id": "lineageos_dl",
+      "download_url": null,
+      "download_links": [],
+      "query": "site:download.lineageos.org nabu LineageOS",
+      "device_id": "xiaomi:nabu"
+    },
+    {
+      "url": "https://download.lineageos.org/nio",
+      "title": "Builds for nio | LineageOS Downloads",
+      "text": "",
+      "source_id": "lineageos_dl",
+      "download_url": null,
+      "download_links": [],
+      "query": "site:download.lineageos.org nabu LineageOS",
+      "device_id": "xiaomi:nabu"
+    },
+    {
+      "url": "https://download.lineageos.org/nx563j",
+      "title": "Builds for nx563j | LineageOS Downloads",
+      "text": "",
+      "source_id": "lineageos_dl",
+      "download_url": null,
+      "download_links": [],
+      "query": "site:download.lineageos.org nabu LineageOS",
+      "device_id": "xiaomi:nabu"
+    },
+    {
+      "url": "https://get.pixelexperience.org/",
+      "title": "Home - PixelExperience",
+      "text": "",
+      "source_id": "pe_dl",
+      "download_url": null,
+      "download_links": [],
+      "query": "site:get.pixelexperience.org nabu Pixel Experience",
+      "device_id": "xiaomi:nabu"
+    },
+    {
+      "url": "https://get.pixelexperience.org/devices",
+      "title": "Devices - PixelExperience",
+      "text": "",
+      "source_id": "pe_dl",
+      "download_url": null,
+      "download_links": [],
+      "query": "site:get.pixelexperience.org nabu Pixel Experience",
+      "device_id": "xiaomi:nabu"
+    },
+    {
+      "url": "https://get.pixelexperience.org/NB1",
+      "title": "Nokia 8 (NB1) - PixelExperience",
+      "text": "",
+      "source_id": "pe_dl",
+      "download_url": null,
+      "download_links": [],
+      "query": "site:get.pixelexperience.org nabu Pixel Experience",
+      "device_id": "xiaomi:nabu"
+    },
+    {
+      "url": "https://get.pixelexperience.org/donate",
+      "title": "Donate - PixelExperience",
+      "text": "",
+      "source_id": "pe_dl",
+      "download_url": null,
+      "download_links": [],
+      "query": "site:get.pixelexperience.org nabu Pixel Experience",
+      "device_id": "xiaomi:nabu"
+    },
+    {
+      "url": "https://get.pixelexperience.org/veux",
+      "title": "Xiaomi POCO X4 Pro 5G / Redmi Note 11 Pro 5G / Redmi Note 11 Pro+ 5G ...",
+      "text": "",
+      "source_id": "pe_dl",
+      "download_url": null,
+      "download_links": [],
+      "query": "site:get.pixelexperience.org nabu Pixel Experience",
+      "device_id": "xiaomi:nabu"
+    },
+    {
+      "url": "https://get.pixelexperience.org/munch",
+      "title": "Xiaomi POCO F4 / Redmi K40S (munch) - PixelExperience",
+      "text": "",
+      "source_id": "pe_dl",
+      "download_url": null,
+      "download_links": [],
+      "query": "site:get.pixelexperience.org nabu Pixel Experience",
+      "device_id": "xiaomi:nabu"
+    },
+    {
+      "url": "https://get.pixelexperience.org/vayu",
+      "title": "Xiaomi POCO X3 Pro (vayu) - PixelExperience",
+      "text": "",
+      "source_id": "pe_dl",
+      "download_url": null,
+      "download_links": [],
+      "query": "site:get.pixelexperience.org nabu Pixel Experience",
+      "device_id": "xiaomi:nabu"
+    },
+    {
+      "url": "https://get.pixelexperience.org/about",
+      "title": "About - PixelExperience",
+      "text": "",
+      "source_id": "pe_dl",
+      "download_url": null,
+      "download_links": [],
+      "query": "site:get.pixelexperience.org nabu Pixel Experience",
+      "device_id": "xiaomi:nabu"
+    }
+  ],
   "rejections": []
 }
