@@ -248,7 +248,118 @@ class ValidationTest(unittest.TestCase):
         self.assertEqual(versions, ["10.6", "11.2"])
 
 
+class StrictValidationTest(unittest.TestCase):
+    """Regressions from the over-permissive 33 -> 19 verified run."""
+
+    def test_graphene_generic_page_not_a_nabu_rom(self) -> None:
+        candidate = Candidate(
+            url="https://grapheneos.org/",
+            title="GrapheneOS: private and secure mobile OS",
+            text="Downloads. Releases. Install. Android 6.0 support ended. nabu",
+        )
+        outcome = validate_candidate(candidate, NABU)
+        self.assertIsNone(outcome.rom)
+        self.assertIsNotNone(outcome.rejection)
+
+    def test_github_org_search_page_rejected(self) -> None:
+        candidate = Candidate(
+            url="https://github.com/LineageOS?q=nabu&type=all",
+            title="LineageOS · GitHub",
+            text="Repositories nabu download releases",
+        )
+        self.assertIsNotNone(validate_candidate(candidate, NABU).rejection)
+
+    def test_github_org_landing_rejected(self) -> None:
+        candidate = Candidate(url="https://github.com/crdroidandroid",
+                             title="crDroid Android · GitHub nabu Xiaomi Pad 5",
+                             text="download releases")
+        self.assertIsNotNone(validate_candidate(candidate, NABU).rejection)
+
+    def test_generic_project_homepage_rejected(self) -> None:
+        candidate = Candidate(url="https://crdroid.net/",
+                             title="crDroid Android for Xiaomi Pad 5 nabu",
+                             text="Download crDroid. Devices. Changelog.")
+        self.assertIsNotNone(validate_candidate(candidate, NABU).rejection)
+
+    def test_lineageos_device_download_page_verified(self) -> None:
+        candidate = Candidate(
+            url="https://download.lineageos.org/devices/nabu",
+            title="LineageOS Downloads — Xiaomi Pad 5 (nabu)",
+            text="Nightly builds for nabu. Build date and sha256 for every release.",
+        )
+        outcome = validate_candidate(candidate, NABU)
+        self.assertIsNone(outcome.rejection)
+        rom = outcome.rom
+        assert rom is not None
+        self.assertEqual(rom.status, "verified")
+        self.assertEqual(rom.source_url, "https://download.lineageos.org/devices/nabu")
+
+    def test_real_artifact_url_validates(self) -> None:
+        candidate = Candidate(
+            url="https://sourceforge.net/projects/crdroid/files/nabu/11.x/",
+            title="crDroid 11.2 Xiaomi Pad 5 nabu",
+            text="crDroid-11.2-nabu-20250104.zip md5 checksum",
+            download_url="https://sourceforge.net/projects/crdroid/files/nabu/"
+                         "crDroid-11.2-nabu-20250104.zip/download",
+        )
+        outcome = validate_candidate(candidate, NABU)
+        self.assertIsNone(outcome.rejection)
+        rom = outcome.rom
+        assert rom is not None
+        self.assertTrue(rom.download_url and rom.download_url.endswith("/download"))
+        self.assertEqual(rom.rom_version, "11.2")
+        self.assertEqual(rom.build_date, "2025-01-04")
+
+    def test_android_version_from_unrelated_text_ignored(self) -> None:
+        candidate = Candidate(
+            url="https://xdaforums.com/t/crdroid-nabu.4500/",
+            title="crDroid for Xiaomi Pad 5 nabu",
+            text="crDroid-11.2-nabu.zip md5 abcdef\nOur team started in Android 6.0 times.",
+        )
+        outcome = validate_candidate(candidate, NABU)
+        rom = outcome.rom
+        assert rom is not None
+        self.assertNotEqual(rom.android_version, "Android 6.0 Marshmallow")
+
+    def test_official_code_page_alone_not_verified(self) -> None:
+        candidate = Candidate(
+            url="https://github.com/LineageOS/android_device_xiaomi_nabu",
+            title="LineageOS device tree for Xiaomi Pad 5 (nabu)",
+            text="Device sources. build date sha256 metadata for nabu.",
+        )
+        outcome = validate_candidate(candidate, NABU)
+        if outcome.rom is not None:
+            self.assertEqual(outcome.rom.status, "unverified")
+
+    def test_registered_source_alone_insufficient(self) -> None:
+        candidate = Candidate(url="https://lineageos.org/",
+                             title="LineageOS — free and open OS",
+                             text="Download LineageOS for your device (nabu Xiaomi Pad 5)")
+        self.assertIsNotNone(validate_candidate(candidate, NABU).rejection)
+
+    def test_codename_alone_in_generic_text_insufficient(self) -> None:
+        candidate = Candidate(url="https://xdaforums.com/t/random-thread.777/",
+                             title="Tablet talk",
+                             text="Someone mentioned nabu once. crDroid md5")
+        self.assertIsNotNone(validate_candidate(candidate, NABU).rejection)
+
+    def test_dedupe_prefers_concrete_artifact_record(self) -> None:
+        candidates = [
+            Candidate(url="https://crdroid.net/nabu",
+                      title="crDroid 11.2 Xiaomi Pad 5 nabu",
+                      text="crDroid builds for nabu. md5 changelog"),
+            Candidate(url="https://sourceforge.net/projects/crdroid/files/nabu/11.x/",
+                      title="crDroid 11.2 Xiaomi Pad 5 nabu",
+                      text="crDroid-11.2-nabu.zip md5"),
+        ]
+        roms, rejections = validate_all(candidates, NABU)
+        self.assertEqual(rejections, [])
+        self.assertEqual(len(roms), 1)
+        self.assertTrue(roms[0].download_url)
+
+
 class DiscoveryTest(unittest.TestCase):
+
     def test_queries_never_bare_codename(self) -> None:
         queries = build_queries(NABU, registry, max_queries=200)
         self.assertTrue(queries)
