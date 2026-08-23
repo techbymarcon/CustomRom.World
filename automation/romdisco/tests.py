@@ -350,7 +350,9 @@ class StrictValidationTest(unittest.TestCase):
                       text="crDroid builds for nabu. md5 changelog"),
             Candidate(url="https://sourceforge.net/projects/crdroid/files/nabu/11.x/",
                       title="crDroid 11.2 Xiaomi Pad 5 nabu",
-                      text="crDroid-11.2-nabu.zip md5"),
+                      text="crDroid-11.2-nabu.zip md5",
+                      download_url="https://sourceforge.net/projects/crdroid/files/nabu/"
+                                   "crDroid-11.2-nabu.zip/download"),
         ]
         roms, rejections = validate_all(candidates, NABU)
         self.assertEqual(rejections, [])
