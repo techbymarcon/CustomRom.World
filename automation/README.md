@@ -20,22 +20,76 @@ automation/
   data/rom_database.json  working database (created on first run)
 ```
 
-## CLI
+## CLI (Termux)
+
+Stdlib-only Python 3 — no Node, browser or extra pip packages. From
+`~/customrom-importer` (the directory that *contains* `automation/`):
 
 ```bash
-cd automation
-python rom_discovery.py discover --device "Xiaomi Pad 5" --codename nabu --alias "Mi Pad 5"
-python rom_discovery.py discover --device "Xiaomi Pad 5" --codename nabu --dry-run   # show queries
-python rom_discovery.py validate
-python rom_discovery.py export roms.json [--verified-only]
-python rom_discovery.py inspect-source xdaforums.com
-python rom_discovery.py list-sources --kind firmware_database
-python rom_discovery.py stats
-python rom_discovery.py test
+pkg install python           # once
+cd ~/customrom-importer
+
+python -m automation test
+python -m automation inspect-source xdaforums.com
+python -m automation inspect-source github.com/LineageOS
+python -m automation inspect-source mi.com          # -> NOT REGISTERED (exit 1)
+python -m automation discover --device "Xiaomi Pad 5" --codename nabu
 ```
+
+Full command set:
+
+```bash
+python -m automation discover --device "Xiaomi Pad 5" --codename nabu --alias "Mi Pad 5"
+python -m automation discover --device "Xiaomi Pad 5" --codename nabu --dry-run     # probe URLs + queries
+python -m automation discover --device "Xiaomi Pad 5" --codename nabu --no-fallback # registered sources only
+python -m automation discover --device "Xiaomi Pad 5" --codename nabu --no-probe    # search only
+python -m automation validate
+python -m automation export roms.json [--verified-only]
+python -m automation list-sources --kind firmware_database
+python -m automation stats
+```
+
+`python automation/rom_discovery.py <command>` remains an equivalent entry point.
 
 Offline / deterministic runs: `--offline` (zero candidates) or
 `--fixture results.json` (also via `ROMDISCO_OFFLINE` / `ROMDISCO_FIXTURE`).
+
+## Source-first pipeline
+
+1. **Direct source pages.** Each source may declare `device_urls` templates
+   (`download.lineageos.org/devices/{code}`, `crdroid.net/{code}`,
+   `xiaomifirmwareupdater.com/miui/{code}/`, `samfw.com/firmware/{slug}`, GitHub
+   org search …). They are fetched directly, so discovery does not depend on a
+   search engine ranking anything. A 404/403/timeout yields nothing.
+2. **Source-specific search patterns.** `query_templates` per source, always
+   domain-scoped and ordered by source authority: GitHub/GitLab repos and
+   releases, XDA threads, SourceForge/AFH project & file pages, firmware-database
+   device pages.
+3. **Generic web search — fallback only** (`--no-fallback` disables it).
+
+Every URL from every stage must resolve to a registered source, otherwise it is
+discarded before a candidate exists.
+
+## Source classes
+
+`OFFICIAL` (official project/download) > `FIRMWARE_DATABASE` > `DEVELOPMENT`
+(official code orgs) > `COMMUNITY` (XDA, 4PDA, SourceForge, generic GitHub) >
+`REFERENCE` (AOSP docs/gerrit) > `DOWNLOAD_HOST` (AFH, Drive, MEGA, MediaFire) >
+`ARCHIVE_MIRROR` (Telegram, Reddit, Wayback). `Source.authority` ranks class
+first, trust second; file hosts and mirrors are never authoritative.
+
+Subdomains of a registered base domain inherit its class
+(`wiki.lineageos.org`, `mirrorbits.lineageos.org`), while lookalikes
+(`lineageos.org.rom-download.xyz`, `not-lineageos.org`, `github.com.evil.io`)
+never match.
+
+## Evidence scoring
+
+Each candidate accumulates points for a strong device match (codename in a
+trusted URL path), codename mention, device name, resolved ROM family, artifact /
+checksum / build metadata / download links, plus a source-class bonus; generic
+landing pages are penalised. Candidates below `MIN_EVIDENCE_SCORE` are rejected
+with the score in the rejection reason.
 
 ## Trust model
 
@@ -98,10 +152,13 @@ Sources are stored once and referenced by `source_id`.
 
 ## Tests
 
-`python rom_discovery.py test` asserts (among others) that mi.com,
+`python -m automation test` (28 tests) asserts (among others) that mi.com,
 mistoreitalia.com, amazon.com, aranzulla.it, wikipedia.org and unieuro.it are
 rejected, while xdaforums.com (community), github.com/LineageOS (official_code),
 sourceforge.net, androidfilehost.com (community), lineageos.org
 (official_project), hyperosupdates.com and xiaomifirmwareupdater.com
-(firmware_database) are accepted in the correct category — plus extraction,
-dedupe, mirror-never-verified, unrelated-codename and zero-result behaviour.
+(firmware_database) are accepted in the correct category; that approved
+subdomains inherit trust while lookalike domains do not; that file hosts rank
+below official sources and cannot verify — plus extraction, dedupe,
+mirror-never-verified, unrelated-codename, source-first ordering and
+zero-result behaviour.
