@@ -3,7 +3,7 @@
     "schema_version": 2,
     "generator": "romdisco",
     "created_at": "2026-08-23T18:45:04+00:00",
-    "updated_at": "2026-08-23T19:49:02+00:00",
+    "updated_at": "2026-08-24T00:12:36+00:00",
     "counts": {
       "devices": 1,
       "roms": 19,
@@ -1763,68 +1763,173 @@
   ],
   "rejections": [
     {
+      "url": "https://download.lineageos.org/devices/nabu",
+      "reason": "no concrete ROM/build evidence",
+      "device_id": "xiaomi:nabu"
+    },
+    {
+      "url": "https://download.lineageos.org/devices/nabu/builds",
+      "reason": "no concrete ROM/build evidence",
+      "device_id": "xiaomi:nabu"
+    },
+    {
+      "url": "https://crdroid.net/nabu",
+      "reason": "no concrete ROM/build evidence",
+      "device_id": "xiaomi:nabu"
+    },
+    {
       "url": "https://grapheneos.org/releases",
-      "reason": "does not refer to the target device",
+      "reason": "no strong device evidence (codename in device URL or name+codename)",
       "device_id": "xiaomi:nabu"
     },
     {
       "url": "https://projectelixiros.com/device/nabu",
-      "reason": "no ROM/build evidence",
+      "reason": "no concrete ROM/build evidence",
       "device_id": "xiaomi:nabu"
     },
     {
       "url": "https://xiaomifirmwareupdater.com/miui/nabu",
-      "reason": "no ROM/build evidence",
+      "reason": "no concrete ROM/build evidence",
       "device_id": "xiaomi:nabu"
     },
     {
       "url": "https://xiaomifirmwareupdater.com/hyperos/nabu",
-      "reason": "no ROM/build evidence",
+      "reason": "no concrete ROM/build evidence",
+      "device_id": "xiaomi:nabu"
+    },
+    {
+      "url": "https://github.com/LineageOS?q=nabu&type=all",
+      "reason": "no strong device evidence (codename in device URL or name+codename)",
       "device_id": "xiaomi:nabu"
     },
     {
       "url": "https://github.com/search?q=org%3ALineageOS+nabu&type=repositories",
-      "reason": "does not refer to the target device",
+      "reason": "no strong device evidence (codename in device URL or name+codename)",
+      "device_id": "xiaomi:nabu"
+    },
+    {
+      "url": "https://github.com/crdroidandroid?q=nabu&type=all",
+      "reason": "no strong device evidence (codename in device URL or name+codename)",
       "device_id": "xiaomi:nabu"
     },
     {
       "url": "https://github.com/search?q=org%3Acrdroidandroid+nabu&type=repositories",
-      "reason": "does not refer to the target device",
+      "reason": "no strong device evidence (codename in device URL or name+codename)",
+      "device_id": "xiaomi:nabu"
+    },
+    {
+      "url": "https://github.com/PixelExperience?q=nabu&type=all",
+      "reason": "no strong device evidence (codename in device URL or name+codename)",
       "device_id": "xiaomi:nabu"
     },
     {
       "url": "https://github.com/search?q=org%3APixelExperience+nabu&type=repositories",
-      "reason": "does not refer to the target device",
+      "reason": "no strong device evidence (codename in device URL or name+codename)",
+      "device_id": "xiaomi:nabu"
+    },
+    {
+      "url": "https://github.com/Evolution-X?q=nabu&type=all",
+      "reason": "no strong device evidence (codename in device URL or name+codename)",
       "device_id": "xiaomi:nabu"
     },
     {
       "url": "https://github.com/search?q=org%3AEvolution-X+nabu&type=repositories",
-      "reason": "does not refer to the target device",
+      "reason": "no strong device evidence (codename in device URL or name+codename)",
+      "device_id": "xiaomi:nabu"
+    },
+    {
+      "url": "https://github.com/ArrowOS?q=nabu&type=all",
+      "reason": "no strong device evidence (codename in device URL or name+codename)",
       "device_id": "xiaomi:nabu"
     },
     {
       "url": "https://github.com/search?q=org%3AArrowOS+nabu&type=repositories",
-      "reason": "does not refer to the target device",
+      "reason": "no strong device evidence (codename in device URL or name+codename)",
+      "device_id": "xiaomi:nabu"
+    },
+    {
+      "url": "https://github.com/PixelOS-AOSP?q=nabu&type=all",
+      "reason": "no strong device evidence (codename in device URL or name+codename)",
       "device_id": "xiaomi:nabu"
     },
     {
       "url": "https://github.com/search?q=org%3APixelOS-AOSP+nabu&type=repositories",
-      "reason": "does not refer to the target device",
+      "reason": "no strong device evidence (codename in device URL or name+codename)",
+      "device_id": "xiaomi:nabu"
+    },
+    {
+      "url": "https://github.com/DerpFest-AOSP?q=nabu&type=all",
+      "reason": "no strong device evidence (codename in device URL or name+codename)",
       "device_id": "xiaomi:nabu"
     },
     {
       "url": "https://github.com/search?q=org%3ADerpFest-AOSP+nabu&type=repositories",
-      "reason": "does not refer to the target device",
+      "reason": "no strong device evidence (codename in device URL or name+codename)",
+      "device_id": "xiaomi:nabu"
+    },
+    {
+      "url": "https://github.com/ProjectElixir?q=nabu&type=all",
+      "reason": "no strong device evidence (codename in device URL or name+codename)",
       "device_id": "xiaomi:nabu"
     },
     {
       "url": "https://github.com/search?q=org%3AProjectElixir+nabu&type=repositories",
-      "reason": "does not refer to the target device",
+      "reason": "no strong device evidence (codename in device URL or name+codename)",
+      "device_id": "xiaomi:nabu"
+    },
+    {
+      "url": "https://github.com/RisingOS-Revived?q=nabu&type=all",
+      "reason": "no strong device evidence (codename in device URL or name+codename)",
       "device_id": "xiaomi:nabu"
     },
     {
       "url": "https://github.com/search?q=org%3ARisingOS-Revived+nabu&type=repositories",
-      "reason": "does not refer to the target device",
+      "reason": "no strong device evidence (codename in device URL or name+codename)",
+      "device_id": "xiaomi:nabu"
+    },
+    {
+      "url": "https://github.com/VoltageOS?q=nabu&type=all",
+      "reason": "no strong device evidence (codename in device URL or name+codename)",
+      "device_id": "xiaomi:nabu"
+    },
+    {
+      "url": "https://github.com/SuperiorOS?q=nabu&type=all",
+      "reason": "no strong device evidence (codename in device URL or name+codename)",
+      "device_id": "xiaomi:nabu"
+    },
+    {
+      "url": "https://github.com/ResurrectionRemix?q=nabu&type=all",
+      "reason": "no strong device evidence (codename in device URL or name+codename)",
+      "device_id": "xiaomi:nabu"
+    },
+    {
+      "url": "https://github.com/Havoc-OS?q=nabu&type=all",
+      "reason": "no strong device evidence (codename in device URL or name+codename)",
+      "device_id": "xiaomi:nabu"
+    },
+    {
+      "url": "https://github.com/AOSPA?q=nabu&type=all",
+      "reason": "no strong device evidence (codename in device URL or name+codename)",
+      "device_id": "xiaomi:nabu"
+    },
+    {
+      "url": "https://github.com/CalyxOS?q=nabu&type=all",
+      "reason": "no strong device evidence (codename in device URL or name+codename)",
+      "device_id": "xiaomi:nabu"
+    },
+    {
+      "url": "https://github.com/GrapheneOS?q=nabu&type=all",
+      "reason": "no strong device evidence (codename in device URL or name+codename)",
+      "device_id": "xiaomi:nabu"
+    },
+    {
+      "url": "https://github.com/eeos?q=nabu&type=all",
+      "reason": "no strong device evidence (codename in device URL or name+codename)",
+      "device_id": "xiaomi:nabu"
+    },
+    {
+      "url": "https://github.com/Divested-Mobile?q=nabu&type=all",
+      "reason": "no strong device evidence (codename in device URL or name+codename)",
       "device_id": "xiaomi:nabu"
     }
   ]
