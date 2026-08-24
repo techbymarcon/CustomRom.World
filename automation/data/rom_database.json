@@ -3,12 +3,12 @@
     "schema_version": 2,
     "generator": "romdisco",
     "created_at": "2026-08-23T18:45:04+00:00",
-    "updated_at": "2026-08-24T00:12:36+00:00",
+    "updated_at": "2026-08-24T00:13:02+00:00",
     "counts": {
       "devices": 1,
-      "roms": 19,
-      "sources": 19,
-      "verified": 19,
+      "roms": 22,
+      "sources": 20,
+      "verified": 22,
       "candidates": 34
     }
   },
@@ -212,29 +212,22 @@
       "authority": 4085
     },
     {
-      "id": "elixir_gh",
-      "name": "Project Elixir on GitHub",
-      "kind": "official_code",
-      "host": "github.com",
-      "canonical_url": "https://github.com/ProjectElixir",
-      "trust": 85,
-      "path_prefixes": [
-        "/ProjectElixir/"
-      ],
+      "id": "elixir_site",
+      "name": "Project Elixir",
+      "kind": "official_project",
+      "host": "projectelixiros.com",
+      "canonical_url": "https://projectelixiros.com",
+      "trust": 95,
+      "path_prefixes": [],
       "family": "Project Elixir",
       "include_subdomains": true,
       "device_urls": [
-        "https://github.com/ProjectElixir?q={code}&type=all",
-        "https://github.com/search?q=org%3AProjectElixir+{code}&type=repositories"
+        "https://projectelixiros.com/device/{code}"
       ],
-      "query_templates": [
-        "site:{host}{prefix} {code}",
-        "site:{host}{prefix} {code} releases",
-        "site:{host}{prefix} device_{code}"
-      ],
+      "query_templates": [],
       "can_verify": true,
-      "source_class": "DEVELOPMENT",
-      "authority": 4085
+      "source_class": "OFFICIAL",
+      "authority": 6095
     },
     {
       "id": "risingos_gh",
@@ -485,6 +478,27 @@
       "can_verify": true,
       "source_class": "DEVELOPMENT",
       "authority": 4085
+    },
+    {
+      "id": "xfu",
+      "name": "Xiaomi Firmware Updater",
+      "kind": "firmware_database",
+      "host": "xiaomifirmwareupdater.com",
+      "canonical_url": "https://xiaomifirmwareupdater.com",
+      "trust": 85,
+      "path_prefixes": [],
+      "family": null,
+      "include_subdomains": true,
+      "device_urls": [
+        "https://xiaomifirmwareupdater.com/miui/{code}/",
+        "https://xiaomifirmwareupdater.com/hyperos/{code}/"
+      ],
+      "query_templates": [
+        "site:xiaomifirmwareupdater.com {code}"
+      ],
+      "can_verify": true,
+      "source_class": "FIRMWARE_DATABASE",
+      "authority": 5085
     }
   ],
   "roms": [
@@ -515,8 +529,20 @@
           "url": "https://download.lineageos.org/devices/nabu"
         },
         {
-          "kind": "download_section",
+          "kind": "download_word",
           "detail": "ROM/build evidence on the page",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/devices/nabu"
+        },
+        {
+          "kind": "device_download_page",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/devices/nabu"
+        },
+        {
+          "kind": "build_evidence_tier",
+          "detail": "device_download_page",
           "source_id": "lineageos_dl",
           "url": "https://download.lineageos.org/devices/nabu"
         },
@@ -528,25 +554,13 @@
         },
         {
           "kind": "evidence_score",
-          "detail": "10",
+          "detail": "12",
           "source_id": "lineageos_dl",
           "url": "https://download.lineageos.org/devices/nabu"
-        },
-        {
-          "kind": "registered_source",
-          "detail": "LineageOS on GitHub (official_code, trust 90)",
-          "source_id": "lineageos_gh",
-          "url": "https://github.com/LineageOS"
-        },
-        {
-          "kind": "evidence_score",
-          "detail": "9",
-          "source_id": "lineageos_gh",
-          "url": "https://github.com/LineageOS?q=nabu&type=all"
         }
       ],
       "discovered_at": "2026-08-23T19:49:02+00:00",
-      "updated_at": "2026-08-23T19:49:02+00:00"
+      "updated_at": "2026-08-24T00:13:02+00:00"
     },
     {
       "id": "89d33fd611ce9d1a",
@@ -900,43 +914,49 @@
       "rom_version": null,
       "build_date": null,
       "status": "verified",
-      "source_url": "https://github.com/ProjectElixir?q=nabu&type=all",
+      "source_url": "https://projectelixiros.com/device/nabu",
       "download_url": null,
-      "source_id": "elixir_gh",
+      "source_id": "elixir_site",
       "evidence": [
         {
           "kind": "registered_source",
-          "detail": "Project Elixir on GitHub (official_code, trust 85)",
-          "source_id": "elixir_gh",
-          "url": "https://github.com/ProjectElixir"
+          "detail": "Project Elixir (official_project, trust 95)",
+          "source_id": "elixir_site",
+          "url": "https://projectelixiros.com"
         },
         {
           "kind": "codename_in_url",
           "detail": "codename 'nabu' in URL path",
-          "source_id": "elixir_gh",
-          "url": "https://github.com/ProjectElixir?q=nabu&type=all"
+          "source_id": "elixir_site",
+          "url": "https://projectelixiros.com/device/nabu"
         },
         {
-          "kind": "download_section",
+          "kind": "device_download_page",
           "detail": "ROM/build evidence on the page",
-          "source_id": "elixir_gh",
-          "url": "https://github.com/ProjectElixir?q=nabu&type=all"
+          "source_id": "elixir_site",
+          "url": "https://projectelixiros.com/device/nabu"
+        },
+        {
+          "kind": "build_evidence_tier",
+          "detail": "device_download_page",
+          "source_id": "elixir_site",
+          "url": "https://projectelixiros.com/device/nabu"
         },
         {
           "kind": "family_resolved",
           "detail": "Project Elixir",
-          "source_id": "elixir_gh",
-          "url": "https://github.com/ProjectElixir?q=nabu&type=all"
+          "source_id": "elixir_site",
+          "url": "https://projectelixiros.com/device/nabu"
         },
         {
           "kind": "evidence_score",
-          "detail": "9",
-          "source_id": "elixir_gh",
-          "url": "https://github.com/ProjectElixir?q=nabu&type=all"
+          "detail": "12",
+          "source_id": "elixir_site",
+          "url": "https://projectelixiros.com/device/nabu"
         }
       ],
       "discovered_at": "2026-08-23T19:49:02+00:00",
-      "updated_at": "2026-08-23T19:49:02+00:00"
+      "updated_at": "2026-08-24T00:13:02+00:00"
     },
     {
       "id": "074b3f6c403c275b",
@@ -1417,6 +1437,174 @@
       ],
       "discovered_at": "2026-08-23T19:49:02+00:00",
       "updated_at": "2026-08-23T19:49:02+00:00"
+    },
+    {
+      "id": "a71556588eac00a0",
+      "name": "crDroid",
+      "type": "custom_rom",
+      "device": "Xiaomi Pad 5",
+      "codename": "nabu",
+      "android_version": "Android 11",
+      "rom_version": "6",
+      "build_date": "2022-03-09",
+      "status": "verified",
+      "source_url": "https://crdroid.net/nabu",
+      "download_url": null,
+      "source_id": "crdroid_site",
+      "evidence": [
+        {
+          "kind": "registered_source",
+          "detail": "crDroid (official_project, trust 98)",
+          "source_id": "crdroid_site",
+          "url": "https://crdroid.net"
+        },
+        {
+          "kind": "codename_in_url",
+          "detail": "codename 'nabu' in URL path",
+          "source_id": "crdroid_site",
+          "url": "https://crdroid.net/nabu"
+        },
+        {
+          "kind": "download_word",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "crdroid_site",
+          "url": "https://crdroid.net/nabu"
+        },
+        {
+          "kind": "device_download_page",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "crdroid_site",
+          "url": "https://crdroid.net/nabu"
+        },
+        {
+          "kind": "build_evidence_tier",
+          "detail": "device_download_page",
+          "source_id": "crdroid_site",
+          "url": "https://crdroid.net/nabu"
+        },
+        {
+          "kind": "family_resolved",
+          "detail": "crDroid",
+          "source_id": "crdroid_site",
+          "url": "https://crdroid.net/nabu"
+        },
+        {
+          "kind": "evidence_score",
+          "detail": "12",
+          "source_id": "crdroid_site",
+          "url": "https://crdroid.net/nabu"
+        }
+      ],
+      "discovered_at": "2026-08-24T00:13:02+00:00",
+      "updated_at": "2026-08-24T00:13:02+00:00"
+    },
+    {
+      "id": "48618dfcbd99d064",
+      "name": "MIUI",
+      "type": "stock_skin",
+      "device": "Xiaomi Pad 5",
+      "codename": "nabu",
+      "android_version": null,
+      "rom_version": null,
+      "build_date": null,
+      "status": "verified",
+      "source_url": "https://xiaomifirmwareupdater.com/miui/nabu",
+      "download_url": null,
+      "source_id": "xfu",
+      "evidence": [
+        {
+          "kind": "registered_source",
+          "detail": "Xiaomi Firmware Updater (firmware_database, trust 85)",
+          "source_id": "xfu",
+          "url": "https://xiaomifirmwareupdater.com"
+        },
+        {
+          "kind": "codename_in_url",
+          "detail": "codename 'nabu' in URL path",
+          "source_id": "xfu",
+          "url": "https://xiaomifirmwareupdater.com/miui/nabu"
+        },
+        {
+          "kind": "device_download_page",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "xfu",
+          "url": "https://xiaomifirmwareupdater.com/miui/nabu"
+        },
+        {
+          "kind": "build_evidence_tier",
+          "detail": "device_download_page",
+          "source_id": "xfu",
+          "url": "https://xiaomifirmwareupdater.com/miui/nabu"
+        },
+        {
+          "kind": "family_resolved",
+          "detail": "MIUI",
+          "source_id": "xfu",
+          "url": "https://xiaomifirmwareupdater.com/miui/nabu"
+        },
+        {
+          "kind": "evidence_score",
+          "detail": "11",
+          "source_id": "xfu",
+          "url": "https://xiaomifirmwareupdater.com/miui/nabu"
+        }
+      ],
+      "discovered_at": "2026-08-24T00:13:02+00:00",
+      "updated_at": "2026-08-24T00:13:02+00:00"
+    },
+    {
+      "id": "b6a76a3efa0f5c18",
+      "name": "HyperOS",
+      "type": "stock_skin",
+      "device": "Xiaomi Pad 5",
+      "codename": "nabu",
+      "android_version": null,
+      "rom_version": null,
+      "build_date": null,
+      "status": "verified",
+      "source_url": "https://xiaomifirmwareupdater.com/hyperos/nabu",
+      "download_url": null,
+      "source_id": "xfu",
+      "evidence": [
+        {
+          "kind": "registered_source",
+          "detail": "Xiaomi Firmware Updater (firmware_database, trust 85)",
+          "source_id": "xfu",
+          "url": "https://xiaomifirmwareupdater.com"
+        },
+        {
+          "kind": "codename_in_url",
+          "detail": "codename 'nabu' in URL path",
+          "source_id": "xfu",
+          "url": "https://xiaomifirmwareupdater.com/hyperos/nabu"
+        },
+        {
+          "kind": "device_download_page",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "xfu",
+          "url": "https://xiaomifirmwareupdater.com/hyperos/nabu"
+        },
+        {
+          "kind": "build_evidence_tier",
+          "detail": "device_download_page",
+          "source_id": "xfu",
+          "url": "https://xiaomifirmwareupdater.com/hyperos/nabu"
+        },
+        {
+          "kind": "family_resolved",
+          "detail": "HyperOS",
+          "source_id": "xfu",
+          "url": "https://xiaomifirmwareupdater.com/hyperos/nabu"
+        },
+        {
+          "kind": "evidence_score",
+          "detail": "11",
+          "source_id": "xfu",
+          "url": "https://xiaomifirmwareupdater.com/hyperos/nabu"
+        }
+      ],
+      "discovered_at": "2026-08-24T00:13:02+00:00",
+      "updated_at": "2026-08-24T00:13:02+00:00"
     }
   ],
   "candidates": [
@@ -1763,38 +1951,8 @@
   ],
   "rejections": [
     {
-      "url": "https://download.lineageos.org/devices/nabu",
-      "reason": "no concrete ROM/build evidence",
-      "device_id": "xiaomi:nabu"
-    },
-    {
-      "url": "https://download.lineageos.org/devices/nabu/builds",
-      "reason": "no concrete ROM/build evidence",
-      "device_id": "xiaomi:nabu"
-    },
-    {
-      "url": "https://crdroid.net/nabu",
-      "reason": "no concrete ROM/build evidence",
-      "device_id": "xiaomi:nabu"
-    },
-    {
       "url": "https://grapheneos.org/releases",
       "reason": "no strong device evidence (codename in device URL or name+codename)",
-      "device_id": "xiaomi:nabu"
-    },
-    {
-      "url": "https://projectelixiros.com/device/nabu",
-      "reason": "no concrete ROM/build evidence",
-      "device_id": "xiaomi:nabu"
-    },
-    {
-      "url": "https://xiaomifirmwareupdater.com/miui/nabu",
-      "reason": "no concrete ROM/build evidence",
-      "device_id": "xiaomi:nabu"
-    },
-    {
-      "url": "https://xiaomifirmwareupdater.com/hyperos/nabu",
-      "reason": "no concrete ROM/build evidence",
       "device_id": "xiaomi:nabu"
     },
     {
