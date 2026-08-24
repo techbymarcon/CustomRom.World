@@ -246,12 +246,20 @@ def _build_tier(candidate: Candidate, device: Device, source: Source, *,
     if "artifact_link" in signals or "artifact_extension" in signals:
         return "artifact", signals
 
+    # A registered official download/project/firmware page whose URL path carries the
+    # target codename is a genuine device page. Many of them render builds via JS, so
+    # in-page build markers are a bonus, not a requirement. Code hosts are excluded:
+    # their org/search/profile URLs are handled by classify_page and never reach here
+    # as device pages.
     device_download_page = (
         source.kind in {"official_download", "official_project", "firmware_database"}
-        and url_code and has_build_content
+        and url_code
+        and not _is_code_host(urlsplit(candidate.url).netloc.lower().removeprefix("www."))
     )
     if device_download_page:
         signals.append("device_download_page")
+        if has_build_content:
+            signals.append("device_build_listing")
         return "device_download_page", signals
 
     release_page = (
