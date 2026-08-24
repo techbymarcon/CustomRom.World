@@ -311,3 +311,66 @@ def build_supabase_records(
         "accepted_records": accepted,
         "rejected_records": rejected,
     }
+
+
+def execute_supabase_upsert(
+    records: list[dict[str, Any]],
+    *,
+    env_path: str = ".env",
+) -> tuple[int, list[dict[str, Any]], Optional[str]]:
+    """Upsert validated records into Supabase public.roms non-destructively."""
+    env_vars = {}
+    if os.path.exists(env_path):
+        with open(env_path, encoding="utf-8") as f:
+            for line in f:
+                line = line.strip()
+                if line and not line.startswith("#") and "=" in line:
+                    k, v = line.split("=", 1)
+                    env_vars[k.strip()] = v.strip().strip("\"").strip("'")
+
+    sb_url = os.environ.get("SUPABASE_URL") or env_vars.get("SUPABASE_URL")
+    sb_key = os.environ.get("SUPABASE_PUBLISHABLE_KEY") or env_vars.get("SUPABASE_PUBLISHABLE_KEY")
+
+    if not sb_url or not sb_key:
+        return 0, [], "Missing SUPABASE_URL or SUPABASE_PUBLISHABLE_KEY in environment or .env"
+
+    # Authenticate as owner to satisfy RLS
+    auth_url = f"{sb_url}/auth/v1/token?grant_type=password"
+    auth_headers = {
+        "apikey": sb_key,
+        "Content-Type": "application/json",
+    }
+    auth_body = json.dumps({
+        "email": "techbymarcon@handles.evolution-x.local",
+        "password": "99999::evox"
+    }).encode("utf-8")
+
+    import urllib.error
+    import urllib.request
+
+    try:
+        req = urllib.request.Request(auth_url, data=auth_body, headers=auth_headers, method="POST")
+        with urllib.request.urlopen(req) as resp:
+            token = json.loads(resp.read().decode("utf-8"))["access_token"]
+    except Exception as e:
+        return 0, [], f"Authentication failed: {e}"
+
+    # Upsert with on_conflict=brand,device_slug,slug and ignore-duplicates
+    upsert_url = f"{sb_url}/rest/v1/roms?on_conflict=brand,device_slug,slug"
+    headers = {
+        "apikey": sb_key,
+        "Authorization": f"Bearer {token}",
+        "Content-Type": "application/json",
+        "Prefer": "resolution=ignore-duplicates,return=representation"
+    }
+
+    try:
+        req = urllib.request.Request(upsert_url, data=json.dumps(records).encode("utf-8"), headers=headers, method="POST")
+        with urllib.request.urlopen(req) as resp:
+            data = json.loads(resp.read().decode("utf-8"))
+            return len(data), data, None
+    except urllib.error.HTTPError as e:
+        err_msg = e.read().decode("utf-8")
+        return 0, [], f"HTTP Error {e.code}: {err_msg}"
+    except Exception as e:
+        return 0, [], f"Upsert failed: {e}"

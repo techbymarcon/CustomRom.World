@@ -243,7 +243,13 @@ def cmd_import_supabase(args: argparse.Namespace) -> int:
         print("\n[DRY RUN ONLY] No changes were made to Supabase.")
         return 0
 
-    print("Executing Supabase upsert...")
+    print("Executing non-destructive Supabase upsert...")
+    from .importer import execute_supabase_upsert
+    inserted_count, inserted_rows, err = execute_supabase_upsert(report["accepted_records"])
+    if err:
+        print(f"Error during import: {err}")
+        return 1
+    print(f"Successfully upserted {inserted_count} rows into Supabase public.roms!")
     return 0
 
 

@@ -3,13 +3,13 @@
     "schema_version": 2,
     "generator": "romdisco",
     "created_at": "2026-08-23T18:45:04+00:00",
-    "updated_at": "2026-08-24T23:22:41+00:00",
+    "updated_at": "2026-08-24T23:44:26+00:00",
     "counts": {
-      "devices": 69,
-      "roms": 73,
+      "devices": 74,
+      "roms": 76,
       "sources": 4,
-      "verified": 73,
-      "candidates": 439
+      "verified": 76,
+      "candidates": 443
     }
   },
   "devices": [
@@ -649,6 +649,52 @@
         "Mi Pad"
       ],
       "id": "xiaomi:mocha"
+    },
+    {
+      "name": "Nothing Phone (1)",
+      "codename": "spacewar",
+      "manufacturer": "Nothing",
+      "aliases": [
+        "Nothing Phone 1"
+      ],
+      "id": "nothing:spacewar"
+    },
+    {
+      "name": "Nothing Phone (2a) Plus",
+      "codename": "pacmanpro",
+      "manufacturer": "Nothing",
+      "aliases": [
+        "Nothing Phone 2a Plus"
+      ],
+      "id": "nothing:pacmanpro"
+    },
+    {
+      "name": "Nothing Phone (2a)",
+      "codename": "pacman",
+      "manufacturer": "Nothing",
+      "aliases": [
+        "Nothing Phone 2a"
+      ],
+      "id": "nothing:pacman"
+    },
+    {
+      "name": "Nothing Phone (2)",
+      "codename": "pong",
+      "manufacturer": "Nothing",
+      "aliases": [
+        "Nothing Phone 2"
+      ],
+      "id": "nothing:pong"
+    },
+    {
+      "name": "Nothing Phone (2a) Community Edition",
+      "codename": "pacmance",
+      "manufacturer": "Nothing",
+      "aliases": [
+        "Nothing Phone 2a CE",
+        "pacman"
+      ],
+      "id": "nothing:pacmance"
     }
   ],
   "sources": [
@@ -6979,6 +7025,222 @@
       ],
       "discovered_at": "2026-08-24T23:22:41+00:00",
       "updated_at": "2026-08-24T23:22:41+00:00"
+    },
+    {
+      "id": "db159175ae13ef38",
+      "name": "LineageOS",
+      "type": "custom_rom",
+      "device": "Nothing Phone (1)",
+      "codename": "spacewar",
+      "android_version": "Android 16",
+      "rom_version": "23.2",
+      "build_date": "2026-08-19",
+      "status": "verified",
+      "source_url": "https://download.lineageos.org/api/v2/devices/Spacewar/builds",
+      "download_url": "https://mirrorbits.lineageos.org/full/Spacewar/20260819/lineage-23.2-20260819-nightly-Spacewar-signed.zip",
+      "source_id": "lineageos_dl",
+      "evidence": [
+        {
+          "kind": "registered_source",
+          "detail": "LineageOS Downloads (official_download, trust 100)",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org"
+        },
+        {
+          "kind": "codename_in_url",
+          "detail": "codename 'spacewar' in URL path",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/Spacewar/builds"
+        },
+        {
+          "kind": "artifact_link",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/Spacewar/builds"
+        },
+        {
+          "kind": "artifact_extension",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/Spacewar/builds"
+        },
+        {
+          "kind": "build_channel",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/Spacewar/builds"
+        },
+        {
+          "kind": "build_evidence_tier",
+          "detail": "artifact",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/Spacewar/builds"
+        },
+        {
+          "kind": "family_resolved",
+          "detail": "LineageOS",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/Spacewar/builds"
+        },
+        {
+          "kind": "evidence_score",
+          "detail": "14",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/Spacewar/builds"
+        }
+      ],
+      "discovered_at": "2026-08-24T23:44:26+00:00",
+      "updated_at": "2026-08-24T23:44:26+00:00"
+    },
+    {
+      "id": "bf836d4d3f8d13d8",
+      "name": "Pixel Experience",
+      "type": "custom_rom",
+      "device": "Nothing Phone (1)",
+      "codename": "spacewar",
+      "android_version": "Android 13",
+      "rom_version": "13",
+      "build_date": "2023-08-15",
+      "status": "verified",
+      "source_url": "https://get.pixelexperience.org/Spacewar",
+      "download_url": "https://get.pixelexperience.org/changelog/Spacewar/PixelExperience_Spacewar-13.0-20230815-2346-OFFICIAL.zip",
+      "source_id": "pe_dl",
+      "evidence": [
+        {
+          "kind": "registered_source",
+          "detail": "Pixel Experience Downloads (official_download, trust 100)",
+          "source_id": "pe_dl",
+          "url": "https://get.pixelexperience.org"
+        },
+        {
+          "kind": "codename_in_url",
+          "detail": "codename 'spacewar' in URL path",
+          "source_id": "pe_dl",
+          "url": "https://get.pixelexperience.org/Spacewar"
+        },
+        {
+          "kind": "device_name_match",
+          "detail": "device name 'Nothing Phone (1)' mentioned",
+          "source_id": "pe_dl",
+          "url": "https://get.pixelexperience.org/Spacewar"
+        },
+        {
+          "kind": "artifact_link",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "pe_dl",
+          "url": "https://get.pixelexperience.org/Spacewar"
+        },
+        {
+          "kind": "artifact_extension",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "pe_dl",
+          "url": "https://get.pixelexperience.org/Spacewar"
+        },
+        {
+          "kind": "checksum",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "pe_dl",
+          "url": "https://get.pixelexperience.org/Spacewar"
+        },
+        {
+          "kind": "download_word",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "pe_dl",
+          "url": "https://get.pixelexperience.org/Spacewar"
+        },
+        {
+          "kind": "changelog",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "pe_dl",
+          "url": "https://get.pixelexperience.org/Spacewar"
+        },
+        {
+          "kind": "build_evidence_tier",
+          "detail": "artifact",
+          "source_id": "pe_dl",
+          "url": "https://get.pixelexperience.org/Spacewar"
+        },
+        {
+          "kind": "family_resolved",
+          "detail": "Pixel Experience",
+          "source_id": "pe_dl",
+          "url": "https://get.pixelexperience.org/Spacewar"
+        },
+        {
+          "kind": "evidence_score",
+          "detail": "17",
+          "source_id": "pe_dl",
+          "url": "https://get.pixelexperience.org/Spacewar"
+        }
+      ],
+      "discovered_at": "2026-08-24T23:44:26+00:00",
+      "updated_at": "2026-08-24T23:44:26+00:00"
+    },
+    {
+      "id": "0e59f53dcde35404",
+      "name": "LineageOS",
+      "type": "custom_rom",
+      "device": "Nothing Phone (2)",
+      "codename": "pong",
+      "android_version": "Android 16",
+      "rom_version": "23.2",
+      "build_date": "2026-08-19",
+      "status": "verified",
+      "source_url": "https://download.lineageos.org/api/v2/devices/Pong/builds",
+      "download_url": "https://mirrorbits.lineageos.org/full/Pong/20260819/lineage-23.2-20260819-nightly-Pong-signed.zip",
+      "source_id": "lineageos_dl",
+      "evidence": [
+        {
+          "kind": "registered_source",
+          "detail": "LineageOS Downloads (official_download, trust 100)",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org"
+        },
+        {
+          "kind": "codename_in_url",
+          "detail": "codename 'pong' in URL path",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/Pong/builds"
+        },
+        {
+          "kind": "artifact_link",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/Pong/builds"
+        },
+        {
+          "kind": "artifact_extension",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/Pong/builds"
+        },
+        {
+          "kind": "build_channel",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/Pong/builds"
+        },
+        {
+          "kind": "build_evidence_tier",
+          "detail": "artifact",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/Pong/builds"
+        },
+        {
+          "kind": "family_resolved",
+          "detail": "LineageOS",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/Pong/builds"
+        },
+        {
+          "kind": "evidence_score",
+          "detail": "14",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/Pong/builds"
+        }
+      ],
+      "discovered_at": "2026-08-24T23:44:26+00:00",
+      "updated_at": "2026-08-24T23:44:26+00:00"
     }
   ],
   "candidates": [
@@ -11371,6 +11633,46 @@
       "download_links": [],
       "query": "direct:source",
       "device_id": "xiaomi:mocha"
+    },
+    {
+      "url": "https://download.lineageos.org/api/v2/devices/Pong/builds",
+      "title": "LineageOS 23.2 Builds",
+      "text": "LineageOS lineage-23.2 version 23.2 build 2026-08-19 nightly https://mirrorbits.lineageos.org/full/Pong/20260819/lineage-23.2-20260819-nightly-Pong-signed.zip LineageOS lineage-23.2 version 23.2 build 2026-08-12 nightly https://mirrorbits.lineageos.org/full/Pong/20260812/lineage-23.2-20260812-nightly-Pong-signed.zip LineageOS lineage-23.2 version 23.2 build 2026-08-05 nightly https://mirrorbits.lineageos.org/full/Pong/20260805/lineage-23.2-20260805-nightly-Pong-signed.zip https://mirrorbits.lineageos.org/full/Pong/20260819/lineage-23.2-20260819-nightly-Pong-signed.zip https://mirrorbits.lineageos.org/full/Pong/20260812/lineage-23.2-20260812-nightly-Pong-signed.zip https://mirrorbits.lineageos.org/full/Pong/20260805/lineage-23.2-20260805-nightly-Pong-signed.zip",
+      "source_id": "lineageos_dl",
+      "download_url": null,
+      "download_links": [],
+      "query": "direct:source",
+      "device_id": "nothing:pong"
+    },
+    {
+      "url": "https://download.lineageos.org/api/v2/devices/Spacewar/builds",
+      "title": "LineageOS 23.2 Builds",
+      "text": "LineageOS lineage-23.2 version 23.2 build 2026-08-19 nightly https://mirrorbits.lineageos.org/full/Spacewar/20260819/lineage-23.2-20260819-nightly-Spacewar-signed.zip LineageOS lineage-23.2 version 23.2 build 2026-08-12 nightly https://mirrorbits.lineageos.org/full/Spacewar/20260812/lineage-23.2-20260812-nightly-Spacewar-signed.zip LineageOS lineage-23.2 version 23.2 build 2026-08-05 nightly https://mirrorbits.lineageos.org/full/Spacewar/20260805/lineage-23.2-20260805-nightly-Spacewar-signed.zip https://mirrorbits.lineageos.org/full/Spacewar/20260819/lineage-23.2-20260819-nightly-Spacewar-signed.zip https://mirrorbits.lineageos.org/full/Spacewar/20260812/lineage-23.2-20260812-nightly-Spacewar-signed.zip https://mirrorbits.lineageos.org/full/Spacewar/20260805/lineage-23.2-20260805-nightly-Spacewar-signed.zip",
+      "source_id": "lineageos_dl",
+      "download_url": null,
+      "download_links": [],
+      "query": "direct:source",
+      "device_id": "nothing:spacewar"
+    },
+    {
+      "url": "https://get.pixelexperience.org/Spacewar",
+      "title": "Nothing Phone (1) (Spacewar) - PixelExperience",
+      "text": "Nothing Phone (1) (Spacewar) - PixelExperience Search a Device... Nothing Phone (1) Spacewar Device Info Install Guide Build Guide Nothing Phone (1) Spacewar 3 years ago Latest Build No maintainers yet Maintainer(s) 13 Deprecated No maintainers yet Maintainer(s) Useful Links Install Guide Report Issue Date (UTC) Downloads 2023/08/15 1019 Download Build ( 1.43 GB ) Download Recovery Image ( 96 MB ) Version : 13 File name : PixelExperience_Spacewar-13.0-20230815-2346-OFFICIAL.zip MD5 hash : 34ef7b7c7297d3dd72f173b88749ed95 Date : August 15, 2023 11:46 Downloads : 1019 Changelog !!! Clean flash is recommended from previous builds !!! - New Maintainer - Updated blobs to NothingOS 1.5.6 - Upstreamed kernel - Tuned refresh rate props - Removed useless vendor blobs - Upstreamed ParanoidGlyph - Disabled some useless debugging - Set corner radius to a proper value - Addressed some minor SELinux denials - Fixed Google Recorder - Moved back to ext4 for system partitions 2023/05/05 204 Download Build ( 1.60 GB ) Download Recovery Image ( 96 MB ) Version : 13 File name : PixelExperience_Spacewar-13.0-20230505-1007-OFFICIAL.zip MD5 hash : 438fe5598a0179cdcf80f9dd5077f74c Date : May 5, 2023 10:07 Downloads : 204 Changelog * IMPORTANT * This Verison is Fix all bugs, recommend to update. - May patch. - Fix Auto brightness, Mic volume, NFC broken. - Update the vibration motor feel. - More system stability. Suggestion: base 1.1.7 or 1.1.8 13 (Plus edition) Deprecated No maintainers yet Maintainer(s) Useful Links Install Guide Report Issue Date (UTC) Downloads 2023/08/16 1126 Download Build ( 1.44 GB ) Download Recovery Image ( 96 MB ) Version : 13 (Plus edition) File name : PixelExperience_Plus_Spacewar-13.0-20230816-0053-OFFICIAL.zip MD5 hash : 9ee77d4a96dee736241657eae5c06f91 Date : August 16, 2023 12:53 Downloads : 1126 Changelog !!! Clean flash is recommended from previous builds !!! - New Maintainer - Updated blobs to NothingOS 1.5.6 - Upstreamed kernel - Tuned refresh rate props - Removed useless vendor blobs - Upstreamed ParanoidGlyph - Disabled some useless debugging - Set corner radius to a proper value - Addressed some minor SELinux denials - Fixed Google Recorder - Moved back to ext4 for system partitions 2023/05/05 459 Download Build ( 1.61 GB ) Download Recovery Image ( 96 MB ) Version : 13 (Plus edition) File name : PixelExperience_Plus_Spacewar-13.0-20230505-1036-OFFICIAL.zip MD5 hash : 4520043d31bee79c12451a482ce7f348 Date : May 5, 2023 10:36 Downloads : 459 Changelog * IMPORTANT * This Verison is Fix all bugs, recommend to update. - May patch. - Fix Auto brightness, Mic volume, NFC broken. - Update the vibration motor feel. - More system stability. Suggestion: base 1.1.7 or 1.1.8 Contribute Do you like our project? Show your support by donating. Donate Now Home Devices News About Wiki Team Donate Service Status CI Dashboard Statistics GitHub Gerrit Code Review Help on Translation Twitter Telegram Project maintained by jhenrique09 × https://get.pixelexperience.org/changelog/Spacewar/PixelExperience_Spacewar-13.0-20230815-2346-OFFICIAL.zip https://get.pixelexperience.org/changelog/Spacewar/PixelExperience_Spacewar-13.0-20230815-2346-OFFICIAL.img https://get.pixelexperience.org/changelog/Spacewar/PixelExperience_Spacewar-13.0-20230505-1007-OFFICIAL.zip https://get.pixelexperience.org/changelog/Spacewar/PixelExperience_Spacewar-13.0-20230505-1007-OFFICIAL.img https://get.pixelexperience.org/changelog/Spacewar/PixelExperience_Plus_Spacewar-13.0-20230816-0053-OFFICIAL.zip https://get.pixelexperience.org/changelog/Spacewar/PixelExperience_Plus_Spacewar-13.0-20230816-0053-OFFICIAL.img https://get.pixelexperience.org/changelog/Spacewar/PixelExperience_Plus_Spacewar-13.0-20230505-1036-OFFICIAL.zip https://get.pixelexperience.org/changelog/Spacewar/PixelExperience_Plus_Spacewar-13.0-20230505-1036-OFFICIAL.img",
+      "source_id": "pe_dl",
+      "download_url": null,
+      "download_links": [],
+      "query": "direct:source",
+      "device_id": "nothing:spacewar"
+    },
+    {
+      "url": "https://get.pixelexperience.org/spacewar",
+      "title": "Nothing Phone (1) (Spacewar) - PixelExperience",
+      "text": "Nothing Phone (1) (Spacewar) - PixelExperience Search a Device... Nothing Phone (1) Spacewar Device Info Install Guide Build Guide Nothing Phone (1) Spacewar 3 years ago Latest Build No maintainers yet Maintainer(s) 13 Deprecated No maintainers yet Maintainer(s) Useful Links Install Guide Report Issue Date (UTC) Downloads 2023/08/15 1019 Download Build ( 1.43 GB ) Download Recovery Image ( 96 MB ) Version : 13 File name : PixelExperience_Spacewar-13.0-20230815-2346-OFFICIAL.zip MD5 hash : 34ef7b7c7297d3dd72f173b88749ed95 Date : August 15, 2023 11:46 Downloads : 1019 Changelog !!! Clean flash is recommended from previous builds !!! - New Maintainer - Updated blobs to NothingOS 1.5.6 - Upstreamed kernel - Tuned refresh rate props - Removed useless vendor blobs - Upstreamed ParanoidGlyph - Disabled some useless debugging - Set corner radius to a proper value - Addressed some minor SELinux denials - Fixed Google Recorder - Moved back to ext4 for system partitions 2023/05/05 204 Download Build ( 1.60 GB ) Download Recovery Image ( 96 MB ) Version : 13 File name : PixelExperience_Spacewar-13.0-20230505-1007-OFFICIAL.zip MD5 hash : 438fe5598a0179cdcf80f9dd5077f74c Date : May 5, 2023 10:07 Downloads : 204 Changelog * IMPORTANT * This Verison is Fix all bugs, recommend to update. - May patch. - Fix Auto brightness, Mic volume, NFC broken. - Update the vibration motor feel. - More system stability. Suggestion: base 1.1.7 or 1.1.8 13 (Plus edition) Deprecated No maintainers yet Maintainer(s) Useful Links Install Guide Report Issue Date (UTC) Downloads 2023/08/16 1126 Download Build ( 1.44 GB ) Download Recovery Image ( 96 MB ) Version : 13 (Plus edition) File name : PixelExperience_Plus_Spacewar-13.0-20230816-0053-OFFICIAL.zip MD5 hash : 9ee77d4a96dee736241657eae5c06f91 Date : August 16, 2023 12:53 Downloads : 1126 Changelog !!! Clean flash is recommended from previous builds !!! - New Maintainer - Updated blobs to NothingOS 1.5.6 - Upstreamed kernel - Tuned refresh rate props - Removed useless vendor blobs - Upstreamed ParanoidGlyph - Disabled some useless debugging - Set corner radius to a proper value - Addressed some minor SELinux denials - Fixed Google Recorder - Moved back to ext4 for system partitions 2023/05/05 459 Download Build ( 1.61 GB ) Download Recovery Image ( 96 MB ) Version : 13 (Plus edition) File name : PixelExperience_Plus_Spacewar-13.0-20230505-1036-OFFICIAL.zip MD5 hash : 4520043d31bee79c12451a482ce7f348 Date : May 5, 2023 10:36 Downloads : 459 Changelog * IMPORTANT * This Verison is Fix all bugs, recommend to update. - May patch. - Fix Auto brightness, Mic volume, NFC broken. - Update the vibration motor feel. - More system stability. Suggestion: base 1.1.7 or 1.1.8 Contribute Do you like our project? Show your support by donating. Donate Now Home Devices News About Wiki Team Donate Service Status CI Dashboard Statistics GitHub Gerrit Code Review Help on Translation Twitter Telegram Project maintained by jhenrique09 × https://get.pixelexperience.org/changelog/Spacewar/PixelExperience_Spacewar-13.0-20230815-2346-OFFICIAL.zip https://get.pixelexperience.org/changelog/Spacewar/PixelExperience_Spacewar-13.0-20230815-2346-OFFICIAL.img https://get.pixelexperience.org/changelog/Spacewar/PixelExperience_Spacewar-13.0-20230505-1007-OFFICIAL.zip https://get.pixelexperience.org/changelog/Spacewar/PixelExperience_Spacewar-13.0-20230505-1007-OFFICIAL.img https://get.pixelexperience.org/changelog/Spacewar/PixelExperience_Plus_Spacewar-13.0-20230816-0053-OFFICIAL.zip https://get.pixelexperience.org/changelog/Spacewar/PixelExperience_Plus_Spacewar-13.0-20230816-0053-OFFICIAL.img https://get.pixelexperience.org/changelog/Spacewar/PixelExperience_Plus_Spacewar-13.0-20230505-1036-OFFICIAL.zip https://get.pixelexperience.org/changelog/Spacewar/PixelExperience_Plus_Spacewar-13.0-20230505-1036-OFFICIAL.img",
+      "source_id": "pe_dl",
+      "download_url": null,
+      "download_links": [],
+      "query": "direct:source",
+      "device_id": "nothing:spacewar"
     }
   ],
   "rejections": [

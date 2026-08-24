@@ -65,15 +65,24 @@ def build_probe_urls(device: Device, reg: SourceRegistry) -> list[str]:
     """Direct source pages for this device, ordered by source authority."""
     urls: list[str] = []
     dev_mfg = device.manufacturer.lower().strip()
+    codes = [device.codename]
+    if device.codename.capitalize() != device.codename:
+        codes.append(device.codename.capitalize())
+    for a in device.aliases:
+        if a and a not in codes and " " not in a:
+            codes.append(a)
+
     for source in sorted(reg.sources, key=lambda s: -s.authority):
         if source.manufacturers:
             allowed = {m.lower().strip() for m in source.manufacturers}
             if dev_mfg not in allowed:
                 continue
         for template in source.device_urls:
-            url = _fmt(template, device, source)
-            if url not in urls and reg.is_registered(url):
-                urls.append(url)
+            for c in codes:
+                alt_dev = Device(name=device.name, codename=c, manufacturer=device.manufacturer, aliases=device.aliases)
+                url = _fmt(template, alt_dev, source)
+                if url not in urls and reg.is_registered(url):
+                    urls.append(url)
     return urls
 
 
