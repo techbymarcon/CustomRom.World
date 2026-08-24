@@ -4,9 +4,12 @@ from __future__ import annotations
 
 import argparse
 import json
+import os
 import sys
 from typing import Optional
 
+from .batch import run_batch_discovery
+from .catalog import DEFAULT_CATALOG_PATH, get_catalog_entries, validate_catalog_consistency
 from .database import DEFAULT_PATH, Database
 from .discovery import build_plan, discover
 from .models import Device
@@ -57,6 +60,66 @@ def cmd_discover(args: argparse.Namespace) -> int:
             label = f"{source.id} / {source.source_class}" if source else "?"
             print(f"  [{label}] {candidate.url}")
     print(f"saved -> {db.path}\nnext: validate")
+    return 0
+
+
+def cmd_batch_discover(args: argparse.Namespace) -> int:
+    db = Database(args.db)
+    result = run_batch_discovery(
+        db=db,
+        catalog_path=getattr(args, "catalog", DEFAULT_CATALOG_PATH),
+        brand=getattr(args, "brand", None),
+        device_id=getattr(args, "device_id", None),
+        backend=_backend(args),
+        reg=registry,
+        no_fallback=getattr(args, "no_fallback", False),
+        no_probe=getattr(args, "no_probe", False),
+        probe_only=getattr(args, "probe_only", False),
+        resume=getattr(args, "resume", False),
+        dry_run=getattr(args, "dry_run", False),
+        per_query=getattr(args, "per_query", 8),
+        max_queries=getattr(args, "max_queries", 12),
+        delay=getattr(args, "delay", 0.0),
+        auto_validate=getattr(args, "auto_validate", False),
+        verbose=getattr(args, "verbose", False),
+    )
+    if result.get("status") == "dry_run":
+        print(f"=== DRY RUN: {result['total_target_devices']} resolved devices (skipped {result['unresolved_skipped']} unresolved) ===")
+        for p in result["plans"]:
+            dev = p["device"]
+            print(f"Device: {dev['name']} ({dev['codename']}) [{dev['id']}] - {p['probe_count']} probes, {p['query_count']} queries")
+        return 0
+
+    print("\n=== Batch Discovery Summary ===")
+    print(f"Status             : {result.get('status')}")
+    print(f"Target devices     : {result.get('total_target_devices')}")
+    print(f"Processed devices  : {result.get('processed')}")
+    print(f"Skipped (resume)   : {result.get('skipped')}")
+    print(f"Unresolved excluded: {result.get('unresolved_excluded')}")
+    if result.get("backup_path"):
+        print(f"Safety backup      : {result.get('backup_path')}")
+    print(f"Database saved to  : {result.get('db_path')}")
+    return 0 if result.get("status") in ("completed", "empty") else 1
+
+
+def cmd_catalog(args: argparse.Namespace) -> int:
+    cat_path = getattr(args, "catalog", DEFAULT_CATALOG_PATH)
+    if args.check:
+        ts_path = os.path.join(os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__)))),
+                               "src", "lib", "devices.ts")
+        res = validate_catalog_consistency(cat_path, ts_path=ts_path if os.path.exists(ts_path) else None)
+        print(json.dumps(res, indent=2))
+        return 0
+    entries = get_catalog_entries(cat_path, brand=args.brand, device_id=args.device_id)
+    if args.unresolved_only:
+        entries = [e for e in entries if not e.get("resolved")]
+    elif args.resolved_only:
+        entries = [e for e in entries if e.get("resolved")]
+    for e in entries:
+        status = "RESOLVED" if e.get("resolved") else "UNRESOLVED"
+        code = e.get("codename") or "-"
+        print(f"[{status:<10}] {e['brand_slug']:<10} {e['name']:<32} codename={code:<16} id={e.get('id') or '-'}")
+    print(f"\nTotal entries: {len(entries)}")
     return 0
 
 
@@ -125,6 +188,65 @@ def cmd_stats(args: argparse.Namespace) -> int:
     return 0
 
 
+def cmd_import_supabase(args: argparse.Namespace) -> int:
+    from .importer import build_supabase_records
+    input_file = args.input or "roms.json"
+    if not os.path.exists(input_file):
+        print(f"Input file not found: {input_file}", file=sys.stderr)
+        return 1
+    with open(input_file, "r", encoding="utf-8") as fh:
+        data = json.load(fh)
+
+    report = build_supabase_records(data, catalog_path=args.catalog)
+
+    print("\n=======================================================")
+    print("        Supabase ROM Import Pipeline — Dry Run         ")
+    print("=======================================================\n")
+    print(f"Input file            : {input_file}")
+    print(f"Total raw records     : {report['total_records']}")
+    print(f"Accepted for import   : {report['accepted_count']}")
+    print(f"Duplicates removed    : {report['duplicates_removed']}")
+    print(f"Rejected records      : {report['rejected_count']}")
+    print(f"Target devices        : {report['devices_count']}\n")
+
+    print("--- Rejection Breakdown ---")
+    for rsn, count in report["rejection_reasons"].items():
+        print(f"  [{count:>3} records] {rsn}")
+    print()
+
+    print("--- Quality & Completeness Checks ---")
+    print(f"  Missing Android version : {report['missing_android_count']} (rejected - never guessed)")
+    print(f"  Missing Download URL    : {report['missing_download_count']} (preserved as null)")
+    print(f"  Missing ROM Version     : {report['missing_version_count']} (permitted by schema as null)")
+    print()
+
+    print("--- Accepted Records Grouped by Device ---")
+    for dev_key, records in sorted(report["by_device"].items()):
+        sample_rom = records[0]
+        dev_name = sample_rom.get("device_name", dev_key)
+        code = sample_rom.get("codename") or "-"
+        print(f"  • {dev_name} ({code}) [{dev_key}]: {len(records)} ROMs")
+        for r in records[:3]:
+            dl_indicator = "✓ direct link" if r["download_url"] else "- source only"
+            v_str = f"v{r['rom_version']}" if r['rom_version'] else "v(null)"
+            print(f"      - {r['rom_name']:<18} {v_str:<10} {r['android_version']:<12} [{dl_indicator}]")
+        if len(records) > 3:
+            print(f"      ... and {len(records) - 3} more")
+    print()
+
+    if getattr(args, "output", None):
+        with open(args.output, "w", encoding="utf-8") as out_fh:
+            json.dump(report["accepted_records"], out_fh, indent=2, ensure_ascii=False)
+        print(f"Exported {len(report['accepted_records'])} ready-to-insert public.roms rows -> {args.output}")
+
+    if not getattr(args, "execute", False):
+        print("\n[DRY RUN ONLY] No changes were made to Supabase.")
+        return 0
+
+    print("Executing Supabase upsert...")
+    return 0
+
+
 def cmd_test(args: argparse.Namespace) -> int:
     from .tests import run
     return run()
@@ -138,7 +260,7 @@ def build_parser() -> argparse.ArgumentParser:
     parser.add_argument("--db", default=DEFAULT_PATH, help="path to the JSON database")
     sub = parser.add_subparsers(dest="command", required=True)
 
-    d = sub.add_parser("discover", help="search registered sources for a device")
+    d = sub.add_parser("discover", help="search registered sources for a single device")
     d.add_argument("--device", required=True, help='e.g. "Xiaomi Pad 5"')
     d.add_argument("--codename", required=True, help="e.g. nabu")
     d.add_argument("--manufacturer", default=None)
@@ -154,6 +276,40 @@ def build_parser() -> argparse.ArgumentParser:
     d.add_argument("--dry-run", action="store_true", help="print the generated queries only")
     d.add_argument("-v", "--verbose", action="store_true")
     d.set_defaults(func=cmd_discover)
+
+    b = sub.add_parser("batch-discover", help="resumable batch discovery across catalog devices")
+    b.add_argument("--catalog", default=DEFAULT_CATALOG_PATH, help="path to device_catalog.json")
+    b.add_argument("--brand", default=None, help="filter by brand (e.g. pixel, xiaomi, samsung)")
+    b.add_argument("--device-id", default=None, help="filter by device ID(s) (comma-separated)")
+    b.add_argument("--resume", action="store_true", help="skip devices that already have candidates/ROMs in DB")
+    b.add_argument("--no-fallback", action="store_true", help="registered-source queries and probes only")
+    b.add_argument("--no-probe", action="store_true", help="skip direct source-page probing")
+    b.add_argument("--probe-only", action="store_true", help="Stage 1 direct source page probes only (zero search queries)")
+    b.add_argument("--dry-run", action="store_true", help="print discovery plan without making requests")
+    b.add_argument("--per-query", type=int, default=8)
+    b.add_argument("--max-queries", type=int, default=12)
+    b.add_argument("--delay", type=float, default=0.0, help="delay in seconds between devices")
+    b.add_argument("--auto-validate", action="store_true", help="validate immediately after each device")
+    b.add_argument("--fixture", help="JSON fixture file instead of live search")
+    b.add_argument("--offline", action="store_true", help="no network")
+    b.add_argument("-v", "--verbose", action="store_true")
+    b.set_defaults(func=cmd_batch_discover)
+
+    c = sub.add_parser("catalog", help="inspect or validate the device catalog")
+    c.add_argument("--catalog", default=DEFAULT_CATALOG_PATH)
+    c.add_argument("--check", action="store_true", help="run consistency validation against src/lib/devices.ts")
+    c.add_argument("--brand", default=None)
+    c.add_argument("--device-id", default=None)
+    c.add_argument("--resolved-only", action="store_true")
+    c.add_argument("--unresolved-only", action="store_true")
+    c.set_defaults(func=cmd_catalog)
+
+    imp = sub.add_parser("import-supabase", help="validate and transform roms.json into Supabase public.roms rows")
+    imp.add_argument("input", nargs="?", default="roms.json", help="path to roms.json")
+    imp.add_argument("--catalog", default=DEFAULT_CATALOG_PATH, help="path to device_catalog.json")
+    imp.add_argument("--output", default=None, help="write transformed records to json file")
+    imp.add_argument("--execute", action="store_true", help="execute live Supabase upsert (requires credentials)")
+    imp.set_defaults(func=cmd_import_supabase)
 
     v = sub.add_parser("validate", help="validate stored candidates into ROM entries")
     v.add_argument("--device-id", default=None)

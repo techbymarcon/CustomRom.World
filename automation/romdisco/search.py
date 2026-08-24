@@ -38,7 +38,7 @@ class SearchBackend(Protocol):
     def search(self, query: str, limit: int = 10) -> list[SearchResult]: ...
 
 
-def _fetch(url: str, timeout: float = 15.0, headers: dict[str, str] | None = None) -> tuple[int, str]:
+def _fetch(url: str, timeout: float = 6.0, headers: dict[str, str] | None = None) -> tuple[int, str]:
     req = urllib.request.Request(url, headers={"User-Agent": UA, **(headers or {})})
     try:
         with urllib.request.urlopen(req, timeout=timeout) as resp:
@@ -50,7 +50,7 @@ def _fetch(url: str, timeout: float = 15.0, headers: dict[str, str] | None = Non
         return 0, ""
 
 
-def fetch_page(url: str, timeout: float = 15.0) -> tuple[str, str] | None:
+def fetch_page(url: str, timeout: float = 6.0) -> tuple[str, str] | None:
     """Fetch a direct source page. Returns (title, text) or None on any failure.
 
     Used for source-first probing: a 404/403/timeout simply means the device page
@@ -61,10 +61,44 @@ def fetch_page(url: str, timeout: float = 15.0) -> tuple[str, str] | None:
     status, body = _fetch(url, timeout=timeout)
     if status != 200 or not body:
         return None
+
+    # LineageOS official structured JSON API endpoint
+    if "/api/v2/devices/" in url and url.endswith("/builds"):
+        try:
+            builds = json.loads(body)
+            if not isinstance(builds, list) or not builds:
+                return None
+            lines = []
+            links = []
+            for b in builds:
+                ver = b.get("version", "")
+                date = b.get("date", "")
+                b_type = b.get("type", "")
+                files = b.get("files", [])
+                zip_urls = [f["url"] for f in files if f.get("url") and f.get("filename", "").endswith(".zip")]
+                links.extend(zip_urls)
+                lines.append(f"LineageOS lineage-{ver} version {ver} build {date} {b_type} {' '.join(zip_urls)}")
+            text = " ".join(lines)
+            title = f"LineageOS {builds[0].get('version', '')} Builds"
+            return title, f"{text} {' '.join(links)}".strip()
+        except Exception:
+            return None
+
     title_m = re.search(r"<title[^>]*>(.*?)</title>", body, re.S | re.I)
     title = _strip_tags(title_m.group(1)) if title_m else ""
     body = re.sub(r"<(script|style)[^>]*>.*?</\1>", " ", body, flags=re.S | re.I)
-    links = " ".join(re.findall(r'href="([^"]+\.(?:zip|img|tar|tar\.md5|xz))"', body, re.I))
+
+    raw_links = re.findall(r'href="([^"]+\.(?:zip|img|tar|tar\.md5|xz))"', body, re.I)
+    abs_links = []
+    for lk in raw_links:
+        try:
+            abs_l = urllib.parse.urljoin(url, lk)
+            if abs_l not in abs_links:
+                abs_links.append(abs_l)
+        except Exception:
+            pass
+
+    links = " ".join(abs_links)
     text = re.sub(r"\s+", " ", _strip_tags(body))[:8000]
     return title, f"{text} {links}".strip()
 
@@ -78,7 +112,7 @@ class DuckDuckGoBackend:
 
     name = "duckduckgo"
 
-    def __init__(self, retries: int = 3, base_delay: float = 1.5) -> None:
+    def __init__(self, retries: int = 1, base_delay: float = 0.5) -> None:
         self.retries = retries
         self.base_delay = base_delay
 

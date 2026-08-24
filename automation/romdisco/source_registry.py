@@ -78,6 +78,7 @@ class Source:
     include_subdomains: bool = True        # subdomains inherit the trust class
     device_urls: tuple[str, ...] = ()      # direct probe templates ({codename}, {slug})
     query_templates: tuple[str, ...] = ()  # source-specific search patterns
+    manufacturers: tuple[str, ...] = ()    # empty -> all manufacturers allowed
 
     @property
     def can_verify(self) -> bool:
@@ -137,10 +138,7 @@ def _gh(org: str, family: str, sid: str, trust: int = 85) -> Source:
         id=sid, name=f"{family} on GitHub", kind="official_code", host="github.com",
         canonical_url=f"https://github.com/{org}", trust=trust,
         path_prefixes=(f"/{org}/",), family=family,
-        device_urls=(
-            f"https://github.com/{org}?q={{code}}&type=all",
-            f"https://github.com/search?q=org%3A{org}+{{code}}&type=repositories",
-        ),
+        device_urls=(),
         query_templates=GITHUB_QUERIES,
     )
 
@@ -150,7 +148,7 @@ def _gl(group: str, family: str, sid: str) -> Source:
         id=sid, name=f"{family} on GitLab", kind="official_code", host="gitlab.com",
         canonical_url=f"https://gitlab.com/{group}", trust=85,
         path_prefixes=(f"/{group}/",), family=family,
-        device_urls=(f"https://gitlab.com/groups/{group}/-/search?search={{code}}",),
+        device_urls=(),
         query_templates=GITHUB_QUERIES,
     )
 
@@ -209,11 +207,13 @@ SOURCES: tuple[Source, ...] = (
     _gh("AOSPA", "Paranoid Android", "aospa_gh"),
 
     Source("calyx_site", "CalyxOS", "official_project", "calyxos.org",
-           "https://calyxos.org", 97, family="CalyxOS"),
+           "https://calyxos.org", 97, family="CalyxOS",
+           manufacturers=("Google", "Motorola", "Fairphone", "Shift")),
     _gh("CalyxOS", "CalyxOS", "calyx_gh"),
 
     Source("graphene_site", "GrapheneOS", "official_project", "grapheneos.org",
-           "https://grapheneos.org", 97, family="GrapheneOS"),
+           "https://grapheneos.org", 97, family="GrapheneOS",
+           manufacturers=("Google",)),
     _gh("GrapheneOS", "GrapheneOS", "graphene_gh"),
 
     Source("eos_site", "/e/OS", "official_project", "e.foundation",
@@ -229,35 +229,39 @@ SOURCES: tuple[Source, ...] = (
     _gh("Divested-Mobile", "DivestOS", "divest_gh"),
     _gl("divested-mobile", "DivestOS", "divest_gl"),
 
-    # ---------------- Firmware / skin databases ----------------
+    # ---------------- Firmware / skin databases (OEM scoped) ----------------
     Source("samfw", "SamFW", "firmware_database", "samfw.com", "https://samfw.com", 80,
-           family="One UI"),
+           family="One UI", manufacturers=("Samsung",)),
     Source("sammobile", "SamMobile Firmwares", "firmware_database", "sammobile.com",
            "https://www.sammobile.com/firmwares", 78, path_prefixes=("/firmwares",),
-           family="One UI", include_subdomains=True),
+           family="One UI", include_subdomains=True, manufacturers=("Samsung",)),
     Source("sfirmware", "SFirmware", "firmware_database", "sfirmware.com",
-           "https://sfirmware.com", 72, family="One UI"),
+           "https://sfirmware.com", 72, family="One UI", manufacturers=("Samsung",)),
     Source("samfrew", "Samfrew", "firmware_database", "samfrew.com",
-           "https://samfrew.com", 70, family="One UI"),
+           "https://samfrew.com", 70, family="One UI", manufacturers=("Samsung",)),
     Source("xfu", "Xiaomi Firmware Updater", "firmware_database", "xiaomifirmwareupdater.com",
-           "https://xiaomifirmwareupdater.com", 85),
+           "https://xiaomifirmwareupdater.com", 85,
+           manufacturers=("Xiaomi", "Redmi", "Poco", "POCO")),
     Source("hyperosupdates", "HyperOS Updates", "firmware_database", "hyperosupdates.com",
-           "https://hyperosupdates.com", 78, family="HyperOS"),
-    Source("mifirm", "MiFirm", "firmware_database", "mifirm.net", "https://mifirm.net", 72),
+           "https://hyperosupdates.com", 78, family="HyperOS",
+           manufacturers=("Xiaomi", "Redmi", "Poco", "POCO")),
+    Source("mifirm", "MiFirm", "firmware_database", "mifirm.net", "https://mifirm.net", 72,
+           manufacturers=("Xiaomi", "Redmi", "Poco", "POCO")),
     Source("xmfirmware", "XM Firmware Updater", "firmware_database", "xmfirmwareupdater.com",
-           "https://xmfirmwareupdater.com", 72),
+           "https://xmfirmwareupdater.com", 72,
+           manufacturers=("Xiaomi", "Redmi", "Poco", "POCO")),
     Source("oppofw", "Oppo Firmware", "firmware_database", "oppo-firmware.com",
-           "https://oppo-firmware.com", 70, family="ColorOS"),
+           "https://oppo-firmware.com", 70, family="ColorOS", manufacturers=("Oppo",)),
     Source("firmwarefile", "FirmwareFile", "firmware_database", "firmwarefile.com",
            "https://firmwarefile.com", 62),
     Source("oxygenupdater", "Oxygen Updater", "firmware_database", "oxygenupdater.com",
-           "https://oxygenupdater.com", 82, family="OxygenOS"),
+           "https://oxygenupdater.com", 82, family="OxygenOS", manufacturers=("OnePlus",)),
     Source("oneplusroms", "OnePlus ROMs", "firmware_database", "oneplusroms.com",
-           "https://oneplusroms.com", 65, family="OxygenOS"),
+           "https://oneplusroms.com", 65, family="OxygenOS", manufacturers=("OnePlus",)),
     Source("realmefirmware", "Realme Firmware", "firmware_database", "realmefirmware.com",
-           "https://realmefirmware.com", 68, family="Realme UI"),
+           "https://realmefirmware.com", 68, family="Realme UI", manufacturers=("Realme",)),
     Source("nothing_community", "Nothing Community", "firmware_database", "nothing.community",
-           "https://nothing.community", 75, family="Nothing OS"),
+           "https://nothing.community", 75, family="Nothing OS", manufacturers=("Nothing",)),
 
     # ---------------- Development / community ----------------
     Source("xda", "XDA Forums", "community", "xdaforums.com", "https://xdaforums.com", 70),
@@ -295,9 +299,9 @@ SOURCES: tuple[Source, ...] = (
            "https://android-review.googlesource.com", 85),
     Source("pixel_images", "Google Pixel factory images", "official_download",
            "developers.google.com", "https://developers.google.com/android/images", 95,
-           path_prefixes=("/android/images", "/android/ota")),
+           path_prefixes=("/android/images", "/android/ota"), manufacturers=("Google",)),
     Source("flash_android", "Android Flash Tool", "reference", "flash.android.com",
-           "https://flash.android.com", 85),
+           "https://flash.android.com", 85, manufacturers=("Google",)),
 )
 
 # ---------------- extra firmware database ----------------
@@ -308,8 +312,8 @@ SOURCES = SOURCES + (
 
 #: Direct, source-specific device pages probed *before* any web search.
 _DEVICE_URLS: dict[str, tuple[str, ...]] = {
-    "lineageos_dl": ("https://download.lineageos.org/devices/{code}",
-                     "https://download.lineageos.org/devices/{code}/builds"),
+    "lineageos_dl": ("https://download.lineageos.org/api/v2/devices/{code}/builds",
+                     "https://wiki.lineageos.org/devices/{code}"),
     "lineageos_site": ("https://wiki.lineageos.org/devices/{code}",),
     "crdroid_site": ("https://crdroid.net/{code}",),
     "pe_dl": ("https://get.pixelexperience.org/{code}",),

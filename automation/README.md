@@ -11,29 +11,29 @@ automation/
   romdisco/
     source_registry.py    curated sources: exact host/path match, kinds, trust
     models.py             dataclasses + JSON schema (metadata/devices/sources/roms)
+    catalog.py            device catalog loader, filter & consistency validation
+    batch.py              resumable batch runner with checkpoints & safety backups
     extract.py            family / Android version / ROM version / build date
     search.py             DDG + Bing + fixture backends (discovery input only)
     discovery.py          registry-driven query generation
     validation.py         strict validation, verification, dedupe
-    database.py           JSON database load/save/export
+    database.py           JSON database load/save/export/backup
     cli.py, tests.py
-  data/rom_database.json  working database (created on first run)
+  data/
+    device_catalog.json   catalog of 573 registered devices mapped to codenames
+    rom_database.json     working database (created on first run)
+    backups/              automated timestamped backups
 ```
 
-## CLI (Termux)
+## CLI (Termux / Linux)
 
-Stdlib-only Python 3 — no Node, browser or extra pip packages. From
-`~/customrom-importer` (the directory that *contains* `automation/`):
+Stdlib-only Python 3 — no Node, browser or extra pip packages:
 
 ```bash
-pkg install python           # once
-cd ~/customrom-importer
-
 python -m automation test
-python -m automation inspect-source xdaforums.com
-python -m automation inspect-source github.com/LineageOS
-python -m automation inspect-source mi.com          # -> NOT REGISTERED (exit 1)
-python -m automation discover --device "Xiaomi Pad 5" --codename nabu
+python -m automation catalog --check
+python -m automation batch-discover --brand pixel --no-fallback --dry-run
+python -m automation batch-discover --brand nothing --no-fallback --resume
 ```
 
 Full command set:

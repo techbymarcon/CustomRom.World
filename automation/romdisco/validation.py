@@ -193,6 +193,8 @@ def _contextual(text: str, parser, device: Device, *args) -> Optional[str]:
         value = parser(segment, *args)
         if value:
             return value
+    if VERSION_CONTEXT_RE.search(text.lower()):
+        return parser(text, *args)
     return None
 
 
@@ -328,8 +330,8 @@ def validate_candidate(candidate: Candidate, device: Device, *,
         return ValidationOutcome(rejection=Rejection(candidate.url, "ROM family not in allowed list"))
     evidence.append(Evidence("family_resolved", family, sid, candidate.url))
 
-    android_version = (_contextual(candidate.title, parse_android_version, device)
-                       or _contextual(candidate.text, parse_android_version, device))
+    android_version = (_contextual(candidate.title, parse_android_version, device, family)
+                       or _contextual(candidate.text, parse_android_version, device, family))
     rom_version = (_contextual(candidate.title, parse_rom_version, device, family)
                    or _contextual(candidate.text, parse_rom_version, device, family))
     build_date = parse_build_date(candidate.title) or parse_build_date(candidate.text)

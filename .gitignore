@@ -30,3 +30,14 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+
+# ROM discovery runtime backups and exports
+automation/data/backups/
+automation/data/*_improved_*.json
+roms*.json

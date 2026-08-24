@@ -19,6 +19,7 @@ device name, manufacturer, a ROM family or a ``site:`` scope.
 
 from __future__ import annotations
 
+import concurrent.futures
 import re
 from dataclasses import dataclass
 from typing import Iterable
@@ -63,7 +64,12 @@ def _fmt(template: str, device: Device, source: Source) -> str:
 def build_probe_urls(device: Device, reg: SourceRegistry) -> list[str]:
     """Direct source pages for this device, ordered by source authority."""
     urls: list[str] = []
+    dev_mfg = device.manufacturer.lower().strip()
     for source in sorted(reg.sources, key=lambda s: -s.authority):
+        if source.manufacturers:
+            allowed = {m.lower().strip() for m in source.manufacturers}
+            if dev_mfg not in allowed:
+                continue
         for template in source.device_urls:
             url = _fmt(template, device, source)
             if url not in urls and reg.is_registered(url):
@@ -74,7 +80,12 @@ def build_probe_urls(device: Device, reg: SourceRegistry) -> list[str]:
 def build_source_queries(device: Device, reg: SourceRegistry) -> list[str]:
     """Source-specific, domain-scoped queries ordered by authority."""
     queries: list[str] = []
+    dev_mfg = device.manufacturer.lower().strip()
     for source in sorted(reg.sources, key=lambda s: -s.authority):
+        if source.manufacturers:
+            allowed = {m.lower().strip() for m in source.manufacturers}
+            if dev_mfg not in allowed:
+                continue
         if source.source_class in {"DOWNLOAD_HOST", "ARCHIVE_MIRROR"} and not source.query_templates:
             continue
         templates = source.query_templates or (
@@ -165,14 +176,21 @@ def discover(device: Device, *, backend: SearchBackend | None = None,
     by_url: dict[str, Candidate] = {}
     discarded: list[str] = []
 
-    # 1. direct source pages
-    if probe:
-        for url in plan.probe_urls[:max_probes]:
-            page = fetch_page(url)
-            if page is None:
-                continue
-            title, text = page
-            _add(by_url, reg, discarded, url, title, text, query="direct:source")
+    # 1. direct source pages (probed concurrently for speed)
+    if probe and plan.probe_urls:
+        urls_to_probe = plan.probe_urls[:max_probes]
+        workers = min(10, len(urls_to_probe))
+        with concurrent.futures.ThreadPoolExecutor(max_workers=workers) as executor:
+            future_to_url = {executor.submit(fetch_page, u): u for u in urls_to_probe}
+            for future in concurrent.futures.as_completed(future_to_url):
+                u = future_to_url[future]
+                try:
+                    page = future.result()
+                except Exception:
+                    page = None
+                if page is not None:
+                    title, text = page
+                    _add(by_url, reg, discarded, u, title, text, query="direct:source")
 
     # 2./3. source-scoped queries, then generic fallback
     for query in plan.queries:

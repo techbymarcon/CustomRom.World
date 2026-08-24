@@ -46,6 +46,19 @@ class Database:
         for key in ("devices", "sources", "roms", "candidates", "rejections"):
             self.data.setdefault(key, [])
 
+    def backup(self, backup_dir: Optional[str] = None) -> Optional[str]:
+        """Create a timestamped backup copy of the current database file."""
+        if not os.path.exists(self.path):
+            return None
+        backup_dir = backup_dir or os.path.join(os.path.dirname(self.path), "backups")
+        os.makedirs(backup_dir, exist_ok=True)
+        # Produce a clean timestamp for file name
+        iso_clean = now_iso().replace(":", "").replace("-", "")
+        backup_path = os.path.join(backup_dir, f"rom_database_{iso_clean}.json")
+        with open(self.path, "r", encoding="utf-8") as src, open(backup_path, "w", encoding="utf-8") as dst:
+            dst.write(src.read())
+        return backup_path
+
     def save(self) -> None:
         os.makedirs(os.path.dirname(self.path), exist_ok=True)
         self._refresh_metadata()

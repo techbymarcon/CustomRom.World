@@ -98,10 +98,40 @@ def normalize_family(text: Optional[str]) -> Optional[str]:
     return best
 
 
-def parse_android_version(text: Optional[str]) -> Optional[str]:
+LINEAGE_TO_ANDROID: dict[int, str] = {
+    23: "Android 16",
+    22: "Android 15",
+    21: "Android 14",
+    20: "Android 13",
+    19: "Android 12",
+    18: "Android 11",
+    17: "Android 10",
+    16: "Android 9 Pie",
+    15: "Android 8.0 Oreo",
+    14: "Android 7.0 Nougat",
+    13: "Android 6.0 Marshmallow",
+    12: "Android 5.0 Lollipop",
+    11: "Android 4.4 KitKat",
+}
+
+CRDROID_TO_ANDROID: dict[int, str] = {
+    11: "Android 15",
+    10: "Android 14",
+    9: "Android 13",
+    8: "Android 12",
+    7: "Android 11",
+    6: "Android 10",
+    5: "Android 9 Pie",
+    4: "Android 8.0 Oreo",
+}
+
+
+def parse_android_version(text: Optional[str], family: Optional[str] = None) -> Optional[str]:
     if not text:
         return None
     t = re.sub(r"\s+", " ", text)
+
+    # 1. Direct explicit "Android <N>"
     m = re.search(r"\bandroid[\s\-_]*(?:os[\s\-_]*)?v?(\d{1,2})(?:\.(\d))?", t, re.I)
     if m:
         major, minor = int(m.group(1)), int(m.group(2) or 0)
@@ -112,14 +142,57 @@ def parse_android_version(text: Optional[str]) -> Optional[str]:
                     return legacy
             else:
                 return f"Android {major}"
+
+    # 2. Named releases (Pie, Oreo, Nougat, etc.)
     for pattern, label in _NAMED:
         if re.search(pattern, t, re.I):
             return label
+
+    # 3. XDA bracket convention: [13], [14]
     m = re.search(r"\[(\d{1,2})(?:\.0)?\]", t)
     if m:
         major = int(m.group(1))
         if 10 <= major <= ANDROID_MAX:
             return f"Android {major}"
+
+    # 4. Recognized ROM artifact filename version patterns (e.g. PixelExperience_*-13.0-*.zip, -14.0-*.zip)
+    m = re.search(r"\b(?:PixelExperience|PixelOS|crDroidAndroid|EvolutionX|RisingOS|DerpFest|ArrowOS|VoltageOS|SuperiorOS|ProjectElixir)[\w\.\-]*?[_\-](\d{1,2})\.0[\w\.\-]*?\.(?:zip|img)\b", t, re.I)
+    if m:
+        major = int(m.group(1))
+        if 10 <= major <= ANDROID_MAX:
+            return f"Android {major}"
+
+    m = re.search(r"[-_](\d{1,2})\.0[-_][\w\.\-]*?\.(?:zip|img)\b", t, re.I)
+    if m:
+        major = int(m.group(1))
+        if 10 <= major <= ANDROID_MAX:
+            return f"Android {major}"
+
+    # 5. LineageOS version token in filename or text (lineage-23.2, LineageOS 21.0)
+    m = re.search(r"\blineage(?:os)?[\s\-_]*v?(\d{2})(?:\.(\d))?", t, re.I)
+    if m:
+        major = int(m.group(1))
+        if major in LINEAGE_TO_ANDROID:
+            return LINEAGE_TO_ANDROID[major]
+
+    # 6. crDroid version token in filename or text (crDroid v10, crDroid 9.5)
+    m = re.search(r"\bcrdroid(?:android)?[\s\-_]*v?(\d{1,2})\b", t, re.I)
+    if m:
+        major = int(m.group(1))
+        if major in CRDROID_TO_ANDROID:
+            return CRDROID_TO_ANDROID[major]
+
+    # 7. Explicit "Version: 13.0" or "Version : 13" on release pages
+    m = re.search(r"\b(?:version|ver)[\s:]*v?(\d{1,2})(?:\.(\d))?\b", t, re.I)
+    if m:
+        major = int(m.group(1))
+        if family == "LineageOS" and major in LINEAGE_TO_ANDROID:
+            return LINEAGE_TO_ANDROID[major]
+        if family == "crDroid" and major in CRDROID_TO_ANDROID:
+            return CRDROID_TO_ANDROID[major]
+        if 10 <= major <= ANDROID_MAX:
+            return f"Android {major}"
+
     return None
 
 
@@ -130,12 +203,16 @@ def parse_rom_version(text: Optional[str], family: Optional[str]) -> Optional[st
     letters = [c for c in family if c.isalnum()]
     pattern = "".join(f"{re.escape(c)}[^a-z0-9]*" for c in letters)
     m = re.search(rf"{pattern}\s*v?(\d{{1,2}}(?:\.\d{{1,3}}){{0,2}})", t, re.I)
-    if not m:
-        return None
-    before = t[max(0, m.start() - 12):m.start()].lower()
-    if "android" in before:
-        return None
-    return m.group(1)
+    if m:
+        before = t[max(0, m.start() - 12):m.start()].lower()
+        if "android" not in before:
+            return m.group(1)
+
+    # Fallback for explicit Version: X.X on family release pages
+    m = re.search(r"\b(?:version|ver)[\s:]*v?(\d{1,2}(?:\.\d{1,3}){0,2})\b", t, re.I)
+    if m:
+        return m.group(1)
+    return None
 
 
 def parse_build_date(text: Optional[str]) -> Optional[str]:

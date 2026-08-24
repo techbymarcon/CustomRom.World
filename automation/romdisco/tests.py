@@ -2,8 +2,16 @@
 
 from __future__ import annotations
 
+import json
+import os
+import shutil
+import tempfile
 import unittest
 
+from .batch import run_batch_discovery
+from .catalog import (get_catalog_devices, get_catalog_entries,
+                      validate_catalog_consistency)
+from .database import Database
 from .discovery import (build_fallback_queries, build_probe_urls, build_queries,
                         build_source_queries, discover)
 from .extract import (normalize_family, parse_android_version, parse_build_date,
@@ -142,8 +150,30 @@ class SourceFirstDiscoveryTest(unittest.TestCase):
         self.assertTrue(urls)
         for url in urls:
             self.assertTrue(registry.is_registered(url), url)
-        self.assertIn("https://download.lineageos.org/devices/nabu", urls)
+        self.assertIn("https://download.lineageos.org/api/v2/devices/nabu/builds", urls)
         self.assertIn("https://crdroid.net/nabu", urls)
+        self.assertIn("https://xiaomifirmwareupdater.com/miui/nabu/", urls)
+
+    def test_manufacturer_scoping_eliminates_cross_probes(self) -> None:
+        pixel = Device(name="Pixel 8 Pro", codename="husky", manufacturer="Google")
+        pixel_probes = build_probe_urls(pixel, registry)
+        # Google Pixel must have LineageOS, Pixel Experience, PixelOS, GrapheneOS, CalyxOS
+        self.assertTrue(any("pixelexperience.org" in u for u in pixel_probes))
+        self.assertTrue(any("grapheneos.org" in u for u in pixel_probes))
+        self.assertTrue(any("calyxos.org" in u for u in pixel_probes))
+        self.assertTrue(any("download.lineageos.org" in u for u in pixel_probes))
+        # Google Pixel must NEVER probe Xiaomi, Samsung, or OnePlus firmware portals
+        self.assertFalse(any("xiaomifirmwareupdater.com" in u for u in pixel_probes))
+        self.assertFalse(any("hyperosupdates.com" in u for u in pixel_probes))
+        self.assertFalse(any("samfw.com" in u for u in pixel_probes))
+        self.assertFalse(any("oxygenupdater.com" in u for u in pixel_probes))
+
+        # Samsung Galaxy S24 must probe SamFW, never Xiaomi or Google
+        galaxy = Device(name="Galaxy S24", codename="e1q", manufacturer="Samsung")
+        galaxy_probes = build_probe_urls(galaxy, registry)
+        self.assertTrue(any("samfw.com" in u for u in galaxy_probes))
+        self.assertFalse(any("xiaomifirmwareupdater.com" in u for u in galaxy_probes))
+        self.assertFalse(any("developers.google.com" in u for u in galaxy_probes))
 
     def test_source_queries_come_first(self) -> None:
         source_queries = build_source_queries(NABU, registry)
@@ -170,7 +200,12 @@ class ExtractTest(unittest.TestCase):
         self.assertEqual(parse_android_version("Android 13 build"), "Android 13")
         self.assertEqual(parse_android_version("[ROM][14][UNOFFICIAL] x"), "Android 14")
         self.assertEqual(parse_android_version("Oreo build"), "Android 8.0 Oreo")
-        self.assertIsNone(parse_android_version("crDroid 10.6 build 4500"))
+        self.assertEqual(parse_android_version("Version : 13 File name : PixelExperience_barbet-13.0-OFFICIAL.zip", "Pixel Experience"), "Android 13")
+        self.assertEqual(parse_android_version("PixelOS_cheetah-13.0-20231003-0943.zip", "PixelOS"), "Android 13")
+        self.assertEqual(parse_android_version("LineageOS 21.0 build 20240320", "LineageOS"), "Android 14")
+        self.assertEqual(parse_android_version("LineageOS 23.2 build 20260818", "LineageOS"), "Android 16")
+        self.assertEqual(parse_android_version("crDroidAndroid-14.0-20240405-shiba-v10.3.zip", "crDroid"), "Android 14")
+        self.assertIsNone(parse_android_version("crDroid build 4500"))
 
     def test_rom_version(self) -> None:
         self.assertEqual(parse_rom_version("crDroid 10.6 nabu", "crDroid"), "10.6")
@@ -389,6 +424,218 @@ class DiscoveryTest(unittest.TestCase):
         candidates, discarded = discover(NABU, backend=NullBackend(), max_queries=3)
         self.assertEqual(candidates, [])
         self.assertEqual(discarded, [])
+
+
+class CatalogTest(unittest.TestCase):
+    def test_catalog_consistency_with_ts(self) -> None:
+        base_dir = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+        ts_path = os.path.join(base_dir, "src", "lib", "devices.ts")
+        res = validate_catalog_consistency(ts_path=ts_path)
+        self.assertTrue(res["valid"])
+        self.assertEqual(res["total_devices"], 573)
+        self.assertEqual(res["resolved_devices"], 497)
+        self.assertEqual(res["unresolved_devices"], 76)
+
+    def test_unique_device_ids_and_codenames(self) -> None:
+        devices = get_catalog_devices()
+        ids = [d.id for d in devices]
+        self.assertEqual(len(ids), len(set(ids)), "Device IDs must be strictly unique")
+        for dev in devices:
+            self.assertTrue(dev.codename and dev.codename.strip())
+            self.assertTrue(dev.name and dev.name.strip())
+            self.assertTrue(dev.manufacturer and dev.manufacturer.strip())
+
+    def test_unresolved_devices_excluded_from_discovery(self) -> None:
+        all_entries = get_catalog_entries()
+        unresolved = [e for e in all_entries if not e.get("resolved")]
+        self.assertTrue(unresolved)
+        for e in unresolved:
+            self.assertIsNone(e.get("codename"))
+            self.assertIsNone(e.get("id"))
+        resolved_devices = get_catalog_devices(resolved_only=True)
+        resolved_names = {d.name for d in resolved_devices}
+        for e in unresolved:
+            self.assertNotIn(e["name"], resolved_names)
+
+
+class BatchRunnerTest(unittest.TestCase):
+    def setUp(self) -> None:
+        self.tmp_dir = tempfile.mkdtemp()
+        self.db_path = os.path.join(self.tmp_dir, "test_rom_database.json")
+        self.db = Database(self.db_path)
+
+    def tearDown(self) -> None:
+        shutil.rmtree(self.tmp_dir, ignore_errors=True)
+
+    def test_batch_checkpoint_and_backup(self) -> None:
+        # Pre-populate with existing device (nabu)
+        self.db.upsert_device(NABU)
+        self.db.set_candidates(NABU, [Candidate(url="https://download.lineageos.org/devices/nabu", title="nabu")])
+        self.db.save()
+
+        # Run batch discovery with offline backend on Pixel 8a and Pixel 8
+        result = run_batch_discovery(
+            db=self.db,
+            brand="pixel",
+            device_id="google:akita,google:shiba",
+            backend=NullBackend(),
+            no_fallback=True,
+            no_probe=True,
+            resume=False,
+        )
+        self.assertEqual(result["status"], "completed")
+        self.assertEqual(result["processed"], 2)
+        self.assertTrue(result["backup_path"])
+        self.assertTrue(os.path.exists(result["backup_path"]))
+
+        # Verify atomic save and preservation of existing NABU device
+        reloaded = Database(self.db_path)
+        self.assertIsNotNone(reloaded.device_by_id("xiaomi:nabu"))
+        self.assertTrue(reloaded.candidates_for("xiaomi:nabu"))
+        self.assertIsNotNone(reloaded.device_by_id("google:akita"))
+        self.assertIsNotNone(reloaded.device_by_id("google:shiba"))
+
+    def test_batch_resume_skips_existing(self) -> None:
+        self.db.upsert_device(NABU)
+        self.db.set_candidates(NABU, [Candidate(url="https://download.lineageos.org/devices/nabu", title="nabu")])
+        self.db.save()
+
+        # Run with resume
+        result = run_batch_discovery(
+            db=self.db,
+            brand="xiaomi",
+            device_id="xiaomi:nabu",
+            backend=NullBackend(),
+            no_fallback=True,
+            no_probe=True,
+            resume=True,
+        )
+        self.assertEqual(result["status"], "completed")
+        self.assertEqual(result["processed"], 0)
+        self.assertEqual(result["skipped"], 1)
+
+    def test_dry_run_preserves_state(self) -> None:
+        self.db.upsert_device(NABU)
+        self.db.set_candidates(NABU, [Candidate(url="https://download.lineageos.org/devices/nabu", title="nabu")])
+        self.db.save()
+
+        # Call with dry_run
+        res = run_batch_discovery(
+            db=self.db,
+            brand="pixel",
+            dry_run=True,
+        )
+        self.assertEqual(res["status"], "dry_run")
+        self.assertGreater(res["total_target_devices"], 0)
+
+        # Ensure DB untouched
+        reloaded = Database(self.db_path)
+        self.assertIsNotNone(reloaded.device_by_id("xiaomi:nabu"))
+
+
+class ImporterTest(unittest.TestCase):
+    def test_rom_slug_generation(self) -> None:
+        from .importer import rom_slug
+        self.assertEqual(rom_slug("LineageOS", "21.0", "Android 14"), "lineageos-21-0-android-14")
+        self.assertEqual(rom_slug("crDroid", "7.64", "Android 11"), "crdroid-7-64-android-11")
+        self.assertEqual(rom_slug("One UI", None, "Android 14"), "one-ui-android-14")
+
+    def test_build_supabase_records_rejects_missing_android(self) -> None:
+        from .importer import build_supabase_records
+        sample = {
+            "devices": [{"name": "Pixel 9a", "codename": "tegu", "manufacturer": "Google"}],
+            "roms": [
+                {
+                    "name": "LineageOS",
+                    "device": "Pixel 9a",
+                    "codename": "tegu",
+                    "android_version": None,
+                    "rom_version": "21.0",
+                    "source_url": "https://download.lineageos.org/devices/tegu",
+                    "download_url": None,
+                    "status": "verified",
+                }
+            ]
+        }
+        res = build_supabase_records(sample)
+        self.assertEqual(res["accepted_count"], 0)
+        self.assertEqual(res["rejected_count"], 1)
+        self.assertIn("Missing explicit Android version", list(res["rejection_reasons"].keys())[0])
+
+    def test_build_supabase_records_accepts_valid(self) -> None:
+        from .importer import build_supabase_records
+        sample = {
+            "devices": [{"name": "Pixel 9a", "codename": "tegu", "manufacturer": "Google"}],
+            "roms": [
+                {
+                    "name": "LineageOS",
+                    "device": "Pixel 9a",
+                    "codename": "tegu",
+                    "android_version": "Android 14",
+                    "rom_version": "21.0",
+                    "source_url": "https://download.lineageos.org/devices/tegu",
+                    "download_url": None,
+                    "status": "verified",
+                }
+            ]
+        }
+        res = build_supabase_records(sample)
+        self.assertEqual(res["accepted_count"], 1)
+        self.assertEqual(res["rejected_count"], 0)
+        rec = res["accepted_records"][0]
+        self.assertEqual(rec["brand"], "pixel")
+        self.assertEqual(rec["device_slug"], "pixel-9a")
+        self.assertEqual(rec["slug"], "lineageos-21-0-android-14")
+        self.assertEqual(rec["rom_type"], "aosp")
+        self.assertEqual(rec["rom_version"], "21.0")
+        self.assertIsNone(rec["download_url"])
+
+
+class LineageResolverTest(unittest.TestCase):
+    def test_lineage_api_json_parsing(self) -> None:
+        from unittest.mock import patch
+        from .search import fetch_page
+
+        mock_json = json.dumps([
+            {
+                "version": "23.2",
+                "date": "2026-08-18",
+                "type": "nightly",
+                "files": [
+                    {
+                        "filename": "lineage-23.2-20260818-nightly-tegu-signed.zip",
+                        "url": "https://mirrorbits.lineageos.org/full/tegu/20260818/lineage-23.2-20260818-nightly-tegu-signed.zip"
+                    }
+                ]
+            }
+        ])
+
+        with patch("romdisco.search._fetch", return_value=(200, mock_json)):
+            res = fetch_page("https://download.lineageos.org/api/v2/devices/tegu/builds")
+            self.assertIsNotNone(res)
+            title, text = res
+            self.assertIn("LineageOS 23.2", title)
+            self.assertIn("lineage-23.2", text)
+            self.assertIn("https://mirrorbits.lineageos.org/full/tegu/20260818/lineage-23.2-20260818-nightly-tegu-signed.zip", text)
+
+            # Test validation outcome
+            cand = Candidate(
+                url="https://download.lineageos.org/api/v2/devices/tegu/builds",
+                title=title,
+                text=text,
+                source_id="lineageos_dl",
+            )
+            tegu = Device(name="Pixel 9a", codename="tegu", manufacturer="Google")
+            outcome = validate_candidate(cand, tegu)
+            self.assertIsNone(outcome.rejection)
+            self.assertIsNotNone(outcome.rom)
+            rom = outcome.rom
+            self.assertEqual(rom.name, "LineageOS")
+            self.assertEqual(rom.android_version, "Android 16")
+            self.assertEqual(rom.rom_version, "23.2")
+            self.assertEqual(rom.build_date, "2026-08-18")
+            self.assertEqual(rom.download_url, "https://mirrorbits.lineageos.org/full/tegu/20260818/lineage-23.2-20260818-nightly-tegu-signed.zip")
+            self.assertEqual(rom.status, "verified")
 
 
 def run() -> int:
