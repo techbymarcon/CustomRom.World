@@ -151,8 +151,8 @@ class SourceFirstDiscoveryTest(unittest.TestCase):
         for url in urls:
             self.assertTrue(registry.is_registered(url), url)
         self.assertIn("https://download.lineageos.org/api/v2/devices/nabu/builds", urls)
-        self.assertIn("https://crdroid.net/nabu", urls)
-        self.assertIn("https://xiaomifirmwareupdater.com/miui/nabu/", urls)
+        self.assertIn("https://hyperosupdates.com/nabu/", urls)
+        self.assertIn("https://get.pixelexperience.org/nabu", urls)
 
     def test_manufacturer_scoping_eliminates_cross_probes(self) -> None:
         pixel = Device(name="Pixel 8 Pro", codename="husky", manufacturer="Google")
@@ -636,6 +636,82 @@ class LineageResolverTest(unittest.TestCase):
             self.assertEqual(rom.build_date, "2026-08-18")
             self.assertEqual(rom.download_url, "https://mirrorbits.lineageos.org/full/tegu/20260818/lineage-23.2-20260818-nightly-tegu-signed.zip")
             self.assertEqual(rom.status, "verified")
+
+
+class FalsePositiveRegressionTest(unittest.TestCase):
+    def test_generic_crdroid_spa_rejected(self) -> None:
+        cand = Candidate(
+            url="https://crdroid.net/tegu",
+            title="crDroid.net - Download crDroid for supported devices",
+            text="crDroid.net - Download crDroid for supported devices crDroid --> Home Blog Translations Stats Support us Legal Contact Download --> Ready to download? Below you can find a list with official supported devices. Choose your device and get started using crDroid Search device Asus Google HTC LG LeEco Le crDroid 6 - Android 11",
+            source_id="crdroid_site",
+        )
+        pixel = Device(name="Pixel 9a", codename="tegu", manufacturer="Google")
+        outcome = validate_candidate(cand, pixel)
+        self.assertIsNotNone(outcome.rejection)
+        self.assertIn("generic SPA", outcome.rejection.reason)
+
+    def test_generic_project_elixir_spa_rejected(self) -> None:
+        cand = Candidate(
+            url="https://projectelixiros.com/device/comet",
+            title="Project Elixir [Custom ROM]",
+            text="Project Elixir [Custom ROM]",
+            source_id="elixir_site",
+        )
+        pixel = Device(name="Pixel 9 Pro Fold", codename="comet", manufacturer="Google")
+        outcome = validate_candidate(cand, pixel)
+        self.assertIsNotNone(outcome.rejection)
+        self.assertIn("no concrete ROM/build evidence", outcome.rejection.reason)
+
+    def test_parked_domain_page_rejected(self) -> None:
+        cand = Candidate(
+            url="https://xiaomifirmwareupdater.com/miui/tegu",
+            title="xiaomifirmwareupdater.com - Questo sito web è in vendita! - xiaomifirmwareupdater Risorse e informazione.",
+            text="xiaomifirmwareupdater.com - Questo sito web è in vendita! - xiaomifirmwareupdater Risorse e informazione.",
+            source_id="xfu",
+        )
+        pixel = Device(name="Pixel 9a", codename="tegu", manufacturer="Google")
+        outcome = validate_candidate(cand, pixel)
+        self.assertIsNotNone(outcome.rejection)
+
+    def test_manufacturer_scoped_source_rejection(self) -> None:
+        # A Xiaomi firmware candidate must be rejected for a Google device
+        cand = Candidate(
+            url="https://hyperosupdates.com/tegu/",
+            title="HyperOS Updates - tegu",
+            text="HyperOS 1.0.0 tegu update firmware download md5 sha256",
+            source_id="hyperosupdates",
+        )
+        pixel = Device(name="Pixel 9a", codename="tegu", manufacturer="Google")
+        outcome = validate_candidate(cand, pixel)
+        self.assertIsNotNone(outcome.rejection)
+        self.assertIn("scoped to", outcome.rejection.reason)
+
+    def test_lineage_wiki_and_api_deduplication(self) -> None:
+        cands = [
+            Candidate(
+                url="https://download.lineageos.org/api/v2/devices/tegu/builds",
+                title="LineageOS 23.2 Builds",
+                text="LineageOS lineage-23.2 version 23.2 build 2026-08-18 nightly https://mirrorbits.lineageos.org/full/tegu/20260818/lineage-23.2-20260818-nightly-tegu-signed.zip",
+                source_id="lineageos_dl",
+            ),
+            Candidate(
+                url="https://wiki.lineageos.org/devices/tegu",
+                title="Info about tegu | LineageOS Wiki",
+                text="Pixel 9a tegu LineageOS 23 based on Android 16 installation guide",
+                source_id="lineageos_site",
+            ),
+        ]
+        pixel = Device(name="Pixel 9a", codename="tegu", manufacturer="Google")
+        roms, rejections = validate_all(cands, pixel)
+        # Must deduplicate into exactly 1 LineageOS record with structured API data
+        lineage_roms = [r for r in roms if r.name == "LineageOS"]
+        self.assertEqual(len(lineage_roms), 1)
+        rom = lineage_roms[0]
+        self.assertEqual(rom.rom_version, "23.2")
+        self.assertEqual(rom.android_version, "Android 16")
+        self.assertEqual(rom.build_date, "2026-08-18")
+        self.assertEqual(rom.download_url, "https://mirrorbits.lineageos.org/full/tegu/20260818/lineage-23.2-20260818-nightly-tegu-signed.zip")
 
 
 def run() -> int:

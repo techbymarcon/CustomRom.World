@@ -312,20 +312,14 @@ SOURCES = SOURCES + (
 
 #: Direct, source-specific device pages probed *before* any web search.
 _DEVICE_URLS: dict[str, tuple[str, ...]] = {
-    "lineageos_dl": ("https://download.lineageos.org/api/v2/devices/{code}/builds",
-                     "https://wiki.lineageos.org/devices/{code}"),
-    "lineageos_site": ("https://wiki.lineageos.org/devices/{code}",),
-    "crdroid_site": ("https://crdroid.net/{code}",),
+    "lineageos_dl": ("https://download.lineageos.org/api/v2/devices/{code}/builds",),
     "pe_dl": ("https://get.pixelexperience.org/{code}",),
     "evox_site": ("https://evolution-x.org/downloads/{code}",),
     "arrow_site": ("https://arrowos.net/download/{code}",),
     "pixelos_site": ("https://pixelos.net/download/{code}",),
-    "elixir_site": ("https://projectelixiros.com/device/{code}",),
     "rr_site": ("https://resurrectionremix.com/downloads/{code}",),
     "calyx_site": ("https://calyxos.org/install/devices/{code}/",),
     "graphene_site": ("https://grapheneos.org/releases#{code}",),
-    "xfu": ("https://xiaomifirmwareupdater.com/miui/{code}/",
-            "https://xiaomifirmwareupdater.com/hyperos/{code}/"),
     "hyperosupdates": ("https://hyperosupdates.com/{code}/",),
     "mifirm": ("https://mifirm.net/model/{code}",),
     "samfw": ("https://samfw.com/firmware/{slug}",),

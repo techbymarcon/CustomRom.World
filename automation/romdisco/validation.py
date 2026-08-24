@@ -46,6 +46,10 @@ REJECT_PATTERNS: tuple[tuple[re.Pattern[str], str], ...] = (
      "build instructions"),
     (re.compile(r"\b(buy now|add to cart|price in|best price|offerta|prezzo)\b", re.I),
      "retail / store page"),
+    (re.compile(r"\b(sito web è in vendita|domain (is )?(for sale|parked)|buy this domain|parked domain|domain broker)\b", re.I),
+     "parked / domain for sale page"),
+    (re.compile(r"\b(ready to download\? below you can find a list with official supported devices|choose your device and get started using crdroid)\b", re.I),
+     "generic SPA device selector page"),
 )
 
 #: Weak page-level hints. They colour the evidence list but never validate alone.
@@ -186,15 +190,16 @@ def _segments(text: str) -> list[str]:
 def _contextual(text: str, parser, device: Device, *args) -> Optional[str]:
     """Run ``parser`` only on segments that carry a ROM/build/device context."""
     code = device.codename.lower()
+    dev_name = device.name.lower()
     for segment in _segments(text):
         low = segment.lower()
-        if not (VERSION_CONTEXT_RE.search(low) or code in low):
+        if not (VERSION_CONTEXT_RE.search(low) or code in low or dev_name in low):
+            continue
+        if "all rights reserved" in low or "powered by" in low:
             continue
         value = parser(segment, *args)
         if value:
             return value
-    if VERSION_CONTEXT_RE.search(text.lower()):
-        return parser(text, *args)
     return None
 
 
@@ -249,14 +254,14 @@ def _build_tier(candidate: Candidate, device: Device, source: Source, *,
         return "artifact", signals
 
     # A registered official download/project/firmware page whose URL path carries the
-    # target codename is a genuine device page. Many of them render builds via JS, so
-    # in-page build markers are a bonus, not a requirement. Code hosts are excluded:
-    # their org/search/profile URLs are handled by classify_page and never reach here
-    # as device pages.
+    # target codename is a genuine device page only when it contains build content
+    # or concrete device build information. Blank SPA shells or templates without builds
+    # are rejected.
     device_download_page = (
         source.kind in {"official_download", "official_project", "firmware_database"}
         and url_code
         and not _is_code_host(urlsplit(candidate.url).netloc.lower().removeprefix("www."))
+        and (has_build_content or any(s in signals for s in ("checksum", "build_metadata", "download_word", "build_channel")))
     )
     if device_download_page:
         signals.append("device_download_page")
@@ -284,6 +289,10 @@ def validate_candidate(candidate: Candidate, device: Device, *,
     source: Source | None = reg.match_url(candidate.url)
     if source is None:
         return ValidationOutcome(rejection=Rejection(candidate.url, "unregistered source domain"))
+
+    if source.manufacturers and not any(m.lower() == device.manufacturer.lower() for m in source.manufacturers):
+        return ValidationOutcome(rejection=Rejection(
+            candidate.url, f"source {source.id} is scoped to {source.manufacturers}, not {device.manufacturer}"))
 
     sid = source.id
     haystack = " \n ".join(filter(None, [candidate.title, candidate.text]))
@@ -380,6 +389,7 @@ def validate_candidate(candidate: Candidate, device: Device, *,
 
 def validate_all(candidates: list[Candidate], device: Device, *,
                  reg: SourceRegistry | None = None) -> tuple[list[Rom], list[Rejection]]:
+    reg = reg or default_registry
     roms: dict[str, Rom] = {}
     rejections: list[Rejection] = []
     for candidate in candidates:
@@ -389,11 +399,30 @@ def validate_all(candidates: list[Candidate], device: Device, *,
             continue
         rom = outcome.rom
         assert rom is not None
-        existing = roms.get(rom.identity)
-        if existing is None:
-            roms[rom.identity] = rom
+
+        # 1. Exact identity match:
+        if rom.identity in roms:
+            roms[rom.identity] = _prefer(roms[rom.identity], rom, reg)
             continue
-        roms[rom.identity] = _prefer(existing, rom, reg or default_registry)
+
+        # 2. Match same family and device to merge unversioned or duplicate overview records:
+        matched_key = None
+        for k, existing in roms.items():
+            if existing.name.lower() == rom.name.lower() and existing.codename.lower() == rom.codename.lower():
+                if (existing.rom_version is None or rom.rom_version is None
+                    or existing.rom_version.lower() == rom.rom_version.lower()):
+                    if (existing.android_version is None or rom.android_version is None
+                        or existing.android_version.lower() == rom.android_version.lower()):
+                        matched_key = k
+                        break
+
+        if matched_key:
+            existing = roms.pop(matched_key)
+            winner = _prefer(existing, rom, reg)
+            roms[winner.identity] = winner
+        else:
+            roms[rom.identity] = rom
+
     return list(roms.values()), rejections
 
 
@@ -409,20 +438,45 @@ def _tier_of(rom: Rom) -> int:
 def _prefer(a: Rom, b: Rom, reg: SourceRegistry) -> Rom:
     """Prefer the most concrete record: artifact > official device page > release > code."""
 
-    def score(r: Rom) -> tuple[int, int, int, int, int]:
+    def score(r: Rom) -> tuple[int, int, int, int, int, int]:
         src = reg.get(r.source_id)
-        return (1 if r.download_url else 0,
-                _tier_of(r),
-                1 if r.status == "verified" else 0,
-                src.authority if src else 0,
-                len(r.evidence))
+        return (
+            1 if r.download_url else 0,
+            1 if r.rom_version else 0,
+            1 if r.android_version else 0,
+            _tier_of(r),
+            1 if r.status == "verified" else 0,
+            src.authority if src else 0,
+        )
 
     winner, loser = (a, b) if score(a) >= score(b) else (b, a)
-    if not winner.download_url and loser.download_url:
-        winner.download_url = loser.download_url
-    seen = {(e.kind, e.detail) if isinstance(e, Evidence) else None for e in winner.evidence}
+    download_url = winner.download_url or loser.download_url
+    rom_version = winner.rom_version or loser.rom_version
+    android_version = winner.android_version or loser.android_version
+    build_date = winner.build_date or loser.build_date
+
+    new_evidence = [e if isinstance(e, Evidence) else Evidence(**e) for e in winner.evidence]
+    seen = {(e.kind, e.detail) for e in new_evidence}
     for e in loser.evidence:
-        if (e.kind, e.detail) not in seen:
-            winner.evidence.append(e)
-    winner.updated_at = now_iso()
-    return winner
+        ev_obj = e if isinstance(e, Evidence) else Evidence(**e)
+        if (ev_obj.kind, ev_obj.detail) not in seen:
+            new_evidence.append(ev_obj)
+            seen.add((ev_obj.kind, ev_obj.detail))
+
+    return Rom(
+        id=Rom.make_id(winner.codename, winner.name, rom_version, android_version, build_date),
+        name=winner.name,
+        type=winner.type,
+        device=winner.device,
+        codename=winner.codename,
+        android_version=android_version,
+        rom_version=rom_version,
+        build_date=build_date,
+        status="verified" if winner.status == "verified" or loser.status == "verified" else "unverified",
+        source_url=winner.source_url if score(winner) >= score(loser) else loser.source_url,
+        download_url=download_url,
+        source_id=winner.source_id if score(winner) >= score(loser) else loser.source_id,
+        evidence=new_evidence,
+        discovered_at=winner.discovered_at,
+        updated_at=now_iso(),
+    )
