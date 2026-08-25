@@ -285,7 +285,11 @@ def build_supabase_records(
             # Keep entry with download_url if available
             existing = seen_identities[identity]
             if download_url and not existing.get("download_url"):
-                seen_identities[identity] = record
+                existing["download_url"] = download_url
+                if raw_source_url:
+                    existing["source_url"] = raw_source_url
+                if found_on:
+                    existing["found_on"] = found_on
             continue
 
         seen_identities[identity] = record
