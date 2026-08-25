@@ -3,13 +3,13 @@
     "schema_version": 2,
     "generator": "romdisco",
     "created_at": "2026-08-23T18:45:04+00:00",
-    "updated_at": "2026-08-25T06:33:24+00:00",
+    "updated_at": "2026-08-25T06:51:09+00:00",
     "counts": {
-      "devices": 374,
-      "roms": 242,
+      "devices": 424,
+      "roms": 262,
       "sources": 4,
-      "verified": 242,
-      "candidates": 397
+      "verified": 262,
+      "candidates": 424
     }
   },
   "devices": [
@@ -3745,6 +3745,468 @@
         "angelicain"
       ],
       "id": "poco:angelica"
+    },
+    {
+      "name": "Motorola Razr 50 Ultra",
+      "codename": "arcadia",
+      "manufacturer": "Motorola",
+      "aliases": [
+        "Razr 50 Ultra",
+        "Razr+ 2024"
+      ],
+      "id": "motorola:arcadia"
+    },
+    {
+      "name": "Motorola Razr 50",
+      "codename": "wren",
+      "manufacturer": "Motorola",
+      "aliases": [
+        "Razr 50",
+        "Razr 2024"
+      ],
+      "id": "motorola:wren"
+    },
+    {
+      "name": "Motorola Razr 40 Ultra",
+      "codename": "venus_moto",
+      "manufacturer": "Motorola",
+      "aliases": [
+        "Razr 40 Ultra",
+        "Razr+ 2023",
+        "venus"
+      ],
+      "id": "motorola:venus_moto"
+    },
+    {
+      "name": "Motorola Razr 40",
+      "codename": "segas",
+      "manufacturer": "Motorola",
+      "aliases": [
+        "Razr 40",
+        "Razr 2023"
+      ],
+      "id": "motorola:segas"
+    },
+    {
+      "name": "Motorola Razr 2022",
+      "codename": "maven",
+      "manufacturer": "Motorola",
+      "aliases": [
+        "Razr 2022"
+      ],
+      "id": "motorola:maven"
+    },
+    {
+      "name": "Motorola Razr 5G",
+      "codename": "smith",
+      "manufacturer": "Motorola",
+      "aliases": [
+        "Razr 5G",
+        "Razr 2020"
+      ],
+      "id": "motorola:smith"
+    },
+    {
+      "name": "Motorola Razr 2019",
+      "codename": "voyager",
+      "manufacturer": "Motorola",
+      "aliases": [
+        "Razr 2019"
+      ],
+      "id": "motorola:voyager"
+    },
+    {
+      "name": "Motorola Edge 50 Ultra",
+      "codename": "eqs2",
+      "manufacturer": "Motorola",
+      "aliases": [
+        "Edge 50 Ultra"
+      ],
+      "id": "motorola:eqs2"
+    },
+    {
+      "name": "Motorola Edge 50 Pro",
+      "codename": "macao",
+      "manufacturer": "Motorola",
+      "aliases": [
+        "Edge 50 Pro"
+      ],
+      "id": "motorola:macao"
+    },
+    {
+      "name": "Motorola Edge 50 Fusion",
+      "codename": "cusco",
+      "manufacturer": "Motorola",
+      "aliases": [
+        "Edge 50 Fusion"
+      ],
+      "id": "motorola:cusco"
+    },
+    {
+      "name": "Motorola Edge 50 Neo",
+      "codename": "vienna",
+      "manufacturer": "Motorola",
+      "aliases": [
+        "Edge 50 Neo"
+      ],
+      "id": "motorola:vienna"
+    },
+    {
+      "name": "Motorola Edge 40 Pro",
+      "codename": "rtwo",
+      "manufacturer": "Motorola",
+      "aliases": [
+        "Edge 40 Pro",
+        "Edge+ 2023"
+      ],
+      "id": "motorola:rtwo"
+    },
+    {
+      "name": "Motorola Edge 40",
+      "codename": "lyriq",
+      "manufacturer": "Motorola",
+      "aliases": [
+        "Edge 40"
+      ],
+      "id": "motorola:lyriq"
+    },
+    {
+      "name": "Motorola Edge 40 Neo",
+      "codename": "manaus_edge",
+      "manufacturer": "Motorola",
+      "aliases": [
+        "Edge 40 Neo",
+        "manaus"
+      ],
+      "id": "motorola:manaus_edge"
+    },
+    {
+      "name": "Motorola Edge 30 Ultra",
+      "codename": "eqs",
+      "manufacturer": "Motorola",
+      "aliases": [
+        "Edge 30 Ultra",
+        "Frontier"
+      ],
+      "id": "motorola:eqs"
+    },
+    {
+      "name": "Motorola Edge 30 Pro",
+      "codename": "hiphi",
+      "manufacturer": "Motorola",
+      "aliases": [
+        "Edge 30 Pro",
+        "Edge+ 2022"
+      ],
+      "id": "motorola:hiphi"
+    },
+    {
+      "name": "Motorola Edge 30 Fusion",
+      "codename": "tundra",
+      "manufacturer": "Motorola",
+      "aliases": [
+        "Edge 30 Fusion"
+      ],
+      "id": "motorola:tundra"
+    },
+    {
+      "name": "Motorola Edge 30 Neo",
+      "codename": "miami",
+      "manufacturer": "Motorola",
+      "aliases": [
+        "Edge 30 Neo"
+      ],
+      "id": "motorola:miami"
+    },
+    {
+      "name": "Motorola Edge 30",
+      "codename": "dubai",
+      "manufacturer": "Motorola",
+      "aliases": [
+        "Edge 30"
+      ],
+      "id": "motorola:dubai"
+    },
+    {
+      "name": "Motorola Edge 20 Pro",
+      "codename": "pstar",
+      "manufacturer": "Motorola",
+      "aliases": [
+        "Edge 20 Pro"
+      ],
+      "id": "motorola:pstar"
+    },
+    {
+      "name": "Motorola Edge 20",
+      "codename": "berlin",
+      "manufacturer": "Motorola",
+      "aliases": [
+        "Edge 20"
+      ],
+      "id": "motorola:berlin"
+    },
+    {
+      "name": "Motorola Edge+",
+      "codename": "racer2",
+      "manufacturer": "Motorola",
+      "aliases": [
+        "Edge Plus",
+        "burton"
+      ],
+      "id": "motorola:racer2"
+    },
+    {
+      "name": "Motorola Edge",
+      "codename": "racer",
+      "manufacturer": "Motorola",
+      "aliases": [
+        "Motorola Edge 2020"
+      ],
+      "id": "motorola:racer"
+    },
+    {
+      "name": "Moto G75 5G",
+      "codename": "mumbai",
+      "manufacturer": "Motorola",
+      "aliases": [
+        "Moto G75"
+      ],
+      "id": "motorola:mumbai"
+    },
+    {
+      "name": "Moto G85 5G",
+      "codename": "malmo",
+      "manufacturer": "Motorola",
+      "aliases": [
+        "Moto G85"
+      ],
+      "id": "motorola:malmo"
+    },
+    {
+      "name": "Moto G84 5G",
+      "codename": "penangf",
+      "manufacturer": "Motorola",
+      "aliases": [
+        "Moto G84"
+      ],
+      "id": "motorola:penangf"
+    },
+    {
+      "name": "Moto G73 5G",
+      "codename": "manaus",
+      "manufacturer": "Motorola",
+      "aliases": [
+        "Moto G73"
+      ],
+      "id": "motorola:manaus"
+    },
+    {
+      "name": "Moto G72",
+      "codename": "victoria",
+      "manufacturer": "Motorola",
+      "aliases": [
+        "Moto G72"
+      ],
+      "id": "motorola:victoria"
+    },
+    {
+      "name": "Moto G71 5G",
+      "codename": "corfur",
+      "manufacturer": "Motorola",
+      "aliases": [
+        "Moto G71"
+      ],
+      "id": "motorola:corfur"
+    },
+    {
+      "name": "Moto G62 5G",
+      "codename": "devon",
+      "manufacturer": "Motorola",
+      "aliases": [
+        "Moto G62"
+      ],
+      "id": "motorola:devon"
+    },
+    {
+      "name": "Moto G60",
+      "codename": "hanoi",
+      "manufacturer": "Motorola",
+      "aliases": [
+        "Moto G60"
+      ],
+      "id": "motorola:hanoi"
+    },
+    {
+      "name": "Moto G50",
+      "codename": "ibiza",
+      "manufacturer": "Motorola",
+      "aliases": [
+        "Moto G50"
+      ],
+      "id": "motorola:ibiza"
+    },
+    {
+      "name": "Moto G40 Fusion",
+      "codename": "hanoip",
+      "manufacturer": "Motorola",
+      "aliases": [
+        "Moto G40 Fusion"
+      ],
+      "id": "motorola:hanoip"
+    },
+    {
+      "name": "Moto G31",
+      "codename": "corregidor",
+      "manufacturer": "Motorola",
+      "aliases": [
+        "Moto G31"
+      ],
+      "id": "motorola:corregidor"
+    },
+    {
+      "name": "Moto G30",
+      "codename": "caprip",
+      "manufacturer": "Motorola",
+      "aliases": [
+        "Moto G30"
+      ],
+      "id": "motorola:caprip"
+    },
+    {
+      "name": "Moto G Power (2024)",
+      "codename": "cancunfp",
+      "manufacturer": "Motorola",
+      "aliases": [
+        "Moto G Power 5G 2024"
+      ],
+      "id": "motorola:cancunfp"
+    },
+    {
+      "name": "Moto G Power (2023)",
+      "codename": "cancunf",
+      "manufacturer": "Motorola",
+      "aliases": [
+        "Moto G Power 5G 2023"
+      ],
+      "id": "motorola:cancunf"
+    },
+    {
+      "name": "Moto G Power (2022)",
+      "codename": "tonga_moto",
+      "manufacturer": "Motorola",
+      "aliases": [
+        "Moto G Power 2022",
+        "tonga"
+      ],
+      "id": "motorola:tonga_moto"
+    },
+    {
+      "name": "Moto G Power (2021)",
+      "codename": "borstar",
+      "manufacturer": "Motorola",
+      "aliases": [
+        "Moto G Power 2021"
+      ],
+      "id": "motorola:borstar"
+    },
+    {
+      "name": "Moto G Power (2020)",
+      "codename": "sofia",
+      "manufacturer": "Motorola",
+      "aliases": [
+        "Moto G Power 2020"
+      ],
+      "id": "motorola:sofia"
+    },
+    {
+      "name": "Moto G7 Power",
+      "codename": "ocean",
+      "manufacturer": "Motorola",
+      "aliases": [
+        "Moto G7 Power"
+      ],
+      "id": "motorola:ocean"
+    },
+    {
+      "name": "Moto G6",
+      "codename": "ali",
+      "manufacturer": "Motorola",
+      "aliases": [
+        "Moto G6"
+      ],
+      "id": "motorola:ali"
+    },
+    {
+      "name": "Moto E13",
+      "codename": "padova",
+      "manufacturer": "Motorola",
+      "aliases": [
+        "Moto E13"
+      ],
+      "id": "motorola:padova"
+    },
+    {
+      "name": "Moto E22",
+      "codename": "hawaii",
+      "manufacturer": "Motorola",
+      "aliases": [
+        "Moto E22"
+      ],
+      "id": "motorola:hawaii"
+    },
+    {
+      "name": "Moto E32",
+      "codename": "ginna",
+      "manufacturer": "Motorola",
+      "aliases": [
+        "Moto E32"
+      ],
+      "id": "motorola:ginna"
+    },
+    {
+      "name": "Moto E20",
+      "codename": "aruba",
+      "manufacturer": "Motorola",
+      "aliases": [
+        "Moto E20"
+      ],
+      "id": "motorola:aruba"
+    },
+    {
+      "name": "Moto E7 Power",
+      "codename": "corfu",
+      "manufacturer": "Motorola",
+      "aliases": [
+        "Moto E7 Power"
+      ],
+      "id": "motorola:corfu"
+    },
+    {
+      "name": "Moto E7",
+      "codename": "malta",
+      "manufacturer": "Motorola",
+      "aliases": [
+        "Moto E7"
+      ],
+      "id": "motorola:malta"
+    },
+    {
+      "name": "Moto E6",
+      "codename": "surfna",
+      "manufacturer": "Motorola",
+      "aliases": [
+        "Moto E6"
+      ],
+      "id": "motorola:surfna"
+    },
+    {
+      "name": "Moto E5",
+      "codename": "nora",
+      "manufacturer": "Motorola",
+      "aliases": [
+        "Moto E5"
+      ],
+      "id": "motorola:nora"
     }
   ],
   "sources": [
@@ -21979,6 +22441,1428 @@
       ],
       "discovered_at": "2026-08-25T06:33:24+00:00",
       "updated_at": "2026-08-25T06:33:24+00:00"
+    },
+    {
+      "id": "6fee6a1e2a472ee7",
+      "name": "LineageOS",
+      "type": "custom_rom",
+      "device": "Motorola Razr 2019",
+      "codename": "voyager",
+      "android_version": "Android 16",
+      "rom_version": "23.2",
+      "build_date": "2026-08-21",
+      "status": "verified",
+      "source_url": "https://download.lineageos.org/api/v2/devices/voyager/builds",
+      "download_url": "https://mirrorbits.lineageos.org/full/voyager/20260821/lineage-23.2-20260821-nightly-voyager-signed.zip",
+      "source_id": "lineageos_dl",
+      "evidence": [
+        {
+          "kind": "registered_source",
+          "detail": "LineageOS Downloads (official_download, trust 100)",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org"
+        },
+        {
+          "kind": "codename_in_url",
+          "detail": "codename 'voyager' in URL path",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/voyager/builds"
+        },
+        {
+          "kind": "artifact_link",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/voyager/builds"
+        },
+        {
+          "kind": "artifact_extension",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/voyager/builds"
+        },
+        {
+          "kind": "build_channel",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/voyager/builds"
+        },
+        {
+          "kind": "build_evidence_tier",
+          "detail": "artifact",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/voyager/builds"
+        },
+        {
+          "kind": "family_resolved",
+          "detail": "LineageOS",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/voyager/builds"
+        },
+        {
+          "kind": "evidence_score",
+          "detail": "14",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/voyager/builds"
+        }
+      ],
+      "discovered_at": "2026-08-25T06:36:59+00:00",
+      "updated_at": "2026-08-25T06:36:59+00:00"
+    },
+    {
+      "id": "8b9b5b0ef1de6298",
+      "name": "LineageOS",
+      "type": "custom_rom",
+      "device": "Motorola Edge 40 Pro",
+      "codename": "rtwo",
+      "android_version": "Android 16",
+      "rom_version": "23.2",
+      "build_date": "2026-08-22",
+      "status": "verified",
+      "source_url": "https://download.lineageos.org/api/v2/devices/rtwo/builds",
+      "download_url": "https://mirrorbits.lineageos.org/full/rtwo/20260822/lineage-23.2-20260822-nightly-rtwo-signed.zip",
+      "source_id": "lineageos_dl",
+      "evidence": [
+        {
+          "kind": "registered_source",
+          "detail": "LineageOS Downloads (official_download, trust 100)",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org"
+        },
+        {
+          "kind": "codename_in_url",
+          "detail": "codename 'rtwo' in URL path",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/rtwo/builds"
+        },
+        {
+          "kind": "artifact_link",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/rtwo/builds"
+        },
+        {
+          "kind": "artifact_extension",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/rtwo/builds"
+        },
+        {
+          "kind": "build_channel",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/rtwo/builds"
+        },
+        {
+          "kind": "build_evidence_tier",
+          "detail": "artifact",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/rtwo/builds"
+        },
+        {
+          "kind": "family_resolved",
+          "detail": "LineageOS",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/rtwo/builds"
+        },
+        {
+          "kind": "evidence_score",
+          "detail": "14",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/rtwo/builds"
+        }
+      ],
+      "discovered_at": "2026-08-25T06:38:32+00:00",
+      "updated_at": "2026-08-25T06:38:32+00:00"
+    },
+    {
+      "id": "e4a6c4399bf687ac",
+      "name": "LineageOS",
+      "type": "custom_rom",
+      "device": "Motorola Edge 30 Ultra",
+      "codename": "eqs",
+      "android_version": "Android 15",
+      "rom_version": "22.2",
+      "build_date": "2026-08-20",
+      "status": "verified",
+      "source_url": "https://download.lineageos.org/api/v2/devices/eqs/builds",
+      "download_url": "https://mirrorbits.lineageos.org/full/eqs/20260820/lineage-22.2-20260820-nightly-eqs-signed.zip",
+      "source_id": "lineageos_dl",
+      "evidence": [
+        {
+          "kind": "registered_source",
+          "detail": "LineageOS Downloads (official_download, trust 100)",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org"
+        },
+        {
+          "kind": "codename_in_url",
+          "detail": "codename 'eqs' in URL path",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/eqs/builds"
+        },
+        {
+          "kind": "artifact_link",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/eqs/builds"
+        },
+        {
+          "kind": "artifact_extension",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/eqs/builds"
+        },
+        {
+          "kind": "build_channel",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/eqs/builds"
+        },
+        {
+          "kind": "build_evidence_tier",
+          "detail": "artifact",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/eqs/builds"
+        },
+        {
+          "kind": "family_resolved",
+          "detail": "LineageOS",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/eqs/builds"
+        },
+        {
+          "kind": "evidence_score",
+          "detail": "14",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/eqs/builds"
+        }
+      ],
+      "discovered_at": "2026-08-25T06:39:44+00:00",
+      "updated_at": "2026-08-25T06:39:44+00:00"
+    },
+    {
+      "id": "2be54f29a3be3084",
+      "name": "LineageOS",
+      "type": "custom_rom",
+      "device": "Motorola Edge 30 Fusion",
+      "codename": "tundra",
+      "android_version": "Android 16",
+      "rom_version": "23.2",
+      "build_date": "2026-08-22",
+      "status": "verified",
+      "source_url": "https://download.lineageos.org/api/v2/devices/tundra/builds",
+      "download_url": "https://mirrorbits.lineageos.org/full/tundra/20260822/lineage-23.2-20260822-nightly-tundra-signed.zip",
+      "source_id": "lineageos_dl",
+      "evidence": [
+        {
+          "kind": "registered_source",
+          "detail": "LineageOS Downloads (official_download, trust 100)",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org"
+        },
+        {
+          "kind": "codename_in_url",
+          "detail": "codename 'tundra' in URL path",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/tundra/builds"
+        },
+        {
+          "kind": "artifact_link",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/tundra/builds"
+        },
+        {
+          "kind": "artifact_extension",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/tundra/builds"
+        },
+        {
+          "kind": "build_channel",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/tundra/builds"
+        },
+        {
+          "kind": "build_evidence_tier",
+          "detail": "artifact",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/tundra/builds"
+        },
+        {
+          "kind": "family_resolved",
+          "detail": "LineageOS",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/tundra/builds"
+        },
+        {
+          "kind": "evidence_score",
+          "detail": "14",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/tundra/builds"
+        }
+      ],
+      "discovered_at": "2026-08-25T06:40:29+00:00",
+      "updated_at": "2026-08-25T06:40:29+00:00"
+    },
+    {
+      "id": "0eb44b6878316806",
+      "name": "PixelOS",
+      "type": "custom_rom",
+      "device": "Motorola Edge 30 Fusion",
+      "codename": "tundra",
+      "android_version": "Android 14",
+      "rom_version": "14.0",
+      "build_date": "2024-05-20",
+      "status": "verified",
+      "source_url": "https://pixelos.net/download/tundra",
+      "download_url": "https://sourceforge.net/projects/pixelos-releases/files/fourteen/tundra/PixelOS_tundra-14.0-20240520-1612.zip",
+      "source_id": "pixelos_site",
+      "evidence": [
+        {
+          "kind": "registered_source",
+          "detail": "PixelOS (official_project, trust 96)",
+          "source_id": "pixelos_site",
+          "url": "https://pixelos.net"
+        },
+        {
+          "kind": "codename_in_url",
+          "detail": "codename 'tundra' in URL path",
+          "source_id": "pixelos_site",
+          "url": "https://pixelos.net/download/tundra"
+        },
+        {
+          "kind": "device_name_match",
+          "detail": "device name 'Motorola Edge 30 Fusion' mentioned",
+          "source_id": "pixelos_site",
+          "url": "https://pixelos.net/download/tundra"
+        },
+        {
+          "kind": "artifact_link",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "pixelos_site",
+          "url": "https://pixelos.net/download/tundra"
+        },
+        {
+          "kind": "artifact_extension",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "pixelos_site",
+          "url": "https://pixelos.net/download/tundra"
+        },
+        {
+          "kind": "download_word",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "pixelos_site",
+          "url": "https://pixelos.net/download/tundra"
+        },
+        {
+          "kind": "changelog",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "pixelos_site",
+          "url": "https://pixelos.net/download/tundra"
+        },
+        {
+          "kind": "build_evidence_tier",
+          "detail": "artifact",
+          "source_id": "pixelos_site",
+          "url": "https://pixelos.net/download/tundra"
+        },
+        {
+          "kind": "family_resolved",
+          "detail": "PixelOS",
+          "source_id": "pixelos_site",
+          "url": "https://pixelos.net/download/tundra"
+        },
+        {
+          "kind": "evidence_score",
+          "detail": "16",
+          "source_id": "pixelos_site",
+          "url": "https://pixelos.net/download/tundra"
+        }
+      ],
+      "discovered_at": "2026-08-25T06:40:29+00:00",
+      "updated_at": "2026-08-25T06:40:29+00:00"
+    },
+    {
+      "id": "75aa629d356f0389",
+      "name": "LineageOS",
+      "type": "custom_rom",
+      "device": "Motorola Edge 30 Neo",
+      "codename": "miami",
+      "android_version": "Android 16",
+      "rom_version": "23.2",
+      "build_date": "2026-08-23",
+      "status": "verified",
+      "source_url": "https://download.lineageos.org/api/v2/devices/miami/builds",
+      "download_url": "https://mirrorbits.lineageos.org/full/miami/20260823/lineage-23.2-20260823-nightly-miami-signed.zip",
+      "source_id": "lineageos_dl",
+      "evidence": [
+        {
+          "kind": "registered_source",
+          "detail": "LineageOS Downloads (official_download, trust 100)",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org"
+        },
+        {
+          "kind": "codename_in_url",
+          "detail": "codename 'miami' in URL path",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/miami/builds"
+        },
+        {
+          "kind": "artifact_link",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/miami/builds"
+        },
+        {
+          "kind": "artifact_extension",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/miami/builds"
+        },
+        {
+          "kind": "build_channel",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/miami/builds"
+        },
+        {
+          "kind": "build_evidence_tier",
+          "detail": "artifact",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/miami/builds"
+        },
+        {
+          "kind": "family_resolved",
+          "detail": "LineageOS",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/miami/builds"
+        },
+        {
+          "kind": "evidence_score",
+          "detail": "14",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/miami/builds"
+        }
+      ],
+      "discovered_at": "2026-08-25T06:40:49+00:00",
+      "updated_at": "2026-08-25T06:40:49+00:00"
+    },
+    {
+      "id": "369ac675a5b2d15a",
+      "name": "LineageOS",
+      "type": "custom_rom",
+      "device": "Motorola Edge 30",
+      "codename": "dubai",
+      "android_version": "Android 16",
+      "rom_version": "23.2",
+      "build_date": "2026-08-21",
+      "status": "verified",
+      "source_url": "https://download.lineageos.org/api/v2/devices/dubai/builds",
+      "download_url": "https://mirrorbits.lineageos.org/full/dubai/20260821/lineage-23.2-20260821-nightly-dubai-signed.zip",
+      "source_id": "lineageos_dl",
+      "evidence": [
+        {
+          "kind": "registered_source",
+          "detail": "LineageOS Downloads (official_download, trust 100)",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org"
+        },
+        {
+          "kind": "codename_in_url",
+          "detail": "codename 'dubai' in URL path",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/dubai/builds"
+        },
+        {
+          "kind": "artifact_link",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/dubai/builds"
+        },
+        {
+          "kind": "artifact_extension",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/dubai/builds"
+        },
+        {
+          "kind": "build_channel",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/dubai/builds"
+        },
+        {
+          "kind": "build_evidence_tier",
+          "detail": "artifact",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/dubai/builds"
+        },
+        {
+          "kind": "family_resolved",
+          "detail": "LineageOS",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/dubai/builds"
+        },
+        {
+          "kind": "evidence_score",
+          "detail": "14",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/dubai/builds"
+        }
+      ],
+      "discovered_at": "2026-08-25T06:41:09+00:00",
+      "updated_at": "2026-08-25T06:41:09+00:00"
+    },
+    {
+      "id": "9c04ee4a278c602a",
+      "name": "PixelOS",
+      "type": "custom_rom",
+      "device": "Motorola Edge 30",
+      "codename": "dubai",
+      "android_version": "Android 17",
+      "rom_version": "17.0",
+      "build_date": "2026-08-20",
+      "status": "verified",
+      "source_url": "https://pixelos.net/download/dubai",
+      "download_url": "https://download.pixelos.net/seventeen/dubai/PixelOS_dubai-17.0-20260820-2048.zip",
+      "source_id": "pixelos_site",
+      "evidence": [
+        {
+          "kind": "registered_source",
+          "detail": "PixelOS (official_project, trust 96)",
+          "source_id": "pixelos_site",
+          "url": "https://pixelos.net"
+        },
+        {
+          "kind": "codename_in_url",
+          "detail": "codename 'dubai' in URL path",
+          "source_id": "pixelos_site",
+          "url": "https://pixelos.net/download/dubai"
+        },
+        {
+          "kind": "device_name_match",
+          "detail": "device name 'Motorola Edge 30' mentioned",
+          "source_id": "pixelos_site",
+          "url": "https://pixelos.net/download/dubai"
+        },
+        {
+          "kind": "artifact_link",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "pixelos_site",
+          "url": "https://pixelos.net/download/dubai"
+        },
+        {
+          "kind": "artifact_extension",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "pixelos_site",
+          "url": "https://pixelos.net/download/dubai"
+        },
+        {
+          "kind": "download_word",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "pixelos_site",
+          "url": "https://pixelos.net/download/dubai"
+        },
+        {
+          "kind": "changelog",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "pixelos_site",
+          "url": "https://pixelos.net/download/dubai"
+        },
+        {
+          "kind": "build_evidence_tier",
+          "detail": "artifact",
+          "source_id": "pixelos_site",
+          "url": "https://pixelos.net/download/dubai"
+        },
+        {
+          "kind": "family_resolved",
+          "detail": "PixelOS",
+          "source_id": "pixelos_site",
+          "url": "https://pixelos.net/download/dubai"
+        },
+        {
+          "kind": "evidence_score",
+          "detail": "16",
+          "source_id": "pixelos_site",
+          "url": "https://pixelos.net/download/dubai"
+        }
+      ],
+      "discovered_at": "2026-08-25T06:41:09+00:00",
+      "updated_at": "2026-08-25T06:41:09+00:00"
+    },
+    {
+      "id": "a7bc2c92f9c563c3",
+      "name": "Pixel Experience",
+      "type": "custom_rom",
+      "device": "Motorola Edge 30",
+      "codename": "dubai",
+      "android_version": "Android 13",
+      "rom_version": "13",
+      "build_date": "2023-02-23",
+      "status": "verified",
+      "source_url": "https://get.pixelexperience.org/dubai",
+      "download_url": "https://get.pixelexperience.org/changelog/dubai/PixelExperience_dubai-13.0-20230223-0008-OFFICIAL.zip",
+      "source_id": "pe_dl",
+      "evidence": [
+        {
+          "kind": "registered_source",
+          "detail": "Pixel Experience Downloads (official_download, trust 100)",
+          "source_id": "pe_dl",
+          "url": "https://get.pixelexperience.org"
+        },
+        {
+          "kind": "codename_in_url",
+          "detail": "codename 'dubai' in URL path",
+          "source_id": "pe_dl",
+          "url": "https://get.pixelexperience.org/dubai"
+        },
+        {
+          "kind": "device_name_match",
+          "detail": "device name 'Motorola Edge 30' mentioned",
+          "source_id": "pe_dl",
+          "url": "https://get.pixelexperience.org/dubai"
+        },
+        {
+          "kind": "artifact_link",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "pe_dl",
+          "url": "https://get.pixelexperience.org/dubai"
+        },
+        {
+          "kind": "artifact_extension",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "pe_dl",
+          "url": "https://get.pixelexperience.org/dubai"
+        },
+        {
+          "kind": "checksum",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "pe_dl",
+          "url": "https://get.pixelexperience.org/dubai"
+        },
+        {
+          "kind": "download_word",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "pe_dl",
+          "url": "https://get.pixelexperience.org/dubai"
+        },
+        {
+          "kind": "changelog",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "pe_dl",
+          "url": "https://get.pixelexperience.org/dubai"
+        },
+        {
+          "kind": "build_evidence_tier",
+          "detail": "artifact",
+          "source_id": "pe_dl",
+          "url": "https://get.pixelexperience.org/dubai"
+        },
+        {
+          "kind": "family_resolved",
+          "detail": "Pixel Experience",
+          "source_id": "pe_dl",
+          "url": "https://get.pixelexperience.org/dubai"
+        },
+        {
+          "kind": "evidence_score",
+          "detail": "17",
+          "source_id": "pe_dl",
+          "url": "https://get.pixelexperience.org/dubai"
+        }
+      ],
+      "discovered_at": "2026-08-25T06:41:09+00:00",
+      "updated_at": "2026-08-25T06:41:09+00:00"
+    },
+    {
+      "id": "2f924fb53a0f7e57",
+      "name": "LineageOS",
+      "type": "custom_rom",
+      "device": "Motorola Edge 20 Pro",
+      "codename": "pstar",
+      "android_version": "Android 16",
+      "rom_version": "23.2",
+      "build_date": "2026-08-24",
+      "status": "verified",
+      "source_url": "https://download.lineageos.org/api/v2/devices/pstar/builds",
+      "download_url": "https://mirrorbits.lineageos.org/full/pstar/20260824/lineage-23.2-20260824-nightly-pstar-signed.zip",
+      "source_id": "lineageos_dl",
+      "evidence": [
+        {
+          "kind": "registered_source",
+          "detail": "LineageOS Downloads (official_download, trust 100)",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org"
+        },
+        {
+          "kind": "codename_in_url",
+          "detail": "codename 'pstar' in URL path",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/pstar/builds"
+        },
+        {
+          "kind": "artifact_link",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/pstar/builds"
+        },
+        {
+          "kind": "artifact_extension",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/pstar/builds"
+        },
+        {
+          "kind": "build_channel",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/pstar/builds"
+        },
+        {
+          "kind": "build_evidence_tier",
+          "detail": "artifact",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/pstar/builds"
+        },
+        {
+          "kind": "family_resolved",
+          "detail": "LineageOS",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/pstar/builds"
+        },
+        {
+          "kind": "evidence_score",
+          "detail": "14",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/pstar/builds"
+        }
+      ],
+      "discovered_at": "2026-08-25T06:41:26+00:00",
+      "updated_at": "2026-08-25T06:41:26+00:00"
+    },
+    {
+      "id": "8cd38ce5840a7c3d",
+      "name": "LineageOS",
+      "type": "custom_rom",
+      "device": "Motorola Edge 20",
+      "codename": "berlin",
+      "android_version": "Android 16",
+      "rom_version": "23.2",
+      "build_date": "2026-08-22",
+      "status": "verified",
+      "source_url": "https://download.lineageos.org/api/v2/devices/berlin/builds",
+      "download_url": "https://mirrorbits.lineageos.org/full/berlin/20260822/lineage-23.2-20260822-nightly-berlin-signed.zip",
+      "source_id": "lineageos_dl",
+      "evidence": [
+        {
+          "kind": "registered_source",
+          "detail": "LineageOS Downloads (official_download, trust 100)",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org"
+        },
+        {
+          "kind": "codename_in_url",
+          "detail": "codename 'berlin' in URL path",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/berlin/builds"
+        },
+        {
+          "kind": "artifact_link",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/berlin/builds"
+        },
+        {
+          "kind": "artifact_extension",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/berlin/builds"
+        },
+        {
+          "kind": "build_channel",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/berlin/builds"
+        },
+        {
+          "kind": "build_evidence_tier",
+          "detail": "artifact",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/berlin/builds"
+        },
+        {
+          "kind": "family_resolved",
+          "detail": "LineageOS",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/berlin/builds"
+        },
+        {
+          "kind": "evidence_score",
+          "detail": "14",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/berlin/builds"
+        }
+      ],
+      "discovered_at": "2026-08-25T06:41:45+00:00",
+      "updated_at": "2026-08-25T06:41:45+00:00"
+    },
+    {
+      "id": "7f3d52db52af3210",
+      "name": "Pixel Experience",
+      "type": "custom_rom",
+      "device": "Motorola Edge 20",
+      "codename": "berlin",
+      "android_version": "Android 14",
+      "rom_version": "14",
+      "build_date": "2024-03-04",
+      "status": "verified",
+      "source_url": "https://get.pixelexperience.org/Berlin",
+      "download_url": "https://get.pixelexperience.org/changelog/berlin/PixelExperience_berlin-14.0-20240304-1232-OFFICIAL.zip",
+      "source_id": "pe_dl",
+      "evidence": [
+        {
+          "kind": "registered_source",
+          "detail": "Pixel Experience Downloads (official_download, trust 100)",
+          "source_id": "pe_dl",
+          "url": "https://get.pixelexperience.org"
+        },
+        {
+          "kind": "codename_in_url",
+          "detail": "codename 'berlin' in URL path",
+          "source_id": "pe_dl",
+          "url": "https://get.pixelexperience.org/Berlin"
+        },
+        {
+          "kind": "device_name_match",
+          "detail": "device name 'Motorola Edge 20' mentioned",
+          "source_id": "pe_dl",
+          "url": "https://get.pixelexperience.org/Berlin"
+        },
+        {
+          "kind": "artifact_link",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "pe_dl",
+          "url": "https://get.pixelexperience.org/Berlin"
+        },
+        {
+          "kind": "artifact_extension",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "pe_dl",
+          "url": "https://get.pixelexperience.org/Berlin"
+        },
+        {
+          "kind": "checksum",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "pe_dl",
+          "url": "https://get.pixelexperience.org/Berlin"
+        },
+        {
+          "kind": "download_word",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "pe_dl",
+          "url": "https://get.pixelexperience.org/Berlin"
+        },
+        {
+          "kind": "changelog",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "pe_dl",
+          "url": "https://get.pixelexperience.org/Berlin"
+        },
+        {
+          "kind": "build_evidence_tier",
+          "detail": "artifact",
+          "source_id": "pe_dl",
+          "url": "https://get.pixelexperience.org/Berlin"
+        },
+        {
+          "kind": "family_resolved",
+          "detail": "Pixel Experience",
+          "source_id": "pe_dl",
+          "url": "https://get.pixelexperience.org/Berlin"
+        },
+        {
+          "kind": "evidence_score",
+          "detail": "17",
+          "source_id": "pe_dl",
+          "url": "https://get.pixelexperience.org/Berlin"
+        }
+      ],
+      "discovered_at": "2026-08-25T06:41:45+00:00",
+      "updated_at": "2026-08-25T06:41:45+00:00"
+    },
+    {
+      "id": "05e932102b277dfa",
+      "name": "LineageOS",
+      "type": "custom_rom",
+      "device": "Motorola Edge",
+      "codename": "racer",
+      "android_version": "Android 16",
+      "rom_version": "23.2",
+      "build_date": "2026-08-20",
+      "status": "verified",
+      "source_url": "https://download.lineageos.org/api/v2/devices/racer/builds",
+      "download_url": "https://mirrorbits.lineageos.org/full/racer/20260820/lineage-23.2-20260820-nightly-racer-signed.zip",
+      "source_id": "lineageos_dl",
+      "evidence": [
+        {
+          "kind": "registered_source",
+          "detail": "LineageOS Downloads (official_download, trust 100)",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org"
+        },
+        {
+          "kind": "codename_in_url",
+          "detail": "codename 'racer' in URL path",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/racer/builds"
+        },
+        {
+          "kind": "artifact_link",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/racer/builds"
+        },
+        {
+          "kind": "artifact_extension",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/racer/builds"
+        },
+        {
+          "kind": "build_channel",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/racer/builds"
+        },
+        {
+          "kind": "build_evidence_tier",
+          "detail": "artifact",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/racer/builds"
+        },
+        {
+          "kind": "family_resolved",
+          "detail": "LineageOS",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/racer/builds"
+        },
+        {
+          "kind": "evidence_score",
+          "detail": "14",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/racer/builds"
+        }
+      ],
+      "discovered_at": "2026-08-25T06:42:21+00:00",
+      "updated_at": "2026-08-25T06:42:21+00:00"
+    },
+    {
+      "id": "ad13b73e08be3cf8",
+      "name": "LineageOS",
+      "type": "custom_rom",
+      "device": "Moto G62 5G",
+      "codename": "devon",
+      "android_version": "Android 16",
+      "rom_version": "23.2",
+      "build_date": "2026-08-22",
+      "status": "verified",
+      "source_url": "https://download.lineageos.org/api/v2/devices/devon/builds",
+      "download_url": "https://mirrorbits.lineageos.org/full/devon/20260822/lineage-23.2-20260822-nightly-devon-signed.zip",
+      "source_id": "lineageos_dl",
+      "evidence": [
+        {
+          "kind": "registered_source",
+          "detail": "LineageOS Downloads (official_download, trust 100)",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org"
+        },
+        {
+          "kind": "codename_in_url",
+          "detail": "codename 'devon' in URL path",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/devon/builds"
+        },
+        {
+          "kind": "artifact_link",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/devon/builds"
+        },
+        {
+          "kind": "artifact_extension",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/devon/builds"
+        },
+        {
+          "kind": "build_channel",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/devon/builds"
+        },
+        {
+          "kind": "build_evidence_tier",
+          "detail": "artifact",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/devon/builds"
+        },
+        {
+          "kind": "family_resolved",
+          "detail": "LineageOS",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/devon/builds"
+        },
+        {
+          "kind": "evidence_score",
+          "detail": "14",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/devon/builds"
+        }
+      ],
+      "discovered_at": "2026-08-25T06:44:40+00:00",
+      "updated_at": "2026-08-25T06:44:40+00:00"
+    },
+    {
+      "id": "b26ea13f740c5437",
+      "name": "LineageOS",
+      "type": "custom_rom",
+      "device": "Moto G50",
+      "codename": "ibiza",
+      "android_version": "Android 16",
+      "rom_version": "23.2",
+      "build_date": "2026-08-23",
+      "status": "verified",
+      "source_url": "https://download.lineageos.org/api/v2/devices/ibiza/builds",
+      "download_url": "https://mirrorbits.lineageos.org/full/ibiza/20260823/lineage-23.2-20260823-nightly-ibiza-signed.zip",
+      "source_id": "lineageos_dl",
+      "evidence": [
+        {
+          "kind": "registered_source",
+          "detail": "LineageOS Downloads (official_download, trust 100)",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org"
+        },
+        {
+          "kind": "codename_in_url",
+          "detail": "codename 'ibiza' in URL path",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/ibiza/builds"
+        },
+        {
+          "kind": "artifact_link",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/ibiza/builds"
+        },
+        {
+          "kind": "artifact_extension",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/ibiza/builds"
+        },
+        {
+          "kind": "build_channel",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/ibiza/builds"
+        },
+        {
+          "kind": "build_evidence_tier",
+          "detail": "artifact",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/ibiza/builds"
+        },
+        {
+          "kind": "family_resolved",
+          "detail": "LineageOS",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/ibiza/builds"
+        },
+        {
+          "kind": "evidence_score",
+          "detail": "14",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/ibiza/builds"
+        }
+      ],
+      "discovered_at": "2026-08-25T06:45:16+00:00",
+      "updated_at": "2026-08-25T06:45:16+00:00"
+    },
+    {
+      "id": "8fe56a32c8b20ac6",
+      "name": "LineageOS",
+      "type": "custom_rom",
+      "device": "Moto G30",
+      "codename": "caprip",
+      "android_version": "Android 16",
+      "rom_version": "23.2",
+      "build_date": "2026-08-19",
+      "status": "verified",
+      "source_url": "https://download.lineageos.org/api/v2/devices/caprip/builds",
+      "download_url": "https://mirrorbits.lineageos.org/full/caprip/20260819/lineage-23.2-20260819-nightly-caprip-signed.zip",
+      "source_id": "lineageos_dl",
+      "evidence": [
+        {
+          "kind": "registered_source",
+          "detail": "LineageOS Downloads (official_download, trust 100)",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org"
+        },
+        {
+          "kind": "codename_in_url",
+          "detail": "codename 'caprip' in URL path",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/caprip/builds"
+        },
+        {
+          "kind": "artifact_link",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/caprip/builds"
+        },
+        {
+          "kind": "artifact_extension",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/caprip/builds"
+        },
+        {
+          "kind": "build_channel",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/caprip/builds"
+        },
+        {
+          "kind": "build_evidence_tier",
+          "detail": "artifact",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/caprip/builds"
+        },
+        {
+          "kind": "family_resolved",
+          "detail": "LineageOS",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/caprip/builds"
+        },
+        {
+          "kind": "evidence_score",
+          "detail": "14",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/caprip/builds"
+        }
+      ],
+      "discovered_at": "2026-08-25T06:46:12+00:00",
+      "updated_at": "2026-08-25T06:46:12+00:00"
+    },
+    {
+      "id": "3f7ed3572f809762",
+      "name": "PixelOS",
+      "type": "custom_rom",
+      "device": "Moto G Power (2023)",
+      "codename": "cancunf",
+      "android_version": "Android 16",
+      "rom_version": "16.2",
+      "build_date": "2026-06-09",
+      "status": "verified",
+      "source_url": "https://pixelos.net/download/cancunf",
+      "download_url": "https://download.pixelos.net/sixteen/cancunf/PixelOS_cancunf-16.2-20260609-0618.zip",
+      "source_id": "pixelos_site",
+      "evidence": [
+        {
+          "kind": "registered_source",
+          "detail": "PixelOS (official_project, trust 96)",
+          "source_id": "pixelos_site",
+          "url": "https://pixelos.net"
+        },
+        {
+          "kind": "codename_in_url",
+          "detail": "codename 'cancunf' in URL path",
+          "source_id": "pixelos_site",
+          "url": "https://pixelos.net/download/cancunf"
+        },
+        {
+          "kind": "artifact_link",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "pixelos_site",
+          "url": "https://pixelos.net/download/cancunf"
+        },
+        {
+          "kind": "artifact_extension",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "pixelos_site",
+          "url": "https://pixelos.net/download/cancunf"
+        },
+        {
+          "kind": "download_word",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "pixelos_site",
+          "url": "https://pixelos.net/download/cancunf"
+        },
+        {
+          "kind": "changelog",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "pixelos_site",
+          "url": "https://pixelos.net/download/cancunf"
+        },
+        {
+          "kind": "build_evidence_tier",
+          "detail": "artifact",
+          "source_id": "pixelos_site",
+          "url": "https://pixelos.net/download/cancunf"
+        },
+        {
+          "kind": "family_resolved",
+          "detail": "PixelOS",
+          "source_id": "pixelos_site",
+          "url": "https://pixelos.net/download/cancunf"
+        },
+        {
+          "kind": "evidence_score",
+          "detail": "14",
+          "source_id": "pixelos_site",
+          "url": "https://pixelos.net/download/cancunf"
+        }
+      ],
+      "discovered_at": "2026-08-25T06:46:50+00:00",
+      "updated_at": "2026-08-25T06:46:50+00:00"
+    },
+    {
+      "id": "103b982efabcf09a",
+      "name": "LineageOS",
+      "type": "custom_rom",
+      "device": "Moto G7 Power",
+      "codename": "ocean",
+      "android_version": "Android 15",
+      "rom_version": "22.2",
+      "build_date": "2026-08-23",
+      "status": "verified",
+      "source_url": "https://download.lineageos.org/api/v2/devices/ocean/builds",
+      "download_url": "https://mirrorbits.lineageos.org/full/ocean/20260823/lineage-22.2-20260823-nightly-ocean-signed.zip",
+      "source_id": "lineageos_dl",
+      "evidence": [
+        {
+          "kind": "registered_source",
+          "detail": "LineageOS Downloads (official_download, trust 100)",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org"
+        },
+        {
+          "kind": "codename_in_url",
+          "detail": "codename 'ocean' in URL path",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/ocean/builds"
+        },
+        {
+          "kind": "artifact_link",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/ocean/builds"
+        },
+        {
+          "kind": "artifact_extension",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/ocean/builds"
+        },
+        {
+          "kind": "build_channel",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/ocean/builds"
+        },
+        {
+          "kind": "build_evidence_tier",
+          "detail": "artifact",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/ocean/builds"
+        },
+        {
+          "kind": "family_resolved",
+          "detail": "LineageOS",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/ocean/builds"
+        },
+        {
+          "kind": "evidence_score",
+          "detail": "14",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/ocean/builds"
+        }
+      ],
+      "discovered_at": "2026-08-25T06:48:15+00:00",
+      "updated_at": "2026-08-25T06:48:15+00:00"
+    },
+    {
+      "id": "6372124b10e43c9f",
+      "name": "Pixel Experience",
+      "type": "custom_rom",
+      "device": "Moto G7 Power",
+      "codename": "ocean",
+      "android_version": "Android 11",
+      "rom_version": "11",
+      "build_date": "2021-07-19",
+      "status": "verified",
+      "source_url": "https://get.pixelexperience.org/ocean",
+      "download_url": "https://get.pixelexperience.org/changelog/ocean/PixelExperience_ocean-11.0-20210719-1146-OFFICIAL.zip",
+      "source_id": "pe_dl",
+      "evidence": [
+        {
+          "kind": "registered_source",
+          "detail": "Pixel Experience Downloads (official_download, trust 100)",
+          "source_id": "pe_dl",
+          "url": "https://get.pixelexperience.org"
+        },
+        {
+          "kind": "codename_in_url",
+          "detail": "codename 'ocean' in URL path",
+          "source_id": "pe_dl",
+          "url": "https://get.pixelexperience.org/ocean"
+        },
+        {
+          "kind": "device_name_match",
+          "detail": "device name 'Moto G7 Power' mentioned",
+          "source_id": "pe_dl",
+          "url": "https://get.pixelexperience.org/ocean"
+        },
+        {
+          "kind": "artifact_link",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "pe_dl",
+          "url": "https://get.pixelexperience.org/ocean"
+        },
+        {
+          "kind": "artifact_extension",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "pe_dl",
+          "url": "https://get.pixelexperience.org/ocean"
+        },
+        {
+          "kind": "checksum",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "pe_dl",
+          "url": "https://get.pixelexperience.org/ocean"
+        },
+        {
+          "kind": "download_word",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "pe_dl",
+          "url": "https://get.pixelexperience.org/ocean"
+        },
+        {
+          "kind": "changelog",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "pe_dl",
+          "url": "https://get.pixelexperience.org/ocean"
+        },
+        {
+          "kind": "build_evidence_tier",
+          "detail": "artifact",
+          "source_id": "pe_dl",
+          "url": "https://get.pixelexperience.org/ocean"
+        },
+        {
+          "kind": "family_resolved",
+          "detail": "Pixel Experience",
+          "source_id": "pe_dl",
+          "url": "https://get.pixelexperience.org/ocean"
+        },
+        {
+          "kind": "evidence_score",
+          "detail": "17",
+          "source_id": "pe_dl",
+          "url": "https://get.pixelexperience.org/ocean"
+        }
+      ],
+      "discovered_at": "2026-08-25T06:48:15+00:00",
+      "updated_at": "2026-08-25T06:48:15+00:00"
+    },
+    {
+      "id": "e83f1385598e6573",
+      "name": "Pixel Experience",
+      "type": "custom_rom",
+      "device": "Moto G6",
+      "codename": "ali",
+      "android_version": "Android 11",
+      "rom_version": "11",
+      "build_date": "2021-07-30",
+      "status": "verified",
+      "source_url": "https://get.pixelexperience.org/ali",
+      "download_url": "https://get.pixelexperience.org/changelog/ali/PixelExperience_ali-11.0-20210730-1709-OFFICIAL.zip",
+      "source_id": "pe_dl",
+      "evidence": [
+        {
+          "kind": "registered_source",
+          "detail": "Pixel Experience Downloads (official_download, trust 100)",
+          "source_id": "pe_dl",
+          "url": "https://get.pixelexperience.org"
+        },
+        {
+          "kind": "codename_in_url",
+          "detail": "codename 'ali' in URL path",
+          "source_id": "pe_dl",
+          "url": "https://get.pixelexperience.org/ali"
+        },
+        {
+          "kind": "device_name_match",
+          "detail": "device name 'Moto G6' mentioned",
+          "source_id": "pe_dl",
+          "url": "https://get.pixelexperience.org/ali"
+        },
+        {
+          "kind": "artifact_link",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "pe_dl",
+          "url": "https://get.pixelexperience.org/ali"
+        },
+        {
+          "kind": "artifact_extension",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "pe_dl",
+          "url": "https://get.pixelexperience.org/ali"
+        },
+        {
+          "kind": "checksum",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "pe_dl",
+          "url": "https://get.pixelexperience.org/ali"
+        },
+        {
+          "kind": "download_word",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "pe_dl",
+          "url": "https://get.pixelexperience.org/ali"
+        },
+        {
+          "kind": "changelog",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "pe_dl",
+          "url": "https://get.pixelexperience.org/ali"
+        },
+        {
+          "kind": "build_evidence_tier",
+          "detail": "artifact",
+          "source_id": "pe_dl",
+          "url": "https://get.pixelexperience.org/ali"
+        },
+        {
+          "kind": "family_resolved",
+          "detail": "Pixel Experience",
+          "source_id": "pe_dl",
+          "url": "https://get.pixelexperience.org/ali"
+        },
+        {
+          "kind": "evidence_score",
+          "detail": "17",
+          "source_id": "pe_dl",
+          "url": "https://get.pixelexperience.org/ali"
+        }
+      ],
+      "discovered_at": "2026-08-25T06:48:35+00:00",
+      "updated_at": "2026-08-25T06:48:35+00:00"
     }
   ],
   "candidates": [
@@ -25951,6 +27835,276 @@
       "download_links": [],
       "query": "direct:source",
       "device_id": "google:sailfish"
+    },
+    {
+      "url": "https://download.lineageos.org/api/v2/devices/venus/builds",
+      "title": "LineageOS 23.2 Builds",
+      "text": "LineageOS lineage-23.2 version 23.2 build 2026-08-19 nightly https://mirrorbits.lineageos.org/full/venus/20260819/lineage-23.2-20260819-nightly-venus-signed.zip LineageOS lineage-23.2 version 23.2 build 2026-08-12 nightly https://mirrorbits.lineageos.org/full/venus/20260812/lineage-23.2-20260812-nightly-venus-signed.zip LineageOS lineage-23.2 version 23.2 build 2026-08-05 nightly https://mirrorbits.lineageos.org/full/venus/20260805/lineage-23.2-20260805-nightly-venus-signed.zip https://mirrorbits.lineageos.org/full/venus/20260819/lineage-23.2-20260819-nightly-venus-signed.zip https://mirrorbits.lineageos.org/full/venus/20260812/lineage-23.2-20260812-nightly-venus-signed.zip https://mirrorbits.lineageos.org/full/venus/20260805/lineage-23.2-20260805-nightly-venus-signed.zip",
+      "source_id": "lineageos_dl",
+      "download_url": null,
+      "download_links": [],
+      "query": "direct:source",
+      "device_id": "motorola:venus_moto"
+    },
+    {
+      "url": "https://get.pixelexperience.org/venus",
+      "title": "Xiaomi Mi 11 (venus) - PixelExperience",
+      "text": "Xiaomi Mi 11 (venus) - PixelExperience Search a Device... Xiaomi Mi 11 venus Device Info Install Guide Build Guide Xiaomi Mi 11 venus 2 years ago Latest Build Flower Sea Maintainer(s) 14 Beta Flower Sea Maintainer(s) Useful Links Install Guide Report Issue Date (UTC) Downloads 2024/03/07 34242 Download Build ( 1.95 GB ) Download Recovery Image ( 192 MB ) Version : 14 File name : PixelExperience_venus-14.0-20240307-0248-OFFICIAL.zip MD5 hash : cf85ff608d385e96caed734bb622ab2a Date : March 7, 2024 02:48 Downloads : 34242 Changelog * Initial beta release * If you are coming from any unofficial builds or old official A13 builds, format data 13 Deprecated No maintainers yet Maintainer(s) Useful Links Install Guide Report Issue Date (UTC) Downloads 2023/03/02 11482 Download Build ( 1.81 GB ) Download Recovery Image ( 192 MB ) Version : 13 File name : PixelExperience_venus-13.0-20230302-1247-OFFICIAL.zip MD5 hash : c1ffb7af80b2fc6d0f9fff54d6fa7c6e Date : March 2, 2023 12:47 Downloads : 11482 Changelog Changelog and flash guide: https://jjpprrrr.com/pe/20230302-1247/ 2023/01/30 312 Download Build ( 1.94 GB ) Download Recovery Image ( 192 MB ) Version : 13 File name : PixelExperience_venus-13.0-20230130-1650-OFFICIAL.zip MD5 hash : 8a694db8b4a1b67dd116c9cc0ead2fcb Date : January 30, 2023 04:50 Downloads : 312 Changelog Changelog and flash/upgrade notes: https://jjpprrrr.com/pe/20230130-1650/ 13 (Plus edition) Deprecated No maintainers yet Maintainer(s) Useful Links Install Guide Report Issue Date (UTC) Downloads 2023/03/02 15471 Download Build ( 1.81 GB ) Download Recovery Image ( 192 MB ) Version : 13 (Plus edition) File name : PixelExperience_Plus_venus-13.0-20230302-1423-OFFICIAL.zip MD5 hash : a9c06a3b41bb5a6cb64d26c2389dd75f Date : March 2, 2023 02:23 Downloads : 15471 Changelog Changelog and flash guide: https://jjpprrrr.com/pe/20230302-1247/ 2023/01/30 1473 Download Build ( 1.95 GB ) Download Recovery Image ( 192 MB ) Version : 13 (Plus edition) File name : PixelExperience_Plus_venus-13.0-20230130-1821-OFFICIAL.zip MD5 hash : 1a2e82cad8edf6f50097476850abd81d Date : January 30, 2023 06:21 Downloads : 1473 Changelog Changelog and flash/upgrade notes: https://jjpprrrr.com/pe/20230130-1650/ 12 Deprecated No maintainers yet Maintainer(s) Useful Links Install Guide Report Issue Date (UTC) Downloads 2022/11/27 2351 Download Build ( 1.87 GB ) Download Recovery Image ( 192 MB ) Version : 12 File name : PixelExperience_venus-12.1-20221127-0516-OFFICIAL.zip MD5 hash : 5211f3e32dd9b536ca6f9439da38e0a2 Date : November 27, 2022 05:16 Downloads : 2351 Changelog Changelog and flash guide: https://jjpprrrr.com/pe/20221127-0516/ 12 (Plus edition) Deprecated No maintainers yet Maintainer(s) Useful Links Install Guide Report Issue Date (UTC) Downloads 2022/11/27 2392 Download Build ( 1.88 GB ) Download Recovery Image ( 192 MB ) Version : 12 (Plus edition) File name : PixelExperience_Plus_venus-12.1-20221127-0747-OFFICIAL.zip MD5 hash : 2296ef77319c5b6cb4b03edfa985b2ce Date : November 27, 2022 07:47 Downloads : 2392 Changelog Changelog and flash guide: https://jjpprrrr.com/pe/20221127-0516/ Contribute Do you like our project? Show your support by donating. Donate Now Home Devices News About Wiki Team Donate Service Status CI Dashboard Statistics GitHub Gerrit Code Review Help on Translation Twitter Telegram Project maintained by jhenrique09 × https://get.pixelexperience.org/changelog/venus/PixelExperience_venus-14.0-20240307-0248-OFFICIAL.zip https://get.pixelexperience.org/changelog/venus/PixelExperience_venus-14.0-20240307-0248-OFFICIAL.img https://get.pixelexperience.org/changelog/venus/PixelExperience_venus-13.0-20230302-1247-OFFICIAL.zip https://get.pixelexperience.org/changelog/venus/PixelExperience_venus-13.0-20230302-1247-OFFICIAL.img https://get.pixelexperience.org/changelog/venus/PixelExperience_venus-13.0-20230130-1650-OFFICIAL.zip https://get.pixelexperience.org/changelog/venus/PixelExperience_venus-13.0-20230130-1650-OFFICIAL.img https://get.pixelexperience.org/changelog/venus/PixelExperience_Plus_venus-13.0-20230302-1423-OFFICIAL.zip https://get.pixelexperience.org/changelog/venus/PixelExperience_Plus_venus-13.0-20230302-1423-OFFICIAL.img https://get.pixelexperience.org/changelog/venus/PixelExperience_Plus_venus-13.0-20230130-1821-OFFICIAL.zip https://get.pixelexperience.org/changelog/venus/PixelExperience_Plus_venus-13.0-20230130-1821-OFFICIAL.img https://get.pixelexperience.org/changelog/venus/PixelExperience_venus-12.1-20221127-0516-OFFICIAL.zip https://get.pixelexperience.org/changelog/venus/PixelExperience_venus-12.1-20221127-0516-OFFICIAL.img https://get.pixelexperience.org/changelog/venus/PixelExperience_Plus_venus-12.1-20221127-0747-OFFICIAL.zip https://get.pixelexperience.org/changelog/venus/PixelExperience_Plus_venus-12.1-20221127-0747-OFFICIAL.img",
+      "source_id": "pe_dl",
+      "download_url": null,
+      "download_links": [],
+      "query": "direct:source",
+      "device_id": "motorola:venus_moto"
+    },
+    {
+      "url": "https://download.lineageos.org/api/v2/devices/voyager/builds",
+      "title": "LineageOS 23.2 Builds",
+      "text": "LineageOS lineage-23.2 version 23.2 build 2026-08-21 nightly https://mirrorbits.lineageos.org/full/voyager/20260821/lineage-23.2-20260821-nightly-voyager-signed.zip LineageOS lineage-23.2 version 23.2 build 2026-08-14 nightly https://mirrorbits.lineageos.org/full/voyager/20260814/lineage-23.2-20260814-nightly-voyager-signed.zip LineageOS lineage-23.2 version 23.2 build 2026-08-07 nightly https://mirrorbits.lineageos.org/full/voyager/20260807/lineage-23.2-20260807-nightly-voyager-signed.zip https://mirrorbits.lineageos.org/full/voyager/20260821/lineage-23.2-20260821-nightly-voyager-signed.zip https://mirrorbits.lineageos.org/full/voyager/20260814/lineage-23.2-20260814-nightly-voyager-signed.zip https://mirrorbits.lineageos.org/full/voyager/20260807/lineage-23.2-20260807-nightly-voyager-signed.zip",
+      "source_id": "lineageos_dl",
+      "download_url": null,
+      "download_links": [],
+      "query": "direct:source",
+      "device_id": "motorola:voyager"
+    },
+    {
+      "url": "https://download.lineageos.org/api/v2/devices/rtwo/builds",
+      "title": "LineageOS 23.2 Builds",
+      "text": "LineageOS lineage-23.2 version 23.2 build 2026-08-22 nightly https://mirrorbits.lineageos.org/full/rtwo/20260822/lineage-23.2-20260822-nightly-rtwo-signed.zip LineageOS lineage-23.2 version 23.2 build 2026-08-15 nightly https://mirrorbits.lineageos.org/full/rtwo/20260815/lineage-23.2-20260815-nightly-rtwo-signed.zip LineageOS lineage-23.2 version 23.2 build 2026-08-08 nightly https://mirrorbits.lineageos.org/full/rtwo/20260808/lineage-23.2-20260808-nightly-rtwo-signed.zip https://mirrorbits.lineageos.org/full/rtwo/20260822/lineage-23.2-20260822-nightly-rtwo-signed.zip https://mirrorbits.lineageos.org/full/rtwo/20260815/lineage-23.2-20260815-nightly-rtwo-signed.zip https://mirrorbits.lineageos.org/full/rtwo/20260808/lineage-23.2-20260808-nightly-rtwo-signed.zip",
+      "source_id": "lineageos_dl",
+      "download_url": null,
+      "download_links": [],
+      "query": "direct:source",
+      "device_id": "motorola:rtwo"
+    },
+    {
+      "url": "https://download.lineageos.org/api/v2/devices/eqs/builds",
+      "title": "LineageOS 22.2 Builds",
+      "text": "LineageOS lineage-22.2 version 22.2 build 2026-08-20 nightly https://mirrorbits.lineageos.org/full/eqs/20260820/lineage-22.2-20260820-nightly-eqs-signed.zip LineageOS lineage-22.2 version 22.2 build 2026-08-13 nightly https://mirrorbits.lineageos.org/full/eqs/20260813/lineage-22.2-20260813-nightly-eqs-signed.zip LineageOS lineage-22.2 version 22.2 build 2026-08-06 nightly https://mirrorbits.lineageos.org/full/eqs/20260806/lineage-22.2-20260806-nightly-eqs-signed.zip https://mirrorbits.lineageos.org/full/eqs/20260820/lineage-22.2-20260820-nightly-eqs-signed.zip https://mirrorbits.lineageos.org/full/eqs/20260813/lineage-22.2-20260813-nightly-eqs-signed.zip https://mirrorbits.lineageos.org/full/eqs/20260806/lineage-22.2-20260806-nightly-eqs-signed.zip",
+      "source_id": "lineageos_dl",
+      "download_url": null,
+      "download_links": [],
+      "query": "direct:source",
+      "device_id": "motorola:eqs"
+    },
+    {
+      "url": "https://download.lineageos.org/api/v2/devices/tundra/builds",
+      "title": "LineageOS 23.2 Builds",
+      "text": "LineageOS lineage-23.2 version 23.2 build 2026-08-22 nightly https://mirrorbits.lineageos.org/full/tundra/20260822/lineage-23.2-20260822-nightly-tundra-signed.zip LineageOS lineage-23.2 version 23.2 build 2026-08-15 nightly https://mirrorbits.lineageos.org/full/tundra/20260815/lineage-23.2-20260815-nightly-tundra-signed.zip LineageOS lineage-23.2 version 23.2 build 2026-08-08 nightly https://mirrorbits.lineageos.org/full/tundra/20260808/lineage-23.2-20260808-nightly-tundra-signed.zip https://mirrorbits.lineageos.org/full/tundra/20260822/lineage-23.2-20260822-nightly-tundra-signed.zip https://mirrorbits.lineageos.org/full/tundra/20260815/lineage-23.2-20260815-nightly-tundra-signed.zip https://mirrorbits.lineageos.org/full/tundra/20260808/lineage-23.2-20260808-nightly-tundra-signed.zip",
+      "source_id": "lineageos_dl",
+      "download_url": null,
+      "download_links": [],
+      "query": "direct:source",
+      "device_id": "motorola:tundra"
+    },
+    {
+      "url": "https://pixelos.net/download/tundra",
+      "title": "PixelOS - tundra",
+      "text": "PixelOS - tundra PixelOS About Download Team Blog About Download Team Blog Model: Motorola Edge (30 Fusion/S30 Pro) Codename: tundra Status: Discontinued Version: 14.0 Release: monthly Last Updated: 04 June 2024 Maintainer: Raghav Tandon Latest build: Download Recovery: Download Previous Builds: Archive Latest Build Info Platform Changelog Device Changelog Instructions If you are looking for builds of previous versions of Android, you can find them over here. Support Us Help keep PixelOS active by donating. Any amount is appreciated. Paypal 2026 PixelOS https://sourceforge.net/projects/pixelos-releases/files/fourteen/tundra/PixelOS_tundra-14.0-20240520-1612.zip",
+      "source_id": "pixelos_site",
+      "download_url": null,
+      "download_links": [],
+      "query": "direct:source",
+      "device_id": "motorola:tundra"
+    },
+    {
+      "url": "https://download.lineageos.org/api/v2/devices/miami/builds",
+      "title": "LineageOS 23.2 Builds",
+      "text": "LineageOS lineage-23.2 version 23.2 build 2026-08-23 nightly https://mirrorbits.lineageos.org/full/miami/20260823/lineage-23.2-20260823-nightly-miami-signed.zip LineageOS lineage-23.2 version 23.2 build 2026-08-16 nightly https://mirrorbits.lineageos.org/full/miami/20260816/lineage-23.2-20260816-nightly-miami-signed.zip LineageOS lineage-23.2 version 23.2 build 2026-08-09 nightly https://mirrorbits.lineageos.org/full/miami/20260809/lineage-23.2-20260809-nightly-miami-signed.zip https://mirrorbits.lineageos.org/full/miami/20260823/lineage-23.2-20260823-nightly-miami-signed.zip https://mirrorbits.lineageos.org/full/miami/20260816/lineage-23.2-20260816-nightly-miami-signed.zip https://mirrorbits.lineageos.org/full/miami/20260809/lineage-23.2-20260809-nightly-miami-signed.zip",
+      "source_id": "lineageos_dl",
+      "download_url": null,
+      "download_links": [],
+      "query": "direct:source",
+      "device_id": "motorola:miami"
+    },
+    {
+      "url": "https://download.lineageos.org/api/v2/devices/dubai/builds",
+      "title": "LineageOS 23.2 Builds",
+      "text": "LineageOS lineage-23.2 version 23.2 build 2026-08-21 nightly https://mirrorbits.lineageos.org/full/dubai/20260821/lineage-23.2-20260821-nightly-dubai-signed.zip LineageOS lineage-23.2 version 23.2 build 2026-08-14 nightly https://mirrorbits.lineageos.org/full/dubai/20260814/lineage-23.2-20260814-nightly-dubai-signed.zip LineageOS lineage-23.2 version 23.2 build 2026-08-07 nightly https://mirrorbits.lineageos.org/full/dubai/20260807/lineage-23.2-20260807-nightly-dubai-signed.zip https://mirrorbits.lineageos.org/full/dubai/20260821/lineage-23.2-20260821-nightly-dubai-signed.zip https://mirrorbits.lineageos.org/full/dubai/20260814/lineage-23.2-20260814-nightly-dubai-signed.zip https://mirrorbits.lineageos.org/full/dubai/20260807/lineage-23.2-20260807-nightly-dubai-signed.zip",
+      "source_id": "lineageos_dl",
+      "download_url": null,
+      "download_links": [],
+      "query": "direct:source",
+      "device_id": "motorola:dubai"
+    },
+    {
+      "url": "https://pixelos.net/download/dubai",
+      "title": "PixelOS - dubai",
+      "text": "PixelOS - dubai PixelOS About Download Team Blog About Download Team Blog Model: Motorola Edge 30 Codename: dubai Status: Active Version: 17.0 Release: monthly Last Updated: 21 August 2026 Maintainer: Ashwin DS Latest build: Download XDA Thread: XDA Previous Builds: Archive Latest Build Info Additional Images Platform Changelog Device Changelog Instructions If you are looking for builds of previous versions of Android, you can find them over here. Support Us Help keep PixelOS active by donating. Any amount is appreciated. Paypal 2026 PixelOS https://download.pixelos.net/seventeen/dubai/PixelOS_dubai-17.0-20260820-2048.zip",
+      "source_id": "pixelos_site",
+      "download_url": null,
+      "download_links": [],
+      "query": "direct:source",
+      "device_id": "motorola:dubai"
+    },
+    {
+      "url": "https://get.pixelexperience.org/dubai",
+      "title": "Motorola Moto Edge 30 (dubai) - PixelExperience",
+      "text": "Motorola Moto Edge 30 (dubai) - PixelExperience Search a Device... Motorola Moto Edge 30 dubai Device Info Install Guide Build Guide Motorola Moto Edge 30 dubai 4 years ago Latest Build No maintainers yet Maintainer(s) 13 Deprecated No maintainers yet Maintainer(s) Useful Links Install Guide Report Issue Date (UTC) Downloads 2023/02/23 1487 Download Build ( 1.72 GB ) Download Recovery Image ( 96 MB ) Version : 13 File name : PixelExperience_dubai-13.0-20230223-0008-OFFICIAL.zip MD5 hash : 2c14d5ed24b54dca66f433343218b950 Date : February 23, 2023 12:08 Downloads : 1487 Changelog - Initial official release 13 (Plus edition) Deprecated No maintainers yet Maintainer(s) Useful Links Install Guide Report Issue No files uploaded, please check back soon! Contribute Do you like our project? Show your support by donating. Donate Now Home Devices News About Wiki Team Donate Service Status CI Dashboard Statistics GitHub Gerrit Code Review Help on Translation Twitter Telegram Project maintained by jhenrique09 × https://get.pixelexperience.org/changelog/dubai/PixelExperience_dubai-13.0-20230223-0008-OFFICIAL.zip https://get.pixelexperience.org/changelog/dubai/PixelExperience_dubai-13.0-20230223-0008-OFFICIAL.img",
+      "source_id": "pe_dl",
+      "download_url": null,
+      "download_links": [],
+      "query": "direct:source",
+      "device_id": "motorola:dubai"
+    },
+    {
+      "url": "https://get.pixelexperience.org/Dubai",
+      "title": "Motorola Moto Edge 30 (dubai) - PixelExperience",
+      "text": "Motorola Moto Edge 30 (dubai) - PixelExperience Search a Device... Motorola Moto Edge 30 dubai Device Info Install Guide Build Guide Motorola Moto Edge 30 dubai 4 years ago Latest Build No maintainers yet Maintainer(s) 13 Deprecated No maintainers yet Maintainer(s) Useful Links Install Guide Report Issue Date (UTC) Downloads 2023/02/23 1487 Download Build ( 1.72 GB ) Download Recovery Image ( 96 MB ) Version : 13 File name : PixelExperience_dubai-13.0-20230223-0008-OFFICIAL.zip MD5 hash : 2c14d5ed24b54dca66f433343218b950 Date : February 23, 2023 12:08 Downloads : 1487 Changelog - Initial official release 13 (Plus edition) Deprecated No maintainers yet Maintainer(s) Useful Links Install Guide Report Issue No files uploaded, please check back soon! Contribute Do you like our project? Show your support by donating. Donate Now Home Devices News About Wiki Team Donate Service Status CI Dashboard Statistics GitHub Gerrit Code Review Help on Translation Twitter Telegram Project maintained by jhenrique09 × https://get.pixelexperience.org/changelog/dubai/PixelExperience_dubai-13.0-20230223-0008-OFFICIAL.zip https://get.pixelexperience.org/changelog/dubai/PixelExperience_dubai-13.0-20230223-0008-OFFICIAL.img",
+      "source_id": "pe_dl",
+      "download_url": null,
+      "download_links": [],
+      "query": "direct:source",
+      "device_id": "motorola:dubai"
+    },
+    {
+      "url": "https://download.lineageos.org/api/v2/devices/pstar/builds",
+      "title": "LineageOS 23.2 Builds",
+      "text": "LineageOS lineage-23.2 version 23.2 build 2026-08-24 nightly https://mirrorbits.lineageos.org/full/pstar/20260824/lineage-23.2-20260824-nightly-pstar-signed.zip LineageOS lineage-23.2 version 23.2 build 2026-08-17 nightly https://mirrorbits.lineageos.org/full/pstar/20260817/lineage-23.2-20260817-nightly-pstar-signed.zip LineageOS lineage-23.2 version 23.2 build 2026-08-10 nightly https://mirrorbits.lineageos.org/full/pstar/20260810/lineage-23.2-20260810-nightly-pstar-signed.zip https://mirrorbits.lineageos.org/full/pstar/20260824/lineage-23.2-20260824-nightly-pstar-signed.zip https://mirrorbits.lineageos.org/full/pstar/20260817/lineage-23.2-20260817-nightly-pstar-signed.zip https://mirrorbits.lineageos.org/full/pstar/20260810/lineage-23.2-20260810-nightly-pstar-signed.zip",
+      "source_id": "lineageos_dl",
+      "download_url": null,
+      "download_links": [],
+      "query": "direct:source",
+      "device_id": "motorola:pstar"
+    },
+    {
+      "url": "https://download.lineageos.org/api/v2/devices/berlin/builds",
+      "title": "LineageOS 23.2 Builds",
+      "text": "LineageOS lineage-23.2 version 23.2 build 2026-08-22 nightly https://mirrorbits.lineageos.org/full/berlin/20260822/lineage-23.2-20260822-nightly-berlin-signed.zip LineageOS lineage-23.2 version 23.2 build 2026-08-15 nightly https://mirrorbits.lineageos.org/full/berlin/20260815/lineage-23.2-20260815-nightly-berlin-signed.zip LineageOS lineage-23.2 version 23.2 build 2026-08-08 nightly https://mirrorbits.lineageos.org/full/berlin/20260808/lineage-23.2-20260808-nightly-berlin-signed.zip https://mirrorbits.lineageos.org/full/berlin/20260822/lineage-23.2-20260822-nightly-berlin-signed.zip https://mirrorbits.lineageos.org/full/berlin/20260815/lineage-23.2-20260815-nightly-berlin-signed.zip https://mirrorbits.lineageos.org/full/berlin/20260808/lineage-23.2-20260808-nightly-berlin-signed.zip",
+      "source_id": "lineageos_dl",
+      "download_url": null,
+      "download_links": [],
+      "query": "direct:source",
+      "device_id": "motorola:berlin"
+    },
+    {
+      "url": "https://get.pixelexperience.org/Berlin",
+      "title": "Motorola Moto Edge 20 (berlin) - PixelExperience",
+      "text": "Motorola Moto Edge 20 (berlin) - PixelExperience Search a Device... Motorola Moto Edge 20 berlin Device Info Install Guide Build Guide Motorola Moto Edge 20 berlin 2 years ago Latest Build jro1979oliver Maintainer(s) 14 Beta jro1979oliver Maintainer(s) Useful Links Install Guide Report Issue Date (UTC) Downloads 2024/03/04 2649 Download Build ( 1.85 GB ) Download Recovery Image ( 96 MB ) Version : 14 File name : PixelExperience_berlin-14.0-20240304-1232-OFFICIAL.zip MD5 hash : f3dd38b63ffa6530073f4fe9182ef520 Date : March 4, 2024 12:32 Downloads : 2649 Changelog Initial build of fourteen 13 Deprecated No maintainers yet Maintainer(s) Useful Links Install Guide Report Issue Date (UTC) Downloads 2024/01/29 347 Download Build ( 1.65 GB ) Download Recovery Image ( 96 MB ) Version : 13 File name : PixelExperience_berlin-13.0-20240129-1113-OFFICIAL.zip MD5 hash : 94baf620c194eb6a9e9cc90b59d02a4c Date : January 29, 2024 11:13 Downloads : 347 Changelog Jan patch merged Merged latest security updates on kernel (ASB-2024-01-05_11-5.4) Updated blobs to T1RGS33.135-109-9-7 2023/11/28 140 Download Build ( 1.65 GB ) Download Recovery Image ( 96 MB ) Version : 13 File name : PixelExperience_berlin-13.0-20231128-1454-OFFICIAL.zip MD5 hash : b21631bd261eb9f2de34838007e9b9b2 Date : November 28, 2023 02:54 Downloads : 140 Changelog Hotfix build for wallet issue. Final build for android 13 13 (Plus edition) Deprecated No maintainers yet Maintainer(s) Useful Links Install Guide Report Issue Date (UTC) Downloads 2024/01/29 527 Download Build ( 1.66 GB ) Download Recovery Image ( 96 MB ) Version : 13 (Plus edition) File name : PixelExperience_Plus_berlin-13.0-20240129-1213-OFFICIAL.zip MD5 hash : 31a18d58092bc30f5b17d3de1f8d7a76 Date : January 29, 2024 12:13 Downloads : 527 Changelog Jan patch merged Merged latest security updates on kernel (ASB-2024-01-05_11-5.4) Updated blobs to T1RGS33.135-109-9-7 2023/11/28 202 Download Build ( 1.66 GB ) Download Recovery Image ( 96 MB ) Version : 13 (Plus edition) File name : PixelExperience_Plus_berlin-13.0-20231128-1158-OFFICIAL.zip MD5 hash : 1c6cf767d29b3f150b8efb5b433133a8 Date : November 28, 2023 11:58 Downloads : 202 Changelog Hotfix build for wallet issue. Final build for android 13 Contribute Do you like our project? Show your support by donating. Donate Now Home Devices News About Wiki Team Donate Service Status CI Dashboard Statistics GitHub Gerrit Code Review Help on Translation Twitter Telegram Project maintained by jhenrique09 × https://get.pixelexperience.org/changelog/berlin/PixelExperience_berlin-14.0-20240304-1232-OFFICIAL.zip https://get.pixelexperience.org/changelog/berlin/PixelExperience_berlin-14.0-20240304-1232-OFFICIAL.img https://get.pixelexperience.org/changelog/berlin/PixelExperience_berlin-13.0-20240129-1113-OFFICIAL.zip https://get.pixelexperience.org/changelog/berlin/PixelExperience_berlin-13.0-20240129-1113-OFFICIAL.img https://get.pixelexperience.org/changelog/berlin/PixelExperience_berlin-13.0-20231128-1454-OFFICIAL.zip https://get.pixelexperience.org/changelog/berlin/PixelExperience_berlin-13.0-20231128-1454-OFFICIAL.img https://get.pixelexperience.org/changelog/berlin/PixelExperience_Plus_berlin-13.0-20240129-1213-OFFICIAL.zip https://get.pixelexperience.org/changelog/berlin/PixelExperience_Plus_berlin-13.0-20240129-1213-OFFICIAL.img https://get.pixelexperience.org/changelog/berlin/PixelExperience_Plus_berlin-13.0-20231128-1158-OFFICIAL.zip https://get.pixelexperience.org/changelog/berlin/PixelExperience_Plus_berlin-13.0-20231128-1158-OFFICIAL.img",
+      "source_id": "pe_dl",
+      "download_url": null,
+      "download_links": [],
+      "query": "direct:source",
+      "device_id": "motorola:berlin"
+    },
+    {
+      "url": "https://get.pixelexperience.org/berlin",
+      "title": "Motorola Moto Edge 20 (berlin) - PixelExperience",
+      "text": "Motorola Moto Edge 20 (berlin) - PixelExperience Search a Device... Motorola Moto Edge 20 berlin Device Info Install Guide Build Guide Motorola Moto Edge 20 berlin 2 years ago Latest Build jro1979oliver Maintainer(s) 14 Beta jro1979oliver Maintainer(s) Useful Links Install Guide Report Issue Date (UTC) Downloads 2024/03/04 2649 Download Build ( 1.85 GB ) Download Recovery Image ( 96 MB ) Version : 14 File name : PixelExperience_berlin-14.0-20240304-1232-OFFICIAL.zip MD5 hash : f3dd38b63ffa6530073f4fe9182ef520 Date : March 4, 2024 12:32 Downloads : 2649 Changelog Initial build of fourteen 13 Deprecated No maintainers yet Maintainer(s) Useful Links Install Guide Report Issue Date (UTC) Downloads 2024/01/29 347 Download Build ( 1.65 GB ) Download Recovery Image ( 96 MB ) Version : 13 File name : PixelExperience_berlin-13.0-20240129-1113-OFFICIAL.zip MD5 hash : 94baf620c194eb6a9e9cc90b59d02a4c Date : January 29, 2024 11:13 Downloads : 347 Changelog Jan patch merged Merged latest security updates on kernel (ASB-2024-01-05_11-5.4) Updated blobs to T1RGS33.135-109-9-7 2023/11/28 140 Download Build ( 1.65 GB ) Download Recovery Image ( 96 MB ) Version : 13 File name : PixelExperience_berlin-13.0-20231128-1454-OFFICIAL.zip MD5 hash : b21631bd261eb9f2de34838007e9b9b2 Date : November 28, 2023 02:54 Downloads : 140 Changelog Hotfix build for wallet issue. Final build for android 13 13 (Plus edition) Deprecated No maintainers yet Maintainer(s) Useful Links Install Guide Report Issue Date (UTC) Downloads 2024/01/29 527 Download Build ( 1.66 GB ) Download Recovery Image ( 96 MB ) Version : 13 (Plus edition) File name : PixelExperience_Plus_berlin-13.0-20240129-1213-OFFICIAL.zip MD5 hash : 31a18d58092bc30f5b17d3de1f8d7a76 Date : January 29, 2024 12:13 Downloads : 527 Changelog Jan patch merged Merged latest security updates on kernel (ASB-2024-01-05_11-5.4) Updated blobs to T1RGS33.135-109-9-7 2023/11/28 202 Download Build ( 1.66 GB ) Download Recovery Image ( 96 MB ) Version : 13 (Plus edition) File name : PixelExperience_Plus_berlin-13.0-20231128-1158-OFFICIAL.zip MD5 hash : 1c6cf767d29b3f150b8efb5b433133a8 Date : November 28, 2023 11:58 Downloads : 202 Changelog Hotfix build for wallet issue. Final build for android 13 Contribute Do you like our project? Show your support by donating. Donate Now Home Devices News About Wiki Team Donate Service Status CI Dashboard Statistics GitHub Gerrit Code Review Help on Translation Twitter Telegram Project maintained by jhenrique09 × https://get.pixelexperience.org/changelog/berlin/PixelExperience_berlin-14.0-20240304-1232-OFFICIAL.zip https://get.pixelexperience.org/changelog/berlin/PixelExperience_berlin-14.0-20240304-1232-OFFICIAL.img https://get.pixelexperience.org/changelog/berlin/PixelExperience_berlin-13.0-20240129-1113-OFFICIAL.zip https://get.pixelexperience.org/changelog/berlin/PixelExperience_berlin-13.0-20240129-1113-OFFICIAL.img https://get.pixelexperience.org/changelog/berlin/PixelExperience_berlin-13.0-20231128-1454-OFFICIAL.zip https://get.pixelexperience.org/changelog/berlin/PixelExperience_berlin-13.0-20231128-1454-OFFICIAL.img https://get.pixelexperience.org/changelog/berlin/PixelExperience_Plus_berlin-13.0-20240129-1213-OFFICIAL.zip https://get.pixelexperience.org/changelog/berlin/PixelExperience_Plus_berlin-13.0-20240129-1213-OFFICIAL.img https://get.pixelexperience.org/changelog/berlin/PixelExperience_Plus_berlin-13.0-20231128-1158-OFFICIAL.zip https://get.pixelexperience.org/changelog/berlin/PixelExperience_Plus_berlin-13.0-20231128-1158-OFFICIAL.img",
+      "source_id": "pe_dl",
+      "download_url": null,
+      "download_links": [],
+      "query": "direct:source",
+      "device_id": "motorola:berlin"
+    },
+    {
+      "url": "https://download.lineageos.org/api/v2/devices/racer/builds",
+      "title": "LineageOS 23.2 Builds",
+      "text": "LineageOS lineage-23.2 version 23.2 build 2026-08-20 nightly https://mirrorbits.lineageos.org/full/racer/20260820/lineage-23.2-20260820-nightly-racer-signed.zip LineageOS lineage-23.2 version 23.2 build 2026-08-13 nightly https://mirrorbits.lineageos.org/full/racer/20260813/lineage-23.2-20260813-nightly-racer-signed.zip LineageOS lineage-23.2 version 23.2 build 2026-08-06 nightly https://mirrorbits.lineageos.org/full/racer/20260806/lineage-23.2-20260806-nightly-racer-signed.zip https://mirrorbits.lineageos.org/full/racer/20260820/lineage-23.2-20260820-nightly-racer-signed.zip https://mirrorbits.lineageos.org/full/racer/20260813/lineage-23.2-20260813-nightly-racer-signed.zip https://mirrorbits.lineageos.org/full/racer/20260806/lineage-23.2-20260806-nightly-racer-signed.zip",
+      "source_id": "lineageos_dl",
+      "download_url": null,
+      "download_links": [],
+      "query": "direct:source",
+      "device_id": "motorola:racer"
+    },
+    {
+      "url": "https://download.lineageos.org/api/v2/devices/devon/builds",
+      "title": "LineageOS 23.2 Builds",
+      "text": "LineageOS lineage-23.2 version 23.2 build 2026-08-22 nightly https://mirrorbits.lineageos.org/full/devon/20260822/lineage-23.2-20260822-nightly-devon-signed.zip LineageOS lineage-23.2 version 23.2 build 2026-08-15 nightly https://mirrorbits.lineageos.org/full/devon/20260815/lineage-23.2-20260815-nightly-devon-signed.zip LineageOS lineage-23.2 version 23.2 build 2026-08-08 nightly https://mirrorbits.lineageos.org/full/devon/20260808/lineage-23.2-20260808-nightly-devon-signed.zip https://mirrorbits.lineageos.org/full/devon/20260822/lineage-23.2-20260822-nightly-devon-signed.zip https://mirrorbits.lineageos.org/full/devon/20260815/lineage-23.2-20260815-nightly-devon-signed.zip https://mirrorbits.lineageos.org/full/devon/20260808/lineage-23.2-20260808-nightly-devon-signed.zip",
+      "source_id": "lineageos_dl",
+      "download_url": null,
+      "download_links": [],
+      "query": "direct:source",
+      "device_id": "motorola:devon"
+    },
+    {
+      "url": "https://calyxos.org/install/devices/devon",
+      "title": "Install on moto g32",
+      "text": "Install on moto g32 CalyxOS Search Features Community Documentation News Get CalyxOS Install on moto g32 Install / moto g32 Install from Browser ( recommended ) For successful installation, please use browsers that allow WebUSB access, such as Chrome, Brave, Edge, or any other Chromium-based browser. Install from Windows Install from Linux About Calyx Join Calyx Contact Us Privacy Policy Terms of Service Donate © 2021-2026 Calyx Institute • Edit page",
+      "source_id": "calyx_site",
+      "download_url": null,
+      "download_links": [],
+      "query": "direct:source",
+      "device_id": "motorola:devon"
+    },
+    {
+      "url": "https://download.lineageos.org/api/v2/devices/ibiza/builds",
+      "title": "LineageOS 23.2 Builds",
+      "text": "LineageOS lineage-23.2 version 23.2 build 2026-08-23 nightly https://mirrorbits.lineageos.org/full/ibiza/20260823/lineage-23.2-20260823-nightly-ibiza-signed.zip LineageOS lineage-23.2 version 23.2 build 2026-08-16 nightly https://mirrorbits.lineageos.org/full/ibiza/20260816/lineage-23.2-20260816-nightly-ibiza-signed.zip LineageOS lineage-23.2 version 23.2 build 2026-08-09 nightly https://mirrorbits.lineageos.org/full/ibiza/20260809/lineage-23.2-20260809-nightly-ibiza-signed.zip https://mirrorbits.lineageos.org/full/ibiza/20260823/lineage-23.2-20260823-nightly-ibiza-signed.zip https://mirrorbits.lineageos.org/full/ibiza/20260816/lineage-23.2-20260816-nightly-ibiza-signed.zip https://mirrorbits.lineageos.org/full/ibiza/20260809/lineage-23.2-20260809-nightly-ibiza-signed.zip",
+      "source_id": "lineageos_dl",
+      "download_url": null,
+      "download_links": [],
+      "query": "direct:source",
+      "device_id": "motorola:ibiza"
+    },
+    {
+      "url": "https://download.lineageos.org/api/v2/devices/caprip/builds",
+      "title": "LineageOS 23.2 Builds",
+      "text": "LineageOS lineage-23.2 version 23.2 build 2026-08-19 nightly https://mirrorbits.lineageos.org/full/caprip/20260819/lineage-23.2-20260819-nightly-caprip-signed.zip LineageOS lineage-23.2 version 23.2 build 2026-08-12 nightly https://mirrorbits.lineageos.org/full/caprip/20260812/lineage-23.2-20260812-nightly-caprip-signed.zip LineageOS lineage-23.2 version 23.2 build 2026-08-05 nightly https://mirrorbits.lineageos.org/full/caprip/20260805/lineage-23.2-20260805-nightly-caprip-signed.zip https://mirrorbits.lineageos.org/full/caprip/20260819/lineage-23.2-20260819-nightly-caprip-signed.zip https://mirrorbits.lineageos.org/full/caprip/20260812/lineage-23.2-20260812-nightly-caprip-signed.zip https://mirrorbits.lineageos.org/full/caprip/20260805/lineage-23.2-20260805-nightly-caprip-signed.zip",
+      "source_id": "lineageos_dl",
+      "download_url": null,
+      "download_links": [],
+      "query": "direct:source",
+      "device_id": "motorola:caprip"
+    },
+    {
+      "url": "https://pixelos.net/download/cancunf",
+      "title": "PixelOS - cancunf",
+      "text": "PixelOS - cancunf PixelOS About Download Team Blog About Download Team Blog Model: Motorola moto g54 5G Codename: cancunf Status: Active Version: 16.2 Release: monthly Last Updated: 10 June 2026 Maintainer: cyberknight777 , Sarthak Roy Latest build: Download Recovery: Download Previous Builds: Archive Latest Build Info Platform Changelog Device Changelog Instructions If you are looking for builds of previous versions of Android, you can find them over here. Support Us Help keep PixelOS active by donating. Any amount is appreciated. Paypal 2026 PixelOS https://download.pixelos.net/sixteen/cancunf/PixelOS_cancunf-16.2-20260609-0618.zip",
+      "source_id": "pixelos_site",
+      "download_url": null,
+      "download_links": [],
+      "query": "direct:source",
+      "device_id": "motorola:cancunf"
+    },
+    {
+      "url": "https://download.lineageos.org/api/v2/devices/ocean/builds",
+      "title": "LineageOS 22.2 Builds",
+      "text": "LineageOS lineage-22.2 version 22.2 build 2026-08-23 nightly https://mirrorbits.lineageos.org/full/ocean/20260823/lineage-22.2-20260823-nightly-ocean-signed.zip LineageOS lineage-22.2 version 22.2 build 2026-08-16 nightly https://mirrorbits.lineageos.org/full/ocean/20260816/lineage-22.2-20260816-nightly-ocean-signed.zip LineageOS lineage-22.2 version 22.2 build 2026-08-09 nightly https://mirrorbits.lineageos.org/full/ocean/20260809/lineage-22.2-20260809-nightly-ocean-signed.zip https://mirrorbits.lineageos.org/full/ocean/20260823/lineage-22.2-20260823-nightly-ocean-signed.zip https://mirrorbits.lineageos.org/full/ocean/20260816/lineage-22.2-20260816-nightly-ocean-signed.zip https://mirrorbits.lineageos.org/full/ocean/20260809/lineage-22.2-20260809-nightly-ocean-signed.zip",
+      "source_id": "lineageos_dl",
+      "download_url": null,
+      "download_links": [],
+      "query": "direct:source",
+      "device_id": "motorola:ocean"
+    },
+    {
+      "url": "https://get.pixelexperience.org/ocean",
+      "title": "Motorola Moto G7 Power (ocean) - PixelExperience",
+      "text": "Motorola Moto G7 Power (ocean) - PixelExperience Search a Device... Motorola Moto G7 Power ocean Device Info Install Guide Build Guide Motorola Moto G7 Power ocean 5 years ago Latest Build No maintainers yet Maintainer(s) 11 Deprecated No maintainers yet Maintainer(s) Useful Links Install Guide Report Issue Date (UTC) Downloads 2021/07/19 2357 Download Build ( 1.12 GB ) Download Recovery Image ( 20 MB ) Version : 11 File name : PixelExperience_ocean-11.0-20210719-1146-OFFICIAL.zip MD5 hash : 47af990a3d63ddf1900bdf4c7cb2c6b4 Date : July 19, 2021 11:46 Downloads : 2357 Changelog - July security patch - Updated translations - Improved FaceUnlock - Minor bug fixes 11 (Plus edition) Deprecated No maintainers yet Maintainer(s) Useful Links Install Guide Report Issue Date (UTC) Downloads 2021/07/19 4599 Download Build ( 1.12 GB ) Download Recovery Image ( 20 MB ) Version : 11 (Plus edition) File name : PixelExperience_Plus_ocean-11.0-20210719-1144-OFFICIAL.zip MD5 hash : f64c18b49bd233678536b63769db544e Date : July 19, 2021 11:44 Downloads : 4599 Changelog - July security patch - Updated translations - Improved FaceUnlock - Minor bug fixes - App lock removed due to bugs Contribute Do you like our project? Show your support by donating. Donate Now Home Devices News About Wiki Team Donate Service Status CI Dashboard Statistics GitHub Gerrit Code Review Help on Translation Twitter Telegram Project maintained by jhenrique09 × https://get.pixelexperience.org/changelog/ocean/PixelExperience_ocean-11.0-20210719-1146-OFFICIAL.zip https://get.pixelexperience.org/changelog/ocean/PixelExperience_ocean-11.0-20210719-1146-OFFICIAL.img https://get.pixelexperience.org/changelog/ocean/PixelExperience_Plus_ocean-11.0-20210719-1144-OFFICIAL.zip https://get.pixelexperience.org/changelog/ocean/PixelExperience_Plus_ocean-11.0-20210719-1144-OFFICIAL.img",
+      "source_id": "pe_dl",
+      "download_url": null,
+      "download_links": [],
+      "query": "direct:source",
+      "device_id": "motorola:ocean"
+    },
+    {
+      "url": "https://get.pixelexperience.org/Ocean",
+      "title": "Motorola Moto G7 Power (ocean) - PixelExperience",
+      "text": "Motorola Moto G7 Power (ocean) - PixelExperience Search a Device... Motorola Moto G7 Power ocean Device Info Install Guide Build Guide Motorola Moto G7 Power ocean 5 years ago Latest Build No maintainers yet Maintainer(s) 11 Deprecated No maintainers yet Maintainer(s) Useful Links Install Guide Report Issue Date (UTC) Downloads 2021/07/19 2357 Download Build ( 1.12 GB ) Download Recovery Image ( 20 MB ) Version : 11 File name : PixelExperience_ocean-11.0-20210719-1146-OFFICIAL.zip MD5 hash : 47af990a3d63ddf1900bdf4c7cb2c6b4 Date : July 19, 2021 11:46 Downloads : 2357 Changelog - July security patch - Updated translations - Improved FaceUnlock - Minor bug fixes 11 (Plus edition) Deprecated No maintainers yet Maintainer(s) Useful Links Install Guide Report Issue Date (UTC) Downloads 2021/07/19 4599 Download Build ( 1.12 GB ) Download Recovery Image ( 20 MB ) Version : 11 (Plus edition) File name : PixelExperience_Plus_ocean-11.0-20210719-1144-OFFICIAL.zip MD5 hash : f64c18b49bd233678536b63769db544e Date : July 19, 2021 11:44 Downloads : 4599 Changelog - July security patch - Updated translations - Improved FaceUnlock - Minor bug fixes - App lock removed due to bugs Contribute Do you like our project? Show your support by donating. Donate Now Home Devices News About Wiki Team Donate Service Status CI Dashboard Statistics GitHub Gerrit Code Review Help on Translation Twitter Telegram Project maintained by jhenrique09 × https://get.pixelexperience.org/changelog/ocean/PixelExperience_ocean-11.0-20210719-1146-OFFICIAL.zip https://get.pixelexperience.org/changelog/ocean/PixelExperience_ocean-11.0-20210719-1146-OFFICIAL.img https://get.pixelexperience.org/changelog/ocean/PixelExperience_Plus_ocean-11.0-20210719-1144-OFFICIAL.zip https://get.pixelexperience.org/changelog/ocean/PixelExperience_Plus_ocean-11.0-20210719-1144-OFFICIAL.img",
+      "source_id": "pe_dl",
+      "download_url": null,
+      "download_links": [],
+      "query": "direct:source",
+      "device_id": "motorola:ocean"
+    },
+    {
+      "url": "https://get.pixelexperience.org/ali",
+      "title": "Motorola Moto G6 (ali) - PixelExperience",
+      "text": "Motorola Moto G6 (ali) - PixelExperience Search a Device... Motorola Moto G6 ali Device Info Install Guide Build Guide Motorola Moto G6 ali 5 years ago Latest Build No maintainers yet Maintainer(s) 11 Deprecated No maintainers yet Maintainer(s) Useful Links Install Guide Report Issue Date (UTC) Downloads 2021/07/30 4830 Download Build ( 1.12 GB ) Version : 11 File name : PixelExperience_ali-11.0-20210730-1709-OFFICIAL.zip MD5 hash : 11a7e79025088b81579a9b80b08eb104 Date : July 30, 2021 05:09 Downloads : 4830 Changelog - July security patch - Updated translations - Improved FaceUnlock - Minor bug fixes 11 (Plus edition) Deprecated No maintainers yet Maintainer(s) Useful Links Install Guide Report Issue Date (UTC) Downloads 2021/07/30 4127 Download Build ( 1.12 GB ) Version : 11 (Plus edition) File name : PixelExperience_Plus_ali-11.0-20210730-1733-OFFICIAL.zip MD5 hash : 64c8fe9271f5ff4c6548f65404ef9225 Date : July 30, 2021 05:33 Downloads : 4127 Changelog - July security patch - Updated translations - Improved FaceUnlock - Minor bug fixes Contribute Do you like our project? Show your support by donating. Donate Now Home Devices News About Wiki Team Donate Service Status CI Dashboard Statistics GitHub Gerrit Code Review Help on Translation Twitter Telegram Project maintained by jhenrique09 × https://get.pixelexperience.org/changelog/ali/PixelExperience_ali-11.0-20210730-1709-OFFICIAL.zip https://get.pixelexperience.org/changelog/ali/PixelExperience_Plus_ali-11.0-20210730-1733-OFFICIAL.zip",
+      "source_id": "pe_dl",
+      "download_url": null,
+      "download_links": [],
+      "query": "direct:source",
+      "device_id": "motorola:ali"
+    },
+    {
+      "url": "https://get.pixelexperience.org/Ali",
+      "title": "Motorola Moto G6 (ali) - PixelExperience",
+      "text": "Motorola Moto G6 (ali) - PixelExperience Search a Device... Motorola Moto G6 ali Device Info Install Guide Build Guide Motorola Moto G6 ali 5 years ago Latest Build No maintainers yet Maintainer(s) 11 Deprecated No maintainers yet Maintainer(s) Useful Links Install Guide Report Issue Date (UTC) Downloads 2021/07/30 4830 Download Build ( 1.12 GB ) Version : 11 File name : PixelExperience_ali-11.0-20210730-1709-OFFICIAL.zip MD5 hash : 11a7e79025088b81579a9b80b08eb104 Date : July 30, 2021 05:09 Downloads : 4830 Changelog - July security patch - Updated translations - Improved FaceUnlock - Minor bug fixes 11 (Plus edition) Deprecated No maintainers yet Maintainer(s) Useful Links Install Guide Report Issue Date (UTC) Downloads 2021/07/30 4127 Download Build ( 1.12 GB ) Version : 11 (Plus edition) File name : PixelExperience_Plus_ali-11.0-20210730-1733-OFFICIAL.zip MD5 hash : 64c8fe9271f5ff4c6548f65404ef9225 Date : July 30, 2021 05:33 Downloads : 4127 Changelog - July security patch - Updated translations - Improved FaceUnlock - Minor bug fixes Contribute Do you like our project? Show your support by donating. Donate Now Home Devices News About Wiki Team Donate Service Status CI Dashboard Statistics GitHub Gerrit Code Review Help on Translation Twitter Telegram Project maintained by jhenrique09 × https://get.pixelexperience.org/changelog/ali/PixelExperience_ali-11.0-20210730-1709-OFFICIAL.zip https://get.pixelexperience.org/changelog/ali/PixelExperience_Plus_ali-11.0-20210730-1733-OFFICIAL.zip",
+      "source_id": "pe_dl",
+      "download_url": null,
+      "download_links": [],
+      "query": "direct:source",
+      "device_id": "motorola:ali"
     }
   ],
   "rejections": [
@@ -26518,6 +28672,21 @@
       "url": "https://grapheneos.org/releases",
       "reason": "no strong device evidence (codename in device URL or name+codename)",
       "device_id": "google:sailfish"
+    },
+    {
+      "url": "https://download.lineageos.org/api/v2/devices/venus/builds",
+      "reason": "no strong device evidence (codename in device URL or name+codename)",
+      "device_id": "motorola:venus_moto"
+    },
+    {
+      "url": "https://get.pixelexperience.org/venus",
+      "reason": "no strong device evidence (codename in device URL or name+codename)",
+      "device_id": "motorola:venus_moto"
+    },
+    {
+      "url": "https://calyxos.org/install/devices/devon",
+      "reason": "no concrete ROM/build evidence",
+      "device_id": "motorola:devon"
     }
   ]
 }
