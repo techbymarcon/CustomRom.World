@@ -3,13 +3,13 @@
     "schema_version": 2,
     "generator": "romdisco",
     "created_at": "2026-08-23T18:45:04+00:00",
-    "updated_at": "2026-08-25T06:51:09+00:00",
+    "updated_at": "2026-08-25T07:04:45+00:00",
     "counts": {
-      "devices": 424,
-      "roms": 262,
+      "devices": 463,
+      "roms": 280,
       "sources": 4,
-      "verified": 262,
-      "candidates": 424
+      "verified": 280,
+      "candidates": 445
     }
   },
   "devices": [
@@ -4207,6 +4207,398 @@
         "Moto E5"
       ],
       "id": "motorola:nora"
+    },
+    {
+      "name": "Sony Xperia 1 VI",
+      "codename": "pdx245",
+      "manufacturer": "Sony",
+      "aliases": [
+        "XQ-EC54",
+        "Xperia 1 VI"
+      ],
+      "id": "sony:pdx245"
+    },
+    {
+      "name": "Sony Xperia 1 V",
+      "codename": "pdx234",
+      "manufacturer": "Sony",
+      "aliases": [
+        "XQ-DQ54",
+        "Xperia 1 V"
+      ],
+      "id": "sony:pdx234"
+    },
+    {
+      "name": "Sony Xperia 1 IV",
+      "codename": "pdx223",
+      "manufacturer": "Sony",
+      "aliases": [
+        "XQ-CT54",
+        "Xperia 1 IV"
+      ],
+      "id": "sony:pdx223"
+    },
+    {
+      "name": "Sony Xperia 1 III",
+      "codename": "pdx215",
+      "manufacturer": "Sony",
+      "aliases": [
+        "XQ-BC52",
+        "Xperia 1 III"
+      ],
+      "id": "sony:pdx215"
+    },
+    {
+      "name": "Sony Xperia 1 II",
+      "codename": "mirai",
+      "manufacturer": "Sony",
+      "aliases": [
+        "pdx203",
+        "XQ-AT51",
+        "Xperia 1 II"
+      ],
+      "id": "sony:mirai"
+    },
+    {
+      "name": "Sony Xperia 1",
+      "codename": "griffin",
+      "manufacturer": "Sony",
+      "aliases": [
+        "J9110",
+        "Xperia 1"
+      ],
+      "id": "sony:griffin"
+    },
+    {
+      "name": "Sony Xperia 5 V",
+      "codename": "pdx237",
+      "manufacturer": "Sony",
+      "aliases": [
+        "XQ-DE54",
+        "Xperia 5 V"
+      ],
+      "id": "sony:pdx237"
+    },
+    {
+      "name": "Sony Xperia 5 IV",
+      "codename": "pdx224",
+      "manufacturer": "Sony",
+      "aliases": [
+        "XQ-CQ54",
+        "Xperia 5 IV"
+      ],
+      "id": "sony:pdx224"
+    },
+    {
+      "name": "Sony Xperia 5 III",
+      "codename": "pdx214",
+      "manufacturer": "Sony",
+      "aliases": [
+        "XQ-BQ52",
+        "Xperia 5 III"
+      ],
+      "id": "sony:pdx214"
+    },
+    {
+      "name": "Sony Xperia 5 II",
+      "codename": "pdx206",
+      "manufacturer": "Sony",
+      "aliases": [
+        "XQ-AS52",
+        "Xperia 5 II"
+      ],
+      "id": "sony:pdx206"
+    },
+    {
+      "name": "Sony Xperia 5",
+      "codename": "bahamut",
+      "manufacturer": "Sony",
+      "aliases": [
+        "J9210",
+        "Xperia 5"
+      ],
+      "id": "sony:bahamut"
+    },
+    {
+      "name": "Sony Xperia 10 VI",
+      "codename": "pdx246",
+      "manufacturer": "Sony",
+      "aliases": [
+        "XQ-ES54",
+        "Xperia 10 VI"
+      ],
+      "id": "sony:pdx246"
+    },
+    {
+      "name": "Sony Xperia 10 V",
+      "codename": "pdx235",
+      "manufacturer": "Sony",
+      "aliases": [
+        "XQ-DC54",
+        "Xperia 10 V"
+      ],
+      "id": "sony:pdx235"
+    },
+    {
+      "name": "Sony Xperia 10 IV",
+      "codename": "pdx225",
+      "manufacturer": "Sony",
+      "aliases": [
+        "XQ-CC54",
+        "Xperia 10 IV"
+      ],
+      "id": "sony:pdx225"
+    },
+    {
+      "name": "Sony Xperia 10 III",
+      "codename": "pdx213",
+      "manufacturer": "Sony",
+      "aliases": [
+        "XQ-BT52",
+        "Xperia 10 III"
+      ],
+      "id": "sony:pdx213"
+    },
+    {
+      "name": "Sony Xperia 10 II",
+      "codename": "pdx201",
+      "manufacturer": "Sony",
+      "aliases": [
+        "XQ-AU52",
+        "Xperia 10 II"
+      ],
+      "id": "sony:pdx201"
+    },
+    {
+      "name": "Sony Xperia PRO-I",
+      "codename": "pdx217",
+      "manufacturer": "Sony",
+      "aliases": [
+        "XQ-BE52",
+        "Xperia PRO-I"
+      ],
+      "id": "sony:pdx217"
+    },
+    {
+      "name": "Sony Xperia PRO",
+      "codename": "pdx204",
+      "manufacturer": "Sony",
+      "aliases": [
+        "XQ-AQ52",
+        "Xperia PRO"
+      ],
+      "id": "sony:pdx204"
+    },
+    {
+      "name": "Sony Xperia XZ3",
+      "codename": "akatsuki",
+      "manufacturer": "Sony",
+      "aliases": [
+        "H9436",
+        "Xperia XZ3"
+      ],
+      "id": "sony:akatsuki"
+    },
+    {
+      "name": "Sony Xperia XZ2 Premium",
+      "codename": "aurora",
+      "manufacturer": "Sony",
+      "aliases": [
+        "H8116",
+        "Xperia XZ2 Premium"
+      ],
+      "id": "sony:aurora"
+    },
+    {
+      "name": "Sony Xperia XZ2",
+      "codename": "akari",
+      "manufacturer": "Sony",
+      "aliases": [
+        "H8216",
+        "Xperia XZ2"
+      ],
+      "id": "sony:akari"
+    },
+    {
+      "name": "Sony Xperia XZ1",
+      "codename": "poplar",
+      "manufacturer": "Sony",
+      "aliases": [
+        "G8341",
+        "Xperia XZ1"
+      ],
+      "id": "sony:poplar"
+    },
+    {
+      "name": "Sony Xperia XZ Premium",
+      "codename": "maple",
+      "manufacturer": "Sony",
+      "aliases": [
+        "G8141",
+        "Xperia XZ Premium"
+      ],
+      "id": "sony:maple"
+    },
+    {
+      "name": "Sony Xperia X Performance",
+      "codename": "dora",
+      "manufacturer": "Sony",
+      "aliases": [
+        "F8131",
+        "Xperia X Performance"
+      ],
+      "id": "sony:dora"
+    },
+    {
+      "name": "Sony Xperia XZ",
+      "codename": "kagura",
+      "manufacturer": "Sony",
+      "aliases": [
+        "F8331",
+        "Xperia XZ"
+      ],
+      "id": "sony:kagura"
+    },
+    {
+      "name": "Sony Xperia X Compact",
+      "codename": "kugo",
+      "manufacturer": "Sony",
+      "aliases": [
+        "F5321",
+        "Xperia X Compact"
+      ],
+      "id": "sony:kugo"
+    },
+    {
+      "name": "Sony Xperia X",
+      "codename": "suzu",
+      "manufacturer": "Sony",
+      "aliases": [
+        "F5121",
+        "Xperia X"
+      ],
+      "id": "sony:suzu"
+    },
+    {
+      "name": "Sony Xperia XA2 Ultra",
+      "codename": "discovery",
+      "manufacturer": "Sony",
+      "aliases": [
+        "H4213",
+        "Xperia XA2 Ultra"
+      ],
+      "id": "sony:discovery"
+    },
+    {
+      "name": "Sony Xperia XA2",
+      "codename": "pioneer",
+      "manufacturer": "Sony",
+      "aliases": [
+        "H3113",
+        "Xperia XA2"
+      ],
+      "id": "sony:pioneer"
+    },
+    {
+      "name": "Sony Xperia XA1 Ultra",
+      "codename": "rhea",
+      "manufacturer": "Sony",
+      "aliases": [
+        "G3221",
+        "Xperia XA1 Ultra"
+      ],
+      "id": "sony:rhea"
+    },
+    {
+      "name": "Sony Xperia XA1",
+      "codename": "tonga",
+      "manufacturer": "Sony",
+      "aliases": [
+        "G3121",
+        "Xperia XA1"
+      ],
+      "id": "sony:tonga"
+    },
+    {
+      "name": "Sony Xperia Z5 Premium",
+      "codename": "satsuki",
+      "manufacturer": "Sony",
+      "aliases": [
+        "E6853",
+        "Xperia Z5 Premium"
+      ],
+      "id": "sony:satsuki"
+    },
+    {
+      "name": "Sony Xperia Z5",
+      "codename": "sumire",
+      "manufacturer": "Sony",
+      "aliases": [
+        "E6653",
+        "Xperia Z5"
+      ],
+      "id": "sony:sumire"
+    },
+    {
+      "name": "Sony Xperia Z3+",
+      "codename": "ivy",
+      "manufacturer": "Sony",
+      "aliases": [
+        "E6553",
+        "Xperia Z3+",
+        "Xperia Z4"
+      ],
+      "id": "sony:ivy"
+    },
+    {
+      "name": "Sony Xperia Z3",
+      "codename": "leo",
+      "manufacturer": "Sony",
+      "aliases": [
+        "D6603",
+        "Xperia Z3"
+      ],
+      "id": "sony:leo"
+    },
+    {
+      "name": "Sony Xperia Z2",
+      "codename": "sirius",
+      "manufacturer": "Sony",
+      "aliases": [
+        "D6503",
+        "Xperia Z2"
+      ],
+      "id": "sony:sirius"
+    },
+    {
+      "name": "Sony Xperia Z1",
+      "codename": "honami",
+      "manufacturer": "Sony",
+      "aliases": [
+        "C6903",
+        "Xperia Z1"
+      ],
+      "id": "sony:honami"
+    },
+    {
+      "name": "Sony Xperia Z Ultra",
+      "codename": "togari",
+      "manufacturer": "Sony",
+      "aliases": [
+        "C6833",
+        "Xperia Z Ultra"
+      ],
+      "id": "sony:togari"
+    },
+    {
+      "name": "Sony Xperia Z",
+      "codename": "yuga",
+      "manufacturer": "Sony",
+      "aliases": [
+        "C6603",
+        "Xperia Z"
+      ],
+      "id": "sony:yuga"
     }
   ],
   "sources": [
@@ -8190,7 +8582,7 @@
       "id": "76112af39951a386",
       "name": "LineageOS",
       "type": "custom_rom",
-      "device": "Xiaomi 14 Ultra",
+      "device": "Sony Xperia XZ2 Premium",
       "codename": "aurora",
       "android_version": "Android 15",
       "rom_version": "22.2",
@@ -8250,7 +8642,7 @@
         }
       ],
       "discovered_at": "2026-08-24T23:22:41+00:00",
-      "updated_at": "2026-08-25T05:45:43+00:00"
+      "updated_at": "2026-08-25T06:58:27+00:00"
     },
     {
       "id": "aa3e6a9f0da1eebe",
@@ -23863,6 +24255,1242 @@
       ],
       "discovered_at": "2026-08-25T06:48:35+00:00",
       "updated_at": "2026-08-25T06:48:35+00:00"
+    },
+    {
+      "id": "30c1dc5f1aca61ff",
+      "name": "LineageOS",
+      "type": "custom_rom",
+      "device": "Sony Xperia 1 VI",
+      "codename": "pdx245",
+      "android_version": "Android 16",
+      "rom_version": "23.2",
+      "build_date": "2026-08-22",
+      "status": "verified",
+      "source_url": "https://download.lineageos.org/api/v2/devices/pdx245/builds",
+      "download_url": "https://mirrorbits.lineageos.org/full/pdx245/20260822/lineage-23.2-20260822-nightly-pdx245-signed.zip",
+      "source_id": "lineageos_dl",
+      "evidence": [
+        {
+          "kind": "registered_source",
+          "detail": "LineageOS Downloads (official_download, trust 100)",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org"
+        },
+        {
+          "kind": "codename_in_url",
+          "detail": "codename 'pdx245' in URL path",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/pdx245/builds"
+        },
+        {
+          "kind": "artifact_link",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/pdx245/builds"
+        },
+        {
+          "kind": "artifact_extension",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/pdx245/builds"
+        },
+        {
+          "kind": "build_channel",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/pdx245/builds"
+        },
+        {
+          "kind": "build_evidence_tier",
+          "detail": "artifact",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/pdx245/builds"
+        },
+        {
+          "kind": "family_resolved",
+          "detail": "LineageOS",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/pdx245/builds"
+        },
+        {
+          "kind": "evidence_score",
+          "detail": "14",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/pdx245/builds"
+        }
+      ],
+      "discovered_at": "2026-08-25T06:52:04+00:00",
+      "updated_at": "2026-08-25T06:52:04+00:00"
+    },
+    {
+      "id": "f8398d5563869ad9",
+      "name": "LineageOS",
+      "type": "custom_rom",
+      "device": "Sony Xperia 1 V",
+      "codename": "pdx234",
+      "android_version": "Android 16",
+      "rom_version": "23.2",
+      "build_date": "2026-08-23",
+      "status": "verified",
+      "source_url": "https://download.lineageos.org/api/v2/devices/pdx234/builds",
+      "download_url": "https://mirrorbits.lineageos.org/full/pdx234/20260823/lineage-23.2-20260823-nightly-pdx234-signed.zip",
+      "source_id": "lineageos_dl",
+      "evidence": [
+        {
+          "kind": "registered_source",
+          "detail": "LineageOS Downloads (official_download, trust 100)",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org"
+        },
+        {
+          "kind": "codename_in_url",
+          "detail": "codename 'pdx234' in URL path",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/pdx234/builds"
+        },
+        {
+          "kind": "artifact_link",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/pdx234/builds"
+        },
+        {
+          "kind": "artifact_extension",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/pdx234/builds"
+        },
+        {
+          "kind": "build_channel",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/pdx234/builds"
+        },
+        {
+          "kind": "build_evidence_tier",
+          "detail": "artifact",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/pdx234/builds"
+        },
+        {
+          "kind": "family_resolved",
+          "detail": "LineageOS",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/pdx234/builds"
+        },
+        {
+          "kind": "evidence_score",
+          "detail": "14",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/pdx234/builds"
+        }
+      ],
+      "discovered_at": "2026-08-25T06:52:23+00:00",
+      "updated_at": "2026-08-25T06:52:23+00:00"
+    },
+    {
+      "id": "d049962734c13118",
+      "name": "LineageOS",
+      "type": "custom_rom",
+      "device": "Sony Xperia 1 IV",
+      "codename": "pdx223",
+      "android_version": "Android 16",
+      "rom_version": "23.2",
+      "build_date": "2026-08-20",
+      "status": "verified",
+      "source_url": "https://download.lineageos.org/api/v2/devices/pdx223/builds",
+      "download_url": "https://mirrorbits.lineageos.org/full/pdx223/20260820/lineage-23.2-20260820-nightly-pdx223-signed.zip",
+      "source_id": "lineageos_dl",
+      "evidence": [
+        {
+          "kind": "registered_source",
+          "detail": "LineageOS Downloads (official_download, trust 100)",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org"
+        },
+        {
+          "kind": "codename_in_url",
+          "detail": "codename 'pdx223' in URL path",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/pdx223/builds"
+        },
+        {
+          "kind": "artifact_link",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/pdx223/builds"
+        },
+        {
+          "kind": "artifact_extension",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/pdx223/builds"
+        },
+        {
+          "kind": "build_channel",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/pdx223/builds"
+        },
+        {
+          "kind": "build_evidence_tier",
+          "detail": "artifact",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/pdx223/builds"
+        },
+        {
+          "kind": "family_resolved",
+          "detail": "LineageOS",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/pdx223/builds"
+        },
+        {
+          "kind": "evidence_score",
+          "detail": "14",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/pdx223/builds"
+        }
+      ],
+      "discovered_at": "2026-08-25T06:52:41+00:00",
+      "updated_at": "2026-08-25T06:52:41+00:00"
+    },
+    {
+      "id": "03edf184f4b0c5c7",
+      "name": "PixelOS",
+      "type": "custom_rom",
+      "device": "Sony Xperia 1 IV",
+      "codename": "pdx223",
+      "android_version": "Android 17",
+      "rom_version": "17.0",
+      "build_date": "2026-08-21",
+      "status": "verified",
+      "source_url": "https://pixelos.net/download/pdx223",
+      "download_url": "https://download.pixelos.net/seventeen/pdx223/PixelOS_pdx223-17.0-20260821-1257.zip",
+      "source_id": "pixelos_site",
+      "evidence": [
+        {
+          "kind": "registered_source",
+          "detail": "PixelOS (official_project, trust 96)",
+          "source_id": "pixelos_site",
+          "url": "https://pixelos.net"
+        },
+        {
+          "kind": "codename_in_url",
+          "detail": "codename 'pdx223' in URL path",
+          "source_id": "pixelos_site",
+          "url": "https://pixelos.net/download/pdx223"
+        },
+        {
+          "kind": "device_name_match",
+          "detail": "device name 'Sony Xperia 1 IV' mentioned",
+          "source_id": "pixelos_site",
+          "url": "https://pixelos.net/download/pdx223"
+        },
+        {
+          "kind": "artifact_link",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "pixelos_site",
+          "url": "https://pixelos.net/download/pdx223"
+        },
+        {
+          "kind": "artifact_extension",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "pixelos_site",
+          "url": "https://pixelos.net/download/pdx223"
+        },
+        {
+          "kind": "download_word",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "pixelos_site",
+          "url": "https://pixelos.net/download/pdx223"
+        },
+        {
+          "kind": "changelog",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "pixelos_site",
+          "url": "https://pixelos.net/download/pdx223"
+        },
+        {
+          "kind": "build_evidence_tier",
+          "detail": "artifact",
+          "source_id": "pixelos_site",
+          "url": "https://pixelos.net/download/pdx223"
+        },
+        {
+          "kind": "family_resolved",
+          "detail": "PixelOS",
+          "source_id": "pixelos_site",
+          "url": "https://pixelos.net/download/pdx223"
+        },
+        {
+          "kind": "evidence_score",
+          "detail": "16",
+          "source_id": "pixelos_site",
+          "url": "https://pixelos.net/download/pdx223"
+        }
+      ],
+      "discovered_at": "2026-08-25T06:52:41+00:00",
+      "updated_at": "2026-08-25T06:52:41+00:00"
+    },
+    {
+      "id": "3c4597f4b9e6c12d",
+      "name": "LineageOS",
+      "type": "custom_rom",
+      "device": "Sony Xperia 1 III",
+      "codename": "pdx215",
+      "android_version": "Android 16",
+      "rom_version": "23.2",
+      "build_date": "2026-08-18",
+      "status": "verified",
+      "source_url": "https://download.lineageos.org/api/v2/devices/pdx215/builds",
+      "download_url": "https://mirrorbits.lineageos.org/full/pdx215/20260818/lineage-23.2-20260818-nightly-pdx215-signed.zip",
+      "source_id": "lineageos_dl",
+      "evidence": [
+        {
+          "kind": "registered_source",
+          "detail": "LineageOS Downloads (official_download, trust 100)",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org"
+        },
+        {
+          "kind": "codename_in_url",
+          "detail": "codename 'pdx215' in URL path",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/pdx215/builds"
+        },
+        {
+          "kind": "artifact_link",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/pdx215/builds"
+        },
+        {
+          "kind": "artifact_extension",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/pdx215/builds"
+        },
+        {
+          "kind": "build_channel",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/pdx215/builds"
+        },
+        {
+          "kind": "build_evidence_tier",
+          "detail": "artifact",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/pdx215/builds"
+        },
+        {
+          "kind": "family_resolved",
+          "detail": "LineageOS",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/pdx215/builds"
+        },
+        {
+          "kind": "evidence_score",
+          "detail": "14",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/pdx215/builds"
+        }
+      ],
+      "discovered_at": "2026-08-25T06:53:07+00:00",
+      "updated_at": "2026-08-25T06:53:07+00:00"
+    },
+    {
+      "id": "6f5f65d819273791",
+      "name": "LineageOS",
+      "type": "custom_rom",
+      "device": "Sony Xperia 5 V",
+      "codename": "pdx237",
+      "android_version": "Android 16",
+      "rom_version": "23.2",
+      "build_date": "2026-08-19",
+      "status": "verified",
+      "source_url": "https://download.lineageos.org/api/v2/devices/pdx237/builds",
+      "download_url": "https://mirrorbits.lineageos.org/full/pdx237/20260819/lineage-23.2-20260819-nightly-pdx237-signed.zip",
+      "source_id": "lineageos_dl",
+      "evidence": [
+        {
+          "kind": "registered_source",
+          "detail": "LineageOS Downloads (official_download, trust 100)",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org"
+        },
+        {
+          "kind": "codename_in_url",
+          "detail": "codename 'pdx237' in URL path",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/pdx237/builds"
+        },
+        {
+          "kind": "artifact_link",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/pdx237/builds"
+        },
+        {
+          "kind": "artifact_extension",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/pdx237/builds"
+        },
+        {
+          "kind": "build_channel",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/pdx237/builds"
+        },
+        {
+          "kind": "build_evidence_tier",
+          "detail": "artifact",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/pdx237/builds"
+        },
+        {
+          "kind": "family_resolved",
+          "detail": "LineageOS",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/pdx237/builds"
+        },
+        {
+          "kind": "evidence_score",
+          "detail": "14",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/pdx237/builds"
+        }
+      ],
+      "discovered_at": "2026-08-25T06:54:06+00:00",
+      "updated_at": "2026-08-25T06:54:06+00:00"
+    },
+    {
+      "id": "19f7db21839b5885",
+      "name": "LineageOS",
+      "type": "custom_rom",
+      "device": "Sony Xperia 5 IV",
+      "codename": "pdx224",
+      "android_version": "Android 16",
+      "rom_version": "23.2",
+      "build_date": "2026-08-22",
+      "status": "verified",
+      "source_url": "https://download.lineageos.org/api/v2/devices/pdx224/builds",
+      "download_url": "https://mirrorbits.lineageos.org/full/pdx224/20260822/lineage-23.2-20260822-nightly-pdx224-signed.zip",
+      "source_id": "lineageos_dl",
+      "evidence": [
+        {
+          "kind": "registered_source",
+          "detail": "LineageOS Downloads (official_download, trust 100)",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org"
+        },
+        {
+          "kind": "codename_in_url",
+          "detail": "codename 'pdx224' in URL path",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/pdx224/builds"
+        },
+        {
+          "kind": "artifact_link",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/pdx224/builds"
+        },
+        {
+          "kind": "artifact_extension",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/pdx224/builds"
+        },
+        {
+          "kind": "build_channel",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/pdx224/builds"
+        },
+        {
+          "kind": "build_evidence_tier",
+          "detail": "artifact",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/pdx224/builds"
+        },
+        {
+          "kind": "family_resolved",
+          "detail": "LineageOS",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/pdx224/builds"
+        },
+        {
+          "kind": "evidence_score",
+          "detail": "14",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/pdx224/builds"
+        }
+      ],
+      "discovered_at": "2026-08-25T06:54:24+00:00",
+      "updated_at": "2026-08-25T06:54:24+00:00"
+    },
+    {
+      "id": "edc12fa09421b8a6",
+      "name": "PixelOS",
+      "type": "custom_rom",
+      "device": "Sony Xperia 5 IV",
+      "codename": "pdx224",
+      "android_version": "Android 17",
+      "rom_version": "17.0",
+      "build_date": "2026-08-21",
+      "status": "verified",
+      "source_url": "https://pixelos.net/download/pdx224",
+      "download_url": "https://download.pixelos.net/seventeen/pdx224/PixelOS_pdx224-17.0-20260821-1439.zip",
+      "source_id": "pixelos_site",
+      "evidence": [
+        {
+          "kind": "registered_source",
+          "detail": "PixelOS (official_project, trust 96)",
+          "source_id": "pixelos_site",
+          "url": "https://pixelos.net"
+        },
+        {
+          "kind": "codename_in_url",
+          "detail": "codename 'pdx224' in URL path",
+          "source_id": "pixelos_site",
+          "url": "https://pixelos.net/download/pdx224"
+        },
+        {
+          "kind": "device_name_match",
+          "detail": "device name 'Sony Xperia 5 IV' mentioned",
+          "source_id": "pixelos_site",
+          "url": "https://pixelos.net/download/pdx224"
+        },
+        {
+          "kind": "artifact_link",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "pixelos_site",
+          "url": "https://pixelos.net/download/pdx224"
+        },
+        {
+          "kind": "artifact_extension",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "pixelos_site",
+          "url": "https://pixelos.net/download/pdx224"
+        },
+        {
+          "kind": "download_word",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "pixelos_site",
+          "url": "https://pixelos.net/download/pdx224"
+        },
+        {
+          "kind": "changelog",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "pixelos_site",
+          "url": "https://pixelos.net/download/pdx224"
+        },
+        {
+          "kind": "build_evidence_tier",
+          "detail": "artifact",
+          "source_id": "pixelos_site",
+          "url": "https://pixelos.net/download/pdx224"
+        },
+        {
+          "kind": "family_resolved",
+          "detail": "PixelOS",
+          "source_id": "pixelos_site",
+          "url": "https://pixelos.net/download/pdx224"
+        },
+        {
+          "kind": "evidence_score",
+          "detail": "16",
+          "source_id": "pixelos_site",
+          "url": "https://pixelos.net/download/pdx224"
+        }
+      ],
+      "discovered_at": "2026-08-25T06:54:24+00:00",
+      "updated_at": "2026-08-25T06:54:24+00:00"
+    },
+    {
+      "id": "377641de3acc0e95",
+      "name": "LineageOS",
+      "type": "custom_rom",
+      "device": "Sony Xperia 5 III",
+      "codename": "pdx214",
+      "android_version": "Android 16",
+      "rom_version": "23.2",
+      "build_date": "2026-08-21",
+      "status": "verified",
+      "source_url": "https://download.lineageos.org/api/v2/devices/pdx214/builds",
+      "download_url": "https://mirrorbits.lineageos.org/full/pdx214/20260821/lineage-23.2-20260821-nightly-pdx214-signed.zip",
+      "source_id": "lineageos_dl",
+      "evidence": [
+        {
+          "kind": "registered_source",
+          "detail": "LineageOS Downloads (official_download, trust 100)",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org"
+        },
+        {
+          "kind": "codename_in_url",
+          "detail": "codename 'pdx214' in URL path",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/pdx214/builds"
+        },
+        {
+          "kind": "artifact_link",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/pdx214/builds"
+        },
+        {
+          "kind": "artifact_extension",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/pdx214/builds"
+        },
+        {
+          "kind": "build_channel",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/pdx214/builds"
+        },
+        {
+          "kind": "build_evidence_tier",
+          "detail": "artifact",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/pdx214/builds"
+        },
+        {
+          "kind": "family_resolved",
+          "detail": "LineageOS",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/pdx214/builds"
+        },
+        {
+          "kind": "evidence_score",
+          "detail": "14",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/pdx214/builds"
+        }
+      ],
+      "discovered_at": "2026-08-25T06:54:48+00:00",
+      "updated_at": "2026-08-25T06:54:48+00:00"
+    },
+    {
+      "id": "03114de3b78a0091",
+      "name": "LineageOS",
+      "type": "custom_rom",
+      "device": "Sony Xperia 5 II",
+      "codename": "pdx206",
+      "android_version": "Android 16",
+      "rom_version": "23.2",
+      "build_date": "2026-08-22",
+      "status": "verified",
+      "source_url": "https://download.lineageos.org/api/v2/devices/pdx206/builds",
+      "download_url": "https://mirrorbits.lineageos.org/full/pdx206/20260822/lineage-23.2-20260822-nightly-pdx206-signed.zip",
+      "source_id": "lineageos_dl",
+      "evidence": [
+        {
+          "kind": "registered_source",
+          "detail": "LineageOS Downloads (official_download, trust 100)",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org"
+        },
+        {
+          "kind": "codename_in_url",
+          "detail": "codename 'pdx206' in URL path",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/pdx206/builds"
+        },
+        {
+          "kind": "artifact_link",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/pdx206/builds"
+        },
+        {
+          "kind": "artifact_extension",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/pdx206/builds"
+        },
+        {
+          "kind": "build_channel",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/pdx206/builds"
+        },
+        {
+          "kind": "build_evidence_tier",
+          "detail": "artifact",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/pdx206/builds"
+        },
+        {
+          "kind": "family_resolved",
+          "detail": "LineageOS",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/pdx206/builds"
+        },
+        {
+          "kind": "evidence_score",
+          "detail": "14",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/pdx206/builds"
+        }
+      ],
+      "discovered_at": "2026-08-25T06:55:05+00:00",
+      "updated_at": "2026-08-25T06:55:05+00:00"
+    },
+    {
+      "id": "9d101d8d49db0901",
+      "name": "PixelOS",
+      "type": "custom_rom",
+      "device": "Sony Xperia 5 II",
+      "codename": "pdx206",
+      "android_version": "Android 14",
+      "rom_version": "14.0",
+      "build_date": "2024-06-29",
+      "status": "verified",
+      "source_url": "https://pixelos.net/download/pdx206",
+      "download_url": "https://sourceforge.net/projects/pixelos-releases/files/fourteen/pdx206/PixelOS_pdx206-14.0-20240629-1057.zip",
+      "source_id": "pixelos_site",
+      "evidence": [
+        {
+          "kind": "registered_source",
+          "detail": "PixelOS (official_project, trust 96)",
+          "source_id": "pixelos_site",
+          "url": "https://pixelos.net"
+        },
+        {
+          "kind": "codename_in_url",
+          "detail": "codename 'pdx206' in URL path",
+          "source_id": "pixelos_site",
+          "url": "https://pixelos.net/download/pdx206"
+        },
+        {
+          "kind": "device_name_match",
+          "detail": "device name 'Sony Xperia 5 II' mentioned",
+          "source_id": "pixelos_site",
+          "url": "https://pixelos.net/download/pdx206"
+        },
+        {
+          "kind": "artifact_link",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "pixelos_site",
+          "url": "https://pixelos.net/download/pdx206"
+        },
+        {
+          "kind": "artifact_extension",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "pixelos_site",
+          "url": "https://pixelos.net/download/pdx206"
+        },
+        {
+          "kind": "download_word",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "pixelos_site",
+          "url": "https://pixelos.net/download/pdx206"
+        },
+        {
+          "kind": "changelog",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "pixelos_site",
+          "url": "https://pixelos.net/download/pdx206"
+        },
+        {
+          "kind": "build_evidence_tier",
+          "detail": "artifact",
+          "source_id": "pixelos_site",
+          "url": "https://pixelos.net/download/pdx206"
+        },
+        {
+          "kind": "family_resolved",
+          "detail": "PixelOS",
+          "source_id": "pixelos_site",
+          "url": "https://pixelos.net/download/pdx206"
+        },
+        {
+          "kind": "evidence_score",
+          "detail": "16",
+          "source_id": "pixelos_site",
+          "url": "https://pixelos.net/download/pdx206"
+        }
+      ],
+      "discovered_at": "2026-08-25T06:55:05+00:00",
+      "updated_at": "2026-08-25T06:55:05+00:00"
+    },
+    {
+      "id": "5416b4d2f4f57a03",
+      "name": "LineageOS",
+      "type": "custom_rom",
+      "device": "Sony Xperia 10 V",
+      "codename": "pdx235",
+      "android_version": "Android 16",
+      "rom_version": "23.2",
+      "build_date": "2026-08-21",
+      "status": "verified",
+      "source_url": "https://download.lineageos.org/api/v2/devices/pdx235/builds",
+      "download_url": "https://mirrorbits.lineageos.org/full/pdx235/20260821/lineage-23.2-20260821-nightly-pdx235-signed.zip",
+      "source_id": "lineageos_dl",
+      "evidence": [
+        {
+          "kind": "registered_source",
+          "detail": "LineageOS Downloads (official_download, trust 100)",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org"
+        },
+        {
+          "kind": "codename_in_url",
+          "detail": "codename 'pdx235' in URL path",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/pdx235/builds"
+        },
+        {
+          "kind": "artifact_link",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/pdx235/builds"
+        },
+        {
+          "kind": "artifact_extension",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/pdx235/builds"
+        },
+        {
+          "kind": "build_channel",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/pdx235/builds"
+        },
+        {
+          "kind": "build_evidence_tier",
+          "detail": "artifact",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/pdx235/builds"
+        },
+        {
+          "kind": "family_resolved",
+          "detail": "LineageOS",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/pdx235/builds"
+        },
+        {
+          "kind": "evidence_score",
+          "detail": "14",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/pdx235/builds"
+        }
+      ],
+      "discovered_at": "2026-08-25T06:56:07+00:00",
+      "updated_at": "2026-08-25T06:56:07+00:00"
+    },
+    {
+      "id": "7ac45eaa8d69c886",
+      "name": "LineageOS",
+      "type": "custom_rom",
+      "device": "Sony Xperia 10 IV",
+      "codename": "pdx225",
+      "android_version": "Android 16",
+      "rom_version": "23.2",
+      "build_date": "2026-08-20",
+      "status": "verified",
+      "source_url": "https://download.lineageos.org/api/v2/devices/pdx225/builds",
+      "download_url": "https://mirrorbits.lineageos.org/full/pdx225/20260820/lineage-23.2-20260820-nightly-pdx225-signed.zip",
+      "source_id": "lineageos_dl",
+      "evidence": [
+        {
+          "kind": "registered_source",
+          "detail": "LineageOS Downloads (official_download, trust 100)",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org"
+        },
+        {
+          "kind": "codename_in_url",
+          "detail": "codename 'pdx225' in URL path",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/pdx225/builds"
+        },
+        {
+          "kind": "artifact_link",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/pdx225/builds"
+        },
+        {
+          "kind": "artifact_extension",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/pdx225/builds"
+        },
+        {
+          "kind": "build_channel",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/pdx225/builds"
+        },
+        {
+          "kind": "build_evidence_tier",
+          "detail": "artifact",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/pdx225/builds"
+        },
+        {
+          "kind": "family_resolved",
+          "detail": "LineageOS",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/pdx225/builds"
+        },
+        {
+          "kind": "evidence_score",
+          "detail": "14",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/pdx225/builds"
+        }
+      ],
+      "discovered_at": "2026-08-25T06:56:31+00:00",
+      "updated_at": "2026-08-25T06:56:31+00:00"
+    },
+    {
+      "id": "cdb0107d18003581",
+      "name": "LineageOS",
+      "type": "custom_rom",
+      "device": "Sony Xperia XZ3",
+      "codename": "akatsuki",
+      "android_version": "Android 15",
+      "rom_version": "22.2",
+      "build_date": "2026-08-18",
+      "status": "verified",
+      "source_url": "https://download.lineageos.org/api/v2/devices/akatsuki/builds",
+      "download_url": "https://mirrorbits.lineageos.org/full/akatsuki/20260818/lineage-22.2-20260818-nightly-akatsuki-signed.zip",
+      "source_id": "lineageos_dl",
+      "evidence": [
+        {
+          "kind": "registered_source",
+          "detail": "LineageOS Downloads (official_download, trust 100)",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org"
+        },
+        {
+          "kind": "codename_in_url",
+          "detail": "codename 'akatsuki' in URL path",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/akatsuki/builds"
+        },
+        {
+          "kind": "artifact_link",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/akatsuki/builds"
+        },
+        {
+          "kind": "artifact_extension",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/akatsuki/builds"
+        },
+        {
+          "kind": "build_channel",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/akatsuki/builds"
+        },
+        {
+          "kind": "build_evidence_tier",
+          "detail": "artifact",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/akatsuki/builds"
+        },
+        {
+          "kind": "family_resolved",
+          "detail": "LineageOS",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/akatsuki/builds"
+        },
+        {
+          "kind": "evidence_score",
+          "detail": "14",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/akatsuki/builds"
+        }
+      ],
+      "discovered_at": "2026-08-25T06:58:07+00:00",
+      "updated_at": "2026-08-25T06:58:07+00:00"
+    },
+    {
+      "id": "6a2fb558b62d4d56",
+      "name": "LineageOS",
+      "type": "custom_rom",
+      "device": "Sony Xperia XZ2",
+      "codename": "akari",
+      "android_version": "Android 15",
+      "rom_version": "22.2",
+      "build_date": "2026-08-21",
+      "status": "verified",
+      "source_url": "https://download.lineageos.org/api/v2/devices/akari/builds",
+      "download_url": "https://mirrorbits.lineageos.org/full/akari/20260821/lineage-22.2-20260821-nightly-akari-signed.zip",
+      "source_id": "lineageos_dl",
+      "evidence": [
+        {
+          "kind": "registered_source",
+          "detail": "LineageOS Downloads (official_download, trust 100)",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org"
+        },
+        {
+          "kind": "codename_in_url",
+          "detail": "codename 'akari' in URL path",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/akari/builds"
+        },
+        {
+          "kind": "artifact_link",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/akari/builds"
+        },
+        {
+          "kind": "artifact_extension",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/akari/builds"
+        },
+        {
+          "kind": "build_channel",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/akari/builds"
+        },
+        {
+          "kind": "build_evidence_tier",
+          "detail": "artifact",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/akari/builds"
+        },
+        {
+          "kind": "family_resolved",
+          "detail": "LineageOS",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/akari/builds"
+        },
+        {
+          "kind": "evidence_score",
+          "detail": "14",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/akari/builds"
+        }
+      ],
+      "discovered_at": "2026-08-25T06:58:45+00:00",
+      "updated_at": "2026-08-25T06:58:45+00:00"
+    },
+    {
+      "id": "0c188a46bbc050f4",
+      "name": "LineageOS",
+      "type": "custom_rom",
+      "device": "Sony Xperia XA2 Ultra",
+      "codename": "discovery",
+      "android_version": "Android 16",
+      "rom_version": "23.2",
+      "build_date": "2026-08-20",
+      "status": "verified",
+      "source_url": "https://download.lineageos.org/api/v2/devices/discovery/builds",
+      "download_url": "https://mirrorbits.lineageos.org/full/discovery/20260820/lineage-23.2-20260820-nightly-discovery-signed.zip",
+      "source_id": "lineageos_dl",
+      "evidence": [
+        {
+          "kind": "registered_source",
+          "detail": "LineageOS Downloads (official_download, trust 100)",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org"
+        },
+        {
+          "kind": "codename_in_url",
+          "detail": "codename 'discovery' in URL path",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/discovery/builds"
+        },
+        {
+          "kind": "artifact_link",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/discovery/builds"
+        },
+        {
+          "kind": "artifact_extension",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/discovery/builds"
+        },
+        {
+          "kind": "build_channel",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/discovery/builds"
+        },
+        {
+          "kind": "build_evidence_tier",
+          "detail": "artifact",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/discovery/builds"
+        },
+        {
+          "kind": "family_resolved",
+          "detail": "LineageOS",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/discovery/builds"
+        },
+        {
+          "kind": "evidence_score",
+          "detail": "14",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/discovery/builds"
+        }
+      ],
+      "discovered_at": "2026-08-25T07:01:03+00:00",
+      "updated_at": "2026-08-25T07:01:03+00:00"
+    },
+    {
+      "id": "4e00d5b893872a94",
+      "name": "LineageOS",
+      "type": "custom_rom",
+      "device": "Sony Xperia XA2",
+      "codename": "pioneer",
+      "android_version": "Android 16",
+      "rom_version": "23.2",
+      "build_date": "2026-08-20",
+      "status": "verified",
+      "source_url": "https://download.lineageos.org/api/v2/devices/pioneer/builds",
+      "download_url": "https://mirrorbits.lineageos.org/full/pioneer/20260820/lineage-23.2-20260820-nightly-pioneer-signed.zip",
+      "source_id": "lineageos_dl",
+      "evidence": [
+        {
+          "kind": "registered_source",
+          "detail": "LineageOS Downloads (official_download, trust 100)",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org"
+        },
+        {
+          "kind": "codename_in_url",
+          "detail": "codename 'pioneer' in URL path",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/pioneer/builds"
+        },
+        {
+          "kind": "artifact_link",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/pioneer/builds"
+        },
+        {
+          "kind": "artifact_extension",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/pioneer/builds"
+        },
+        {
+          "kind": "build_channel",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/pioneer/builds"
+        },
+        {
+          "kind": "build_evidence_tier",
+          "detail": "artifact",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/pioneer/builds"
+        },
+        {
+          "kind": "family_resolved",
+          "detail": "LineageOS",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/pioneer/builds"
+        },
+        {
+          "kind": "evidence_score",
+          "detail": "14",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/pioneer/builds"
+        }
+      ],
+      "discovered_at": "2026-08-25T07:01:26+00:00",
+      "updated_at": "2026-08-25T07:01:26+00:00"
+    },
+    {
+      "id": "057c01cdff888143",
+      "name": "Pixel Experience",
+      "type": "custom_rom",
+      "device": "Sony Xperia Z2",
+      "codename": "sirius",
+      "android_version": "Android 13",
+      "rom_version": "13",
+      "build_date": "2023-11-30",
+      "status": "verified",
+      "source_url": "https://get.pixelexperience.org/Sirius",
+      "download_url": "https://get.pixelexperience.org/changelog/sirius/PixelExperience_sirius-13.0-20231130-0904-OFFICIAL.zip",
+      "source_id": "pe_dl",
+      "evidence": [
+        {
+          "kind": "registered_source",
+          "detail": "Pixel Experience Downloads (official_download, trust 100)",
+          "source_id": "pe_dl",
+          "url": "https://get.pixelexperience.org"
+        },
+        {
+          "kind": "codename_in_url",
+          "detail": "codename 'sirius' in URL path",
+          "source_id": "pe_dl",
+          "url": "https://get.pixelexperience.org/Sirius"
+        },
+        {
+          "kind": "artifact_link",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "pe_dl",
+          "url": "https://get.pixelexperience.org/Sirius"
+        },
+        {
+          "kind": "artifact_extension",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "pe_dl",
+          "url": "https://get.pixelexperience.org/Sirius"
+        },
+        {
+          "kind": "checksum",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "pe_dl",
+          "url": "https://get.pixelexperience.org/Sirius"
+        },
+        {
+          "kind": "download_word",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "pe_dl",
+          "url": "https://get.pixelexperience.org/Sirius"
+        },
+        {
+          "kind": "changelog",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "pe_dl",
+          "url": "https://get.pixelexperience.org/Sirius"
+        },
+        {
+          "kind": "build_evidence_tier",
+          "detail": "artifact",
+          "source_id": "pe_dl",
+          "url": "https://get.pixelexperience.org/Sirius"
+        },
+        {
+          "kind": "family_resolved",
+          "detail": "Pixel Experience",
+          "source_id": "pe_dl",
+          "url": "https://get.pixelexperience.org/Sirius"
+        },
+        {
+          "kind": "evidence_score",
+          "detail": "15",
+          "source_id": "pe_dl",
+          "url": "https://get.pixelexperience.org/Sirius"
+        }
+      ],
+      "discovered_at": "2026-08-25T07:03:45+00:00",
+      "updated_at": "2026-08-25T07:03:45+00:00"
     }
   ],
   "candidates": [
@@ -28105,6 +29733,216 @@
       "download_links": [],
       "query": "direct:source",
       "device_id": "motorola:ali"
+    },
+    {
+      "url": "https://download.lineageos.org/api/v2/devices/pdx245/builds",
+      "title": "LineageOS 23.2 Builds",
+      "text": "LineageOS lineage-23.2 version 23.2 build 2026-08-22 nightly https://mirrorbits.lineageos.org/full/pdx245/20260822/lineage-23.2-20260822-nightly-pdx245-signed.zip LineageOS lineage-23.2 version 23.2 build 2026-08-15 nightly https://mirrorbits.lineageos.org/full/pdx245/20260815/lineage-23.2-20260815-nightly-pdx245-signed.zip LineageOS lineage-23.2 version 23.2 build 2026-08-08 nightly https://mirrorbits.lineageos.org/full/pdx245/20260808/lineage-23.2-20260808-nightly-pdx245-signed.zip https://mirrorbits.lineageos.org/full/pdx245/20260822/lineage-23.2-20260822-nightly-pdx245-signed.zip https://mirrorbits.lineageos.org/full/pdx245/20260815/lineage-23.2-20260815-nightly-pdx245-signed.zip https://mirrorbits.lineageos.org/full/pdx245/20260808/lineage-23.2-20260808-nightly-pdx245-signed.zip",
+      "source_id": "lineageos_dl",
+      "download_url": null,
+      "download_links": [],
+      "query": "direct:source",
+      "device_id": "sony:pdx245"
+    },
+    {
+      "url": "https://download.lineageos.org/api/v2/devices/pdx234/builds",
+      "title": "LineageOS 23.2 Builds",
+      "text": "LineageOS lineage-23.2 version 23.2 build 2026-08-23 nightly https://mirrorbits.lineageos.org/full/pdx234/20260823/lineage-23.2-20260823-nightly-pdx234-signed.zip LineageOS lineage-23.2 version 23.2 build 2026-08-16 nightly https://mirrorbits.lineageos.org/full/pdx234/20260816/lineage-23.2-20260816-nightly-pdx234-signed.zip LineageOS lineage-23.2 version 23.2 build 2026-08-09 nightly https://mirrorbits.lineageos.org/full/pdx234/20260809/lineage-23.2-20260809-nightly-pdx234-signed.zip https://mirrorbits.lineageos.org/full/pdx234/20260823/lineage-23.2-20260823-nightly-pdx234-signed.zip https://mirrorbits.lineageos.org/full/pdx234/20260816/lineage-23.2-20260816-nightly-pdx234-signed.zip https://mirrorbits.lineageos.org/full/pdx234/20260809/lineage-23.2-20260809-nightly-pdx234-signed.zip",
+      "source_id": "lineageos_dl",
+      "download_url": null,
+      "download_links": [],
+      "query": "direct:source",
+      "device_id": "sony:pdx234"
+    },
+    {
+      "url": "https://download.lineageos.org/api/v2/devices/pdx223/builds",
+      "title": "LineageOS 23.2 Builds",
+      "text": "LineageOS lineage-23.2 version 23.2 build 2026-08-20 nightly https://mirrorbits.lineageos.org/full/pdx223/20260820/lineage-23.2-20260820-nightly-pdx223-signed.zip LineageOS lineage-23.2 version 23.2 build 2026-08-13 nightly https://mirrorbits.lineageos.org/full/pdx223/20260813/lineage-23.2-20260813-nightly-pdx223-signed.zip LineageOS lineage-23.2 version 23.2 build 2026-08-06 nightly https://mirrorbits.lineageos.org/full/pdx223/20260806/lineage-23.2-20260806-nightly-pdx223-signed.zip https://mirrorbits.lineageos.org/full/pdx223/20260820/lineage-23.2-20260820-nightly-pdx223-signed.zip https://mirrorbits.lineageos.org/full/pdx223/20260813/lineage-23.2-20260813-nightly-pdx223-signed.zip https://mirrorbits.lineageos.org/full/pdx223/20260806/lineage-23.2-20260806-nightly-pdx223-signed.zip",
+      "source_id": "lineageos_dl",
+      "download_url": null,
+      "download_links": [],
+      "query": "direct:source",
+      "device_id": "sony:pdx223"
+    },
+    {
+      "url": "https://pixelos.net/download/pdx223",
+      "title": "PixelOS - pdx223",
+      "text": "PixelOS - pdx223 PixelOS About Download Team Blog About Download Team Blog Model: Sony Xperia 1 IV Codename: pdx223 Status: Active Version: 17.0 Release: monthly Last Updated: 21 August 2026 Maintainer: Tuan Anh Latest build: Download XDA Thread: XDA Previous Builds: Archive Latest Build Info Additional Images Platform Changelog Device Changelog Instructions If you are looking for builds of previous versions of Android, you can find them over here. Support Us Help keep PixelOS active by donating. Any amount is appreciated. Paypal 2026 PixelOS https://download.pixelos.net/seventeen/pdx223/PixelOS_pdx223-17.0-20260821-1257.zip",
+      "source_id": "pixelos_site",
+      "download_url": null,
+      "download_links": [],
+      "query": "direct:source",
+      "device_id": "sony:pdx223"
+    },
+    {
+      "url": "https://download.lineageos.org/api/v2/devices/pdx215/builds",
+      "title": "LineageOS 23.2 Builds",
+      "text": "LineageOS lineage-23.2 version 23.2 build 2026-08-18 nightly https://mirrorbits.lineageos.org/full/pdx215/20260818/lineage-23.2-20260818-nightly-pdx215-signed.zip LineageOS lineage-23.2 version 23.2 build 2026-08-11 nightly https://mirrorbits.lineageos.org/full/pdx215/20260811/lineage-23.2-20260811-nightly-pdx215-signed.zip LineageOS lineage-23.2 version 23.2 build 2026-08-04 nightly https://mirrorbits.lineageos.org/full/pdx215/20260804/lineage-23.2-20260804-nightly-pdx215-signed.zip https://mirrorbits.lineageos.org/full/pdx215/20260818/lineage-23.2-20260818-nightly-pdx215-signed.zip https://mirrorbits.lineageos.org/full/pdx215/20260811/lineage-23.2-20260811-nightly-pdx215-signed.zip https://mirrorbits.lineageos.org/full/pdx215/20260804/lineage-23.2-20260804-nightly-pdx215-signed.zip",
+      "source_id": "lineageos_dl",
+      "download_url": null,
+      "download_links": [],
+      "query": "direct:source",
+      "device_id": "sony:pdx215"
+    },
+    {
+      "url": "https://download.lineageos.org/api/v2/devices/pdx203/builds",
+      "title": "LineageOS 23.2 Builds",
+      "text": "LineageOS lineage-23.2 version 23.2 build 2026-08-21 nightly https://mirrorbits.lineageos.org/full/pdx203/20260821/lineage-23.2-20260821-nightly-pdx203-signed.zip LineageOS lineage-23.2 version 23.2 build 2026-08-14 nightly https://mirrorbits.lineageos.org/full/pdx203/20260814/lineage-23.2-20260814-nightly-pdx203-signed.zip LineageOS lineage-23.2 version 23.2 build 2026-08-07 nightly https://mirrorbits.lineageos.org/full/pdx203/20260807/lineage-23.2-20260807-nightly-pdx203-signed.zip https://mirrorbits.lineageos.org/full/pdx203/20260821/lineage-23.2-20260821-nightly-pdx203-signed.zip https://mirrorbits.lineageos.org/full/pdx203/20260814/lineage-23.2-20260814-nightly-pdx203-signed.zip https://mirrorbits.lineageos.org/full/pdx203/20260807/lineage-23.2-20260807-nightly-pdx203-signed.zip",
+      "source_id": "lineageos_dl",
+      "download_url": null,
+      "download_links": [],
+      "query": "direct:source",
+      "device_id": "sony:mirai"
+    },
+    {
+      "url": "https://download.lineageos.org/api/v2/devices/pdx237/builds",
+      "title": "LineageOS 23.2 Builds",
+      "text": "LineageOS lineage-23.2 version 23.2 build 2026-08-19 nightly https://mirrorbits.lineageos.org/full/pdx237/20260819/lineage-23.2-20260819-nightly-pdx237-signed.zip LineageOS lineage-23.2 version 23.2 build 2026-08-12 nightly https://mirrorbits.lineageos.org/full/pdx237/20260812/lineage-23.2-20260812-nightly-pdx237-signed.zip LineageOS lineage-23.2 version 23.2 build 2026-08-05 nightly https://mirrorbits.lineageos.org/full/pdx237/20260805/lineage-23.2-20260805-nightly-pdx237-signed.zip https://mirrorbits.lineageos.org/full/pdx237/20260819/lineage-23.2-20260819-nightly-pdx237-signed.zip https://mirrorbits.lineageos.org/full/pdx237/20260812/lineage-23.2-20260812-nightly-pdx237-signed.zip https://mirrorbits.lineageos.org/full/pdx237/20260805/lineage-23.2-20260805-nightly-pdx237-signed.zip",
+      "source_id": "lineageos_dl",
+      "download_url": null,
+      "download_links": [],
+      "query": "direct:source",
+      "device_id": "sony:pdx237"
+    },
+    {
+      "url": "https://download.lineageos.org/api/v2/devices/pdx224/builds",
+      "title": "LineageOS 23.2 Builds",
+      "text": "LineageOS lineage-23.2 version 23.2 build 2026-08-22 nightly https://mirrorbits.lineageos.org/full/pdx224/20260822/lineage-23.2-20260822-nightly-pdx224-signed.zip LineageOS lineage-23.2 version 23.2 build 2026-08-15 nightly https://mirrorbits.lineageos.org/full/pdx224/20260815/lineage-23.2-20260815-nightly-pdx224-signed.zip LineageOS lineage-23.2 version 23.2 build 2026-08-08 nightly https://mirrorbits.lineageos.org/full/pdx224/20260808/lineage-23.2-20260808-nightly-pdx224-signed.zip https://mirrorbits.lineageos.org/full/pdx224/20260822/lineage-23.2-20260822-nightly-pdx224-signed.zip https://mirrorbits.lineageos.org/full/pdx224/20260815/lineage-23.2-20260815-nightly-pdx224-signed.zip https://mirrorbits.lineageos.org/full/pdx224/20260808/lineage-23.2-20260808-nightly-pdx224-signed.zip",
+      "source_id": "lineageos_dl",
+      "download_url": null,
+      "download_links": [],
+      "query": "direct:source",
+      "device_id": "sony:pdx224"
+    },
+    {
+      "url": "https://pixelos.net/download/pdx224",
+      "title": "PixelOS - pdx224",
+      "text": "PixelOS - pdx224 PixelOS About Download Team Blog About Download Team Blog Model: Sony Xperia 5 IV Codename: pdx224 Status: Active Version: 17.0 Release: monthly Last Updated: 22 August 2026 Maintainer: Tuan Anh Latest build: Download XDA Thread: XDA Previous Builds: Archive Latest Build Info Additional Images Platform Changelog Device Changelog Instructions If you are looking for builds of previous versions of Android, you can find them over here. Support Us Help keep PixelOS active by donating. Any amount is appreciated. Paypal 2026 PixelOS https://download.pixelos.net/seventeen/pdx224/PixelOS_pdx224-17.0-20260821-1439.zip",
+      "source_id": "pixelos_site",
+      "download_url": null,
+      "download_links": [],
+      "query": "direct:source",
+      "device_id": "sony:pdx224"
+    },
+    {
+      "url": "https://download.lineageos.org/api/v2/devices/pdx214/builds",
+      "title": "LineageOS 23.2 Builds",
+      "text": "LineageOS lineage-23.2 version 23.2 build 2026-08-21 nightly https://mirrorbits.lineageos.org/full/pdx214/20260821/lineage-23.2-20260821-nightly-pdx214-signed.zip LineageOS lineage-23.2 version 23.2 build 2026-08-14 nightly https://mirrorbits.lineageos.org/full/pdx214/20260814/lineage-23.2-20260814-nightly-pdx214-signed.zip LineageOS lineage-23.2 version 23.2 build 2026-08-07 nightly https://mirrorbits.lineageos.org/full/pdx214/20260807/lineage-23.2-20260807-nightly-pdx214-signed.zip https://mirrorbits.lineageos.org/full/pdx214/20260821/lineage-23.2-20260821-nightly-pdx214-signed.zip https://mirrorbits.lineageos.org/full/pdx214/20260814/lineage-23.2-20260814-nightly-pdx214-signed.zip https://mirrorbits.lineageos.org/full/pdx214/20260807/lineage-23.2-20260807-nightly-pdx214-signed.zip",
+      "source_id": "lineageos_dl",
+      "download_url": null,
+      "download_links": [],
+      "query": "direct:source",
+      "device_id": "sony:pdx214"
+    },
+    {
+      "url": "https://download.lineageos.org/api/v2/devices/pdx206/builds",
+      "title": "LineageOS 23.2 Builds",
+      "text": "LineageOS lineage-23.2 version 23.2 build 2026-08-22 nightly https://mirrorbits.lineageos.org/full/pdx206/20260822/lineage-23.2-20260822-nightly-pdx206-signed.zip LineageOS lineage-23.2 version 23.2 build 2026-08-15 nightly https://mirrorbits.lineageos.org/full/pdx206/20260815/lineage-23.2-20260815-nightly-pdx206-signed.zip LineageOS lineage-23.2 version 23.2 build 2026-08-08 nightly https://mirrorbits.lineageos.org/full/pdx206/20260808/lineage-23.2-20260808-nightly-pdx206-signed.zip https://mirrorbits.lineageos.org/full/pdx206/20260822/lineage-23.2-20260822-nightly-pdx206-signed.zip https://mirrorbits.lineageos.org/full/pdx206/20260815/lineage-23.2-20260815-nightly-pdx206-signed.zip https://mirrorbits.lineageos.org/full/pdx206/20260808/lineage-23.2-20260808-nightly-pdx206-signed.zip",
+      "source_id": "lineageos_dl",
+      "download_url": null,
+      "download_links": [],
+      "query": "direct:source",
+      "device_id": "sony:pdx206"
+    },
+    {
+      "url": "https://pixelos.net/download/pdx206",
+      "title": "PixelOS - pdx206",
+      "text": "PixelOS - pdx206 PixelOS About Download Team Blog About Download Team Blog Model: Sony Xperia 5 II Codename: pdx206 Status: Discontinued Version: 14.0 Release: monthly Last Updated: 29 June 2024 Maintainer: Aditya Latest build: Download Recovery: Download XDA Thread: XDA Previous Builds: Archive Latest Build Info Platform Changelog Device Changelog Instructions If you are looking for builds of previous versions of Android, you can find them over here. Support Us Help keep PixelOS active by donating. Any amount is appreciated. Paypal 2026 PixelOS https://sourceforge.net/projects/pixelos-releases/files/fourteen/pdx206/PixelOS_pdx206-14.0-20240629-1057.zip",
+      "source_id": "pixelos_site",
+      "download_url": null,
+      "download_links": [],
+      "query": "direct:source",
+      "device_id": "sony:pdx206"
+    },
+    {
+      "url": "https://download.lineageos.org/api/v2/devices/pdx235/builds",
+      "title": "LineageOS 23.2 Builds",
+      "text": "LineageOS lineage-23.2 version 23.2 build 2026-08-21 nightly https://mirrorbits.lineageos.org/full/pdx235/20260821/lineage-23.2-20260821-nightly-pdx235-signed.zip LineageOS lineage-23.2 version 23.2 build 2026-08-14 nightly https://mirrorbits.lineageos.org/full/pdx235/20260814/lineage-23.2-20260814-nightly-pdx235-signed.zip LineageOS lineage-23.2 version 23.2 build 2026-08-07 nightly https://mirrorbits.lineageos.org/full/pdx235/20260807/lineage-23.2-20260807-nightly-pdx235-signed.zip https://mirrorbits.lineageos.org/full/pdx235/20260821/lineage-23.2-20260821-nightly-pdx235-signed.zip https://mirrorbits.lineageos.org/full/pdx235/20260814/lineage-23.2-20260814-nightly-pdx235-signed.zip https://mirrorbits.lineageos.org/full/pdx235/20260807/lineage-23.2-20260807-nightly-pdx235-signed.zip",
+      "source_id": "lineageos_dl",
+      "download_url": null,
+      "download_links": [],
+      "query": "direct:source",
+      "device_id": "sony:pdx235"
+    },
+    {
+      "url": "https://download.lineageos.org/api/v2/devices/pdx225/builds",
+      "title": "LineageOS 23.2 Builds",
+      "text": "LineageOS lineage-23.2 version 23.2 build 2026-08-20 nightly https://mirrorbits.lineageos.org/full/pdx225/20260820/lineage-23.2-20260820-nightly-pdx225-signed.zip LineageOS lineage-23.2 version 23.2 build 2026-08-13 nightly https://mirrorbits.lineageos.org/full/pdx225/20260813/lineage-23.2-20260813-nightly-pdx225-signed.zip LineageOS lineage-23.2 version 23.2 build 2026-08-06 nightly https://mirrorbits.lineageos.org/full/pdx225/20260806/lineage-23.2-20260806-nightly-pdx225-signed.zip https://mirrorbits.lineageos.org/full/pdx225/20260820/lineage-23.2-20260820-nightly-pdx225-signed.zip https://mirrorbits.lineageos.org/full/pdx225/20260813/lineage-23.2-20260813-nightly-pdx225-signed.zip https://mirrorbits.lineageos.org/full/pdx225/20260806/lineage-23.2-20260806-nightly-pdx225-signed.zip",
+      "source_id": "lineageos_dl",
+      "download_url": null,
+      "download_links": [],
+      "query": "direct:source",
+      "device_id": "sony:pdx225"
+    },
+    {
+      "url": "https://download.lineageos.org/api/v2/devices/akatsuki/builds",
+      "title": "LineageOS 22.2 Builds",
+      "text": "LineageOS lineage-22.2 version 22.2 build 2026-08-18 nightly https://mirrorbits.lineageos.org/full/akatsuki/20260818/lineage-22.2-20260818-nightly-akatsuki-signed.zip LineageOS lineage-22.2 version 22.2 build 2026-08-11 nightly https://mirrorbits.lineageos.org/full/akatsuki/20260811/lineage-22.2-20260811-nightly-akatsuki-signed.zip LineageOS lineage-22.2 version 22.2 build 2026-08-04 nightly https://mirrorbits.lineageos.org/full/akatsuki/20260804/lineage-22.2-20260804-nightly-akatsuki-signed.zip https://mirrorbits.lineageos.org/full/akatsuki/20260818/lineage-22.2-20260818-nightly-akatsuki-signed.zip https://mirrorbits.lineageos.org/full/akatsuki/20260811/lineage-22.2-20260811-nightly-akatsuki-signed.zip https://mirrorbits.lineageos.org/full/akatsuki/20260804/lineage-22.2-20260804-nightly-akatsuki-signed.zip",
+      "source_id": "lineageos_dl",
+      "download_url": null,
+      "download_links": [],
+      "query": "direct:source",
+      "device_id": "sony:akatsuki"
+    },
+    {
+      "url": "https://download.lineageos.org/api/v2/devices/aurora/builds",
+      "title": "LineageOS 22.2 Builds",
+      "text": "LineageOS lineage-22.2 version 22.2 build 2026-08-19 nightly https://mirrorbits.lineageos.org/full/aurora/20260819/lineage-22.2-20260819-nightly-aurora-signed.zip LineageOS lineage-22.2 version 22.2 build 2026-08-12 nightly https://mirrorbits.lineageos.org/full/aurora/20260812/lineage-22.2-20260812-nightly-aurora-signed.zip LineageOS lineage-22.2 version 22.2 build 2026-08-05 nightly https://mirrorbits.lineageos.org/full/aurora/20260805/lineage-22.2-20260805-nightly-aurora-signed.zip https://mirrorbits.lineageos.org/full/aurora/20260819/lineage-22.2-20260819-nightly-aurora-signed.zip https://mirrorbits.lineageos.org/full/aurora/20260812/lineage-22.2-20260812-nightly-aurora-signed.zip https://mirrorbits.lineageos.org/full/aurora/20260805/lineage-22.2-20260805-nightly-aurora-signed.zip",
+      "source_id": "lineageos_dl",
+      "download_url": null,
+      "download_links": [],
+      "query": "direct:source",
+      "device_id": "sony:aurora"
+    },
+    {
+      "url": "https://download.lineageos.org/api/v2/devices/akari/builds",
+      "title": "LineageOS 22.2 Builds",
+      "text": "LineageOS lineage-22.2 version 22.2 build 2026-08-21 nightly https://mirrorbits.lineageos.org/full/akari/20260821/lineage-22.2-20260821-nightly-akari-signed.zip LineageOS lineage-22.2 version 22.2 build 2026-08-14 nightly https://mirrorbits.lineageos.org/full/akari/20260814/lineage-22.2-20260814-nightly-akari-signed.zip LineageOS lineage-22.2 version 22.2 build 2026-08-07 nightly https://mirrorbits.lineageos.org/full/akari/20260807/lineage-22.2-20260807-nightly-akari-signed.zip https://mirrorbits.lineageos.org/full/akari/20260821/lineage-22.2-20260821-nightly-akari-signed.zip https://mirrorbits.lineageos.org/full/akari/20260814/lineage-22.2-20260814-nightly-akari-signed.zip https://mirrorbits.lineageos.org/full/akari/20260807/lineage-22.2-20260807-nightly-akari-signed.zip",
+      "source_id": "lineageos_dl",
+      "download_url": null,
+      "download_links": [],
+      "query": "direct:source",
+      "device_id": "sony:akari"
+    },
+    {
+      "url": "https://download.lineageos.org/api/v2/devices/discovery/builds",
+      "title": "LineageOS 23.2 Builds",
+      "text": "LineageOS lineage-23.2 version 23.2 build 2026-08-20 nightly https://mirrorbits.lineageos.org/full/discovery/20260820/lineage-23.2-20260820-nightly-discovery-signed.zip LineageOS lineage-23.2 version 23.2 build 2026-08-13 nightly https://mirrorbits.lineageos.org/full/discovery/20260813/lineage-23.2-20260813-nightly-discovery-signed.zip LineageOS lineage-23.2 version 23.2 build 2026-08-06 nightly https://mirrorbits.lineageos.org/full/discovery/20260806/lineage-23.2-20260806-nightly-discovery-signed.zip https://mirrorbits.lineageos.org/full/discovery/20260820/lineage-23.2-20260820-nightly-discovery-signed.zip https://mirrorbits.lineageos.org/full/discovery/20260813/lineage-23.2-20260813-nightly-discovery-signed.zip https://mirrorbits.lineageos.org/full/discovery/20260806/lineage-23.2-20260806-nightly-discovery-signed.zip",
+      "source_id": "lineageos_dl",
+      "download_url": null,
+      "download_links": [],
+      "query": "direct:source",
+      "device_id": "sony:discovery"
+    },
+    {
+      "url": "https://download.lineageos.org/api/v2/devices/pioneer/builds",
+      "title": "LineageOS 23.2 Builds",
+      "text": "LineageOS lineage-23.2 version 23.2 build 2026-08-20 nightly https://mirrorbits.lineageos.org/full/pioneer/20260820/lineage-23.2-20260820-nightly-pioneer-signed.zip LineageOS lineage-23.2 version 23.2 build 2026-08-13 nightly https://mirrorbits.lineageos.org/full/pioneer/20260813/lineage-23.2-20260813-nightly-pioneer-signed.zip LineageOS lineage-23.2 version 23.2 build 2026-08-06 nightly https://mirrorbits.lineageos.org/full/pioneer/20260806/lineage-23.2-20260806-nightly-pioneer-signed.zip https://mirrorbits.lineageos.org/full/pioneer/20260820/lineage-23.2-20260820-nightly-pioneer-signed.zip https://mirrorbits.lineageos.org/full/pioneer/20260813/lineage-23.2-20260813-nightly-pioneer-signed.zip https://mirrorbits.lineageos.org/full/pioneer/20260806/lineage-23.2-20260806-nightly-pioneer-signed.zip",
+      "source_id": "lineageos_dl",
+      "download_url": null,
+      "download_links": [],
+      "query": "direct:source",
+      "device_id": "sony:pioneer"
+    },
+    {
+      "url": "https://get.pixelexperience.org/Sirius",
+      "title": "Xiaomi Mi 8 SE (sirius) - PixelExperience",
+      "text": "Xiaomi Mi 8 SE (sirius) - PixelExperience Search a Device... Xiaomi Mi 8 SE sirius Device Info Install Guide Build Guide Xiaomi Mi 8 SE sirius 3 years ago Latest Build No maintainers yet Maintainer(s) 13 Deprecated No maintainers yet Maintainer(s) Useful Links Install Guide Report Issue Date (UTC) Downloads 2023/11/30 21209 Download Build ( 1.65 GB ) Download Recovery Image ( 64 MB ) Version : 13 File name : PixelExperience_sirius-13.0-20231130-0904-OFFICIAL.zip MD5 hash : 8dac4b62d78c04ea8f10fe2ff286c632 Date : November 30, 2023 09:04 Downloads : 21209 Changelog - November security patch - Play integrity fixed 2023/09/30 4641 Download Build ( 1.65 GB ) Download Recovery Image ( 64 MB ) Version : 13 File name : PixelExperience_sirius-13.0-20230930-1850-OFFICIAL.zip MD5 hash : 842f15794517d06fee920623e703606d Date : September 30, 2023 06:50 Downloads : 4641 Changelog - September security patch 13 (Plus edition) Deprecated No maintainers yet Maintainer(s) Useful Links Install Guide Report Issue Date (UTC) Downloads 2023/11/30 30894 Download Build ( 1.66 GB ) Download Recovery Image ( 64 MB ) Version : 13 (Plus edition) File name : PixelExperience_Plus_sirius-13.0-20231130-1007-OFFICIAL.zip MD5 hash : 0ec2d85400cc1d093e740a3257db11da Date : November 30, 2023 10:07 Downloads : 30894 Changelog - November security patch - Play integrity fixed 2023/09/30 3383 Download Build ( 1.66 GB ) Download Recovery Image ( 64 MB ) Version : 13 (Plus edition) File name : PixelExperience_Plus_sirius-13.0-20230930-1847-OFFICIAL.zip MD5 hash : 48f3f9ec4141229ac6449de67956312f Date : September 30, 2023 06:47 Downloads : 3383 Changelog - September security patch 12 Deprecated No maintainers yet Maintainer(s) Useful Links Install Guide Report Issue Date (UTC) Downloads 2022/07/19 6767 Download Build ( 1.69 GB ) Version : 12 File name : PixelExperience_sirius-12.1-20220719-1447-OFFICIAL.zip MD5 hash : 5861b9dedba325be0fe6ab46fe441077 Date : July 19, 2022 02:47 Downloads : 6767 Changelog * Fixes random video glitches in some apps 12 (Plus edition) Deprecated No maintainers yet Maintainer(s) Useful Links Install Guide Report Issue Date (UTC) Downloads 2022/07/19 10577 Download Build ( 1.69 GB ) Version : 12 (Plus edition) File name : PixelExperience_Plus_sirius-12.1-20220719-1609-OFFICIAL.zip MD5 hash : 5383875f419afa8d588d332fb7f46a3b Date : July 19, 2022 04:09 Downloads : 10577 Changelog * Fixes random video glitches in some apps Contribute Do you like our project? Show your support by donating. Donate Now Home Devices News About Wiki Team Donate Service Status CI Dashboard Statistics GitHub Gerrit Code Review Help on Translation Twitter Telegram Project maintained by jhenrique09 × https://get.pixelexperience.org/changelog/sirius/PixelExperience_sirius-13.0-20231130-0904-OFFICIAL.zip https://get.pixelexperience.org/changelog/sirius/PixelExperience_sirius-13.0-20231130-0904-OFFICIAL.img https://get.pixelexperience.org/changelog/sirius/PixelExperience_sirius-13.0-20230930-1850-OFFICIAL.zip https://get.pixelexperience.org/changelog/sirius/PixelExperience_sirius-13.0-20230930-1850-OFFICIAL.img https://get.pixelexperience.org/changelog/sirius/PixelExperience_Plus_sirius-13.0-20231130-1007-OFFICIAL.zip https://get.pixelexperience.org/changelog/sirius/PixelExperience_Plus_sirius-13.0-20231130-1007-OFFICIAL.img https://get.pixelexperience.org/changelog/sirius/PixelExperience_Plus_sirius-13.0-20230930-1847-OFFICIAL.zip https://get.pixelexperience.org/changelog/sirius/PixelExperience_Plus_sirius-13.0-20230930-1847-OFFICIAL.img https://get.pixelexperience.org/changelog/sirius/PixelExperience_sirius-12.1-20220719-1447-OFFICIAL.zip https://get.pixelexperience.org/changelog/sirius/PixelExperience_Plus_sirius-12.1-20220719-1609-OFFICIAL.zip",
+      "source_id": "pe_dl",
+      "download_url": null,
+      "download_links": [],
+      "query": "direct:source",
+      "device_id": "sony:sirius"
+    },
+    {
+      "url": "https://get.pixelexperience.org/sirius",
+      "title": "Xiaomi Mi 8 SE (sirius) - PixelExperience",
+      "text": "Xiaomi Mi 8 SE (sirius) - PixelExperience Search a Device... Xiaomi Mi 8 SE sirius Device Info Install Guide Build Guide Xiaomi Mi 8 SE sirius 3 years ago Latest Build No maintainers yet Maintainer(s) 13 Deprecated No maintainers yet Maintainer(s) Useful Links Install Guide Report Issue Date (UTC) Downloads 2023/11/30 21209 Download Build ( 1.65 GB ) Download Recovery Image ( 64 MB ) Version : 13 File name : PixelExperience_sirius-13.0-20231130-0904-OFFICIAL.zip MD5 hash : 8dac4b62d78c04ea8f10fe2ff286c632 Date : November 30, 2023 09:04 Downloads : 21209 Changelog - November security patch - Play integrity fixed 2023/09/30 4641 Download Build ( 1.65 GB ) Download Recovery Image ( 64 MB ) Version : 13 File name : PixelExperience_sirius-13.0-20230930-1850-OFFICIAL.zip MD5 hash : 842f15794517d06fee920623e703606d Date : September 30, 2023 06:50 Downloads : 4641 Changelog - September security patch 13 (Plus edition) Deprecated No maintainers yet Maintainer(s) Useful Links Install Guide Report Issue Date (UTC) Downloads 2023/11/30 30894 Download Build ( 1.66 GB ) Download Recovery Image ( 64 MB ) Version : 13 (Plus edition) File name : PixelExperience_Plus_sirius-13.0-20231130-1007-OFFICIAL.zip MD5 hash : 0ec2d85400cc1d093e740a3257db11da Date : November 30, 2023 10:07 Downloads : 30894 Changelog - November security patch - Play integrity fixed 2023/09/30 3383 Download Build ( 1.66 GB ) Download Recovery Image ( 64 MB ) Version : 13 (Plus edition) File name : PixelExperience_Plus_sirius-13.0-20230930-1847-OFFICIAL.zip MD5 hash : 48f3f9ec4141229ac6449de67956312f Date : September 30, 2023 06:47 Downloads : 3383 Changelog - September security patch 12 Deprecated No maintainers yet Maintainer(s) Useful Links Install Guide Report Issue Date (UTC) Downloads 2022/07/19 6767 Download Build ( 1.69 GB ) Version : 12 File name : PixelExperience_sirius-12.1-20220719-1447-OFFICIAL.zip MD5 hash : 5861b9dedba325be0fe6ab46fe441077 Date : July 19, 2022 02:47 Downloads : 6767 Changelog * Fixes random video glitches in some apps 12 (Plus edition) Deprecated No maintainers yet Maintainer(s) Useful Links Install Guide Report Issue Date (UTC) Downloads 2022/07/19 10577 Download Build ( 1.69 GB ) Version : 12 (Plus edition) File name : PixelExperience_Plus_sirius-12.1-20220719-1609-OFFICIAL.zip MD5 hash : 5383875f419afa8d588d332fb7f46a3b Date : July 19, 2022 04:09 Downloads : 10577 Changelog * Fixes random video glitches in some apps Contribute Do you like our project? Show your support by donating. Donate Now Home Devices News About Wiki Team Donate Service Status CI Dashboard Statistics GitHub Gerrit Code Review Help on Translation Twitter Telegram Project maintained by jhenrique09 × https://get.pixelexperience.org/changelog/sirius/PixelExperience_sirius-13.0-20231130-0904-OFFICIAL.zip https://get.pixelexperience.org/changelog/sirius/PixelExperience_sirius-13.0-20231130-0904-OFFICIAL.img https://get.pixelexperience.org/changelog/sirius/PixelExperience_sirius-13.0-20230930-1850-OFFICIAL.zip https://get.pixelexperience.org/changelog/sirius/PixelExperience_sirius-13.0-20230930-1850-OFFICIAL.img https://get.pixelexperience.org/changelog/sirius/PixelExperience_Plus_sirius-13.0-20231130-1007-OFFICIAL.zip https://get.pixelexperience.org/changelog/sirius/PixelExperience_Plus_sirius-13.0-20231130-1007-OFFICIAL.img https://get.pixelexperience.org/changelog/sirius/PixelExperience_Plus_sirius-13.0-20230930-1847-OFFICIAL.zip https://get.pixelexperience.org/changelog/sirius/PixelExperience_Plus_sirius-13.0-20230930-1847-OFFICIAL.img https://get.pixelexperience.org/changelog/sirius/PixelExperience_sirius-12.1-20220719-1447-OFFICIAL.zip https://get.pixelexperience.org/changelog/sirius/PixelExperience_Plus_sirius-12.1-20220719-1609-OFFICIAL.zip",
+      "source_id": "pe_dl",
+      "download_url": null,
+      "download_links": [],
+      "query": "direct:source",
+      "device_id": "sony:sirius"
     }
   ],
   "rejections": [
@@ -28687,6 +30525,11 @@
       "url": "https://calyxos.org/install/devices/devon",
       "reason": "no concrete ROM/build evidence",
       "device_id": "motorola:devon"
+    },
+    {
+      "url": "https://download.lineageos.org/api/v2/devices/pdx203/builds",
+      "reason": "no strong device evidence (codename in device URL or name+codename)",
+      "device_id": "sony:mirai"
     }
   ]
 }
