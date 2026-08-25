@@ -38,7 +38,7 @@ class SearchBackend(Protocol):
     def search(self, query: str, limit: int = 10) -> list[SearchResult]: ...
 
 
-def _fetch(url: str, timeout: float = 6.0, headers: dict[str, str] | None = None) -> tuple[int, str]:
+def _fetch(url: str, timeout: float = 4.0, headers: dict[str, str] | None = None) -> tuple[int, str]:
     req = urllib.request.Request(url, headers={"User-Agent": UA, **(headers or {})})
     try:
         with urllib.request.urlopen(req, timeout=timeout) as resp:
@@ -50,7 +50,7 @@ def _fetch(url: str, timeout: float = 6.0, headers: dict[str, str] | None = None
         return 0, ""
 
 
-def fetch_page(url: str, timeout: float = 6.0) -> tuple[str, str] | None:
+def fetch_page(url: str, timeout: float = 4.0) -> tuple[str, str] | None:
     """Fetch a direct source page. Returns (title, text) or None on any failure.
 
     Used for source-first probing: a 404/403/timeout simply means the device page
@@ -108,23 +108,21 @@ def _strip_tags(text: str) -> str:
 
 
 class DuckDuckGoBackend:
-    """DDG HTML endpoint with backoff for 202/429 anomaly pages."""
+    """DDG HTML endpoint without blocking delays on 202/429 anomaly pages."""
 
     name = "duckduckgo"
 
-    def __init__(self, retries: int = 1, base_delay: float = 0.5) -> None:
+    def __init__(self, retries: int = 1, base_delay: float = 0.0) -> None:
         self.retries = retries
         self.base_delay = base_delay
 
     def search(self, query: str, limit: int = 10) -> list[SearchResult]:
         url = "https://html.duckduckgo.com/html/?q=" + urllib.parse.quote_plus(query)
-        for attempt in range(self.retries):
-            status, body = _fetch(url)
-            if status == 200 and body and "result__a" in body:
-                return self._parse(body, query)[:limit]
-            # 202 / 429 / anomaly interstitial -> back off, then give up quietly
-            time.sleep(self.base_delay * (2 ** attempt) + random.random())
+        status, body = _fetch(url, timeout=3.0)
+        if status == 200 and body and "result__a" in body:
+            return self._parse(body, query)[:limit]
         return []
+
 
     def _parse(self, body: str, query: str) -> list[SearchResult]:
         out: list[SearchResult] = []

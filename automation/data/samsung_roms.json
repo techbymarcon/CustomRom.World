@@ -1,0 +1,6011 @@
+{
+  "metadata": {
+    "schema_version": 2,
+    "generator": "romdisco",
+    "created_at": "2026-08-23T18:45:04+00:00",
+    "updated_at": "2026-08-25T02:45:07+00:00",
+    "counts": {
+      "devices": 299,
+      "roms": 160,
+      "sources": 4,
+      "verified": 160,
+      "candidates": 578
+    }
+  },
+  "devices": [
+    {
+      "name": "Galaxy S",
+      "codename": "galaxysmtd",
+      "manufacturer": "Samsung",
+      "aliases": [
+        "GT-I9000",
+        "Galaxy S"
+      ],
+      "id": "samsung:galaxysmtd"
+    },
+    {
+      "name": "Galaxy S Plus",
+      "codename": "ariesve",
+      "manufacturer": "Samsung",
+      "aliases": [
+        "GT-I9001",
+        "Galaxy S Plus"
+      ],
+      "id": "samsung:ariesve"
+    },
+    {
+      "name": "Galaxy S2",
+      "codename": "i9100",
+      "manufacturer": "Samsung",
+      "aliases": [
+        "GT-I9100",
+        "Galaxy S II"
+      ],
+      "id": "samsung:i9100"
+    },
+    {
+      "name": "Galaxy S2 Plus",
+      "codename": "s2ve",
+      "manufacturer": "Samsung",
+      "aliases": [
+        "GT-I9105",
+        "Galaxy S II Plus"
+      ],
+      "id": "samsung:s2ve"
+    },
+    {
+      "name": "Galaxy S3",
+      "codename": "i9300",
+      "manufacturer": "Samsung",
+      "aliases": [
+        "GT-I9300",
+        "Galaxy S III"
+      ],
+      "id": "samsung:i9300"
+    },
+    {
+      "name": "Galaxy S3 Mini",
+      "codename": "golden",
+      "manufacturer": "Samsung",
+      "aliases": [
+        "GT-I8190",
+        "Galaxy S III Mini"
+      ],
+      "id": "samsung:golden"
+    },
+    {
+      "name": "Galaxy S4",
+      "codename": "jflte",
+      "manufacturer": "Samsung",
+      "aliases": [
+        "GT-I9505",
+        "GT-I9500",
+        "Galaxy S4"
+      ],
+      "id": "samsung:jflte"
+    },
+    {
+      "name": "Galaxy S4 Mini",
+      "codename": "serranolte",
+      "manufacturer": "Samsung",
+      "aliases": [
+        "GT-I9195",
+        "Galaxy S4 Mini"
+      ],
+      "id": "samsung:serranolte"
+    },
+    {
+      "name": "Galaxy S4 Active",
+      "codename": "jactivelte",
+      "manufacturer": "Samsung",
+      "aliases": [
+        "GT-I9295",
+        "Galaxy S4 Active"
+      ],
+      "id": "samsung:jactivelte"
+    },
+    {
+      "name": "Galaxy S4 Zoom",
+      "codename": "mprojectlte",
+      "manufacturer": "Samsung",
+      "aliases": [
+        "SM-C105",
+        "Galaxy S4 Zoom"
+      ],
+      "id": "samsung:mprojectlte"
+    },
+    {
+      "name": "Galaxy S5",
+      "codename": "klte",
+      "manufacturer": "Samsung",
+      "aliases": [
+        "SM-G900F",
+        "kccat6",
+        "Galaxy S5"
+      ],
+      "id": "samsung:klte"
+    },
+    {
+      "name": "Galaxy S5 Mini",
+      "codename": "kminilte",
+      "manufacturer": "Samsung",
+      "aliases": [
+        "SM-G800F",
+        "Galaxy S5 Mini"
+      ],
+      "id": "samsung:kminilte"
+    },
+    {
+      "name": "Galaxy S5 Active",
+      "codename": "klteactive",
+      "manufacturer": "Samsung",
+      "aliases": [
+        "SM-G870A",
+        "Galaxy S5 Active"
+      ],
+      "id": "samsung:klteactive"
+    },
+    {
+      "name": "Galaxy S5 Sport",
+      "codename": "kltesport",
+      "manufacturer": "Samsung",
+      "aliases": [
+        "SM-G860P",
+        "Galaxy S5 Sport"
+      ],
+      "id": "samsung:kltesport"
+    },
+    {
+      "name": "Galaxy S6",
+      "codename": "zeroflte",
+      "manufacturer": "Samsung",
+      "aliases": [
+        "SM-G920F",
+        "Galaxy S6"
+      ],
+      "id": "samsung:zeroflte"
+    },
+    {
+      "name": "Galaxy S6 Edge",
+      "codename": "zerolte",
+      "manufacturer": "Samsung",
+      "aliases": [
+        "SM-G925F",
+        "Galaxy S6 Edge"
+      ],
+      "id": "samsung:zerolte"
+    },
+    {
+      "name": "Galaxy S6 Edge+",
+      "codename": "zenlte",
+      "manufacturer": "Samsung",
+      "aliases": [
+        "SM-G928F",
+        "Galaxy S6 Edge Plus"
+      ],
+      "id": "samsung:zenlte"
+    },
+    {
+      "name": "Galaxy S6 Active",
+      "codename": "poseidon",
+      "manufacturer": "Samsung",
+      "aliases": [
+        "SM-G890A",
+        "Galaxy S6 Active"
+      ],
+      "id": "samsung:poseidon"
+    },
+    {
+      "name": "Galaxy S7",
+      "codename": "herolte",
+      "manufacturer": "Samsung",
+      "aliases": [
+        "SM-G930F",
+        "Galaxy S7"
+      ],
+      "id": "samsung:herolte"
+    },
+    {
+      "name": "Galaxy S7 Edge",
+      "codename": "hero2lte",
+      "manufacturer": "Samsung",
+      "aliases": [
+        "SM-G935F",
+        "Galaxy S7 Edge"
+      ],
+      "id": "samsung:hero2lte"
+    },
+    {
+      "name": "Galaxy S7 Active",
+      "codename": "heroqlteactive",
+      "manufacturer": "Samsung",
+      "aliases": [
+        "SM-G891A",
+        "Galaxy S7 Active"
+      ],
+      "id": "samsung:heroqlteactive"
+    },
+    {
+      "name": "Galaxy S8",
+      "codename": "dreamlte",
+      "manufacturer": "Samsung",
+      "aliases": [
+        "SM-G950F",
+        "Galaxy S8"
+      ],
+      "id": "samsung:dreamlte"
+    },
+    {
+      "name": "Galaxy S8+",
+      "codename": "dream2lte",
+      "manufacturer": "Samsung",
+      "aliases": [
+        "SM-G955F",
+        "Galaxy S8+"
+      ],
+      "id": "samsung:dream2lte"
+    },
+    {
+      "name": "Galaxy S8 Active",
+      "codename": "cruiserlte",
+      "manufacturer": "Samsung",
+      "aliases": [
+        "SM-G892A",
+        "Galaxy S8 Active"
+      ],
+      "id": "samsung:cruiserlte"
+    },
+    {
+      "name": "Galaxy S9",
+      "codename": "starlte",
+      "manufacturer": "Samsung",
+      "aliases": [
+        "SM-G960F",
+        "Galaxy S9"
+      ],
+      "id": "samsung:starlte"
+    },
+    {
+      "name": "Galaxy S9+",
+      "codename": "star2lte",
+      "manufacturer": "Samsung",
+      "aliases": [
+        "SM-G965F",
+        "Galaxy S9+"
+      ],
+      "id": "samsung:star2lte"
+    },
+    {
+      "name": "Galaxy S10e",
+      "codename": "beyond0lte",
+      "manufacturer": "Samsung",
+      "aliases": [
+        "SM-G970F",
+        "Galaxy S10e"
+      ],
+      "id": "samsung:beyond0lte"
+    },
+    {
+      "name": "Galaxy S10",
+      "codename": "beyond1lte",
+      "manufacturer": "Samsung",
+      "aliases": [
+        "SM-G973F",
+        "Galaxy S10"
+      ],
+      "id": "samsung:beyond1lte"
+    },
+    {
+      "name": "Galaxy S10+",
+      "codename": "beyond2lte",
+      "manufacturer": "Samsung",
+      "aliases": [
+        "SM-G975F",
+        "Galaxy S10+"
+      ],
+      "id": "samsung:beyond2lte"
+    },
+    {
+      "name": "Galaxy S10 5G",
+      "codename": "beyondx",
+      "manufacturer": "Samsung",
+      "aliases": [
+        "SM-G977B",
+        "Galaxy S10 5G"
+      ],
+      "id": "samsung:beyondx"
+    },
+    {
+      "name": "Galaxy S10 Lite",
+      "codename": "rqlte",
+      "manufacturer": "Samsung",
+      "aliases": [
+        "SM-G770F",
+        "Galaxy S10 Lite"
+      ],
+      "id": "samsung:rqlte"
+    },
+    {
+      "name": "Galaxy S20",
+      "codename": "x1s",
+      "manufacturer": "Samsung",
+      "aliases": [
+        "SM-G980F",
+        "SM-G981B",
+        "Galaxy S20",
+        "hubble"
+      ],
+      "id": "samsung:x1s"
+    },
+    {
+      "name": "Galaxy S20+",
+      "codename": "y2s",
+      "manufacturer": "Samsung",
+      "aliases": [
+        "SM-G985F",
+        "SM-G986B",
+        "Galaxy S20+"
+      ],
+      "id": "samsung:y2s"
+    },
+    {
+      "name": "Galaxy S20 Ultra",
+      "codename": "z3s",
+      "manufacturer": "Samsung",
+      "aliases": [
+        "SM-G988B",
+        "Galaxy S20 Ultra"
+      ],
+      "id": "samsung:z3s"
+    },
+    {
+      "name": "Galaxy S20 FE",
+      "codename": "r8s",
+      "manufacturer": "Samsung",
+      "aliases": [
+        "SM-G780F",
+        "Galaxy S20 FE 4G"
+      ],
+      "id": "samsung:r8s"
+    },
+    {
+      "name": "Galaxy S20 FE 5G",
+      "codename": "r8q",
+      "manufacturer": "Samsung",
+      "aliases": [
+        "SM-G781B",
+        "Galaxy S20 FE 5G"
+      ],
+      "id": "samsung:r8q"
+    },
+    {
+      "name": "Galaxy S21",
+      "codename": "o1s",
+      "manufacturer": "Samsung",
+      "aliases": [
+        "SM-G991B",
+        "Galaxy S21"
+      ],
+      "id": "samsung:o1s"
+    },
+    {
+      "name": "Galaxy S21+",
+      "codename": "t2s",
+      "manufacturer": "Samsung",
+      "aliases": [
+        "SM-G996B",
+        "Galaxy S21+"
+      ],
+      "id": "samsung:t2s"
+    },
+    {
+      "name": "Galaxy S21 Ultra",
+      "codename": "p3s",
+      "manufacturer": "Samsung",
+      "aliases": [
+        "SM-G998B",
+        "Galaxy S21 Ultra"
+      ],
+      "id": "samsung:p3s"
+    },
+    {
+      "name": "Galaxy S21 FE",
+      "codename": "r9q",
+      "manufacturer": "Samsung",
+      "aliases": [
+        "SM-G990B",
+        "Galaxy S21 FE"
+      ],
+      "id": "samsung:r9q"
+    },
+    {
+      "name": "Galaxy S22",
+      "codename": "r0s",
+      "manufacturer": "Samsung",
+      "aliases": [
+        "SM-S901B",
+        "Galaxy S22"
+      ],
+      "id": "samsung:r0s"
+    },
+    {
+      "name": "Galaxy S22+",
+      "codename": "g0s",
+      "manufacturer": "Samsung",
+      "aliases": [
+        "SM-S906B",
+        "Galaxy S22+"
+      ],
+      "id": "samsung:g0s"
+    },
+    {
+      "name": "Galaxy S22 Ultra",
+      "codename": "b0s",
+      "manufacturer": "Samsung",
+      "aliases": [
+        "SM-S908B",
+        "Galaxy S22 Ultra"
+      ],
+      "id": "samsung:b0s"
+    },
+    {
+      "name": "Galaxy S23",
+      "codename": "dm1q",
+      "manufacturer": "Samsung",
+      "aliases": [
+        "SM-S911B",
+        "Galaxy S23"
+      ],
+      "id": "samsung:dm1q"
+    },
+    {
+      "name": "Galaxy S23+",
+      "codename": "dm2q",
+      "manufacturer": "Samsung",
+      "aliases": [
+        "SM-S916B",
+        "Galaxy S23+"
+      ],
+      "id": "samsung:dm2q"
+    },
+    {
+      "name": "Galaxy S23 Ultra",
+      "codename": "dm3q",
+      "manufacturer": "Samsung",
+      "aliases": [
+        "SM-S918B",
+        "Galaxy S23 Ultra"
+      ],
+      "id": "samsung:dm3q"
+    },
+    {
+      "name": "Galaxy S23 FE",
+      "codename": "r11s",
+      "manufacturer": "Samsung",
+      "aliases": [
+        "SM-S711B",
+        "Galaxy S23 FE"
+      ],
+      "id": "samsung:r11s"
+    },
+    {
+      "name": "Galaxy S24",
+      "codename": "e1q",
+      "manufacturer": "Samsung",
+      "aliases": [
+        "SM-S921B",
+        "e1s",
+        "Galaxy S24"
+      ],
+      "id": "samsung:e1q"
+    },
+    {
+      "name": "Galaxy S24+",
+      "codename": "e2q",
+      "manufacturer": "Samsung",
+      "aliases": [
+        "SM-S926B",
+        "e2s",
+        "Galaxy S24+"
+      ],
+      "id": "samsung:e2q"
+    },
+    {
+      "name": "Galaxy S24 Ultra",
+      "codename": "e3q",
+      "manufacturer": "Samsung",
+      "aliases": [
+        "SM-S928B",
+        "Galaxy S24 Ultra"
+      ],
+      "id": "samsung:e3q"
+    },
+    {
+      "name": "Galaxy S24 FE",
+      "codename": "r12s",
+      "manufacturer": "Samsung",
+      "aliases": [
+        "SM-S721B",
+        "Galaxy S24 FE"
+      ],
+      "id": "samsung:r12s"
+    },
+    {
+      "name": "Galaxy Note",
+      "codename": "n7000",
+      "manufacturer": "Samsung",
+      "aliases": [
+        "GT-N7000",
+        "Galaxy Note"
+      ],
+      "id": "samsung:n7000"
+    },
+    {
+      "name": "Galaxy Note II",
+      "codename": "t03g",
+      "manufacturer": "Samsung",
+      "aliases": [
+        "GT-N7100",
+        "Galaxy Note 2"
+      ],
+      "id": "samsung:t03g"
+    },
+    {
+      "name": "Galaxy Note 3",
+      "codename": "hlte",
+      "manufacturer": "Samsung",
+      "aliases": [
+        "SM-N9005",
+        "ha3g",
+        "Galaxy Note 3"
+      ],
+      "id": "samsung:hlte"
+    },
+    {
+      "name": "Galaxy Note 3 Neo",
+      "codename": "hllte",
+      "manufacturer": "Samsung",
+      "aliases": [
+        "SM-N7505",
+        "Galaxy Note 3 Neo"
+      ],
+      "id": "samsung:hllte"
+    },
+    {
+      "name": "Galaxy Note 4",
+      "codename": "trlte",
+      "manufacturer": "Samsung",
+      "aliases": [
+        "SM-N910F",
+        "treltexx",
+        "Galaxy Note 4"
+      ],
+      "id": "samsung:trlte"
+    },
+    {
+      "name": "Galaxy Note Edge",
+      "codename": "tblte",
+      "manufacturer": "Samsung",
+      "aliases": [
+        "SM-N915F",
+        "Galaxy Note Edge"
+      ],
+      "id": "samsung:tblte"
+    },
+    {
+      "name": "Galaxy Note 5",
+      "codename": "noblele",
+      "manufacturer": "Samsung",
+      "aliases": [
+        "SM-N920F",
+        "Galaxy Note 5"
+      ],
+      "id": "samsung:noblele"
+    },
+    {
+      "name": "Galaxy Note 7",
+      "codename": "gracerlte",
+      "manufacturer": "Samsung",
+      "aliases": [
+        "SM-N930F",
+        "Galaxy Note 7"
+      ],
+      "id": "samsung:gracerlte"
+    },
+    {
+      "name": "Galaxy Note FE",
+      "codename": "gracerlte_fe",
+      "manufacturer": "Samsung",
+      "aliases": [
+        "SM-N935F",
+        "Galaxy Note Fan Edition",
+        "gracerlte"
+      ],
+      "id": "samsung:gracerlte_fe"
+    },
+    {
+      "name": "Galaxy Note 8",
+      "codename": "greatlte",
+      "manufacturer": "Samsung",
+      "aliases": [
+        "SM-N950F",
+        "Galaxy Note 8"
+      ],
+      "id": "samsung:greatlte"
+    },
+    {
+      "name": "Galaxy Note 9",
+      "codename": "crownlte",
+      "manufacturer": "Samsung",
+      "aliases": [
+        "SM-N960F",
+        "Galaxy Note 9"
+      ],
+      "id": "samsung:crownlte"
+    },
+    {
+      "name": "Galaxy Note 10",
+      "codename": "d1",
+      "manufacturer": "Samsung",
+      "aliases": [
+        "SM-N970F",
+        "Galaxy Note 10"
+      ],
+      "id": "samsung:d1"
+    },
+    {
+      "name": "Galaxy Note 10+",
+      "codename": "d2s",
+      "manufacturer": "Samsung",
+      "aliases": [
+        "SM-N975F",
+        "Galaxy Note 10+"
+      ],
+      "id": "samsung:d2s"
+    },
+    {
+      "name": "Galaxy Note 10+ 5G",
+      "codename": "d2x",
+      "manufacturer": "Samsung",
+      "aliases": [
+        "SM-N976B",
+        "Galaxy Note 10+ 5G"
+      ],
+      "id": "samsung:d2x"
+    },
+    {
+      "name": "Galaxy Note 20",
+      "codename": "c1s",
+      "manufacturer": "Samsung",
+      "aliases": [
+        "SM-N980F",
+        "Galaxy Note 20"
+      ],
+      "id": "samsung:c1s"
+    },
+    {
+      "name": "Galaxy Note 20 Ultra",
+      "codename": "c2s",
+      "manufacturer": "Samsung",
+      "aliases": [
+        "SM-N985F",
+        "Galaxy Note 20 Ultra"
+      ],
+      "id": "samsung:c2s"
+    },
+    {
+      "name": "Galaxy Note 20 Ultra 5G",
+      "codename": "c2q",
+      "manufacturer": "Samsung",
+      "aliases": [
+        "SM-N986B",
+        "Galaxy Note 20 Ultra 5G"
+      ],
+      "id": "samsung:c2q"
+    },
+    {
+      "name": "Galaxy Fold",
+      "codename": "winner",
+      "manufacturer": "Samsung",
+      "aliases": [
+        "SM-F900F",
+        "Galaxy Fold"
+      ],
+      "id": "samsung:winner"
+    },
+    {
+      "name": "Galaxy Z Fold2",
+      "codename": "f2q",
+      "manufacturer": "Samsung",
+      "aliases": [
+        "SM-F916B",
+        "Galaxy Z Fold 2"
+      ],
+      "id": "samsung:f2q"
+    },
+    {
+      "name": "Galaxy Z Fold3",
+      "codename": "q2q",
+      "manufacturer": "Samsung",
+      "aliases": [
+        "SM-F926B",
+        "Galaxy Z Fold 3"
+      ],
+      "id": "samsung:q2q"
+    },
+    {
+      "name": "Galaxy Z Fold4",
+      "codename": "q4q",
+      "manufacturer": "Samsung",
+      "aliases": [
+        "SM-F936B",
+        "Galaxy Z Fold 4"
+      ],
+      "id": "samsung:q4q"
+    },
+    {
+      "name": "Galaxy Z Fold5",
+      "codename": "q5q",
+      "manufacturer": "Samsung",
+      "aliases": [
+        "SM-F946B",
+        "Galaxy Z Fold 5"
+      ],
+      "id": "samsung:q5q"
+    },
+    {
+      "name": "Galaxy Z Fold6",
+      "codename": "q6q",
+      "manufacturer": "Samsung",
+      "aliases": [
+        "SM-F956B",
+        "Galaxy Z Fold 6"
+      ],
+      "id": "samsung:q6q"
+    },
+    {
+      "name": "Galaxy Z Flip",
+      "codename": "bloom",
+      "manufacturer": "Samsung",
+      "aliases": [
+        "SM-F700F",
+        "Galaxy Z Flip"
+      ],
+      "id": "samsung:bloom"
+    },
+    {
+      "name": "Galaxy Z Flip 5G",
+      "codename": "bloomq",
+      "manufacturer": "Samsung",
+      "aliases": [
+        "SM-F707B",
+        "Galaxy Z Flip 5G"
+      ],
+      "id": "samsung:bloomq"
+    },
+    {
+      "name": "Galaxy Z Flip3",
+      "codename": "b2q",
+      "manufacturer": "Samsung",
+      "aliases": [
+        "SM-F711B",
+        "Galaxy Z Flip 3"
+      ],
+      "id": "samsung:b2q"
+    },
+    {
+      "name": "Galaxy Z Flip4",
+      "codename": "b4q",
+      "manufacturer": "Samsung",
+      "aliases": [
+        "SM-F721B",
+        "Galaxy Z Flip 4"
+      ],
+      "id": "samsung:b4q"
+    },
+    {
+      "name": "Galaxy Z Flip5",
+      "codename": "b5q",
+      "manufacturer": "Samsung",
+      "aliases": [
+        "SM-F731B",
+        "Galaxy Z Flip 5"
+      ],
+      "id": "samsung:b5q"
+    },
+    {
+      "name": "Galaxy Z Flip6",
+      "codename": "b6q",
+      "manufacturer": "Samsung",
+      "aliases": [
+        "SM-F741B",
+        "Galaxy Z Flip 6"
+      ],
+      "id": "samsung:b6q"
+    },
+    {
+      "name": "Galaxy A3",
+      "codename": "a3lte",
+      "manufacturer": "Samsung",
+      "aliases": [
+        "SM-A300F",
+        "Galaxy A3"
+      ],
+      "id": "samsung:a3lte"
+    },
+    {
+      "name": "Galaxy A5",
+      "codename": "a5lte",
+      "manufacturer": "Samsung",
+      "aliases": [
+        "SM-A500F",
+        "Galaxy A5"
+      ],
+      "id": "samsung:a5lte"
+    },
+    {
+      "name": "Galaxy A7",
+      "codename": "a7lte",
+      "manufacturer": "Samsung",
+      "aliases": [
+        "SM-A700F",
+        "Galaxy A7"
+      ],
+      "id": "samsung:a7lte"
+    },
+    {
+      "name": "Galaxy A8",
+      "codename": "a8hplte",
+      "manufacturer": "Samsung",
+      "aliases": [
+        "SM-A800F",
+        "Galaxy A8"
+      ],
+      "id": "samsung:a8hplte"
+    },
+    {
+      "name": "Galaxy A8+",
+      "codename": "jackpot2lte",
+      "manufacturer": "Samsung",
+      "aliases": [
+        "SM-A730F",
+        "Galaxy A8+"
+      ],
+      "id": "samsung:jackpot2lte"
+    },
+    {
+      "name": "Galaxy A9",
+      "codename": "a9prolte",
+      "manufacturer": "Samsung",
+      "aliases": [
+        "SM-A9100",
+        "Galaxy A9"
+      ],
+      "id": "samsung:a9prolte"
+    },
+    {
+      "name": "Galaxy A9 Pro",
+      "codename": "a9proltexx",
+      "manufacturer": "Samsung",
+      "aliases": [
+        "SM-A910F",
+        "Galaxy A9 Pro"
+      ],
+      "id": "samsung:a9proltexx"
+    },
+    {
+      "name": "Galaxy A3 (2017)",
+      "codename": "a3y17lte",
+      "manufacturer": "Samsung",
+      "aliases": [
+        "SM-A320F",
+        "Galaxy A3 2017"
+      ],
+      "id": "samsung:a3y17lte"
+    },
+    {
+      "name": "Galaxy A5 (2017)",
+      "codename": "a5y17lte",
+      "manufacturer": "Samsung",
+      "aliases": [
+        "SM-A520F",
+        "Galaxy A5 2017"
+      ],
+      "id": "samsung:a5y17lte"
+    },
+    {
+      "name": "Galaxy A7 (2017)",
+      "codename": "a7y17lte",
+      "manufacturer": "Samsung",
+      "aliases": [
+        "SM-A720F",
+        "Galaxy A7 2017"
+      ],
+      "id": "samsung:a7y17lte"
+    },
+    {
+      "name": "Galaxy A6",
+      "codename": "a6lte",
+      "manufacturer": "Samsung",
+      "aliases": [
+        "SM-A600F",
+        "Galaxy A6"
+      ],
+      "id": "samsung:a6lte"
+    },
+    {
+      "name": "Galaxy A6+",
+      "codename": "a6plte",
+      "manufacturer": "Samsung",
+      "aliases": [
+        "SM-A605F",
+        "Galaxy A6+"
+      ],
+      "id": "samsung:a6plte"
+    },
+    {
+      "name": "Galaxy A8 (2018)",
+      "codename": "jackpotlte",
+      "manufacturer": "Samsung",
+      "aliases": [
+        "SM-A530F",
+        "Galaxy A8 2018"
+      ],
+      "id": "samsung:jackpotlte"
+    },
+    {
+      "name": "Galaxy A8+ (2018)",
+      "codename": "jackpot2lte_2018",
+      "manufacturer": "Samsung",
+      "aliases": [
+        "SM-A730F",
+        "Galaxy A8+ 2018"
+      ],
+      "id": "samsung:jackpot2lte_2018"
+    },
+    {
+      "name": "Galaxy A8 Star",
+      "codename": "star2qltechn",
+      "manufacturer": "Samsung",
+      "aliases": [
+        "SM-G8850",
+        "Galaxy A8 Star"
+      ],
+      "id": "samsung:star2qltechn"
+    },
+    {
+      "name": "Galaxy A9 (2018)",
+      "codename": "a9y18qlte",
+      "manufacturer": "Samsung",
+      "aliases": [
+        "SM-A920F",
+        "Galaxy A9 2018"
+      ],
+      "id": "samsung:a9y18qlte"
+    },
+    {
+      "name": "Galaxy A10",
+      "codename": "a10",
+      "manufacturer": "Samsung",
+      "aliases": [
+        "SM-A105F",
+        "Galaxy A10"
+      ],
+      "id": "samsung:a10"
+    },
+    {
+      "name": "Galaxy A10e",
+      "codename": "a10e",
+      "manufacturer": "Samsung",
+      "aliases": [
+        "SM-A102U",
+        "Galaxy A10e"
+      ],
+      "id": "samsung:a10e"
+    },
+    {
+      "name": "Galaxy A10s",
+      "codename": "a10s",
+      "manufacturer": "Samsung",
+      "aliases": [
+        "SM-A107F",
+        "Galaxy A10s"
+      ],
+      "id": "samsung:a10s"
+    },
+    {
+      "name": "Galaxy A20",
+      "codename": "a20",
+      "manufacturer": "Samsung",
+      "aliases": [
+        "SM-A205F",
+        "Galaxy A20"
+      ],
+      "id": "samsung:a20"
+    },
+    {
+      "name": "Galaxy A20e",
+      "codename": "a20e",
+      "manufacturer": "Samsung",
+      "aliases": [
+        "SM-A202F",
+        "Galaxy A20e"
+      ],
+      "id": "samsung:a20e"
+    },
+    {
+      "name": "Galaxy A20s",
+      "codename": "a20s",
+      "manufacturer": "Samsung",
+      "aliases": [
+        "SM-A207F",
+        "Galaxy A20s"
+      ],
+      "id": "samsung:a20s"
+    },
+    {
+      "name": "Galaxy A30",
+      "codename": "a30",
+      "manufacturer": "Samsung",
+      "aliases": [
+        "SM-A305F",
+        "Galaxy A30"
+      ],
+      "id": "samsung:a30"
+    },
+    {
+      "name": "Galaxy A30s",
+      "codename": "a30s",
+      "manufacturer": "Samsung",
+      "aliases": [
+        "SM-A307F",
+        "Galaxy A30s"
+      ],
+      "id": "samsung:a30s"
+    },
+    {
+      "name": "Galaxy A40",
+      "codename": "a40",
+      "manufacturer": "Samsung",
+      "aliases": [
+        "SM-A405F",
+        "Galaxy A40"
+      ],
+      "id": "samsung:a40"
+    },
+    {
+      "name": "Galaxy A50",
+      "codename": "a50",
+      "manufacturer": "Samsung",
+      "aliases": [
+        "SM-A505F",
+        "Galaxy A50"
+      ],
+      "id": "samsung:a50"
+    },
+    {
+      "name": "Galaxy A50s",
+      "codename": "a50s",
+      "manufacturer": "Samsung",
+      "aliases": [
+        "SM-A507F",
+        "Galaxy A50s"
+      ],
+      "id": "samsung:a50s"
+    },
+    {
+      "name": "Galaxy A60",
+      "codename": "a60q",
+      "manufacturer": "Samsung",
+      "aliases": [
+        "SM-A6060",
+        "Galaxy A60"
+      ],
+      "id": "samsung:a60q"
+    },
+    {
+      "name": "Galaxy A70",
+      "codename": "a70q",
+      "manufacturer": "Samsung",
+      "aliases": [
+        "SM-A705F",
+        "Galaxy A70"
+      ],
+      "id": "samsung:a70q"
+    },
+    {
+      "name": "Galaxy A70s",
+      "codename": "a70s",
+      "manufacturer": "Samsung",
+      "aliases": [
+        "SM-A707F",
+        "Galaxy A70s"
+      ],
+      "id": "samsung:a70s"
+    },
+    {
+      "name": "Galaxy A80",
+      "codename": "a80",
+      "manufacturer": "Samsung",
+      "aliases": [
+        "SM-A805F",
+        "Galaxy A80"
+      ],
+      "id": "samsung:a80"
+    },
+    {
+      "name": "Galaxy A90 5G",
+      "codename": "a90q",
+      "manufacturer": "Samsung",
+      "aliases": [
+        "SM-A908B",
+        "Galaxy A90 5G"
+      ],
+      "id": "samsung:a90q"
+    },
+    {
+      "name": "Galaxy A01",
+      "codename": "a01",
+      "manufacturer": "Samsung",
+      "aliases": [
+        "SM-A015F",
+        "Galaxy A01"
+      ],
+      "id": "samsung:a01"
+    },
+    {
+      "name": "Galaxy A01 Core",
+      "codename": "a01core",
+      "manufacturer": "Samsung",
+      "aliases": [
+        "SM-A013F",
+        "Galaxy A01 Core"
+      ],
+      "id": "samsung:a01core"
+    },
+    {
+      "name": "Galaxy A11",
+      "codename": "a11",
+      "manufacturer": "Samsung",
+      "aliases": [
+        "SM-A115F",
+        "Galaxy A11"
+      ],
+      "id": "samsung:a11"
+    },
+    {
+      "name": "Galaxy A21",
+      "codename": "a21",
+      "manufacturer": "Samsung",
+      "aliases": [
+        "SM-A215U",
+        "Galaxy A21"
+      ],
+      "id": "samsung:a21"
+    },
+    {
+      "name": "Galaxy A21s",
+      "codename": "a21s",
+      "manufacturer": "Samsung",
+      "aliases": [
+        "SM-A217F",
+        "Galaxy A21s"
+      ],
+      "id": "samsung:a21s"
+    },
+    {
+      "name": "Galaxy A31",
+      "codename": "a31",
+      "manufacturer": "Samsung",
+      "aliases": [
+        "SM-A315F",
+        "Galaxy A31"
+      ],
+      "id": "samsung:a31"
+    },
+    {
+      "name": "Galaxy A41",
+      "codename": "a41",
+      "manufacturer": "Samsung",
+      "aliases": [
+        "SM-A415F",
+        "Galaxy A41"
+      ],
+      "id": "samsung:a41"
+    },
+    {
+      "name": "Galaxy A51",
+      "codename": "a51",
+      "manufacturer": "Samsung",
+      "aliases": [
+        "SM-A515F",
+        "Galaxy A51"
+      ],
+      "id": "samsung:a51"
+    },
+    {
+      "name": "Galaxy A51 5G",
+      "codename": "a51x",
+      "manufacturer": "Samsung",
+      "aliases": [
+        "SM-A516B",
+        "Galaxy A51 5G"
+      ],
+      "id": "samsung:a51x"
+    },
+    {
+      "name": "Galaxy A71",
+      "codename": "a71",
+      "manufacturer": "Samsung",
+      "aliases": [
+        "SM-A715F",
+        "Galaxy A71"
+      ],
+      "id": "samsung:a71"
+    },
+    {
+      "name": "Galaxy A71 5G",
+      "codename": "a71x",
+      "manufacturer": "Samsung",
+      "aliases": [
+        "SM-A716B",
+        "Galaxy A71 5G"
+      ],
+      "id": "samsung:a71x"
+    },
+    {
+      "name": "Galaxy A02",
+      "codename": "a02",
+      "manufacturer": "Samsung",
+      "aliases": [
+        "SM-A022F",
+        "Galaxy A02"
+      ],
+      "id": "samsung:a02"
+    },
+    {
+      "name": "Galaxy A02s",
+      "codename": "a02s",
+      "manufacturer": "Samsung",
+      "aliases": [
+        "SM-A025F",
+        "Galaxy A02s"
+      ],
+      "id": "samsung:a02s"
+    },
+    {
+      "name": "Galaxy A12",
+      "codename": "a12",
+      "manufacturer": "Samsung",
+      "aliases": [
+        "SM-A125F",
+        "SM-A127F",
+        "Galaxy A12"
+      ],
+      "id": "samsung:a12"
+    },
+    {
+      "name": "Galaxy A22",
+      "codename": "a22",
+      "manufacturer": "Samsung",
+      "aliases": [
+        "SM-A225F",
+        "Galaxy A22 4G"
+      ],
+      "id": "samsung:a22"
+    },
+    {
+      "name": "Galaxy A22 5G",
+      "codename": "a22x",
+      "manufacturer": "Samsung",
+      "aliases": [
+        "SM-A226B",
+        "Galaxy A22 5G"
+      ],
+      "id": "samsung:a22x"
+    },
+    {
+      "name": "Galaxy A32",
+      "codename": "a32",
+      "manufacturer": "Samsung",
+      "aliases": [
+        "SM-A325F",
+        "Galaxy A32 4G"
+      ],
+      "id": "samsung:a32"
+    },
+    {
+      "name": "Galaxy A32 5G",
+      "codename": "a32x",
+      "manufacturer": "Samsung",
+      "aliases": [
+        "SM-A326B",
+        "Galaxy A32 5G"
+      ],
+      "id": "samsung:a32x"
+    },
+    {
+      "name": "Galaxy A42 5G",
+      "codename": "a42xq",
+      "manufacturer": "Samsung",
+      "aliases": [
+        "SM-A426B",
+        "Galaxy A42 5G"
+      ],
+      "id": "samsung:a42xq"
+    },
+    {
+      "name": "Galaxy A52",
+      "codename": "a52q",
+      "manufacturer": "Samsung",
+      "aliases": [
+        "SM-A525F",
+        "Galaxy A52 4G"
+      ],
+      "id": "samsung:a52q"
+    },
+    {
+      "name": "Galaxy A52 5G",
+      "codename": "a52xq",
+      "manufacturer": "Samsung",
+      "aliases": [
+        "SM-A526B",
+        "Galaxy A52 5G"
+      ],
+      "id": "samsung:a52xq"
+    },
+    {
+      "name": "Galaxy A52s 5G",
+      "codename": "a52sxq",
+      "manufacturer": "Samsung",
+      "aliases": [
+        "SM-A528B",
+        "Galaxy A52s 5G"
+      ],
+      "id": "samsung:a52sxq"
+    },
+    {
+      "name": "Galaxy A72",
+      "codename": "a72q",
+      "manufacturer": "Samsung",
+      "aliases": [
+        "SM-A725F",
+        "Galaxy A72"
+      ],
+      "id": "samsung:a72q"
+    },
+    {
+      "name": "Galaxy A03",
+      "codename": "a03",
+      "manufacturer": "Samsung",
+      "aliases": [
+        "SM-A035F",
+        "Galaxy A03"
+      ],
+      "id": "samsung:a03"
+    },
+    {
+      "name": "Galaxy A03 Core",
+      "codename": "a03core",
+      "manufacturer": "Samsung",
+      "aliases": [
+        "SM-A032F",
+        "Galaxy A03 Core"
+      ],
+      "id": "samsung:a03core"
+    },
+    {
+      "name": "Galaxy A03s",
+      "codename": "a03s",
+      "manufacturer": "Samsung",
+      "aliases": [
+        "SM-A037F",
+        "Galaxy A03s"
+      ],
+      "id": "samsung:a03s"
+    },
+    {
+      "name": "Galaxy A13",
+      "codename": "a13",
+      "manufacturer": "Samsung",
+      "aliases": [
+        "SM-A135F",
+        "SM-A137F",
+        "Galaxy A13 4G"
+      ],
+      "id": "samsung:a13"
+    },
+    {
+      "name": "Galaxy A13 5G",
+      "codename": "a13x",
+      "manufacturer": "Samsung",
+      "aliases": [
+        "SM-A136B",
+        "Galaxy A13 5G"
+      ],
+      "id": "samsung:a13x"
+    },
+    {
+      "name": "Galaxy A23",
+      "codename": "a23",
+      "manufacturer": "Samsung",
+      "aliases": [
+        "SM-A235F",
+        "Galaxy A23 4G"
+      ],
+      "id": "samsung:a23"
+    },
+    {
+      "name": "Galaxy A23 5G",
+      "codename": "a23x",
+      "manufacturer": "Samsung",
+      "aliases": [
+        "SM-A236B",
+        "Galaxy A23 5G"
+      ],
+      "id": "samsung:a23x"
+    },
+    {
+      "name": "Galaxy A33 5G",
+      "codename": "a33x",
+      "manufacturer": "Samsung",
+      "aliases": [
+        "SM-A336B",
+        "Galaxy A33 5G"
+      ],
+      "id": "samsung:a33x"
+    },
+    {
+      "name": "Galaxy A53 5G",
+      "codename": "a53x",
+      "manufacturer": "Samsung",
+      "aliases": [
+        "SM-A536B",
+        "Galaxy A53 5G"
+      ],
+      "id": "samsung:a53x"
+    },
+    {
+      "name": "Galaxy A73 5G",
+      "codename": "a73xq",
+      "manufacturer": "Samsung",
+      "aliases": [
+        "SM-A736B",
+        "Galaxy A73 5G"
+      ],
+      "id": "samsung:a73xq"
+    },
+    {
+      "name": "Galaxy A04",
+      "codename": "a04",
+      "manufacturer": "Samsung",
+      "aliases": [
+        "SM-A045F",
+        "Galaxy A04"
+      ],
+      "id": "samsung:a04"
+    },
+    {
+      "name": "Galaxy A04e",
+      "codename": "a04e",
+      "manufacturer": "Samsung",
+      "aliases": [
+        "SM-A042F",
+        "Galaxy A04e"
+      ],
+      "id": "samsung:a04e"
+    },
+    {
+      "name": "Galaxy A04s",
+      "codename": "a04s",
+      "manufacturer": "Samsung",
+      "aliases": [
+        "SM-A047F",
+        "Galaxy A04s"
+      ],
+      "id": "samsung:a04s"
+    },
+    {
+      "name": "Galaxy A14",
+      "codename": "a14",
+      "manufacturer": "Samsung",
+      "aliases": [
+        "SM-A145F",
+        "Galaxy A14 4G"
+      ],
+      "id": "samsung:a14"
+    },
+    {
+      "name": "Galaxy A14 5G",
+      "codename": "a14x",
+      "manufacturer": "Samsung",
+      "aliases": [
+        "SM-A146B",
+        "SM-A146P",
+        "Galaxy A14 5G"
+      ],
+      "id": "samsung:a14x"
+    },
+    {
+      "name": "Galaxy A24",
+      "codename": "a24",
+      "manufacturer": "Samsung",
+      "aliases": [
+        "SM-A245F",
+        "Galaxy A24 4G"
+      ],
+      "id": "samsung:a24"
+    },
+    {
+      "name": "Galaxy A34 5G",
+      "codename": "a34x",
+      "manufacturer": "Samsung",
+      "aliases": [
+        "SM-A346B",
+        "Galaxy A34 5G"
+      ],
+      "id": "samsung:a34x"
+    },
+    {
+      "name": "Galaxy A54 5G",
+      "codename": "a54x",
+      "manufacturer": "Samsung",
+      "aliases": [
+        "SM-A546B",
+        "Galaxy A54 5G"
+      ],
+      "id": "samsung:a54x"
+    },
+    {
+      "name": "Galaxy A05",
+      "codename": "a05",
+      "manufacturer": "Samsung",
+      "aliases": [
+        "SM-A055F",
+        "Galaxy A05"
+      ],
+      "id": "samsung:a05"
+    },
+    {
+      "name": "Galaxy A05s",
+      "codename": "a05s",
+      "manufacturer": "Samsung",
+      "aliases": [
+        "SM-A057F",
+        "Galaxy A05s"
+      ],
+      "id": "samsung:a05s"
+    },
+    {
+      "name": "Galaxy A15",
+      "codename": "a15",
+      "manufacturer": "Samsung",
+      "aliases": [
+        "SM-A155F",
+        "Galaxy A15 4G"
+      ],
+      "id": "samsung:a15"
+    },
+    {
+      "name": "Galaxy A15 5G",
+      "codename": "a15x",
+      "manufacturer": "Samsung",
+      "aliases": [
+        "SM-A156B",
+        "Galaxy A15 5G"
+      ],
+      "id": "samsung:a15x"
+    },
+    {
+      "name": "Galaxy A25 5G",
+      "codename": "a25x",
+      "manufacturer": "Samsung",
+      "aliases": [
+        "SM-A256B",
+        "Galaxy A25 5G"
+      ],
+      "id": "samsung:a25x"
+    },
+    {
+      "name": "Galaxy A16",
+      "codename": "a16",
+      "manufacturer": "Samsung",
+      "aliases": [
+        "SM-A165F",
+        "Galaxy A16 4G"
+      ],
+      "id": "samsung:a16"
+    },
+    {
+      "name": "Galaxy A16 5G",
+      "codename": "a16x",
+      "manufacturer": "Samsung",
+      "aliases": [
+        "SM-A166B",
+        "Galaxy A16 5G"
+      ],
+      "id": "samsung:a16x"
+    },
+    {
+      "name": "Galaxy A35 5G",
+      "codename": "a35x",
+      "manufacturer": "Samsung",
+      "aliases": [
+        "SM-A356B",
+        "Galaxy A35 5G"
+      ],
+      "id": "samsung:a35x"
+    },
+    {
+      "name": "Galaxy A55 5G",
+      "codename": "a55x",
+      "manufacturer": "Samsung",
+      "aliases": [
+        "SM-A556B",
+        "Galaxy A55 5G"
+      ],
+      "id": "samsung:a55x"
+    },
+    {
+      "name": "Galaxy Tab S9 Ultra",
+      "codename": "gts9u",
+      "manufacturer": "Samsung",
+      "aliases": [
+        "SM-X910",
+        "SM-X916B",
+        "Galaxy Tab S9 Ultra"
+      ],
+      "id": "samsung:gts9u"
+    },
+    {
+      "name": "Galaxy Tab S9+",
+      "codename": "gts9p",
+      "manufacturer": "Samsung",
+      "aliases": [
+        "SM-X810",
+        "SM-X816B",
+        "Galaxy Tab S9+"
+      ],
+      "id": "samsung:gts9p"
+    },
+    {
+      "name": "Galaxy Tab S9",
+      "codename": "gts9",
+      "manufacturer": "Samsung",
+      "aliases": [
+        "SM-X710",
+        "SM-X716B",
+        "Galaxy Tab S9"
+      ],
+      "id": "samsung:gts9"
+    },
+    {
+      "name": "Galaxy Tab S9 FE+",
+      "codename": "gts9fepluswifi",
+      "manufacturer": "Samsung",
+      "aliases": [
+        "SM-X610",
+        "SM-X616B",
+        "Galaxy Tab S9 FE+"
+      ],
+      "id": "samsung:gts9fepluswifi"
+    },
+    {
+      "name": "Galaxy Tab S9 FE",
+      "codename": "gts9fewifi",
+      "manufacturer": "Samsung",
+      "aliases": [
+        "SM-X510",
+        "SM-X516B",
+        "Galaxy Tab S9 FE"
+      ],
+      "id": "samsung:gts9fewifi"
+    },
+    {
+      "name": "Galaxy Tab S8 Ultra",
+      "codename": "gts8u",
+      "manufacturer": "Samsung",
+      "aliases": [
+        "SM-X900",
+        "SM-X906B",
+        "Galaxy Tab S8 Ultra"
+      ],
+      "id": "samsung:gts8u"
+    },
+    {
+      "name": "Galaxy Tab S8+",
+      "codename": "gts8p",
+      "manufacturer": "Samsung",
+      "aliases": [
+        "SM-X800",
+        "SM-X806B",
+        "Galaxy Tab S8+"
+      ],
+      "id": "samsung:gts8p"
+    },
+    {
+      "name": "Galaxy Tab S8",
+      "codename": "gts8",
+      "manufacturer": "Samsung",
+      "aliases": [
+        "SM-X700",
+        "SM-X706B",
+        "Galaxy Tab S8"
+      ],
+      "id": "samsung:gts8"
+    },
+    {
+      "name": "Galaxy Tab S7+",
+      "codename": "gts7xl",
+      "manufacturer": "Samsung",
+      "aliases": [
+        "SM-T970",
+        "SM-T976B",
+        "Galaxy Tab S7+"
+      ],
+      "id": "samsung:gts7xl"
+    },
+    {
+      "name": "Galaxy Tab S7",
+      "codename": "gts7l",
+      "manufacturer": "Samsung",
+      "aliases": [
+        "SM-T870",
+        "SM-T875",
+        "Galaxy Tab S7"
+      ],
+      "id": "samsung:gts7l"
+    },
+    {
+      "name": "Galaxy Tab S7 FE",
+      "codename": "gts7fewifi",
+      "manufacturer": "Samsung",
+      "aliases": [
+        "SM-T733",
+        "SM-T736B",
+        "Galaxy Tab S7 FE"
+      ],
+      "id": "samsung:gts7fewifi"
+    },
+    {
+      "name": "Galaxy Tab S6",
+      "codename": "gts6l",
+      "manufacturer": "Samsung",
+      "aliases": [
+        "SM-T860",
+        "SM-T865",
+        "Galaxy Tab S6"
+      ],
+      "id": "samsung:gts6l"
+    },
+    {
+      "name": "Galaxy Tab S6 Lite",
+      "codename": "gta4xlwifi",
+      "manufacturer": "Samsung",
+      "aliases": [
+        "SM-P610",
+        "SM-P615",
+        "SM-P613",
+        "Galaxy Tab S6 Lite"
+      ],
+      "id": "samsung:gta4xlwifi"
+    },
+    {
+      "name": "Galaxy Tab S5e",
+      "codename": "gts4lv",
+      "manufacturer": "Samsung",
+      "aliases": [
+        "SM-T720",
+        "SM-T725",
+        "Galaxy Tab S5e"
+      ],
+      "id": "samsung:gts4lv"
+    },
+    {
+      "name": "Galaxy Tab S4",
+      "codename": "gts4lwifi",
+      "manufacturer": "Samsung",
+      "aliases": [
+        "SM-T830",
+        "SM-T835",
+        "Galaxy Tab S4"
+      ],
+      "id": "samsung:gts4lwifi"
+    },
+    {
+      "name": "Galaxy Tab S3",
+      "codename": "gts3lwifi",
+      "manufacturer": "Samsung",
+      "aliases": [
+        "SM-T820",
+        "SM-T825",
+        "Galaxy Tab S3"
+      ],
+      "id": "samsung:gts3lwifi"
+    },
+    {
+      "name": "Galaxy Tab S2",
+      "codename": "gts210vewifi",
+      "manufacturer": "Samsung",
+      "aliases": [
+        "SM-T813",
+        "SM-T819",
+        "gts28vewifi",
+        "Galaxy Tab S2"
+      ],
+      "id": "samsung:gts210vewifi"
+    },
+    {
+      "name": "Galaxy Tab S",
+      "codename": "chagalllte",
+      "manufacturer": "Samsung",
+      "aliases": [
+        "SM-T800",
+        "SM-T805",
+        "klimtlte",
+        "Galaxy Tab S"
+      ],
+      "id": "samsung:chagalllte"
+    },
+    {
+      "name": "Galaxy Tab A9+",
+      "codename": "gta9p",
+      "manufacturer": "Samsung",
+      "aliases": [
+        "SM-X210",
+        "SM-X216B",
+        "Galaxy Tab A9+"
+      ],
+      "id": "samsung:gta9p"
+    },
+    {
+      "name": "Galaxy Tab A9",
+      "codename": "gta9wifi",
+      "manufacturer": "Samsung",
+      "aliases": [
+        "SM-X110",
+        "SM-X115",
+        "Galaxy Tab A9"
+      ],
+      "id": "samsung:gta9wifi"
+    },
+    {
+      "name": "Galaxy Tab A8",
+      "codename": "gta8wifi",
+      "manufacturer": "Samsung",
+      "aliases": [
+        "SM-X200",
+        "SM-X205",
+        "Galaxy Tab A8 10.5"
+      ],
+      "id": "samsung:gta8wifi"
+    },
+    {
+      "name": "Galaxy Tab A7",
+      "codename": "gta4lwifi",
+      "manufacturer": "Samsung",
+      "aliases": [
+        "SM-T500",
+        "SM-T505",
+        "Galaxy Tab A7 10.4"
+      ],
+      "id": "samsung:gta4lwifi"
+    },
+    {
+      "name": "Galaxy Tab A7 Lite",
+      "codename": "gta7litewifi",
+      "manufacturer": "Samsung",
+      "aliases": [
+        "SM-T220",
+        "SM-T225",
+        "Galaxy Tab A7 Lite"
+      ],
+      "id": "samsung:gta7litewifi"
+    },
+    {
+      "name": "Galaxy Tab A 10.1",
+      "codename": "gtaxlwifi",
+      "manufacturer": "Samsung",
+      "aliases": [
+        "SM-T580",
+        "SM-T585",
+        "Galaxy Tab A 10.1"
+      ],
+      "id": "samsung:gtaxlwifi"
+    },
+    {
+      "name": "Galaxy Tab A 8.0",
+      "codename": "gtowifi",
+      "manufacturer": "Samsung",
+      "aliases": [
+        "SM-T290",
+        "SM-T295",
+        "Galaxy Tab A 8.0"
+      ],
+      "id": "samsung:gtowifi"
+    },
+    {
+      "name": "Galaxy Tab A",
+      "codename": "gtaxllte",
+      "manufacturer": "Samsung",
+      "aliases": [
+        "SM-P580",
+        "SM-P585",
+        "Galaxy Tab A"
+      ],
+      "id": "samsung:gtaxllte"
+    },
+    {
+      "name": "Galaxy Tab Active5",
+      "codename": "active5",
+      "manufacturer": "Samsung",
+      "aliases": [
+        "SM-X300",
+        "SM-X306B",
+        "Galaxy Tab Active5"
+      ],
+      "id": "samsung:active5"
+    },
+    {
+      "name": "Galaxy Tab Active3",
+      "codename": "active3",
+      "manufacturer": "Samsung",
+      "aliases": [
+        "SM-T570",
+        "SM-T575",
+        "Galaxy Tab Active3"
+      ],
+      "id": "samsung:active3"
+    },
+    {
+      "name": "Galaxy Tab Active Pro",
+      "codename": "activepro",
+      "manufacturer": "Samsung",
+      "aliases": [
+        "SM-T540",
+        "SM-T545",
+        "Galaxy Tab Active Pro"
+      ],
+      "id": "samsung:activepro"
+    },
+    {
+      "name": "Galaxy Tab Active2",
+      "codename": "active2",
+      "manufacturer": "Samsung",
+      "aliases": [
+        "SM-T390",
+        "SM-T395",
+        "Galaxy Tab Active2"
+      ],
+      "id": "samsung:active2"
+    },
+    {
+      "name": "Galaxy Tab Active",
+      "codename": "rubens",
+      "manufacturer": "Samsung",
+      "aliases": [
+        "SM-T360",
+        "SM-T365",
+        "Galaxy Tab Active"
+      ],
+      "id": "samsung:rubens"
+    },
+    {
+      "name": "Galaxy Tab Pro",
+      "codename": "picassowifi",
+      "manufacturer": "Samsung",
+      "aliases": [
+        "SM-T520",
+        "SM-T320",
+        "mondrianwifi",
+        "Galaxy Tab Pro"
+      ],
+      "id": "samsung:picassowifi"
+    },
+    {
+      "name": "Galaxy Tab 4",
+      "codename": "matisse",
+      "manufacturer": "Samsung",
+      "aliases": [
+        "SM-T530",
+        "SM-T330",
+        "degas",
+        "Galaxy Tab 4"
+      ],
+      "id": "samsung:matisse"
+    },
+    {
+      "name": "Galaxy Tab 3",
+      "codename": "santos10",
+      "manufacturer": "Samsung",
+      "aliases": [
+        "GT-P5210",
+        "lt02wifi",
+        "Galaxy Tab 3"
+      ],
+      "id": "samsung:santos10"
+    },
+    {
+      "name": "Galaxy Tab 2",
+      "codename": "espresso10",
+      "manufacturer": "Samsung",
+      "aliases": [
+        "GT-P5110",
+        "GT-P3110",
+        "espresso7",
+        "Galaxy Tab 2"
+      ],
+      "id": "samsung:espresso10"
+    },
+    {
+      "name": "Galaxy Tab",
+      "codename": "p1",
+      "manufacturer": "Samsung",
+      "aliases": [
+        "GT-P1000",
+        "Galaxy Tab 7.0"
+      ],
+      "id": "samsung:p1"
+    }
+  ],
+  "sources": [
+    {
+      "id": "lineageos_site",
+      "name": "LineageOS",
+      "kind": "official_project",
+      "host": "lineageos.org",
+      "canonical_url": "https://lineageos.org",
+      "trust": 98,
+      "path_prefixes": [],
+      "family": "LineageOS",
+      "include_subdomains": true,
+      "device_urls": [],
+      "query_templates": [],
+      "manufacturers": [],
+      "can_verify": true,
+      "source_class": "OFFICIAL",
+      "authority": 6098
+    },
+    {
+      "id": "lineageos_dl",
+      "name": "LineageOS Downloads",
+      "kind": "official_download",
+      "host": "download.lineageos.org",
+      "canonical_url": "https://download.lineageos.org",
+      "trust": 100,
+      "path_prefixes": [],
+      "family": "LineageOS",
+      "include_subdomains": true,
+      "device_urls": [
+        "https://download.lineageos.org/api/v2/devices/{code}/builds"
+      ],
+      "query_templates": [],
+      "manufacturers": [],
+      "can_verify": true,
+      "source_class": "OFFICIAL",
+      "authority": 6100
+    },
+    {
+      "id": "pe_dl",
+      "name": "Pixel Experience Downloads",
+      "kind": "official_download",
+      "host": "get.pixelexperience.org",
+      "canonical_url": "https://get.pixelexperience.org",
+      "trust": 100,
+      "path_prefixes": [],
+      "family": "Pixel Experience",
+      "include_subdomains": true,
+      "device_urls": [
+        "https://get.pixelexperience.org/{code}"
+      ],
+      "query_templates": [],
+      "manufacturers": [],
+      "can_verify": true,
+      "source_class": "OFFICIAL",
+      "authority": 6100
+    },
+    {
+      "id": "pixelos_site",
+      "name": "PixelOS",
+      "kind": "official_project",
+      "host": "pixelos.net",
+      "canonical_url": "https://pixelos.net",
+      "trust": 96,
+      "path_prefixes": [],
+      "family": "PixelOS",
+      "include_subdomains": true,
+      "device_urls": [
+        "https://pixelos.net/download/{code}"
+      ],
+      "query_templates": [],
+      "manufacturers": [],
+      "can_verify": true,
+      "source_class": "OFFICIAL",
+      "authority": 6096
+    }
+  ],
+  "roms": [
+    {
+      "id": "d07e9dd1cd146380",
+      "name": "Pixel Experience",
+      "type": "custom_rom",
+      "device": "Galaxy S7",
+      "codename": "herolte",
+      "android_version": "Android 11",
+      "rom_version": "11",
+      "build_date": "2021-09-23",
+      "status": "verified",
+      "source_url": "https://get.pixelexperience.org/Herolte",
+      "download_url": "https://get.pixelexperience.org/changelog/herolte/PixelExperience_herolte-11.0-20210923-1530-OFFICIAL.zip",
+      "source_id": "pe_dl",
+      "evidence": [
+        {
+          "kind": "registered_source",
+          "detail": "Pixel Experience Downloads (official_download, trust 100)",
+          "source_id": "pe_dl",
+          "url": "https://get.pixelexperience.org"
+        },
+        {
+          "kind": "codename_in_url",
+          "detail": "codename 'herolte' in URL path",
+          "source_id": "pe_dl",
+          "url": "https://get.pixelexperience.org/Herolte"
+        },
+        {
+          "kind": "device_name_match",
+          "detail": "device name 'Galaxy S7' mentioned",
+          "source_id": "pe_dl",
+          "url": "https://get.pixelexperience.org/Herolte"
+        },
+        {
+          "kind": "artifact_link",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "pe_dl",
+          "url": "https://get.pixelexperience.org/Herolte"
+        },
+        {
+          "kind": "artifact_extension",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "pe_dl",
+          "url": "https://get.pixelexperience.org/Herolte"
+        },
+        {
+          "kind": "checksum",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "pe_dl",
+          "url": "https://get.pixelexperience.org/Herolte"
+        },
+        {
+          "kind": "download_word",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "pe_dl",
+          "url": "https://get.pixelexperience.org/Herolte"
+        },
+        {
+          "kind": "changelog",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "pe_dl",
+          "url": "https://get.pixelexperience.org/Herolte"
+        },
+        {
+          "kind": "build_evidence_tier",
+          "detail": "artifact",
+          "source_id": "pe_dl",
+          "url": "https://get.pixelexperience.org/Herolte"
+        },
+        {
+          "kind": "family_resolved",
+          "detail": "Pixel Experience",
+          "source_id": "pe_dl",
+          "url": "https://get.pixelexperience.org/Herolte"
+        },
+        {
+          "kind": "evidence_score",
+          "detail": "17",
+          "source_id": "pe_dl",
+          "url": "https://get.pixelexperience.org/Herolte"
+        }
+      ],
+      "discovered_at": "2026-08-25T01:50:30+00:00",
+      "updated_at": "2026-08-25T01:50:30+00:00"
+    },
+    {
+      "id": "c735b45d0ff18122",
+      "name": "Pixel Experience",
+      "type": "custom_rom",
+      "device": "Galaxy S7 Edge",
+      "codename": "hero2lte",
+      "android_version": "Android 11",
+      "rom_version": "11",
+      "build_date": "2021-09-23",
+      "status": "verified",
+      "source_url": "https://get.pixelexperience.org/hero2lte",
+      "download_url": "https://get.pixelexperience.org/changelog/hero2lte/PixelExperience_hero2lte-11.0-20210923-1630-OFFICIAL.zip",
+      "source_id": "pe_dl",
+      "evidence": [
+        {
+          "kind": "registered_source",
+          "detail": "Pixel Experience Downloads (official_download, trust 100)",
+          "source_id": "pe_dl",
+          "url": "https://get.pixelexperience.org"
+        },
+        {
+          "kind": "codename_in_url",
+          "detail": "codename 'hero2lte' in URL path",
+          "source_id": "pe_dl",
+          "url": "https://get.pixelexperience.org/hero2lte"
+        },
+        {
+          "kind": "device_name_match",
+          "detail": "device name 'Galaxy S7 Edge' mentioned",
+          "source_id": "pe_dl",
+          "url": "https://get.pixelexperience.org/hero2lte"
+        },
+        {
+          "kind": "artifact_link",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "pe_dl",
+          "url": "https://get.pixelexperience.org/hero2lte"
+        },
+        {
+          "kind": "artifact_extension",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "pe_dl",
+          "url": "https://get.pixelexperience.org/hero2lte"
+        },
+        {
+          "kind": "checksum",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "pe_dl",
+          "url": "https://get.pixelexperience.org/hero2lte"
+        },
+        {
+          "kind": "download_word",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "pe_dl",
+          "url": "https://get.pixelexperience.org/hero2lte"
+        },
+        {
+          "kind": "changelog",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "pe_dl",
+          "url": "https://get.pixelexperience.org/hero2lte"
+        },
+        {
+          "kind": "build_evidence_tier",
+          "detail": "artifact",
+          "source_id": "pe_dl",
+          "url": "https://get.pixelexperience.org/hero2lte"
+        },
+        {
+          "kind": "family_resolved",
+          "detail": "Pixel Experience",
+          "source_id": "pe_dl",
+          "url": "https://get.pixelexperience.org/hero2lte"
+        },
+        {
+          "kind": "evidence_score",
+          "detail": "17",
+          "source_id": "pe_dl",
+          "url": "https://get.pixelexperience.org/hero2lte"
+        }
+      ],
+      "discovered_at": "2026-08-25T01:50:48+00:00",
+      "updated_at": "2026-08-25T01:50:48+00:00"
+    },
+    {
+      "id": "4157e322bffa3252",
+      "name": "PixelOS",
+      "type": "custom_rom",
+      "device": "Galaxy S9",
+      "codename": "starlte",
+      "android_version": "Android 12",
+      "rom_version": "12.1",
+      "build_date": "2022-08-14",
+      "status": "verified",
+      "source_url": "https://pixelos.net/download/starlte",
+      "download_url": "https://sourceforge.net/projects/pixelos-releases/files/twelve/starlte/PixelOS_starlte-12.1-20220814-0746.zip",
+      "source_id": "pixelos_site",
+      "evidence": [
+        {
+          "kind": "registered_source",
+          "detail": "PixelOS (official_project, trust 96)",
+          "source_id": "pixelos_site",
+          "url": "https://pixelos.net"
+        },
+        {
+          "kind": "codename_in_url",
+          "detail": "codename 'starlte' in URL path",
+          "source_id": "pixelos_site",
+          "url": "https://pixelos.net/download/starlte"
+        },
+        {
+          "kind": "device_name_match",
+          "detail": "device name 'Galaxy S9' mentioned",
+          "source_id": "pixelos_site",
+          "url": "https://pixelos.net/download/starlte"
+        },
+        {
+          "kind": "artifact_link",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "pixelos_site",
+          "url": "https://pixelos.net/download/starlte"
+        },
+        {
+          "kind": "artifact_extension",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "pixelos_site",
+          "url": "https://pixelos.net/download/starlte"
+        },
+        {
+          "kind": "download_word",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "pixelos_site",
+          "url": "https://pixelos.net/download/starlte"
+        },
+        {
+          "kind": "changelog",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "pixelos_site",
+          "url": "https://pixelos.net/download/starlte"
+        },
+        {
+          "kind": "build_evidence_tier",
+          "detail": "artifact",
+          "source_id": "pixelos_site",
+          "url": "https://pixelos.net/download/starlte"
+        },
+        {
+          "kind": "family_resolved",
+          "detail": "PixelOS",
+          "source_id": "pixelos_site",
+          "url": "https://pixelos.net/download/starlte"
+        },
+        {
+          "kind": "evidence_score",
+          "detail": "16",
+          "source_id": "pixelos_site",
+          "url": "https://pixelos.net/download/starlte"
+        }
+      ],
+      "discovered_at": "2026-08-25T01:52:27+00:00",
+      "updated_at": "2026-08-25T01:52:27+00:00"
+    },
+    {
+      "id": "c8c9966b860bbab6",
+      "name": "Pixel Experience",
+      "type": "custom_rom",
+      "device": "Galaxy S9",
+      "codename": "starlte",
+      "android_version": "Android 13",
+      "rom_version": "13",
+      "build_date": "2023-12-16",
+      "status": "verified",
+      "source_url": "https://get.pixelexperience.org/starlte",
+      "download_url": "https://get.pixelexperience.org/changelog/starlte/PixelExperience_starlte-13.0-20231216-1329-OFFICIAL.zip",
+      "source_id": "pe_dl",
+      "evidence": [
+        {
+          "kind": "registered_source",
+          "detail": "Pixel Experience Downloads (official_download, trust 100)",
+          "source_id": "pe_dl",
+          "url": "https://get.pixelexperience.org"
+        },
+        {
+          "kind": "codename_in_url",
+          "detail": "codename 'starlte' in URL path",
+          "source_id": "pe_dl",
+          "url": "https://get.pixelexperience.org/starlte"
+        },
+        {
+          "kind": "device_name_match",
+          "detail": "device name 'Galaxy S9' mentioned",
+          "source_id": "pe_dl",
+          "url": "https://get.pixelexperience.org/starlte"
+        },
+        {
+          "kind": "artifact_link",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "pe_dl",
+          "url": "https://get.pixelexperience.org/starlte"
+        },
+        {
+          "kind": "artifact_extension",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "pe_dl",
+          "url": "https://get.pixelexperience.org/starlte"
+        },
+        {
+          "kind": "checksum",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "pe_dl",
+          "url": "https://get.pixelexperience.org/starlte"
+        },
+        {
+          "kind": "download_word",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "pe_dl",
+          "url": "https://get.pixelexperience.org/starlte"
+        },
+        {
+          "kind": "changelog",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "pe_dl",
+          "url": "https://get.pixelexperience.org/starlte"
+        },
+        {
+          "kind": "build_evidence_tier",
+          "detail": "artifact",
+          "source_id": "pe_dl",
+          "url": "https://get.pixelexperience.org/starlte"
+        },
+        {
+          "kind": "family_resolved",
+          "detail": "Pixel Experience",
+          "source_id": "pe_dl",
+          "url": "https://get.pixelexperience.org/starlte"
+        },
+        {
+          "kind": "evidence_score",
+          "detail": "17",
+          "source_id": "pe_dl",
+          "url": "https://get.pixelexperience.org/starlte"
+        }
+      ],
+      "discovered_at": "2026-08-25T01:52:27+00:00",
+      "updated_at": "2026-08-25T01:52:27+00:00"
+    },
+    {
+      "id": "cd5528a3b25a2088",
+      "name": "PixelOS",
+      "type": "custom_rom",
+      "device": "Galaxy S9+",
+      "codename": "star2lte",
+      "android_version": "Android 12",
+      "rom_version": "12.1",
+      "build_date": "2022-08-14",
+      "status": "verified",
+      "source_url": "https://pixelos.net/download/star2lte",
+      "download_url": "https://sourceforge.net/projects/pixelos-releases/files/twelve/star2lte/PixelOS_star2lte-12.1-20220814-0832.zip",
+      "source_id": "pixelos_site",
+      "evidence": [
+        {
+          "kind": "registered_source",
+          "detail": "PixelOS (official_project, trust 96)",
+          "source_id": "pixelos_site",
+          "url": "https://pixelos.net"
+        },
+        {
+          "kind": "codename_in_url",
+          "detail": "codename 'star2lte' in URL path",
+          "source_id": "pixelos_site",
+          "url": "https://pixelos.net/download/star2lte"
+        },
+        {
+          "kind": "device_name_match",
+          "detail": "device name 'Galaxy S9+' mentioned",
+          "source_id": "pixelos_site",
+          "url": "https://pixelos.net/download/star2lte"
+        },
+        {
+          "kind": "artifact_link",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "pixelos_site",
+          "url": "https://pixelos.net/download/star2lte"
+        },
+        {
+          "kind": "artifact_extension",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "pixelos_site",
+          "url": "https://pixelos.net/download/star2lte"
+        },
+        {
+          "kind": "download_word",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "pixelos_site",
+          "url": "https://pixelos.net/download/star2lte"
+        },
+        {
+          "kind": "changelog",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "pixelos_site",
+          "url": "https://pixelos.net/download/star2lte"
+        },
+        {
+          "kind": "build_evidence_tier",
+          "detail": "artifact",
+          "source_id": "pixelos_site",
+          "url": "https://pixelos.net/download/star2lte"
+        },
+        {
+          "kind": "family_resolved",
+          "detail": "PixelOS",
+          "source_id": "pixelos_site",
+          "url": "https://pixelos.net/download/star2lte"
+        },
+        {
+          "kind": "evidence_score",
+          "detail": "16",
+          "source_id": "pixelos_site",
+          "url": "https://pixelos.net/download/star2lte"
+        }
+      ],
+      "discovered_at": "2026-08-25T01:52:49+00:00",
+      "updated_at": "2026-08-25T01:52:49+00:00"
+    },
+    {
+      "id": "57cc90a41ecf4ae9",
+      "name": "Pixel Experience",
+      "type": "custom_rom",
+      "device": "Galaxy S9+",
+      "codename": "star2lte",
+      "android_version": "Android 13",
+      "rom_version": "13",
+      "build_date": "2023-12-16",
+      "status": "verified",
+      "source_url": "https://get.pixelexperience.org/star2lte",
+      "download_url": "https://get.pixelexperience.org/changelog/star2lte/PixelExperience_star2lte-13.0-20231216-1507-OFFICIAL.zip",
+      "source_id": "pe_dl",
+      "evidence": [
+        {
+          "kind": "registered_source",
+          "detail": "Pixel Experience Downloads (official_download, trust 100)",
+          "source_id": "pe_dl",
+          "url": "https://get.pixelexperience.org"
+        },
+        {
+          "kind": "codename_in_url",
+          "detail": "codename 'star2lte' in URL path",
+          "source_id": "pe_dl",
+          "url": "https://get.pixelexperience.org/star2lte"
+        },
+        {
+          "kind": "device_name_match",
+          "detail": "device name 'Galaxy S9+' mentioned",
+          "source_id": "pe_dl",
+          "url": "https://get.pixelexperience.org/star2lte"
+        },
+        {
+          "kind": "artifact_link",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "pe_dl",
+          "url": "https://get.pixelexperience.org/star2lte"
+        },
+        {
+          "kind": "artifact_extension",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "pe_dl",
+          "url": "https://get.pixelexperience.org/star2lte"
+        },
+        {
+          "kind": "checksum",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "pe_dl",
+          "url": "https://get.pixelexperience.org/star2lte"
+        },
+        {
+          "kind": "download_word",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "pe_dl",
+          "url": "https://get.pixelexperience.org/star2lte"
+        },
+        {
+          "kind": "changelog",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "pe_dl",
+          "url": "https://get.pixelexperience.org/star2lte"
+        },
+        {
+          "kind": "build_evidence_tier",
+          "detail": "artifact",
+          "source_id": "pe_dl",
+          "url": "https://get.pixelexperience.org/star2lte"
+        },
+        {
+          "kind": "family_resolved",
+          "detail": "Pixel Experience",
+          "source_id": "pe_dl",
+          "url": "https://get.pixelexperience.org/star2lte"
+        },
+        {
+          "kind": "evidence_score",
+          "detail": "17",
+          "source_id": "pe_dl",
+          "url": "https://get.pixelexperience.org/star2lte"
+        }
+      ],
+      "discovered_at": "2026-08-25T01:52:49+00:00",
+      "updated_at": "2026-08-25T01:52:49+00:00"
+    },
+    {
+      "id": "f99450b44c639f51",
+      "name": "LineageOS",
+      "type": "custom_rom",
+      "device": "Galaxy S10e",
+      "codename": "beyond0lte",
+      "android_version": "Android 16",
+      "rom_version": "23.2",
+      "build_date": "2026-08-22",
+      "status": "verified",
+      "source_url": "https://download.lineageos.org/api/v2/devices/beyond0lte/builds",
+      "download_url": "https://mirrorbits.lineageos.org/full/beyond0lte/20260822/lineage-23.2-20260822-nightly-beyond0lte-signed.zip",
+      "source_id": "lineageos_dl",
+      "evidence": [
+        {
+          "kind": "registered_source",
+          "detail": "LineageOS Downloads (official_download, trust 100)",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org"
+        },
+        {
+          "kind": "codename_in_url",
+          "detail": "codename 'beyond0lte' in URL path",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/beyond0lte/builds"
+        },
+        {
+          "kind": "artifact_link",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/beyond0lte/builds"
+        },
+        {
+          "kind": "artifact_extension",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/beyond0lte/builds"
+        },
+        {
+          "kind": "build_channel",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/beyond0lte/builds"
+        },
+        {
+          "kind": "build_evidence_tier",
+          "detail": "artifact",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/beyond0lte/builds"
+        },
+        {
+          "kind": "family_resolved",
+          "detail": "LineageOS",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/beyond0lte/builds"
+        },
+        {
+          "kind": "evidence_score",
+          "detail": "14",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/beyond0lte/builds"
+        }
+      ],
+      "discovered_at": "2026-08-25T01:53:06+00:00",
+      "updated_at": "2026-08-25T01:53:06+00:00"
+    },
+    {
+      "id": "21a81e8ab41f1ed2",
+      "name": "PixelOS",
+      "type": "custom_rom",
+      "device": "Galaxy S10e",
+      "codename": "beyond0lte",
+      "android_version": "Android 14",
+      "rom_version": "14.0",
+      "build_date": "2024-10-19",
+      "status": "verified",
+      "source_url": "https://pixelos.net/download/beyond0lte",
+      "download_url": "https://sourceforge.net/projects/pixelos-releases/files/fourteen/beyond0lte/PixelOS_beyond0lte-14.0-20241019-0540.zip",
+      "source_id": "pixelos_site",
+      "evidence": [
+        {
+          "kind": "registered_source",
+          "detail": "PixelOS (official_project, trust 96)",
+          "source_id": "pixelos_site",
+          "url": "https://pixelos.net"
+        },
+        {
+          "kind": "codename_in_url",
+          "detail": "codename 'beyond0lte' in URL path",
+          "source_id": "pixelos_site",
+          "url": "https://pixelos.net/download/beyond0lte"
+        },
+        {
+          "kind": "device_name_match",
+          "detail": "device name 'Galaxy S10e' mentioned",
+          "source_id": "pixelos_site",
+          "url": "https://pixelos.net/download/beyond0lte"
+        },
+        {
+          "kind": "artifact_link",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "pixelos_site",
+          "url": "https://pixelos.net/download/beyond0lte"
+        },
+        {
+          "kind": "artifact_extension",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "pixelos_site",
+          "url": "https://pixelos.net/download/beyond0lte"
+        },
+        {
+          "kind": "download_word",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "pixelos_site",
+          "url": "https://pixelos.net/download/beyond0lte"
+        },
+        {
+          "kind": "changelog",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "pixelos_site",
+          "url": "https://pixelos.net/download/beyond0lte"
+        },
+        {
+          "kind": "build_evidence_tier",
+          "detail": "artifact",
+          "source_id": "pixelos_site",
+          "url": "https://pixelos.net/download/beyond0lte"
+        },
+        {
+          "kind": "family_resolved",
+          "detail": "PixelOS",
+          "source_id": "pixelos_site",
+          "url": "https://pixelos.net/download/beyond0lte"
+        },
+        {
+          "kind": "evidence_score",
+          "detail": "16",
+          "source_id": "pixelos_site",
+          "url": "https://pixelos.net/download/beyond0lte"
+        }
+      ],
+      "discovered_at": "2026-08-25T01:53:06+00:00",
+      "updated_at": "2026-08-25T01:53:06+00:00"
+    },
+    {
+      "id": "8adfedbcff3368cb",
+      "name": "Pixel Experience",
+      "type": "custom_rom",
+      "device": "Galaxy S10e",
+      "codename": "beyond0lte",
+      "android_version": "Android 13",
+      "rom_version": "13",
+      "build_date": "2023-08-15",
+      "status": "verified",
+      "source_url": "https://get.pixelexperience.org/Beyond0lte",
+      "download_url": "https://get.pixelexperience.org/changelog/beyond0lte/PixelExperience_beyond0lte-13.0-20230815-0537-OFFICIAL.zip",
+      "source_id": "pe_dl",
+      "evidence": [
+        {
+          "kind": "registered_source",
+          "detail": "Pixel Experience Downloads (official_download, trust 100)",
+          "source_id": "pe_dl",
+          "url": "https://get.pixelexperience.org"
+        },
+        {
+          "kind": "codename_in_url",
+          "detail": "codename 'beyond0lte' in URL path",
+          "source_id": "pe_dl",
+          "url": "https://get.pixelexperience.org/Beyond0lte"
+        },
+        {
+          "kind": "device_name_match",
+          "detail": "device name 'Galaxy S10e' mentioned",
+          "source_id": "pe_dl",
+          "url": "https://get.pixelexperience.org/Beyond0lte"
+        },
+        {
+          "kind": "artifact_link",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "pe_dl",
+          "url": "https://get.pixelexperience.org/Beyond0lte"
+        },
+        {
+          "kind": "artifact_extension",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "pe_dl",
+          "url": "https://get.pixelexperience.org/Beyond0lte"
+        },
+        {
+          "kind": "checksum",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "pe_dl",
+          "url": "https://get.pixelexperience.org/Beyond0lte"
+        },
+        {
+          "kind": "download_word",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "pe_dl",
+          "url": "https://get.pixelexperience.org/Beyond0lte"
+        },
+        {
+          "kind": "changelog",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "pe_dl",
+          "url": "https://get.pixelexperience.org/Beyond0lte"
+        },
+        {
+          "kind": "build_evidence_tier",
+          "detail": "artifact",
+          "source_id": "pe_dl",
+          "url": "https://get.pixelexperience.org/Beyond0lte"
+        },
+        {
+          "kind": "family_resolved",
+          "detail": "Pixel Experience",
+          "source_id": "pe_dl",
+          "url": "https://get.pixelexperience.org/Beyond0lte"
+        },
+        {
+          "kind": "evidence_score",
+          "detail": "17",
+          "source_id": "pe_dl",
+          "url": "https://get.pixelexperience.org/Beyond0lte"
+        }
+      ],
+      "discovered_at": "2026-08-25T01:53:06+00:00",
+      "updated_at": "2026-08-25T01:53:06+00:00"
+    },
+    {
+      "id": "8d70d5e0093e0c8d",
+      "name": "LineageOS",
+      "type": "custom_rom",
+      "device": "Galaxy S10",
+      "codename": "beyond1lte",
+      "android_version": "Android 16",
+      "rom_version": "23.2",
+      "build_date": "2026-08-21",
+      "status": "verified",
+      "source_url": "https://download.lineageos.org/api/v2/devices/beyond1lte/builds",
+      "download_url": "https://mirrorbits.lineageos.org/full/beyond1lte/20260821/lineage-23.2-20260821-nightly-beyond1lte-signed.zip",
+      "source_id": "lineageos_dl",
+      "evidence": [
+        {
+          "kind": "registered_source",
+          "detail": "LineageOS Downloads (official_download, trust 100)",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org"
+        },
+        {
+          "kind": "codename_in_url",
+          "detail": "codename 'beyond1lte' in URL path",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/beyond1lte/builds"
+        },
+        {
+          "kind": "artifact_link",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/beyond1lte/builds"
+        },
+        {
+          "kind": "artifact_extension",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/beyond1lte/builds"
+        },
+        {
+          "kind": "build_channel",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/beyond1lte/builds"
+        },
+        {
+          "kind": "build_evidence_tier",
+          "detail": "artifact",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/beyond1lte/builds"
+        },
+        {
+          "kind": "family_resolved",
+          "detail": "LineageOS",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/beyond1lte/builds"
+        },
+        {
+          "kind": "evidence_score",
+          "detail": "14",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/beyond1lte/builds"
+        }
+      ],
+      "discovered_at": "2026-08-25T01:53:24+00:00",
+      "updated_at": "2026-08-25T01:53:24+00:00"
+    },
+    {
+      "id": "e1197284e10ef0d9",
+      "name": "PixelOS",
+      "type": "custom_rom",
+      "device": "Galaxy S10",
+      "codename": "beyond1lte",
+      "android_version": "Android 14",
+      "rom_version": "14.0",
+      "build_date": "2024-10-19",
+      "status": "verified",
+      "source_url": "https://pixelos.net/download/beyond1lte",
+      "download_url": "https://sourceforge.net/projects/pixelos-releases/files/fourteen/beyond1lte/PixelOS_beyond1lte-14.0-20241019-0428.zip",
+      "source_id": "pixelos_site",
+      "evidence": [
+        {
+          "kind": "registered_source",
+          "detail": "PixelOS (official_project, trust 96)",
+          "source_id": "pixelos_site",
+          "url": "https://pixelos.net"
+        },
+        {
+          "kind": "codename_in_url",
+          "detail": "codename 'beyond1lte' in URL path",
+          "source_id": "pixelos_site",
+          "url": "https://pixelos.net/download/beyond1lte"
+        },
+        {
+          "kind": "device_name_match",
+          "detail": "device name 'Galaxy S10' mentioned",
+          "source_id": "pixelos_site",
+          "url": "https://pixelos.net/download/beyond1lte"
+        },
+        {
+          "kind": "artifact_link",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "pixelos_site",
+          "url": "https://pixelos.net/download/beyond1lte"
+        },
+        {
+          "kind": "artifact_extension",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "pixelos_site",
+          "url": "https://pixelos.net/download/beyond1lte"
+        },
+        {
+          "kind": "download_word",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "pixelos_site",
+          "url": "https://pixelos.net/download/beyond1lte"
+        },
+        {
+          "kind": "changelog",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "pixelos_site",
+          "url": "https://pixelos.net/download/beyond1lte"
+        },
+        {
+          "kind": "build_evidence_tier",
+          "detail": "artifact",
+          "source_id": "pixelos_site",
+          "url": "https://pixelos.net/download/beyond1lte"
+        },
+        {
+          "kind": "family_resolved",
+          "detail": "PixelOS",
+          "source_id": "pixelos_site",
+          "url": "https://pixelos.net/download/beyond1lte"
+        },
+        {
+          "kind": "evidence_score",
+          "detail": "16",
+          "source_id": "pixelos_site",
+          "url": "https://pixelos.net/download/beyond1lte"
+        }
+      ],
+      "discovered_at": "2026-08-25T01:53:24+00:00",
+      "updated_at": "2026-08-25T01:53:24+00:00"
+    },
+    {
+      "id": "740fd67ba4ae32f3",
+      "name": "Pixel Experience",
+      "type": "custom_rom",
+      "device": "Galaxy S10",
+      "codename": "beyond1lte",
+      "android_version": "Android 13",
+      "rom_version": "13",
+      "build_date": "2023-08-15",
+      "status": "verified",
+      "source_url": "https://get.pixelexperience.org/Beyond1lte",
+      "download_url": "https://get.pixelexperience.org/changelog/beyond1lte/PixelExperience_beyond1lte-13.0-20230815-0644-OFFICIAL.zip",
+      "source_id": "pe_dl",
+      "evidence": [
+        {
+          "kind": "registered_source",
+          "detail": "Pixel Experience Downloads (official_download, trust 100)",
+          "source_id": "pe_dl",
+          "url": "https://get.pixelexperience.org"
+        },
+        {
+          "kind": "codename_in_url",
+          "detail": "codename 'beyond1lte' in URL path",
+          "source_id": "pe_dl",
+          "url": "https://get.pixelexperience.org/Beyond1lte"
+        },
+        {
+          "kind": "device_name_match",
+          "detail": "device name 'Galaxy S10' mentioned",
+          "source_id": "pe_dl",
+          "url": "https://get.pixelexperience.org/Beyond1lte"
+        },
+        {
+          "kind": "artifact_link",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "pe_dl",
+          "url": "https://get.pixelexperience.org/Beyond1lte"
+        },
+        {
+          "kind": "artifact_extension",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "pe_dl",
+          "url": "https://get.pixelexperience.org/Beyond1lte"
+        },
+        {
+          "kind": "checksum",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "pe_dl",
+          "url": "https://get.pixelexperience.org/Beyond1lte"
+        },
+        {
+          "kind": "download_word",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "pe_dl",
+          "url": "https://get.pixelexperience.org/Beyond1lte"
+        },
+        {
+          "kind": "changelog",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "pe_dl",
+          "url": "https://get.pixelexperience.org/Beyond1lte"
+        },
+        {
+          "kind": "build_evidence_tier",
+          "detail": "artifact",
+          "source_id": "pe_dl",
+          "url": "https://get.pixelexperience.org/Beyond1lte"
+        },
+        {
+          "kind": "family_resolved",
+          "detail": "Pixel Experience",
+          "source_id": "pe_dl",
+          "url": "https://get.pixelexperience.org/Beyond1lte"
+        },
+        {
+          "kind": "evidence_score",
+          "detail": "17",
+          "source_id": "pe_dl",
+          "url": "https://get.pixelexperience.org/Beyond1lte"
+        }
+      ],
+      "discovered_at": "2026-08-25T01:53:24+00:00",
+      "updated_at": "2026-08-25T01:53:24+00:00"
+    },
+    {
+      "id": "0dfc3a174b64685f",
+      "name": "LineageOS",
+      "type": "custom_rom",
+      "device": "Galaxy S10+",
+      "codename": "beyond2lte",
+      "android_version": "Android 16",
+      "rom_version": "23.2",
+      "build_date": "2026-08-22",
+      "status": "verified",
+      "source_url": "https://download.lineageos.org/api/v2/devices/beyond2lte/builds",
+      "download_url": "https://mirrorbits.lineageos.org/full/beyond2lte/20260822/lineage-23.2-20260822-nightly-beyond2lte-signed.zip",
+      "source_id": "lineageos_dl",
+      "evidence": [
+        {
+          "kind": "registered_source",
+          "detail": "LineageOS Downloads (official_download, trust 100)",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org"
+        },
+        {
+          "kind": "codename_in_url",
+          "detail": "codename 'beyond2lte' in URL path",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/beyond2lte/builds"
+        },
+        {
+          "kind": "artifact_link",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/beyond2lte/builds"
+        },
+        {
+          "kind": "artifact_extension",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/beyond2lte/builds"
+        },
+        {
+          "kind": "build_channel",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/beyond2lte/builds"
+        },
+        {
+          "kind": "build_evidence_tier",
+          "detail": "artifact",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/beyond2lte/builds"
+        },
+        {
+          "kind": "family_resolved",
+          "detail": "LineageOS",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/beyond2lte/builds"
+        },
+        {
+          "kind": "evidence_score",
+          "detail": "14",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/beyond2lte/builds"
+        }
+      ],
+      "discovered_at": "2026-08-25T01:53:44+00:00",
+      "updated_at": "2026-08-25T01:53:44+00:00"
+    },
+    {
+      "id": "9e1f0ea915ec8709",
+      "name": "PixelOS",
+      "type": "custom_rom",
+      "device": "Galaxy S10+",
+      "codename": "beyond2lte",
+      "android_version": "Android 14",
+      "rom_version": "14.0",
+      "build_date": "2024-10-19",
+      "status": "verified",
+      "source_url": "https://pixelos.net/download/beyond2lte",
+      "download_url": "https://sourceforge.net/projects/pixelos-releases/files/fourteen/beyond2lte/PixelOS_beyond2lte-14.0-20241019-0441.zip",
+      "source_id": "pixelos_site",
+      "evidence": [
+        {
+          "kind": "registered_source",
+          "detail": "PixelOS (official_project, trust 96)",
+          "source_id": "pixelos_site",
+          "url": "https://pixelos.net"
+        },
+        {
+          "kind": "codename_in_url",
+          "detail": "codename 'beyond2lte' in URL path",
+          "source_id": "pixelos_site",
+          "url": "https://pixelos.net/download/beyond2lte"
+        },
+        {
+          "kind": "device_name_match",
+          "detail": "device name 'Galaxy S10+' mentioned",
+          "source_id": "pixelos_site",
+          "url": "https://pixelos.net/download/beyond2lte"
+        },
+        {
+          "kind": "artifact_link",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "pixelos_site",
+          "url": "https://pixelos.net/download/beyond2lte"
+        },
+        {
+          "kind": "artifact_extension",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "pixelos_site",
+          "url": "https://pixelos.net/download/beyond2lte"
+        },
+        {
+          "kind": "download_word",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "pixelos_site",
+          "url": "https://pixelos.net/download/beyond2lte"
+        },
+        {
+          "kind": "changelog",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "pixelos_site",
+          "url": "https://pixelos.net/download/beyond2lte"
+        },
+        {
+          "kind": "build_evidence_tier",
+          "detail": "artifact",
+          "source_id": "pixelos_site",
+          "url": "https://pixelos.net/download/beyond2lte"
+        },
+        {
+          "kind": "family_resolved",
+          "detail": "PixelOS",
+          "source_id": "pixelos_site",
+          "url": "https://pixelos.net/download/beyond2lte"
+        },
+        {
+          "kind": "evidence_score",
+          "detail": "16",
+          "source_id": "pixelos_site",
+          "url": "https://pixelos.net/download/beyond2lte"
+        }
+      ],
+      "discovered_at": "2026-08-25T01:53:44+00:00",
+      "updated_at": "2026-08-25T01:53:44+00:00"
+    },
+    {
+      "id": "f1ef9f9969bc9621",
+      "name": "Pixel Experience",
+      "type": "custom_rom",
+      "device": "Galaxy S10+",
+      "codename": "beyond2lte",
+      "android_version": "Android 13",
+      "rom_version": "13",
+      "build_date": "2023-08-15",
+      "status": "verified",
+      "source_url": "https://get.pixelexperience.org/beyond2lte",
+      "download_url": "https://get.pixelexperience.org/changelog/beyond2lte/PixelExperience_beyond2lte-13.0-20230815-0356-OFFICIAL.zip",
+      "source_id": "pe_dl",
+      "evidence": [
+        {
+          "kind": "registered_source",
+          "detail": "Pixel Experience Downloads (official_download, trust 100)",
+          "source_id": "pe_dl",
+          "url": "https://get.pixelexperience.org"
+        },
+        {
+          "kind": "codename_in_url",
+          "detail": "codename 'beyond2lte' in URL path",
+          "source_id": "pe_dl",
+          "url": "https://get.pixelexperience.org/beyond2lte"
+        },
+        {
+          "kind": "device_name_match",
+          "detail": "device name 'Galaxy S10+' mentioned",
+          "source_id": "pe_dl",
+          "url": "https://get.pixelexperience.org/beyond2lte"
+        },
+        {
+          "kind": "artifact_link",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "pe_dl",
+          "url": "https://get.pixelexperience.org/beyond2lte"
+        },
+        {
+          "kind": "artifact_extension",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "pe_dl",
+          "url": "https://get.pixelexperience.org/beyond2lte"
+        },
+        {
+          "kind": "checksum",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "pe_dl",
+          "url": "https://get.pixelexperience.org/beyond2lte"
+        },
+        {
+          "kind": "download_word",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "pe_dl",
+          "url": "https://get.pixelexperience.org/beyond2lte"
+        },
+        {
+          "kind": "changelog",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "pe_dl",
+          "url": "https://get.pixelexperience.org/beyond2lte"
+        },
+        {
+          "kind": "build_evidence_tier",
+          "detail": "artifact",
+          "source_id": "pe_dl",
+          "url": "https://get.pixelexperience.org/beyond2lte"
+        },
+        {
+          "kind": "family_resolved",
+          "detail": "Pixel Experience",
+          "source_id": "pe_dl",
+          "url": "https://get.pixelexperience.org/beyond2lte"
+        },
+        {
+          "kind": "evidence_score",
+          "detail": "17",
+          "source_id": "pe_dl",
+          "url": "https://get.pixelexperience.org/beyond2lte"
+        }
+      ],
+      "discovered_at": "2026-08-25T01:53:44+00:00",
+      "updated_at": "2026-08-25T01:53:44+00:00"
+    },
+    {
+      "id": "b9a59f4f241c4612",
+      "name": "LineageOS",
+      "type": "custom_rom",
+      "device": "Galaxy S10 5G",
+      "codename": "beyondx",
+      "android_version": "Android 16",
+      "rom_version": "23.2",
+      "build_date": "2026-08-19",
+      "status": "verified",
+      "source_url": "https://download.lineageos.org/api/v2/devices/beyondx/builds",
+      "download_url": "https://mirrorbits.lineageos.org/full/beyondx/20260819/lineage-23.2-20260819-nightly-beyondx-signed.zip",
+      "source_id": "lineageos_dl",
+      "evidence": [
+        {
+          "kind": "registered_source",
+          "detail": "LineageOS Downloads (official_download, trust 100)",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org"
+        },
+        {
+          "kind": "codename_in_url",
+          "detail": "codename 'beyondx' in URL path",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/beyondx/builds"
+        },
+        {
+          "kind": "artifact_link",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/beyondx/builds"
+        },
+        {
+          "kind": "artifact_extension",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/beyondx/builds"
+        },
+        {
+          "kind": "build_channel",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/beyondx/builds"
+        },
+        {
+          "kind": "build_evidence_tier",
+          "detail": "artifact",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/beyondx/builds"
+        },
+        {
+          "kind": "family_resolved",
+          "detail": "LineageOS",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/beyondx/builds"
+        },
+        {
+          "kind": "evidence_score",
+          "detail": "14",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/beyondx/builds"
+        }
+      ],
+      "discovered_at": "2026-08-25T01:54:01+00:00",
+      "updated_at": "2026-08-25T01:54:01+00:00"
+    },
+    {
+      "id": "254e1834567490cd",
+      "name": "PixelOS",
+      "type": "custom_rom",
+      "device": "Galaxy S10 5G",
+      "codename": "beyondx",
+      "android_version": "Android 14",
+      "rom_version": "14.0",
+      "build_date": "2024-10-19",
+      "status": "verified",
+      "source_url": "https://pixelos.net/download/beyondx",
+      "download_url": "https://sourceforge.net/projects/pixelos-releases/files/fourteen/beyondx/PixelOS_beyondx-14.0-20241019-0510.zip",
+      "source_id": "pixelos_site",
+      "evidence": [
+        {
+          "kind": "registered_source",
+          "detail": "PixelOS (official_project, trust 96)",
+          "source_id": "pixelos_site",
+          "url": "https://pixelos.net"
+        },
+        {
+          "kind": "codename_in_url",
+          "detail": "codename 'beyondx' in URL path",
+          "source_id": "pixelos_site",
+          "url": "https://pixelos.net/download/beyondx"
+        },
+        {
+          "kind": "device_name_match",
+          "detail": "device name 'Galaxy S10 5G' mentioned",
+          "source_id": "pixelos_site",
+          "url": "https://pixelos.net/download/beyondx"
+        },
+        {
+          "kind": "artifact_link",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "pixelos_site",
+          "url": "https://pixelos.net/download/beyondx"
+        },
+        {
+          "kind": "artifact_extension",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "pixelos_site",
+          "url": "https://pixelos.net/download/beyondx"
+        },
+        {
+          "kind": "download_word",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "pixelos_site",
+          "url": "https://pixelos.net/download/beyondx"
+        },
+        {
+          "kind": "changelog",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "pixelos_site",
+          "url": "https://pixelos.net/download/beyondx"
+        },
+        {
+          "kind": "build_evidence_tier",
+          "detail": "artifact",
+          "source_id": "pixelos_site",
+          "url": "https://pixelos.net/download/beyondx"
+        },
+        {
+          "kind": "family_resolved",
+          "detail": "PixelOS",
+          "source_id": "pixelos_site",
+          "url": "https://pixelos.net/download/beyondx"
+        },
+        {
+          "kind": "evidence_score",
+          "detail": "16",
+          "source_id": "pixelos_site",
+          "url": "https://pixelos.net/download/beyondx"
+        }
+      ],
+      "discovered_at": "2026-08-25T01:54:01+00:00",
+      "updated_at": "2026-08-25T01:54:01+00:00"
+    },
+    {
+      "id": "a4a6e7fb11dde5d1",
+      "name": "Pixel Experience",
+      "type": "custom_rom",
+      "device": "Galaxy S10 5G",
+      "codename": "beyondx",
+      "android_version": "Android 13",
+      "rom_version": "13",
+      "build_date": "2023-08-15",
+      "status": "verified",
+      "source_url": "https://get.pixelexperience.org/Beyondx",
+      "download_url": "https://get.pixelexperience.org/changelog/beyondx/PixelExperience_beyondx-13.0-20230815-0733-OFFICIAL.zip",
+      "source_id": "pe_dl",
+      "evidence": [
+        {
+          "kind": "registered_source",
+          "detail": "Pixel Experience Downloads (official_download, trust 100)",
+          "source_id": "pe_dl",
+          "url": "https://get.pixelexperience.org"
+        },
+        {
+          "kind": "codename_in_url",
+          "detail": "codename 'beyondx' in URL path",
+          "source_id": "pe_dl",
+          "url": "https://get.pixelexperience.org/Beyondx"
+        },
+        {
+          "kind": "device_name_match",
+          "detail": "device name 'Galaxy S10 5G' mentioned",
+          "source_id": "pe_dl",
+          "url": "https://get.pixelexperience.org/Beyondx"
+        },
+        {
+          "kind": "artifact_link",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "pe_dl",
+          "url": "https://get.pixelexperience.org/Beyondx"
+        },
+        {
+          "kind": "artifact_extension",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "pe_dl",
+          "url": "https://get.pixelexperience.org/Beyondx"
+        },
+        {
+          "kind": "checksum",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "pe_dl",
+          "url": "https://get.pixelexperience.org/Beyondx"
+        },
+        {
+          "kind": "download_word",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "pe_dl",
+          "url": "https://get.pixelexperience.org/Beyondx"
+        },
+        {
+          "kind": "changelog",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "pe_dl",
+          "url": "https://get.pixelexperience.org/Beyondx"
+        },
+        {
+          "kind": "build_evidence_tier",
+          "detail": "artifact",
+          "source_id": "pe_dl",
+          "url": "https://get.pixelexperience.org/Beyondx"
+        },
+        {
+          "kind": "family_resolved",
+          "detail": "Pixel Experience",
+          "source_id": "pe_dl",
+          "url": "https://get.pixelexperience.org/Beyondx"
+        },
+        {
+          "kind": "evidence_score",
+          "detail": "17",
+          "source_id": "pe_dl",
+          "url": "https://get.pixelexperience.org/Beyondx"
+        }
+      ],
+      "discovered_at": "2026-08-25T01:54:01+00:00",
+      "updated_at": "2026-08-25T01:54:01+00:00"
+    },
+    {
+      "id": "6ceb95b7557b71fa",
+      "name": "LineageOS",
+      "type": "custom_rom",
+      "device": "Galaxy S20",
+      "codename": "x1s",
+      "android_version": "Android 16",
+      "rom_version": "23.2",
+      "build_date": "2026-08-21",
+      "status": "verified",
+      "source_url": "https://download.lineageos.org/api/v2/devices/x1s/builds",
+      "download_url": "https://mirrorbits.lineageos.org/full/x1s/20260821/lineage-23.2-20260821-nightly-x1s-signed.zip",
+      "source_id": "lineageos_dl",
+      "evidence": [
+        {
+          "kind": "registered_source",
+          "detail": "LineageOS Downloads (official_download, trust 100)",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org"
+        },
+        {
+          "kind": "codename_in_url",
+          "detail": "codename 'x1s' in URL path",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/x1s/builds"
+        },
+        {
+          "kind": "artifact_link",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/x1s/builds"
+        },
+        {
+          "kind": "artifact_extension",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/x1s/builds"
+        },
+        {
+          "kind": "build_channel",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/x1s/builds"
+        },
+        {
+          "kind": "build_evidence_tier",
+          "detail": "artifact",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/x1s/builds"
+        },
+        {
+          "kind": "family_resolved",
+          "detail": "LineageOS",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/x1s/builds"
+        },
+        {
+          "kind": "evidence_score",
+          "detail": "14",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/x1s/builds"
+        }
+      ],
+      "discovered_at": "2026-08-25T01:54:39+00:00",
+      "updated_at": "2026-08-25T01:54:39+00:00"
+    },
+    {
+      "id": "3a06aed52237116a",
+      "name": "LineageOS",
+      "type": "custom_rom",
+      "device": "Galaxy S20+",
+      "codename": "y2s",
+      "android_version": "Android 16",
+      "rom_version": "23.2",
+      "build_date": "2026-08-22",
+      "status": "verified",
+      "source_url": "https://download.lineageos.org/api/v2/devices/y2s/builds",
+      "download_url": "https://mirrorbits.lineageos.org/full/y2s/20260822/lineage-23.2-20260822-nightly-y2s-signed.zip",
+      "source_id": "lineageos_dl",
+      "evidence": [
+        {
+          "kind": "registered_source",
+          "detail": "LineageOS Downloads (official_download, trust 100)",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org"
+        },
+        {
+          "kind": "codename_in_url",
+          "detail": "codename 'y2s' in URL path",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/y2s/builds"
+        },
+        {
+          "kind": "artifact_link",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/y2s/builds"
+        },
+        {
+          "kind": "artifact_extension",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/y2s/builds"
+        },
+        {
+          "kind": "build_channel",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/y2s/builds"
+        },
+        {
+          "kind": "build_evidence_tier",
+          "detail": "artifact",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/y2s/builds"
+        },
+        {
+          "kind": "family_resolved",
+          "detail": "LineageOS",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/y2s/builds"
+        },
+        {
+          "kind": "evidence_score",
+          "detail": "14",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/y2s/builds"
+        }
+      ],
+      "discovered_at": "2026-08-25T01:54:57+00:00",
+      "updated_at": "2026-08-25T01:54:57+00:00"
+    },
+    {
+      "id": "8daf6407897ab4a9",
+      "name": "LineageOS",
+      "type": "custom_rom",
+      "device": "Galaxy S20 Ultra",
+      "codename": "z3s",
+      "android_version": "Android 16",
+      "rom_version": "23.2",
+      "build_date": "2026-08-23",
+      "status": "verified",
+      "source_url": "https://download.lineageos.org/api/v2/devices/z3s/builds",
+      "download_url": "https://mirrorbits.lineageos.org/full/z3s/20260823/lineage-23.2-20260823-nightly-z3s-signed.zip",
+      "source_id": "lineageos_dl",
+      "evidence": [
+        {
+          "kind": "registered_source",
+          "detail": "LineageOS Downloads (official_download, trust 100)",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org"
+        },
+        {
+          "kind": "codename_in_url",
+          "detail": "codename 'z3s' in URL path",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/z3s/builds"
+        },
+        {
+          "kind": "artifact_link",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/z3s/builds"
+        },
+        {
+          "kind": "artifact_extension",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/z3s/builds"
+        },
+        {
+          "kind": "build_channel",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/z3s/builds"
+        },
+        {
+          "kind": "build_evidence_tier",
+          "detail": "artifact",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/z3s/builds"
+        },
+        {
+          "kind": "family_resolved",
+          "detail": "LineageOS",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/z3s/builds"
+        },
+        {
+          "kind": "evidence_score",
+          "detail": "14",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/z3s/builds"
+        }
+      ],
+      "discovered_at": "2026-08-25T01:55:16+00:00",
+      "updated_at": "2026-08-25T01:55:16+00:00"
+    },
+    {
+      "id": "e624aa6988a53ebc",
+      "name": "LineageOS",
+      "type": "custom_rom",
+      "device": "Galaxy S20 FE",
+      "codename": "r8s",
+      "android_version": "Android 16",
+      "rom_version": "23.2",
+      "build_date": "2026-08-24",
+      "status": "verified",
+      "source_url": "https://download.lineageos.org/api/v2/devices/r8s/builds",
+      "download_url": "https://mirrorbits.lineageos.org/full/r8s/20260824/lineage-23.2-20260824-nightly-r8s-signed.zip",
+      "source_id": "lineageos_dl",
+      "evidence": [
+        {
+          "kind": "registered_source",
+          "detail": "LineageOS Downloads (official_download, trust 100)",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org"
+        },
+        {
+          "kind": "codename_in_url",
+          "detail": "codename 'r8s' in URL path",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/r8s/builds"
+        },
+        {
+          "kind": "artifact_link",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/r8s/builds"
+        },
+        {
+          "kind": "artifact_extension",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/r8s/builds"
+        },
+        {
+          "kind": "build_channel",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/r8s/builds"
+        },
+        {
+          "kind": "build_evidence_tier",
+          "detail": "artifact",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/r8s/builds"
+        },
+        {
+          "kind": "family_resolved",
+          "detail": "LineageOS",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/r8s/builds"
+        },
+        {
+          "kind": "evidence_score",
+          "detail": "14",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/r8s/builds"
+        }
+      ],
+      "discovered_at": "2026-08-25T01:55:33+00:00",
+      "updated_at": "2026-08-25T01:55:33+00:00"
+    },
+    {
+      "id": "2fa2302af7061dbb",
+      "name": "LineageOS",
+      "type": "custom_rom",
+      "device": "Galaxy S20 FE 5G",
+      "codename": "r8q",
+      "android_version": "Android 16",
+      "rom_version": "23.2",
+      "build_date": "2026-08-22",
+      "status": "verified",
+      "source_url": "https://download.lineageos.org/api/v2/devices/r8q/builds",
+      "download_url": "https://mirrorbits.lineageos.org/full/r8q/20260822/lineage-23.2-20260822-nightly-r8q-signed.zip",
+      "source_id": "lineageos_dl",
+      "evidence": [
+        {
+          "kind": "registered_source",
+          "detail": "LineageOS Downloads (official_download, trust 100)",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org"
+        },
+        {
+          "kind": "codename_in_url",
+          "detail": "codename 'r8q' in URL path",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/r8q/builds"
+        },
+        {
+          "kind": "artifact_link",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/r8q/builds"
+        },
+        {
+          "kind": "artifact_extension",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/r8q/builds"
+        },
+        {
+          "kind": "build_channel",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/r8q/builds"
+        },
+        {
+          "kind": "build_evidence_tier",
+          "detail": "artifact",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/r8q/builds"
+        },
+        {
+          "kind": "family_resolved",
+          "detail": "LineageOS",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/r8q/builds"
+        },
+        {
+          "kind": "evidence_score",
+          "detail": "14",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/r8q/builds"
+        }
+      ],
+      "discovered_at": "2026-08-25T01:55:58+00:00",
+      "updated_at": "2026-08-25T01:55:58+00:00"
+    },
+    {
+      "id": "26031f6d1c683422",
+      "name": "LineageOS",
+      "type": "custom_rom",
+      "device": "Galaxy S22",
+      "codename": "r0s",
+      "android_version": "Android 16",
+      "rom_version": "23.2",
+      "build_date": "2026-08-18",
+      "status": "verified",
+      "source_url": "https://download.lineageos.org/api/v2/devices/r0s/builds",
+      "download_url": "https://mirrorbits.lineageos.org/full/r0s/20260818/lineage-23.2-20260818-nightly-r0s-signed.zip",
+      "source_id": "lineageos_dl",
+      "evidence": [
+        {
+          "kind": "registered_source",
+          "detail": "LineageOS Downloads (official_download, trust 100)",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org"
+        },
+        {
+          "kind": "codename_in_url",
+          "detail": "codename 'r0s' in URL path",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/r0s/builds"
+        },
+        {
+          "kind": "artifact_link",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/r0s/builds"
+        },
+        {
+          "kind": "artifact_extension",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/r0s/builds"
+        },
+        {
+          "kind": "build_channel",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/r0s/builds"
+        },
+        {
+          "kind": "build_evidence_tier",
+          "detail": "artifact",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/r0s/builds"
+        },
+        {
+          "kind": "family_resolved",
+          "detail": "LineageOS",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/r0s/builds"
+        },
+        {
+          "kind": "evidence_score",
+          "detail": "14",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/r0s/builds"
+        }
+      ],
+      "discovered_at": "2026-08-25T01:57:22+00:00",
+      "updated_at": "2026-08-25T01:57:22+00:00"
+    },
+    {
+      "id": "4d9395093a4a3aab",
+      "name": "LineageOS",
+      "type": "custom_rom",
+      "device": "Galaxy S22+",
+      "codename": "g0s",
+      "android_version": "Android 16",
+      "rom_version": "23.2",
+      "build_date": "2026-08-18",
+      "status": "verified",
+      "source_url": "https://download.lineageos.org/api/v2/devices/g0s/builds",
+      "download_url": "https://mirrorbits.lineageos.org/full/g0s/20260818/lineage-23.2-20260818-nightly-g0s-signed.zip",
+      "source_id": "lineageos_dl",
+      "evidence": [
+        {
+          "kind": "registered_source",
+          "detail": "LineageOS Downloads (official_download, trust 100)",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org"
+        },
+        {
+          "kind": "codename_in_url",
+          "detail": "codename 'g0s' in URL path",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/g0s/builds"
+        },
+        {
+          "kind": "artifact_link",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/g0s/builds"
+        },
+        {
+          "kind": "artifact_extension",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/g0s/builds"
+        },
+        {
+          "kind": "build_channel",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/g0s/builds"
+        },
+        {
+          "kind": "build_evidence_tier",
+          "detail": "artifact",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/g0s/builds"
+        },
+        {
+          "kind": "family_resolved",
+          "detail": "LineageOS",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/g0s/builds"
+        },
+        {
+          "kind": "evidence_score",
+          "detail": "14",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/g0s/builds"
+        }
+      ],
+      "discovered_at": "2026-08-25T01:57:38+00:00",
+      "updated_at": "2026-08-25T01:57:38+00:00"
+    },
+    {
+      "id": "20468c3b7dbe0f8c",
+      "name": "LineageOS",
+      "type": "custom_rom",
+      "device": "Galaxy S22 Ultra",
+      "codename": "b0s",
+      "android_version": "Android 16",
+      "rom_version": "23.2",
+      "build_date": "2026-08-22",
+      "status": "verified",
+      "source_url": "https://download.lineageos.org/api/v2/devices/b0s/builds",
+      "download_url": "https://mirrorbits.lineageos.org/full/b0s/20260822/lineage-23.2-20260822-nightly-b0s-signed.zip",
+      "source_id": "lineageos_dl",
+      "evidence": [
+        {
+          "kind": "registered_source",
+          "detail": "LineageOS Downloads (official_download, trust 100)",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org"
+        },
+        {
+          "kind": "codename_in_url",
+          "detail": "codename 'b0s' in URL path",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/b0s/builds"
+        },
+        {
+          "kind": "artifact_link",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/b0s/builds"
+        },
+        {
+          "kind": "artifact_extension",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/b0s/builds"
+        },
+        {
+          "kind": "build_channel",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/b0s/builds"
+        },
+        {
+          "kind": "build_evidence_tier",
+          "detail": "artifact",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/b0s/builds"
+        },
+        {
+          "kind": "family_resolved",
+          "detail": "LineageOS",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/b0s/builds"
+        },
+        {
+          "kind": "evidence_score",
+          "detail": "14",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/b0s/builds"
+        }
+      ],
+      "discovered_at": "2026-08-25T01:57:55+00:00",
+      "updated_at": "2026-08-25T01:57:55+00:00"
+    },
+    {
+      "id": "446d863d07ef785f",
+      "name": "LineageOS",
+      "type": "custom_rom",
+      "device": "Galaxy S23",
+      "codename": "dm1q",
+      "android_version": "Android 16",
+      "rom_version": "23.2",
+      "build_date": "2026-08-20",
+      "status": "verified",
+      "source_url": "https://download.lineageos.org/api/v2/devices/dm1q/builds",
+      "download_url": "https://mirrorbits.lineageos.org/full/dm1q/20260820/lineage-23.2-20260820-nightly-dm1q-signed.zip",
+      "source_id": "lineageos_dl",
+      "evidence": [
+        {
+          "kind": "registered_source",
+          "detail": "LineageOS Downloads (official_download, trust 100)",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org"
+        },
+        {
+          "kind": "codename_in_url",
+          "detail": "codename 'dm1q' in URL path",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/dm1q/builds"
+        },
+        {
+          "kind": "artifact_link",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/dm1q/builds"
+        },
+        {
+          "kind": "artifact_extension",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/dm1q/builds"
+        },
+        {
+          "kind": "build_channel",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/dm1q/builds"
+        },
+        {
+          "kind": "build_evidence_tier",
+          "detail": "artifact",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/dm1q/builds"
+        },
+        {
+          "kind": "family_resolved",
+          "detail": "LineageOS",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/dm1q/builds"
+        },
+        {
+          "kind": "evidence_score",
+          "detail": "14",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/dm1q/builds"
+        }
+      ],
+      "discovered_at": "2026-08-25T01:58:14+00:00",
+      "updated_at": "2026-08-25T01:58:14+00:00"
+    },
+    {
+      "id": "2b8735c8f827077c",
+      "name": "PixelOS",
+      "type": "custom_rom",
+      "device": "Galaxy Note 9",
+      "codename": "crownlte",
+      "android_version": "Android 12",
+      "rom_version": "12.1",
+      "build_date": "2022-08-14",
+      "status": "verified",
+      "source_url": "https://pixelos.net/download/crownlte",
+      "download_url": "https://sourceforge.net/projects/pixelos-releases/files/twelve/crownlte/PixelOS_crownlte-12.1-20220814-0918.zip",
+      "source_id": "pixelos_site",
+      "evidence": [
+        {
+          "kind": "registered_source",
+          "detail": "PixelOS (official_project, trust 96)",
+          "source_id": "pixelos_site",
+          "url": "https://pixelos.net"
+        },
+        {
+          "kind": "codename_in_url",
+          "detail": "codename 'crownlte' in URL path",
+          "source_id": "pixelos_site",
+          "url": "https://pixelos.net/download/crownlte"
+        },
+        {
+          "kind": "device_name_match",
+          "detail": "device name 'Galaxy Note 9' mentioned",
+          "source_id": "pixelos_site",
+          "url": "https://pixelos.net/download/crownlte"
+        },
+        {
+          "kind": "artifact_link",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "pixelos_site",
+          "url": "https://pixelos.net/download/crownlte"
+        },
+        {
+          "kind": "artifact_extension",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "pixelos_site",
+          "url": "https://pixelos.net/download/crownlte"
+        },
+        {
+          "kind": "download_word",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "pixelos_site",
+          "url": "https://pixelos.net/download/crownlte"
+        },
+        {
+          "kind": "changelog",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "pixelos_site",
+          "url": "https://pixelos.net/download/crownlte"
+        },
+        {
+          "kind": "build_evidence_tier",
+          "detail": "artifact",
+          "source_id": "pixelos_site",
+          "url": "https://pixelos.net/download/crownlte"
+        },
+        {
+          "kind": "family_resolved",
+          "detail": "PixelOS",
+          "source_id": "pixelos_site",
+          "url": "https://pixelos.net/download/crownlte"
+        },
+        {
+          "kind": "evidence_score",
+          "detail": "16",
+          "source_id": "pixelos_site",
+          "url": "https://pixelos.net/download/crownlte"
+        }
+      ],
+      "discovered_at": "2026-08-25T02:03:52+00:00",
+      "updated_at": "2026-08-25T02:03:52+00:00"
+    },
+    {
+      "id": "4f8f46f36aa08e15",
+      "name": "Pixel Experience",
+      "type": "custom_rom",
+      "device": "Galaxy Note 9",
+      "codename": "crownlte",
+      "android_version": "Android 13",
+      "rom_version": "13",
+      "build_date": "2023-12-16",
+      "status": "verified",
+      "source_url": "https://get.pixelexperience.org/crownlte",
+      "download_url": "https://get.pixelexperience.org/changelog/crownlte/PixelExperience_crownlte-13.0-20231216-1149-OFFICIAL.zip",
+      "source_id": "pe_dl",
+      "evidence": [
+        {
+          "kind": "registered_source",
+          "detail": "Pixel Experience Downloads (official_download, trust 100)",
+          "source_id": "pe_dl",
+          "url": "https://get.pixelexperience.org"
+        },
+        {
+          "kind": "codename_in_url",
+          "detail": "codename 'crownlte' in URL path",
+          "source_id": "pe_dl",
+          "url": "https://get.pixelexperience.org/crownlte"
+        },
+        {
+          "kind": "device_name_match",
+          "detail": "device name 'Galaxy Note 9' mentioned",
+          "source_id": "pe_dl",
+          "url": "https://get.pixelexperience.org/crownlte"
+        },
+        {
+          "kind": "artifact_link",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "pe_dl",
+          "url": "https://get.pixelexperience.org/crownlte"
+        },
+        {
+          "kind": "artifact_extension",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "pe_dl",
+          "url": "https://get.pixelexperience.org/crownlte"
+        },
+        {
+          "kind": "checksum",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "pe_dl",
+          "url": "https://get.pixelexperience.org/crownlte"
+        },
+        {
+          "kind": "download_word",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "pe_dl",
+          "url": "https://get.pixelexperience.org/crownlte"
+        },
+        {
+          "kind": "changelog",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "pe_dl",
+          "url": "https://get.pixelexperience.org/crownlte"
+        },
+        {
+          "kind": "build_evidence_tier",
+          "detail": "artifact",
+          "source_id": "pe_dl",
+          "url": "https://get.pixelexperience.org/crownlte"
+        },
+        {
+          "kind": "family_resolved",
+          "detail": "Pixel Experience",
+          "source_id": "pe_dl",
+          "url": "https://get.pixelexperience.org/crownlte"
+        },
+        {
+          "kind": "evidence_score",
+          "detail": "17",
+          "source_id": "pe_dl",
+          "url": "https://get.pixelexperience.org/crownlte"
+        }
+      ],
+      "discovered_at": "2026-08-25T02:03:52+00:00",
+      "updated_at": "2026-08-25T02:03:52+00:00"
+    },
+    {
+      "id": "172c95e94ca41b83",
+      "name": "LineageOS",
+      "type": "custom_rom",
+      "device": "Galaxy Note 10",
+      "codename": "d1",
+      "android_version": "Android 16",
+      "rom_version": "23.2",
+      "build_date": "2026-08-20",
+      "status": "verified",
+      "source_url": "https://download.lineageos.org/api/v2/devices/d1/builds",
+      "download_url": "https://mirrorbits.lineageos.org/full/d1/20260820/lineage-23.2-20260820-nightly-d1-signed.zip",
+      "source_id": "lineageos_dl",
+      "evidence": [
+        {
+          "kind": "registered_source",
+          "detail": "LineageOS Downloads (official_download, trust 100)",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org"
+        },
+        {
+          "kind": "codename_in_url",
+          "detail": "codename 'd1' in URL path",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/d1/builds"
+        },
+        {
+          "kind": "artifact_link",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/d1/builds"
+        },
+        {
+          "kind": "artifact_extension",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/d1/builds"
+        },
+        {
+          "kind": "build_channel",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/d1/builds"
+        },
+        {
+          "kind": "build_evidence_tier",
+          "detail": "artifact",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/d1/builds"
+        },
+        {
+          "kind": "family_resolved",
+          "detail": "LineageOS",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/d1/builds"
+        },
+        {
+          "kind": "evidence_score",
+          "detail": "14",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/d1/builds"
+        }
+      ],
+      "discovered_at": "2026-08-25T02:04:09+00:00",
+      "updated_at": "2026-08-25T02:04:09+00:00"
+    },
+    {
+      "id": "55872c4d8954c8ed",
+      "name": "PixelOS",
+      "type": "custom_rom",
+      "device": "Galaxy Note 10",
+      "codename": "d1",
+      "android_version": "Android 14",
+      "rom_version": "14.0",
+      "build_date": "2024-10-19",
+      "status": "verified",
+      "source_url": "https://pixelos.net/download/d1",
+      "download_url": "https://sourceforge.net/projects/pixelos-releases/files/fourteen/d1/PixelOS_d1-14.0-20241019-1840.zip",
+      "source_id": "pixelos_site",
+      "evidence": [
+        {
+          "kind": "registered_source",
+          "detail": "PixelOS (official_project, trust 96)",
+          "source_id": "pixelos_site",
+          "url": "https://pixelos.net"
+        },
+        {
+          "kind": "codename_in_url",
+          "detail": "codename 'd1' in URL path",
+          "source_id": "pixelos_site",
+          "url": "https://pixelos.net/download/d1"
+        },
+        {
+          "kind": "device_name_match",
+          "detail": "device name 'Galaxy Note 10' mentioned",
+          "source_id": "pixelos_site",
+          "url": "https://pixelos.net/download/d1"
+        },
+        {
+          "kind": "artifact_link",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "pixelos_site",
+          "url": "https://pixelos.net/download/d1"
+        },
+        {
+          "kind": "artifact_extension",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "pixelos_site",
+          "url": "https://pixelos.net/download/d1"
+        },
+        {
+          "kind": "download_word",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "pixelos_site",
+          "url": "https://pixelos.net/download/d1"
+        },
+        {
+          "kind": "changelog",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "pixelos_site",
+          "url": "https://pixelos.net/download/d1"
+        },
+        {
+          "kind": "build_evidence_tier",
+          "detail": "artifact",
+          "source_id": "pixelos_site",
+          "url": "https://pixelos.net/download/d1"
+        },
+        {
+          "kind": "family_resolved",
+          "detail": "PixelOS",
+          "source_id": "pixelos_site",
+          "url": "https://pixelos.net/download/d1"
+        },
+        {
+          "kind": "evidence_score",
+          "detail": "16",
+          "source_id": "pixelos_site",
+          "url": "https://pixelos.net/download/d1"
+        }
+      ],
+      "discovered_at": "2026-08-25T02:04:09+00:00",
+      "updated_at": "2026-08-25T02:04:09+00:00"
+    },
+    {
+      "id": "ad674230525ab621",
+      "name": "Pixel Experience",
+      "type": "custom_rom",
+      "device": "Galaxy Note 10",
+      "codename": "d1",
+      "android_version": "Android 13",
+      "rom_version": "13",
+      "build_date": "2023-08-15",
+      "status": "verified",
+      "source_url": "https://get.pixelexperience.org/D1",
+      "download_url": "https://get.pixelexperience.org/changelog/d1/PixelExperience_d1-13.0-20230815-1051-OFFICIAL.zip",
+      "source_id": "pe_dl",
+      "evidence": [
+        {
+          "kind": "registered_source",
+          "detail": "Pixel Experience Downloads (official_download, trust 100)",
+          "source_id": "pe_dl",
+          "url": "https://get.pixelexperience.org"
+        },
+        {
+          "kind": "codename_in_url",
+          "detail": "codename 'd1' in URL path",
+          "source_id": "pe_dl",
+          "url": "https://get.pixelexperience.org/D1"
+        },
+        {
+          "kind": "device_name_match",
+          "detail": "device name 'Galaxy Note 10' mentioned",
+          "source_id": "pe_dl",
+          "url": "https://get.pixelexperience.org/D1"
+        },
+        {
+          "kind": "artifact_link",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "pe_dl",
+          "url": "https://get.pixelexperience.org/D1"
+        },
+        {
+          "kind": "artifact_extension",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "pe_dl",
+          "url": "https://get.pixelexperience.org/D1"
+        },
+        {
+          "kind": "checksum",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "pe_dl",
+          "url": "https://get.pixelexperience.org/D1"
+        },
+        {
+          "kind": "download_word",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "pe_dl",
+          "url": "https://get.pixelexperience.org/D1"
+        },
+        {
+          "kind": "changelog",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "pe_dl",
+          "url": "https://get.pixelexperience.org/D1"
+        },
+        {
+          "kind": "build_evidence_tier",
+          "detail": "artifact",
+          "source_id": "pe_dl",
+          "url": "https://get.pixelexperience.org/D1"
+        },
+        {
+          "kind": "family_resolved",
+          "detail": "Pixel Experience",
+          "source_id": "pe_dl",
+          "url": "https://get.pixelexperience.org/D1"
+        },
+        {
+          "kind": "evidence_score",
+          "detail": "17",
+          "source_id": "pe_dl",
+          "url": "https://get.pixelexperience.org/D1"
+        }
+      ],
+      "discovered_at": "2026-08-25T02:04:09+00:00",
+      "updated_at": "2026-08-25T02:04:09+00:00"
+    },
+    {
+      "id": "c6bc8365fa6968d0",
+      "name": "LineageOS",
+      "type": "custom_rom",
+      "device": "Galaxy Note 10+",
+      "codename": "d2s",
+      "android_version": "Android 16",
+      "rom_version": "23.2",
+      "build_date": "2026-08-23",
+      "status": "verified",
+      "source_url": "https://download.lineageos.org/api/v2/devices/d2s/builds",
+      "download_url": "https://mirrorbits.lineageos.org/full/d2s/20260823/lineage-23.2-20260823-nightly-d2s-signed.zip",
+      "source_id": "lineageos_dl",
+      "evidence": [
+        {
+          "kind": "registered_source",
+          "detail": "LineageOS Downloads (official_download, trust 100)",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org"
+        },
+        {
+          "kind": "codename_in_url",
+          "detail": "codename 'd2s' in URL path",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/d2s/builds"
+        },
+        {
+          "kind": "artifact_link",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/d2s/builds"
+        },
+        {
+          "kind": "artifact_extension",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/d2s/builds"
+        },
+        {
+          "kind": "build_channel",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/d2s/builds"
+        },
+        {
+          "kind": "build_evidence_tier",
+          "detail": "artifact",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/d2s/builds"
+        },
+        {
+          "kind": "family_resolved",
+          "detail": "LineageOS",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/d2s/builds"
+        },
+        {
+          "kind": "evidence_score",
+          "detail": "14",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/d2s/builds"
+        }
+      ],
+      "discovered_at": "2026-08-25T02:04:25+00:00",
+      "updated_at": "2026-08-25T02:04:25+00:00"
+    },
+    {
+      "id": "fd1a354d757fb6c1",
+      "name": "PixelOS",
+      "type": "custom_rom",
+      "device": "Galaxy Note 10+",
+      "codename": "d2s",
+      "android_version": "Android 14",
+      "rom_version": "14.0",
+      "build_date": "2024-10-19",
+      "status": "verified",
+      "source_url": "https://pixelos.net/download/d2s",
+      "download_url": "https://sourceforge.net/projects/pixelos-releases/files/fourteen/d2s/PixelOS_d2s-14.0-20241019-0525.zip",
+      "source_id": "pixelos_site",
+      "evidence": [
+        {
+          "kind": "registered_source",
+          "detail": "PixelOS (official_project, trust 96)",
+          "source_id": "pixelos_site",
+          "url": "https://pixelos.net"
+        },
+        {
+          "kind": "codename_in_url",
+          "detail": "codename 'd2s' in URL path",
+          "source_id": "pixelos_site",
+          "url": "https://pixelos.net/download/d2s"
+        },
+        {
+          "kind": "device_name_match",
+          "detail": "device name 'Galaxy Note 10+' mentioned",
+          "source_id": "pixelos_site",
+          "url": "https://pixelos.net/download/d2s"
+        },
+        {
+          "kind": "artifact_link",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "pixelos_site",
+          "url": "https://pixelos.net/download/d2s"
+        },
+        {
+          "kind": "artifact_extension",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "pixelos_site",
+          "url": "https://pixelos.net/download/d2s"
+        },
+        {
+          "kind": "download_word",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "pixelos_site",
+          "url": "https://pixelos.net/download/d2s"
+        },
+        {
+          "kind": "changelog",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "pixelos_site",
+          "url": "https://pixelos.net/download/d2s"
+        },
+        {
+          "kind": "build_evidence_tier",
+          "detail": "artifact",
+          "source_id": "pixelos_site",
+          "url": "https://pixelos.net/download/d2s"
+        },
+        {
+          "kind": "family_resolved",
+          "detail": "PixelOS",
+          "source_id": "pixelos_site",
+          "url": "https://pixelos.net/download/d2s"
+        },
+        {
+          "kind": "evidence_score",
+          "detail": "16",
+          "source_id": "pixelos_site",
+          "url": "https://pixelos.net/download/d2s"
+        }
+      ],
+      "discovered_at": "2026-08-25T02:04:25+00:00",
+      "updated_at": "2026-08-25T02:04:25+00:00"
+    },
+    {
+      "id": "bf09f09caf142af7",
+      "name": "Pixel Experience",
+      "type": "custom_rom",
+      "device": "Galaxy Note 10+",
+      "codename": "d2s",
+      "android_version": "Android 13",
+      "rom_version": "13",
+      "build_date": "2023-08-15",
+      "status": "verified",
+      "source_url": "https://get.pixelexperience.org/d2s",
+      "download_url": "https://get.pixelexperience.org/changelog/d2s/PixelExperience_d2s-13.0-20230815-1056-OFFICIAL.zip",
+      "source_id": "pe_dl",
+      "evidence": [
+        {
+          "kind": "registered_source",
+          "detail": "Pixel Experience Downloads (official_download, trust 100)",
+          "source_id": "pe_dl",
+          "url": "https://get.pixelexperience.org"
+        },
+        {
+          "kind": "codename_in_url",
+          "detail": "codename 'd2s' in URL path",
+          "source_id": "pe_dl",
+          "url": "https://get.pixelexperience.org/d2s"
+        },
+        {
+          "kind": "device_name_match",
+          "detail": "device name 'Galaxy Note 10+' mentioned",
+          "source_id": "pe_dl",
+          "url": "https://get.pixelexperience.org/d2s"
+        },
+        {
+          "kind": "artifact_link",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "pe_dl",
+          "url": "https://get.pixelexperience.org/d2s"
+        },
+        {
+          "kind": "artifact_extension",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "pe_dl",
+          "url": "https://get.pixelexperience.org/d2s"
+        },
+        {
+          "kind": "checksum",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "pe_dl",
+          "url": "https://get.pixelexperience.org/d2s"
+        },
+        {
+          "kind": "download_word",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "pe_dl",
+          "url": "https://get.pixelexperience.org/d2s"
+        },
+        {
+          "kind": "changelog",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "pe_dl",
+          "url": "https://get.pixelexperience.org/d2s"
+        },
+        {
+          "kind": "build_evidence_tier",
+          "detail": "artifact",
+          "source_id": "pe_dl",
+          "url": "https://get.pixelexperience.org/d2s"
+        },
+        {
+          "kind": "family_resolved",
+          "detail": "Pixel Experience",
+          "source_id": "pe_dl",
+          "url": "https://get.pixelexperience.org/d2s"
+        },
+        {
+          "kind": "evidence_score",
+          "detail": "17",
+          "source_id": "pe_dl",
+          "url": "https://get.pixelexperience.org/d2s"
+        }
+      ],
+      "discovered_at": "2026-08-25T02:04:25+00:00",
+      "updated_at": "2026-08-25T02:04:25+00:00"
+    },
+    {
+      "id": "64fdbde2d8cfa017",
+      "name": "LineageOS",
+      "type": "custom_rom",
+      "device": "Galaxy Note 10+ 5G",
+      "codename": "d2x",
+      "android_version": "Android 16",
+      "rom_version": "23.2",
+      "build_date": "2026-08-23",
+      "status": "verified",
+      "source_url": "https://download.lineageos.org/api/v2/devices/d2x/builds",
+      "download_url": "https://mirrorbits.lineageos.org/full/d2x/20260823/lineage-23.2-20260823-nightly-d2x-signed.zip",
+      "source_id": "lineageos_dl",
+      "evidence": [
+        {
+          "kind": "registered_source",
+          "detail": "LineageOS Downloads (official_download, trust 100)",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org"
+        },
+        {
+          "kind": "codename_in_url",
+          "detail": "codename 'd2x' in URL path",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/d2x/builds"
+        },
+        {
+          "kind": "artifact_link",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/d2x/builds"
+        },
+        {
+          "kind": "artifact_extension",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/d2x/builds"
+        },
+        {
+          "kind": "build_channel",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/d2x/builds"
+        },
+        {
+          "kind": "build_evidence_tier",
+          "detail": "artifact",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/d2x/builds"
+        },
+        {
+          "kind": "family_resolved",
+          "detail": "LineageOS",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/d2x/builds"
+        },
+        {
+          "kind": "evidence_score",
+          "detail": "14",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/d2x/builds"
+        }
+      ],
+      "discovered_at": "2026-08-25T02:04:45+00:00",
+      "updated_at": "2026-08-25T02:04:45+00:00"
+    },
+    {
+      "id": "e57c59c3da853ec6",
+      "name": "PixelOS",
+      "type": "custom_rom",
+      "device": "Galaxy Note 10+ 5G",
+      "codename": "d2x",
+      "android_version": "Android 14",
+      "rom_version": "14.0",
+      "build_date": "2024-10-19",
+      "status": "verified",
+      "source_url": "https://pixelos.net/download/d2x",
+      "download_url": "https://sourceforge.net/projects/pixelos-releases/files/fourteen/d2x/PixelOS_d2x-14.0-20241019-0455.zip",
+      "source_id": "pixelos_site",
+      "evidence": [
+        {
+          "kind": "registered_source",
+          "detail": "PixelOS (official_project, trust 96)",
+          "source_id": "pixelos_site",
+          "url": "https://pixelos.net"
+        },
+        {
+          "kind": "codename_in_url",
+          "detail": "codename 'd2x' in URL path",
+          "source_id": "pixelos_site",
+          "url": "https://pixelos.net/download/d2x"
+        },
+        {
+          "kind": "device_name_match",
+          "detail": "device name 'Galaxy Note 10+ 5G' mentioned",
+          "source_id": "pixelos_site",
+          "url": "https://pixelos.net/download/d2x"
+        },
+        {
+          "kind": "artifact_link",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "pixelos_site",
+          "url": "https://pixelos.net/download/d2x"
+        },
+        {
+          "kind": "artifact_extension",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "pixelos_site",
+          "url": "https://pixelos.net/download/d2x"
+        },
+        {
+          "kind": "download_word",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "pixelos_site",
+          "url": "https://pixelos.net/download/d2x"
+        },
+        {
+          "kind": "changelog",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "pixelos_site",
+          "url": "https://pixelos.net/download/d2x"
+        },
+        {
+          "kind": "build_evidence_tier",
+          "detail": "artifact",
+          "source_id": "pixelos_site",
+          "url": "https://pixelos.net/download/d2x"
+        },
+        {
+          "kind": "family_resolved",
+          "detail": "PixelOS",
+          "source_id": "pixelos_site",
+          "url": "https://pixelos.net/download/d2x"
+        },
+        {
+          "kind": "evidence_score",
+          "detail": "16",
+          "source_id": "pixelos_site",
+          "url": "https://pixelos.net/download/d2x"
+        }
+      ],
+      "discovered_at": "2026-08-25T02:04:45+00:00",
+      "updated_at": "2026-08-25T02:04:45+00:00"
+    },
+    {
+      "id": "69f53c2e0321817a",
+      "name": "Pixel Experience",
+      "type": "custom_rom",
+      "device": "Galaxy Note 10+ 5G",
+      "codename": "d2x",
+      "android_version": "Android 13",
+      "rom_version": "13",
+      "build_date": "2023-08-15",
+      "status": "verified",
+      "source_url": "https://get.pixelexperience.org/d2x",
+      "download_url": "https://get.pixelexperience.org/changelog/d2x/PixelExperience_d2x-13.0-20230815-1216-OFFICIAL.zip",
+      "source_id": "pe_dl",
+      "evidence": [
+        {
+          "kind": "registered_source",
+          "detail": "Pixel Experience Downloads (official_download, trust 100)",
+          "source_id": "pe_dl",
+          "url": "https://get.pixelexperience.org"
+        },
+        {
+          "kind": "codename_in_url",
+          "detail": "codename 'd2x' in URL path",
+          "source_id": "pe_dl",
+          "url": "https://get.pixelexperience.org/d2x"
+        },
+        {
+          "kind": "device_name_match",
+          "detail": "device name 'Galaxy Note 10+ 5G' mentioned",
+          "source_id": "pe_dl",
+          "url": "https://get.pixelexperience.org/d2x"
+        },
+        {
+          "kind": "artifact_link",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "pe_dl",
+          "url": "https://get.pixelexperience.org/d2x"
+        },
+        {
+          "kind": "artifact_extension",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "pe_dl",
+          "url": "https://get.pixelexperience.org/d2x"
+        },
+        {
+          "kind": "checksum",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "pe_dl",
+          "url": "https://get.pixelexperience.org/d2x"
+        },
+        {
+          "kind": "download_word",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "pe_dl",
+          "url": "https://get.pixelexperience.org/d2x"
+        },
+        {
+          "kind": "changelog",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "pe_dl",
+          "url": "https://get.pixelexperience.org/d2x"
+        },
+        {
+          "kind": "build_evidence_tier",
+          "detail": "artifact",
+          "source_id": "pe_dl",
+          "url": "https://get.pixelexperience.org/d2x"
+        },
+        {
+          "kind": "family_resolved",
+          "detail": "Pixel Experience",
+          "source_id": "pe_dl",
+          "url": "https://get.pixelexperience.org/d2x"
+        },
+        {
+          "kind": "evidence_score",
+          "detail": "17",
+          "source_id": "pe_dl",
+          "url": "https://get.pixelexperience.org/d2x"
+        }
+      ],
+      "discovered_at": "2026-08-25T02:04:45+00:00",
+      "updated_at": "2026-08-25T02:04:45+00:00"
+    },
+    {
+      "id": "f006e19c88e7f68b",
+      "name": "LineageOS",
+      "type": "custom_rom",
+      "device": "Galaxy A21s",
+      "codename": "a21s",
+      "android_version": "Android 16",
+      "rom_version": "23.2",
+      "build_date": "2026-08-18",
+      "status": "verified",
+      "source_url": "https://download.lineageos.org/api/v2/devices/a21s/builds",
+      "download_url": "https://mirrorbits.lineageos.org/full/a21s/20260818/lineage-23.2-20260818-nightly-a21s-signed.zip",
+      "source_id": "lineageos_dl",
+      "evidence": [
+        {
+          "kind": "registered_source",
+          "detail": "LineageOS Downloads (official_download, trust 100)",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org"
+        },
+        {
+          "kind": "codename_in_url",
+          "detail": "codename 'a21s' in URL path",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/a21s/builds"
+        },
+        {
+          "kind": "artifact_link",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/a21s/builds"
+        },
+        {
+          "kind": "artifact_extension",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/a21s/builds"
+        },
+        {
+          "kind": "build_channel",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/a21s/builds"
+        },
+        {
+          "kind": "build_evidence_tier",
+          "detail": "artifact",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/a21s/builds"
+        },
+        {
+          "kind": "family_resolved",
+          "detail": "LineageOS",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/a21s/builds"
+        },
+        {
+          "kind": "evidence_score",
+          "detail": "14",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/a21s/builds"
+        }
+      ],
+      "discovered_at": "2026-08-25T02:20:25+00:00",
+      "updated_at": "2026-08-25T02:20:25+00:00"
+    },
+    {
+      "id": "f9848e5e7e6ef62a",
+      "name": "LineageOS",
+      "type": "custom_rom",
+      "device": "Galaxy A71",
+      "codename": "a71",
+      "android_version": "Android 16",
+      "rom_version": "23.2",
+      "build_date": "2026-08-19",
+      "status": "verified",
+      "source_url": "https://download.lineageos.org/api/v2/devices/a71/builds",
+      "download_url": "https://mirrorbits.lineageos.org/full/a71/20260819/lineage-23.2-20260819-nightly-a71-signed.zip",
+      "source_id": "lineageos_dl",
+      "evidence": [
+        {
+          "kind": "registered_source",
+          "detail": "LineageOS Downloads (official_download, trust 100)",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org"
+        },
+        {
+          "kind": "codename_in_url",
+          "detail": "codename 'a71' in URL path",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/a71/builds"
+        },
+        {
+          "kind": "artifact_link",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/a71/builds"
+        },
+        {
+          "kind": "artifact_extension",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/a71/builds"
+        },
+        {
+          "kind": "build_channel",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/a71/builds"
+        },
+        {
+          "kind": "build_evidence_tier",
+          "detail": "artifact",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/a71/builds"
+        },
+        {
+          "kind": "family_resolved",
+          "detail": "LineageOS",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/a71/builds"
+        },
+        {
+          "kind": "evidence_score",
+          "detail": "14",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/a71/builds"
+        }
+      ],
+      "discovered_at": "2026-08-25T02:21:57+00:00",
+      "updated_at": "2026-08-25T02:21:57+00:00"
+    },
+    {
+      "id": "6b6e21bab66f41b1",
+      "name": "LineageOS",
+      "type": "custom_rom",
+      "device": "Galaxy A52",
+      "codename": "a52q",
+      "android_version": "Android 16",
+      "rom_version": "23.2",
+      "build_date": "2026-08-24",
+      "status": "verified",
+      "source_url": "https://download.lineageos.org/api/v2/devices/a52q/builds",
+      "download_url": "https://mirrorbits.lineageos.org/full/a52q/20260824/lineage-23.2-20260824-nightly-a52q-signed.zip",
+      "source_id": "lineageos_dl",
+      "evidence": [
+        {
+          "kind": "registered_source",
+          "detail": "LineageOS Downloads (official_download, trust 100)",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org"
+        },
+        {
+          "kind": "codename_in_url",
+          "detail": "codename 'a52q' in URL path",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/a52q/builds"
+        },
+        {
+          "kind": "artifact_link",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/a52q/builds"
+        },
+        {
+          "kind": "artifact_extension",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/a52q/builds"
+        },
+        {
+          "kind": "build_channel",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/a52q/builds"
+        },
+        {
+          "kind": "build_evidence_tier",
+          "detail": "artifact",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/a52q/builds"
+        },
+        {
+          "kind": "family_resolved",
+          "detail": "LineageOS",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/a52q/builds"
+        },
+        {
+          "kind": "evidence_score",
+          "detail": "14",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/a52q/builds"
+        }
+      ],
+      "discovered_at": "2026-08-25T02:24:53+00:00",
+      "updated_at": "2026-08-25T02:24:53+00:00"
+    },
+    {
+      "id": "2233b0db61de017a",
+      "name": "Pixel Experience",
+      "type": "custom_rom",
+      "device": "Galaxy A52",
+      "codename": "a52q",
+      "android_version": "Android 14",
+      "rom_version": "14",
+      "build_date": "2024-03-01",
+      "status": "verified",
+      "source_url": "https://get.pixelexperience.org/A52q",
+      "download_url": "https://get.pixelexperience.org/changelog/a52q/PixelExperience_a52q-14.0-20240301-1711-OFFICIAL.zip",
+      "source_id": "pe_dl",
+      "evidence": [
+        {
+          "kind": "registered_source",
+          "detail": "Pixel Experience Downloads (official_download, trust 100)",
+          "source_id": "pe_dl",
+          "url": "https://get.pixelexperience.org"
+        },
+        {
+          "kind": "codename_in_url",
+          "detail": "codename 'a52q' in URL path",
+          "source_id": "pe_dl",
+          "url": "https://get.pixelexperience.org/A52q"
+        },
+        {
+          "kind": "artifact_link",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "pe_dl",
+          "url": "https://get.pixelexperience.org/A52q"
+        },
+        {
+          "kind": "artifact_extension",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "pe_dl",
+          "url": "https://get.pixelexperience.org/A52q"
+        },
+        {
+          "kind": "checksum",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "pe_dl",
+          "url": "https://get.pixelexperience.org/A52q"
+        },
+        {
+          "kind": "download_word",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "pe_dl",
+          "url": "https://get.pixelexperience.org/A52q"
+        },
+        {
+          "kind": "changelog",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "pe_dl",
+          "url": "https://get.pixelexperience.org/A52q"
+        },
+        {
+          "kind": "build_evidence_tier",
+          "detail": "artifact",
+          "source_id": "pe_dl",
+          "url": "https://get.pixelexperience.org/A52q"
+        },
+        {
+          "kind": "family_resolved",
+          "detail": "Pixel Experience",
+          "source_id": "pe_dl",
+          "url": "https://get.pixelexperience.org/A52q"
+        },
+        {
+          "kind": "evidence_score",
+          "detail": "15",
+          "source_id": "pe_dl",
+          "url": "https://get.pixelexperience.org/A52q"
+        }
+      ],
+      "discovered_at": "2026-08-25T02:24:53+00:00",
+      "updated_at": "2026-08-25T02:24:53+00:00"
+    },
+    {
+      "id": "52b26857cdc6ae26",
+      "name": "LineageOS",
+      "type": "custom_rom",
+      "device": "Galaxy A52s 5G",
+      "codename": "a52sxq",
+      "android_version": "Android 16",
+      "rom_version": "23.2",
+      "build_date": "2026-08-19",
+      "status": "verified",
+      "source_url": "https://download.lineageos.org/api/v2/devices/a52sxq/builds",
+      "download_url": "https://mirrorbits.lineageos.org/full/a52sxq/20260819/lineage-23.2-20260819-nightly-a52sxq-signed.zip",
+      "source_id": "lineageos_dl",
+      "evidence": [
+        {
+          "kind": "registered_source",
+          "detail": "LineageOS Downloads (official_download, trust 100)",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org"
+        },
+        {
+          "kind": "codename_in_url",
+          "detail": "codename 'a52sxq' in URL path",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/a52sxq/builds"
+        },
+        {
+          "kind": "artifact_link",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/a52sxq/builds"
+        },
+        {
+          "kind": "artifact_extension",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/a52sxq/builds"
+        },
+        {
+          "kind": "build_channel",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/a52sxq/builds"
+        },
+        {
+          "kind": "build_evidence_tier",
+          "detail": "artifact",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/a52sxq/builds"
+        },
+        {
+          "kind": "family_resolved",
+          "detail": "LineageOS",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/a52sxq/builds"
+        },
+        {
+          "kind": "evidence_score",
+          "detail": "14",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/a52sxq/builds"
+        }
+      ],
+      "discovered_at": "2026-08-25T02:25:29+00:00",
+      "updated_at": "2026-08-25T02:25:29+00:00"
+    },
+    {
+      "id": "bf1533c2f7e2659b",
+      "name": "Pixel Experience",
+      "type": "custom_rom",
+      "device": "Galaxy A52s 5G",
+      "codename": "a52sxq",
+      "android_version": "Android 14",
+      "rom_version": "14",
+      "build_date": "2024-03-07",
+      "status": "verified",
+      "source_url": "https://get.pixelexperience.org/a52sxq",
+      "download_url": "https://get.pixelexperience.org/changelog/a52sxq/PixelExperience_a52sxq-14.0-20240307-1719-OFFICIAL.zip",
+      "source_id": "pe_dl",
+      "evidence": [
+        {
+          "kind": "registered_source",
+          "detail": "Pixel Experience Downloads (official_download, trust 100)",
+          "source_id": "pe_dl",
+          "url": "https://get.pixelexperience.org"
+        },
+        {
+          "kind": "codename_in_url",
+          "detail": "codename 'a52sxq' in URL path",
+          "source_id": "pe_dl",
+          "url": "https://get.pixelexperience.org/a52sxq"
+        },
+        {
+          "kind": "artifact_link",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "pe_dl",
+          "url": "https://get.pixelexperience.org/a52sxq"
+        },
+        {
+          "kind": "artifact_extension",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "pe_dl",
+          "url": "https://get.pixelexperience.org/a52sxq"
+        },
+        {
+          "kind": "checksum",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "pe_dl",
+          "url": "https://get.pixelexperience.org/a52sxq"
+        },
+        {
+          "kind": "download_word",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "pe_dl",
+          "url": "https://get.pixelexperience.org/a52sxq"
+        },
+        {
+          "kind": "changelog",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "pe_dl",
+          "url": "https://get.pixelexperience.org/a52sxq"
+        },
+        {
+          "kind": "build_evidence_tier",
+          "detail": "artifact",
+          "source_id": "pe_dl",
+          "url": "https://get.pixelexperience.org/a52sxq"
+        },
+        {
+          "kind": "family_resolved",
+          "detail": "Pixel Experience",
+          "source_id": "pe_dl",
+          "url": "https://get.pixelexperience.org/a52sxq"
+        },
+        {
+          "kind": "evidence_score",
+          "detail": "15",
+          "source_id": "pe_dl",
+          "url": "https://get.pixelexperience.org/a52sxq"
+        }
+      ],
+      "discovered_at": "2026-08-25T02:25:29+00:00",
+      "updated_at": "2026-08-25T02:25:29+00:00"
+    },
+    {
+      "id": "12de8feeacafa5d5",
+      "name": "LineageOS",
+      "type": "custom_rom",
+      "device": "Galaxy A72",
+      "codename": "a72q",
+      "android_version": "Android 16",
+      "rom_version": "23.2",
+      "build_date": "2026-08-24",
+      "status": "verified",
+      "source_url": "https://download.lineageos.org/api/v2/devices/a72q/builds",
+      "download_url": "https://mirrorbits.lineageos.org/full/a72q/20260824/lineage-23.2-20260824-nightly-a72q-signed.zip",
+      "source_id": "lineageos_dl",
+      "evidence": [
+        {
+          "kind": "registered_source",
+          "detail": "LineageOS Downloads (official_download, trust 100)",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org"
+        },
+        {
+          "kind": "codename_in_url",
+          "detail": "codename 'a72q' in URL path",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/a72q/builds"
+        },
+        {
+          "kind": "artifact_link",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/a72q/builds"
+        },
+        {
+          "kind": "artifact_extension",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/a72q/builds"
+        },
+        {
+          "kind": "build_channel",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/a72q/builds"
+        },
+        {
+          "kind": "build_evidence_tier",
+          "detail": "artifact",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/a72q/builds"
+        },
+        {
+          "kind": "family_resolved",
+          "detail": "LineageOS",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/a72q/builds"
+        },
+        {
+          "kind": "evidence_score",
+          "detail": "14",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/a72q/builds"
+        }
+      ],
+      "discovered_at": "2026-08-25T02:25:49+00:00",
+      "updated_at": "2026-08-25T02:25:49+00:00"
+    },
+    {
+      "id": "321ba1763832bf21",
+      "name": "Pixel Experience",
+      "type": "custom_rom",
+      "device": "Galaxy A72",
+      "codename": "a72q",
+      "android_version": "Android 14",
+      "rom_version": "14",
+      "build_date": "2024-03-01",
+      "status": "verified",
+      "source_url": "https://get.pixelexperience.org/a72q",
+      "download_url": "https://get.pixelexperience.org/changelog/a72q/PixelExperience_a72q-14.0-20240301-1833-OFFICIAL.zip",
+      "source_id": "pe_dl",
+      "evidence": [
+        {
+          "kind": "registered_source",
+          "detail": "Pixel Experience Downloads (official_download, trust 100)",
+          "source_id": "pe_dl",
+          "url": "https://get.pixelexperience.org"
+        },
+        {
+          "kind": "codename_in_url",
+          "detail": "codename 'a72q' in URL path",
+          "source_id": "pe_dl",
+          "url": "https://get.pixelexperience.org/a72q"
+        },
+        {
+          "kind": "artifact_link",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "pe_dl",
+          "url": "https://get.pixelexperience.org/a72q"
+        },
+        {
+          "kind": "artifact_extension",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "pe_dl",
+          "url": "https://get.pixelexperience.org/a72q"
+        },
+        {
+          "kind": "checksum",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "pe_dl",
+          "url": "https://get.pixelexperience.org/a72q"
+        },
+        {
+          "kind": "download_word",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "pe_dl",
+          "url": "https://get.pixelexperience.org/a72q"
+        },
+        {
+          "kind": "changelog",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "pe_dl",
+          "url": "https://get.pixelexperience.org/a72q"
+        },
+        {
+          "kind": "build_evidence_tier",
+          "detail": "artifact",
+          "source_id": "pe_dl",
+          "url": "https://get.pixelexperience.org/a72q"
+        },
+        {
+          "kind": "family_resolved",
+          "detail": "Pixel Experience",
+          "source_id": "pe_dl",
+          "url": "https://get.pixelexperience.org/a72q"
+        },
+        {
+          "kind": "evidence_score",
+          "detail": "15",
+          "source_id": "pe_dl",
+          "url": "https://get.pixelexperience.org/a72q"
+        }
+      ],
+      "discovered_at": "2026-08-25T02:25:49+00:00",
+      "updated_at": "2026-08-25T02:25:49+00:00"
+    },
+    {
+      "id": "f4eff40170498f54",
+      "name": "LineageOS",
+      "type": "custom_rom",
+      "device": "Galaxy A73 5G",
+      "codename": "a73xq",
+      "android_version": "Android 16",
+      "rom_version": "23.2",
+      "build_date": "2026-08-20",
+      "status": "verified",
+      "source_url": "https://download.lineageos.org/api/v2/devices/a73xq/builds",
+      "download_url": "https://mirrorbits.lineageos.org/full/a73xq/20260820/lineage-23.2-20260820-nightly-a73xq-signed.zip",
+      "source_id": "lineageos_dl",
+      "evidence": [
+        {
+          "kind": "registered_source",
+          "detail": "LineageOS Downloads (official_download, trust 100)",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org"
+        },
+        {
+          "kind": "codename_in_url",
+          "detail": "codename 'a73xq' in URL path",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/a73xq/builds"
+        },
+        {
+          "kind": "artifact_link",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/a73xq/builds"
+        },
+        {
+          "kind": "artifact_extension",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/a73xq/builds"
+        },
+        {
+          "kind": "build_channel",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/a73xq/builds"
+        },
+        {
+          "kind": "build_evidence_tier",
+          "detail": "artifact",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/a73xq/builds"
+        },
+        {
+          "kind": "family_resolved",
+          "detail": "LineageOS",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/a73xq/builds"
+        },
+        {
+          "kind": "evidence_score",
+          "detail": "14",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/a73xq/builds"
+        }
+      ],
+      "discovered_at": "2026-08-25T02:28:47+00:00",
+      "updated_at": "2026-08-25T02:28:47+00:00"
+    },
+    {
+      "id": "a141baa0b40afc9e",
+      "name": "Pixel Experience",
+      "type": "custom_rom",
+      "device": "Galaxy A73 5G",
+      "codename": "a73xq",
+      "android_version": "Android 14",
+      "rom_version": "14",
+      "build_date": "2024-03-07",
+      "status": "verified",
+      "source_url": "https://get.pixelexperience.org/a73xq",
+      "download_url": "https://get.pixelexperience.org/changelog/a73xq/PixelExperience_a73xq-14.0-20240307-1820-OFFICIAL.zip",
+      "source_id": "pe_dl",
+      "evidence": [
+        {
+          "kind": "registered_source",
+          "detail": "Pixel Experience Downloads (official_download, trust 100)",
+          "source_id": "pe_dl",
+          "url": "https://get.pixelexperience.org"
+        },
+        {
+          "kind": "codename_in_url",
+          "detail": "codename 'a73xq' in URL path",
+          "source_id": "pe_dl",
+          "url": "https://get.pixelexperience.org/a73xq"
+        },
+        {
+          "kind": "artifact_link",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "pe_dl",
+          "url": "https://get.pixelexperience.org/a73xq"
+        },
+        {
+          "kind": "artifact_extension",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "pe_dl",
+          "url": "https://get.pixelexperience.org/a73xq"
+        },
+        {
+          "kind": "checksum",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "pe_dl",
+          "url": "https://get.pixelexperience.org/a73xq"
+        },
+        {
+          "kind": "download_word",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "pe_dl",
+          "url": "https://get.pixelexperience.org/a73xq"
+        },
+        {
+          "kind": "changelog",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "pe_dl",
+          "url": "https://get.pixelexperience.org/a73xq"
+        },
+        {
+          "kind": "build_evidence_tier",
+          "detail": "artifact",
+          "source_id": "pe_dl",
+          "url": "https://get.pixelexperience.org/a73xq"
+        },
+        {
+          "kind": "family_resolved",
+          "detail": "Pixel Experience",
+          "source_id": "pe_dl",
+          "url": "https://get.pixelexperience.org/a73xq"
+        },
+        {
+          "kind": "evidence_score",
+          "detail": "15",
+          "source_id": "pe_dl",
+          "url": "https://get.pixelexperience.org/a73xq"
+        }
+      ],
+      "discovered_at": "2026-08-25T02:28:47+00:00",
+      "updated_at": "2026-08-25T02:28:47+00:00"
+    },
+    {
+      "id": "02924d5318d63315",
+      "name": "LineageOS",
+      "type": "custom_rom",
+      "device": "Galaxy Tab S7",
+      "codename": "gts7l",
+      "android_version": "Android 16",
+      "rom_version": "23.2",
+      "build_date": "2026-08-18",
+      "status": "verified",
+      "source_url": "https://download.lineageos.org/api/v2/devices/gts7l/builds",
+      "download_url": "https://mirrorbits.lineageos.org/full/gts7l/20260818/lineage-23.2-20260818-nightly-gts7l-signed.zip",
+      "source_id": "lineageos_dl",
+      "evidence": [
+        {
+          "kind": "registered_source",
+          "detail": "LineageOS Downloads (official_download, trust 100)",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org"
+        },
+        {
+          "kind": "codename_in_url",
+          "detail": "codename 'gts7l' in URL path",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/gts7l/builds"
+        },
+        {
+          "kind": "artifact_link",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/gts7l/builds"
+        },
+        {
+          "kind": "artifact_extension",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/gts7l/builds"
+        },
+        {
+          "kind": "build_channel",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/gts7l/builds"
+        },
+        {
+          "kind": "build_evidence_tier",
+          "detail": "artifact",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/gts7l/builds"
+        },
+        {
+          "kind": "family_resolved",
+          "detail": "LineageOS",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/gts7l/builds"
+        },
+        {
+          "kind": "evidence_score",
+          "detail": "14",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/gts7l/builds"
+        }
+      ],
+      "discovered_at": "2026-08-25T02:36:56+00:00",
+      "updated_at": "2026-08-25T02:36:56+00:00"
+    },
+    {
+      "id": "30679e2690ff9e62",
+      "name": "LineageOS",
+      "type": "custom_rom",
+      "device": "Galaxy Tab S6 Lite",
+      "codename": "gta4xlwifi",
+      "android_version": "Android 16",
+      "rom_version": "23.2",
+      "build_date": "2026-08-22",
+      "status": "verified",
+      "source_url": "https://download.lineageos.org/api/v2/devices/gta4xlwifi/builds",
+      "download_url": "https://mirrorbits.lineageos.org/full/gta4xlwifi/20260822/lineage-23.2-20260822-nightly-gta4xlwifi-signed.zip",
+      "source_id": "lineageos_dl",
+      "evidence": [
+        {
+          "kind": "registered_source",
+          "detail": "LineageOS Downloads (official_download, trust 100)",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org"
+        },
+        {
+          "kind": "codename_in_url",
+          "detail": "codename 'gta4xlwifi' in URL path",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/gta4xlwifi/builds"
+        },
+        {
+          "kind": "artifact_link",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/gta4xlwifi/builds"
+        },
+        {
+          "kind": "artifact_extension",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/gta4xlwifi/builds"
+        },
+        {
+          "kind": "build_channel",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/gta4xlwifi/builds"
+        },
+        {
+          "kind": "build_evidence_tier",
+          "detail": "artifact",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/gta4xlwifi/builds"
+        },
+        {
+          "kind": "family_resolved",
+          "detail": "LineageOS",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/gta4xlwifi/builds"
+        },
+        {
+          "kind": "evidence_score",
+          "detail": "14",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/gta4xlwifi/builds"
+        }
+      ],
+      "discovered_at": "2026-08-25T02:37:50+00:00",
+      "updated_at": "2026-08-25T02:37:50+00:00"
+    },
+    {
+      "id": "cc9d299f7d8ced87",
+      "name": "LineageOS",
+      "type": "custom_rom",
+      "device": "Galaxy Tab S5e",
+      "codename": "gts4lv",
+      "android_version": "Android 15",
+      "rom_version": "22.2",
+      "build_date": "2026-08-21",
+      "status": "verified",
+      "source_url": "https://download.lineageos.org/api/v2/devices/gts4lv/builds",
+      "download_url": "https://mirrorbits.lineageos.org/full/gts4lv/20260821/lineage-22.2-20260821-nightly-gts4lv-signed.zip",
+      "source_id": "lineageos_dl",
+      "evidence": [
+        {
+          "kind": "registered_source",
+          "detail": "LineageOS Downloads (official_download, trust 100)",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org"
+        },
+        {
+          "kind": "codename_in_url",
+          "detail": "codename 'gts4lv' in URL path",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/gts4lv/builds"
+        },
+        {
+          "kind": "artifact_link",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/gts4lv/builds"
+        },
+        {
+          "kind": "artifact_extension",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/gts4lv/builds"
+        },
+        {
+          "kind": "build_channel",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/gts4lv/builds"
+        },
+        {
+          "kind": "build_evidence_tier",
+          "detail": "artifact",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/gts4lv/builds"
+        },
+        {
+          "kind": "family_resolved",
+          "detail": "LineageOS",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/gts4lv/builds"
+        },
+        {
+          "kind": "evidence_score",
+          "detail": "14",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/gts4lv/builds"
+        }
+      ],
+      "discovered_at": "2026-08-25T02:38:08+00:00",
+      "updated_at": "2026-08-25T02:38:08+00:00"
+    },
+    {
+      "id": "60e52279f061926f",
+      "name": "LineageOS",
+      "type": "custom_rom",
+      "device": "Galaxy Tab A7",
+      "codename": "gta4lwifi",
+      "android_version": "Android 16",
+      "rom_version": "23.2",
+      "build_date": "2026-08-18",
+      "status": "verified",
+      "source_url": "https://download.lineageos.org/api/v2/devices/gta4lwifi/builds",
+      "download_url": "https://mirrorbits.lineageos.org/full/gta4lwifi/20260818/lineage-23.2-20260818-nightly-gta4lwifi-signed.zip",
+      "source_id": "lineageos_dl",
+      "evidence": [
+        {
+          "kind": "registered_source",
+          "detail": "LineageOS Downloads (official_download, trust 100)",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org"
+        },
+        {
+          "kind": "codename_in_url",
+          "detail": "codename 'gta4lwifi' in URL path",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/gta4lwifi/builds"
+        },
+        {
+          "kind": "artifact_link",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/gta4lwifi/builds"
+        },
+        {
+          "kind": "artifact_extension",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/gta4lwifi/builds"
+        },
+        {
+          "kind": "build_channel",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/gta4lwifi/builds"
+        },
+        {
+          "kind": "build_evidence_tier",
+          "detail": "artifact",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/gta4lwifi/builds"
+        },
+        {
+          "kind": "family_resolved",
+          "detail": "LineageOS",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/gta4lwifi/builds"
+        },
+        {
+          "kind": "evidence_score",
+          "detail": "14",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/gta4lwifi/builds"
+        }
+      ],
+      "discovered_at": "2026-08-25T02:40:45+00:00",
+      "updated_at": "2026-08-25T02:40:45+00:00"
+    },
+    {
+      "id": "6d3adbe1b31d7447",
+      "name": "LineageOS",
+      "type": "custom_rom",
+      "device": "Galaxy Tab A 8.0",
+      "codename": "gtowifi",
+      "android_version": "Android 15",
+      "rom_version": "22.2",
+      "build_date": "2026-08-19",
+      "status": "verified",
+      "source_url": "https://download.lineageos.org/api/v2/devices/gtowifi/builds",
+      "download_url": "https://mirrorbits.lineageos.org/full/gtowifi/20260819/lineage-22.2-20260819-nightly-gtowifi-signed.zip",
+      "source_id": "lineageos_dl",
+      "evidence": [
+        {
+          "kind": "registered_source",
+          "detail": "LineageOS Downloads (official_download, trust 100)",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org"
+        },
+        {
+          "kind": "codename_in_url",
+          "detail": "codename 'gtowifi' in URL path",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/gtowifi/builds"
+        },
+        {
+          "kind": "artifact_link",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/gtowifi/builds"
+        },
+        {
+          "kind": "artifact_extension",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/gtowifi/builds"
+        },
+        {
+          "kind": "build_channel",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/gtowifi/builds"
+        },
+        {
+          "kind": "build_evidence_tier",
+          "detail": "artifact",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/gtowifi/builds"
+        },
+        {
+          "kind": "family_resolved",
+          "detail": "LineageOS",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/gtowifi/builds"
+        },
+        {
+          "kind": "evidence_score",
+          "detail": "14",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/gtowifi/builds"
+        }
+      ],
+      "discovered_at": "2026-08-25T02:41:33+00:00",
+      "updated_at": "2026-08-25T02:41:33+00:00"
+    }
+  ]
+}

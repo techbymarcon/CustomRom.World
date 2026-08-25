@@ -201,10 +201,18 @@ def discover(device: Device, *, backend: SearchBackend | None = None,
                     title, text = page
                     _add(by_url, reg, discarded, u, title, text, query="direct:source")
 
-    # 2./3. source-scoped queries, then generic fallback
-    for query in plan.queries:
-        results: Iterable[SearchResult] = backend.search(query, limit=per_query)
-        for result in results:
-            _add(by_url, reg, discarded, result.url, result.title, result.snippet, query)
+    # 2./3. source-scoped queries, then generic fallback (concurrent for high performance)
+    if plan.queries:
+        workers = min(6, len(plan.queries))
+        with concurrent.futures.ThreadPoolExecutor(max_workers=workers) as executor:
+            future_to_query = {executor.submit(backend.search, q, per_query): q for q in plan.queries}
+            for future in concurrent.futures.as_completed(future_to_query):
+                q = future_to_query[future]
+                try:
+                    results = future.result()
+                except Exception:
+                    results = []
+                for result in results:
+                    _add(by_url, reg, discarded, result.url, result.title, result.snippet, q)
 
     return list(by_url.values()), discarded
