@@ -1,0 +1,2891 @@
+{
+  "metadata": {
+    "schema_version": 2,
+    "generator": "romdisco",
+    "created_at": "2026-08-23T18:45:04+00:00",
+    "updated_at": "2026-08-25T06:22:47+00:00",
+    "counts": {
+      "devices": 374,
+      "roms": 214,
+      "sources": 4,
+      "verified": 214,
+      "candidates": 495
+    }
+  },
+  "devices": [
+    {
+      "name": "POCO F6 Pro",
+      "codename": "vermeer",
+      "manufacturer": "Poco",
+      "aliases": [
+        "Redmi K70",
+        "POCO F6 Pro"
+      ],
+      "id": "poco:vermeer"
+    },
+    {
+      "name": "POCO F6",
+      "codename": "peridot",
+      "manufacturer": "Poco",
+      "aliases": [
+        "Redmi Turbo 3",
+        "POCO F6"
+      ],
+      "id": "poco:peridot"
+    },
+    {
+      "name": "POCO F5 Pro",
+      "codename": "mondrian",
+      "manufacturer": "Poco",
+      "aliases": [
+        "Redmi K60",
+        "POCO F5 Pro"
+      ],
+      "id": "poco:mondrian"
+    },
+    {
+      "name": "POCO F5",
+      "codename": "marble",
+      "manufacturer": "Poco",
+      "aliases": [
+        "Redmi Note 12 Turbo",
+        "POCO F5"
+      ],
+      "id": "poco:marble"
+    },
+    {
+      "name": "POCO F4 GT",
+      "codename": "ingres",
+      "manufacturer": "Poco",
+      "aliases": [
+        "Redmi K50 Gaming",
+        "POCO F4 GT"
+      ],
+      "id": "poco:ingres"
+    },
+    {
+      "name": "POCO F4",
+      "codename": "munch",
+      "manufacturer": "Poco",
+      "aliases": [
+        "Redmi K40S",
+        "POCO F4"
+      ],
+      "id": "poco:munch"
+    },
+    {
+      "name": "POCO F3 GT",
+      "codename": "ares",
+      "manufacturer": "Poco",
+      "aliases": [
+        "Redmi K40 Gaming",
+        "POCO F3 GT"
+      ],
+      "id": "poco:ares"
+    },
+    {
+      "name": "POCO F3",
+      "codename": "alioth",
+      "manufacturer": "Poco",
+      "aliases": [
+        "Redmi K40",
+        "POCO F3",
+        "Mi 11X"
+      ],
+      "id": "poco:alioth"
+    },
+    {
+      "name": "POCO F2 Pro",
+      "codename": "lmi",
+      "manufacturer": "Poco",
+      "aliases": [
+        "Redmi K30 Pro",
+        "POCO F2 Pro"
+      ],
+      "id": "poco:lmi"
+    },
+    {
+      "name": "POCO F1",
+      "codename": "beryllium",
+      "manufacturer": "Poco",
+      "aliases": [
+        "Pocophone F1",
+        "POCO F1"
+      ],
+      "id": "poco:beryllium"
+    },
+    {
+      "name": "POCO X6 Pro",
+      "codename": "duchamp",
+      "manufacturer": "Poco",
+      "aliases": [
+        "Redmi K70E",
+        "POCO X6 Pro"
+      ],
+      "id": "poco:duchamp"
+    },
+    {
+      "name": "POCO X6",
+      "codename": "garnet_poco",
+      "manufacturer": "Poco",
+      "aliases": [
+        "Redmi Note 13 Pro 5G",
+        "POCO X6",
+        "garnet"
+      ],
+      "id": "poco:garnet_poco"
+    },
+    {
+      "name": "POCO X5 Pro 5G",
+      "codename": "redwood",
+      "manufacturer": "Poco",
+      "aliases": [
+        "POCO X5 Pro 5G",
+        "Redmi Note 12 Pro Speed"
+      ],
+      "id": "poco:redwood"
+    },
+    {
+      "name": "POCO X5 5G",
+      "codename": "moonstone",
+      "manufacturer": "Poco",
+      "aliases": [
+        "POCO X5 5G",
+        "Redmi Note 12 5G"
+      ],
+      "id": "poco:moonstone"
+    },
+    {
+      "name": "POCO X4 Pro 5G",
+      "codename": "veux_poco",
+      "manufacturer": "Poco",
+      "aliases": [
+        "POCO X4 Pro 5G",
+        "veux"
+      ],
+      "id": "poco:veux_poco"
+    },
+    {
+      "name": "POCO X4 GT",
+      "codename": "xaga",
+      "manufacturer": "Poco",
+      "aliases": [
+        "Redmi K50i",
+        "POCO X4 GT"
+      ],
+      "id": "poco:xaga"
+    },
+    {
+      "name": "POCO X3 Pro",
+      "codename": "vayu",
+      "manufacturer": "Poco",
+      "aliases": [
+        "POCO X3 Pro",
+        "bhima"
+      ],
+      "id": "poco:vayu"
+    },
+    {
+      "name": "POCO X3 NFC",
+      "codename": "surya",
+      "manufacturer": "Poco",
+      "aliases": [
+        "POCO X3 NFC",
+        "surya"
+      ],
+      "id": "poco:surya"
+    },
+    {
+      "name": "POCO X3",
+      "codename": "karna",
+      "manufacturer": "Poco",
+      "aliases": [
+        "POCO X3 (India)",
+        "karna"
+      ],
+      "id": "poco:karna"
+    },
+    {
+      "name": "POCO X2",
+      "codename": "phoenixin",
+      "manufacturer": "Poco",
+      "aliases": [
+        "Redmi K30 4G",
+        "POCO X2",
+        "phoenix"
+      ],
+      "id": "poco:phoenixin"
+    },
+    {
+      "name": "POCO M6 Pro",
+      "codename": "emerald_poco",
+      "manufacturer": "Poco",
+      "aliases": [
+        "POCO M6 Pro 4G",
+        "emerald"
+      ],
+      "id": "poco:emerald_poco"
+    },
+    {
+      "name": "POCO M6",
+      "codename": "air",
+      "manufacturer": "Poco",
+      "aliases": [
+        "POCO M6 4G",
+        "air"
+      ],
+      "id": "poco:air"
+    },
+    {
+      "name": "POCO M5s",
+      "codename": "rosemary",
+      "manufacturer": "Poco",
+      "aliases": [
+        "Redmi Note 10S",
+        "POCO M5s"
+      ],
+      "id": "poco:rosemary"
+    },
+    {
+      "name": "POCO M5",
+      "codename": "rock",
+      "manufacturer": "Poco",
+      "aliases": [
+        "POCO M5"
+      ],
+      "id": "poco:rock"
+    },
+    {
+      "name": "POCO M4 Pro 5G",
+      "codename": "evergreen",
+      "manufacturer": "Poco",
+      "aliases": [
+        "Redmi Note 11 5G",
+        "POCO M4 Pro 5G"
+      ],
+      "id": "poco:evergreen"
+    },
+    {
+      "name": "POCO M4 Pro",
+      "codename": "fleur_poco",
+      "manufacturer": "Poco",
+      "aliases": [
+        "POCO M4 Pro 4G",
+        "fleur"
+      ],
+      "id": "poco:fleur_poco"
+    },
+    {
+      "name": "POCO M4 5G",
+      "codename": "light",
+      "manufacturer": "Poco",
+      "aliases": [
+        "Redmi 10 5G",
+        "POCO M4 5G"
+      ],
+      "id": "poco:light"
+    },
+    {
+      "name": "POCO M3 Pro 5G",
+      "codename": "camellian_poco",
+      "manufacturer": "Poco",
+      "aliases": [
+        "POCO M3 Pro 5G",
+        "camellian"
+      ],
+      "id": "poco:camellian_poco"
+    },
+    {
+      "name": "POCO M3",
+      "codename": "citrus",
+      "manufacturer": "Poco",
+      "aliases": [
+        "Redmi 9T",
+        "POCO M3"
+      ],
+      "id": "poco:citrus"
+    },
+    {
+      "name": "POCO M2 Pro",
+      "codename": "gram",
+      "manufacturer": "Poco",
+      "aliases": [
+        "POCO M2 Pro",
+        "gram"
+      ],
+      "id": "poco:gram"
+    },
+    {
+      "name": "POCO M2",
+      "codename": "shiva",
+      "manufacturer": "Poco",
+      "aliases": [
+        "POCO M2",
+        "shiva"
+      ],
+      "id": "poco:shiva"
+    },
+    {
+      "name": "POCO C75",
+      "codename": "lake",
+      "manufacturer": "Poco",
+      "aliases": [
+        "POCO C75",
+        "lake"
+      ],
+      "id": "poco:lake"
+    },
+    {
+      "name": "POCO C65",
+      "codename": "gale",
+      "manufacturer": "Poco",
+      "aliases": [
+        "POCO C65",
+        "gale"
+      ],
+      "id": "poco:gale"
+    },
+    {
+      "name": "POCO C55",
+      "codename": "earth",
+      "manufacturer": "Poco",
+      "aliases": [
+        "POCO C55",
+        "earth"
+      ],
+      "id": "poco:earth"
+    },
+    {
+      "name": "POCO C40",
+      "codename": "frost",
+      "manufacturer": "Poco",
+      "aliases": [
+        "POCO C40",
+        "frost"
+      ],
+      "id": "poco:frost"
+    },
+    {
+      "name": "POCO C31",
+      "codename": "angelicain_poco",
+      "manufacturer": "Poco",
+      "aliases": [
+        "POCO C31",
+        "angelicain"
+      ],
+      "id": "poco:angelicain_poco"
+    },
+    {
+      "name": "POCO C3",
+      "codename": "angelica",
+      "manufacturer": "Poco",
+      "aliases": [
+        "POCO C3",
+        "angelicain"
+      ],
+      "id": "poco:angelica"
+    }
+  ],
+  "sources": [
+    {
+      "id": "lineageos_site",
+      "name": "LineageOS",
+      "kind": "official_project",
+      "host": "lineageos.org",
+      "canonical_url": "https://lineageos.org",
+      "trust": 98,
+      "path_prefixes": [],
+      "family": "LineageOS",
+      "include_subdomains": true,
+      "device_urls": [],
+      "query_templates": [],
+      "manufacturers": [],
+      "can_verify": true,
+      "source_class": "OFFICIAL",
+      "authority": 6098
+    },
+    {
+      "id": "lineageos_dl",
+      "name": "LineageOS Downloads",
+      "kind": "official_download",
+      "host": "download.lineageos.org",
+      "canonical_url": "https://download.lineageos.org",
+      "trust": 100,
+      "path_prefixes": [],
+      "family": "LineageOS",
+      "include_subdomains": true,
+      "device_urls": [
+        "https://download.lineageos.org/api/v2/devices/{code}/builds"
+      ],
+      "query_templates": [],
+      "manufacturers": [],
+      "can_verify": true,
+      "source_class": "OFFICIAL",
+      "authority": 6100
+    },
+    {
+      "id": "pe_dl",
+      "name": "Pixel Experience Downloads",
+      "kind": "official_download",
+      "host": "get.pixelexperience.org",
+      "canonical_url": "https://get.pixelexperience.org",
+      "trust": 100,
+      "path_prefixes": [],
+      "family": "Pixel Experience",
+      "include_subdomains": true,
+      "device_urls": [
+        "https://get.pixelexperience.org/{code}"
+      ],
+      "query_templates": [],
+      "manufacturers": [],
+      "can_verify": true,
+      "source_class": "OFFICIAL",
+      "authority": 6100
+    },
+    {
+      "id": "pixelos_site",
+      "name": "PixelOS",
+      "kind": "official_project",
+      "host": "pixelos.net",
+      "canonical_url": "https://pixelos.net",
+      "trust": 96,
+      "path_prefixes": [],
+      "family": "PixelOS",
+      "include_subdomains": true,
+      "device_urls": [
+        "https://pixelos.net/download/{code}"
+      ],
+      "query_templates": [],
+      "manufacturers": [],
+      "can_verify": true,
+      "source_class": "OFFICIAL",
+      "authority": 6096
+    }
+  ],
+  "roms": [
+    {
+      "id": "91b046356df89c7c",
+      "name": "LineageOS",
+      "type": "custom_rom",
+      "device": "POCO F6 Pro",
+      "codename": "vermeer",
+      "android_version": "Android 16",
+      "rom_version": "23.2",
+      "build_date": "2026-08-22",
+      "status": "verified",
+      "source_url": "https://download.lineageos.org/api/v2/devices/vermeer/builds",
+      "download_url": "https://mirrorbits.lineageos.org/full/vermeer/20260822/lineage-23.2-20260822-nightly-vermeer-signed.zip",
+      "source_id": "lineageos_dl",
+      "evidence": [
+        {
+          "kind": "registered_source",
+          "detail": "LineageOS Downloads (official_download, trust 100)",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org"
+        },
+        {
+          "kind": "codename_in_url",
+          "detail": "codename 'vermeer' in URL path",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/vermeer/builds"
+        },
+        {
+          "kind": "artifact_link",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/vermeer/builds"
+        },
+        {
+          "kind": "artifact_extension",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/vermeer/builds"
+        },
+        {
+          "kind": "build_channel",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/vermeer/builds"
+        },
+        {
+          "kind": "build_evidence_tier",
+          "detail": "artifact",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/vermeer/builds"
+        },
+        {
+          "kind": "family_resolved",
+          "detail": "LineageOS",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/vermeer/builds"
+        },
+        {
+          "kind": "evidence_score",
+          "detail": "14",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/vermeer/builds"
+        }
+      ],
+      "discovered_at": "2026-08-25T06:10:37+00:00",
+      "updated_at": "2026-08-25T06:10:37+00:00"
+    },
+    {
+      "id": "1ef65ab2967e8545",
+      "name": "LineageOS",
+      "type": "custom_rom",
+      "device": "POCO F6",
+      "codename": "peridot",
+      "android_version": "Android 16",
+      "rom_version": "23.2",
+      "build_date": "2026-08-21",
+      "status": "verified",
+      "source_url": "https://download.lineageos.org/api/v2/devices/peridot/builds",
+      "download_url": "https://mirrorbits.lineageos.org/full/peridot/20260821/lineage-23.2-20260821-nightly-peridot-signed.zip",
+      "source_id": "lineageos_dl",
+      "evidence": [
+        {
+          "kind": "registered_source",
+          "detail": "LineageOS Downloads (official_download, trust 100)",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org"
+        },
+        {
+          "kind": "codename_in_url",
+          "detail": "codename 'peridot' in URL path",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/peridot/builds"
+        },
+        {
+          "kind": "artifact_link",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/peridot/builds"
+        },
+        {
+          "kind": "artifact_extension",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/peridot/builds"
+        },
+        {
+          "kind": "build_channel",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/peridot/builds"
+        },
+        {
+          "kind": "build_evidence_tier",
+          "detail": "artifact",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/peridot/builds"
+        },
+        {
+          "kind": "family_resolved",
+          "detail": "LineageOS",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/peridot/builds"
+        },
+        {
+          "kind": "evidence_score",
+          "detail": "14",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/peridot/builds"
+        }
+      ],
+      "discovered_at": "2026-08-25T06:10:56+00:00",
+      "updated_at": "2026-08-25T06:10:56+00:00"
+    },
+    {
+      "id": "ff1e9482950256e9",
+      "name": "PixelOS",
+      "type": "custom_rom",
+      "device": "POCO F6",
+      "codename": "peridot",
+      "android_version": "Android 17",
+      "rom_version": "17.0",
+      "build_date": "2026-08-22",
+      "status": "verified",
+      "source_url": "https://pixelos.net/download/peridot",
+      "download_url": "https://download.pixelos.net/seventeen/peridot/PixelOS_peridot-17.0-20260822-0556.zip",
+      "source_id": "pixelos_site",
+      "evidence": [
+        {
+          "kind": "registered_source",
+          "detail": "PixelOS (official_project, trust 96)",
+          "source_id": "pixelos_site",
+          "url": "https://pixelos.net"
+        },
+        {
+          "kind": "codename_in_url",
+          "detail": "codename 'peridot' in URL path",
+          "source_id": "pixelos_site",
+          "url": "https://pixelos.net/download/peridot"
+        },
+        {
+          "kind": "device_name_match",
+          "detail": "device name 'POCO F6' mentioned",
+          "source_id": "pixelos_site",
+          "url": "https://pixelos.net/download/peridot"
+        },
+        {
+          "kind": "artifact_link",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "pixelos_site",
+          "url": "https://pixelos.net/download/peridot"
+        },
+        {
+          "kind": "artifact_extension",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "pixelos_site",
+          "url": "https://pixelos.net/download/peridot"
+        },
+        {
+          "kind": "download_word",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "pixelos_site",
+          "url": "https://pixelos.net/download/peridot"
+        },
+        {
+          "kind": "changelog",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "pixelos_site",
+          "url": "https://pixelos.net/download/peridot"
+        },
+        {
+          "kind": "build_evidence_tier",
+          "detail": "artifact",
+          "source_id": "pixelos_site",
+          "url": "https://pixelos.net/download/peridot"
+        },
+        {
+          "kind": "family_resolved",
+          "detail": "PixelOS",
+          "source_id": "pixelos_site",
+          "url": "https://pixelos.net/download/peridot"
+        },
+        {
+          "kind": "evidence_score",
+          "detail": "16",
+          "source_id": "pixelos_site",
+          "url": "https://pixelos.net/download/peridot"
+        }
+      ],
+      "discovered_at": "2026-08-25T06:10:56+00:00",
+      "updated_at": "2026-08-25T06:10:56+00:00"
+    },
+    {
+      "id": "500cffeaccfc7ca4",
+      "name": "LineageOS",
+      "type": "custom_rom",
+      "device": "POCO F5 Pro",
+      "codename": "mondrian",
+      "android_version": "Android 16",
+      "rom_version": "23.2",
+      "build_date": "2026-08-23",
+      "status": "verified",
+      "source_url": "https://download.lineageos.org/api/v2/devices/mondrian/builds",
+      "download_url": "https://mirrorbits.lineageos.org/full/mondrian/20260823/lineage-23.2-20260823-nightly-mondrian-signed.zip",
+      "source_id": "lineageos_dl",
+      "evidence": [
+        {
+          "kind": "registered_source",
+          "detail": "LineageOS Downloads (official_download, trust 100)",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org"
+        },
+        {
+          "kind": "codename_in_url",
+          "detail": "codename 'mondrian' in URL path",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/mondrian/builds"
+        },
+        {
+          "kind": "artifact_link",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/mondrian/builds"
+        },
+        {
+          "kind": "artifact_extension",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/mondrian/builds"
+        },
+        {
+          "kind": "build_channel",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/mondrian/builds"
+        },
+        {
+          "kind": "build_evidence_tier",
+          "detail": "artifact",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/mondrian/builds"
+        },
+        {
+          "kind": "family_resolved",
+          "detail": "LineageOS",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/mondrian/builds"
+        },
+        {
+          "kind": "evidence_score",
+          "detail": "14",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/mondrian/builds"
+        }
+      ],
+      "discovered_at": "2026-08-25T06:11:16+00:00",
+      "updated_at": "2026-08-25T06:11:16+00:00"
+    },
+    {
+      "id": "84069fafe0f6a5f2",
+      "name": "LineageOS",
+      "type": "custom_rom",
+      "device": "POCO F5",
+      "codename": "marble",
+      "android_version": "Android 16",
+      "rom_version": "23.2",
+      "build_date": "2026-08-18",
+      "status": "verified",
+      "source_url": "https://download.lineageos.org/api/v2/devices/marble/builds",
+      "download_url": "https://mirrorbits.lineageos.org/full/marble/20260818/lineage-23.2-20260818-nightly-marble-signed.zip",
+      "source_id": "lineageos_dl",
+      "evidence": [
+        {
+          "kind": "registered_source",
+          "detail": "LineageOS Downloads (official_download, trust 100)",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org"
+        },
+        {
+          "kind": "codename_in_url",
+          "detail": "codename 'marble' in URL path",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/marble/builds"
+        },
+        {
+          "kind": "artifact_link",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/marble/builds"
+        },
+        {
+          "kind": "artifact_extension",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/marble/builds"
+        },
+        {
+          "kind": "build_channel",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/marble/builds"
+        },
+        {
+          "kind": "build_evidence_tier",
+          "detail": "artifact",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/marble/builds"
+        },
+        {
+          "kind": "family_resolved",
+          "detail": "LineageOS",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/marble/builds"
+        },
+        {
+          "kind": "evidence_score",
+          "detail": "14",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/marble/builds"
+        }
+      ],
+      "discovered_at": "2026-08-25T06:11:36+00:00",
+      "updated_at": "2026-08-25T06:11:36+00:00"
+    },
+    {
+      "id": "475fd7c0d0a82def",
+      "name": "PixelOS",
+      "type": "custom_rom",
+      "device": "POCO F5",
+      "codename": "marble",
+      "android_version": "Android 14",
+      "rom_version": "14.0",
+      "build_date": "2024-10-05",
+      "status": "verified",
+      "source_url": "https://pixelos.net/download/marble",
+      "download_url": "https://sourceforge.net/projects/pixelos-releases/files/fourteen/marble/PixelOS_marble-14.0-20241005-0946.zip",
+      "source_id": "pixelos_site",
+      "evidence": [
+        {
+          "kind": "registered_source",
+          "detail": "PixelOS (official_project, trust 96)",
+          "source_id": "pixelos_site",
+          "url": "https://pixelos.net"
+        },
+        {
+          "kind": "codename_in_url",
+          "detail": "codename 'marble' in URL path",
+          "source_id": "pixelos_site",
+          "url": "https://pixelos.net/download/marble"
+        },
+        {
+          "kind": "device_name_match",
+          "detail": "device name 'POCO F5' mentioned",
+          "source_id": "pixelos_site",
+          "url": "https://pixelos.net/download/marble"
+        },
+        {
+          "kind": "artifact_link",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "pixelos_site",
+          "url": "https://pixelos.net/download/marble"
+        },
+        {
+          "kind": "artifact_extension",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "pixelos_site",
+          "url": "https://pixelos.net/download/marble"
+        },
+        {
+          "kind": "download_word",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "pixelos_site",
+          "url": "https://pixelos.net/download/marble"
+        },
+        {
+          "kind": "changelog",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "pixelos_site",
+          "url": "https://pixelos.net/download/marble"
+        },
+        {
+          "kind": "build_evidence_tier",
+          "detail": "artifact",
+          "source_id": "pixelos_site",
+          "url": "https://pixelos.net/download/marble"
+        },
+        {
+          "kind": "family_resolved",
+          "detail": "PixelOS",
+          "source_id": "pixelos_site",
+          "url": "https://pixelos.net/download/marble"
+        },
+        {
+          "kind": "evidence_score",
+          "detail": "16",
+          "source_id": "pixelos_site",
+          "url": "https://pixelos.net/download/marble"
+        }
+      ],
+      "discovered_at": "2026-08-25T06:11:36+00:00",
+      "updated_at": "2026-08-25T06:11:36+00:00"
+    },
+    {
+      "id": "6049e37d85bbf2a6",
+      "name": "LineageOS",
+      "type": "custom_rom",
+      "device": "POCO F4",
+      "codename": "munch",
+      "android_version": "Android 16",
+      "rom_version": "23.2",
+      "build_date": "2026-08-24",
+      "status": "verified",
+      "source_url": "https://download.lineageos.org/api/v2/devices/munch/builds",
+      "download_url": "https://mirrorbits.lineageos.org/full/munch/20260824/lineage-23.2-20260824-nightly-munch-signed.zip",
+      "source_id": "lineageos_dl",
+      "evidence": [
+        {
+          "kind": "registered_source",
+          "detail": "LineageOS Downloads (official_download, trust 100)",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org"
+        },
+        {
+          "kind": "codename_in_url",
+          "detail": "codename 'munch' in URL path",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/munch/builds"
+        },
+        {
+          "kind": "artifact_link",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/munch/builds"
+        },
+        {
+          "kind": "artifact_extension",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/munch/builds"
+        },
+        {
+          "kind": "build_channel",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/munch/builds"
+        },
+        {
+          "kind": "build_evidence_tier",
+          "detail": "artifact",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/munch/builds"
+        },
+        {
+          "kind": "family_resolved",
+          "detail": "LineageOS",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/munch/builds"
+        },
+        {
+          "kind": "evidence_score",
+          "detail": "14",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/munch/builds"
+        }
+      ],
+      "discovered_at": "2026-08-25T06:12:13+00:00",
+      "updated_at": "2026-08-25T06:12:13+00:00"
+    },
+    {
+      "id": "a23d96544a4939ae",
+      "name": "PixelOS",
+      "type": "custom_rom",
+      "device": "POCO F4",
+      "codename": "munch",
+      "android_version": "Android 14",
+      "rom_version": "14.0",
+      "build_date": "2024-01-25",
+      "status": "verified",
+      "source_url": "https://pixelos.net/download/munch",
+      "download_url": "https://sourceforge.net/projects/pixelos-releases/files/fourteen/munch/PixelOS_munch-14.0-20240125-0104.zip",
+      "source_id": "pixelos_site",
+      "evidence": [
+        {
+          "kind": "registered_source",
+          "detail": "PixelOS (official_project, trust 96)",
+          "source_id": "pixelos_site",
+          "url": "https://pixelos.net"
+        },
+        {
+          "kind": "codename_in_url",
+          "detail": "codename 'munch' in URL path",
+          "source_id": "pixelos_site",
+          "url": "https://pixelos.net/download/munch"
+        },
+        {
+          "kind": "device_name_match",
+          "detail": "device name 'POCO F4' mentioned",
+          "source_id": "pixelos_site",
+          "url": "https://pixelos.net/download/munch"
+        },
+        {
+          "kind": "artifact_link",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "pixelos_site",
+          "url": "https://pixelos.net/download/munch"
+        },
+        {
+          "kind": "artifact_extension",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "pixelos_site",
+          "url": "https://pixelos.net/download/munch"
+        },
+        {
+          "kind": "download_word",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "pixelos_site",
+          "url": "https://pixelos.net/download/munch"
+        },
+        {
+          "kind": "changelog",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "pixelos_site",
+          "url": "https://pixelos.net/download/munch"
+        },
+        {
+          "kind": "build_evidence_tier",
+          "detail": "artifact",
+          "source_id": "pixelos_site",
+          "url": "https://pixelos.net/download/munch"
+        },
+        {
+          "kind": "family_resolved",
+          "detail": "PixelOS",
+          "source_id": "pixelos_site",
+          "url": "https://pixelos.net/download/munch"
+        },
+        {
+          "kind": "evidence_score",
+          "detail": "16",
+          "source_id": "pixelos_site",
+          "url": "https://pixelos.net/download/munch"
+        }
+      ],
+      "discovered_at": "2026-08-25T06:12:13+00:00",
+      "updated_at": "2026-08-25T06:12:13+00:00"
+    },
+    {
+      "id": "65d51a93484c6496",
+      "name": "Pixel Experience",
+      "type": "custom_rom",
+      "device": "POCO F4",
+      "codename": "munch",
+      "android_version": "Android 14",
+      "rom_version": "14",
+      "build_date": "2024-03-03",
+      "status": "verified",
+      "source_url": "https://get.pixelexperience.org/munch",
+      "download_url": "https://get.pixelexperience.org/changelog/munch/PixelExperience_munch-14.0-20240303-1650-OFFICIAL.zip",
+      "source_id": "pe_dl",
+      "evidence": [
+        {
+          "kind": "registered_source",
+          "detail": "Pixel Experience Downloads (official_download, trust 100)",
+          "source_id": "pe_dl",
+          "url": "https://get.pixelexperience.org"
+        },
+        {
+          "kind": "codename_in_url",
+          "detail": "codename 'munch' in URL path",
+          "source_id": "pe_dl",
+          "url": "https://get.pixelexperience.org/munch"
+        },
+        {
+          "kind": "device_name_match",
+          "detail": "device name 'POCO F4' mentioned",
+          "source_id": "pe_dl",
+          "url": "https://get.pixelexperience.org/munch"
+        },
+        {
+          "kind": "artifact_link",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "pe_dl",
+          "url": "https://get.pixelexperience.org/munch"
+        },
+        {
+          "kind": "artifact_extension",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "pe_dl",
+          "url": "https://get.pixelexperience.org/munch"
+        },
+        {
+          "kind": "checksum",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "pe_dl",
+          "url": "https://get.pixelexperience.org/munch"
+        },
+        {
+          "kind": "download_word",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "pe_dl",
+          "url": "https://get.pixelexperience.org/munch"
+        },
+        {
+          "kind": "changelog",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "pe_dl",
+          "url": "https://get.pixelexperience.org/munch"
+        },
+        {
+          "kind": "build_evidence_tier",
+          "detail": "artifact",
+          "source_id": "pe_dl",
+          "url": "https://get.pixelexperience.org/munch"
+        },
+        {
+          "kind": "family_resolved",
+          "detail": "Pixel Experience",
+          "source_id": "pe_dl",
+          "url": "https://get.pixelexperience.org/munch"
+        },
+        {
+          "kind": "evidence_score",
+          "detail": "17",
+          "source_id": "pe_dl",
+          "url": "https://get.pixelexperience.org/munch"
+        }
+      ],
+      "discovered_at": "2026-08-25T06:12:13+00:00",
+      "updated_at": "2026-08-25T06:12:13+00:00"
+    },
+    {
+      "id": "315543e1f9e84c3c",
+      "name": "LineageOS",
+      "type": "custom_rom",
+      "device": "POCO F3",
+      "codename": "alioth",
+      "android_version": "Android 16",
+      "rom_version": "23.2",
+      "build_date": "2026-08-19",
+      "status": "verified",
+      "source_url": "https://download.lineageos.org/api/v2/devices/alioth/builds",
+      "download_url": "https://mirrorbits.lineageos.org/full/alioth/20260819/lineage-23.2-20260819-nightly-alioth-signed.zip",
+      "source_id": "lineageos_dl",
+      "evidence": [
+        {
+          "kind": "registered_source",
+          "detail": "LineageOS Downloads (official_download, trust 100)",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org"
+        },
+        {
+          "kind": "codename_in_url",
+          "detail": "codename 'alioth' in URL path",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/alioth/builds"
+        },
+        {
+          "kind": "artifact_link",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/alioth/builds"
+        },
+        {
+          "kind": "artifact_extension",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/alioth/builds"
+        },
+        {
+          "kind": "build_channel",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/alioth/builds"
+        },
+        {
+          "kind": "build_evidence_tier",
+          "detail": "artifact",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/alioth/builds"
+        },
+        {
+          "kind": "family_resolved",
+          "detail": "LineageOS",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/alioth/builds"
+        },
+        {
+          "kind": "evidence_score",
+          "detail": "14",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/alioth/builds"
+        }
+      ],
+      "discovered_at": "2026-08-25T06:12:51+00:00",
+      "updated_at": "2026-08-25T06:12:51+00:00"
+    },
+    {
+      "id": "31a74cf4b6006944",
+      "name": "PixelOS",
+      "type": "custom_rom",
+      "device": "POCO F3",
+      "codename": "alioth",
+      "android_version": "Android 16",
+      "rom_version": "16.2",
+      "build_date": "2026-06-10",
+      "status": "verified",
+      "source_url": "https://pixelos.net/download/alioth",
+      "download_url": "https://download.pixelos.net/sixteen/alioth/PixelOS_alioth-16.2-20260610-1416.zip",
+      "source_id": "pixelos_site",
+      "evidence": [
+        {
+          "kind": "registered_source",
+          "detail": "PixelOS (official_project, trust 96)",
+          "source_id": "pixelos_site",
+          "url": "https://pixelos.net"
+        },
+        {
+          "kind": "codename_in_url",
+          "detail": "codename 'alioth' in URL path",
+          "source_id": "pixelos_site",
+          "url": "https://pixelos.net/download/alioth"
+        },
+        {
+          "kind": "device_name_match",
+          "detail": "device name 'POCO F3' mentioned",
+          "source_id": "pixelos_site",
+          "url": "https://pixelos.net/download/alioth"
+        },
+        {
+          "kind": "artifact_link",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "pixelos_site",
+          "url": "https://pixelos.net/download/alioth"
+        },
+        {
+          "kind": "artifact_extension",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "pixelos_site",
+          "url": "https://pixelos.net/download/alioth"
+        },
+        {
+          "kind": "download_word",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "pixelos_site",
+          "url": "https://pixelos.net/download/alioth"
+        },
+        {
+          "kind": "changelog",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "pixelos_site",
+          "url": "https://pixelos.net/download/alioth"
+        },
+        {
+          "kind": "build_evidence_tier",
+          "detail": "artifact",
+          "source_id": "pixelos_site",
+          "url": "https://pixelos.net/download/alioth"
+        },
+        {
+          "kind": "family_resolved",
+          "detail": "PixelOS",
+          "source_id": "pixelos_site",
+          "url": "https://pixelos.net/download/alioth"
+        },
+        {
+          "kind": "evidence_score",
+          "detail": "16",
+          "source_id": "pixelos_site",
+          "url": "https://pixelos.net/download/alioth"
+        }
+      ],
+      "discovered_at": "2026-08-25T06:12:51+00:00",
+      "updated_at": "2026-08-25T06:12:51+00:00"
+    },
+    {
+      "id": "76bd60749ffec3de",
+      "name": "Pixel Experience",
+      "type": "custom_rom",
+      "device": "POCO F3",
+      "codename": "alioth",
+      "android_version": "Android 13",
+      "rom_version": "13",
+      "build_date": "2023-07-15",
+      "status": "verified",
+      "source_url": "https://get.pixelexperience.org/alioth",
+      "download_url": "https://get.pixelexperience.org/changelog/alioth/PixelExperience_alioth-13.0-20230715-0035-OFFICIAL.zip",
+      "source_id": "pe_dl",
+      "evidence": [
+        {
+          "kind": "registered_source",
+          "detail": "Pixel Experience Downloads (official_download, trust 100)",
+          "source_id": "pe_dl",
+          "url": "https://get.pixelexperience.org"
+        },
+        {
+          "kind": "codename_in_url",
+          "detail": "codename 'alioth' in URL path",
+          "source_id": "pe_dl",
+          "url": "https://get.pixelexperience.org/alioth"
+        },
+        {
+          "kind": "device_name_match",
+          "detail": "device name 'POCO F3' mentioned",
+          "source_id": "pe_dl",
+          "url": "https://get.pixelexperience.org/alioth"
+        },
+        {
+          "kind": "artifact_link",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "pe_dl",
+          "url": "https://get.pixelexperience.org/alioth"
+        },
+        {
+          "kind": "artifact_extension",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "pe_dl",
+          "url": "https://get.pixelexperience.org/alioth"
+        },
+        {
+          "kind": "checksum",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "pe_dl",
+          "url": "https://get.pixelexperience.org/alioth"
+        },
+        {
+          "kind": "download_word",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "pe_dl",
+          "url": "https://get.pixelexperience.org/alioth"
+        },
+        {
+          "kind": "changelog",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "pe_dl",
+          "url": "https://get.pixelexperience.org/alioth"
+        },
+        {
+          "kind": "build_evidence_tier",
+          "detail": "artifact",
+          "source_id": "pe_dl",
+          "url": "https://get.pixelexperience.org/alioth"
+        },
+        {
+          "kind": "family_resolved",
+          "detail": "Pixel Experience",
+          "source_id": "pe_dl",
+          "url": "https://get.pixelexperience.org/alioth"
+        },
+        {
+          "kind": "evidence_score",
+          "detail": "17",
+          "source_id": "pe_dl",
+          "url": "https://get.pixelexperience.org/alioth"
+        }
+      ],
+      "discovered_at": "2026-08-25T06:12:51+00:00",
+      "updated_at": "2026-08-25T06:12:51+00:00"
+    },
+    {
+      "id": "ec90dda531a141a2",
+      "name": "LineageOS",
+      "type": "custom_rom",
+      "device": "POCO F2 Pro",
+      "codename": "lmi",
+      "android_version": "Android 16",
+      "rom_version": "23.2",
+      "build_date": "2026-08-19",
+      "status": "verified",
+      "source_url": "https://download.lineageos.org/api/v2/devices/lmi/builds",
+      "download_url": "https://mirrorbits.lineageos.org/full/lmi/20260819/lineage-23.2-20260819-nightly-lmi-signed.zip",
+      "source_id": "lineageos_dl",
+      "evidence": [
+        {
+          "kind": "registered_source",
+          "detail": "LineageOS Downloads (official_download, trust 100)",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org"
+        },
+        {
+          "kind": "codename_in_url",
+          "detail": "codename 'lmi' in URL path",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/lmi/builds"
+        },
+        {
+          "kind": "artifact_link",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/lmi/builds"
+        },
+        {
+          "kind": "artifact_extension",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/lmi/builds"
+        },
+        {
+          "kind": "build_channel",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/lmi/builds"
+        },
+        {
+          "kind": "build_evidence_tier",
+          "detail": "artifact",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/lmi/builds"
+        },
+        {
+          "kind": "family_resolved",
+          "detail": "LineageOS",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/lmi/builds"
+        },
+        {
+          "kind": "evidence_score",
+          "detail": "14",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/lmi/builds"
+        }
+      ],
+      "discovered_at": "2026-08-25T06:13:12+00:00",
+      "updated_at": "2026-08-25T06:13:12+00:00"
+    },
+    {
+      "id": "f7efe726b54bb803",
+      "name": "Pixel Experience",
+      "type": "custom_rom",
+      "device": "POCO F2 Pro",
+      "codename": "lmi",
+      "android_version": "Android 13",
+      "rom_version": "13",
+      "build_date": "2023-09-27",
+      "status": "verified",
+      "source_url": "https://get.pixelexperience.org/Lmi",
+      "download_url": "https://get.pixelexperience.org/changelog/lmi/PixelExperience_lmi-13.0-20230927-1246-OFFICIAL.zip",
+      "source_id": "pe_dl",
+      "evidence": [
+        {
+          "kind": "registered_source",
+          "detail": "Pixel Experience Downloads (official_download, trust 100)",
+          "source_id": "pe_dl",
+          "url": "https://get.pixelexperience.org"
+        },
+        {
+          "kind": "codename_in_url",
+          "detail": "codename 'lmi' in URL path",
+          "source_id": "pe_dl",
+          "url": "https://get.pixelexperience.org/Lmi"
+        },
+        {
+          "kind": "device_name_match",
+          "detail": "device name 'POCO F2 Pro' mentioned",
+          "source_id": "pe_dl",
+          "url": "https://get.pixelexperience.org/Lmi"
+        },
+        {
+          "kind": "artifact_link",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "pe_dl",
+          "url": "https://get.pixelexperience.org/Lmi"
+        },
+        {
+          "kind": "artifact_extension",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "pe_dl",
+          "url": "https://get.pixelexperience.org/Lmi"
+        },
+        {
+          "kind": "checksum",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "pe_dl",
+          "url": "https://get.pixelexperience.org/Lmi"
+        },
+        {
+          "kind": "download_word",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "pe_dl",
+          "url": "https://get.pixelexperience.org/Lmi"
+        },
+        {
+          "kind": "changelog",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "pe_dl",
+          "url": "https://get.pixelexperience.org/Lmi"
+        },
+        {
+          "kind": "build_evidence_tier",
+          "detail": "artifact",
+          "source_id": "pe_dl",
+          "url": "https://get.pixelexperience.org/Lmi"
+        },
+        {
+          "kind": "family_resolved",
+          "detail": "Pixel Experience",
+          "source_id": "pe_dl",
+          "url": "https://get.pixelexperience.org/Lmi"
+        },
+        {
+          "kind": "evidence_score",
+          "detail": "17",
+          "source_id": "pe_dl",
+          "url": "https://get.pixelexperience.org/Lmi"
+        }
+      ],
+      "discovered_at": "2026-08-25T06:13:12+00:00",
+      "updated_at": "2026-08-25T06:13:12+00:00"
+    },
+    {
+      "id": "4b6c353f457399cb",
+      "name": "LineageOS",
+      "type": "custom_rom",
+      "device": "POCO F1",
+      "codename": "beryllium",
+      "android_version": "Android 15",
+      "rom_version": "22.2",
+      "build_date": "2026-08-18",
+      "status": "verified",
+      "source_url": "https://download.lineageos.org/api/v2/devices/beryllium/builds",
+      "download_url": "https://mirrorbits.lineageos.org/full/beryllium/20260818/lineage-22.2-20260818-nightly-beryllium-signed.zip",
+      "source_id": "lineageos_dl",
+      "evidence": [
+        {
+          "kind": "registered_source",
+          "detail": "LineageOS Downloads (official_download, trust 100)",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org"
+        },
+        {
+          "kind": "codename_in_url",
+          "detail": "codename 'beryllium' in URL path",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/beryllium/builds"
+        },
+        {
+          "kind": "artifact_link",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/beryllium/builds"
+        },
+        {
+          "kind": "artifact_extension",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/beryllium/builds"
+        },
+        {
+          "kind": "build_channel",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/beryllium/builds"
+        },
+        {
+          "kind": "build_evidence_tier",
+          "detail": "artifact",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/beryllium/builds"
+        },
+        {
+          "kind": "family_resolved",
+          "detail": "LineageOS",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/beryllium/builds"
+        },
+        {
+          "kind": "evidence_score",
+          "detail": "14",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/beryllium/builds"
+        }
+      ],
+      "discovered_at": "2026-08-25T06:13:36+00:00",
+      "updated_at": "2026-08-25T06:13:36+00:00"
+    },
+    {
+      "id": "71ade045c1a69fe8",
+      "name": "PixelOS",
+      "type": "custom_rom",
+      "device": "POCO F1",
+      "codename": "beryllium",
+      "android_version": "Android 15",
+      "rom_version": "15.0",
+      "build_date": "2024-12-03",
+      "status": "verified",
+      "source_url": "https://pixelos.net/download/beryllium",
+      "download_url": "https://sourceforge.net/projects/pixelos-releases/files/fifteen/beryllium/PixelOS_beryllium-15.0-20241203-1030.zip",
+      "source_id": "pixelos_site",
+      "evidence": [
+        {
+          "kind": "registered_source",
+          "detail": "PixelOS (official_project, trust 96)",
+          "source_id": "pixelos_site",
+          "url": "https://pixelos.net"
+        },
+        {
+          "kind": "codename_in_url",
+          "detail": "codename 'beryllium' in URL path",
+          "source_id": "pixelos_site",
+          "url": "https://pixelos.net/download/beryllium"
+        },
+        {
+          "kind": "device_name_match",
+          "detail": "device name 'POCO F1' mentioned",
+          "source_id": "pixelos_site",
+          "url": "https://pixelos.net/download/beryllium"
+        },
+        {
+          "kind": "artifact_link",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "pixelos_site",
+          "url": "https://pixelos.net/download/beryllium"
+        },
+        {
+          "kind": "artifact_extension",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "pixelos_site",
+          "url": "https://pixelos.net/download/beryllium"
+        },
+        {
+          "kind": "download_word",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "pixelos_site",
+          "url": "https://pixelos.net/download/beryllium"
+        },
+        {
+          "kind": "changelog",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "pixelos_site",
+          "url": "https://pixelos.net/download/beryllium"
+        },
+        {
+          "kind": "build_evidence_tier",
+          "detail": "artifact",
+          "source_id": "pixelos_site",
+          "url": "https://pixelos.net/download/beryllium"
+        },
+        {
+          "kind": "family_resolved",
+          "detail": "PixelOS",
+          "source_id": "pixelos_site",
+          "url": "https://pixelos.net/download/beryllium"
+        },
+        {
+          "kind": "evidence_score",
+          "detail": "16",
+          "source_id": "pixelos_site",
+          "url": "https://pixelos.net/download/beryllium"
+        }
+      ],
+      "discovered_at": "2026-08-25T06:13:36+00:00",
+      "updated_at": "2026-08-25T06:13:36+00:00"
+    },
+    {
+      "id": "bdeea7f476e9e48b",
+      "name": "Pixel Experience",
+      "type": "custom_rom",
+      "device": "POCO F1",
+      "codename": "beryllium",
+      "android_version": "Android 11",
+      "rom_version": "12",
+      "build_date": "2022-08-17",
+      "status": "verified",
+      "source_url": "https://get.pixelexperience.org/beryllium",
+      "download_url": "https://get.pixelexperience.org/changelog/beryllium/PixelExperience_beryllium-12.1-20220817-0907-OFFICIAL.zip",
+      "source_id": "pe_dl",
+      "evidence": [
+        {
+          "kind": "registered_source",
+          "detail": "Pixel Experience Downloads (official_download, trust 100)",
+          "source_id": "pe_dl",
+          "url": "https://get.pixelexperience.org"
+        },
+        {
+          "kind": "codename_in_url",
+          "detail": "codename 'beryllium' in URL path",
+          "source_id": "pe_dl",
+          "url": "https://get.pixelexperience.org/beryllium"
+        },
+        {
+          "kind": "device_name_match",
+          "detail": "device name 'POCO F1' mentioned",
+          "source_id": "pe_dl",
+          "url": "https://get.pixelexperience.org/beryllium"
+        },
+        {
+          "kind": "artifact_link",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "pe_dl",
+          "url": "https://get.pixelexperience.org/beryllium"
+        },
+        {
+          "kind": "artifact_extension",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "pe_dl",
+          "url": "https://get.pixelexperience.org/beryllium"
+        },
+        {
+          "kind": "checksum",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "pe_dl",
+          "url": "https://get.pixelexperience.org/beryllium"
+        },
+        {
+          "kind": "download_word",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "pe_dl",
+          "url": "https://get.pixelexperience.org/beryllium"
+        },
+        {
+          "kind": "changelog",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "pe_dl",
+          "url": "https://get.pixelexperience.org/beryllium"
+        },
+        {
+          "kind": "build_evidence_tier",
+          "detail": "artifact",
+          "source_id": "pe_dl",
+          "url": "https://get.pixelexperience.org/beryllium"
+        },
+        {
+          "kind": "family_resolved",
+          "detail": "Pixel Experience",
+          "source_id": "pe_dl",
+          "url": "https://get.pixelexperience.org/beryllium"
+        },
+        {
+          "kind": "evidence_score",
+          "detail": "17",
+          "source_id": "pe_dl",
+          "url": "https://get.pixelexperience.org/beryllium"
+        }
+      ],
+      "discovered_at": "2026-08-25T06:13:36+00:00",
+      "updated_at": "2026-08-25T06:13:36+00:00"
+    },
+    {
+      "id": "4ac51dd5b5567cc5",
+      "name": "Pixel Experience",
+      "type": "custom_rom",
+      "device": "POCO X5 Pro 5G",
+      "codename": "redwood",
+      "android_version": "Android 13",
+      "rom_version": "13",
+      "build_date": "2024-02-08",
+      "status": "verified",
+      "source_url": "https://get.pixelexperience.org/redwood",
+      "download_url": "https://get.pixelexperience.org/changelog/redwood/PixelExperience_redwood-13.0-20240208-1716-OFFICIAL.zip",
+      "source_id": "pe_dl",
+      "evidence": [
+        {
+          "kind": "registered_source",
+          "detail": "Pixel Experience Downloads (official_download, trust 100)",
+          "source_id": "pe_dl",
+          "url": "https://get.pixelexperience.org"
+        },
+        {
+          "kind": "codename_in_url",
+          "detail": "codename 'redwood' in URL path",
+          "source_id": "pe_dl",
+          "url": "https://get.pixelexperience.org/redwood"
+        },
+        {
+          "kind": "device_name_match",
+          "detail": "device name 'POCO X5 Pro 5G' mentioned",
+          "source_id": "pe_dl",
+          "url": "https://get.pixelexperience.org/redwood"
+        },
+        {
+          "kind": "artifact_link",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "pe_dl",
+          "url": "https://get.pixelexperience.org/redwood"
+        },
+        {
+          "kind": "artifact_extension",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "pe_dl",
+          "url": "https://get.pixelexperience.org/redwood"
+        },
+        {
+          "kind": "checksum",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "pe_dl",
+          "url": "https://get.pixelexperience.org/redwood"
+        },
+        {
+          "kind": "download_word",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "pe_dl",
+          "url": "https://get.pixelexperience.org/redwood"
+        },
+        {
+          "kind": "changelog",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "pe_dl",
+          "url": "https://get.pixelexperience.org/redwood"
+        },
+        {
+          "kind": "build_evidence_tier",
+          "detail": "artifact",
+          "source_id": "pe_dl",
+          "url": "https://get.pixelexperience.org/redwood"
+        },
+        {
+          "kind": "family_resolved",
+          "detail": "Pixel Experience",
+          "source_id": "pe_dl",
+          "url": "https://get.pixelexperience.org/redwood"
+        },
+        {
+          "kind": "evidence_score",
+          "detail": "17",
+          "source_id": "pe_dl",
+          "url": "https://get.pixelexperience.org/redwood"
+        }
+      ],
+      "discovered_at": "2026-08-25T06:14:37+00:00",
+      "updated_at": "2026-08-25T06:14:37+00:00"
+    },
+    {
+      "id": "8b176dff6438f2ba",
+      "name": "LineageOS",
+      "type": "custom_rom",
+      "device": "POCO X3 Pro",
+      "codename": "vayu",
+      "android_version": "Android 15",
+      "rom_version": "22.2",
+      "build_date": "2026-08-23",
+      "status": "verified",
+      "source_url": "https://download.lineageos.org/api/v2/devices/vayu/builds",
+      "download_url": "https://mirrorbits.lineageos.org/full/vayu/20260823/lineage-22.2-20260823-nightly-vayu-signed.zip",
+      "source_id": "lineageos_dl",
+      "evidence": [
+        {
+          "kind": "registered_source",
+          "detail": "LineageOS Downloads (official_download, trust 100)",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org"
+        },
+        {
+          "kind": "codename_in_url",
+          "detail": "codename 'vayu' in URL path",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/vayu/builds"
+        },
+        {
+          "kind": "artifact_link",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/vayu/builds"
+        },
+        {
+          "kind": "artifact_extension",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/vayu/builds"
+        },
+        {
+          "kind": "build_channel",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/vayu/builds"
+        },
+        {
+          "kind": "build_evidence_tier",
+          "detail": "artifact",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/vayu/builds"
+        },
+        {
+          "kind": "family_resolved",
+          "detail": "LineageOS",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/vayu/builds"
+        },
+        {
+          "kind": "evidence_score",
+          "detail": "14",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/vayu/builds"
+        }
+      ],
+      "discovered_at": "2026-08-25T06:15:56+00:00",
+      "updated_at": "2026-08-25T06:15:56+00:00"
+    },
+    {
+      "id": "7e9c18db122049b0",
+      "name": "PixelOS",
+      "type": "custom_rom",
+      "device": "POCO X3 Pro",
+      "codename": "vayu",
+      "android_version": "Android 14",
+      "rom_version": "14.0",
+      "build_date": "2024-10-16",
+      "status": "verified",
+      "source_url": "https://pixelos.net/download/vayu",
+      "download_url": "https://sourceforge.net/projects/pixelos-releases/files/fourteen/vayu/PixelOS_vayu-14.0-20241016-1601.zip",
+      "source_id": "pixelos_site",
+      "evidence": [
+        {
+          "kind": "registered_source",
+          "detail": "PixelOS (official_project, trust 96)",
+          "source_id": "pixelos_site",
+          "url": "https://pixelos.net"
+        },
+        {
+          "kind": "codename_in_url",
+          "detail": "codename 'vayu' in URL path",
+          "source_id": "pixelos_site",
+          "url": "https://pixelos.net/download/vayu"
+        },
+        {
+          "kind": "device_name_match",
+          "detail": "device name 'POCO X3 Pro' mentioned",
+          "source_id": "pixelos_site",
+          "url": "https://pixelos.net/download/vayu"
+        },
+        {
+          "kind": "artifact_link",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "pixelos_site",
+          "url": "https://pixelos.net/download/vayu"
+        },
+        {
+          "kind": "artifact_extension",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "pixelos_site",
+          "url": "https://pixelos.net/download/vayu"
+        },
+        {
+          "kind": "download_word",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "pixelos_site",
+          "url": "https://pixelos.net/download/vayu"
+        },
+        {
+          "kind": "changelog",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "pixelos_site",
+          "url": "https://pixelos.net/download/vayu"
+        },
+        {
+          "kind": "build_evidence_tier",
+          "detail": "artifact",
+          "source_id": "pixelos_site",
+          "url": "https://pixelos.net/download/vayu"
+        },
+        {
+          "kind": "family_resolved",
+          "detail": "PixelOS",
+          "source_id": "pixelos_site",
+          "url": "https://pixelos.net/download/vayu"
+        },
+        {
+          "kind": "evidence_score",
+          "detail": "16",
+          "source_id": "pixelos_site",
+          "url": "https://pixelos.net/download/vayu"
+        }
+      ],
+      "discovered_at": "2026-08-25T06:15:56+00:00",
+      "updated_at": "2026-08-25T06:15:56+00:00"
+    },
+    {
+      "id": "97396eb73795f295",
+      "name": "Pixel Experience",
+      "type": "custom_rom",
+      "device": "POCO X3 Pro",
+      "codename": "vayu",
+      "android_version": "Android 13",
+      "rom_version": "13",
+      "build_date": "2023-09-25",
+      "status": "verified",
+      "source_url": "https://get.pixelexperience.org/vayu",
+      "download_url": "https://get.pixelexperience.org/changelog/vayu/PixelExperience_vayu-13.0-20230925-0154-OFFICIAL.zip",
+      "source_id": "pe_dl",
+      "evidence": [
+        {
+          "kind": "registered_source",
+          "detail": "Pixel Experience Downloads (official_download, trust 100)",
+          "source_id": "pe_dl",
+          "url": "https://get.pixelexperience.org"
+        },
+        {
+          "kind": "codename_in_url",
+          "detail": "codename 'vayu' in URL path",
+          "source_id": "pe_dl",
+          "url": "https://get.pixelexperience.org/vayu"
+        },
+        {
+          "kind": "device_name_match",
+          "detail": "device name 'POCO X3 Pro' mentioned",
+          "source_id": "pe_dl",
+          "url": "https://get.pixelexperience.org/vayu"
+        },
+        {
+          "kind": "artifact_link",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "pe_dl",
+          "url": "https://get.pixelexperience.org/vayu"
+        },
+        {
+          "kind": "artifact_extension",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "pe_dl",
+          "url": "https://get.pixelexperience.org/vayu"
+        },
+        {
+          "kind": "checksum",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "pe_dl",
+          "url": "https://get.pixelexperience.org/vayu"
+        },
+        {
+          "kind": "download_word",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "pe_dl",
+          "url": "https://get.pixelexperience.org/vayu"
+        },
+        {
+          "kind": "changelog",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "pe_dl",
+          "url": "https://get.pixelexperience.org/vayu"
+        },
+        {
+          "kind": "build_evidence_tier",
+          "detail": "artifact",
+          "source_id": "pe_dl",
+          "url": "https://get.pixelexperience.org/vayu"
+        },
+        {
+          "kind": "family_resolved",
+          "detail": "Pixel Experience",
+          "source_id": "pe_dl",
+          "url": "https://get.pixelexperience.org/vayu"
+        },
+        {
+          "kind": "evidence_score",
+          "detail": "17",
+          "source_id": "pe_dl",
+          "url": "https://get.pixelexperience.org/vayu"
+        }
+      ],
+      "discovered_at": "2026-08-25T06:15:56+00:00",
+      "updated_at": "2026-08-25T06:15:56+00:00"
+    },
+    {
+      "id": "bd423032d74f0fc3",
+      "name": "LineageOS",
+      "type": "custom_rom",
+      "device": "POCO X3 NFC",
+      "codename": "surya",
+      "android_version": "Android 15",
+      "rom_version": "22.2",
+      "build_date": "2026-08-24",
+      "status": "verified",
+      "source_url": "https://download.lineageos.org/api/v2/devices/surya/builds",
+      "download_url": "https://mirrorbits.lineageos.org/full/surya/20260824/lineage-22.2-20260824-nightly-surya-signed.zip",
+      "source_id": "lineageos_dl",
+      "evidence": [
+        {
+          "kind": "registered_source",
+          "detail": "LineageOS Downloads (official_download, trust 100)",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org"
+        },
+        {
+          "kind": "codename_in_url",
+          "detail": "codename 'surya' in URL path",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/surya/builds"
+        },
+        {
+          "kind": "device_name_match",
+          "detail": "device name 'POCO X3 NFC' mentioned",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/surya/builds"
+        },
+        {
+          "kind": "artifact_link",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/surya/builds"
+        },
+        {
+          "kind": "artifact_extension",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/surya/builds"
+        },
+        {
+          "kind": "build_channel",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/surya/builds"
+        },
+        {
+          "kind": "build_evidence_tier",
+          "detail": "artifact",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/surya/builds"
+        },
+        {
+          "kind": "family_resolved",
+          "detail": "LineageOS",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/surya/builds"
+        },
+        {
+          "kind": "evidence_score",
+          "detail": "16",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/surya/builds"
+        }
+      ],
+      "discovered_at": "2026-08-25T06:16:17+00:00",
+      "updated_at": "2026-08-25T06:16:17+00:00"
+    },
+    {
+      "id": "45a8012cdf6fd6f8",
+      "name": "PixelOS",
+      "type": "custom_rom",
+      "device": "POCO X3 NFC",
+      "codename": "surya",
+      "android_version": "Android 16",
+      "rom_version": "16.2",
+      "build_date": "2026-06-20",
+      "status": "verified",
+      "source_url": "https://pixelos.net/download/surya",
+      "download_url": "https://download.pixelos.net/sixteen/surya/PixelOS_surya-16.2-20260620-1045.zip",
+      "source_id": "pixelos_site",
+      "evidence": [
+        {
+          "kind": "registered_source",
+          "detail": "PixelOS (official_project, trust 96)",
+          "source_id": "pixelos_site",
+          "url": "https://pixelos.net"
+        },
+        {
+          "kind": "codename_in_url",
+          "detail": "codename 'surya' in URL path",
+          "source_id": "pixelos_site",
+          "url": "https://pixelos.net/download/surya"
+        },
+        {
+          "kind": "device_name_match",
+          "detail": "device name 'POCO X3 NFC' mentioned",
+          "source_id": "pixelos_site",
+          "url": "https://pixelos.net/download/surya"
+        },
+        {
+          "kind": "artifact_link",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "pixelos_site",
+          "url": "https://pixelos.net/download/surya"
+        },
+        {
+          "kind": "artifact_extension",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "pixelos_site",
+          "url": "https://pixelos.net/download/surya"
+        },
+        {
+          "kind": "download_word",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "pixelos_site",
+          "url": "https://pixelos.net/download/surya"
+        },
+        {
+          "kind": "changelog",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "pixelos_site",
+          "url": "https://pixelos.net/download/surya"
+        },
+        {
+          "kind": "build_evidence_tier",
+          "detail": "artifact",
+          "source_id": "pixelos_site",
+          "url": "https://pixelos.net/download/surya"
+        },
+        {
+          "kind": "family_resolved",
+          "detail": "PixelOS",
+          "source_id": "pixelos_site",
+          "url": "https://pixelos.net/download/surya"
+        },
+        {
+          "kind": "evidence_score",
+          "detail": "16",
+          "source_id": "pixelos_site",
+          "url": "https://pixelos.net/download/surya"
+        }
+      ],
+      "discovered_at": "2026-08-25T06:16:17+00:00",
+      "updated_at": "2026-08-25T06:16:17+00:00"
+    },
+    {
+      "id": "e007ecc28169c042",
+      "name": "Pixel Experience",
+      "type": "custom_rom",
+      "device": "POCO X3 NFC",
+      "codename": "surya",
+      "android_version": "Android 13",
+      "rom_version": "13",
+      "build_date": "2023-08-18",
+      "status": "verified",
+      "source_url": "https://get.pixelexperience.org/surya",
+      "download_url": "https://get.pixelexperience.org/changelog/surya/PixelExperience_surya-13.0-20230818-1213-OFFICIAL.zip",
+      "source_id": "pe_dl",
+      "evidence": [
+        {
+          "kind": "registered_source",
+          "detail": "Pixel Experience Downloads (official_download, trust 100)",
+          "source_id": "pe_dl",
+          "url": "https://get.pixelexperience.org"
+        },
+        {
+          "kind": "codename_in_url",
+          "detail": "codename 'surya' in URL path",
+          "source_id": "pe_dl",
+          "url": "https://get.pixelexperience.org/surya"
+        },
+        {
+          "kind": "device_name_match",
+          "detail": "device name 'POCO X3 NFC' mentioned",
+          "source_id": "pe_dl",
+          "url": "https://get.pixelexperience.org/surya"
+        },
+        {
+          "kind": "artifact_link",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "pe_dl",
+          "url": "https://get.pixelexperience.org/surya"
+        },
+        {
+          "kind": "artifact_extension",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "pe_dl",
+          "url": "https://get.pixelexperience.org/surya"
+        },
+        {
+          "kind": "checksum",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "pe_dl",
+          "url": "https://get.pixelexperience.org/surya"
+        },
+        {
+          "kind": "download_word",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "pe_dl",
+          "url": "https://get.pixelexperience.org/surya"
+        },
+        {
+          "kind": "changelog",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "pe_dl",
+          "url": "https://get.pixelexperience.org/surya"
+        },
+        {
+          "kind": "build_evidence_tier",
+          "detail": "artifact",
+          "source_id": "pe_dl",
+          "url": "https://get.pixelexperience.org/surya"
+        },
+        {
+          "kind": "family_resolved",
+          "detail": "Pixel Experience",
+          "source_id": "pe_dl",
+          "url": "https://get.pixelexperience.org/surya"
+        },
+        {
+          "kind": "evidence_score",
+          "detail": "17",
+          "source_id": "pe_dl",
+          "url": "https://get.pixelexperience.org/surya"
+        }
+      ],
+      "discovered_at": "2026-08-25T06:16:17+00:00",
+      "updated_at": "2026-08-25T06:16:17+00:00"
+    },
+    {
+      "id": "821152186497e971",
+      "name": "Pixel Experience",
+      "type": "custom_rom",
+      "device": "POCO X2",
+      "codename": "phoenixin",
+      "android_version": "Android 12",
+      "rom_version": "12",
+      "build_date": "2022-08-17",
+      "status": "verified",
+      "source_url": "https://get.pixelexperience.org/phoenix",
+      "download_url": "https://get.pixelexperience.org/changelog/phoenix/PixelExperience_phoenix-12.1-20220817-1029-OFFICIAL.zip",
+      "source_id": "pe_dl",
+      "evidence": [
+        {
+          "kind": "registered_source",
+          "detail": "Pixel Experience Downloads (official_download, trust 100)",
+          "source_id": "pe_dl",
+          "url": "https://get.pixelexperience.org"
+        },
+        {
+          "kind": "codename_match",
+          "detail": "codename 'phoenixin' mentioned",
+          "source_id": "pe_dl",
+          "url": "https://get.pixelexperience.org/phoenix"
+        },
+        {
+          "kind": "device_name_match",
+          "detail": "device name 'POCO X2' mentioned",
+          "source_id": "pe_dl",
+          "url": "https://get.pixelexperience.org/phoenix"
+        },
+        {
+          "kind": "artifact_link",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "pe_dl",
+          "url": "https://get.pixelexperience.org/phoenix"
+        },
+        {
+          "kind": "artifact_extension",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "pe_dl",
+          "url": "https://get.pixelexperience.org/phoenix"
+        },
+        {
+          "kind": "checksum",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "pe_dl",
+          "url": "https://get.pixelexperience.org/phoenix"
+        },
+        {
+          "kind": "download_word",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "pe_dl",
+          "url": "https://get.pixelexperience.org/phoenix"
+        },
+        {
+          "kind": "changelog",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "pe_dl",
+          "url": "https://get.pixelexperience.org/phoenix"
+        },
+        {
+          "kind": "build_evidence_tier",
+          "detail": "artifact",
+          "source_id": "pe_dl",
+          "url": "https://get.pixelexperience.org/phoenix"
+        },
+        {
+          "kind": "family_resolved",
+          "detail": "Pixel Experience",
+          "source_id": "pe_dl",
+          "url": "https://get.pixelexperience.org/phoenix"
+        },
+        {
+          "kind": "evidence_score",
+          "detail": "17",
+          "source_id": "pe_dl",
+          "url": "https://get.pixelexperience.org/phoenix"
+        }
+      ],
+      "discovered_at": "2026-08-25T06:16:56+00:00",
+      "updated_at": "2026-08-25T06:16:56+00:00"
+    },
+    {
+      "id": "782a41b8a08a6ba9",
+      "name": "Pixel Experience",
+      "type": "custom_rom",
+      "device": "POCO M5s",
+      "codename": "rosemary",
+      "android_version": "Android 13",
+      "rom_version": "13",
+      "build_date": "2023-08-18",
+      "status": "verified",
+      "source_url": "https://get.pixelexperience.org/rosemary",
+      "download_url": "https://get.pixelexperience.org/changelog/rosemary/PixelExperience_rosemary-13.0-20230818-1358-OFFICIAL.zip",
+      "source_id": "pe_dl",
+      "evidence": [
+        {
+          "kind": "registered_source",
+          "detail": "Pixel Experience Downloads (official_download, trust 100)",
+          "source_id": "pe_dl",
+          "url": "https://get.pixelexperience.org"
+        },
+        {
+          "kind": "codename_in_url",
+          "detail": "codename 'rosemary' in URL path",
+          "source_id": "pe_dl",
+          "url": "https://get.pixelexperience.org/rosemary"
+        },
+        {
+          "kind": "device_name_match",
+          "detail": "device name 'POCO M5s' mentioned",
+          "source_id": "pe_dl",
+          "url": "https://get.pixelexperience.org/rosemary"
+        },
+        {
+          "kind": "artifact_link",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "pe_dl",
+          "url": "https://get.pixelexperience.org/rosemary"
+        },
+        {
+          "kind": "artifact_extension",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "pe_dl",
+          "url": "https://get.pixelexperience.org/rosemary"
+        },
+        {
+          "kind": "checksum",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "pe_dl",
+          "url": "https://get.pixelexperience.org/rosemary"
+        },
+        {
+          "kind": "download_word",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "pe_dl",
+          "url": "https://get.pixelexperience.org/rosemary"
+        },
+        {
+          "kind": "changelog",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "pe_dl",
+          "url": "https://get.pixelexperience.org/rosemary"
+        },
+        {
+          "kind": "build_evidence_tier",
+          "detail": "artifact",
+          "source_id": "pe_dl",
+          "url": "https://get.pixelexperience.org/rosemary"
+        },
+        {
+          "kind": "family_resolved",
+          "detail": "Pixel Experience",
+          "source_id": "pe_dl",
+          "url": "https://get.pixelexperience.org/rosemary"
+        },
+        {
+          "kind": "evidence_score",
+          "detail": "17",
+          "source_id": "pe_dl",
+          "url": "https://get.pixelexperience.org/rosemary"
+        }
+      ],
+      "discovered_at": "2026-08-25T06:18:03+00:00",
+      "updated_at": "2026-08-25T06:18:03+00:00"
+    },
+    {
+      "id": "c3c0df713db8e2a4",
+      "name": "LineageOS",
+      "type": "custom_rom",
+      "device": "POCO M5s",
+      "codename": "rosemary",
+      "android_version": "Android 16",
+      "rom_version": "23.2",
+      "build_date": "2026-08-19",
+      "status": "verified",
+      "source_url": "https://download.lineageos.org/api/v2/devices/rosemary/builds",
+      "download_url": "https://mirrorbits.lineageos.org/full/rosemary/20260819/lineage-23.2-20260819-nightly-rosemary-signed.zip",
+      "source_id": "lineageos_dl",
+      "evidence": [
+        {
+          "kind": "registered_source",
+          "detail": "LineageOS Downloads (official_download, trust 100)",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org"
+        },
+        {
+          "kind": "codename_in_url",
+          "detail": "codename 'rosemary' in URL path",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/rosemary/builds"
+        },
+        {
+          "kind": "artifact_link",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/rosemary/builds"
+        },
+        {
+          "kind": "artifact_extension",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/rosemary/builds"
+        },
+        {
+          "kind": "build_channel",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/rosemary/builds"
+        },
+        {
+          "kind": "build_evidence_tier",
+          "detail": "artifact",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/rosemary/builds"
+        },
+        {
+          "kind": "family_resolved",
+          "detail": "LineageOS",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/rosemary/builds"
+        },
+        {
+          "kind": "evidence_score",
+          "detail": "14",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/rosemary/builds"
+        }
+      ],
+      "discovered_at": "2026-08-25T06:18:03+00:00",
+      "updated_at": "2026-08-25T06:18:03+00:00"
+    },
+    {
+      "id": "469e864eec7018ca",
+      "name": "PixelOS",
+      "type": "custom_rom",
+      "device": "POCO M3",
+      "codename": "citrus",
+      "android_version": "Android 13",
+      "rom_version": "13.0",
+      "build_date": "2023-07-29",
+      "status": "verified",
+      "source_url": "https://pixelos.net/download/citrus",
+      "download_url": "https://sourceforge.net/projects/pixelos-releases/files/thirteen/citrus/PixelOS_citrus-13.0-20230729-0546.zip",
+      "source_id": "pixelos_site",
+      "evidence": [
+        {
+          "kind": "registered_source",
+          "detail": "PixelOS (official_project, trust 96)",
+          "source_id": "pixelos_site",
+          "url": "https://pixelos.net"
+        },
+        {
+          "kind": "codename_in_url",
+          "detail": "codename 'citrus' in URL path",
+          "source_id": "pixelos_site",
+          "url": "https://pixelos.net/download/citrus"
+        },
+        {
+          "kind": "device_name_match",
+          "detail": "device name 'POCO M3' mentioned",
+          "source_id": "pixelos_site",
+          "url": "https://pixelos.net/download/citrus"
+        },
+        {
+          "kind": "artifact_link",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "pixelos_site",
+          "url": "https://pixelos.net/download/citrus"
+        },
+        {
+          "kind": "artifact_extension",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "pixelos_site",
+          "url": "https://pixelos.net/download/citrus"
+        },
+        {
+          "kind": "download_word",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "pixelos_site",
+          "url": "https://pixelos.net/download/citrus"
+        },
+        {
+          "kind": "changelog",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "pixelos_site",
+          "url": "https://pixelos.net/download/citrus"
+        },
+        {
+          "kind": "build_evidence_tier",
+          "detail": "artifact",
+          "source_id": "pixelos_site",
+          "url": "https://pixelos.net/download/citrus"
+        },
+        {
+          "kind": "family_resolved",
+          "detail": "PixelOS",
+          "source_id": "pixelos_site",
+          "url": "https://pixelos.net/download/citrus"
+        },
+        {
+          "kind": "evidence_score",
+          "detail": "16",
+          "source_id": "pixelos_site",
+          "url": "https://pixelos.net/download/citrus"
+        }
+      ],
+      "discovered_at": "2026-08-25T06:20:06+00:00",
+      "updated_at": "2026-08-25T06:20:06+00:00"
+    },
+    {
+      "id": "f6d6db2bcb7dd237",
+      "name": "Pixel Experience",
+      "type": "custom_rom",
+      "device": "POCO M3",
+      "codename": "citrus",
+      "android_version": "Android 13",
+      "rom_version": "13",
+      "build_date": "2024-02-09",
+      "status": "verified",
+      "source_url": "https://get.pixelexperience.org/Citrus",
+      "download_url": "https://get.pixelexperience.org/changelog/citrus/PixelExperience_citrus-13.0-20240209-1128-OFFICIAL.zip",
+      "source_id": "pe_dl",
+      "evidence": [
+        {
+          "kind": "registered_source",
+          "detail": "Pixel Experience Downloads (official_download, trust 100)",
+          "source_id": "pe_dl",
+          "url": "https://get.pixelexperience.org"
+        },
+        {
+          "kind": "codename_in_url",
+          "detail": "codename 'citrus' in URL path",
+          "source_id": "pe_dl",
+          "url": "https://get.pixelexperience.org/Citrus"
+        },
+        {
+          "kind": "device_name_match",
+          "detail": "device name 'POCO M3' mentioned",
+          "source_id": "pe_dl",
+          "url": "https://get.pixelexperience.org/Citrus"
+        },
+        {
+          "kind": "artifact_link",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "pe_dl",
+          "url": "https://get.pixelexperience.org/Citrus"
+        },
+        {
+          "kind": "artifact_extension",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "pe_dl",
+          "url": "https://get.pixelexperience.org/Citrus"
+        },
+        {
+          "kind": "checksum",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "pe_dl",
+          "url": "https://get.pixelexperience.org/Citrus"
+        },
+        {
+          "kind": "download_word",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "pe_dl",
+          "url": "https://get.pixelexperience.org/Citrus"
+        },
+        {
+          "kind": "changelog",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "pe_dl",
+          "url": "https://get.pixelexperience.org/Citrus"
+        },
+        {
+          "kind": "build_evidence_tier",
+          "detail": "artifact",
+          "source_id": "pe_dl",
+          "url": "https://get.pixelexperience.org/Citrus"
+        },
+        {
+          "kind": "family_resolved",
+          "detail": "Pixel Experience",
+          "source_id": "pe_dl",
+          "url": "https://get.pixelexperience.org/Citrus"
+        },
+        {
+          "kind": "evidence_score",
+          "detail": "17",
+          "source_id": "pe_dl",
+          "url": "https://get.pixelexperience.org/Citrus"
+        }
+      ],
+      "discovered_at": "2026-08-25T06:20:06+00:00",
+      "updated_at": "2026-08-25T06:20:06+00:00"
+    },
+    {
+      "id": "ac7d4ba17310e1a3",
+      "name": "LineageOS",
+      "type": "custom_rom",
+      "device": "POCO C75",
+      "codename": "lake",
+      "android_version": "Android 15",
+      "rom_version": "22.2",
+      "build_date": "2026-08-20",
+      "status": "verified",
+      "source_url": "https://download.lineageos.org/api/v2/devices/lake/builds",
+      "download_url": "https://mirrorbits.lineageos.org/full/lake/20260820/lineage-22.2-20260820-nightly-lake-signed.zip",
+      "source_id": "lineageos_dl",
+      "evidence": [
+        {
+          "kind": "registered_source",
+          "detail": "LineageOS Downloads (official_download, trust 100)",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org"
+        },
+        {
+          "kind": "codename_in_url",
+          "detail": "codename 'lake' in URL path",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/lake/builds"
+        },
+        {
+          "kind": "device_name_match",
+          "detail": "device name 'POCO C75' mentioned",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/lake/builds"
+        },
+        {
+          "kind": "artifact_link",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/lake/builds"
+        },
+        {
+          "kind": "artifact_extension",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/lake/builds"
+        },
+        {
+          "kind": "build_channel",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/lake/builds"
+        },
+        {
+          "kind": "build_evidence_tier",
+          "detail": "artifact",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/lake/builds"
+        },
+        {
+          "kind": "family_resolved",
+          "detail": "LineageOS",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/lake/builds"
+        },
+        {
+          "kind": "evidence_score",
+          "detail": "16",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/lake/builds"
+        }
+      ],
+      "discovered_at": "2026-08-25T06:21:10+00:00",
+      "updated_at": "2026-08-25T06:21:10+00:00"
+    },
+    {
+      "id": "f1fa2d797c5247a3",
+      "name": "Pixel Experience",
+      "type": "custom_rom",
+      "device": "POCO C75",
+      "codename": "lake",
+      "android_version": "Android 14",
+      "rom_version": "14",
+      "build_date": "2024-03-05",
+      "status": "verified",
+      "source_url": "https://get.pixelexperience.org/Lake",
+      "download_url": "https://get.pixelexperience.org/changelog/lake/PixelExperience_lake-14.0-20240305-1658-OFFICIAL.zip",
+      "source_id": "pe_dl",
+      "evidence": [
+        {
+          "kind": "registered_source",
+          "detail": "Pixel Experience Downloads (official_download, trust 100)",
+          "source_id": "pe_dl",
+          "url": "https://get.pixelexperience.org"
+        },
+        {
+          "kind": "codename_in_url",
+          "detail": "codename 'lake' in URL path",
+          "source_id": "pe_dl",
+          "url": "https://get.pixelexperience.org/Lake"
+        },
+        {
+          "kind": "device_name_match",
+          "detail": "device name 'POCO C75' mentioned",
+          "source_id": "pe_dl",
+          "url": "https://get.pixelexperience.org/Lake"
+        },
+        {
+          "kind": "artifact_link",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "pe_dl",
+          "url": "https://get.pixelexperience.org/Lake"
+        },
+        {
+          "kind": "artifact_extension",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "pe_dl",
+          "url": "https://get.pixelexperience.org/Lake"
+        },
+        {
+          "kind": "checksum",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "pe_dl",
+          "url": "https://get.pixelexperience.org/Lake"
+        },
+        {
+          "kind": "download_word",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "pe_dl",
+          "url": "https://get.pixelexperience.org/Lake"
+        },
+        {
+          "kind": "changelog",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "pe_dl",
+          "url": "https://get.pixelexperience.org/Lake"
+        },
+        {
+          "kind": "build_evidence_tier",
+          "detail": "artifact",
+          "source_id": "pe_dl",
+          "url": "https://get.pixelexperience.org/Lake"
+        },
+        {
+          "kind": "family_resolved",
+          "detail": "Pixel Experience",
+          "source_id": "pe_dl",
+          "url": "https://get.pixelexperience.org/Lake"
+        },
+        {
+          "kind": "evidence_score",
+          "detail": "17",
+          "source_id": "pe_dl",
+          "url": "https://get.pixelexperience.org/Lake"
+        }
+      ],
+      "discovered_at": "2026-08-25T06:21:10+00:00",
+      "updated_at": "2026-08-25T06:21:10+00:00"
+    },
+    {
+      "id": "713da3250017932a",
+      "name": "LineageOS",
+      "type": "custom_rom",
+      "device": "POCO C55",
+      "codename": "earth",
+      "android_version": "Android 16",
+      "rom_version": "23.2",
+      "build_date": "2026-08-23",
+      "status": "verified",
+      "source_url": "https://download.lineageos.org/api/v2/devices/earth/builds",
+      "download_url": "https://mirrorbits.lineageos.org/full/earth/20260823/lineage-23.2-20260823-nightly-earth-signed.zip",
+      "source_id": "lineageos_dl",
+      "evidence": [
+        {
+          "kind": "registered_source",
+          "detail": "LineageOS Downloads (official_download, trust 100)",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org"
+        },
+        {
+          "kind": "codename_in_url",
+          "detail": "codename 'earth' in URL path",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/earth/builds"
+        },
+        {
+          "kind": "device_name_match",
+          "detail": "device name 'POCO C55' mentioned",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/earth/builds"
+        },
+        {
+          "kind": "artifact_link",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/earth/builds"
+        },
+        {
+          "kind": "artifact_extension",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/earth/builds"
+        },
+        {
+          "kind": "build_channel",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/earth/builds"
+        },
+        {
+          "kind": "build_evidence_tier",
+          "detail": "artifact",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/earth/builds"
+        },
+        {
+          "kind": "family_resolved",
+          "detail": "LineageOS",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/earth/builds"
+        },
+        {
+          "kind": "evidence_score",
+          "detail": "16",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/earth/builds"
+        }
+      ],
+      "discovered_at": "2026-08-25T06:21:46+00:00",
+      "updated_at": "2026-08-25T06:21:46+00:00"
+    }
+  ]
+}
