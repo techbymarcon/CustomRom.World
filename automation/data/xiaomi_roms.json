@@ -1,0 +1,2397 @@
+{
+  "metadata": {
+    "schema_version": 2,
+    "generator": "romdisco",
+    "created_at": "2026-08-23T18:45:04+00:00",
+    "updated_at": "2026-08-25T05:56:07+00:00",
+    "counts": {
+      "devices": 299,
+      "roms": 160,
+      "sources": 4,
+      "verified": 160,
+      "candidates": 414
+    }
+  },
+  "devices": [
+    {
+      "name": "Xiaomi Pad 5",
+      "codename": "nabu",
+      "manufacturer": "Xiaomi",
+      "aliases": [
+        "Mi Pad 5"
+      ],
+      "id": "xiaomi:nabu"
+    },
+    {
+      "name": "Xiaomi 15 Ultra",
+      "codename": "xuanwu",
+      "manufacturer": "Xiaomi",
+      "aliases": [
+        "Xiaomi 15 Ultra"
+      ],
+      "id": "xiaomi:xuanwu"
+    },
+    {
+      "name": "Xiaomi 15 Pro",
+      "codename": "haotian",
+      "manufacturer": "Xiaomi",
+      "aliases": [
+        "Xiaomi 15 Pro"
+      ],
+      "id": "xiaomi:haotian"
+    },
+    {
+      "name": "Xiaomi 15",
+      "codename": "dada",
+      "manufacturer": "Xiaomi",
+      "aliases": [
+        "Xiaomi 15"
+      ],
+      "id": "xiaomi:dada"
+    },
+    {
+      "name": "Xiaomi 14 Ultra",
+      "codename": "aurora",
+      "manufacturer": "Xiaomi",
+      "aliases": [
+        "Xiaomi 14 Ultra"
+      ],
+      "id": "xiaomi:aurora"
+    },
+    {
+      "name": "Xiaomi 14 Pro",
+      "codename": "shennong",
+      "manufacturer": "Xiaomi",
+      "aliases": [
+        "Xiaomi 14 Pro"
+      ],
+      "id": "xiaomi:shennong"
+    },
+    {
+      "name": "Xiaomi 14",
+      "codename": "houji",
+      "manufacturer": "Xiaomi",
+      "aliases": [
+        "Xiaomi 14"
+      ],
+      "id": "xiaomi:houji"
+    },
+    {
+      "name": "Xiaomi 13 Ultra",
+      "codename": "ishtar",
+      "manufacturer": "Xiaomi",
+      "aliases": [
+        "Xiaomi 13 Ultra"
+      ],
+      "id": "xiaomi:ishtar"
+    },
+    {
+      "name": "Xiaomi 13 Pro",
+      "codename": "nuwa",
+      "manufacturer": "Xiaomi",
+      "aliases": [
+        "Xiaomi 13 Pro"
+      ],
+      "id": "xiaomi:nuwa"
+    },
+    {
+      "name": "Xiaomi 13",
+      "codename": "fuxi",
+      "manufacturer": "Xiaomi",
+      "aliases": [
+        "Xiaomi 13"
+      ],
+      "id": "xiaomi:fuxi"
+    },
+    {
+      "name": "Xiaomi 12S Ultra",
+      "codename": "thor",
+      "manufacturer": "Xiaomi",
+      "aliases": [
+        "Xiaomi 12S Ultra"
+      ],
+      "id": "xiaomi:thor"
+    },
+    {
+      "name": "Xiaomi 12S Pro",
+      "codename": "unicorn",
+      "manufacturer": "Xiaomi",
+      "aliases": [
+        "Xiaomi 12S Pro"
+      ],
+      "id": "xiaomi:unicorn"
+    },
+    {
+      "name": "Xiaomi 12S",
+      "codename": "mayfly",
+      "manufacturer": "Xiaomi",
+      "aliases": [
+        "Xiaomi 12S"
+      ],
+      "id": "xiaomi:mayfly"
+    },
+    {
+      "name": "Xiaomi 12 Pro",
+      "codename": "zeus",
+      "manufacturer": "Xiaomi",
+      "aliases": [
+        "Xiaomi 12 Pro"
+      ],
+      "id": "xiaomi:zeus"
+    },
+    {
+      "name": "Xiaomi 12",
+      "codename": "cupid",
+      "manufacturer": "Xiaomi",
+      "aliases": [
+        "Xiaomi 12"
+      ],
+      "id": "xiaomi:cupid"
+    },
+    {
+      "name": "Xiaomi 11 Ultra",
+      "codename": "star",
+      "manufacturer": "Xiaomi",
+      "aliases": [
+        "Xiaomi 11 Ultra",
+        "Mi 11 Ultra"
+      ],
+      "id": "xiaomi:star"
+    },
+    {
+      "name": "Xiaomi 11 Pro",
+      "codename": "mars",
+      "manufacturer": "Xiaomi",
+      "aliases": [
+        "Xiaomi 11 Pro",
+        "Mi 11 Pro"
+      ],
+      "id": "xiaomi:mars"
+    },
+    {
+      "name": "Xiaomi 11",
+      "codename": "venus",
+      "manufacturer": "Xiaomi",
+      "aliases": [
+        "Xiaomi 11",
+        "Mi 11"
+      ],
+      "id": "xiaomi:venus"
+    },
+    {
+      "name": "Mi 10 Ultra",
+      "codename": "cas",
+      "manufacturer": "Xiaomi",
+      "aliases": [
+        "Mi 10 Ultra"
+      ],
+      "id": "xiaomi:cas"
+    },
+    {
+      "name": "Mi 10 Pro",
+      "codename": "cmi",
+      "manufacturer": "Xiaomi",
+      "aliases": [
+        "Mi 10 Pro"
+      ],
+      "id": "xiaomi:cmi"
+    },
+    {
+      "name": "Mi 10",
+      "codename": "umi",
+      "manufacturer": "Xiaomi",
+      "aliases": [
+        "Mi 10"
+      ],
+      "id": "xiaomi:umi"
+    },
+    {
+      "name": "Mi 9",
+      "codename": "cepheus",
+      "manufacturer": "Xiaomi",
+      "aliases": [
+        "Mi 9"
+      ],
+      "id": "xiaomi:cepheus"
+    },
+    {
+      "name": "Mi 8",
+      "codename": "dipper",
+      "manufacturer": "Xiaomi",
+      "aliases": [
+        "Mi 8"
+      ],
+      "id": "xiaomi:dipper"
+    },
+    {
+      "name": "Mi 6",
+      "codename": "sagit",
+      "manufacturer": "Xiaomi",
+      "aliases": [
+        "Mi 6"
+      ],
+      "id": "xiaomi:sagit"
+    },
+    {
+      "name": "Mi 5",
+      "codename": "gemini",
+      "manufacturer": "Xiaomi",
+      "aliases": [
+        "Mi 5"
+      ],
+      "id": "xiaomi:gemini"
+    },
+    {
+      "name": "Mi 4",
+      "codename": "cancro",
+      "manufacturer": "Xiaomi",
+      "aliases": [
+        "Mi 4",
+        "Mi 3"
+      ],
+      "id": "xiaomi:cancro"
+    },
+    {
+      "name": "Mi 3",
+      "codename": "cancro_mi3",
+      "manufacturer": "Xiaomi",
+      "aliases": [
+        "Mi 3",
+        "cancro"
+      ],
+      "id": "xiaomi:cancro_mi3"
+    },
+    {
+      "name": "Mi 2",
+      "codename": "aries",
+      "manufacturer": "Xiaomi",
+      "aliases": [
+        "Mi 2",
+        "Mi 2S"
+      ],
+      "id": "xiaomi:aries"
+    },
+    {
+      "name": "Mi 1",
+      "codename": "mione_plus",
+      "manufacturer": "Xiaomi",
+      "aliases": [
+        "Mi 1",
+        "Mi 1S"
+      ],
+      "id": "xiaomi:mione_plus"
+    },
+    {
+      "name": "Xiaomi Pad 7 Pro",
+      "codename": "muyu",
+      "manufacturer": "Xiaomi",
+      "aliases": [
+        "Xiaomi Pad 7 Pro"
+      ],
+      "id": "xiaomi:muyu"
+    },
+    {
+      "name": "Xiaomi Pad 7",
+      "codename": "uke",
+      "manufacturer": "Xiaomi",
+      "aliases": [
+        "Xiaomi Pad 7"
+      ],
+      "id": "xiaomi:uke"
+    },
+    {
+      "name": "Xiaomi Pad 6S Pro 12.4",
+      "codename": "sheng",
+      "manufacturer": "Xiaomi",
+      "aliases": [
+        "Xiaomi Pad 6S Pro"
+      ],
+      "id": "xiaomi:sheng"
+    },
+    {
+      "name": "Xiaomi Pad 6 Pro",
+      "codename": "liuqin",
+      "manufacturer": "Xiaomi",
+      "aliases": [
+        "Xiaomi Pad 6 Pro"
+      ],
+      "id": "xiaomi:liuqin"
+    },
+    {
+      "name": "Xiaomi Pad 6",
+      "codename": "pipa",
+      "manufacturer": "Xiaomi",
+      "aliases": [
+        "Xiaomi Pad 6"
+      ],
+      "id": "xiaomi:pipa"
+    },
+    {
+      "name": "Xiaomi Pad 5 Pro 12.4",
+      "codename": "dagu",
+      "manufacturer": "Xiaomi",
+      "aliases": [
+        "Xiaomi Pad 5 Pro 12.4"
+      ],
+      "id": "xiaomi:dagu"
+    },
+    {
+      "name": "Xiaomi Pad 5 Pro",
+      "codename": "elish",
+      "manufacturer": "Xiaomi",
+      "aliases": [
+        "Xiaomi Pad 5 Pro",
+        "enuma"
+      ],
+      "id": "xiaomi:elish"
+    },
+    {
+      "name": "Xiaomi Pad 4 Plus",
+      "codename": "clover_plus",
+      "manufacturer": "Xiaomi",
+      "aliases": [
+        "Xiaomi Pad 4 Plus",
+        "clover"
+      ],
+      "id": "xiaomi:clover_plus"
+    },
+    {
+      "name": "Xiaomi Pad 4",
+      "codename": "clover",
+      "manufacturer": "Xiaomi",
+      "aliases": [
+        "Xiaomi Pad 4",
+        "Mi Pad 4"
+      ],
+      "id": "xiaomi:clover"
+    },
+    {
+      "name": "Xiaomi Pad 3",
+      "codename": "cappu",
+      "manufacturer": "Xiaomi",
+      "aliases": [
+        "Xiaomi Pad 3",
+        "Mi Pad 3"
+      ],
+      "id": "xiaomi:cappu"
+    },
+    {
+      "name": "Xiaomi Pad 2",
+      "codename": "latte",
+      "manufacturer": "Xiaomi",
+      "aliases": [
+        "Xiaomi Pad 2",
+        "Mi Pad 2"
+      ],
+      "id": "xiaomi:latte"
+    },
+    {
+      "name": "Xiaomi Mi Pad",
+      "codename": "mocha",
+      "manufacturer": "Xiaomi",
+      "aliases": [
+        "Xiaomi Mi Pad 1",
+        "Mi Pad"
+      ],
+      "id": "xiaomi:mocha"
+    }
+  ],
+  "sources": [
+    {
+      "id": "lineageos_site",
+      "name": "LineageOS",
+      "kind": "official_project",
+      "host": "lineageos.org",
+      "canonical_url": "https://lineageos.org",
+      "trust": 98,
+      "path_prefixes": [],
+      "family": "LineageOS",
+      "include_subdomains": true,
+      "device_urls": [],
+      "query_templates": [],
+      "manufacturers": [],
+      "can_verify": true,
+      "source_class": "OFFICIAL",
+      "authority": 6098
+    },
+    {
+      "id": "lineageos_dl",
+      "name": "LineageOS Downloads",
+      "kind": "official_download",
+      "host": "download.lineageos.org",
+      "canonical_url": "https://download.lineageos.org",
+      "trust": 100,
+      "path_prefixes": [],
+      "family": "LineageOS",
+      "include_subdomains": true,
+      "device_urls": [
+        "https://download.lineageos.org/api/v2/devices/{code}/builds"
+      ],
+      "query_templates": [],
+      "manufacturers": [],
+      "can_verify": true,
+      "source_class": "OFFICIAL",
+      "authority": 6100
+    },
+    {
+      "id": "pe_dl",
+      "name": "Pixel Experience Downloads",
+      "kind": "official_download",
+      "host": "get.pixelexperience.org",
+      "canonical_url": "https://get.pixelexperience.org",
+      "trust": 100,
+      "path_prefixes": [],
+      "family": "Pixel Experience",
+      "include_subdomains": true,
+      "device_urls": [
+        "https://get.pixelexperience.org/{code}"
+      ],
+      "query_templates": [],
+      "manufacturers": [],
+      "can_verify": true,
+      "source_class": "OFFICIAL",
+      "authority": 6100
+    },
+    {
+      "id": "pixelos_site",
+      "name": "PixelOS",
+      "kind": "official_project",
+      "host": "pixelos.net",
+      "canonical_url": "https://pixelos.net",
+      "trust": 96,
+      "path_prefixes": [],
+      "family": "PixelOS",
+      "include_subdomains": true,
+      "device_urls": [
+        "https://pixelos.net/download/{code}"
+      ],
+      "query_templates": [],
+      "manufacturers": [],
+      "can_verify": true,
+      "source_class": "OFFICIAL",
+      "authority": 6096
+    }
+  ],
+  "roms": [
+    {
+      "id": "3b9aea49473713b5",
+      "name": "LineageOS",
+      "type": "custom_rom",
+      "device": "Xiaomi Pad 5",
+      "codename": "nabu",
+      "android_version": null,
+      "rom_version": null,
+      "build_date": null,
+      "status": "verified",
+      "source_url": "https://download.lineageos.org/devices/nabu",
+      "download_url": null,
+      "source_id": "lineageos_dl",
+      "evidence": [
+        {
+          "kind": "registered_source",
+          "detail": "LineageOS Downloads (official_download, trust 100)",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org"
+        },
+        {
+          "kind": "codename_in_url",
+          "detail": "codename 'nabu' in URL path",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/devices/nabu"
+        },
+        {
+          "kind": "download_word",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/devices/nabu"
+        },
+        {
+          "kind": "device_download_page",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/devices/nabu"
+        },
+        {
+          "kind": "build_evidence_tier",
+          "detail": "device_download_page",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/devices/nabu"
+        },
+        {
+          "kind": "family_resolved",
+          "detail": "LineageOS",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/devices/nabu"
+        },
+        {
+          "kind": "evidence_score",
+          "detail": "12",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/devices/nabu"
+        }
+      ],
+      "discovered_at": "2026-08-24T23:22:40+00:00",
+      "updated_at": "2026-08-24T23:22:40+00:00"
+    },
+    {
+      "id": "76112af39951a386",
+      "name": "LineageOS",
+      "type": "custom_rom",
+      "device": "Xiaomi 14 Ultra",
+      "codename": "aurora",
+      "android_version": "Android 15",
+      "rom_version": "22.2",
+      "build_date": "2026-08-19",
+      "status": "verified",
+      "source_url": "https://download.lineageos.org/api/v2/devices/aurora/builds",
+      "download_url": "https://mirrorbits.lineageos.org/full/aurora/20260819/lineage-22.2-20260819-nightly-aurora-signed.zip",
+      "source_id": "lineageos_dl",
+      "evidence": [
+        {
+          "kind": "registered_source",
+          "detail": "LineageOS Downloads (official_download, trust 100)",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org"
+        },
+        {
+          "kind": "codename_in_url",
+          "detail": "codename 'aurora' in URL path",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/aurora/builds"
+        },
+        {
+          "kind": "artifact_link",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/aurora/builds"
+        },
+        {
+          "kind": "artifact_extension",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/aurora/builds"
+        },
+        {
+          "kind": "build_channel",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/aurora/builds"
+        },
+        {
+          "kind": "build_evidence_tier",
+          "detail": "artifact",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/aurora/builds"
+        },
+        {
+          "kind": "family_resolved",
+          "detail": "LineageOS",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/aurora/builds"
+        },
+        {
+          "kind": "evidence_score",
+          "detail": "14",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/aurora/builds"
+        }
+      ],
+      "discovered_at": "2026-08-24T23:22:41+00:00",
+      "updated_at": "2026-08-25T05:45:43+00:00"
+    },
+    {
+      "id": "aa3e6a9f0da1eebe",
+      "name": "LineageOS",
+      "type": "custom_rom",
+      "device": "Xiaomi 13 Pro",
+      "codename": "nuwa",
+      "android_version": "Android 16",
+      "rom_version": "23.2",
+      "build_date": "2026-08-23",
+      "status": "verified",
+      "source_url": "https://download.lineageos.org/api/v2/devices/nuwa/builds",
+      "download_url": "https://mirrorbits.lineageos.org/full/nuwa/20260823/lineage-23.2-20260823-nightly-nuwa-signed.zip",
+      "source_id": "lineageos_dl",
+      "evidence": [
+        {
+          "kind": "registered_source",
+          "detail": "LineageOS Downloads (official_download, trust 100)",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org"
+        },
+        {
+          "kind": "codename_in_url",
+          "detail": "codename 'nuwa' in URL path",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/nuwa/builds"
+        },
+        {
+          "kind": "artifact_link",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/nuwa/builds"
+        },
+        {
+          "kind": "artifact_extension",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/nuwa/builds"
+        },
+        {
+          "kind": "build_channel",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/nuwa/builds"
+        },
+        {
+          "kind": "build_evidence_tier",
+          "detail": "artifact",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/nuwa/builds"
+        },
+        {
+          "kind": "family_resolved",
+          "detail": "LineageOS",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/nuwa/builds"
+        },
+        {
+          "kind": "evidence_score",
+          "detail": "14",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/nuwa/builds"
+        }
+      ],
+      "discovered_at": "2026-08-24T23:22:41+00:00",
+      "updated_at": "2026-08-25T05:46:18+00:00"
+    },
+    {
+      "id": "fa1f68f0bb0870ef",
+      "name": "LineageOS",
+      "type": "custom_rom",
+      "device": "Xiaomi 13",
+      "codename": "fuxi",
+      "android_version": "Android 16",
+      "rom_version": "23.2",
+      "build_date": "2026-08-24",
+      "status": "verified",
+      "source_url": "https://download.lineageos.org/api/v2/devices/fuxi/builds",
+      "download_url": "https://mirrorbits.lineageos.org/full/fuxi/20260824/lineage-23.2-20260824-nightly-fuxi-signed.zip",
+      "source_id": "lineageos_dl",
+      "evidence": [
+        {
+          "kind": "registered_source",
+          "detail": "LineageOS Downloads (official_download, trust 100)",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org"
+        },
+        {
+          "kind": "codename_in_url",
+          "detail": "codename 'fuxi' in URL path",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/fuxi/builds"
+        },
+        {
+          "kind": "artifact_link",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/fuxi/builds"
+        },
+        {
+          "kind": "artifact_extension",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/fuxi/builds"
+        },
+        {
+          "kind": "build_channel",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/fuxi/builds"
+        },
+        {
+          "kind": "build_evidence_tier",
+          "detail": "artifact",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/fuxi/builds"
+        },
+        {
+          "kind": "family_resolved",
+          "detail": "LineageOS",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/fuxi/builds"
+        },
+        {
+          "kind": "evidence_score",
+          "detail": "14",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/fuxi/builds"
+        }
+      ],
+      "discovered_at": "2026-08-24T23:22:41+00:00",
+      "updated_at": "2026-08-25T05:46:26+00:00"
+    },
+    {
+      "id": "81dc1376d6bd5518",
+      "name": "LineageOS",
+      "type": "custom_rom",
+      "device": "Xiaomi 12S Ultra",
+      "codename": "thor",
+      "android_version": "Android 16",
+      "rom_version": "23.2",
+      "build_date": "2026-08-22",
+      "status": "verified",
+      "source_url": "https://download.lineageos.org/api/v2/devices/thor/builds",
+      "download_url": "https://mirrorbits.lineageos.org/full/thor/20260822/lineage-23.2-20260822-nightly-thor-signed.zip",
+      "source_id": "lineageos_dl",
+      "evidence": [
+        {
+          "kind": "registered_source",
+          "detail": "LineageOS Downloads (official_download, trust 100)",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org"
+        },
+        {
+          "kind": "codename_in_url",
+          "detail": "codename 'thor' in URL path",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/thor/builds"
+        },
+        {
+          "kind": "artifact_link",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/thor/builds"
+        },
+        {
+          "kind": "artifact_extension",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/thor/builds"
+        },
+        {
+          "kind": "build_channel",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/thor/builds"
+        },
+        {
+          "kind": "build_evidence_tier",
+          "detail": "artifact",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/thor/builds"
+        },
+        {
+          "kind": "family_resolved",
+          "detail": "LineageOS",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/thor/builds"
+        },
+        {
+          "kind": "evidence_score",
+          "detail": "14",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/thor/builds"
+        }
+      ],
+      "discovered_at": "2026-08-24T23:22:41+00:00",
+      "updated_at": "2026-08-25T05:46:33+00:00"
+    },
+    {
+      "id": "019b33de7528af79",
+      "name": "LineageOS",
+      "type": "custom_rom",
+      "device": "Xiaomi 12S Pro",
+      "codename": "unicorn",
+      "android_version": "Android 16",
+      "rom_version": "23.2",
+      "build_date": "2026-08-21",
+      "status": "verified",
+      "source_url": "https://download.lineageos.org/api/v2/devices/unicorn/builds",
+      "download_url": "https://mirrorbits.lineageos.org/full/unicorn/20260821/lineage-23.2-20260821-nightly-unicorn-signed.zip",
+      "source_id": "lineageos_dl",
+      "evidence": [
+        {
+          "kind": "registered_source",
+          "detail": "LineageOS Downloads (official_download, trust 100)",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org"
+        },
+        {
+          "kind": "codename_in_url",
+          "detail": "codename 'unicorn' in URL path",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/unicorn/builds"
+        },
+        {
+          "kind": "artifact_link",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/unicorn/builds"
+        },
+        {
+          "kind": "artifact_extension",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/unicorn/builds"
+        },
+        {
+          "kind": "build_channel",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/unicorn/builds"
+        },
+        {
+          "kind": "build_evidence_tier",
+          "detail": "artifact",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/unicorn/builds"
+        },
+        {
+          "kind": "family_resolved",
+          "detail": "LineageOS",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/unicorn/builds"
+        },
+        {
+          "kind": "evidence_score",
+          "detail": "14",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/unicorn/builds"
+        }
+      ],
+      "discovered_at": "2026-08-24T23:22:41+00:00",
+      "updated_at": "2026-08-25T05:46:40+00:00"
+    },
+    {
+      "id": "f07a6bb2e7c07d89",
+      "name": "LineageOS",
+      "type": "custom_rom",
+      "device": "Xiaomi 12S",
+      "codename": "mayfly",
+      "android_version": "Android 16",
+      "rom_version": "23.2",
+      "build_date": "2026-08-21",
+      "status": "verified",
+      "source_url": "https://download.lineageos.org/api/v2/devices/mayfly/builds",
+      "download_url": "https://mirrorbits.lineageos.org/full/mayfly/20260821/lineage-23.2-20260821-nightly-mayfly-signed.zip",
+      "source_id": "lineageos_dl",
+      "evidence": [
+        {
+          "kind": "registered_source",
+          "detail": "LineageOS Downloads (official_download, trust 100)",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org"
+        },
+        {
+          "kind": "codename_in_url",
+          "detail": "codename 'mayfly' in URL path",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/mayfly/builds"
+        },
+        {
+          "kind": "artifact_link",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/mayfly/builds"
+        },
+        {
+          "kind": "artifact_extension",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/mayfly/builds"
+        },
+        {
+          "kind": "build_channel",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/mayfly/builds"
+        },
+        {
+          "kind": "build_evidence_tier",
+          "detail": "artifact",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/mayfly/builds"
+        },
+        {
+          "kind": "family_resolved",
+          "detail": "LineageOS",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/mayfly/builds"
+        },
+        {
+          "kind": "evidence_score",
+          "detail": "14",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/mayfly/builds"
+        }
+      ],
+      "discovered_at": "2026-08-24T23:22:41+00:00",
+      "updated_at": "2026-08-25T05:46:52+00:00"
+    },
+    {
+      "id": "3ac494d004aedd0e",
+      "name": "PixelOS",
+      "type": "custom_rom",
+      "device": "Xiaomi 12 Pro",
+      "codename": "zeus",
+      "android_version": "Android 16",
+      "rom_version": "16.2",
+      "build_date": "2026-06-19",
+      "status": "verified",
+      "source_url": "https://pixelos.net/download/zeus",
+      "download_url": "https://download.pixelos.net/sixteen/zeus/PixelOS_zeus-16.2-20260619-1347.zip",
+      "source_id": "pixelos_site",
+      "evidence": [
+        {
+          "kind": "registered_source",
+          "detail": "PixelOS (official_project, trust 96)",
+          "source_id": "pixelos_site",
+          "url": "https://pixelos.net"
+        },
+        {
+          "kind": "codename_in_url",
+          "detail": "codename 'zeus' in URL path",
+          "source_id": "pixelos_site",
+          "url": "https://pixelos.net/download/zeus"
+        },
+        {
+          "kind": "device_name_match",
+          "detail": "device name 'Xiaomi 12 Pro' mentioned",
+          "source_id": "pixelos_site",
+          "url": "https://pixelos.net/download/zeus"
+        },
+        {
+          "kind": "artifact_link",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "pixelos_site",
+          "url": "https://pixelos.net/download/zeus"
+        },
+        {
+          "kind": "artifact_extension",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "pixelos_site",
+          "url": "https://pixelos.net/download/zeus"
+        },
+        {
+          "kind": "download_word",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "pixelos_site",
+          "url": "https://pixelos.net/download/zeus"
+        },
+        {
+          "kind": "changelog",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "pixelos_site",
+          "url": "https://pixelos.net/download/zeus"
+        },
+        {
+          "kind": "build_evidence_tier",
+          "detail": "artifact",
+          "source_id": "pixelos_site",
+          "url": "https://pixelos.net/download/zeus"
+        },
+        {
+          "kind": "family_resolved",
+          "detail": "PixelOS",
+          "source_id": "pixelos_site",
+          "url": "https://pixelos.net/download/zeus"
+        },
+        {
+          "kind": "evidence_score",
+          "detail": "16",
+          "source_id": "pixelos_site",
+          "url": "https://pixelos.net/download/zeus"
+        }
+      ],
+      "discovered_at": "2026-08-24T23:22:41+00:00",
+      "updated_at": "2026-08-25T05:47:11+00:00"
+    },
+    {
+      "id": "44372f0c438c039e",
+      "name": "LineageOS",
+      "type": "custom_rom",
+      "device": "Xiaomi 12 Pro",
+      "codename": "zeus",
+      "android_version": "Android 16",
+      "rom_version": "23.2",
+      "build_date": "2026-08-18",
+      "status": "verified",
+      "source_url": "https://download.lineageos.org/api/v2/devices/zeus/builds",
+      "download_url": "https://mirrorbits.lineageos.org/full/zeus/20260818/lineage-23.2-20260818-nightly-zeus-signed.zip",
+      "source_id": "lineageos_dl",
+      "evidence": [
+        {
+          "kind": "registered_source",
+          "detail": "LineageOS Downloads (official_download, trust 100)",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org"
+        },
+        {
+          "kind": "codename_in_url",
+          "detail": "codename 'zeus' in URL path",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/zeus/builds"
+        },
+        {
+          "kind": "artifact_link",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/zeus/builds"
+        },
+        {
+          "kind": "artifact_extension",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/zeus/builds"
+        },
+        {
+          "kind": "build_channel",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/zeus/builds"
+        },
+        {
+          "kind": "build_evidence_tier",
+          "detail": "artifact",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/zeus/builds"
+        },
+        {
+          "kind": "family_resolved",
+          "detail": "LineageOS",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/zeus/builds"
+        },
+        {
+          "kind": "evidence_score",
+          "detail": "14",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/zeus/builds"
+        }
+      ],
+      "discovered_at": "2026-08-24T23:22:41+00:00",
+      "updated_at": "2026-08-25T05:47:11+00:00"
+    },
+    {
+      "id": "9c5a835e244b36fe",
+      "name": "PixelOS",
+      "type": "custom_rom",
+      "device": "Xiaomi 12",
+      "codename": "cupid",
+      "android_version": "Android 15",
+      "rom_version": "15.0",
+      "build_date": "2025-05-04",
+      "status": "verified",
+      "source_url": "https://pixelos.net/download/cupid",
+      "download_url": "https://sourceforge.net/projects/pixelos-releases/files/fifteen/cupid/PixelOS_cupid-15.0-20250504-1448.zip",
+      "source_id": "pixelos_site",
+      "evidence": [
+        {
+          "kind": "registered_source",
+          "detail": "PixelOS (official_project, trust 96)",
+          "source_id": "pixelos_site",
+          "url": "https://pixelos.net"
+        },
+        {
+          "kind": "codename_in_url",
+          "detail": "codename 'cupid' in URL path",
+          "source_id": "pixelos_site",
+          "url": "https://pixelos.net/download/cupid"
+        },
+        {
+          "kind": "device_name_match",
+          "detail": "device name 'Xiaomi 12' mentioned",
+          "source_id": "pixelos_site",
+          "url": "https://pixelos.net/download/cupid"
+        },
+        {
+          "kind": "artifact_link",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "pixelos_site",
+          "url": "https://pixelos.net/download/cupid"
+        },
+        {
+          "kind": "artifact_extension",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "pixelos_site",
+          "url": "https://pixelos.net/download/cupid"
+        },
+        {
+          "kind": "download_word",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "pixelos_site",
+          "url": "https://pixelos.net/download/cupid"
+        },
+        {
+          "kind": "changelog",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "pixelos_site",
+          "url": "https://pixelos.net/download/cupid"
+        },
+        {
+          "kind": "build_evidence_tier",
+          "detail": "artifact",
+          "source_id": "pixelos_site",
+          "url": "https://pixelos.net/download/cupid"
+        },
+        {
+          "kind": "family_resolved",
+          "detail": "PixelOS",
+          "source_id": "pixelos_site",
+          "url": "https://pixelos.net/download/cupid"
+        },
+        {
+          "kind": "evidence_score",
+          "detail": "16",
+          "source_id": "pixelos_site",
+          "url": "https://pixelos.net/download/cupid"
+        }
+      ],
+      "discovered_at": "2026-08-24T23:22:41+00:00",
+      "updated_at": "2026-08-25T05:47:30+00:00"
+    },
+    {
+      "id": "a5b5a8ca489beb8c",
+      "name": "LineageOS",
+      "type": "custom_rom",
+      "device": "Xiaomi 12",
+      "codename": "cupid",
+      "android_version": "Android 16",
+      "rom_version": "23.2",
+      "build_date": "2026-08-20",
+      "status": "verified",
+      "source_url": "https://download.lineageos.org/api/v2/devices/cupid/builds",
+      "download_url": "https://mirrorbits.lineageos.org/full/cupid/20260820/lineage-23.2-20260820-nightly-cupid-signed.zip",
+      "source_id": "lineageos_dl",
+      "evidence": [
+        {
+          "kind": "registered_source",
+          "detail": "LineageOS Downloads (official_download, trust 100)",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org"
+        },
+        {
+          "kind": "codename_in_url",
+          "detail": "codename 'cupid' in URL path",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/cupid/builds"
+        },
+        {
+          "kind": "artifact_link",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/cupid/builds"
+        },
+        {
+          "kind": "artifact_extension",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/cupid/builds"
+        },
+        {
+          "kind": "build_channel",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/cupid/builds"
+        },
+        {
+          "kind": "build_evidence_tier",
+          "detail": "artifact",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/cupid/builds"
+        },
+        {
+          "kind": "family_resolved",
+          "detail": "LineageOS",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/cupid/builds"
+        },
+        {
+          "kind": "evidence_score",
+          "detail": "14",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/cupid/builds"
+        }
+      ],
+      "discovered_at": "2026-08-24T23:22:41+00:00",
+      "updated_at": "2026-08-25T05:47:30+00:00"
+    },
+    {
+      "id": "a32205d3c3dca7ff",
+      "name": "LineageOS",
+      "type": "custom_rom",
+      "device": "Xiaomi 11 Pro",
+      "codename": "mars",
+      "android_version": "Android 16",
+      "rom_version": "23.2",
+      "build_date": "2026-08-19",
+      "status": "verified",
+      "source_url": "https://download.lineageos.org/api/v2/devices/mars/builds",
+      "download_url": "https://mirrorbits.lineageos.org/full/mars/20260819/lineage-23.2-20260819-nightly-mars-signed.zip",
+      "source_id": "lineageos_dl",
+      "evidence": [
+        {
+          "kind": "registered_source",
+          "detail": "LineageOS Downloads (official_download, trust 100)",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org"
+        },
+        {
+          "kind": "codename_in_url",
+          "detail": "codename 'mars' in URL path",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/mars/builds"
+        },
+        {
+          "kind": "artifact_link",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/mars/builds"
+        },
+        {
+          "kind": "artifact_extension",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/mars/builds"
+        },
+        {
+          "kind": "build_channel",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/mars/builds"
+        },
+        {
+          "kind": "build_evidence_tier",
+          "detail": "artifact",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/mars/builds"
+        },
+        {
+          "kind": "family_resolved",
+          "detail": "LineageOS",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/mars/builds"
+        },
+        {
+          "kind": "evidence_score",
+          "detail": "14",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/mars/builds"
+        }
+      ],
+      "discovered_at": "2026-08-24T23:22:41+00:00",
+      "updated_at": "2026-08-25T05:48:02+00:00"
+    },
+    {
+      "id": "49d385a54a6f3c31",
+      "name": "Pixel Experience",
+      "type": "custom_rom",
+      "device": "Xiaomi 11 Pro",
+      "codename": "mars",
+      "android_version": "Android 14",
+      "rom_version": "14",
+      "build_date": "2024-03-07",
+      "status": "verified",
+      "source_url": "https://get.pixelexperience.org/Mars",
+      "download_url": "https://get.pixelexperience.org/changelog/mars/PixelExperience_mars-14.0-20240307-0041-OFFICIAL.zip",
+      "source_id": "pe_dl",
+      "evidence": [
+        {
+          "kind": "registered_source",
+          "detail": "Pixel Experience Downloads (official_download, trust 100)",
+          "source_id": "pe_dl",
+          "url": "https://get.pixelexperience.org"
+        },
+        {
+          "kind": "codename_in_url",
+          "detail": "codename 'mars' in URL path",
+          "source_id": "pe_dl",
+          "url": "https://get.pixelexperience.org/Mars"
+        },
+        {
+          "kind": "device_name_match",
+          "detail": "device name 'Xiaomi 11 Pro' mentioned",
+          "source_id": "pe_dl",
+          "url": "https://get.pixelexperience.org/Mars"
+        },
+        {
+          "kind": "artifact_link",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "pe_dl",
+          "url": "https://get.pixelexperience.org/Mars"
+        },
+        {
+          "kind": "artifact_extension",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "pe_dl",
+          "url": "https://get.pixelexperience.org/Mars"
+        },
+        {
+          "kind": "checksum",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "pe_dl",
+          "url": "https://get.pixelexperience.org/Mars"
+        },
+        {
+          "kind": "download_word",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "pe_dl",
+          "url": "https://get.pixelexperience.org/Mars"
+        },
+        {
+          "kind": "changelog",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "pe_dl",
+          "url": "https://get.pixelexperience.org/Mars"
+        },
+        {
+          "kind": "build_evidence_tier",
+          "detail": "artifact",
+          "source_id": "pe_dl",
+          "url": "https://get.pixelexperience.org/Mars"
+        },
+        {
+          "kind": "family_resolved",
+          "detail": "Pixel Experience",
+          "source_id": "pe_dl",
+          "url": "https://get.pixelexperience.org/Mars"
+        },
+        {
+          "kind": "evidence_score",
+          "detail": "17",
+          "source_id": "pe_dl",
+          "url": "https://get.pixelexperience.org/Mars"
+        }
+      ],
+      "discovered_at": "2026-08-24T23:22:41+00:00",
+      "updated_at": "2026-08-25T05:48:02+00:00"
+    },
+    {
+      "id": "5b82d03b83f9849e",
+      "name": "LineageOS",
+      "type": "custom_rom",
+      "device": "Xiaomi 11",
+      "codename": "venus",
+      "android_version": "Android 16",
+      "rom_version": "23.2",
+      "build_date": "2026-08-19",
+      "status": "verified",
+      "source_url": "https://download.lineageos.org/api/v2/devices/venus/builds",
+      "download_url": "https://mirrorbits.lineageos.org/full/venus/20260819/lineage-23.2-20260819-nightly-venus-signed.zip",
+      "source_id": "lineageos_dl",
+      "evidence": [
+        {
+          "kind": "registered_source",
+          "detail": "LineageOS Downloads (official_download, trust 100)",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org"
+        },
+        {
+          "kind": "codename_in_url",
+          "detail": "codename 'venus' in URL path",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/venus/builds"
+        },
+        {
+          "kind": "artifact_link",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/venus/builds"
+        },
+        {
+          "kind": "artifact_extension",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/venus/builds"
+        },
+        {
+          "kind": "build_channel",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/venus/builds"
+        },
+        {
+          "kind": "build_evidence_tier",
+          "detail": "artifact",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/venus/builds"
+        },
+        {
+          "kind": "family_resolved",
+          "detail": "LineageOS",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/venus/builds"
+        },
+        {
+          "kind": "evidence_score",
+          "detail": "14",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/venus/builds"
+        }
+      ],
+      "discovered_at": "2026-08-24T23:22:41+00:00",
+      "updated_at": "2026-08-25T05:48:21+00:00"
+    },
+    {
+      "id": "7d339a347432190e",
+      "name": "Pixel Experience",
+      "type": "custom_rom",
+      "device": "Xiaomi 11",
+      "codename": "venus",
+      "android_version": "Android 14",
+      "rom_version": "14",
+      "build_date": "2024-03-07",
+      "status": "verified",
+      "source_url": "https://get.pixelexperience.org/venus",
+      "download_url": "https://get.pixelexperience.org/changelog/venus/PixelExperience_venus-14.0-20240307-0248-OFFICIAL.zip",
+      "source_id": "pe_dl",
+      "evidence": [
+        {
+          "kind": "registered_source",
+          "detail": "Pixel Experience Downloads (official_download, trust 100)",
+          "source_id": "pe_dl",
+          "url": "https://get.pixelexperience.org"
+        },
+        {
+          "kind": "codename_in_url",
+          "detail": "codename 'venus' in URL path",
+          "source_id": "pe_dl",
+          "url": "https://get.pixelexperience.org/venus"
+        },
+        {
+          "kind": "device_name_match",
+          "detail": "device name 'Xiaomi 11' mentioned",
+          "source_id": "pe_dl",
+          "url": "https://get.pixelexperience.org/venus"
+        },
+        {
+          "kind": "artifact_link",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "pe_dl",
+          "url": "https://get.pixelexperience.org/venus"
+        },
+        {
+          "kind": "artifact_extension",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "pe_dl",
+          "url": "https://get.pixelexperience.org/venus"
+        },
+        {
+          "kind": "checksum",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "pe_dl",
+          "url": "https://get.pixelexperience.org/venus"
+        },
+        {
+          "kind": "download_word",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "pe_dl",
+          "url": "https://get.pixelexperience.org/venus"
+        },
+        {
+          "kind": "changelog",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "pe_dl",
+          "url": "https://get.pixelexperience.org/venus"
+        },
+        {
+          "kind": "build_evidence_tier",
+          "detail": "artifact",
+          "source_id": "pe_dl",
+          "url": "https://get.pixelexperience.org/venus"
+        },
+        {
+          "kind": "family_resolved",
+          "detail": "Pixel Experience",
+          "source_id": "pe_dl",
+          "url": "https://get.pixelexperience.org/venus"
+        },
+        {
+          "kind": "evidence_score",
+          "detail": "17",
+          "source_id": "pe_dl",
+          "url": "https://get.pixelexperience.org/venus"
+        }
+      ],
+      "discovered_at": "2026-08-24T23:22:41+00:00",
+      "updated_at": "2026-08-25T05:48:21+00:00"
+    },
+    {
+      "id": "a34c9ddc9a7dcd5c",
+      "name": "LineageOS",
+      "type": "custom_rom",
+      "device": "Mi 10 Ultra",
+      "codename": "cas",
+      "android_version": "Android 16",
+      "rom_version": "23.2",
+      "build_date": "2026-08-18",
+      "status": "verified",
+      "source_url": "https://download.lineageos.org/api/v2/devices/cas/builds",
+      "download_url": "https://mirrorbits.lineageos.org/full/cas/20260818/lineage-23.2-20260818-nightly-cas-signed.zip",
+      "source_id": "lineageos_dl",
+      "evidence": [
+        {
+          "kind": "registered_source",
+          "detail": "LineageOS Downloads (official_download, trust 100)",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org"
+        },
+        {
+          "kind": "codename_in_url",
+          "detail": "codename 'cas' in URL path",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/cas/builds"
+        },
+        {
+          "kind": "artifact_link",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/cas/builds"
+        },
+        {
+          "kind": "artifact_extension",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/cas/builds"
+        },
+        {
+          "kind": "build_channel",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/cas/builds"
+        },
+        {
+          "kind": "build_evidence_tier",
+          "detail": "artifact",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/cas/builds"
+        },
+        {
+          "kind": "family_resolved",
+          "detail": "LineageOS",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/cas/builds"
+        },
+        {
+          "kind": "evidence_score",
+          "detail": "14",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/cas/builds"
+        }
+      ],
+      "discovered_at": "2026-08-24T23:22:41+00:00",
+      "updated_at": "2026-08-25T05:48:41+00:00"
+    },
+    {
+      "id": "80cf5f75c2c70d8b",
+      "name": "LineageOS",
+      "type": "custom_rom",
+      "device": "Mi 10 Pro",
+      "codename": "cmi",
+      "android_version": "Android 16",
+      "rom_version": "23.2",
+      "build_date": "2026-08-21",
+      "status": "verified",
+      "source_url": "https://download.lineageos.org/api/v2/devices/cmi/builds",
+      "download_url": "https://mirrorbits.lineageos.org/full/cmi/20260821/lineage-23.2-20260821-nightly-cmi-signed.zip",
+      "source_id": "lineageos_dl",
+      "evidence": [
+        {
+          "kind": "registered_source",
+          "detail": "LineageOS Downloads (official_download, trust 100)",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org"
+        },
+        {
+          "kind": "codename_in_url",
+          "detail": "codename 'cmi' in URL path",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/cmi/builds"
+        },
+        {
+          "kind": "artifact_link",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/cmi/builds"
+        },
+        {
+          "kind": "artifact_extension",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/cmi/builds"
+        },
+        {
+          "kind": "build_channel",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/cmi/builds"
+        },
+        {
+          "kind": "build_evidence_tier",
+          "detail": "artifact",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/cmi/builds"
+        },
+        {
+          "kind": "family_resolved",
+          "detail": "LineageOS",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/cmi/builds"
+        },
+        {
+          "kind": "evidence_score",
+          "detail": "14",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/cmi/builds"
+        }
+      ],
+      "discovered_at": "2026-08-24T23:22:41+00:00",
+      "updated_at": "2026-08-25T05:49:00+00:00"
+    },
+    {
+      "id": "5e9e208b60d900d2",
+      "name": "LineageOS",
+      "type": "custom_rom",
+      "device": "Mi 10",
+      "codename": "umi",
+      "android_version": "Android 16",
+      "rom_version": "23.2",
+      "build_date": "2026-08-23",
+      "status": "verified",
+      "source_url": "https://download.lineageos.org/api/v2/devices/umi/builds",
+      "download_url": "https://mirrorbits.lineageos.org/full/umi/20260823/lineage-23.2-20260823-nightly-umi-signed.zip",
+      "source_id": "lineageos_dl",
+      "evidence": [
+        {
+          "kind": "registered_source",
+          "detail": "LineageOS Downloads (official_download, trust 100)",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org"
+        },
+        {
+          "kind": "codename_in_url",
+          "detail": "codename 'umi' in URL path",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/umi/builds"
+        },
+        {
+          "kind": "artifact_link",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/umi/builds"
+        },
+        {
+          "kind": "artifact_extension",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/umi/builds"
+        },
+        {
+          "kind": "build_channel",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/umi/builds"
+        },
+        {
+          "kind": "build_evidence_tier",
+          "detail": "artifact",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/umi/builds"
+        },
+        {
+          "kind": "family_resolved",
+          "detail": "LineageOS",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/umi/builds"
+        },
+        {
+          "kind": "evidence_score",
+          "detail": "14",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/umi/builds"
+        }
+      ],
+      "discovered_at": "2026-08-24T23:22:41+00:00",
+      "updated_at": "2026-08-25T05:49:17+00:00"
+    },
+    {
+      "id": "84bfef7dae9faaad",
+      "name": "PixelOS",
+      "type": "custom_rom",
+      "device": "Mi 9",
+      "codename": "cepheus",
+      "android_version": "Android 15",
+      "rom_version": "15.0",
+      "build_date": "2025-01-18",
+      "status": "verified",
+      "source_url": "https://pixelos.net/download/cepheus",
+      "download_url": "https://sourceforge.net/projects/pixelos-releases/files/fifteen/cepheus/PixelOS_cepheus-15.0-20250118-0034.zip",
+      "source_id": "pixelos_site",
+      "evidence": [
+        {
+          "kind": "registered_source",
+          "detail": "PixelOS (official_project, trust 96)",
+          "source_id": "pixelos_site",
+          "url": "https://pixelos.net"
+        },
+        {
+          "kind": "codename_in_url",
+          "detail": "codename 'cepheus' in URL path",
+          "source_id": "pixelos_site",
+          "url": "https://pixelos.net/download/cepheus"
+        },
+        {
+          "kind": "device_name_match",
+          "detail": "device name 'Mi 9' mentioned",
+          "source_id": "pixelos_site",
+          "url": "https://pixelos.net/download/cepheus"
+        },
+        {
+          "kind": "artifact_link",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "pixelos_site",
+          "url": "https://pixelos.net/download/cepheus"
+        },
+        {
+          "kind": "artifact_extension",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "pixelos_site",
+          "url": "https://pixelos.net/download/cepheus"
+        },
+        {
+          "kind": "download_word",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "pixelos_site",
+          "url": "https://pixelos.net/download/cepheus"
+        },
+        {
+          "kind": "changelog",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "pixelos_site",
+          "url": "https://pixelos.net/download/cepheus"
+        },
+        {
+          "kind": "build_evidence_tier",
+          "detail": "artifact",
+          "source_id": "pixelos_site",
+          "url": "https://pixelos.net/download/cepheus"
+        },
+        {
+          "kind": "family_resolved",
+          "detail": "PixelOS",
+          "source_id": "pixelos_site",
+          "url": "https://pixelos.net/download/cepheus"
+        },
+        {
+          "kind": "evidence_score",
+          "detail": "16",
+          "source_id": "pixelos_site",
+          "url": "https://pixelos.net/download/cepheus"
+        }
+      ],
+      "discovered_at": "2026-08-24T23:22:41+00:00",
+      "updated_at": "2026-08-25T05:49:39+00:00"
+    },
+    {
+      "id": "f3661a58f25feb33",
+      "name": "Pixel Experience",
+      "type": "custom_rom",
+      "device": "Mi 9",
+      "codename": "cepheus",
+      "android_version": "Android 13",
+      "rom_version": "13",
+      "build_date": "2022-11-27",
+      "status": "verified",
+      "source_url": "https://get.pixelexperience.org/Cepheus",
+      "download_url": "https://get.pixelexperience.org/changelog/cepheus/PixelExperience_cepheus-13.0-20221127-0218-OFFICIAL.zip",
+      "source_id": "pe_dl",
+      "evidence": [
+        {
+          "kind": "registered_source",
+          "detail": "Pixel Experience Downloads (official_download, trust 100)",
+          "source_id": "pe_dl",
+          "url": "https://get.pixelexperience.org"
+        },
+        {
+          "kind": "codename_in_url",
+          "detail": "codename 'cepheus' in URL path",
+          "source_id": "pe_dl",
+          "url": "https://get.pixelexperience.org/Cepheus"
+        },
+        {
+          "kind": "device_name_match",
+          "detail": "device name 'Mi 9' mentioned",
+          "source_id": "pe_dl",
+          "url": "https://get.pixelexperience.org/Cepheus"
+        },
+        {
+          "kind": "artifact_link",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "pe_dl",
+          "url": "https://get.pixelexperience.org/Cepheus"
+        },
+        {
+          "kind": "artifact_extension",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "pe_dl",
+          "url": "https://get.pixelexperience.org/Cepheus"
+        },
+        {
+          "kind": "checksum",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "pe_dl",
+          "url": "https://get.pixelexperience.org/Cepheus"
+        },
+        {
+          "kind": "download_word",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "pe_dl",
+          "url": "https://get.pixelexperience.org/Cepheus"
+        },
+        {
+          "kind": "build_channel",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "pe_dl",
+          "url": "https://get.pixelexperience.org/Cepheus"
+        },
+        {
+          "kind": "changelog",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "pe_dl",
+          "url": "https://get.pixelexperience.org/Cepheus"
+        },
+        {
+          "kind": "build_evidence_tier",
+          "detail": "artifact",
+          "source_id": "pe_dl",
+          "url": "https://get.pixelexperience.org/Cepheus"
+        },
+        {
+          "kind": "family_resolved",
+          "detail": "Pixel Experience",
+          "source_id": "pe_dl",
+          "url": "https://get.pixelexperience.org/Cepheus"
+        },
+        {
+          "kind": "evidence_score",
+          "detail": "17",
+          "source_id": "pe_dl",
+          "url": "https://get.pixelexperience.org/Cepheus"
+        }
+      ],
+      "discovered_at": "2026-08-24T23:22:41+00:00",
+      "updated_at": "2026-08-25T05:49:39+00:00"
+    },
+    {
+      "id": "e733511465e816de",
+      "name": "LineageOS",
+      "type": "custom_rom",
+      "device": "Mi 8",
+      "codename": "dipper",
+      "android_version": "Android 15",
+      "rom_version": "22.2",
+      "build_date": "2026-08-22",
+      "status": "verified",
+      "source_url": "https://download.lineageos.org/api/v2/devices/dipper/builds",
+      "download_url": "https://mirrorbits.lineageos.org/full/dipper/20260822/lineage-22.2-20260822-nightly-dipper-signed.zip",
+      "source_id": "lineageos_dl",
+      "evidence": [
+        {
+          "kind": "registered_source",
+          "detail": "LineageOS Downloads (official_download, trust 100)",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org"
+        },
+        {
+          "kind": "codename_in_url",
+          "detail": "codename 'dipper' in URL path",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/dipper/builds"
+        },
+        {
+          "kind": "artifact_link",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/dipper/builds"
+        },
+        {
+          "kind": "artifact_extension",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/dipper/builds"
+        },
+        {
+          "kind": "build_channel",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/dipper/builds"
+        },
+        {
+          "kind": "build_evidence_tier",
+          "detail": "artifact",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/dipper/builds"
+        },
+        {
+          "kind": "family_resolved",
+          "detail": "LineageOS",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/dipper/builds"
+        },
+        {
+          "kind": "evidence_score",
+          "detail": "14",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/dipper/builds"
+        }
+      ],
+      "discovered_at": "2026-08-24T23:22:41+00:00",
+      "updated_at": "2026-08-25T05:49:59+00:00"
+    },
+    {
+      "id": "656361c465adce47",
+      "name": "Pixel Experience",
+      "type": "custom_rom",
+      "device": "Mi 8",
+      "codename": "dipper",
+      "android_version": "Android 14",
+      "rom_version": "14",
+      "build_date": "2024-03-17",
+      "status": "verified",
+      "source_url": "https://get.pixelexperience.org/dipper",
+      "download_url": "https://get.pixelexperience.org/changelog/dipper/PixelExperience_dipper-14.0-20240317-0958-OFFICIAL.zip",
+      "source_id": "pe_dl",
+      "evidence": [
+        {
+          "kind": "registered_source",
+          "detail": "Pixel Experience Downloads (official_download, trust 100)",
+          "source_id": "pe_dl",
+          "url": "https://get.pixelexperience.org"
+        },
+        {
+          "kind": "codename_in_url",
+          "detail": "codename 'dipper' in URL path",
+          "source_id": "pe_dl",
+          "url": "https://get.pixelexperience.org/dipper"
+        },
+        {
+          "kind": "device_name_match",
+          "detail": "device name 'Mi 8' mentioned",
+          "source_id": "pe_dl",
+          "url": "https://get.pixelexperience.org/dipper"
+        },
+        {
+          "kind": "artifact_link",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "pe_dl",
+          "url": "https://get.pixelexperience.org/dipper"
+        },
+        {
+          "kind": "artifact_extension",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "pe_dl",
+          "url": "https://get.pixelexperience.org/dipper"
+        },
+        {
+          "kind": "checksum",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "pe_dl",
+          "url": "https://get.pixelexperience.org/dipper"
+        },
+        {
+          "kind": "download_word",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "pe_dl",
+          "url": "https://get.pixelexperience.org/dipper"
+        },
+        {
+          "kind": "changelog",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "pe_dl",
+          "url": "https://get.pixelexperience.org/dipper"
+        },
+        {
+          "kind": "build_evidence_tier",
+          "detail": "artifact",
+          "source_id": "pe_dl",
+          "url": "https://get.pixelexperience.org/dipper"
+        },
+        {
+          "kind": "family_resolved",
+          "detail": "Pixel Experience",
+          "source_id": "pe_dl",
+          "url": "https://get.pixelexperience.org/dipper"
+        },
+        {
+          "kind": "evidence_score",
+          "detail": "17",
+          "source_id": "pe_dl",
+          "url": "https://get.pixelexperience.org/dipper"
+        }
+      ],
+      "discovered_at": "2026-08-24T23:22:41+00:00",
+      "updated_at": "2026-08-25T05:49:59+00:00"
+    },
+    {
+      "id": "ba1646264c33111d",
+      "name": "LineageOS",
+      "type": "custom_rom",
+      "device": "Mi 6",
+      "codename": "sagit",
+      "android_version": "Android 15",
+      "rom_version": "22.2",
+      "build_date": "2026-08-21",
+      "status": "verified",
+      "source_url": "https://download.lineageos.org/api/v2/devices/sagit/builds",
+      "download_url": "https://mirrorbits.lineageos.org/full/sagit/20260821/lineage-22.2-20260821-nightly-sagit-signed.zip",
+      "source_id": "lineageos_dl",
+      "evidence": [
+        {
+          "kind": "registered_source",
+          "detail": "LineageOS Downloads (official_download, trust 100)",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org"
+        },
+        {
+          "kind": "codename_in_url",
+          "detail": "codename 'sagit' in URL path",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/sagit/builds"
+        },
+        {
+          "kind": "artifact_link",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/sagit/builds"
+        },
+        {
+          "kind": "artifact_extension",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/sagit/builds"
+        },
+        {
+          "kind": "build_channel",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/sagit/builds"
+        },
+        {
+          "kind": "build_evidence_tier",
+          "detail": "artifact",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/sagit/builds"
+        },
+        {
+          "kind": "family_resolved",
+          "detail": "LineageOS",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/sagit/builds"
+        },
+        {
+          "kind": "evidence_score",
+          "detail": "14",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/sagit/builds"
+        }
+      ],
+      "discovered_at": "2026-08-24T23:22:41+00:00",
+      "updated_at": "2026-08-25T05:50:18+00:00"
+    },
+    {
+      "id": "bd86cc7dbe4e68cf",
+      "name": "LineageOS",
+      "type": "custom_rom",
+      "device": "Mi 5",
+      "codename": "gemini",
+      "android_version": "Android 15",
+      "rom_version": "22.2",
+      "build_date": "2026-08-19",
+      "status": "verified",
+      "source_url": "https://download.lineageos.org/api/v2/devices/gemini/builds",
+      "download_url": "https://mirrorbits.lineageos.org/full/gemini/20260819/lineage-22.2-20260819-nightly-gemini-signed.zip",
+      "source_id": "lineageos_dl",
+      "evidence": [
+        {
+          "kind": "registered_source",
+          "detail": "LineageOS Downloads (official_download, trust 100)",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org"
+        },
+        {
+          "kind": "codename_in_url",
+          "detail": "codename 'gemini' in URL path",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/gemini/builds"
+        },
+        {
+          "kind": "artifact_link",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/gemini/builds"
+        },
+        {
+          "kind": "artifact_extension",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/gemini/builds"
+        },
+        {
+          "kind": "build_channel",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/gemini/builds"
+        },
+        {
+          "kind": "build_evidence_tier",
+          "detail": "artifact",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/gemini/builds"
+        },
+        {
+          "kind": "family_resolved",
+          "detail": "LineageOS",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/gemini/builds"
+        },
+        {
+          "kind": "evidence_score",
+          "detail": "14",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/gemini/builds"
+        }
+      ],
+      "discovered_at": "2026-08-24T23:22:41+00:00",
+      "updated_at": "2026-08-25T05:50:39+00:00"
+    },
+    {
+      "id": "c315ba3dbac7bddd",
+      "name": "Pixel Experience",
+      "type": "custom_rom",
+      "device": "Mi 5",
+      "codename": "gemini",
+      "android_version": "Android 11",
+      "rom_version": "11",
+      "build_date": "2021-12-16",
+      "status": "verified",
+      "source_url": "https://get.pixelexperience.org/gemini",
+      "download_url": "https://get.pixelexperience.org/changelog/gemini/PixelExperience_gemini-11.0-20211216-1619-OFFICIAL.zip",
+      "source_id": "pe_dl",
+      "evidence": [
+        {
+          "kind": "registered_source",
+          "detail": "Pixel Experience Downloads (official_download, trust 100)",
+          "source_id": "pe_dl",
+          "url": "https://get.pixelexperience.org"
+        },
+        {
+          "kind": "codename_in_url",
+          "detail": "codename 'gemini' in URL path",
+          "source_id": "pe_dl",
+          "url": "https://get.pixelexperience.org/gemini"
+        },
+        {
+          "kind": "device_name_match",
+          "detail": "device name 'Mi 5' mentioned",
+          "source_id": "pe_dl",
+          "url": "https://get.pixelexperience.org/gemini"
+        },
+        {
+          "kind": "artifact_link",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "pe_dl",
+          "url": "https://get.pixelexperience.org/gemini"
+        },
+        {
+          "kind": "artifact_extension",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "pe_dl",
+          "url": "https://get.pixelexperience.org/gemini"
+        },
+        {
+          "kind": "checksum",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "pe_dl",
+          "url": "https://get.pixelexperience.org/gemini"
+        },
+        {
+          "kind": "download_word",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "pe_dl",
+          "url": "https://get.pixelexperience.org/gemini"
+        },
+        {
+          "kind": "changelog",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "pe_dl",
+          "url": "https://get.pixelexperience.org/gemini"
+        },
+        {
+          "kind": "build_evidence_tier",
+          "detail": "artifact",
+          "source_id": "pe_dl",
+          "url": "https://get.pixelexperience.org/gemini"
+        },
+        {
+          "kind": "family_resolved",
+          "detail": "Pixel Experience",
+          "source_id": "pe_dl",
+          "url": "https://get.pixelexperience.org/gemini"
+        },
+        {
+          "kind": "evidence_score",
+          "detail": "17",
+          "source_id": "pe_dl",
+          "url": "https://get.pixelexperience.org/gemini"
+        }
+      ],
+      "discovered_at": "2026-08-24T23:22:41+00:00",
+      "updated_at": "2026-08-25T05:50:39+00:00"
+    },
+    {
+      "id": "a5176c292ee6fd2a",
+      "name": "LineageOS",
+      "type": "custom_rom",
+      "device": "Mi 4",
+      "codename": "cancro",
+      "android_version": null,
+      "rom_version": null,
+      "build_date": null,
+      "status": "verified",
+      "source_url": "https://wiki.lineageos.org/devices/cancro",
+      "download_url": null,
+      "source_id": "lineageos_site",
+      "evidence": [
+        {
+          "kind": "registered_source",
+          "detail": "LineageOS (official_project, trust 98)",
+          "source_id": "lineageos_site",
+          "url": "https://lineageos.org"
+        },
+        {
+          "kind": "codename_in_url",
+          "detail": "codename 'cancro' in URL path",
+          "source_id": "lineageos_site",
+          "url": "https://wiki.lineageos.org/devices/cancro"
+        },
+        {
+          "kind": "device_name_match",
+          "detail": "device name 'Mi 4' mentioned",
+          "source_id": "lineageos_site",
+          "url": "https://wiki.lineageos.org/devices/cancro"
+        },
+        {
+          "kind": "device_download_page",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "lineageos_site",
+          "url": "https://wiki.lineageos.org/devices/cancro"
+        },
+        {
+          "kind": "device_build_listing",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "lineageos_site",
+          "url": "https://wiki.lineageos.org/devices/cancro"
+        },
+        {
+          "kind": "build_evidence_tier",
+          "detail": "device_download_page",
+          "source_id": "lineageos_site",
+          "url": "https://wiki.lineageos.org/devices/cancro"
+        },
+        {
+          "kind": "family_resolved",
+          "detail": "LineageOS",
+          "source_id": "lineageos_site",
+          "url": "https://wiki.lineageos.org/devices/cancro"
+        },
+        {
+          "kind": "evidence_score",
+          "detail": "14",
+          "source_id": "lineageos_site",
+          "url": "https://wiki.lineageos.org/devices/cancro"
+        }
+      ],
+      "discovered_at": "2026-08-24T23:22:41+00:00",
+      "updated_at": "2026-08-24T23:22:41+00:00"
+    },
+    {
+      "id": "0cb9a3dde6873e78",
+      "name": "PixelOS",
+      "type": "custom_rom",
+      "device": "Xiaomi Pad 6",
+      "codename": "pipa",
+      "android_version": "Android 16",
+      "rom_version": "16.2",
+      "build_date": "2026-03-17",
+      "status": "verified",
+      "source_url": "https://pixelos.net/download/pipa",
+      "download_url": "https://download.pixelos.net/sixteen/pipa/PixelOS_pipa-16.2-20260317-1955.zip",
+      "source_id": "pixelos_site",
+      "evidence": [
+        {
+          "kind": "registered_source",
+          "detail": "PixelOS (official_project, trust 96)",
+          "source_id": "pixelos_site",
+          "url": "https://pixelos.net"
+        },
+        {
+          "kind": "codename_in_url",
+          "detail": "codename 'pipa' in URL path",
+          "source_id": "pixelos_site",
+          "url": "https://pixelos.net/download/pipa"
+        },
+        {
+          "kind": "device_name_match",
+          "detail": "device name 'Xiaomi Pad 6' mentioned",
+          "source_id": "pixelos_site",
+          "url": "https://pixelos.net/download/pipa"
+        },
+        {
+          "kind": "artifact_link",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "pixelos_site",
+          "url": "https://pixelos.net/download/pipa"
+        },
+        {
+          "kind": "artifact_extension",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "pixelos_site",
+          "url": "https://pixelos.net/download/pipa"
+        },
+        {
+          "kind": "download_word",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "pixelos_site",
+          "url": "https://pixelos.net/download/pipa"
+        },
+        {
+          "kind": "changelog",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "pixelos_site",
+          "url": "https://pixelos.net/download/pipa"
+        },
+        {
+          "kind": "build_evidence_tier",
+          "detail": "artifact",
+          "source_id": "pixelos_site",
+          "url": "https://pixelos.net/download/pipa"
+        },
+        {
+          "kind": "family_resolved",
+          "detail": "PixelOS",
+          "source_id": "pixelos_site",
+          "url": "https://pixelos.net/download/pipa"
+        },
+        {
+          "kind": "evidence_score",
+          "detail": "16",
+          "source_id": "pixelos_site",
+          "url": "https://pixelos.net/download/pipa"
+        }
+      ],
+      "discovered_at": "2026-08-24T23:22:41+00:00",
+      "updated_at": "2026-08-25T05:53:28+00:00"
+    }
+  ]
+}

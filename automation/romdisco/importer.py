@@ -192,12 +192,18 @@ def build_supabase_records(
         raw_source_url = r.get("source_url") or ""
         raw_download_url = r.get("download_url")
 
-        # 1. Device resolution
+        # 1. Device resolution: prefer exact device name, then device from roms_data, then codename
         dev_entry = None
-        if raw_codename and raw_codename.lower() in devices_by_code:
-            dev_entry = devices_by_code[raw_codename.lower()]
-        elif raw_device_name and raw_device_name.lower() in devices_by_name:
+        if raw_device_name and raw_device_name.lower() in devices_by_name:
             dev_entry = devices_by_name[raw_device_name.lower()]
+        elif raw_codename:
+            for d in roms_data.get("devices", []):
+                if d.get("codename", "").lower() == raw_codename.lower():
+                    dev_entry = devices_by_name.get((d.get("name") or "").lower())
+                    if dev_entry:
+                        break
+            if not dev_entry and raw_codename.lower() in devices_by_code:
+                dev_entry = devices_by_code[raw_codename.lower()]
 
         if not dev_entry:
             rejected.append({
