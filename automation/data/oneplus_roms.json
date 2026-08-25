@@ -1,0 +1,2660 @@
+{
+  "metadata": {
+    "schema_version": 2,
+    "generator": "romdisco",
+    "created_at": "2026-08-23T18:45:04+00:00",
+    "updated_at": "2026-08-25T01:03:42+00:00",
+    "counts": {
+      "devices": 101,
+      "roms": 107,
+      "sources": 4,
+      "verified": 107,
+      "candidates": 509
+    }
+  },
+  "devices": [
+    {
+      "name": "OnePlus 8 Pro",
+      "codename": "instantnoodlep",
+      "manufacturer": "OnePlus",
+      "aliases": [],
+      "id": "oneplus:instantnoodlep"
+    },
+    {
+      "name": "OnePlus 13",
+      "codename": "dodge",
+      "manufacturer": "OnePlus",
+      "aliases": [
+        "PJZ110",
+        "OnePlus 13"
+      ],
+      "id": "oneplus:dodge"
+    },
+    {
+      "name": "OnePlus 13R",
+      "codename": "jeter",
+      "manufacturer": "OnePlus",
+      "aliases": [
+        "CPH2645",
+        "OnePlus 13R"
+      ],
+      "id": "oneplus:jeter"
+    },
+    {
+      "name": "OnePlus 12",
+      "codename": "waffle",
+      "manufacturer": "OnePlus",
+      "aliases": [
+        "PJD110",
+        "CPH2581",
+        "OnePlus 12"
+      ],
+      "id": "oneplus:waffle"
+    },
+    {
+      "name": "OnePlus 12R",
+      "codename": "iron",
+      "manufacturer": "OnePlus",
+      "aliases": [
+        "ace2pro",
+        "CPH2609",
+        "OnePlus 12R",
+        "OnePlus Ace 3"
+      ],
+      "id": "oneplus:iron"
+    },
+    {
+      "name": "OnePlus 11",
+      "codename": "salami",
+      "manufacturer": "OnePlus",
+      "aliases": [
+        "PHB110",
+        "CPH2449",
+        "OnePlus 11"
+      ],
+      "id": "oneplus:salami"
+    },
+    {
+      "name": "OnePlus 11R",
+      "codename": "udon",
+      "manufacturer": "OnePlus",
+      "aliases": [
+        "CPH2487",
+        "OnePlus 11R",
+        "OnePlus Ace 2"
+      ],
+      "id": "oneplus:udon"
+    },
+    {
+      "name": "OnePlus 10 Pro",
+      "codename": "ne2210",
+      "manufacturer": "OnePlus",
+      "aliases": [
+        "ovadas",
+        "NE2211",
+        "NE2213",
+        "NE2215",
+        "OnePlus 10 Pro"
+      ],
+      "id": "oneplus:ne2210"
+    },
+    {
+      "name": "OnePlus 10T",
+      "codename": "oval",
+      "manufacturer": "OnePlus",
+      "aliases": [
+        "CPH2415",
+        "CPH2413",
+        "OnePlus 10T",
+        "OnePlus Ace Pro"
+      ],
+      "id": "oneplus:oval"
+    },
+    {
+      "name": "OnePlus 10R",
+      "codename": "pickle",
+      "manufacturer": "OnePlus",
+      "aliases": [
+        "CPH2423",
+        "CPH2411",
+        "OnePlus 10R",
+        "OnePlus Ace"
+      ],
+      "id": "oneplus:pickle"
+    },
+    {
+      "name": "OnePlus 9 Pro",
+      "codename": "lemonadep",
+      "manufacturer": "OnePlus",
+      "aliases": [
+        "OnePlus 9 Pro",
+        "LE2123"
+      ],
+      "id": "oneplus:lemonadep"
+    },
+    {
+      "name": "OnePlus 9",
+      "codename": "lemonade",
+      "manufacturer": "OnePlus",
+      "aliases": [
+        "OnePlus 9",
+        "LE2113"
+      ],
+      "id": "oneplus:lemonade"
+    },
+    {
+      "name": "OnePlus 9R",
+      "codename": "lemonades",
+      "manufacturer": "OnePlus",
+      "aliases": [
+        "OnePlus 9R",
+        "LE2101"
+      ],
+      "id": "oneplus:lemonades"
+    },
+    {
+      "name": "OnePlus 8T",
+      "codename": "kebab",
+      "manufacturer": "OnePlus",
+      "aliases": [
+        "OnePlus 8T",
+        "KB2003"
+      ],
+      "id": "oneplus:kebab"
+    },
+    {
+      "name": "OnePlus 8",
+      "codename": "instantnoodle",
+      "manufacturer": "OnePlus",
+      "aliases": [
+        "OnePlus 8",
+        "IN2013"
+      ],
+      "id": "oneplus:instantnoodle"
+    },
+    {
+      "name": "OnePlus 7T Pro",
+      "codename": "hotdog",
+      "manufacturer": "OnePlus",
+      "aliases": [
+        "OnePlus 7T Pro",
+        "HD1913"
+      ],
+      "id": "oneplus:hotdog"
+    },
+    {
+      "name": "OnePlus 7T",
+      "codename": "hotdogb",
+      "manufacturer": "OnePlus",
+      "aliases": [
+        "OnePlus 7T",
+        "HD1903"
+      ],
+      "id": "oneplus:hotdogb"
+    },
+    {
+      "name": "OnePlus 7 Pro",
+      "codename": "guacamole",
+      "manufacturer": "OnePlus",
+      "aliases": [
+        "OnePlus 7 Pro",
+        "GM1913"
+      ],
+      "id": "oneplus:guacamole"
+    },
+    {
+      "name": "OnePlus 7",
+      "codename": "guacamoleb",
+      "manufacturer": "OnePlus",
+      "aliases": [
+        "OnePlus 7",
+        "GM1903"
+      ],
+      "id": "oneplus:guacamoleb"
+    },
+    {
+      "name": "OnePlus 6T",
+      "codename": "fajita",
+      "manufacturer": "OnePlus",
+      "aliases": [
+        "OnePlus 6T",
+        "A6013"
+      ],
+      "id": "oneplus:fajita"
+    },
+    {
+      "name": "OnePlus 6",
+      "codename": "enchilada",
+      "manufacturer": "OnePlus",
+      "aliases": [
+        "OnePlus 6",
+        "A6003"
+      ],
+      "id": "oneplus:enchilada"
+    },
+    {
+      "name": "OnePlus 5T",
+      "codename": "dumpling",
+      "manufacturer": "OnePlus",
+      "aliases": [
+        "OnePlus 5T",
+        "A5010"
+      ],
+      "id": "oneplus:dumpling"
+    },
+    {
+      "name": "OnePlus 5",
+      "codename": "cheeseburger",
+      "manufacturer": "OnePlus",
+      "aliases": [
+        "OnePlus 5",
+        "A5000"
+      ],
+      "id": "oneplus:cheeseburger"
+    },
+    {
+      "name": "OnePlus 3T",
+      "codename": "oneplus3t",
+      "manufacturer": "OnePlus",
+      "aliases": [
+        "OnePlus 3T",
+        "A3010"
+      ],
+      "id": "oneplus:oneplus3t"
+    },
+    {
+      "name": "OnePlus 3",
+      "codename": "oneplus3",
+      "manufacturer": "OnePlus",
+      "aliases": [
+        "OnePlus 3",
+        "A3000"
+      ],
+      "id": "oneplus:oneplus3"
+    },
+    {
+      "name": "OnePlus 2",
+      "codename": "oneplus2",
+      "manufacturer": "OnePlus",
+      "aliases": [
+        "OnePlus 2",
+        "A2003"
+      ],
+      "id": "oneplus:oneplus2"
+    },
+    {
+      "name": "OnePlus One",
+      "codename": "bacon",
+      "manufacturer": "OnePlus",
+      "aliases": [
+        "OnePlus One",
+        "A0001"
+      ],
+      "id": "oneplus:bacon"
+    }
+  ],
+  "sources": [
+    {
+      "id": "lineageos_site",
+      "name": "LineageOS",
+      "kind": "official_project",
+      "host": "lineageos.org",
+      "canonical_url": "https://lineageos.org",
+      "trust": 98,
+      "path_prefixes": [],
+      "family": "LineageOS",
+      "include_subdomains": true,
+      "device_urls": [],
+      "query_templates": [],
+      "manufacturers": [],
+      "can_verify": true,
+      "source_class": "OFFICIAL",
+      "authority": 6098
+    },
+    {
+      "id": "lineageos_dl",
+      "name": "LineageOS Downloads",
+      "kind": "official_download",
+      "host": "download.lineageos.org",
+      "canonical_url": "https://download.lineageos.org",
+      "trust": 100,
+      "path_prefixes": [],
+      "family": "LineageOS",
+      "include_subdomains": true,
+      "device_urls": [
+        "https://download.lineageos.org/api/v2/devices/{code}/builds"
+      ],
+      "query_templates": [],
+      "manufacturers": [],
+      "can_verify": true,
+      "source_class": "OFFICIAL",
+      "authority": 6100
+    },
+    {
+      "id": "pe_dl",
+      "name": "Pixel Experience Downloads",
+      "kind": "official_download",
+      "host": "get.pixelexperience.org",
+      "canonical_url": "https://get.pixelexperience.org",
+      "trust": 100,
+      "path_prefixes": [],
+      "family": "Pixel Experience",
+      "include_subdomains": true,
+      "device_urls": [
+        "https://get.pixelexperience.org/{code}"
+      ],
+      "query_templates": [],
+      "manufacturers": [],
+      "can_verify": true,
+      "source_class": "OFFICIAL",
+      "authority": 6100
+    },
+    {
+      "id": "pixelos_site",
+      "name": "PixelOS",
+      "kind": "official_project",
+      "host": "pixelos.net",
+      "canonical_url": "https://pixelos.net",
+      "trust": 96,
+      "path_prefixes": [],
+      "family": "PixelOS",
+      "include_subdomains": true,
+      "device_urls": [
+        "https://pixelos.net/download/{code}"
+      ],
+      "query_templates": [],
+      "manufacturers": [],
+      "can_verify": true,
+      "source_class": "OFFICIAL",
+      "authority": 6096
+    }
+  ],
+  "roms": [
+    {
+      "id": "67c4503a8e2c3663",
+      "name": "LineageOS",
+      "type": "custom_rom",
+      "device": "OnePlus 8 Pro",
+      "codename": "instantnoodlep",
+      "android_version": "Android 16",
+      "rom_version": "23.2",
+      "build_date": "2026-08-21",
+      "status": "verified",
+      "source_url": "https://download.lineageos.org/api/v2/devices/instantnoodlep/builds",
+      "download_url": "https://mirrorbits.lineageos.org/full/instantnoodlep/20260821/lineage-23.2-20260821-nightly-instantnoodlep-signed.zip",
+      "source_id": "lineageos_dl",
+      "evidence": [
+        {
+          "kind": "registered_source",
+          "detail": "LineageOS Downloads (official_download, trust 100)",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org"
+        },
+        {
+          "kind": "codename_in_url",
+          "detail": "codename 'instantnoodlep' in URL path",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/instantnoodlep/builds"
+        },
+        {
+          "kind": "artifact_link",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/instantnoodlep/builds"
+        },
+        {
+          "kind": "artifact_extension",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/instantnoodlep/builds"
+        },
+        {
+          "kind": "build_channel",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/instantnoodlep/builds"
+        },
+        {
+          "kind": "build_evidence_tier",
+          "detail": "artifact",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/instantnoodlep/builds"
+        },
+        {
+          "kind": "family_resolved",
+          "detail": "LineageOS",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/instantnoodlep/builds"
+        },
+        {
+          "kind": "evidence_score",
+          "detail": "14",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/instantnoodlep/builds"
+        }
+      ],
+      "discovered_at": "2026-08-25T00:22:18+00:00",
+      "updated_at": "2026-08-25T00:22:18+00:00"
+    },
+    {
+      "id": "82de46585cc7d674",
+      "name": "Pixel Experience",
+      "type": "custom_rom",
+      "device": "OnePlus 8 Pro",
+      "codename": "instantnoodlep",
+      "android_version": "Android 13",
+      "rom_version": "13",
+      "build_date": "2024-01-26",
+      "status": "verified",
+      "source_url": "https://get.pixelexperience.org/instantnoodlep",
+      "download_url": "https://get.pixelexperience.org/changelog/instantnoodlep/PixelExperience_instantnoodlep-13.0-20240126-1857-OFFICIAL.zip",
+      "source_id": "pe_dl",
+      "evidence": [
+        {
+          "kind": "registered_source",
+          "detail": "Pixel Experience Downloads (official_download, trust 100)",
+          "source_id": "pe_dl",
+          "url": "https://get.pixelexperience.org"
+        },
+        {
+          "kind": "codename_in_url",
+          "detail": "codename 'instantnoodlep' in URL path",
+          "source_id": "pe_dl",
+          "url": "https://get.pixelexperience.org/instantnoodlep"
+        },
+        {
+          "kind": "device_name_match",
+          "detail": "device name 'OnePlus 8 Pro' mentioned",
+          "source_id": "pe_dl",
+          "url": "https://get.pixelexperience.org/instantnoodlep"
+        },
+        {
+          "kind": "artifact_link",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "pe_dl",
+          "url": "https://get.pixelexperience.org/instantnoodlep"
+        },
+        {
+          "kind": "artifact_extension",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "pe_dl",
+          "url": "https://get.pixelexperience.org/instantnoodlep"
+        },
+        {
+          "kind": "checksum",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "pe_dl",
+          "url": "https://get.pixelexperience.org/instantnoodlep"
+        },
+        {
+          "kind": "download_word",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "pe_dl",
+          "url": "https://get.pixelexperience.org/instantnoodlep"
+        },
+        {
+          "kind": "changelog",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "pe_dl",
+          "url": "https://get.pixelexperience.org/instantnoodlep"
+        },
+        {
+          "kind": "build_evidence_tier",
+          "detail": "artifact",
+          "source_id": "pe_dl",
+          "url": "https://get.pixelexperience.org/instantnoodlep"
+        },
+        {
+          "kind": "family_resolved",
+          "detail": "Pixel Experience",
+          "source_id": "pe_dl",
+          "url": "https://get.pixelexperience.org/instantnoodlep"
+        },
+        {
+          "kind": "evidence_score",
+          "detail": "17",
+          "source_id": "pe_dl",
+          "url": "https://get.pixelexperience.org/instantnoodlep"
+        }
+      ],
+      "discovered_at": "2026-08-25T00:22:18+00:00",
+      "updated_at": "2026-08-25T00:22:18+00:00"
+    },
+    {
+      "id": "a49d7d335dca1e78",
+      "name": "LineageOS",
+      "type": "custom_rom",
+      "device": "OnePlus 13",
+      "codename": "dodge",
+      "android_version": "Android 16",
+      "rom_version": "23.2",
+      "build_date": "2026-08-18",
+      "status": "verified",
+      "source_url": "https://download.lineageos.org/api/v2/devices/dodge/builds",
+      "download_url": "https://mirrorbits.lineageos.org/full/dodge/20260818/lineage-23.2-20260818-nightly-dodge-signed.zip",
+      "source_id": "lineageos_dl",
+      "evidence": [
+        {
+          "kind": "registered_source",
+          "detail": "LineageOS Downloads (official_download, trust 100)",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org"
+        },
+        {
+          "kind": "codename_in_url",
+          "detail": "codename 'dodge' in URL path",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/dodge/builds"
+        },
+        {
+          "kind": "artifact_link",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/dodge/builds"
+        },
+        {
+          "kind": "artifact_extension",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/dodge/builds"
+        },
+        {
+          "kind": "build_channel",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/dodge/builds"
+        },
+        {
+          "kind": "build_evidence_tier",
+          "detail": "artifact",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/dodge/builds"
+        },
+        {
+          "kind": "family_resolved",
+          "detail": "LineageOS",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/dodge/builds"
+        },
+        {
+          "kind": "evidence_score",
+          "detail": "14",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/dodge/builds"
+        }
+      ],
+      "discovered_at": "2026-08-25T00:23:01+00:00",
+      "updated_at": "2026-08-25T00:23:01+00:00"
+    },
+    {
+      "id": "dcb7eae78f5b6273",
+      "name": "LineageOS",
+      "type": "custom_rom",
+      "device": "OnePlus 12",
+      "codename": "waffle",
+      "android_version": "Android 16",
+      "rom_version": "23.2",
+      "build_date": "2026-08-20",
+      "status": "verified",
+      "source_url": "https://download.lineageos.org/api/v2/devices/waffle/builds",
+      "download_url": "https://mirrorbits.lineageos.org/full/waffle/20260820/lineage-23.2-20260820-nightly-waffle-signed.zip",
+      "source_id": "lineageos_dl",
+      "evidence": [
+        {
+          "kind": "registered_source",
+          "detail": "LineageOS Downloads (official_download, trust 100)",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org"
+        },
+        {
+          "kind": "codename_in_url",
+          "detail": "codename 'waffle' in URL path",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/waffle/builds"
+        },
+        {
+          "kind": "artifact_link",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/waffle/builds"
+        },
+        {
+          "kind": "artifact_extension",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/waffle/builds"
+        },
+        {
+          "kind": "build_channel",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/waffle/builds"
+        },
+        {
+          "kind": "build_evidence_tier",
+          "detail": "artifact",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/waffle/builds"
+        },
+        {
+          "kind": "family_resolved",
+          "detail": "LineageOS",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/waffle/builds"
+        },
+        {
+          "kind": "evidence_score",
+          "detail": "14",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/waffle/builds"
+        }
+      ],
+      "discovered_at": "2026-08-25T00:24:42+00:00",
+      "updated_at": "2026-08-25T00:24:42+00:00"
+    },
+    {
+      "id": "7ccb859d058ae620",
+      "name": "PixelOS",
+      "type": "custom_rom",
+      "device": "OnePlus 12",
+      "codename": "waffle",
+      "android_version": "Android 16",
+      "rom_version": "16.2",
+      "build_date": "2026-05-11",
+      "status": "verified",
+      "source_url": "https://pixelos.net/download/waffle",
+      "download_url": "https://download.pixelos.net/sixteen/waffle/PixelOS_waffle-16.2-20260511-0722.zip",
+      "source_id": "pixelos_site",
+      "evidence": [
+        {
+          "kind": "registered_source",
+          "detail": "PixelOS (official_project, trust 96)",
+          "source_id": "pixelos_site",
+          "url": "https://pixelos.net"
+        },
+        {
+          "kind": "codename_in_url",
+          "detail": "codename 'waffle' in URL path",
+          "source_id": "pixelos_site",
+          "url": "https://pixelos.net/download/waffle"
+        },
+        {
+          "kind": "device_name_match",
+          "detail": "device name 'OnePlus 12' mentioned",
+          "source_id": "pixelos_site",
+          "url": "https://pixelos.net/download/waffle"
+        },
+        {
+          "kind": "artifact_link",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "pixelos_site",
+          "url": "https://pixelos.net/download/waffle"
+        },
+        {
+          "kind": "artifact_extension",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "pixelos_site",
+          "url": "https://pixelos.net/download/waffle"
+        },
+        {
+          "kind": "download_word",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "pixelos_site",
+          "url": "https://pixelos.net/download/waffle"
+        },
+        {
+          "kind": "changelog",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "pixelos_site",
+          "url": "https://pixelos.net/download/waffle"
+        },
+        {
+          "kind": "build_evidence_tier",
+          "detail": "artifact",
+          "source_id": "pixelos_site",
+          "url": "https://pixelos.net/download/waffle"
+        },
+        {
+          "kind": "family_resolved",
+          "detail": "PixelOS",
+          "source_id": "pixelos_site",
+          "url": "https://pixelos.net/download/waffle"
+        },
+        {
+          "kind": "evidence_score",
+          "detail": "16",
+          "source_id": "pixelos_site",
+          "url": "https://pixelos.net/download/waffle"
+        }
+      ],
+      "discovered_at": "2026-08-25T00:24:42+00:00",
+      "updated_at": "2026-08-25T00:24:42+00:00"
+    },
+    {
+      "id": "cc501420e4051b0f",
+      "name": "LineageOS",
+      "type": "custom_rom",
+      "device": "OnePlus 11",
+      "codename": "salami",
+      "android_version": "Android 16",
+      "rom_version": "23.2",
+      "build_date": "2026-08-21",
+      "status": "verified",
+      "source_url": "https://download.lineageos.org/api/v2/devices/salami/builds",
+      "download_url": "https://mirrorbits.lineageos.org/full/salami/20260821/lineage-23.2-20260821-nightly-salami-signed.zip",
+      "source_id": "lineageos_dl",
+      "evidence": [
+        {
+          "kind": "registered_source",
+          "detail": "LineageOS Downloads (official_download, trust 100)",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org"
+        },
+        {
+          "kind": "codename_in_url",
+          "detail": "codename 'salami' in URL path",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/salami/builds"
+        },
+        {
+          "kind": "artifact_link",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/salami/builds"
+        },
+        {
+          "kind": "artifact_extension",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/salami/builds"
+        },
+        {
+          "kind": "build_channel",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/salami/builds"
+        },
+        {
+          "kind": "build_evidence_tier",
+          "detail": "artifact",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/salami/builds"
+        },
+        {
+          "kind": "family_resolved",
+          "detail": "LineageOS",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/salami/builds"
+        },
+        {
+          "kind": "evidence_score",
+          "detail": "14",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/salami/builds"
+        }
+      ],
+      "discovered_at": "2026-08-25T00:27:14+00:00",
+      "updated_at": "2026-08-25T00:27:14+00:00"
+    },
+    {
+      "id": "a72c835e0cc575f1",
+      "name": "LineageOS",
+      "type": "custom_rom",
+      "device": "OnePlus 9 Pro",
+      "codename": "lemonadep",
+      "android_version": "Android 16",
+      "rom_version": "23.2",
+      "build_date": "2026-08-24",
+      "status": "verified",
+      "source_url": "https://download.lineageos.org/api/v2/devices/lemonadep/builds",
+      "download_url": "https://mirrorbits.lineageos.org/full/lemonadep/20260824/lineage-23.2-20260824-nightly-lemonadep-signed.zip",
+      "source_id": "lineageos_dl",
+      "evidence": [
+        {
+          "kind": "registered_source",
+          "detail": "LineageOS Downloads (official_download, trust 100)",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org"
+        },
+        {
+          "kind": "codename_in_url",
+          "detail": "codename 'lemonadep' in URL path",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/lemonadep/builds"
+        },
+        {
+          "kind": "artifact_link",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/lemonadep/builds"
+        },
+        {
+          "kind": "artifact_extension",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/lemonadep/builds"
+        },
+        {
+          "kind": "build_channel",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/lemonadep/builds"
+        },
+        {
+          "kind": "build_evidence_tier",
+          "detail": "artifact",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/lemonadep/builds"
+        },
+        {
+          "kind": "family_resolved",
+          "detail": "LineageOS",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/lemonadep/builds"
+        },
+        {
+          "kind": "evidence_score",
+          "detail": "14",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/lemonadep/builds"
+        }
+      ],
+      "discovered_at": "2026-08-25T00:42:13+00:00",
+      "updated_at": "2026-08-25T00:42:13+00:00"
+    },
+    {
+      "id": "d77cd79fd4c945fa",
+      "name": "LineageOS",
+      "type": "custom_rom",
+      "device": "OnePlus 9",
+      "codename": "lemonade",
+      "android_version": "Android 16",
+      "rom_version": "23.2",
+      "build_date": "2026-08-24",
+      "status": "verified",
+      "source_url": "https://download.lineageos.org/api/v2/devices/lemonade/builds",
+      "download_url": "https://mirrorbits.lineageos.org/full/lemonade/20260824/lineage-23.2-20260824-nightly-lemonade-signed.zip",
+      "source_id": "lineageos_dl",
+      "evidence": [
+        {
+          "kind": "registered_source",
+          "detail": "LineageOS Downloads (official_download, trust 100)",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org"
+        },
+        {
+          "kind": "codename_in_url",
+          "detail": "codename 'lemonade' in URL path",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/lemonade/builds"
+        },
+        {
+          "kind": "artifact_link",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/lemonade/builds"
+        },
+        {
+          "kind": "artifact_extension",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/lemonade/builds"
+        },
+        {
+          "kind": "build_channel",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/lemonade/builds"
+        },
+        {
+          "kind": "build_evidence_tier",
+          "detail": "artifact",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/lemonade/builds"
+        },
+        {
+          "kind": "family_resolved",
+          "detail": "LineageOS",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/lemonade/builds"
+        },
+        {
+          "kind": "evidence_score",
+          "detail": "14",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/lemonade/builds"
+        }
+      ],
+      "discovered_at": "2026-08-25T00:45:01+00:00",
+      "updated_at": "2026-08-25T00:45:01+00:00"
+    },
+    {
+      "id": "9bf1e4a4914e90bf",
+      "name": "LineageOS",
+      "type": "custom_rom",
+      "device": "OnePlus 9R",
+      "codename": "lemonades",
+      "android_version": "Android 16",
+      "rom_version": "23.2",
+      "build_date": "2026-08-21",
+      "status": "verified",
+      "source_url": "https://download.lineageos.org/api/v2/devices/lemonades/builds",
+      "download_url": "https://mirrorbits.lineageos.org/full/lemonades/20260821/lineage-23.2-20260821-nightly-lemonades-signed.zip",
+      "source_id": "lineageos_dl",
+      "evidence": [
+        {
+          "kind": "registered_source",
+          "detail": "LineageOS Downloads (official_download, trust 100)",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org"
+        },
+        {
+          "kind": "codename_in_url",
+          "detail": "codename 'lemonades' in URL path",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/lemonades/builds"
+        },
+        {
+          "kind": "artifact_link",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/lemonades/builds"
+        },
+        {
+          "kind": "artifact_extension",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/lemonades/builds"
+        },
+        {
+          "kind": "build_channel",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/lemonades/builds"
+        },
+        {
+          "kind": "build_evidence_tier",
+          "detail": "artifact",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/lemonades/builds"
+        },
+        {
+          "kind": "family_resolved",
+          "detail": "LineageOS",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/lemonades/builds"
+        },
+        {
+          "kind": "evidence_score",
+          "detail": "14",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/lemonades/builds"
+        }
+      ],
+      "discovered_at": "2026-08-25T00:48:01+00:00",
+      "updated_at": "2026-08-25T00:48:01+00:00"
+    },
+    {
+      "id": "045a96623618f373",
+      "name": "LineageOS",
+      "type": "custom_rom",
+      "device": "OnePlus 8T",
+      "codename": "kebab",
+      "android_version": "Android 16",
+      "rom_version": "23.2",
+      "build_date": "2026-08-21",
+      "status": "verified",
+      "source_url": "https://download.lineageos.org/api/v2/devices/kebab/builds",
+      "download_url": "https://mirrorbits.lineageos.org/full/kebab/20260821/lineage-23.2-20260821-nightly-kebab-signed.zip",
+      "source_id": "lineageos_dl",
+      "evidence": [
+        {
+          "kind": "registered_source",
+          "detail": "LineageOS Downloads (official_download, trust 100)",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org"
+        },
+        {
+          "kind": "codename_in_url",
+          "detail": "codename 'kebab' in URL path",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/kebab/builds"
+        },
+        {
+          "kind": "artifact_link",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/kebab/builds"
+        },
+        {
+          "kind": "artifact_extension",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/kebab/builds"
+        },
+        {
+          "kind": "build_channel",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/kebab/builds"
+        },
+        {
+          "kind": "build_evidence_tier",
+          "detail": "artifact",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/kebab/builds"
+        },
+        {
+          "kind": "family_resolved",
+          "detail": "LineageOS",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/kebab/builds"
+        },
+        {
+          "kind": "evidence_score",
+          "detail": "14",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/kebab/builds"
+        }
+      ],
+      "discovered_at": "2026-08-25T00:51:01+00:00",
+      "updated_at": "2026-08-25T00:51:01+00:00"
+    },
+    {
+      "id": "68ab46d376d062ad",
+      "name": "Pixel Experience",
+      "type": "custom_rom",
+      "device": "OnePlus 8T",
+      "codename": "kebab",
+      "android_version": "Android 13",
+      "rom_version": "13",
+      "build_date": "2024-01-27",
+      "status": "verified",
+      "source_url": "https://get.pixelexperience.org/kebab",
+      "download_url": "https://get.pixelexperience.org/changelog/kebab/PixelExperience_kebab-13.0-20240127-0016-OFFICIAL.zip",
+      "source_id": "pe_dl",
+      "evidence": [
+        {
+          "kind": "registered_source",
+          "detail": "Pixel Experience Downloads (official_download, trust 100)",
+          "source_id": "pe_dl",
+          "url": "https://get.pixelexperience.org"
+        },
+        {
+          "kind": "codename_in_url",
+          "detail": "codename 'kebab' in URL path",
+          "source_id": "pe_dl",
+          "url": "https://get.pixelexperience.org/kebab"
+        },
+        {
+          "kind": "device_name_match",
+          "detail": "device name 'OnePlus 8T' mentioned",
+          "source_id": "pe_dl",
+          "url": "https://get.pixelexperience.org/kebab"
+        },
+        {
+          "kind": "artifact_link",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "pe_dl",
+          "url": "https://get.pixelexperience.org/kebab"
+        },
+        {
+          "kind": "artifact_extension",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "pe_dl",
+          "url": "https://get.pixelexperience.org/kebab"
+        },
+        {
+          "kind": "checksum",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "pe_dl",
+          "url": "https://get.pixelexperience.org/kebab"
+        },
+        {
+          "kind": "download_word",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "pe_dl",
+          "url": "https://get.pixelexperience.org/kebab"
+        },
+        {
+          "kind": "changelog",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "pe_dl",
+          "url": "https://get.pixelexperience.org/kebab"
+        },
+        {
+          "kind": "build_evidence_tier",
+          "detail": "artifact",
+          "source_id": "pe_dl",
+          "url": "https://get.pixelexperience.org/kebab"
+        },
+        {
+          "kind": "family_resolved",
+          "detail": "Pixel Experience",
+          "source_id": "pe_dl",
+          "url": "https://get.pixelexperience.org/kebab"
+        },
+        {
+          "kind": "evidence_score",
+          "detail": "17",
+          "source_id": "pe_dl",
+          "url": "https://get.pixelexperience.org/kebab"
+        }
+      ],
+      "discovered_at": "2026-08-25T00:51:01+00:00",
+      "updated_at": "2026-08-25T00:51:01+00:00"
+    },
+    {
+      "id": "ea51e6c40ffa2fbb",
+      "name": "LineageOS",
+      "type": "custom_rom",
+      "device": "OnePlus 8",
+      "codename": "instantnoodle",
+      "android_version": "Android 16",
+      "rom_version": "23.2",
+      "build_date": "2026-08-18",
+      "status": "verified",
+      "source_url": "https://download.lineageos.org/api/v2/devices/instantnoodle/builds",
+      "download_url": "https://mirrorbits.lineageos.org/full/instantnoodle/20260818/lineage-23.2-20260818-nightly-instantnoodle-signed.zip",
+      "source_id": "lineageos_dl",
+      "evidence": [
+        {
+          "kind": "registered_source",
+          "detail": "LineageOS Downloads (official_download, trust 100)",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org"
+        },
+        {
+          "kind": "codename_in_url",
+          "detail": "codename 'instantnoodle' in URL path",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/instantnoodle/builds"
+        },
+        {
+          "kind": "artifact_link",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/instantnoodle/builds"
+        },
+        {
+          "kind": "artifact_extension",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/instantnoodle/builds"
+        },
+        {
+          "kind": "build_channel",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/instantnoodle/builds"
+        },
+        {
+          "kind": "build_evidence_tier",
+          "detail": "artifact",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/instantnoodle/builds"
+        },
+        {
+          "kind": "family_resolved",
+          "detail": "LineageOS",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/instantnoodle/builds"
+        },
+        {
+          "kind": "evidence_score",
+          "detail": "14",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/instantnoodle/builds"
+        }
+      ],
+      "discovered_at": "2026-08-25T00:53:59+00:00",
+      "updated_at": "2026-08-25T00:53:59+00:00"
+    },
+    {
+      "id": "99d46d32a9a427f5",
+      "name": "Pixel Experience",
+      "type": "custom_rom",
+      "device": "OnePlus 8",
+      "codename": "instantnoodle",
+      "android_version": "Android 13",
+      "rom_version": "13",
+      "build_date": "2024-01-26",
+      "status": "verified",
+      "source_url": "https://get.pixelexperience.org/Instantnoodle",
+      "download_url": "https://get.pixelexperience.org/changelog/instantnoodle/PixelExperience_instantnoodle-13.0-20240126-1706-OFFICIAL.zip",
+      "source_id": "pe_dl",
+      "evidence": [
+        {
+          "kind": "registered_source",
+          "detail": "Pixel Experience Downloads (official_download, trust 100)",
+          "source_id": "pe_dl",
+          "url": "https://get.pixelexperience.org"
+        },
+        {
+          "kind": "codename_in_url",
+          "detail": "codename 'instantnoodle' in URL path",
+          "source_id": "pe_dl",
+          "url": "https://get.pixelexperience.org/Instantnoodle"
+        },
+        {
+          "kind": "device_name_match",
+          "detail": "device name 'OnePlus 8' mentioned",
+          "source_id": "pe_dl",
+          "url": "https://get.pixelexperience.org/Instantnoodle"
+        },
+        {
+          "kind": "artifact_link",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "pe_dl",
+          "url": "https://get.pixelexperience.org/Instantnoodle"
+        },
+        {
+          "kind": "artifact_extension",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "pe_dl",
+          "url": "https://get.pixelexperience.org/Instantnoodle"
+        },
+        {
+          "kind": "checksum",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "pe_dl",
+          "url": "https://get.pixelexperience.org/Instantnoodle"
+        },
+        {
+          "kind": "download_word",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "pe_dl",
+          "url": "https://get.pixelexperience.org/Instantnoodle"
+        },
+        {
+          "kind": "changelog",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "pe_dl",
+          "url": "https://get.pixelexperience.org/Instantnoodle"
+        },
+        {
+          "kind": "build_evidence_tier",
+          "detail": "artifact",
+          "source_id": "pe_dl",
+          "url": "https://get.pixelexperience.org/Instantnoodle"
+        },
+        {
+          "kind": "family_resolved",
+          "detail": "Pixel Experience",
+          "source_id": "pe_dl",
+          "url": "https://get.pixelexperience.org/Instantnoodle"
+        },
+        {
+          "kind": "evidence_score",
+          "detail": "17",
+          "source_id": "pe_dl",
+          "url": "https://get.pixelexperience.org/Instantnoodle"
+        }
+      ],
+      "discovered_at": "2026-08-25T00:53:59+00:00",
+      "updated_at": "2026-08-25T00:53:59+00:00"
+    },
+    {
+      "id": "d86aec4423b66a32",
+      "name": "PixelOS",
+      "type": "custom_rom",
+      "device": "OnePlus 7T Pro",
+      "codename": "hotdog",
+      "android_version": "Android 12",
+      "rom_version": "12.1",
+      "build_date": "2022-08-17",
+      "status": "verified",
+      "source_url": "https://pixelos.net/download/hotdog",
+      "download_url": "https://sourceforge.net/projects/pixelos-releases/files/twelve/hotdog/PixelOS_hotdog-12.1-20220817-1214.zip",
+      "source_id": "pixelos_site",
+      "evidence": [
+        {
+          "kind": "registered_source",
+          "detail": "PixelOS (official_project, trust 96)",
+          "source_id": "pixelos_site",
+          "url": "https://pixelos.net"
+        },
+        {
+          "kind": "codename_in_url",
+          "detail": "codename 'hotdog' in URL path",
+          "source_id": "pixelos_site",
+          "url": "https://pixelos.net/download/hotdog"
+        },
+        {
+          "kind": "device_name_match",
+          "detail": "device name 'OnePlus 7T Pro' mentioned",
+          "source_id": "pixelos_site",
+          "url": "https://pixelos.net/download/hotdog"
+        },
+        {
+          "kind": "artifact_link",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "pixelos_site",
+          "url": "https://pixelos.net/download/hotdog"
+        },
+        {
+          "kind": "artifact_extension",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "pixelos_site",
+          "url": "https://pixelos.net/download/hotdog"
+        },
+        {
+          "kind": "download_word",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "pixelos_site",
+          "url": "https://pixelos.net/download/hotdog"
+        },
+        {
+          "kind": "changelog",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "pixelos_site",
+          "url": "https://pixelos.net/download/hotdog"
+        },
+        {
+          "kind": "build_evidence_tier",
+          "detail": "artifact",
+          "source_id": "pixelos_site",
+          "url": "https://pixelos.net/download/hotdog"
+        },
+        {
+          "kind": "family_resolved",
+          "detail": "PixelOS",
+          "source_id": "pixelos_site",
+          "url": "https://pixelos.net/download/hotdog"
+        },
+        {
+          "kind": "evidence_score",
+          "detail": "16",
+          "source_id": "pixelos_site",
+          "url": "https://pixelos.net/download/hotdog"
+        }
+      ],
+      "discovered_at": "2026-08-25T00:54:39+00:00",
+      "updated_at": "2026-08-25T00:54:39+00:00"
+    },
+    {
+      "id": "f33c0f6e5e6fa981",
+      "name": "Pixel Experience",
+      "type": "custom_rom",
+      "device": "OnePlus 7T Pro",
+      "codename": "hotdog",
+      "android_version": "Android 14",
+      "rom_version": "14",
+      "build_date": "2024-03-07",
+      "status": "verified",
+      "source_url": "https://get.pixelexperience.org/hotdog",
+      "download_url": "https://get.pixelexperience.org/changelog/hotdog/PixelExperience_hotdog-14.0-20240307-1115-OFFICIAL.zip",
+      "source_id": "pe_dl",
+      "evidence": [
+        {
+          "kind": "registered_source",
+          "detail": "Pixel Experience Downloads (official_download, trust 100)",
+          "source_id": "pe_dl",
+          "url": "https://get.pixelexperience.org"
+        },
+        {
+          "kind": "codename_in_url",
+          "detail": "codename 'hotdog' in URL path",
+          "source_id": "pe_dl",
+          "url": "https://get.pixelexperience.org/hotdog"
+        },
+        {
+          "kind": "device_name_match",
+          "detail": "device name 'OnePlus 7T Pro' mentioned",
+          "source_id": "pe_dl",
+          "url": "https://get.pixelexperience.org/hotdog"
+        },
+        {
+          "kind": "artifact_link",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "pe_dl",
+          "url": "https://get.pixelexperience.org/hotdog"
+        },
+        {
+          "kind": "artifact_extension",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "pe_dl",
+          "url": "https://get.pixelexperience.org/hotdog"
+        },
+        {
+          "kind": "checksum",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "pe_dl",
+          "url": "https://get.pixelexperience.org/hotdog"
+        },
+        {
+          "kind": "download_word",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "pe_dl",
+          "url": "https://get.pixelexperience.org/hotdog"
+        },
+        {
+          "kind": "changelog",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "pe_dl",
+          "url": "https://get.pixelexperience.org/hotdog"
+        },
+        {
+          "kind": "build_evidence_tier",
+          "detail": "artifact",
+          "source_id": "pe_dl",
+          "url": "https://get.pixelexperience.org/hotdog"
+        },
+        {
+          "kind": "family_resolved",
+          "detail": "Pixel Experience",
+          "source_id": "pe_dl",
+          "url": "https://get.pixelexperience.org/hotdog"
+        },
+        {
+          "kind": "evidence_score",
+          "detail": "17",
+          "source_id": "pe_dl",
+          "url": "https://get.pixelexperience.org/hotdog"
+        }
+      ],
+      "discovered_at": "2026-08-25T00:54:39+00:00",
+      "updated_at": "2026-08-25T00:54:39+00:00"
+    },
+    {
+      "id": "ad2b9ed3105dd038",
+      "name": "LineageOS",
+      "type": "custom_rom",
+      "device": "OnePlus 7T Pro",
+      "codename": "hotdog",
+      "android_version": null,
+      "rom_version": null,
+      "build_date": null,
+      "status": "verified",
+      "source_url": "https://download.lineageos.org/hotdog",
+      "download_url": null,
+      "source_id": "lineageos_dl",
+      "evidence": [
+        {
+          "kind": "registered_source",
+          "detail": "LineageOS Downloads (official_download, trust 100)",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org"
+        },
+        {
+          "kind": "codename_in_url",
+          "detail": "codename 'hotdog' in URL path",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/hotdog"
+        },
+        {
+          "kind": "download_word",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/hotdog"
+        },
+        {
+          "kind": "device_download_page",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/hotdog"
+        },
+        {
+          "kind": "device_build_listing",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/hotdog"
+        },
+        {
+          "kind": "build_evidence_tier",
+          "detail": "device_download_page",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/hotdog"
+        },
+        {
+          "kind": "family_resolved",
+          "detail": "LineageOS",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/hotdog"
+        },
+        {
+          "kind": "evidence_score",
+          "detail": "12",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/hotdog"
+        }
+      ],
+      "discovered_at": "2026-08-25T00:54:39+00:00",
+      "updated_at": "2026-08-25T00:54:39+00:00"
+    },
+    {
+      "id": "f8fbe8dd928d0cec",
+      "name": "LineageOS",
+      "type": "custom_rom",
+      "device": "OnePlus 7T",
+      "codename": "hotdogb",
+      "android_version": "Android 16",
+      "rom_version": "23.2",
+      "build_date": "2026-08-21",
+      "status": "verified",
+      "source_url": "https://download.lineageos.org/api/v2/devices/hotdogb/builds",
+      "download_url": "https://mirrorbits.lineageos.org/full/hotdogb/20260821/lineage-23.2-20260821-nightly-hotdogb-signed.zip",
+      "source_id": "lineageos_dl",
+      "evidence": [
+        {
+          "kind": "registered_source",
+          "detail": "LineageOS Downloads (official_download, trust 100)",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org"
+        },
+        {
+          "kind": "codename_in_url",
+          "detail": "codename 'hotdogb' in URL path",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/hotdogb/builds"
+        },
+        {
+          "kind": "artifact_link",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/hotdogb/builds"
+        },
+        {
+          "kind": "artifact_extension",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/hotdogb/builds"
+        },
+        {
+          "kind": "build_channel",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/hotdogb/builds"
+        },
+        {
+          "kind": "build_evidence_tier",
+          "detail": "artifact",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/hotdogb/builds"
+        },
+        {
+          "kind": "family_resolved",
+          "detail": "LineageOS",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/hotdogb/builds"
+        },
+        {
+          "kind": "evidence_score",
+          "detail": "14",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/hotdogb/builds"
+        }
+      ],
+      "discovered_at": "2026-08-25T00:55:14+00:00",
+      "updated_at": "2026-08-25T00:55:14+00:00"
+    },
+    {
+      "id": "ffb1f6be9caded86",
+      "name": "Pixel Experience",
+      "type": "custom_rom",
+      "device": "OnePlus 7T",
+      "codename": "hotdogb",
+      "android_version": "Android 14",
+      "rom_version": "14",
+      "build_date": "2024-03-07",
+      "status": "verified",
+      "source_url": "https://get.pixelexperience.org/Hotdogb",
+      "download_url": "https://get.pixelexperience.org/changelog/hotdogb/PixelExperience_hotdogb-14.0-20240307-1216-OFFICIAL.zip",
+      "source_id": "pe_dl",
+      "evidence": [
+        {
+          "kind": "registered_source",
+          "detail": "Pixel Experience Downloads (official_download, trust 100)",
+          "source_id": "pe_dl",
+          "url": "https://get.pixelexperience.org"
+        },
+        {
+          "kind": "codename_in_url",
+          "detail": "codename 'hotdogb' in URL path",
+          "source_id": "pe_dl",
+          "url": "https://get.pixelexperience.org/Hotdogb"
+        },
+        {
+          "kind": "device_name_match",
+          "detail": "device name 'OnePlus 7T' mentioned",
+          "source_id": "pe_dl",
+          "url": "https://get.pixelexperience.org/Hotdogb"
+        },
+        {
+          "kind": "artifact_link",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "pe_dl",
+          "url": "https://get.pixelexperience.org/Hotdogb"
+        },
+        {
+          "kind": "artifact_extension",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "pe_dl",
+          "url": "https://get.pixelexperience.org/Hotdogb"
+        },
+        {
+          "kind": "checksum",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "pe_dl",
+          "url": "https://get.pixelexperience.org/Hotdogb"
+        },
+        {
+          "kind": "download_word",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "pe_dl",
+          "url": "https://get.pixelexperience.org/Hotdogb"
+        },
+        {
+          "kind": "changelog",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "pe_dl",
+          "url": "https://get.pixelexperience.org/Hotdogb"
+        },
+        {
+          "kind": "build_evidence_tier",
+          "detail": "artifact",
+          "source_id": "pe_dl",
+          "url": "https://get.pixelexperience.org/Hotdogb"
+        },
+        {
+          "kind": "family_resolved",
+          "detail": "Pixel Experience",
+          "source_id": "pe_dl",
+          "url": "https://get.pixelexperience.org/Hotdogb"
+        },
+        {
+          "kind": "evidence_score",
+          "detail": "17",
+          "source_id": "pe_dl",
+          "url": "https://get.pixelexperience.org/Hotdogb"
+        }
+      ],
+      "discovered_at": "2026-08-25T00:55:14+00:00",
+      "updated_at": "2026-08-25T00:55:14+00:00"
+    },
+    {
+      "id": "237f9bdb9ee0fe17",
+      "name": "LineageOS",
+      "type": "custom_rom",
+      "device": "OnePlus 7 Pro",
+      "codename": "guacamole",
+      "android_version": "Android 16",
+      "rom_version": "23.2",
+      "build_date": "2026-08-24",
+      "status": "verified",
+      "source_url": "https://download.lineageos.org/api/v2/devices/guacamole/builds",
+      "download_url": "https://mirrorbits.lineageos.org/full/guacamole/20260824/lineage-23.2-20260824-nightly-guacamole-signed.zip",
+      "source_id": "lineageos_dl",
+      "evidence": [
+        {
+          "kind": "registered_source",
+          "detail": "LineageOS Downloads (official_download, trust 100)",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org"
+        },
+        {
+          "kind": "codename_in_url",
+          "detail": "codename 'guacamole' in URL path",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/guacamole/builds"
+        },
+        {
+          "kind": "artifact_link",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/guacamole/builds"
+        },
+        {
+          "kind": "artifact_extension",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/guacamole/builds"
+        },
+        {
+          "kind": "build_channel",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/guacamole/builds"
+        },
+        {
+          "kind": "build_evidence_tier",
+          "detail": "artifact",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/guacamole/builds"
+        },
+        {
+          "kind": "family_resolved",
+          "detail": "LineageOS",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/guacamole/builds"
+        },
+        {
+          "kind": "evidence_score",
+          "detail": "14",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/guacamole/builds"
+        }
+      ],
+      "discovered_at": "2026-08-25T00:55:53+00:00",
+      "updated_at": "2026-08-25T00:55:53+00:00"
+    },
+    {
+      "id": "e777d7d58adb61ad",
+      "name": "Pixel Experience",
+      "type": "custom_rom",
+      "device": "OnePlus 7 Pro",
+      "codename": "guacamole",
+      "android_version": "Android 14",
+      "rom_version": "14",
+      "build_date": "2024-03-07",
+      "status": "verified",
+      "source_url": "https://get.pixelexperience.org/Guacamole",
+      "download_url": "https://get.pixelexperience.org/changelog/guacamole/PixelExperience_guacamole-14.0-20240307-1316-OFFICIAL.zip",
+      "source_id": "pe_dl",
+      "evidence": [
+        {
+          "kind": "registered_source",
+          "detail": "Pixel Experience Downloads (official_download, trust 100)",
+          "source_id": "pe_dl",
+          "url": "https://get.pixelexperience.org"
+        },
+        {
+          "kind": "codename_in_url",
+          "detail": "codename 'guacamole' in URL path",
+          "source_id": "pe_dl",
+          "url": "https://get.pixelexperience.org/Guacamole"
+        },
+        {
+          "kind": "device_name_match",
+          "detail": "device name 'OnePlus 7 Pro' mentioned",
+          "source_id": "pe_dl",
+          "url": "https://get.pixelexperience.org/Guacamole"
+        },
+        {
+          "kind": "artifact_link",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "pe_dl",
+          "url": "https://get.pixelexperience.org/Guacamole"
+        },
+        {
+          "kind": "artifact_extension",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "pe_dl",
+          "url": "https://get.pixelexperience.org/Guacamole"
+        },
+        {
+          "kind": "checksum",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "pe_dl",
+          "url": "https://get.pixelexperience.org/Guacamole"
+        },
+        {
+          "kind": "download_word",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "pe_dl",
+          "url": "https://get.pixelexperience.org/Guacamole"
+        },
+        {
+          "kind": "changelog",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "pe_dl",
+          "url": "https://get.pixelexperience.org/Guacamole"
+        },
+        {
+          "kind": "build_evidence_tier",
+          "detail": "artifact",
+          "source_id": "pe_dl",
+          "url": "https://get.pixelexperience.org/Guacamole"
+        },
+        {
+          "kind": "family_resolved",
+          "detail": "Pixel Experience",
+          "source_id": "pe_dl",
+          "url": "https://get.pixelexperience.org/Guacamole"
+        },
+        {
+          "kind": "evidence_score",
+          "detail": "17",
+          "source_id": "pe_dl",
+          "url": "https://get.pixelexperience.org/Guacamole"
+        }
+      ],
+      "discovered_at": "2026-08-25T00:55:53+00:00",
+      "updated_at": "2026-08-25T00:55:53+00:00"
+    },
+    {
+      "id": "27997666c302f451",
+      "name": "LineageOS",
+      "type": "custom_rom",
+      "device": "OnePlus 7",
+      "codename": "guacamoleb",
+      "android_version": "Android 16",
+      "rom_version": "23.2",
+      "build_date": "2026-08-24",
+      "status": "verified",
+      "source_url": "https://download.lineageos.org/api/v2/devices/guacamoleb/builds",
+      "download_url": "https://mirrorbits.lineageos.org/full/guacamoleb/20260824/lineage-23.2-20260824-nightly-guacamoleb-signed.zip",
+      "source_id": "lineageos_dl",
+      "evidence": [
+        {
+          "kind": "registered_source",
+          "detail": "LineageOS Downloads (official_download, trust 100)",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org"
+        },
+        {
+          "kind": "codename_in_url",
+          "detail": "codename 'guacamoleb' in URL path",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/guacamoleb/builds"
+        },
+        {
+          "kind": "artifact_link",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/guacamoleb/builds"
+        },
+        {
+          "kind": "artifact_extension",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/guacamoleb/builds"
+        },
+        {
+          "kind": "build_channel",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/guacamoleb/builds"
+        },
+        {
+          "kind": "build_evidence_tier",
+          "detail": "artifact",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/guacamoleb/builds"
+        },
+        {
+          "kind": "family_resolved",
+          "detail": "LineageOS",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/guacamoleb/builds"
+        },
+        {
+          "kind": "evidence_score",
+          "detail": "14",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/guacamoleb/builds"
+        }
+      ],
+      "discovered_at": "2026-08-25T00:56:44+00:00",
+      "updated_at": "2026-08-25T00:56:44+00:00"
+    },
+    {
+      "id": "660dc9162fac5ba8",
+      "name": "Pixel Experience",
+      "type": "custom_rom",
+      "device": "OnePlus 7",
+      "codename": "guacamoleb",
+      "android_version": "Android 14",
+      "rom_version": "14",
+      "build_date": "2024-03-02",
+      "status": "verified",
+      "source_url": "https://get.pixelexperience.org/guacamoleb",
+      "download_url": "https://get.pixelexperience.org/changelog/guacamoleb/PixelExperience_guacamoleb-14.0-20240302-0804-OFFICIAL.zip",
+      "source_id": "pe_dl",
+      "evidence": [
+        {
+          "kind": "registered_source",
+          "detail": "Pixel Experience Downloads (official_download, trust 100)",
+          "source_id": "pe_dl",
+          "url": "https://get.pixelexperience.org"
+        },
+        {
+          "kind": "codename_in_url",
+          "detail": "codename 'guacamoleb' in URL path",
+          "source_id": "pe_dl",
+          "url": "https://get.pixelexperience.org/guacamoleb"
+        },
+        {
+          "kind": "device_name_match",
+          "detail": "device name 'OnePlus 7' mentioned",
+          "source_id": "pe_dl",
+          "url": "https://get.pixelexperience.org/guacamoleb"
+        },
+        {
+          "kind": "artifact_link",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "pe_dl",
+          "url": "https://get.pixelexperience.org/guacamoleb"
+        },
+        {
+          "kind": "artifact_extension",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "pe_dl",
+          "url": "https://get.pixelexperience.org/guacamoleb"
+        },
+        {
+          "kind": "checksum",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "pe_dl",
+          "url": "https://get.pixelexperience.org/guacamoleb"
+        },
+        {
+          "kind": "download_word",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "pe_dl",
+          "url": "https://get.pixelexperience.org/guacamoleb"
+        },
+        {
+          "kind": "changelog",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "pe_dl",
+          "url": "https://get.pixelexperience.org/guacamoleb"
+        },
+        {
+          "kind": "build_evidence_tier",
+          "detail": "artifact",
+          "source_id": "pe_dl",
+          "url": "https://get.pixelexperience.org/guacamoleb"
+        },
+        {
+          "kind": "family_resolved",
+          "detail": "Pixel Experience",
+          "source_id": "pe_dl",
+          "url": "https://get.pixelexperience.org/guacamoleb"
+        },
+        {
+          "kind": "evidence_score",
+          "detail": "17",
+          "source_id": "pe_dl",
+          "url": "https://get.pixelexperience.org/guacamoleb"
+        }
+      ],
+      "discovered_at": "2026-08-25T00:56:44+00:00",
+      "updated_at": "2026-08-25T00:56:44+00:00"
+    },
+    {
+      "id": "5c0f65637ea52e86",
+      "name": "LineageOS",
+      "type": "custom_rom",
+      "device": "OnePlus 6T",
+      "codename": "fajita",
+      "android_version": "Android 15",
+      "rom_version": "22.2",
+      "build_date": "2026-08-18",
+      "status": "verified",
+      "source_url": "https://download.lineageos.org/api/v2/devices/fajita/builds",
+      "download_url": "https://mirrorbits.lineageos.org/full/fajita/20260818/lineage-22.2-20260818-nightly-fajita-signed.zip",
+      "source_id": "lineageos_dl",
+      "evidence": [
+        {
+          "kind": "registered_source",
+          "detail": "LineageOS Downloads (official_download, trust 100)",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org"
+        },
+        {
+          "kind": "codename_in_url",
+          "detail": "codename 'fajita' in URL path",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/fajita/builds"
+        },
+        {
+          "kind": "artifact_link",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/fajita/builds"
+        },
+        {
+          "kind": "artifact_extension",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/fajita/builds"
+        },
+        {
+          "kind": "build_channel",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/fajita/builds"
+        },
+        {
+          "kind": "build_evidence_tier",
+          "detail": "artifact",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/fajita/builds"
+        },
+        {
+          "kind": "family_resolved",
+          "detail": "LineageOS",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/fajita/builds"
+        },
+        {
+          "kind": "evidence_score",
+          "detail": "14",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/fajita/builds"
+        }
+      ],
+      "discovered_at": "2026-08-25T00:57:40+00:00",
+      "updated_at": "2026-08-25T00:57:40+00:00"
+    },
+    {
+      "id": "b1a85dd12f491ed8",
+      "name": "Pixel Experience",
+      "type": "custom_rom",
+      "device": "OnePlus 6T",
+      "codename": "fajita",
+      "android_version": "Android 13",
+      "rom_version": "13",
+      "build_date": "2023-11-24",
+      "status": "verified",
+      "source_url": "https://get.pixelexperience.org/Fajita",
+      "download_url": "https://get.pixelexperience.org/changelog/fajita/PixelExperience_fajita-13.0-20231124-0247-OFFICIAL.zip",
+      "source_id": "pe_dl",
+      "evidence": [
+        {
+          "kind": "registered_source",
+          "detail": "Pixel Experience Downloads (official_download, trust 100)",
+          "source_id": "pe_dl",
+          "url": "https://get.pixelexperience.org"
+        },
+        {
+          "kind": "codename_in_url",
+          "detail": "codename 'fajita' in URL path",
+          "source_id": "pe_dl",
+          "url": "https://get.pixelexperience.org/Fajita"
+        },
+        {
+          "kind": "device_name_match",
+          "detail": "device name 'OnePlus 6T' mentioned",
+          "source_id": "pe_dl",
+          "url": "https://get.pixelexperience.org/Fajita"
+        },
+        {
+          "kind": "artifact_link",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "pe_dl",
+          "url": "https://get.pixelexperience.org/Fajita"
+        },
+        {
+          "kind": "artifact_extension",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "pe_dl",
+          "url": "https://get.pixelexperience.org/Fajita"
+        },
+        {
+          "kind": "checksum",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "pe_dl",
+          "url": "https://get.pixelexperience.org/Fajita"
+        },
+        {
+          "kind": "download_word",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "pe_dl",
+          "url": "https://get.pixelexperience.org/Fajita"
+        },
+        {
+          "kind": "changelog",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "pe_dl",
+          "url": "https://get.pixelexperience.org/Fajita"
+        },
+        {
+          "kind": "build_evidence_tier",
+          "detail": "artifact",
+          "source_id": "pe_dl",
+          "url": "https://get.pixelexperience.org/Fajita"
+        },
+        {
+          "kind": "family_resolved",
+          "detail": "Pixel Experience",
+          "source_id": "pe_dl",
+          "url": "https://get.pixelexperience.org/Fajita"
+        },
+        {
+          "kind": "evidence_score",
+          "detail": "17",
+          "source_id": "pe_dl",
+          "url": "https://get.pixelexperience.org/Fajita"
+        }
+      ],
+      "discovered_at": "2026-08-25T00:57:40+00:00",
+      "updated_at": "2026-08-25T00:57:40+00:00"
+    },
+    {
+      "id": "4fa98ded645d6981",
+      "name": "LineageOS",
+      "type": "custom_rom",
+      "device": "OnePlus 6",
+      "codename": "enchilada",
+      "android_version": "Android 15",
+      "rom_version": "22.2",
+      "build_date": "2026-08-19",
+      "status": "verified",
+      "source_url": "https://download.lineageos.org/api/v2/devices/enchilada/builds",
+      "download_url": "https://mirrorbits.lineageos.org/full/enchilada/20260819/lineage-22.2-20260819-nightly-enchilada-signed.zip",
+      "source_id": "lineageos_dl",
+      "evidence": [
+        {
+          "kind": "registered_source",
+          "detail": "LineageOS Downloads (official_download, trust 100)",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org"
+        },
+        {
+          "kind": "codename_in_url",
+          "detail": "codename 'enchilada' in URL path",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/enchilada/builds"
+        },
+        {
+          "kind": "artifact_link",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/enchilada/builds"
+        },
+        {
+          "kind": "artifact_extension",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/enchilada/builds"
+        },
+        {
+          "kind": "build_channel",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/enchilada/builds"
+        },
+        {
+          "kind": "build_evidence_tier",
+          "detail": "artifact",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/enchilada/builds"
+        },
+        {
+          "kind": "family_resolved",
+          "detail": "LineageOS",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/enchilada/builds"
+        },
+        {
+          "kind": "evidence_score",
+          "detail": "14",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/enchilada/builds"
+        }
+      ],
+      "discovered_at": "2026-08-25T00:58:33+00:00",
+      "updated_at": "2026-08-25T00:58:33+00:00"
+    },
+    {
+      "id": "c02a24a15b34f930",
+      "name": "Pixel Experience",
+      "type": "custom_rom",
+      "device": "OnePlus 6",
+      "codename": "enchilada",
+      "android_version": "Android 13",
+      "rom_version": "13",
+      "build_date": "2023-11-24",
+      "status": "verified",
+      "source_url": "https://get.pixelexperience.org/Enchilada",
+      "download_url": "https://get.pixelexperience.org/changelog/enchilada/PixelExperience_enchilada-13.0-20231124-0439-OFFICIAL.zip",
+      "source_id": "pe_dl",
+      "evidence": [
+        {
+          "kind": "registered_source",
+          "detail": "Pixel Experience Downloads (official_download, trust 100)",
+          "source_id": "pe_dl",
+          "url": "https://get.pixelexperience.org"
+        },
+        {
+          "kind": "codename_in_url",
+          "detail": "codename 'enchilada' in URL path",
+          "source_id": "pe_dl",
+          "url": "https://get.pixelexperience.org/Enchilada"
+        },
+        {
+          "kind": "device_name_match",
+          "detail": "device name 'OnePlus 6' mentioned",
+          "source_id": "pe_dl",
+          "url": "https://get.pixelexperience.org/Enchilada"
+        },
+        {
+          "kind": "artifact_link",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "pe_dl",
+          "url": "https://get.pixelexperience.org/Enchilada"
+        },
+        {
+          "kind": "artifact_extension",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "pe_dl",
+          "url": "https://get.pixelexperience.org/Enchilada"
+        },
+        {
+          "kind": "checksum",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "pe_dl",
+          "url": "https://get.pixelexperience.org/Enchilada"
+        },
+        {
+          "kind": "download_word",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "pe_dl",
+          "url": "https://get.pixelexperience.org/Enchilada"
+        },
+        {
+          "kind": "changelog",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "pe_dl",
+          "url": "https://get.pixelexperience.org/Enchilada"
+        },
+        {
+          "kind": "build_evidence_tier",
+          "detail": "artifact",
+          "source_id": "pe_dl",
+          "url": "https://get.pixelexperience.org/Enchilada"
+        },
+        {
+          "kind": "family_resolved",
+          "detail": "Pixel Experience",
+          "source_id": "pe_dl",
+          "url": "https://get.pixelexperience.org/Enchilada"
+        },
+        {
+          "kind": "evidence_score",
+          "detail": "17",
+          "source_id": "pe_dl",
+          "url": "https://get.pixelexperience.org/Enchilada"
+        }
+      ],
+      "discovered_at": "2026-08-25T00:58:33+00:00",
+      "updated_at": "2026-08-25T00:58:33+00:00"
+    },
+    {
+      "id": "1947133e3321176e",
+      "name": "LineageOS",
+      "type": "custom_rom",
+      "device": "OnePlus 5T",
+      "codename": "dumpling",
+      "android_version": "Android 15",
+      "rom_version": "22.2",
+      "build_date": "2026-08-18",
+      "status": "verified",
+      "source_url": "https://download.lineageos.org/api/v2/devices/dumpling/builds",
+      "download_url": "https://mirrorbits.lineageos.org/full/dumpling/20260818/lineage-22.2-20260818-nightly-dumpling-signed.zip",
+      "source_id": "lineageos_dl",
+      "evidence": [
+        {
+          "kind": "registered_source",
+          "detail": "LineageOS Downloads (official_download, trust 100)",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org"
+        },
+        {
+          "kind": "codename_in_url",
+          "detail": "codename 'dumpling' in URL path",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/dumpling/builds"
+        },
+        {
+          "kind": "artifact_link",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/dumpling/builds"
+        },
+        {
+          "kind": "artifact_extension",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/dumpling/builds"
+        },
+        {
+          "kind": "build_channel",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/dumpling/builds"
+        },
+        {
+          "kind": "build_evidence_tier",
+          "detail": "artifact",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/dumpling/builds"
+        },
+        {
+          "kind": "family_resolved",
+          "detail": "LineageOS",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/dumpling/builds"
+        },
+        {
+          "kind": "evidence_score",
+          "detail": "14",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/dumpling/builds"
+        }
+      ],
+      "discovered_at": "2026-08-25T00:59:27+00:00",
+      "updated_at": "2026-08-25T00:59:27+00:00"
+    },
+    {
+      "id": "c4a3aecaaa4bde70",
+      "name": "Pixel Experience",
+      "type": "custom_rom",
+      "device": "OnePlus 5T",
+      "codename": "dumpling",
+      "android_version": "Android 12",
+      "rom_version": "12",
+      "build_date": "2022-11-12",
+      "status": "verified",
+      "source_url": "https://get.pixelexperience.org/dumpling",
+      "download_url": "https://get.pixelexperience.org/changelog/dumpling/PixelExperience_dumpling-12.1-20221112-1555-OFFICIAL.zip",
+      "source_id": "pe_dl",
+      "evidence": [
+        {
+          "kind": "registered_source",
+          "detail": "Pixel Experience Downloads (official_download, trust 100)",
+          "source_id": "pe_dl",
+          "url": "https://get.pixelexperience.org"
+        },
+        {
+          "kind": "codename_in_url",
+          "detail": "codename 'dumpling' in URL path",
+          "source_id": "pe_dl",
+          "url": "https://get.pixelexperience.org/dumpling"
+        },
+        {
+          "kind": "device_name_match",
+          "detail": "device name 'OnePlus 5T' mentioned",
+          "source_id": "pe_dl",
+          "url": "https://get.pixelexperience.org/dumpling"
+        },
+        {
+          "kind": "artifact_link",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "pe_dl",
+          "url": "https://get.pixelexperience.org/dumpling"
+        },
+        {
+          "kind": "artifact_extension",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "pe_dl",
+          "url": "https://get.pixelexperience.org/dumpling"
+        },
+        {
+          "kind": "checksum",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "pe_dl",
+          "url": "https://get.pixelexperience.org/dumpling"
+        },
+        {
+          "kind": "download_word",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "pe_dl",
+          "url": "https://get.pixelexperience.org/dumpling"
+        },
+        {
+          "kind": "changelog",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "pe_dl",
+          "url": "https://get.pixelexperience.org/dumpling"
+        },
+        {
+          "kind": "build_evidence_tier",
+          "detail": "artifact",
+          "source_id": "pe_dl",
+          "url": "https://get.pixelexperience.org/dumpling"
+        },
+        {
+          "kind": "family_resolved",
+          "detail": "Pixel Experience",
+          "source_id": "pe_dl",
+          "url": "https://get.pixelexperience.org/dumpling"
+        },
+        {
+          "kind": "evidence_score",
+          "detail": "17",
+          "source_id": "pe_dl",
+          "url": "https://get.pixelexperience.org/dumpling"
+        }
+      ],
+      "discovered_at": "2026-08-25T00:59:27+00:00",
+      "updated_at": "2026-08-25T00:59:27+00:00"
+    },
+    {
+      "id": "94baafef7e295f7e",
+      "name": "LineageOS",
+      "type": "custom_rom",
+      "device": "OnePlus 5",
+      "codename": "cheeseburger",
+      "android_version": "Android 15",
+      "rom_version": "22.2",
+      "build_date": "2026-08-24",
+      "status": "verified",
+      "source_url": "https://download.lineageos.org/api/v2/devices/cheeseburger/builds",
+      "download_url": "https://mirrorbits.lineageos.org/full/cheeseburger/20260824/lineage-22.2-20260824-nightly-cheeseburger-signed.zip",
+      "source_id": "lineageos_dl",
+      "evidence": [
+        {
+          "kind": "registered_source",
+          "detail": "LineageOS Downloads (official_download, trust 100)",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org"
+        },
+        {
+          "kind": "codename_in_url",
+          "detail": "codename 'cheeseburger' in URL path",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/cheeseburger/builds"
+        },
+        {
+          "kind": "artifact_link",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/cheeseburger/builds"
+        },
+        {
+          "kind": "artifact_extension",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/cheeseburger/builds"
+        },
+        {
+          "kind": "build_channel",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/cheeseburger/builds"
+        },
+        {
+          "kind": "build_evidence_tier",
+          "detail": "artifact",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/cheeseburger/builds"
+        },
+        {
+          "kind": "family_resolved",
+          "detail": "LineageOS",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/cheeseburger/builds"
+        },
+        {
+          "kind": "evidence_score",
+          "detail": "14",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/cheeseburger/builds"
+        }
+      ],
+      "discovered_at": "2026-08-25T01:00:26+00:00",
+      "updated_at": "2026-08-25T01:00:26+00:00"
+    },
+    {
+      "id": "050612fd997c594a",
+      "name": "Pixel Experience",
+      "type": "custom_rom",
+      "device": "OnePlus 5",
+      "codename": "cheeseburger",
+      "android_version": "Android 13",
+      "rom_version": "13",
+      "build_date": "2023-08-12",
+      "status": "verified",
+      "source_url": "https://get.pixelexperience.org/cheeseburger",
+      "download_url": "https://get.pixelexperience.org/changelog/cheeseburger/PixelExperience_cheeseburger-13.0-20230812-0715-OFFICIAL.zip",
+      "source_id": "pe_dl",
+      "evidence": [
+        {
+          "kind": "registered_source",
+          "detail": "Pixel Experience Downloads (official_download, trust 100)",
+          "source_id": "pe_dl",
+          "url": "https://get.pixelexperience.org"
+        },
+        {
+          "kind": "codename_in_url",
+          "detail": "codename 'cheeseburger' in URL path",
+          "source_id": "pe_dl",
+          "url": "https://get.pixelexperience.org/cheeseburger"
+        },
+        {
+          "kind": "device_name_match",
+          "detail": "device name 'OnePlus 5' mentioned",
+          "source_id": "pe_dl",
+          "url": "https://get.pixelexperience.org/cheeseburger"
+        },
+        {
+          "kind": "artifact_link",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "pe_dl",
+          "url": "https://get.pixelexperience.org/cheeseburger"
+        },
+        {
+          "kind": "artifact_extension",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "pe_dl",
+          "url": "https://get.pixelexperience.org/cheeseburger"
+        },
+        {
+          "kind": "checksum",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "pe_dl",
+          "url": "https://get.pixelexperience.org/cheeseburger"
+        },
+        {
+          "kind": "download_word",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "pe_dl",
+          "url": "https://get.pixelexperience.org/cheeseburger"
+        },
+        {
+          "kind": "changelog",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "pe_dl",
+          "url": "https://get.pixelexperience.org/cheeseburger"
+        },
+        {
+          "kind": "build_evidence_tier",
+          "detail": "artifact",
+          "source_id": "pe_dl",
+          "url": "https://get.pixelexperience.org/cheeseburger"
+        },
+        {
+          "kind": "family_resolved",
+          "detail": "Pixel Experience",
+          "source_id": "pe_dl",
+          "url": "https://get.pixelexperience.org/cheeseburger"
+        },
+        {
+          "kind": "evidence_score",
+          "detail": "17",
+          "source_id": "pe_dl",
+          "url": "https://get.pixelexperience.org/cheeseburger"
+        }
+      ],
+      "discovered_at": "2026-08-25T01:00:26+00:00",
+      "updated_at": "2026-08-25T01:00:26+00:00"
+    },
+    {
+      "id": "f7ed8c06f0268eca",
+      "name": "Pixel Experience",
+      "type": "custom_rom",
+      "device": "OnePlus 3",
+      "codename": "oneplus3",
+      "android_version": "Android 11",
+      "rom_version": "11",
+      "build_date": "2021-09-21",
+      "status": "verified",
+      "source_url": "https://get.pixelexperience.org/oneplus3",
+      "download_url": "https://get.pixelexperience.org/changelog/oneplus3/PixelExperience_oneplus3-11.0-20210921-1306-OFFICIAL.zip",
+      "source_id": "pe_dl",
+      "evidence": [
+        {
+          "kind": "registered_source",
+          "detail": "Pixel Experience Downloads (official_download, trust 100)",
+          "source_id": "pe_dl",
+          "url": "https://get.pixelexperience.org"
+        },
+        {
+          "kind": "codename_in_url",
+          "detail": "codename 'oneplus3' in URL path",
+          "source_id": "pe_dl",
+          "url": "https://get.pixelexperience.org/oneplus3"
+        },
+        {
+          "kind": "device_name_match",
+          "detail": "device name 'OnePlus 3' mentioned",
+          "source_id": "pe_dl",
+          "url": "https://get.pixelexperience.org/oneplus3"
+        },
+        {
+          "kind": "artifact_link",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "pe_dl",
+          "url": "https://get.pixelexperience.org/oneplus3"
+        },
+        {
+          "kind": "artifact_extension",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "pe_dl",
+          "url": "https://get.pixelexperience.org/oneplus3"
+        },
+        {
+          "kind": "checksum",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "pe_dl",
+          "url": "https://get.pixelexperience.org/oneplus3"
+        },
+        {
+          "kind": "download_word",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "pe_dl",
+          "url": "https://get.pixelexperience.org/oneplus3"
+        },
+        {
+          "kind": "changelog",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "pe_dl",
+          "url": "https://get.pixelexperience.org/oneplus3"
+        },
+        {
+          "kind": "build_evidence_tier",
+          "detail": "artifact",
+          "source_id": "pe_dl",
+          "url": "https://get.pixelexperience.org/oneplus3"
+        },
+        {
+          "kind": "family_resolved",
+          "detail": "Pixel Experience",
+          "source_id": "pe_dl",
+          "url": "https://get.pixelexperience.org/oneplus3"
+        },
+        {
+          "kind": "evidence_score",
+          "detail": "17",
+          "source_id": "pe_dl",
+          "url": "https://get.pixelexperience.org/oneplus3"
+        }
+      ],
+      "discovered_at": "2026-08-25T01:01:38+00:00",
+      "updated_at": "2026-08-25T01:01:38+00:00"
+    }
+  ]
+}
