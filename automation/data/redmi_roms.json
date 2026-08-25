@@ -1,0 +1,2200 @@
+{
+  "metadata": {
+    "schema_version": 2,
+    "generator": "romdisco",
+    "created_at": "2026-08-23T18:45:04+00:00",
+    "updated_at": "2026-08-25T06:09:34+00:00",
+    "counts": {
+      "devices": 337,
+      "roms": 182,
+      "sources": 4,
+      "verified": 182,
+      "candidates": 450
+    }
+  },
+  "devices": [
+    {
+      "name": "Redmi Note 14 Pro+ 5G",
+      "codename": "amethyst",
+      "manufacturer": "Redmi",
+      "aliases": [
+        "Redmi Note 14 Pro+"
+      ],
+      "id": "redmi:amethyst"
+    },
+    {
+      "name": "Redmi Note 14 Pro 5G",
+      "codename": "malachite",
+      "manufacturer": "Redmi",
+      "aliases": [
+        "Redmi Note 14 Pro 5G"
+      ],
+      "id": "redmi:malachite"
+    },
+    {
+      "name": "Redmi Note 14 Pro",
+      "codename": "obsidian",
+      "manufacturer": "Redmi",
+      "aliases": [
+        "Redmi Note 14 Pro"
+      ],
+      "id": "redmi:obsidian"
+    },
+    {
+      "name": "Redmi Note 14 5G",
+      "codename": "beryl",
+      "manufacturer": "Redmi",
+      "aliases": [
+        "Redmi Note 14 5G"
+      ],
+      "id": "redmi:beryl"
+    },
+    {
+      "name": "Redmi Note 14",
+      "codename": "tanzanite",
+      "manufacturer": "Redmi",
+      "aliases": [
+        "Redmi Note 14 4G"
+      ],
+      "id": "redmi:tanzanite"
+    },
+    {
+      "name": "Redmi Note 13 Pro+ 5G",
+      "codename": "zircon",
+      "manufacturer": "Redmi",
+      "aliases": [
+        "Redmi Note 13 Pro+"
+      ],
+      "id": "redmi:zircon"
+    },
+    {
+      "name": "Redmi Note 13 Pro 5G",
+      "codename": "garnet",
+      "manufacturer": "Redmi",
+      "aliases": [
+        "Redmi Note 13 Pro 5G"
+      ],
+      "id": "redmi:garnet"
+    },
+    {
+      "name": "Redmi Note 13 Pro",
+      "codename": "emerald",
+      "manufacturer": "Redmi",
+      "aliases": [
+        "Redmi Note 13 Pro 4G"
+      ],
+      "id": "redmi:emerald"
+    },
+    {
+      "name": "Redmi Note 13 5G",
+      "codename": "gold",
+      "manufacturer": "Redmi",
+      "aliases": [
+        "Redmi Note 13 5G"
+      ],
+      "id": "redmi:gold"
+    },
+    {
+      "name": "Redmi Note 13",
+      "codename": "sapphire",
+      "manufacturer": "Redmi",
+      "aliases": [
+        "Redmi Note 13 4G",
+        "sapphiren"
+      ],
+      "id": "redmi:sapphire"
+    },
+    {
+      "name": "Redmi Note 12 Pro+ 5G",
+      "codename": "rubyplus",
+      "manufacturer": "Redmi",
+      "aliases": [
+        "Redmi Note 12 Pro+",
+        "ruby"
+      ],
+      "id": "redmi:rubyplus"
+    },
+    {
+      "name": "Redmi Note 12 Pro 5G",
+      "codename": "ruby",
+      "manufacturer": "Redmi",
+      "aliases": [
+        "Redmi Note 12 Pro 5G"
+      ],
+      "id": "redmi:ruby"
+    },
+    {
+      "name": "Redmi Note 12 Pro",
+      "codename": "sweet_k6a",
+      "manufacturer": "Redmi",
+      "aliases": [
+        "Redmi Note 12 Pro 4G"
+      ],
+      "id": "redmi:sweet_k6a"
+    },
+    {
+      "name": "Redmi Note 12 5G",
+      "codename": "sunstone",
+      "manufacturer": "Redmi",
+      "aliases": [
+        "Redmi Note 12 5G"
+      ],
+      "id": "redmi:sunstone"
+    },
+    {
+      "name": "Redmi Note 12",
+      "codename": "tapas",
+      "manufacturer": "Redmi",
+      "aliases": [
+        "Redmi Note 12 4G",
+        "topaz"
+      ],
+      "id": "redmi:tapas"
+    },
+    {
+      "name": "Redmi Note 11 Pro+ 5G",
+      "codename": "pissarro",
+      "manufacturer": "Redmi",
+      "aliases": [
+        "Redmi Note 11 Pro+"
+      ],
+      "id": "redmi:pissarro"
+    },
+    {
+      "name": "Redmi Note 11 Pro 5G",
+      "codename": "veux",
+      "manufacturer": "Redmi",
+      "aliases": [
+        "Redmi Note 11 Pro 5G",
+        "peux"
+      ],
+      "id": "redmi:veux"
+    },
+    {
+      "name": "Redmi Note 11 Pro",
+      "codename": "viva",
+      "manufacturer": "Redmi",
+      "aliases": [
+        "Redmi Note 11 Pro 4G",
+        "vida"
+      ],
+      "id": "redmi:viva"
+    },
+    {
+      "name": "Redmi Note 11S",
+      "codename": "fleur",
+      "manufacturer": "Redmi",
+      "aliases": [
+        "Redmi Note 11S",
+        "miel"
+      ],
+      "id": "redmi:fleur"
+    },
+    {
+      "name": "Redmi Note 11 5G",
+      "codename": "evergo",
+      "manufacturer": "Redmi",
+      "aliases": [
+        "Redmi Note 11 5G"
+      ],
+      "id": "redmi:evergo"
+    },
+    {
+      "name": "Redmi Note 11",
+      "codename": "spes",
+      "manufacturer": "Redmi",
+      "aliases": [
+        "Redmi Note 11 4G",
+        "spesn"
+      ],
+      "id": "redmi:spes"
+    },
+    {
+      "name": "Redmi Note 10 Pro",
+      "codename": "sweet",
+      "manufacturer": "Redmi",
+      "aliases": [
+        "Redmi Note 10 Pro Max",
+        "sweetin"
+      ],
+      "id": "redmi:sweet"
+    },
+    {
+      "name": "Redmi Note 10 5G",
+      "codename": "camellia",
+      "manufacturer": "Redmi",
+      "aliases": [
+        "Redmi Note 10 5G",
+        "camellian"
+      ],
+      "id": "redmi:camellia"
+    },
+    {
+      "name": "Redmi Note 10",
+      "codename": "mojito",
+      "manufacturer": "Redmi",
+      "aliases": [
+        "Redmi Note 10",
+        "sunny"
+      ],
+      "id": "redmi:mojito"
+    },
+    {
+      "name": "Redmi Note 9 Pro",
+      "codename": "joyeuse",
+      "manufacturer": "Redmi",
+      "aliases": [
+        "Redmi Note 9 Pro Max",
+        "curtana",
+        "excalibur"
+      ],
+      "id": "redmi:joyeuse"
+    },
+    {
+      "name": "Redmi Note 9S",
+      "codename": "curtana",
+      "manufacturer": "Redmi",
+      "aliases": [
+        "Redmi Note 9S"
+      ],
+      "id": "redmi:curtana"
+    },
+    {
+      "name": "Redmi Note 9",
+      "codename": "merlin",
+      "manufacturer": "Redmi",
+      "aliases": [
+        "Redmi Note 9",
+        "merlinx"
+      ],
+      "id": "redmi:merlin"
+    },
+    {
+      "name": "Redmi Note 8 Pro",
+      "codename": "begonia",
+      "manufacturer": "Redmi",
+      "aliases": [
+        "Redmi Note 8 Pro",
+        "begoniain"
+      ],
+      "id": "redmi:begonia"
+    },
+    {
+      "name": "Redmi Note 8",
+      "codename": "ginkgo",
+      "manufacturer": "Redmi",
+      "aliases": [
+        "Redmi Note 8",
+        "biloba",
+        "willow"
+      ],
+      "id": "redmi:ginkgo"
+    },
+    {
+      "name": "Redmi Note 7 Pro",
+      "codename": "violet",
+      "manufacturer": "Redmi",
+      "aliases": [
+        "Redmi Note 7 Pro"
+      ],
+      "id": "redmi:violet"
+    },
+    {
+      "name": "Redmi Note 7",
+      "codename": "lavender",
+      "manufacturer": "Redmi",
+      "aliases": [
+        "Redmi Note 7",
+        "Redmi Note 7S"
+      ],
+      "id": "redmi:lavender"
+    },
+    {
+      "name": "Redmi Note 6 Pro",
+      "codename": "tulip",
+      "manufacturer": "Redmi",
+      "aliases": [
+        "Redmi Note 6 Pro"
+      ],
+      "id": "redmi:tulip"
+    },
+    {
+      "name": "Redmi Note 5 Pro",
+      "codename": "whyred",
+      "manufacturer": "Redmi",
+      "aliases": [
+        "Redmi Note 5 Pro"
+      ],
+      "id": "redmi:whyred"
+    },
+    {
+      "name": "Redmi Note 5",
+      "codename": "vince",
+      "manufacturer": "Redmi",
+      "aliases": [
+        "Redmi 5 Plus",
+        "Redmi Note 5"
+      ],
+      "id": "redmi:vince"
+    },
+    {
+      "name": "Redmi Note 4",
+      "codename": "mido",
+      "manufacturer": "Redmi",
+      "aliases": [
+        "Redmi Note 4X",
+        "nikel"
+      ],
+      "id": "redmi:mido"
+    },
+    {
+      "name": "Redmi Note 3",
+      "codename": "kenzo",
+      "manufacturer": "Redmi",
+      "aliases": [
+        "Redmi Note 3 Pro",
+        "kate",
+        "hennessy"
+      ],
+      "id": "redmi:kenzo"
+    },
+    {
+      "name": "Redmi Note 2",
+      "codename": "hermes",
+      "manufacturer": "Redmi",
+      "aliases": [
+        "Redmi Note 2"
+      ],
+      "id": "redmi:hermes"
+    },
+    {
+      "name": "Redmi Note",
+      "codename": "dior",
+      "manufacturer": "Redmi",
+      "aliases": [
+        "Redmi Note 4G",
+        "gucci",
+        "lcsh92_wet_jb9"
+      ],
+      "id": "redmi:dior"
+    }
+  ],
+  "sources": [
+    {
+      "id": "lineageos_site",
+      "name": "LineageOS",
+      "kind": "official_project",
+      "host": "lineageos.org",
+      "canonical_url": "https://lineageos.org",
+      "trust": 98,
+      "path_prefixes": [],
+      "family": "LineageOS",
+      "include_subdomains": true,
+      "device_urls": [],
+      "query_templates": [],
+      "manufacturers": [],
+      "can_verify": true,
+      "source_class": "OFFICIAL",
+      "authority": 6098
+    },
+    {
+      "id": "lineageos_dl",
+      "name": "LineageOS Downloads",
+      "kind": "official_download",
+      "host": "download.lineageos.org",
+      "canonical_url": "https://download.lineageos.org",
+      "trust": 100,
+      "path_prefixes": [],
+      "family": "LineageOS",
+      "include_subdomains": true,
+      "device_urls": [
+        "https://download.lineageos.org/api/v2/devices/{code}/builds"
+      ],
+      "query_templates": [],
+      "manufacturers": [],
+      "can_verify": true,
+      "source_class": "OFFICIAL",
+      "authority": 6100
+    },
+    {
+      "id": "pe_dl",
+      "name": "Pixel Experience Downloads",
+      "kind": "official_download",
+      "host": "get.pixelexperience.org",
+      "canonical_url": "https://get.pixelexperience.org",
+      "trust": 100,
+      "path_prefixes": [],
+      "family": "Pixel Experience",
+      "include_subdomains": true,
+      "device_urls": [
+        "https://get.pixelexperience.org/{code}"
+      ],
+      "query_templates": [],
+      "manufacturers": [],
+      "can_verify": true,
+      "source_class": "OFFICIAL",
+      "authority": 6100
+    },
+    {
+      "id": "pixelos_site",
+      "name": "PixelOS",
+      "kind": "official_project",
+      "host": "pixelos.net",
+      "canonical_url": "https://pixelos.net",
+      "trust": 96,
+      "path_prefixes": [],
+      "family": "PixelOS",
+      "include_subdomains": true,
+      "device_urls": [
+        "https://pixelos.net/download/{code}"
+      ],
+      "query_templates": [],
+      "manufacturers": [],
+      "can_verify": true,
+      "source_class": "OFFICIAL",
+      "authority": 6096
+    }
+  ],
+  "roms": [
+    {
+      "id": "7485e16bb1fe0ccd",
+      "name": "LineageOS",
+      "type": "custom_rom",
+      "device": "Redmi Note 13 Pro 5G",
+      "codename": "garnet",
+      "android_version": "Android 16",
+      "rom_version": "23.2",
+      "build_date": "2026-08-19",
+      "status": "verified",
+      "source_url": "https://download.lineageos.org/api/v2/devices/garnet/builds",
+      "download_url": "https://mirrorbits.lineageos.org/full/garnet/20260819/lineage-23.2-20260819-nightly-garnet-signed.zip",
+      "source_id": "lineageos_dl",
+      "evidence": [
+        {
+          "kind": "registered_source",
+          "detail": "LineageOS Downloads (official_download, trust 100)",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org"
+        },
+        {
+          "kind": "codename_in_url",
+          "detail": "codename 'garnet' in URL path",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/garnet/builds"
+        },
+        {
+          "kind": "artifact_link",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/garnet/builds"
+        },
+        {
+          "kind": "artifact_extension",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/garnet/builds"
+        },
+        {
+          "kind": "build_channel",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/garnet/builds"
+        },
+        {
+          "kind": "build_evidence_tier",
+          "detail": "artifact",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/garnet/builds"
+        },
+        {
+          "kind": "family_resolved",
+          "detail": "LineageOS",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/garnet/builds"
+        },
+        {
+          "kind": "evidence_score",
+          "detail": "14",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/garnet/builds"
+        }
+      ],
+      "discovered_at": "2026-08-25T05:59:03+00:00",
+      "updated_at": "2026-08-25T05:59:03+00:00"
+    },
+    {
+      "id": "ca843d55a1c822e9",
+      "name": "PixelOS",
+      "type": "custom_rom",
+      "device": "Redmi Note 13 Pro 5G",
+      "codename": "garnet",
+      "android_version": "Android 17",
+      "rom_version": "17.0",
+      "build_date": "2026-08-21",
+      "status": "verified",
+      "source_url": "https://pixelos.net/download/garnet",
+      "download_url": "https://download.pixelos.net/seventeen/garnet/PixelOS_garnet-17.0-20260821-2229.zip",
+      "source_id": "pixelos_site",
+      "evidence": [
+        {
+          "kind": "registered_source",
+          "detail": "PixelOS (official_project, trust 96)",
+          "source_id": "pixelos_site",
+          "url": "https://pixelos.net"
+        },
+        {
+          "kind": "codename_in_url",
+          "detail": "codename 'garnet' in URL path",
+          "source_id": "pixelos_site",
+          "url": "https://pixelos.net/download/garnet"
+        },
+        {
+          "kind": "device_name_match",
+          "detail": "device name 'Redmi Note 13 Pro 5G' mentioned",
+          "source_id": "pixelos_site",
+          "url": "https://pixelos.net/download/garnet"
+        },
+        {
+          "kind": "artifact_link",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "pixelos_site",
+          "url": "https://pixelos.net/download/garnet"
+        },
+        {
+          "kind": "artifact_extension",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "pixelos_site",
+          "url": "https://pixelos.net/download/garnet"
+        },
+        {
+          "kind": "download_word",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "pixelos_site",
+          "url": "https://pixelos.net/download/garnet"
+        },
+        {
+          "kind": "changelog",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "pixelos_site",
+          "url": "https://pixelos.net/download/garnet"
+        },
+        {
+          "kind": "build_evidence_tier",
+          "detail": "artifact",
+          "source_id": "pixelos_site",
+          "url": "https://pixelos.net/download/garnet"
+        },
+        {
+          "kind": "family_resolved",
+          "detail": "PixelOS",
+          "source_id": "pixelos_site",
+          "url": "https://pixelos.net/download/garnet"
+        },
+        {
+          "kind": "evidence_score",
+          "detail": "16",
+          "source_id": "pixelos_site",
+          "url": "https://pixelos.net/download/garnet"
+        }
+      ],
+      "discovered_at": "2026-08-25T05:59:03+00:00",
+      "updated_at": "2026-08-25T05:59:03+00:00"
+    },
+    {
+      "id": "c470cc84ee981068",
+      "name": "Pixel Experience",
+      "type": "custom_rom",
+      "device": "Redmi Note 11 Pro 5G",
+      "codename": "veux",
+      "android_version": "Android 14",
+      "rom_version": "14",
+      "build_date": "2024-03-16",
+      "status": "verified",
+      "source_url": "https://get.pixelexperience.org/veux",
+      "download_url": "https://get.pixelexperience.org/changelog/veux/PixelExperience_veux-14.0-20240316-0817-OFFICIAL.zip",
+      "source_id": "pe_dl",
+      "evidence": [
+        {
+          "kind": "registered_source",
+          "detail": "Pixel Experience Downloads (official_download, trust 100)",
+          "source_id": "pe_dl",
+          "url": "https://get.pixelexperience.org"
+        },
+        {
+          "kind": "codename_in_url",
+          "detail": "codename 'veux' in URL path",
+          "source_id": "pe_dl",
+          "url": "https://get.pixelexperience.org/veux"
+        },
+        {
+          "kind": "device_name_match",
+          "detail": "device name 'Redmi Note 11 Pro 5G' mentioned",
+          "source_id": "pe_dl",
+          "url": "https://get.pixelexperience.org/veux"
+        },
+        {
+          "kind": "artifact_link",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "pe_dl",
+          "url": "https://get.pixelexperience.org/veux"
+        },
+        {
+          "kind": "artifact_extension",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "pe_dl",
+          "url": "https://get.pixelexperience.org/veux"
+        },
+        {
+          "kind": "checksum",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "pe_dl",
+          "url": "https://get.pixelexperience.org/veux"
+        },
+        {
+          "kind": "download_word",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "pe_dl",
+          "url": "https://get.pixelexperience.org/veux"
+        },
+        {
+          "kind": "changelog",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "pe_dl",
+          "url": "https://get.pixelexperience.org/veux"
+        },
+        {
+          "kind": "build_evidence_tier",
+          "detail": "artifact",
+          "source_id": "pe_dl",
+          "url": "https://get.pixelexperience.org/veux"
+        },
+        {
+          "kind": "family_resolved",
+          "detail": "Pixel Experience",
+          "source_id": "pe_dl",
+          "url": "https://get.pixelexperience.org/veux"
+        },
+        {
+          "kind": "evidence_score",
+          "detail": "17",
+          "source_id": "pe_dl",
+          "url": "https://get.pixelexperience.org/veux"
+        }
+      ],
+      "discovered_at": "2026-08-25T06:02:19+00:00",
+      "updated_at": "2026-08-25T06:02:19+00:00"
+    },
+    {
+      "id": "2d522a976cab2adf",
+      "name": "Pixel Experience",
+      "type": "custom_rom",
+      "device": "Redmi Note 11",
+      "codename": "spes",
+      "android_version": "Android 13",
+      "rom_version": "13",
+      "build_date": "2023-08-21",
+      "status": "verified",
+      "source_url": "https://get.pixelexperience.org/spes",
+      "download_url": "https://get.pixelexperience.org/changelog/spes/PixelExperience_spes-13.0-20230821-0032-OFFICIAL.zip",
+      "source_id": "pe_dl",
+      "evidence": [
+        {
+          "kind": "registered_source",
+          "detail": "Pixel Experience Downloads (official_download, trust 100)",
+          "source_id": "pe_dl",
+          "url": "https://get.pixelexperience.org"
+        },
+        {
+          "kind": "codename_in_url",
+          "detail": "codename 'spes' in URL path",
+          "source_id": "pe_dl",
+          "url": "https://get.pixelexperience.org/spes"
+        },
+        {
+          "kind": "device_name_match",
+          "detail": "device name 'Redmi Note 11' mentioned",
+          "source_id": "pe_dl",
+          "url": "https://get.pixelexperience.org/spes"
+        },
+        {
+          "kind": "artifact_link",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "pe_dl",
+          "url": "https://get.pixelexperience.org/spes"
+        },
+        {
+          "kind": "artifact_extension",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "pe_dl",
+          "url": "https://get.pixelexperience.org/spes"
+        },
+        {
+          "kind": "checksum",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "pe_dl",
+          "url": "https://get.pixelexperience.org/spes"
+        },
+        {
+          "kind": "download_word",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "pe_dl",
+          "url": "https://get.pixelexperience.org/spes"
+        },
+        {
+          "kind": "changelog",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "pe_dl",
+          "url": "https://get.pixelexperience.org/spes"
+        },
+        {
+          "kind": "build_evidence_tier",
+          "detail": "artifact",
+          "source_id": "pe_dl",
+          "url": "https://get.pixelexperience.org/spes"
+        },
+        {
+          "kind": "family_resolved",
+          "detail": "Pixel Experience",
+          "source_id": "pe_dl",
+          "url": "https://get.pixelexperience.org/spes"
+        },
+        {
+          "kind": "evidence_score",
+          "detail": "17",
+          "source_id": "pe_dl",
+          "url": "https://get.pixelexperience.org/spes"
+        }
+      ],
+      "discovered_at": "2026-08-25T06:03:49+00:00",
+      "updated_at": "2026-08-25T06:03:49+00:00"
+    },
+    {
+      "id": "ef5b85e19f44f207",
+      "name": "LineageOS",
+      "type": "custom_rom",
+      "device": "Redmi Note 10 Pro",
+      "codename": "sweet",
+      "android_version": "Android 16",
+      "rom_version": "23.2",
+      "build_date": "2026-08-20",
+      "status": "verified",
+      "source_url": "https://download.lineageos.org/api/v2/devices/sweet/builds",
+      "download_url": "https://mirrorbits.lineageos.org/full/sweet/20260820/lineage-23.2-20260820-nightly-sweet-signed.zip",
+      "source_id": "lineageos_dl",
+      "evidence": [
+        {
+          "kind": "registered_source",
+          "detail": "LineageOS Downloads (official_download, trust 100)",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org"
+        },
+        {
+          "kind": "codename_in_url",
+          "detail": "codename 'sweet' in URL path",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/sweet/builds"
+        },
+        {
+          "kind": "artifact_link",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/sweet/builds"
+        },
+        {
+          "kind": "artifact_extension",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/sweet/builds"
+        },
+        {
+          "kind": "build_channel",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/sweet/builds"
+        },
+        {
+          "kind": "build_evidence_tier",
+          "detail": "artifact",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/sweet/builds"
+        },
+        {
+          "kind": "family_resolved",
+          "detail": "LineageOS",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/sweet/builds"
+        },
+        {
+          "kind": "evidence_score",
+          "detail": "14",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/sweet/builds"
+        }
+      ],
+      "discovered_at": "2026-08-25T06:04:08+00:00",
+      "updated_at": "2026-08-25T06:04:08+00:00"
+    },
+    {
+      "id": "9f06d58183cec98f",
+      "name": "PixelOS",
+      "type": "custom_rom",
+      "device": "Redmi Note 10 Pro",
+      "codename": "sweet",
+      "android_version": "Android 16",
+      "rom_version": "16.2",
+      "build_date": "2026-06-10",
+      "status": "verified",
+      "source_url": "https://pixelos.net/download/sweet",
+      "download_url": "https://download.pixelos.net/sixteen/sweet/PixelOS_sweet-16.2-20260610-0532.zip",
+      "source_id": "pixelos_site",
+      "evidence": [
+        {
+          "kind": "registered_source",
+          "detail": "PixelOS (official_project, trust 96)",
+          "source_id": "pixelos_site",
+          "url": "https://pixelos.net"
+        },
+        {
+          "kind": "codename_in_url",
+          "detail": "codename 'sweet' in URL path",
+          "source_id": "pixelos_site",
+          "url": "https://pixelos.net/download/sweet"
+        },
+        {
+          "kind": "device_name_match",
+          "detail": "device name 'Redmi Note 10 Pro' mentioned",
+          "source_id": "pixelos_site",
+          "url": "https://pixelos.net/download/sweet"
+        },
+        {
+          "kind": "artifact_link",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "pixelos_site",
+          "url": "https://pixelos.net/download/sweet"
+        },
+        {
+          "kind": "artifact_extension",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "pixelos_site",
+          "url": "https://pixelos.net/download/sweet"
+        },
+        {
+          "kind": "download_word",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "pixelos_site",
+          "url": "https://pixelos.net/download/sweet"
+        },
+        {
+          "kind": "changelog",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "pixelos_site",
+          "url": "https://pixelos.net/download/sweet"
+        },
+        {
+          "kind": "build_evidence_tier",
+          "detail": "artifact",
+          "source_id": "pixelos_site",
+          "url": "https://pixelos.net/download/sweet"
+        },
+        {
+          "kind": "family_resolved",
+          "detail": "PixelOS",
+          "source_id": "pixelos_site",
+          "url": "https://pixelos.net/download/sweet"
+        },
+        {
+          "kind": "evidence_score",
+          "detail": "16",
+          "source_id": "pixelos_site",
+          "url": "https://pixelos.net/download/sweet"
+        }
+      ],
+      "discovered_at": "2026-08-25T06:04:08+00:00",
+      "updated_at": "2026-08-25T06:04:08+00:00"
+    },
+    {
+      "id": "60ba70dd33ad9448",
+      "name": "Pixel Experience",
+      "type": "custom_rom",
+      "device": "Redmi Note 10 Pro",
+      "codename": "sweet",
+      "android_version": "Android 13",
+      "rom_version": "13",
+      "build_date": "2023-11-23",
+      "status": "verified",
+      "source_url": "https://get.pixelexperience.org/Sweet",
+      "download_url": "https://get.pixelexperience.org/changelog/sweet/PixelExperience_sweet-13.0-20231123-0424-OFFICIAL.zip",
+      "source_id": "pe_dl",
+      "evidence": [
+        {
+          "kind": "registered_source",
+          "detail": "Pixel Experience Downloads (official_download, trust 100)",
+          "source_id": "pe_dl",
+          "url": "https://get.pixelexperience.org"
+        },
+        {
+          "kind": "codename_in_url",
+          "detail": "codename 'sweet' in URL path",
+          "source_id": "pe_dl",
+          "url": "https://get.pixelexperience.org/Sweet"
+        },
+        {
+          "kind": "device_name_match",
+          "detail": "device name 'Redmi Note 10 Pro' mentioned",
+          "source_id": "pe_dl",
+          "url": "https://get.pixelexperience.org/Sweet"
+        },
+        {
+          "kind": "artifact_link",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "pe_dl",
+          "url": "https://get.pixelexperience.org/Sweet"
+        },
+        {
+          "kind": "artifact_extension",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "pe_dl",
+          "url": "https://get.pixelexperience.org/Sweet"
+        },
+        {
+          "kind": "checksum",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "pe_dl",
+          "url": "https://get.pixelexperience.org/Sweet"
+        },
+        {
+          "kind": "download_word",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "pe_dl",
+          "url": "https://get.pixelexperience.org/Sweet"
+        },
+        {
+          "kind": "changelog",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "pe_dl",
+          "url": "https://get.pixelexperience.org/Sweet"
+        },
+        {
+          "kind": "build_evidence_tier",
+          "detail": "artifact",
+          "source_id": "pe_dl",
+          "url": "https://get.pixelexperience.org/Sweet"
+        },
+        {
+          "kind": "family_resolved",
+          "detail": "Pixel Experience",
+          "source_id": "pe_dl",
+          "url": "https://get.pixelexperience.org/Sweet"
+        },
+        {
+          "kind": "evidence_score",
+          "detail": "17",
+          "source_id": "pe_dl",
+          "url": "https://get.pixelexperience.org/Sweet"
+        }
+      ],
+      "discovered_at": "2026-08-25T06:04:08+00:00",
+      "updated_at": "2026-08-25T06:04:08+00:00"
+    },
+    {
+      "id": "bee6ca0b996633e1",
+      "name": "Pixel Experience",
+      "type": "custom_rom",
+      "device": "Redmi Note 10",
+      "codename": "mojito",
+      "android_version": "Android 13",
+      "rom_version": "13",
+      "build_date": "2023-12-17",
+      "status": "verified",
+      "source_url": "https://get.pixelexperience.org/Mojito",
+      "download_url": "https://get.pixelexperience.org/changelog/mojito/PixelExperience_mojito-13.0-20231217-1824-OFFICIAL.zip",
+      "source_id": "pe_dl",
+      "evidence": [
+        {
+          "kind": "registered_source",
+          "detail": "Pixel Experience Downloads (official_download, trust 100)",
+          "source_id": "pe_dl",
+          "url": "https://get.pixelexperience.org"
+        },
+        {
+          "kind": "codename_in_url",
+          "detail": "codename 'mojito' in URL path",
+          "source_id": "pe_dl",
+          "url": "https://get.pixelexperience.org/Mojito"
+        },
+        {
+          "kind": "device_name_match",
+          "detail": "device name 'Redmi Note 10' mentioned",
+          "source_id": "pe_dl",
+          "url": "https://get.pixelexperience.org/Mojito"
+        },
+        {
+          "kind": "artifact_link",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "pe_dl",
+          "url": "https://get.pixelexperience.org/Mojito"
+        },
+        {
+          "kind": "artifact_extension",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "pe_dl",
+          "url": "https://get.pixelexperience.org/Mojito"
+        },
+        {
+          "kind": "checksum",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "pe_dl",
+          "url": "https://get.pixelexperience.org/Mojito"
+        },
+        {
+          "kind": "download_word",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "pe_dl",
+          "url": "https://get.pixelexperience.org/Mojito"
+        },
+        {
+          "kind": "changelog",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "pe_dl",
+          "url": "https://get.pixelexperience.org/Mojito"
+        },
+        {
+          "kind": "build_evidence_tier",
+          "detail": "artifact",
+          "source_id": "pe_dl",
+          "url": "https://get.pixelexperience.org/Mojito"
+        },
+        {
+          "kind": "family_resolved",
+          "detail": "Pixel Experience",
+          "source_id": "pe_dl",
+          "url": "https://get.pixelexperience.org/Mojito"
+        },
+        {
+          "kind": "evidence_score",
+          "detail": "17",
+          "source_id": "pe_dl",
+          "url": "https://get.pixelexperience.org/Mojito"
+        }
+      ],
+      "discovered_at": "2026-08-25T06:04:45+00:00",
+      "updated_at": "2026-08-25T06:04:45+00:00"
+    },
+    {
+      "id": "c6ea04500d27539c",
+      "name": "Pixel Experience",
+      "type": "custom_rom",
+      "device": "Redmi Note 8 Pro",
+      "codename": "begonia",
+      "android_version": "Android 13",
+      "rom_version": "13",
+      "build_date": "2023-12-17",
+      "status": "verified",
+      "source_url": "https://get.pixelexperience.org/begonia",
+      "download_url": "https://get.pixelexperience.org/changelog/begonia/PixelExperience_begonia-13.0-20231217-1606-OFFICIAL.zip",
+      "source_id": "pe_dl",
+      "evidence": [
+        {
+          "kind": "registered_source",
+          "detail": "Pixel Experience Downloads (official_download, trust 100)",
+          "source_id": "pe_dl",
+          "url": "https://get.pixelexperience.org"
+        },
+        {
+          "kind": "codename_in_url",
+          "detail": "codename 'begonia' in URL path",
+          "source_id": "pe_dl",
+          "url": "https://get.pixelexperience.org/begonia"
+        },
+        {
+          "kind": "device_name_match",
+          "detail": "device name 'Redmi Note 8 Pro' mentioned",
+          "source_id": "pe_dl",
+          "url": "https://get.pixelexperience.org/begonia"
+        },
+        {
+          "kind": "artifact_link",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "pe_dl",
+          "url": "https://get.pixelexperience.org/begonia"
+        },
+        {
+          "kind": "artifact_extension",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "pe_dl",
+          "url": "https://get.pixelexperience.org/begonia"
+        },
+        {
+          "kind": "checksum",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "pe_dl",
+          "url": "https://get.pixelexperience.org/begonia"
+        },
+        {
+          "kind": "download_word",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "pe_dl",
+          "url": "https://get.pixelexperience.org/begonia"
+        },
+        {
+          "kind": "changelog",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "pe_dl",
+          "url": "https://get.pixelexperience.org/begonia"
+        },
+        {
+          "kind": "build_evidence_tier",
+          "detail": "artifact",
+          "source_id": "pe_dl",
+          "url": "https://get.pixelexperience.org/begonia"
+        },
+        {
+          "kind": "family_resolved",
+          "detail": "Pixel Experience",
+          "source_id": "pe_dl",
+          "url": "https://get.pixelexperience.org/begonia"
+        },
+        {
+          "kind": "evidence_score",
+          "detail": "17",
+          "source_id": "pe_dl",
+          "url": "https://get.pixelexperience.org/begonia"
+        }
+      ],
+      "discovered_at": "2026-08-25T06:06:07+00:00",
+      "updated_at": "2026-08-25T06:06:07+00:00"
+    },
+    {
+      "id": "d942af106fe48b64",
+      "name": "LineageOS",
+      "type": "custom_rom",
+      "device": "Redmi Note 8",
+      "codename": "ginkgo",
+      "android_version": "Android 16",
+      "rom_version": "23.2",
+      "build_date": "2026-08-12",
+      "status": "verified",
+      "source_url": "https://download.lineageos.org/api/v2/devices/ginkgo/builds",
+      "download_url": "https://mirrorbits.lineageos.org/full/ginkgo/20260812/lineage-23.2-20260812-nightly-ginkgo-signed.zip",
+      "source_id": "lineageos_dl",
+      "evidence": [
+        {
+          "kind": "registered_source",
+          "detail": "LineageOS Downloads (official_download, trust 100)",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org"
+        },
+        {
+          "kind": "codename_in_url",
+          "detail": "codename 'ginkgo' in URL path",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/ginkgo/builds"
+        },
+        {
+          "kind": "artifact_link",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/ginkgo/builds"
+        },
+        {
+          "kind": "artifact_extension",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/ginkgo/builds"
+        },
+        {
+          "kind": "build_channel",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/ginkgo/builds"
+        },
+        {
+          "kind": "build_evidence_tier",
+          "detail": "artifact",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/ginkgo/builds"
+        },
+        {
+          "kind": "family_resolved",
+          "detail": "LineageOS",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/ginkgo/builds"
+        },
+        {
+          "kind": "evidence_score",
+          "detail": "14",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/ginkgo/builds"
+        }
+      ],
+      "discovered_at": "2026-08-25T06:06:29+00:00",
+      "updated_at": "2026-08-25T06:06:29+00:00"
+    },
+    {
+      "id": "7af5956229cb7358",
+      "name": "PixelOS",
+      "type": "custom_rom",
+      "device": "Redmi Note 8",
+      "codename": "ginkgo",
+      "android_version": "Android 16",
+      "rom_version": "16.2",
+      "build_date": "2026-06-09",
+      "status": "verified",
+      "source_url": "https://pixelos.net/download/ginkgo",
+      "download_url": "https://download.pixelos.net/sixteen/ginkgo/PixelOS_ginkgo-16.2-20260609-0838.zip",
+      "source_id": "pixelos_site",
+      "evidence": [
+        {
+          "kind": "registered_source",
+          "detail": "PixelOS (official_project, trust 96)",
+          "source_id": "pixelos_site",
+          "url": "https://pixelos.net"
+        },
+        {
+          "kind": "codename_in_url",
+          "detail": "codename 'ginkgo' in URL path",
+          "source_id": "pixelos_site",
+          "url": "https://pixelos.net/download/ginkgo"
+        },
+        {
+          "kind": "device_name_match",
+          "detail": "device name 'Redmi Note 8' mentioned",
+          "source_id": "pixelos_site",
+          "url": "https://pixelos.net/download/ginkgo"
+        },
+        {
+          "kind": "artifact_link",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "pixelos_site",
+          "url": "https://pixelos.net/download/ginkgo"
+        },
+        {
+          "kind": "artifact_extension",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "pixelos_site",
+          "url": "https://pixelos.net/download/ginkgo"
+        },
+        {
+          "kind": "download_word",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "pixelos_site",
+          "url": "https://pixelos.net/download/ginkgo"
+        },
+        {
+          "kind": "changelog",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "pixelos_site",
+          "url": "https://pixelos.net/download/ginkgo"
+        },
+        {
+          "kind": "build_evidence_tier",
+          "detail": "artifact",
+          "source_id": "pixelos_site",
+          "url": "https://pixelos.net/download/ginkgo"
+        },
+        {
+          "kind": "family_resolved",
+          "detail": "PixelOS",
+          "source_id": "pixelos_site",
+          "url": "https://pixelos.net/download/ginkgo"
+        },
+        {
+          "kind": "evidence_score",
+          "detail": "16",
+          "source_id": "pixelos_site",
+          "url": "https://pixelos.net/download/ginkgo"
+        }
+      ],
+      "discovered_at": "2026-08-25T06:06:29+00:00",
+      "updated_at": "2026-08-25T06:06:29+00:00"
+    },
+    {
+      "id": "1356f138beae4ef5",
+      "name": "Pixel Experience",
+      "type": "custom_rom",
+      "device": "Redmi Note 8",
+      "codename": "ginkgo",
+      "android_version": "Android 13",
+      "rom_version": "13",
+      "build_date": "2024-01-25",
+      "status": "verified",
+      "source_url": "https://get.pixelexperience.org/Ginkgo",
+      "download_url": "https://get.pixelexperience.org/changelog/ginkgo/PixelExperience_ginkgo-13.0-20240125-2214-OFFICIAL.zip",
+      "source_id": "pe_dl",
+      "evidence": [
+        {
+          "kind": "registered_source",
+          "detail": "Pixel Experience Downloads (official_download, trust 100)",
+          "source_id": "pe_dl",
+          "url": "https://get.pixelexperience.org"
+        },
+        {
+          "kind": "codename_in_url",
+          "detail": "codename 'ginkgo' in URL path",
+          "source_id": "pe_dl",
+          "url": "https://get.pixelexperience.org/Ginkgo"
+        },
+        {
+          "kind": "device_name_match",
+          "detail": "device name 'Redmi Note 8' mentioned",
+          "source_id": "pe_dl",
+          "url": "https://get.pixelexperience.org/Ginkgo"
+        },
+        {
+          "kind": "artifact_link",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "pe_dl",
+          "url": "https://get.pixelexperience.org/Ginkgo"
+        },
+        {
+          "kind": "artifact_extension",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "pe_dl",
+          "url": "https://get.pixelexperience.org/Ginkgo"
+        },
+        {
+          "kind": "checksum",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "pe_dl",
+          "url": "https://get.pixelexperience.org/Ginkgo"
+        },
+        {
+          "kind": "download_word",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "pe_dl",
+          "url": "https://get.pixelexperience.org/Ginkgo"
+        },
+        {
+          "kind": "changelog",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "pe_dl",
+          "url": "https://get.pixelexperience.org/Ginkgo"
+        },
+        {
+          "kind": "build_evidence_tier",
+          "detail": "artifact",
+          "source_id": "pe_dl",
+          "url": "https://get.pixelexperience.org/Ginkgo"
+        },
+        {
+          "kind": "family_resolved",
+          "detail": "Pixel Experience",
+          "source_id": "pe_dl",
+          "url": "https://get.pixelexperience.org/Ginkgo"
+        },
+        {
+          "kind": "evidence_score",
+          "detail": "17",
+          "source_id": "pe_dl",
+          "url": "https://get.pixelexperience.org/Ginkgo"
+        }
+      ],
+      "discovered_at": "2026-08-25T06:06:29+00:00",
+      "updated_at": "2026-08-25T06:06:29+00:00"
+    },
+    {
+      "id": "f7af5c95c260d9a1",
+      "name": "LineageOS",
+      "type": "custom_rom",
+      "device": "Redmi Note 7 Pro",
+      "codename": "violet",
+      "android_version": "Android 16",
+      "rom_version": "23.2",
+      "build_date": "2026-08-19",
+      "status": "verified",
+      "source_url": "https://download.lineageos.org/api/v2/devices/violet/builds",
+      "download_url": "https://mirrorbits.lineageos.org/full/violet/20260819/lineage-23.2-20260819-nightly-violet-signed.zip",
+      "source_id": "lineageos_dl",
+      "evidence": [
+        {
+          "kind": "registered_source",
+          "detail": "LineageOS Downloads (official_download, trust 100)",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org"
+        },
+        {
+          "kind": "codename_in_url",
+          "detail": "codename 'violet' in URL path",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/violet/builds"
+        },
+        {
+          "kind": "artifact_link",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/violet/builds"
+        },
+        {
+          "kind": "artifact_extension",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/violet/builds"
+        },
+        {
+          "kind": "build_channel",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/violet/builds"
+        },
+        {
+          "kind": "build_evidence_tier",
+          "detail": "artifact",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/violet/builds"
+        },
+        {
+          "kind": "family_resolved",
+          "detail": "LineageOS",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/violet/builds"
+        },
+        {
+          "kind": "evidence_score",
+          "detail": "14",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/violet/builds"
+        }
+      ],
+      "discovered_at": "2026-08-25T06:06:53+00:00",
+      "updated_at": "2026-08-25T06:06:53+00:00"
+    },
+    {
+      "id": "7d53da29b61d551e",
+      "name": "PixelOS",
+      "type": "custom_rom",
+      "device": "Redmi Note 7 Pro",
+      "codename": "violet",
+      "android_version": "Android 13",
+      "rom_version": "13.0",
+      "build_date": "2023-10-02",
+      "status": "verified",
+      "source_url": "https://pixelos.net/download/violet",
+      "download_url": "https://sourceforge.net/projects/pixelos-releases/files/thirteen/violet/PixelOS_violet-13.0-20231002-0528.zip",
+      "source_id": "pixelos_site",
+      "evidence": [
+        {
+          "kind": "registered_source",
+          "detail": "PixelOS (official_project, trust 96)",
+          "source_id": "pixelos_site",
+          "url": "https://pixelos.net"
+        },
+        {
+          "kind": "codename_in_url",
+          "detail": "codename 'violet' in URL path",
+          "source_id": "pixelos_site",
+          "url": "https://pixelos.net/download/violet"
+        },
+        {
+          "kind": "device_name_match",
+          "detail": "device name 'Redmi Note 7 Pro' mentioned",
+          "source_id": "pixelos_site",
+          "url": "https://pixelos.net/download/violet"
+        },
+        {
+          "kind": "artifact_link",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "pixelos_site",
+          "url": "https://pixelos.net/download/violet"
+        },
+        {
+          "kind": "artifact_extension",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "pixelos_site",
+          "url": "https://pixelos.net/download/violet"
+        },
+        {
+          "kind": "download_word",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "pixelos_site",
+          "url": "https://pixelos.net/download/violet"
+        },
+        {
+          "kind": "changelog",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "pixelos_site",
+          "url": "https://pixelos.net/download/violet"
+        },
+        {
+          "kind": "build_evidence_tier",
+          "detail": "artifact",
+          "source_id": "pixelos_site",
+          "url": "https://pixelos.net/download/violet"
+        },
+        {
+          "kind": "family_resolved",
+          "detail": "PixelOS",
+          "source_id": "pixelos_site",
+          "url": "https://pixelos.net/download/violet"
+        },
+        {
+          "kind": "evidence_score",
+          "detail": "16",
+          "source_id": "pixelos_site",
+          "url": "https://pixelos.net/download/violet"
+        }
+      ],
+      "discovered_at": "2026-08-25T06:06:53+00:00",
+      "updated_at": "2026-08-25T06:06:53+00:00"
+    },
+    {
+      "id": "80adf4867cd6f346",
+      "name": "Pixel Experience",
+      "type": "custom_rom",
+      "device": "Redmi Note 7 Pro",
+      "codename": "violet",
+      "android_version": "Android 13",
+      "rom_version": "13",
+      "build_date": "2024-01-27",
+      "status": "verified",
+      "source_url": "https://get.pixelexperience.org/violet",
+      "download_url": "https://get.pixelexperience.org/changelog/violet/PixelExperience_violet-13.0-20240127-0711-OFFICIAL.zip",
+      "source_id": "pe_dl",
+      "evidence": [
+        {
+          "kind": "registered_source",
+          "detail": "Pixel Experience Downloads (official_download, trust 100)",
+          "source_id": "pe_dl",
+          "url": "https://get.pixelexperience.org"
+        },
+        {
+          "kind": "codename_in_url",
+          "detail": "codename 'violet' in URL path",
+          "source_id": "pe_dl",
+          "url": "https://get.pixelexperience.org/violet"
+        },
+        {
+          "kind": "device_name_match",
+          "detail": "device name 'Redmi Note 7 Pro' mentioned",
+          "source_id": "pe_dl",
+          "url": "https://get.pixelexperience.org/violet"
+        },
+        {
+          "kind": "artifact_link",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "pe_dl",
+          "url": "https://get.pixelexperience.org/violet"
+        },
+        {
+          "kind": "artifact_extension",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "pe_dl",
+          "url": "https://get.pixelexperience.org/violet"
+        },
+        {
+          "kind": "checksum",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "pe_dl",
+          "url": "https://get.pixelexperience.org/violet"
+        },
+        {
+          "kind": "download_word",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "pe_dl",
+          "url": "https://get.pixelexperience.org/violet"
+        },
+        {
+          "kind": "changelog",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "pe_dl",
+          "url": "https://get.pixelexperience.org/violet"
+        },
+        {
+          "kind": "build_evidence_tier",
+          "detail": "artifact",
+          "source_id": "pe_dl",
+          "url": "https://get.pixelexperience.org/violet"
+        },
+        {
+          "kind": "family_resolved",
+          "detail": "Pixel Experience",
+          "source_id": "pe_dl",
+          "url": "https://get.pixelexperience.org/violet"
+        },
+        {
+          "kind": "evidence_score",
+          "detail": "17",
+          "source_id": "pe_dl",
+          "url": "https://get.pixelexperience.org/violet"
+        }
+      ],
+      "discovered_at": "2026-08-25T06:06:53+00:00",
+      "updated_at": "2026-08-25T06:06:53+00:00"
+    },
+    {
+      "id": "72e3180ae80cdf6c",
+      "name": "Pixel Experience",
+      "type": "custom_rom",
+      "device": "Redmi Note 7",
+      "codename": "lavender",
+      "android_version": "Android 13",
+      "rom_version": "13",
+      "build_date": "2024-01-26",
+      "status": "verified",
+      "source_url": "https://get.pixelexperience.org/Lavender",
+      "download_url": "https://get.pixelexperience.org/changelog/lavender/PixelExperience_lavender-13.0-20240126-0702-OFFICIAL.zip",
+      "source_id": "pe_dl",
+      "evidence": [
+        {
+          "kind": "registered_source",
+          "detail": "Pixel Experience Downloads (official_download, trust 100)",
+          "source_id": "pe_dl",
+          "url": "https://get.pixelexperience.org"
+        },
+        {
+          "kind": "codename_in_url",
+          "detail": "codename 'lavender' in URL path",
+          "source_id": "pe_dl",
+          "url": "https://get.pixelexperience.org/Lavender"
+        },
+        {
+          "kind": "device_name_match",
+          "detail": "device name 'Redmi Note 7' mentioned",
+          "source_id": "pe_dl",
+          "url": "https://get.pixelexperience.org/Lavender"
+        },
+        {
+          "kind": "artifact_link",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "pe_dl",
+          "url": "https://get.pixelexperience.org/Lavender"
+        },
+        {
+          "kind": "artifact_extension",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "pe_dl",
+          "url": "https://get.pixelexperience.org/Lavender"
+        },
+        {
+          "kind": "checksum",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "pe_dl",
+          "url": "https://get.pixelexperience.org/Lavender"
+        },
+        {
+          "kind": "download_word",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "pe_dl",
+          "url": "https://get.pixelexperience.org/Lavender"
+        },
+        {
+          "kind": "changelog",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "pe_dl",
+          "url": "https://get.pixelexperience.org/Lavender"
+        },
+        {
+          "kind": "build_evidence_tier",
+          "detail": "artifact",
+          "source_id": "pe_dl",
+          "url": "https://get.pixelexperience.org/Lavender"
+        },
+        {
+          "kind": "family_resolved",
+          "detail": "Pixel Experience",
+          "source_id": "pe_dl",
+          "url": "https://get.pixelexperience.org/Lavender"
+        },
+        {
+          "kind": "evidence_score",
+          "detail": "17",
+          "source_id": "pe_dl",
+          "url": "https://get.pixelexperience.org/Lavender"
+        }
+      ],
+      "discovered_at": "2026-08-25T06:07:12+00:00",
+      "updated_at": "2026-08-25T06:07:12+00:00"
+    },
+    {
+      "id": "a5780cdd48ce506e",
+      "name": "Pixel Experience",
+      "type": "custom_rom",
+      "device": "Redmi Note 6 Pro",
+      "codename": "tulip",
+      "android_version": "Android 13",
+      "rom_version": "13",
+      "build_date": "2023-03-28",
+      "status": "verified",
+      "source_url": "https://get.pixelexperience.org/Tulip",
+      "download_url": "https://get.pixelexperience.org/changelog/tulip/PixelExperience_tulip-13.0-20230328-0738-OFFICIAL.zip",
+      "source_id": "pe_dl",
+      "evidence": [
+        {
+          "kind": "registered_source",
+          "detail": "Pixel Experience Downloads (official_download, trust 100)",
+          "source_id": "pe_dl",
+          "url": "https://get.pixelexperience.org"
+        },
+        {
+          "kind": "codename_in_url",
+          "detail": "codename 'tulip' in URL path",
+          "source_id": "pe_dl",
+          "url": "https://get.pixelexperience.org/Tulip"
+        },
+        {
+          "kind": "device_name_match",
+          "detail": "device name 'Redmi Note 6 Pro' mentioned",
+          "source_id": "pe_dl",
+          "url": "https://get.pixelexperience.org/Tulip"
+        },
+        {
+          "kind": "artifact_link",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "pe_dl",
+          "url": "https://get.pixelexperience.org/Tulip"
+        },
+        {
+          "kind": "artifact_extension",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "pe_dl",
+          "url": "https://get.pixelexperience.org/Tulip"
+        },
+        {
+          "kind": "checksum",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "pe_dl",
+          "url": "https://get.pixelexperience.org/Tulip"
+        },
+        {
+          "kind": "download_word",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "pe_dl",
+          "url": "https://get.pixelexperience.org/Tulip"
+        },
+        {
+          "kind": "changelog",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "pe_dl",
+          "url": "https://get.pixelexperience.org/Tulip"
+        },
+        {
+          "kind": "build_evidence_tier",
+          "detail": "artifact",
+          "source_id": "pe_dl",
+          "url": "https://get.pixelexperience.org/Tulip"
+        },
+        {
+          "kind": "family_resolved",
+          "detail": "Pixel Experience",
+          "source_id": "pe_dl",
+          "url": "https://get.pixelexperience.org/Tulip"
+        },
+        {
+          "kind": "evidence_score",
+          "detail": "17",
+          "source_id": "pe_dl",
+          "url": "https://get.pixelexperience.org/Tulip"
+        }
+      ],
+      "discovered_at": "2026-08-25T06:07:38+00:00",
+      "updated_at": "2026-08-25T06:07:38+00:00"
+    },
+    {
+      "id": "191f3c23807d3f48",
+      "name": "PixelOS",
+      "type": "custom_rom",
+      "device": "Redmi Note 5 Pro",
+      "codename": "whyred",
+      "android_version": "Android 12",
+      "rom_version": "12.1",
+      "build_date": "2022-08-12",
+      "status": "verified",
+      "source_url": "https://pixelos.net/download/whyred",
+      "download_url": "https://sourceforge.net/projects/pixelos-releases/files/twelve/whyred/PixelOS_whyred-12.1-20220812-1527.zip",
+      "source_id": "pixelos_site",
+      "evidence": [
+        {
+          "kind": "registered_source",
+          "detail": "PixelOS (official_project, trust 96)",
+          "source_id": "pixelos_site",
+          "url": "https://pixelos.net"
+        },
+        {
+          "kind": "codename_in_url",
+          "detail": "codename 'whyred' in URL path",
+          "source_id": "pixelos_site",
+          "url": "https://pixelos.net/download/whyred"
+        },
+        {
+          "kind": "device_name_match",
+          "detail": "device name 'Redmi Note 5 Pro' mentioned",
+          "source_id": "pixelos_site",
+          "url": "https://pixelos.net/download/whyred"
+        },
+        {
+          "kind": "artifact_link",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "pixelos_site",
+          "url": "https://pixelos.net/download/whyred"
+        },
+        {
+          "kind": "artifact_extension",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "pixelos_site",
+          "url": "https://pixelos.net/download/whyred"
+        },
+        {
+          "kind": "download_word",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "pixelos_site",
+          "url": "https://pixelos.net/download/whyred"
+        },
+        {
+          "kind": "changelog",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "pixelos_site",
+          "url": "https://pixelos.net/download/whyred"
+        },
+        {
+          "kind": "build_evidence_tier",
+          "detail": "artifact",
+          "source_id": "pixelos_site",
+          "url": "https://pixelos.net/download/whyred"
+        },
+        {
+          "kind": "family_resolved",
+          "detail": "PixelOS",
+          "source_id": "pixelos_site",
+          "url": "https://pixelos.net/download/whyred"
+        },
+        {
+          "kind": "evidence_score",
+          "detail": "16",
+          "source_id": "pixelos_site",
+          "url": "https://pixelos.net/download/whyred"
+        }
+      ],
+      "discovered_at": "2026-08-25T06:07:59+00:00",
+      "updated_at": "2026-08-25T06:07:59+00:00"
+    },
+    {
+      "id": "51f0e283ab4bbfa8",
+      "name": "Pixel Experience",
+      "type": "custom_rom",
+      "device": "Redmi Note 5 Pro",
+      "codename": "whyred",
+      "android_version": "Android 13",
+      "rom_version": "13",
+      "build_date": "2023-03-25",
+      "status": "verified",
+      "source_url": "https://get.pixelexperience.org/whyred",
+      "download_url": "https://get.pixelexperience.org/changelog/whyred/PixelExperience_whyred-13.0-20230325-0756-OFFICIAL.zip",
+      "source_id": "pe_dl",
+      "evidence": [
+        {
+          "kind": "registered_source",
+          "detail": "Pixel Experience Downloads (official_download, trust 100)",
+          "source_id": "pe_dl",
+          "url": "https://get.pixelexperience.org"
+        },
+        {
+          "kind": "codename_in_url",
+          "detail": "codename 'whyred' in URL path",
+          "source_id": "pe_dl",
+          "url": "https://get.pixelexperience.org/whyred"
+        },
+        {
+          "kind": "artifact_link",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "pe_dl",
+          "url": "https://get.pixelexperience.org/whyred"
+        },
+        {
+          "kind": "artifact_extension",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "pe_dl",
+          "url": "https://get.pixelexperience.org/whyred"
+        },
+        {
+          "kind": "checksum",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "pe_dl",
+          "url": "https://get.pixelexperience.org/whyred"
+        },
+        {
+          "kind": "download_word",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "pe_dl",
+          "url": "https://get.pixelexperience.org/whyred"
+        },
+        {
+          "kind": "changelog",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "pe_dl",
+          "url": "https://get.pixelexperience.org/whyred"
+        },
+        {
+          "kind": "build_evidence_tier",
+          "detail": "artifact",
+          "source_id": "pe_dl",
+          "url": "https://get.pixelexperience.org/whyred"
+        },
+        {
+          "kind": "family_resolved",
+          "detail": "Pixel Experience",
+          "source_id": "pe_dl",
+          "url": "https://get.pixelexperience.org/whyred"
+        },
+        {
+          "kind": "evidence_score",
+          "detail": "15",
+          "source_id": "pe_dl",
+          "url": "https://get.pixelexperience.org/whyred"
+        }
+      ],
+      "discovered_at": "2026-08-25T06:07:59+00:00",
+      "updated_at": "2026-08-25T06:07:59+00:00"
+    },
+    {
+      "id": "dfc0d3a0e1afc59e",
+      "name": "Pixel Experience",
+      "type": "custom_rom",
+      "device": "Redmi Note 5",
+      "codename": "vince",
+      "android_version": "Android 12",
+      "rom_version": "12",
+      "build_date": "2022-07-08",
+      "status": "verified",
+      "source_url": "https://get.pixelexperience.org/Vince",
+      "download_url": "https://get.pixelexperience.org/changelog/vince/PixelExperience_vince-12.1-20220708-2045-OFFICIAL.zip",
+      "source_id": "pe_dl",
+      "evidence": [
+        {
+          "kind": "registered_source",
+          "detail": "Pixel Experience Downloads (official_download, trust 100)",
+          "source_id": "pe_dl",
+          "url": "https://get.pixelexperience.org"
+        },
+        {
+          "kind": "codename_in_url",
+          "detail": "codename 'vince' in URL path",
+          "source_id": "pe_dl",
+          "url": "https://get.pixelexperience.org/Vince"
+        },
+        {
+          "kind": "device_name_match",
+          "detail": "device name 'Redmi Note 5' mentioned",
+          "source_id": "pe_dl",
+          "url": "https://get.pixelexperience.org/Vince"
+        },
+        {
+          "kind": "artifact_link",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "pe_dl",
+          "url": "https://get.pixelexperience.org/Vince"
+        },
+        {
+          "kind": "artifact_extension",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "pe_dl",
+          "url": "https://get.pixelexperience.org/Vince"
+        },
+        {
+          "kind": "checksum",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "pe_dl",
+          "url": "https://get.pixelexperience.org/Vince"
+        },
+        {
+          "kind": "download_word",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "pe_dl",
+          "url": "https://get.pixelexperience.org/Vince"
+        },
+        {
+          "kind": "changelog",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "pe_dl",
+          "url": "https://get.pixelexperience.org/Vince"
+        },
+        {
+          "kind": "build_evidence_tier",
+          "detail": "artifact",
+          "source_id": "pe_dl",
+          "url": "https://get.pixelexperience.org/Vince"
+        },
+        {
+          "kind": "family_resolved",
+          "detail": "Pixel Experience",
+          "source_id": "pe_dl",
+          "url": "https://get.pixelexperience.org/Vince"
+        },
+        {
+          "kind": "evidence_score",
+          "detail": "17",
+          "source_id": "pe_dl",
+          "url": "https://get.pixelexperience.org/Vince"
+        }
+      ],
+      "discovered_at": "2026-08-25T06:08:17+00:00",
+      "updated_at": "2026-08-25T06:08:17+00:00"
+    },
+    {
+      "id": "95409786e3332c8f",
+      "name": "PixelOS",
+      "type": "custom_rom",
+      "device": "Redmi Note 4",
+      "codename": "mido",
+      "android_version": "Android 14",
+      "rom_version": "14.0",
+      "build_date": "2023-11-15",
+      "status": "verified",
+      "source_url": "https://pixelos.net/download/mido",
+      "download_url": "https://sourceforge.net/projects/pixelos-releases/files/fourteen/mido/PixelOS_mido-14.0-20231115-1337.zip",
+      "source_id": "pixelos_site",
+      "evidence": [
+        {
+          "kind": "registered_source",
+          "detail": "PixelOS (official_project, trust 96)",
+          "source_id": "pixelos_site",
+          "url": "https://pixelos.net"
+        },
+        {
+          "kind": "codename_in_url",
+          "detail": "codename 'mido' in URL path",
+          "source_id": "pixelos_site",
+          "url": "https://pixelos.net/download/mido"
+        },
+        {
+          "kind": "device_name_match",
+          "detail": "device name 'Redmi Note 4' mentioned",
+          "source_id": "pixelos_site",
+          "url": "https://pixelos.net/download/mido"
+        },
+        {
+          "kind": "artifact_link",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "pixelos_site",
+          "url": "https://pixelos.net/download/mido"
+        },
+        {
+          "kind": "artifact_extension",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "pixelos_site",
+          "url": "https://pixelos.net/download/mido"
+        },
+        {
+          "kind": "download_word",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "pixelos_site",
+          "url": "https://pixelos.net/download/mido"
+        },
+        {
+          "kind": "changelog",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "pixelos_site",
+          "url": "https://pixelos.net/download/mido"
+        },
+        {
+          "kind": "build_evidence_tier",
+          "detail": "artifact",
+          "source_id": "pixelos_site",
+          "url": "https://pixelos.net/download/mido"
+        },
+        {
+          "kind": "family_resolved",
+          "detail": "PixelOS",
+          "source_id": "pixelos_site",
+          "url": "https://pixelos.net/download/mido"
+        },
+        {
+          "kind": "evidence_score",
+          "detail": "16",
+          "source_id": "pixelos_site",
+          "url": "https://pixelos.net/download/mido"
+        }
+      ],
+      "discovered_at": "2026-08-25T06:08:34+00:00",
+      "updated_at": "2026-08-25T06:08:34+00:00"
+    },
+    {
+      "id": "df533ec2b0e0def2",
+      "name": "Pixel Experience",
+      "type": "custom_rom",
+      "device": "Redmi Note 4",
+      "codename": "mido",
+      "android_version": "Android 13",
+      "rom_version": "13",
+      "build_date": "2023-08-12",
+      "status": "verified",
+      "source_url": "https://get.pixelexperience.org/mido",
+      "download_url": "https://sourceforge.net/projects/nranjan-17/files/RETROFIT%20OrangeFox/OrangeFox-R11.1-A12-RETROFIT-Unofficial-mido.zip",
+      "source_id": "pe_dl",
+      "evidence": [
+        {
+          "kind": "registered_source",
+          "detail": "Pixel Experience Downloads (official_download, trust 100)",
+          "source_id": "pe_dl",
+          "url": "https://get.pixelexperience.org"
+        },
+        {
+          "kind": "codename_in_url",
+          "detail": "codename 'mido' in URL path",
+          "source_id": "pe_dl",
+          "url": "https://get.pixelexperience.org/mido"
+        },
+        {
+          "kind": "device_name_match",
+          "detail": "device name 'Redmi Note 4' mentioned",
+          "source_id": "pe_dl",
+          "url": "https://get.pixelexperience.org/mido"
+        },
+        {
+          "kind": "artifact_link",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "pe_dl",
+          "url": "https://get.pixelexperience.org/mido"
+        },
+        {
+          "kind": "artifact_extension",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "pe_dl",
+          "url": "https://get.pixelexperience.org/mido"
+        },
+        {
+          "kind": "checksum",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "pe_dl",
+          "url": "https://get.pixelexperience.org/mido"
+        },
+        {
+          "kind": "download_word",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "pe_dl",
+          "url": "https://get.pixelexperience.org/mido"
+        },
+        {
+          "kind": "build_channel",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "pe_dl",
+          "url": "https://get.pixelexperience.org/mido"
+        },
+        {
+          "kind": "changelog",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "pe_dl",
+          "url": "https://get.pixelexperience.org/mido"
+        },
+        {
+          "kind": "build_evidence_tier",
+          "detail": "artifact",
+          "source_id": "pe_dl",
+          "url": "https://get.pixelexperience.org/mido"
+        },
+        {
+          "kind": "family_resolved",
+          "detail": "Pixel Experience",
+          "source_id": "pe_dl",
+          "url": "https://get.pixelexperience.org/mido"
+        },
+        {
+          "kind": "evidence_score",
+          "detail": "17",
+          "source_id": "pe_dl",
+          "url": "https://get.pixelexperience.org/mido"
+        }
+      ],
+      "discovered_at": "2026-08-25T06:08:34+00:00",
+      "updated_at": "2026-08-25T06:08:34+00:00"
+    }
+  ]
+}
