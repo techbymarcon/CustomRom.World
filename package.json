@@ -1,5 +1,6 @@
 {
   "name": "tanstack_start_ts",
+  "license": "Apache-2.0",
   "private": true,
   "sideEffects": false,
   "type": "module",

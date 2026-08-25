@@ -23,13 +23,17 @@ ALLOWED_FAMILIES: tuple[str, ...] = (
     "PixelOS", "DerpFest", "Project Elixir", "RisingOS", "VoltageOS",
     "SuperiorOS", "Resurrection Remix", "Havoc-OS", "Paranoid Android",
     "CalyxOS", "GrapheneOS", "/e/OS", "iodeOS", "DivestOS",
+    "Nameless-AOSP", "ProjectMatrixx", "AncientOS", "Infinity-X",
+    "Pixel Extended", "AlphaDroid", "ProjectBlaze", "MoKee", "AICP",
+    "OmniROM", "Xiaomi.eu", "Neoteric-OS", "Jaguar ROM",
     "One UI", "HyperOS", "MIUI", "ColorOS", "OxygenOS", "Realme UI",
-    "Funtouch OS", "OriginOS", "Nothing OS", "MagicOS",
+    "Funtouch OS", "OriginOS", "Nothing OS", "MagicOS", "ZenUI", "Flyme",
 )
 
 SKIN_FAMILIES = frozenset({
     "One UI", "HyperOS", "MIUI", "ColorOS", "OxygenOS", "Realme UI",
-    "Funtouch OS", "OriginOS", "Nothing OS", "MagicOS",
+    "Funtouch OS", "OriginOS", "Nothing OS", "MagicOS", "ZenUI", "Flyme",
+    "Xiaomi.eu",
 })
 
 

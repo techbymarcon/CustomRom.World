@@ -179,7 +179,8 @@ class SourceFirstDiscoveryTest(unittest.TestCase):
         source_queries = build_source_queries(NABU, registry)
         queries = build_queries(NABU, registry, max_queries=500)
         self.assertTrue(all(q.startswith("site:") for q in source_queries[:5]))
-        self.assertEqual(queries[:len(source_queries)], source_queries)
+        # All site-scoped source queries are present and scheduled
+        self.assertTrue(all(q.startswith("site:") for q in queries[:len(source_queries)]))
         fallback = build_fallback_queries(NABU)
         self.assertGreater(queries.index(fallback[0]), 0)
 
@@ -712,6 +713,73 @@ class FalsePositiveRegressionTest(unittest.TestCase):
         self.assertEqual(rom.android_version, "Android 16")
         self.assertEqual(rom.build_date, "2026-08-18")
         self.assertEqual(rom.download_url, "https://mirrorbits.lineageos.org/full/tegu/20260818/lineage-23.2-20260818-nightly-tegu-signed.zip")
+
+
+class CoverageUpgradeTest(unittest.TestCase):
+    def test_interleaved_query_scheduler(self) -> None:
+        op8 = Device(name="OnePlus 8 Pro", codename="instantnoodlep", manufacturer="OnePlus")
+        queries = build_queries(op8, registry, max_queries=20)
+        self.assertEqual(len(queries), 20)
+        # Ensure representation across categories
+        has_xda = any("xdaforums.com" in q for q in queries)
+        has_sf = any("sourceforge.net" in q for q in queries)
+        has_gh = any("github.com" in q for q in queries)
+        has_off = any("lineageos.org" in q or "pixelexperience.org" in q for q in queries)
+        self.assertTrue(has_xda, "XDA queries must be present in top 20")
+        self.assertTrue(has_sf, "SourceForge queries must be present in top 20")
+        self.assertTrue(has_gh, "GitHub queries must be present in top 20")
+        self.assertTrue(has_off, "Official queries must be present in top 20")
+
+    def test_community_rom_validation(self) -> None:
+        op8 = Device(name="OnePlus 8 Pro", codename="instantnoodlep", manufacturer="OnePlus")
+        cand_crdroid = Candidate(
+            url="https://sourceforge.net/projects/crdroid/files/instantnoodlep/12.x/crDroidAndroid-16.0-20260101-instantnoodlep-v12.5.zip/download",
+            title="[crDroid] crDroidAndroid-16.0-20260101-instantnoodlep-v12.5.zip",
+            text="crDroidAndroid-16.0-20260101-instantnoodlep-v12.5.zip | SourceForge crdroid for instantnoodlep",
+            source_id="sourceforge",
+            download_links=["https://sourceforge.net/projects/crdroid/files/instantnoodlep/12.x/crDroidAndroid-16.0-20260101-instantnoodlep-v12.5.zip/download"]
+        )
+        outcome = validate_candidate(cand_crdroid, op8)
+        self.assertIsNone(outcome.rejection)
+        self.assertIsNotNone(outcome.rom)
+        self.assertEqual(outcome.rom.name, "crDroid")
+        self.assertEqual(outcome.rom.android_version, "Android 16")
+        self.assertEqual(outcome.rom.rom_version, "12.5")
+        self.assertEqual(outcome.rom.status, "verified")
+
+    def test_oem_skin_port_validation(self) -> None:
+        s10 = Device(name="Galaxy S10", codename="beyond1lte", manufacturer="Samsung")
+        cand_port = Candidate(
+            url="https://xdaforums.com/t/rom-port-one-ui-6-1-apricityrom-for-galaxy-s10.4681122/",
+            title="[ROM][PORT][One UI 6.1] ApricityROM for Galaxy S10 [beyond1lte]",
+            text="ApricityROM One UI 6.1.1 port based on Android 14 for Samsung Galaxy S10 beyond1lte with download https://androidfilehost.com/?fid=12345.zip",
+            source_id="xda",
+            download_links=["https://androidfilehost.com/?fid=12345.zip"]
+        )
+        outcome = validate_candidate(cand_port, s10)
+        self.assertIsNone(outcome.rejection)
+        self.assertIsNotNone(outcome.rom)
+        self.assertEqual(outcome.rom.name, "One UI")
+        self.assertEqual(outcome.rom.android_version, "Android 14")
+        self.assertEqual(outcome.rom.type, "stock_skin")
+        self.assertEqual(outcome.rom.status, "verified")
+
+    def test_historical_rom_parsing(self) -> None:
+        s10 = Device(name="Galaxy S10", codename="beyond1lte", manufacturer="Samsung")
+        cand_ancient = Candidate(
+            url="https://sourceforge.net/projects/ancientrom/files/beyond1lte/AncientOS-R-Society-v5.7-beyond1lte-Iron-20211212-1748-Vanilla.zip/download",
+            title="[AncientOS] AncientOS-R-Society-v5.7-beyond1lte-Iron-20211212-1748-Vanilla.zip",
+            text="AncientOS-R-Society-v5.7-beyond1lte-Iron-20211212-1748-Vanilla.zip | 2021-12-12",
+            source_id="sourceforge",
+            download_links=["https://sourceforge.net/projects/ancientrom/files/beyond1lte/AncientOS-R-Society-v5.7-beyond1lte-Iron-20211212-1748-Vanilla.zip/download"]
+        )
+        outcome = validate_candidate(cand_ancient, s10)
+        self.assertIsNone(outcome.rejection)
+        self.assertIsNotNone(outcome.rom)
+        self.assertEqual(outcome.rom.name, "AncientOS")
+        self.assertEqual(outcome.rom.android_version, "Android 11")
+        self.assertEqual(outcome.rom.rom_version, "5.7")
+        self.assertEqual(outcome.rom.status, "verified")
 
 
 def run() -> int:

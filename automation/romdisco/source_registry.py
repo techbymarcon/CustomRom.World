@@ -264,6 +264,9 @@ SOURCES: tuple[Source, ...] = (
            "https://nothing.community", 75, family="Nothing OS", manufacturers=("Nothing",)),
 
     # ---------------- Development / community ----------------
+    Source("omni_site", "OmniROM", "official_project", "omnirom.org", "https://omnirom.org", 95, family="OmniROM"),
+    Source("neoteric_site", "Neoteric-OS", "official_project", "neoteric-os.org", "https://neoteric-os.org", 90, family="Neoteric-OS"),
+
     Source("xda", "XDA Forums", "community", "xdaforums.com", "https://xdaforums.com", 70),
     Source("fourpda", "4PDA", "community", "4pda.to", "https://4pda.to", 55),
     Source("github", "GitHub", "community", "github.com", "https://github.com", 50),
@@ -329,14 +332,23 @@ _DEVICE_URLS: dict[str, tuple[str, ...]] = {
 
 #: Source-specific search patterns (device pages, threads, project/file pages).
 _QUERY_TEMPLATES: dict[str, tuple[str, ...]] = {
-    "xda": ("site:xdaforums.com {code} ROM",
-            "site:xdaforums.com {q} {code}",
-            "site:xdaforums.com {code} firmware download"),
+    "xda": (
+        "site:xdaforums.com {code} [ROM]",
+        "site:xdaforums.com {q} {code} [ROM]",
+        "site:xdaforums.com {code} [PORT]",
+        "site:xdaforums.com {code} [UNOFFICIAL]",
+        "site:xdaforums.com {code} ROM",
+    ),
     "fourpda": ("site:4pda.to {q} {code}",),
-    "sourceforge": ("site:sourceforge.net {code} files",
-                    "site:sourceforge.net {code} rom"),
+    "sourceforge": (
+        "site:sourceforge.net {code} files",
+        "site:sourceforge.net {code} rom",
+    ),
     "afh": ("site:androidfilehost.com {code}",),
-    "github": ("site:github.com {code} device tree releases",),
+    "github": (
+        "site:github.com {code} releases",
+        "site:github.com {code} ROM zip",
+    ),
     "gitlab": ("site:gitlab.com {code} android",),
     "samfw": ("site:samfw.com {q} firmware",),
     "sammobile": ("site:sammobile.com/firmwares {q}",),

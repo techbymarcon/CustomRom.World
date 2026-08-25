@@ -31,7 +31,8 @@ from urllib.parse import urlsplit
 
 from .extract import (find_artifacts, normalize_family, parse_android_version,
                       parse_build_date, parse_rom_version)
-from .models import Candidate, Device, Evidence, Rejection, Rom, now_iso, rom_type_for_family
+from .models import (Candidate, Device, Evidence, Rejection, Rom,
+                     SKIN_FAMILIES, now_iso, rom_type_for_family)
 from .source_registry import Source, SourceRegistry, registry as default_registry
 
 REJECT_PATTERNS: tuple[tuple[re.Pattern[str], str], ...] = (
@@ -360,17 +361,20 @@ def validate_candidate(candidate: Candidate, device: Device, *,
 
     verified = False
     if source.kind != "mirror" and source.source_class not in {"ARCHIVE_MIRROR", "DOWNLOAD_HOST"}:
-        if tier == "artifact" and source.can_verify:
+        if tier == "artifact" and (source.can_verify or source.trust >= 65):
             verified = True
         elif tier == "device_download_page":
             verified = source.can_verify
         elif tier == "release_page":
-            verified = source.can_verify
+            verified = source.can_verify or source.trust >= 68
+
+    is_port = bool(re.search(r"\bport(?:ed)?\b|\[PORT\]", f"{candidate.title} {candidate.text}", re.I))
+    rom_type = "stock_skin" if (family in SKIN_FAMILIES or is_port) else "custom_rom"
 
     rom = Rom(
         id=Rom.make_id(device.codename, family, rom_version, android_version, build_date),
         name=family,
-        type=rom_type_for_family(family),
+        type=rom_type,
         device=device.name,
         codename=device.codename,
         android_version=android_version,

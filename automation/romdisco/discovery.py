@@ -136,13 +136,68 @@ def build_fallback_queries(device: Device) -> list[str]:
 
 def build_queries(device: Device, reg: SourceRegistry, *,
                   max_queries: int = 60, include_fallback: bool = True) -> list[str]:
-    """Source-scoped queries first, generic fallback last."""
-    queries = build_source_queries(device, reg)
+    """Interleaved source scheduling across official, XDA, SourceForge, and community."""
+    dev_mfg = device.manufacturer.lower().strip()
+    buckets: dict[str, list[str]] = {
+        "official": [],
+        "xda": [],
+        "sourceforge": [],
+        "community": [],
+        "fallback": [],
+    }
+
+    for source in sorted(reg.sources, key=lambda s: -s.authority):
+        if source.manufacturers:
+            allowed = {m.lower().strip() for m in source.manufacturers}
+            if dev_mfg not in allowed:
+                continue
+        if source.source_class in {"DOWNLOAD_HOST", "ARCHIVE_MIRROR"} and not source.query_templates:
+            continue
+
+        if source.id in {"xda", "fourpda"}:
+            b_key = "xda"
+        elif source.id in {"sourceforge", "afh", "crdroid_sf", "evox_sf", "derpfest_sf", "nameless_sf", "matrixx_sf", "ancient_sf", "xiaomi_eu_sf", "pixelextended_sf", "alphadroid_sf", "infinity_sf", "mokee_sf", "aicp_sf"}:
+            b_key = "sourceforge"
+        elif source.id in {"github", "gitlab", "archive", "wayback"}:
+            b_key = "community"
+        else:
+            b_key = "official"
+
+        templates = source.query_templates or (
+            ("site:{host}{prefix} {code} {family}",) if source.family
+            else ("site:{host}{prefix} {q} {code}",)
+        )
+        for template in templates:
+            query = _fmt(template.replace("{family}", source.family or ""), device, source)
+            query = re.sub(r"\s+", " ", query).strip()
+            if query and query not in buckets[b_key]:
+                buckets[b_key].append(query)
+
     if include_fallback:
-        for query in build_fallback_queries(device):
-            if query not in queries:
-                queries.append(query)
-    return queries[:max_queries]
+        for q in build_fallback_queries(device):
+            if q not in buckets["fallback"]:
+                buckets["fallback"].append(q)
+
+    # Round-robin interleaving across source categories so every category gets fair allocation
+    interleaved: list[str] = []
+    source_keys = ["official", "xda", "sourceforge", "community"]
+    idx = 0
+    while any(idx < len(buckets[k]) for k in source_keys) and len(interleaved) < max_queries:
+        for k in source_keys:
+            if idx < len(buckets[k]) and len(interleaved) < max_queries:
+                q = buckets[k][idx]
+                if q not in interleaved:
+                    interleaved.append(q)
+        idx += 1
+
+    if include_fallback:
+        for q in build_fallback_queries(device):
+            if len(interleaved) >= max_queries:
+                break
+            if q not in interleaved:
+                interleaved.append(q)
+
+    return interleaved[:max_queries]
 
 
 def build_plan(device: Device, reg: SourceRegistry, *, max_queries: int = 60,
@@ -177,6 +232,8 @@ def discover(device: Device, *, backend: SearchBackend | None = None,
              include_fallback: bool = True,
              max_probes: int = 60) -> tuple[list[Candidate], list[str]]:
     """Return (candidates, discarded_unregistered_urls)."""
+    from .sourceforge import fetch_sourceforge_candidates
+
     backend = backend or default_backend()
     reg = reg or default_registry
     plan = build_plan(device, reg, max_queries=max_queries,
@@ -185,12 +242,15 @@ def discover(device: Device, *, backend: SearchBackend | None = None,
     by_url: dict[str, Candidate] = {}
     discarded: list[str] = []
 
-    # 1. direct source pages (probed concurrently for speed)
-    if probe and plan.probe_urls:
-        urls_to_probe = plan.probe_urls[:max_probes]
-        workers = min(10, len(urls_to_probe))
-        with concurrent.futures.ThreadPoolExecutor(max_workers=workers) as executor:
-            future_to_url = {executor.submit(fetch_page, u): u for u in urls_to_probe}
+    # 1. direct source pages & SourceForge RSS probes (probed concurrently for speed)
+    if probe:
+        # 1a. Probe direct URL templates and SourceForge RSS concurrently
+        with concurrent.futures.ThreadPoolExecutor(max_workers=16) as executor:
+            future_sf = executor.submit(fetch_sourceforge_candidates, device, 16, 3.0)
+            
+            urls_to_probe = plan.probe_urls[:max_probes] if plan.probe_urls else []
+            future_to_url = {executor.submit(fetch_page, u, 3.0): u for u in urls_to_probe}
+            
             for future in concurrent.futures.as_completed(future_to_url):
                 u = future_to_url[future]
                 try:
@@ -201,9 +261,16 @@ def discover(device: Device, *, backend: SearchBackend | None = None,
                     title, text = page
                     _add(by_url, reg, discarded, u, title, text, query="direct:source")
 
+            try:
+                sf_cands = future_sf.result()
+                for cand in sf_cands:
+                    by_url[cand.url] = cand
+            except Exception:
+                pass
+
     # 2./3. source-scoped queries, then generic fallback (concurrent for high performance)
     if plan.queries:
-        workers = min(6, len(plan.queries))
+        workers = min(12, len(plan.queries))
         with concurrent.futures.ThreadPoolExecutor(max_workers=workers) as executor:
             future_to_query = {executor.submit(backend.search, q, per_query): q for q in plan.queries}
             for future in concurrent.futures.as_completed(future_to_query):
