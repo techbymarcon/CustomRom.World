@@ -1,0 +1,509 @@
+{
+  "metadata": {
+    "schema_version": 2,
+    "generator": "romdisco",
+    "created_at": "2026-08-23T18:45:04+00:00",
+    "updated_at": "2026-08-25T07:17:39+00:00",
+    "counts": {
+      "devices": 497,
+      "roms": 281,
+      "sources": 4,
+      "verified": 281,
+      "candidates": 446
+    }
+  },
+  "devices": [
+    {
+      "name": "ASUS Zenfone 11 Ultra",
+      "codename": "AI2401",
+      "manufacturer": "Asus",
+      "aliases": [
+        "ASUS_AI2401",
+        "Zenfone 11 Ultra"
+      ],
+      "id": "asus:ai2401"
+    },
+    {
+      "name": "ASUS Zenfone 10",
+      "codename": "AI2302",
+      "manufacturer": "Asus",
+      "aliases": [
+        "ASUS_AI2302",
+        "Zenfone 10"
+      ],
+      "id": "asus:ai2302"
+    },
+    {
+      "name": "ASUS Zenfone 9",
+      "codename": "AI2202",
+      "manufacturer": "Asus",
+      "aliases": [
+        "ASUS_AI2202",
+        "Zenfone 9"
+      ],
+      "id": "asus:ai2202"
+    },
+    {
+      "name": "ASUS Zenfone 8",
+      "codename": "sake",
+      "manufacturer": "Asus",
+      "aliases": [
+        "ASUS_I006D",
+        "ZS590KS",
+        "Zenfone 8"
+      ],
+      "id": "asus:sake"
+    },
+    {
+      "name": "ASUS Zenfone 8 Flip",
+      "codename": "galileo",
+      "manufacturer": "Asus",
+      "aliases": [
+        "ASUS_I004D",
+        "ZS672KS",
+        "Zenfone 8 Flip"
+      ],
+      "id": "asus:galileo"
+    },
+    {
+      "name": "ASUS Zenfone 7 Pro",
+      "codename": "I002D_pro",
+      "manufacturer": "Asus",
+      "aliases": [
+        "ZS671KS",
+        "ASUS_I002D",
+        "Zenfone 7 Pro"
+      ],
+      "id": "asus:i002d_pro"
+    },
+    {
+      "name": "ASUS Zenfone 7",
+      "codename": "I002D",
+      "manufacturer": "Asus",
+      "aliases": [
+        "ZS670KS",
+        "ASUS_I002D",
+        "Zenfone 7"
+      ],
+      "id": "asus:i002d"
+    },
+    {
+      "name": "ASUS Zenfone 6",
+      "codename": "I01WD",
+      "manufacturer": "Asus",
+      "aliases": [
+        "ZS630KL",
+        "ASUS_I01WD",
+        "Zenfone 6"
+      ],
+      "id": "asus:i01wd"
+    },
+    {
+      "name": "ASUS ZenFone 5Z",
+      "codename": "ZS620KL",
+      "manufacturer": "Asus",
+      "aliases": [
+        "ASUS_Z01RD",
+        "ZenFone 5Z"
+      ],
+      "id": "asus:zs620kl"
+    },
+    {
+      "name": "ASUS ZenFone 5",
+      "codename": "ZE620KL",
+      "manufacturer": "Asus",
+      "aliases": [
+        "ASUS_X00QD",
+        "ZenFone 5"
+      ],
+      "id": "asus:ze620kl"
+    },
+    {
+      "name": "ASUS ZenFone 4 Pro",
+      "codename": "ZS551KL",
+      "manufacturer": "Asus",
+      "aliases": [
+        "ASUS_Z01GD",
+        "ZenFone 4 Pro"
+      ],
+      "id": "asus:zs551kl"
+    },
+    {
+      "name": "ASUS ZenFone 4",
+      "codename": "ZE554KL",
+      "manufacturer": "Asus",
+      "aliases": [
+        "ASUS_Z01KD",
+        "ZenFone 4"
+      ],
+      "id": "asus:ze554kl"
+    },
+    {
+      "name": "ASUS ZenFone 3 Deluxe",
+      "codename": "ZS570KL",
+      "manufacturer": "Asus",
+      "aliases": [
+        "ASUS_Z016D",
+        "ZenFone 3 Deluxe"
+      ],
+      "id": "asus:zs570kl"
+    },
+    {
+      "name": "ASUS ZenFone 3",
+      "codename": "ZE520KL",
+      "manufacturer": "Asus",
+      "aliases": [
+        "ASUS_Z017D",
+        "ZE552KL",
+        "ZenFone 3"
+      ],
+      "id": "asus:ze520kl"
+    },
+    {
+      "name": "ASUS ZenFone 2",
+      "codename": "Z00A",
+      "manufacturer": "Asus",
+      "aliases": [
+        "ZE551ML",
+        "Z008",
+        "ZenFone 2"
+      ],
+      "id": "asus:z00a"
+    },
+    {
+      "name": "ASUS ROG Phone 9 Pro",
+      "codename": "AI2501_Pro",
+      "manufacturer": "Asus",
+      "aliases": [
+        "ROG Phone 9 Pro",
+        "AI2501"
+      ],
+      "id": "asus:ai2501_pro"
+    },
+    {
+      "name": "ASUS ROG Phone 9",
+      "codename": "AI2501",
+      "manufacturer": "Asus",
+      "aliases": [
+        "ROG Phone 9",
+        "ASUS_AI2501"
+      ],
+      "id": "asus:ai2501"
+    },
+    {
+      "name": "ASUS ROG Phone 8 Pro",
+      "codename": "AI2401_ROGPro",
+      "manufacturer": "Asus",
+      "aliases": [
+        "ROG Phone 8 Pro",
+        "AI2401"
+      ],
+      "id": "asus:ai2401_rogpro"
+    },
+    {
+      "name": "ASUS ROG Phone 8",
+      "codename": "AI2401_ROG",
+      "manufacturer": "Asus",
+      "aliases": [
+        "ROG Phone 8",
+        "ASUS_AI2401"
+      ],
+      "id": "asus:ai2401_rog"
+    },
+    {
+      "name": "ASUS ROG Phone 7 Ultimate",
+      "codename": "AI2301_Ultimate",
+      "manufacturer": "Asus",
+      "aliases": [
+        "ROG Phone 7 Ultimate",
+        "AI2301"
+      ],
+      "id": "asus:ai2301_ultimate"
+    },
+    {
+      "name": "ASUS ROG Phone 7",
+      "codename": "AI2301",
+      "manufacturer": "Asus",
+      "aliases": [
+        "ROG Phone 7",
+        "ASUS_AI2301"
+      ],
+      "id": "asus:ai2301"
+    },
+    {
+      "name": "ASUS ROG Phone 6D Ultimate",
+      "codename": "AI2203_Ultimate",
+      "manufacturer": "Asus",
+      "aliases": [
+        "ROG Phone 6D Ultimate",
+        "AI2203"
+      ],
+      "id": "asus:ai2203_ultimate"
+    },
+    {
+      "name": "ASUS ROG Phone 6D",
+      "codename": "AI2203",
+      "manufacturer": "Asus",
+      "aliases": [
+        "ROG Phone 6D",
+        "ASUS_AI2203"
+      ],
+      "id": "asus:ai2203"
+    },
+    {
+      "name": "ASUS ROG Phone 6 Pro",
+      "codename": "AI2201_Pro",
+      "manufacturer": "Asus",
+      "aliases": [
+        "ROG Phone 6 Pro",
+        "AI2201"
+      ],
+      "id": "asus:ai2201_pro"
+    },
+    {
+      "name": "ASUS ROG Phone 6",
+      "codename": "AI2201",
+      "manufacturer": "Asus",
+      "aliases": [
+        "ROG Phone 6",
+        "ASUS_AI2201"
+      ],
+      "id": "asus:ai2201"
+    },
+    {
+      "name": "ASUS ROG Phone 5s Pro",
+      "codename": "I005DC",
+      "manufacturer": "Asus",
+      "aliases": [
+        "ROG Phone 5s Pro",
+        "ASUS_I005DC"
+      ],
+      "id": "asus:i005dc"
+    },
+    {
+      "name": "ASUS ROG Phone 5s",
+      "codename": "I005DB",
+      "manufacturer": "Asus",
+      "aliases": [
+        "ROG Phone 5s",
+        "ASUS_I005DB"
+      ],
+      "id": "asus:i005db"
+    },
+    {
+      "name": "ASUS ROG Phone 5 Pro",
+      "codename": "I005DA",
+      "manufacturer": "Asus",
+      "aliases": [
+        "ROG Phone 5 Pro",
+        "ASUS_I005DA"
+      ],
+      "id": "asus:i005da"
+    },
+    {
+      "name": "ASUS ROG Phone 5",
+      "codename": "I005D",
+      "manufacturer": "Asus",
+      "aliases": [
+        "ROG Phone 5",
+        "ASUS_I005D"
+      ],
+      "id": "asus:i005d"
+    },
+    {
+      "name": "ASUS ROG Phone 3",
+      "codename": "I003D",
+      "manufacturer": "Asus",
+      "aliases": [
+        "ROG Phone 3",
+        "ZS661KS",
+        "ASUS_I003D"
+      ],
+      "id": "asus:i003d"
+    },
+    {
+      "name": "ASUS ROG Phone 2",
+      "codename": "I001D",
+      "manufacturer": "Asus",
+      "aliases": [
+        "ROG Phone 2",
+        "ZS660KL",
+        "ASUS_I001D"
+      ],
+      "id": "asus:i001d"
+    },
+    {
+      "name": "ASUS ROG Phone",
+      "codename": "Z01QD",
+      "manufacturer": "Asus",
+      "aliases": [
+        "ROG Phone 1",
+        "ZS600KL",
+        "ASUS_Z01QD"
+      ],
+      "id": "asus:z01qd"
+    },
+    {
+      "name": "ASUS ROG Phone 9 Pro Edition",
+      "codename": "AI2501_ProEdition",
+      "manufacturer": "Asus",
+      "aliases": [
+        "ROG Phone 9 Pro Edition"
+      ],
+      "id": "asus:ai2501_proedition"
+    },
+    {
+      "name": "ASUS ROG Phone 8 Pro Edition",
+      "codename": "AI2401_ROGProEdition",
+      "manufacturer": "Asus",
+      "aliases": [
+        "ROG Phone 8 Pro Edition"
+      ],
+      "id": "asus:ai2401_rogproedition"
+    }
+  ],
+  "sources": [
+    {
+      "id": "lineageos_site",
+      "name": "LineageOS",
+      "kind": "official_project",
+      "host": "lineageos.org",
+      "canonical_url": "https://lineageos.org",
+      "trust": 98,
+      "path_prefixes": [],
+      "family": "LineageOS",
+      "include_subdomains": true,
+      "device_urls": [],
+      "query_templates": [],
+      "manufacturers": [],
+      "can_verify": true,
+      "source_class": "OFFICIAL",
+      "authority": 6098
+    },
+    {
+      "id": "lineageos_dl",
+      "name": "LineageOS Downloads",
+      "kind": "official_download",
+      "host": "download.lineageos.org",
+      "canonical_url": "https://download.lineageos.org",
+      "trust": 100,
+      "path_prefixes": [],
+      "family": "LineageOS",
+      "include_subdomains": true,
+      "device_urls": [
+        "https://download.lineageos.org/api/v2/devices/{code}/builds"
+      ],
+      "query_templates": [],
+      "manufacturers": [],
+      "can_verify": true,
+      "source_class": "OFFICIAL",
+      "authority": 6100
+    },
+    {
+      "id": "pe_dl",
+      "name": "Pixel Experience Downloads",
+      "kind": "official_download",
+      "host": "get.pixelexperience.org",
+      "canonical_url": "https://get.pixelexperience.org",
+      "trust": 100,
+      "path_prefixes": [],
+      "family": "Pixel Experience",
+      "include_subdomains": true,
+      "device_urls": [
+        "https://get.pixelexperience.org/{code}"
+      ],
+      "query_templates": [],
+      "manufacturers": [],
+      "can_verify": true,
+      "source_class": "OFFICIAL",
+      "authority": 6100
+    },
+    {
+      "id": "pixelos_site",
+      "name": "PixelOS",
+      "kind": "official_project",
+      "host": "pixelos.net",
+      "canonical_url": "https://pixelos.net",
+      "trust": 96,
+      "path_prefixes": [],
+      "family": "PixelOS",
+      "include_subdomains": true,
+      "device_urls": [
+        "https://pixelos.net/download/{code}"
+      ],
+      "query_templates": [],
+      "manufacturers": [],
+      "can_verify": true,
+      "source_class": "OFFICIAL",
+      "authority": 6096
+    }
+  ],
+  "roms": [
+    {
+      "id": "7282160497008d16",
+      "name": "LineageOS",
+      "type": "custom_rom",
+      "device": "ASUS Zenfone 8",
+      "codename": "sake",
+      "android_version": "Android 16",
+      "rom_version": "23.2",
+      "build_date": "2026-08-18",
+      "status": "verified",
+      "source_url": "https://download.lineageos.org/api/v2/devices/sake/builds",
+      "download_url": "https://mirrorbits.lineageos.org/full/sake/20260818/lineage-23.2-20260818-nightly-sake-signed.zip",
+      "source_id": "lineageos_dl",
+      "evidence": [
+        {
+          "kind": "registered_source",
+          "detail": "LineageOS Downloads (official_download, trust 100)",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org"
+        },
+        {
+          "kind": "codename_in_url",
+          "detail": "codename 'sake' in URL path",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/sake/builds"
+        },
+        {
+          "kind": "artifact_link",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/sake/builds"
+        },
+        {
+          "kind": "artifact_extension",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/sake/builds"
+        },
+        {
+          "kind": "build_channel",
+          "detail": "ROM/build evidence on the page",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/sake/builds"
+        },
+        {
+          "kind": "build_evidence_tier",
+          "detail": "artifact",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/sake/builds"
+        },
+        {
+          "kind": "family_resolved",
+          "detail": "LineageOS",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/sake/builds"
+        },
+        {
+          "kind": "evidence_score",
+          "detail": "14",
+          "source_id": "lineageos_dl",
+          "url": "https://download.lineageos.org/api/v2/devices/sake/builds"
+        }
+      ],
+      "discovered_at": "2026-08-25T07:07:22+00:00",
+      "updated_at": "2026-08-25T07:07:22+00:00"
+    }
+  ]
+}
