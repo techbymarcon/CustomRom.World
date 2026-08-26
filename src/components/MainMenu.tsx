@@ -281,6 +281,18 @@ export function MainMenu() {
                     <EditableText contentKey="menu.devices" defaultValue="DEVICES" />
                   </Link>
 
+                  <Link
+                    to="/requirements"
+                    onClick={() => setOpen(false)}
+                    className={itemClass}
+                  >
+                    <EditableText
+                      contentKey="menu.requirements"
+                      defaultValue="THE REQUIREMENTS TO ROM"
+                    />
+                  </Link>
+
+
                   {session ? (
                     <button onClick={() => setPanel("account")} className={itemClass}>
                       @{profile?.username ?? "account"}
