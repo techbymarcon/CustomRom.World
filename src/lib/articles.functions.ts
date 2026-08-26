@@ -111,7 +111,7 @@ export const saveArticle = createServerFn({ method: "POST" })
       device_slug: data.device_slug ?? null,
       page_key: data.page_key ?? null,
       title: data.title.trim() || "Untitled",
-      cover_image_url: data.cover_image_url ?? null,
+      ...(data.cover_image_url !== undefined ? { cover_image_url: data.cover_image_url } : {}),
       body_html: sanitizeRichHtml(data.body_html),
     };
 
