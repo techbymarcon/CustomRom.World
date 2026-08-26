@@ -14,6 +14,48 @@ export type Database = {
   }
   public: {
     Tables: {
+      articles: {
+        Row: {
+          body_html: string
+          brand: string | null
+          cover_image_url: string | null
+          created_at: string
+          created_by: string | null
+          device_slug: string | null
+          id: string
+          page_key: string | null
+          scope: string
+          title: string
+          updated_at: string
+        }
+        Insert: {
+          body_html?: string
+          brand?: string | null
+          cover_image_url?: string | null
+          created_at?: string
+          created_by?: string | null
+          device_slug?: string | null
+          id?: string
+          page_key?: string | null
+          scope: string
+          title: string
+          updated_at?: string
+        }
+        Update: {
+          body_html?: string
+          brand?: string | null
+          cover_image_url?: string | null
+          created_at?: string
+          created_by?: string | null
+          device_slug?: string | null
+          id?: string
+          page_key?: string | null
+          scope?: string
+          title?: string
+          updated_at?: string
+        }
+        Relationships: []
+      }
       profiles: {
         Row: {
           avatar_url: string | null
