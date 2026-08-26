@@ -61,7 +61,7 @@ export function ArticleEditor({
         device_slug: deviceSlug ?? null,
         page_key: pageKey ?? null,
         title: title.trim(),
-        cover_image_url: coverPath ? `${STORAGE_PREFIX}${coverPath}` : undefined,
+        ...(coverPath ? { cover_image_url: `${STORAGE_PREFIX}${coverPath}` } : {}),
         body_html: body,
       },
     });
