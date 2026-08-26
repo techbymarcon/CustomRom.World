@@ -11,6 +11,7 @@
 import { Route as rootRouteImport } from './routes/__root'
 import { Route as IndexRouteImport } from './routes/index'
 import { Route as DevicesRouteImport } from './routes/devices'
+import { Route as RequirementsRouteImport } from './routes/requirements'
 import { Route as SitemapDotxmlRouteImport } from './routes/sitemap[.]xml'
 import { Route as ArticlesIdRouteImport } from './routes/articles.$id'
 import { Route as DevicesBrandRouteImport } from './routes/devices_.$brand'
@@ -25,6 +26,11 @@ const IndexRoute = IndexRouteImport.update({
 const DevicesRoute = DevicesRouteImport.update({
   id: '/devices',
   path: '/devices',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const RequirementsRoute = RequirementsRouteImport.update({
+  id: '/requirements',
+  path: '/requirements',
   getParentRoute: () => rootRouteImport,
 } as any)
 const SitemapDotxmlRoute = SitemapDotxmlRouteImport.update({
@@ -56,6 +62,7 @@ const DevicesBrandModelRomRoute = DevicesBrandModelRomRouteImport.update({
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
   '/devices': typeof DevicesRoute
+  '/requirements': typeof RequirementsRoute
   '/sitemap.xml': typeof SitemapDotxmlRoute
   '/articles/$id': typeof ArticlesIdRoute
   '/devices/$brand': typeof DevicesBrandRoute
@@ -65,6 +72,7 @@ export interface FileRoutesByFullPath {
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
   '/devices': typeof DevicesRoute
+  '/requirements': typeof RequirementsRoute
   '/sitemap.xml': typeof SitemapDotxmlRoute
   '/articles/$id': typeof ArticlesIdRoute
   '/devices/$brand': typeof DevicesBrandRoute
@@ -75,6 +83,7 @@ export interface FileRoutesById {
   __root__: typeof rootRouteImport
   '/': typeof IndexRoute
   '/devices': typeof DevicesRoute
+  '/requirements': typeof RequirementsRoute
   '/sitemap.xml': typeof SitemapDotxmlRoute
   '/articles/$id': typeof ArticlesIdRoute
   '/devices_/$brand': typeof DevicesBrandRoute
@@ -86,6 +95,7 @@ export interface FileRouteTypes {
   fullPaths:
     | '/'
     | '/devices'
+    | '/requirements'
     | '/sitemap.xml'
     | '/articles/$id'
     | '/devices/$brand'
@@ -95,6 +105,7 @@ export interface FileRouteTypes {
   to:
     | '/'
     | '/devices'
+    | '/requirements'
     | '/sitemap.xml'
     | '/articles/$id'
     | '/devices/$brand'
@@ -104,6 +115,7 @@ export interface FileRouteTypes {
     | '__root__'
     | '/'
     | '/devices'
+    | '/requirements'
     | '/sitemap.xml'
     | '/articles/$id'
     | '/devices_/$brand'
@@ -114,6 +126,7 @@ export interface FileRouteTypes {
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
   DevicesRoute: typeof DevicesRoute
+  RequirementsRoute: typeof RequirementsRoute
   SitemapDotxmlRoute: typeof SitemapDotxmlRoute
   ArticlesIdRoute: typeof ArticlesIdRoute
   DevicesBrandRoute: typeof DevicesBrandRoute
@@ -135,6 +148,13 @@ declare module '@tanstack/react-router' {
       path: '/devices'
       fullPath: '/devices'
       preLoaderRoute: typeof DevicesRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/requirements': {
+      id: '/requirements'
+      path: '/requirements'
+      fullPath: '/requirements'
+      preLoaderRoute: typeof RequirementsRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/sitemap.xml': {
@@ -178,6 +198,7 @@ declare module '@tanstack/react-router' {
 const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
   DevicesRoute: DevicesRoute,
+  RequirementsRoute: RequirementsRoute,
   SitemapDotxmlRoute: SitemapDotxmlRoute,
   ArticlesIdRoute: ArticlesIdRoute,
   DevicesBrandRoute: DevicesBrandRoute,
