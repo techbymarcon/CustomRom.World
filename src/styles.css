@@ -205,3 +205,34 @@
   animation-iteration-count: infinite;
   border-radius: 2px;
 }
+
+/* Admin-authored article bodies */
+.rich-body {
+  line-height: 1.7;
+}
+.rich-body p {
+  margin-bottom: 0.75rem;
+}
+.rich-body h1,
+.rich-body h2,
+.rich-body h3 {
+  font-weight: 800;
+  margin: 1rem 0 0.5rem;
+}
+.rich-body h1 { font-size: 1.75rem; }
+.rich-body h2 { font-size: 1.4rem; }
+.rich-body h3 { font-size: 1.2rem; }
+.rich-body ul,
+.rich-body ol {
+  padding-left: 1.25rem;
+  margin-bottom: 0.75rem;
+  list-style: disc;
+}
+.rich-body ol { list-style: decimal; }
+.rich-body a { color: var(--primary); text-decoration: underline; }
+.rich-body img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 1rem;
+  margin: 0.75rem 0;
+}
