@@ -243,6 +243,21 @@ function ModelPage() {
           }}
         />
       )}
+
+      {articleOpen && (
+        <ArticleEditor
+          article={null}
+          scope="device"
+          brand={brand}
+          deviceSlug={model}
+          title={`New article — ${deviceName}`}
+          onClose={() => setArticleOpen(false)}
+          onSaved={async () => {
+            await queryClient.invalidateQueries({ queryKey: ["articles", brand, model] });
+            setArticleOpen(false);
+          }}
+        />
+      )}
     </div>
   );
 }
