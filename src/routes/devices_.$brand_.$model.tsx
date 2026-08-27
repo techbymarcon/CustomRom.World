@@ -64,11 +64,19 @@ function ModelPage() {
   const { isAdmin } = useSite();
   const queryClient = useQueryClient();
   const [open, setOpen] = useState(false);
+  const [articleOpen, setArticleOpen] = useState(false);
 
   const romsQuery = useQuery({
     queryKey: ["roms", brand, model],
     queryFn: () => listRoms({ data: { brand, device_slug: model } }),
   });
+
+  const articlesQuery = useQuery({
+    queryKey: ["articles", brand, model],
+    queryFn: () => listDeviceArticles({ data: { brand, device_slug: model } }),
+  });
+  const articles = articlesQuery.data?.articles ?? [];
+
 
   const removeFn = useServerFn(deleteRom);
   const remove = useMutation({
