@@ -10,6 +10,8 @@ import { Header } from "@/components/Header";
 import { useSite } from "@/lib/site";
 import { deviceNameFromSlug, getBrand } from "@/lib/devices";
 import { createRom, deleteRom, listRoms } from "@/lib/roms.functions";
+import { listDeviceArticles } from "@/lib/articles.functions";
+import { ArticleEditor } from "@/components/ArticleEditor";
 import { ANDROID_LOGOS, ANDROID_VERSIONS, ROM_NAMES, ROM_TYPE_LABELS } from "@/lib/roms";
 import { normalizeRomFamily, romSlug, romTypeForFamily } from "@/lib/rom-import";
 
@@ -62,11 +64,19 @@ function ModelPage() {
   const { isAdmin } = useSite();
   const queryClient = useQueryClient();
   const [open, setOpen] = useState(false);
+  const [articleOpen, setArticleOpen] = useState(false);
 
   const romsQuery = useQuery({
     queryKey: ["roms", brand, model],
     queryFn: () => listRoms({ data: { brand, device_slug: model } }),
   });
+
+  const articlesQuery = useQuery({
+    queryKey: ["articles", brand, model],
+    queryFn: () => listDeviceArticles({ data: { brand, device_slug: model } }),
+  });
+  const articles = articlesQuery.data?.articles ?? [];
+
 
   const removeFn = useServerFn(deleteRom);
   const remove = useMutation({
@@ -230,6 +240,21 @@ function ModelPage() {
           onSaved={async () => {
             await queryClient.invalidateQueries({ queryKey: ["roms", brand, model] });
             setOpen(false);
+          }}
+        />
+      )}
+
+      {articleOpen && (
+        <ArticleEditor
+          article={null}
+          scope="device"
+          brand={brand}
+          deviceSlug={model}
+          title={`New article — ${deviceName}`}
+          onClose={() => setArticleOpen(false)}
+          onSaved={async () => {
+            await queryClient.invalidateQueries({ queryKey: ["articles", brand, model] });
+            setArticleOpen(false);
           }}
         />
       )}
