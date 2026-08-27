@@ -167,6 +167,10 @@ function RomPage() {
                 </ul>
               </Bubble>
 
+              <RomRating romId={rom.id} />
+
+
+
 
               {rom.installation_guide && (
                 <Bubble title="Installation Guide">{rom.installation_guide}</Bubble>
