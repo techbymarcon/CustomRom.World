@@ -1,16 +1,25 @@
 import { useEffect, useRef, useState } from "react";
+import { useMutation, useQuery, useQueryClient } from "@tanstack/react-query";
+import { useServerFn } from "@tanstack/react-start";
 import { createPortal } from "react-dom";
 import { Link } from "@tanstack/react-router";
 
 import { toast } from "sonner";
 
 import { supabase } from "@/integrations/supabase/client";
+import {
+  listContributorRoms,
+  listMembers,
+  setContributorAccess,
+} from "@/lib/admin.functions";
 import { signUpWithHandle } from "@/lib/auth.functions";
 import { handleToEmail, normalizeHandle, padPassword } from "@/lib/handle";
 import { useSite } from "@/lib/site";
 import { EditableText } from "@/components/Editable";
 
-type Panel = "menu" | "auth" | "account";
+type Panel = "menu" | "auth" | "account" | "members" | "contributions";
+
+const CONTRIBUTE_FORM_URL = "https://forms.gle/6aFHVtSRoxgVt8Vz6";
 
 function AuthPanel({ onDone }: { onDone: () => void }) {
   const [mode, setMode] = useState<"login" | "signup">("login");
@@ -169,6 +178,98 @@ function AccountPanel() {
   );
 }
 
+
+function MembersPanel() {
+  const queryClient = useQueryClient();
+  const membersQuery = useQuery({ queryKey: ["members"], queryFn: () => listMembers() });
+  const setAccessFn = useServerFn(setContributorAccess);
+  const setAccess = useMutation({
+    mutationFn: (vars: { userId: string; grant: boolean }) => setAccessFn({ data: vars }),
+    onSuccess: async (res) => {
+      if (!res.ok) {
+        toast.error(res.error);
+        return;
+      }
+      toast.success("Access updated");
+      await queryClient.invalidateQueries({ queryKey: ["members"] });
+    },
+  });
+
+  const members = membersQuery.data?.members ?? [];
+
+  return (
+    <div className="mx-auto w-full max-w-sm text-left">
+      <h2 className="mb-4 text-center text-2xl font-bold uppercase">Members</h2>
+      {membersQuery.isLoading && <p className="text-sm text-muted-foreground">Loading…</p>}
+      <div className="flex flex-col gap-2">
+        {members.map((member) => (
+          <div
+            key={member.id}
+            className="flex items-center justify-between gap-3 rounded-2xl border border-input bg-background/60 px-4 py-3"
+          >
+            <div className="min-w-0">
+              <p className="truncate font-bold">@{member.username}</p>
+              <p className="text-xs text-muted-foreground">
+                {member.is_admin ? "admin" : member.is_contributor ? "contributor" : "member"}
+              </p>
+            </div>
+            {!member.is_admin && (
+              <button
+                disabled={setAccess.isPending}
+                onClick={() =>
+                  setAccess.mutate({ userId: member.id, grant: !member.is_contributor })
+                }
+                className={`shrink-0 rounded-full border-2 px-3 py-1.5 text-xs font-bold uppercase ${
+                  member.is_contributor ? "border-destructive text-destructive" : "border-primary"
+                }`}
+              >
+                {member.is_contributor ? "Revoke" : "Allow ROMs"}
+              </button>
+            )}
+          </div>
+        ))}
+        {!membersQuery.isLoading && members.length === 0 && (
+          <p className="text-sm text-muted-foreground">No members yet.</p>
+        )}
+      </div>
+    </div>
+  );
+}
+
+function ContributionsPanel({ onNavigate }: { onNavigate: () => void }) {
+  const romsQuery = useQuery({
+    queryKey: ["contributor-roms"],
+    queryFn: () => listContributorRoms(),
+  });
+  const roms = romsQuery.data?.roms ?? [];
+
+  return (
+    <div className="mx-auto w-full max-w-sm text-left">
+      <h2 className="mb-4 text-center text-2xl font-bold uppercase">Contributions</h2>
+      {romsQuery.isLoading && <p className="text-sm text-muted-foreground">Loading…</p>}
+      <div className="flex flex-col gap-2">
+        {roms.map((rom) => (
+          <Link
+            key={rom.id}
+            to="/devices/$brand/$model/$rom"
+            params={{ brand: rom.brand, model: rom.device_slug, rom: rom.slug }}
+            onClick={onNavigate}
+            className="rounded-2xl border border-input bg-background/60 px-4 py-3"
+          >
+            <p className="truncate font-bold">{rom.rom_name}</p>
+            <p className="text-xs text-muted-foreground">
+              {rom.device_name} · {rom.android_version} · by @{rom.author}
+            </p>
+          </Link>
+        ))}
+        {!romsQuery.isLoading && roms.length === 0 && (
+          <p className="text-sm text-muted-foreground">No contributor ROMs yet.</p>
+        )}
+      </div>
+    </div>
+  );
+}
+
 export function MainMenu() {
   const [open, setOpen] = useState(false);
   const [panel, setPanel] = useState<Panel>("menu");
@@ -303,9 +404,28 @@ export function MainMenu() {
                     </button>
                   )}
 
+                  <a
+                    href={CONTRIBUTE_FORM_URL}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    onClick={() => setOpen(false)}
+                    className={itemClass}
+                  >
+                    <EditableText
+                      contentKey="menu.contribute"
+                      defaultValue="APPLY TO CONTRIBUTE!"
+                    />
+                  </a>
+
                   {isAdmin && (
                     <>
                       <div className={`${itemClass} text-primary/90`}>ADMIN</div>
+                      <button onClick={() => setPanel("members")} className={itemClass}>
+                        MEMBERS
+                      </button>
+                      <button onClick={() => setPanel("contributions")} className={itemClass}>
+                        CONTRIBUTIONS
+                      </button>
                       <button
                         onClick={() => {
                           setEditMode(!editMode);
@@ -323,6 +443,10 @@ export function MainMenu() {
 
               {panel === "auth" && <AuthPanel onDone={() => setPanel("menu")} />}
               {panel === "account" && <AccountPanel />}
+              {panel === "members" && <MembersPanel />}
+              {panel === "contributions" && (
+                <ContributionsPanel onNavigate={() => setOpen(false)} />
+              )}
 
               {panel !== "menu" && (
                 <button
