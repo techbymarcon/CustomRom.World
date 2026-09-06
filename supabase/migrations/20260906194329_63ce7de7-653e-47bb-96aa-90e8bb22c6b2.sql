@@ -1,0 +1,3 @@
+CREATE POLICY "Contributors can insert their own rom pages" ON public.roms FOR INSERT TO authenticated WITH CHECK (private.has_role(auth.uid(), 'contributor'::app_role) AND created_by = auth.uid());
+CREATE POLICY "Contributors can update their own rom pages" ON public.roms FOR UPDATE TO authenticated USING (private.has_role(auth.uid(), 'contributor'::app_role) AND created_by = auth.uid()) WITH CHECK (private.has_role(auth.uid(), 'contributor'::app_role) AND created_by = auth.uid());
+CREATE POLICY "Contributors can delete their own rom pages" ON public.roms FOR DELETE TO authenticated USING (private.has_role(auth.uid(), 'contributor'::app_role) AND created_by = auth.uid());

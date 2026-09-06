@@ -28,6 +28,7 @@ type SiteContextValue = {
   profile: Profile | null;
   avatarUrl: string | null;
   isAdmin: boolean;
+  isContributor: boolean;
   editMode: boolean;
   setEditMode: (value: boolean) => void;
   content: Record<string, SiteContentRow>;
@@ -43,6 +44,7 @@ export function SiteProvider({ children }: { children: ReactNode }) {
   const [profile, setProfile] = useState<Profile | null>(null);
   const [avatarUrl, setAvatarUrl] = useState<string | null>(null);
   const [isAdmin, setIsAdmin] = useState(false);
+  const [isContributor, setIsContributor] = useState(false);
   const [editMode, setEditMode] = useState(false);
   const [profileNonce, setProfileNonce] = useState(0);
   const queryClient = useQueryClient();
@@ -63,6 +65,7 @@ export function SiteProvider({ children }: { children: ReactNode }) {
       setProfile(null);
       setAvatarUrl(null);
       setIsAdmin(false);
+      setIsContributor(false);
       setEditMode(false);
       return;
     }
@@ -75,6 +78,7 @@ export function SiteProvider({ children }: { children: ReactNode }) {
       if (cancelled) return;
       setProfile((profileRow as Profile | null) ?? null);
       setIsAdmin((roles ?? []).some((row) => row.role === "admin"));
+      setIsContributor((roles ?? []).some((row) => row.role === "contributor"));
       const path = (profileRow as Profile | null)?.avatar_url ?? null;
       if (path) {
         const signed = await supabase.storage.from("avatars").createSignedUrl(path, 3600);
@@ -118,6 +122,7 @@ export function SiteProvider({ children }: { children: ReactNode }) {
     profile,
     avatarUrl,
     isAdmin,
+    isContributor,
     editMode: isAdmin && editMode,
     setEditMode,
     content,

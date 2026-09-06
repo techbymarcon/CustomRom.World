@@ -61,7 +61,8 @@ function ModelPage() {
   const { brand, model } = Route.useParams();
   const brandName = getBrand(brand)?.name ?? titleFromSlug(brand);
   const deviceName = deviceNameFromSlug(brand, model) ?? titleFromSlug(model);
-  const { isAdmin } = useSite();
+  const { isAdmin, isContributor } = useSite();
+  const canUpload = isAdmin || isContributor;
   const queryClient = useQueryClient();
   const [open, setOpen] = useState(false);
   const [articleOpen, setArticleOpen] = useState(false);
@@ -115,7 +116,7 @@ function ModelPage() {
             >
               ← All {brandName} models
             </Link>
-            {isAdmin && (
+            {canUpload && (
               <button
                 onClick={() => setOpen(true)}
                 className="rounded-full bg-primary px-4 py-2 text-sm font-bold text-primary-foreground"
