@@ -20,28 +20,16 @@ export type ContributorRomRow = {
   author: string;
 };
 
-async function assertAdmin(supabase: {
-  from: (table: "user_roles") => {
-    select: (cols: string) => {
-      eq: (col: string, value: string) => {
-        eq: (col: string, value: string) => { maybeSingle: () => Promise<{ data: unknown }> };
-      };
-    };
-  };
-}, userId: string) {
-  const { data } = await supabase
-    .from("user_roles")
-    .select("role")
-    .eq("user_id", userId)
-    .eq("role", "admin")
-    .maybeSingle();
-  if (!data) throw new Error("Forbidden");
-}
-
 export const listMembers = createServerFn({ method: "GET" })
   .middleware([requireSupabaseAuth])
   .handler(async ({ context }) => {
-    await assertAdmin(context.supabase as never, context.userId);
+    const { data: adminRow } = await context.supabase
+      .from("user_roles")
+      .select("role")
+      .eq("user_id", context.userId)
+      .eq("role", "admin")
+      .maybeSingle();
+    if (!adminRow) throw new Error("Forbidden");
     const { supabaseAdmin } = await import("@/integrations/supabase/client.server");
 
     const [{ data: profiles }, { data: roles }] = await Promise.all([
@@ -66,7 +54,13 @@ export const setContributorAccess = createServerFn({ method: "POST" })
   .middleware([requireSupabaseAuth])
   .inputValidator((input: { userId: string; grant: boolean }) => input)
   .handler(async ({ data, context }) => {
-    await assertAdmin(context.supabase as never, context.userId);
+    const { data: adminRow } = await context.supabase
+      .from("user_roles")
+      .select("role")
+      .eq("user_id", context.userId)
+      .eq("role", "admin")
+      .maybeSingle();
+    if (!adminRow) throw new Error("Forbidden");
     const { supabaseAdmin } = await import("@/integrations/supabase/client.server");
 
     if (data.grant) {
@@ -88,7 +82,13 @@ export const setContributorAccess = createServerFn({ method: "POST" })
 export const listContributorRoms = createServerFn({ method: "GET" })
   .middleware([requireSupabaseAuth])
   .handler(async ({ context }) => {
-    await assertAdmin(context.supabase as never, context.userId);
+    const { data: adminRow } = await context.supabase
+      .from("user_roles")
+      .select("role")
+      .eq("user_id", context.userId)
+      .eq("role", "admin")
+      .maybeSingle();
+    if (!adminRow) throw new Error("Forbidden");
     const { supabaseAdmin } = await import("@/integrations/supabase/client.server");
 
     const [{ data: roms }, { data: profiles }, { data: roles }] = await Promise.all([
