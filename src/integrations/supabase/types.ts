@@ -80,6 +80,41 @@ export type Database = {
         }
         Relationships: []
       }
+      rom_comments: {
+        Row: {
+          body: string
+          created_at: string
+          id: string
+          rom_id: string
+          updated_at: string
+          user_id: string
+        }
+        Insert: {
+          body: string
+          created_at?: string
+          id?: string
+          rom_id: string
+          updated_at?: string
+          user_id: string
+        }
+        Update: {
+          body?: string
+          created_at?: string
+          id?: string
+          rom_id?: string
+          updated_at?: string
+          user_id?: string
+        }
+        Relationships: [
+          {
+            foreignKeyName: "rom_comments_rom_id_fkey"
+            columns: ["rom_id"]
+            isOneToOne: false
+            referencedRelation: "roms"
+            referencedColumns: ["id"]
+          },
+        ]
+      }
       rom_reviews: {
         Row: {
           created_at: string

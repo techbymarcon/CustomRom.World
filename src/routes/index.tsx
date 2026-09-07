@@ -2,6 +2,8 @@ import { createFileRoute, Link } from "@tanstack/react-router";
 import { EditableImage, EditableText } from "@/components/Editable";
 import { Fog } from "@/components/Fog";
 import { Header } from "@/components/Header";
+import { LatestDiscussions } from "@/components/LatestDiscussions";
+
 import wordmarkAsset from "@/assets/customrom-world-menu.png.asset.json";
 
 export const Route = createFileRoute("/")({
@@ -85,7 +87,10 @@ function Index() {
           </div>
         </section>
 
+        <LatestDiscussions />
+
         <section id="about" className="px-5 pb-24 pt-24">
+
           <div className="rounded-4xl border-2 border-primary bg-card/70 px-7 py-12 backdrop-blur-md">
             <h2 className="text-4xl font-extrabold leading-tight">
               <EditableText
