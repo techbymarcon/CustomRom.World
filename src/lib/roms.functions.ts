@@ -20,18 +20,56 @@ export const listRoms = createServerFn({ method: "GET" })
     return { roms: (rows ?? []) as Rom[] };
   });
 
+export type RomUploader = {
+  username: string;
+  avatar_url: string | null;
+  verified: boolean;
+};
+
 export const getRom = createServerFn({ method: "GET" })
   .inputValidator((input: { brand: string; device_slug: string; slug: string }) => input)
   .handler(async ({ data }) => {
     const { getPublicClient } = await import("./public-client.server");
-    const { data: row } = await getPublicClient()
+    const client = getPublicClient();
+    const { data: row } = await client
       .from("roms")
-      .select(SELECT)
+      .select(`${SELECT}, created_by`)
       .eq("brand", data.brand)
       .eq("device_slug", data.device_slug)
       .eq("slug", data.slug)
       .maybeSingle();
-    return { rom: (row as Rom | null) ?? null };
+
+    const record = (row as (Rom & { created_by: string | null }) | null) ?? null;
+    let uploader: RomUploader | null = null;
+
+    if (record?.created_by) {
+      const { data: profile } = await client
+        .from("profiles")
+        .select("username, avatar_url")
+        .eq("id", record.created_by)
+        .maybeSingle();
+      if (profile) {
+        const { supabaseAdmin } = await import("@/integrations/supabase/client.server");
+        const { data: roles } = await supabaseAdmin
+          .from("user_roles")
+          .select("role")
+          .eq("user_id", record.created_by);
+        let avatar: string | null = null;
+        if (profile.avatar_url) {
+          const signed = await supabaseAdmin.storage
+            .from("avatars")
+            .createSignedUrl(profile.avatar_url, 3600);
+          avatar = signed.data?.signedUrl ?? null;
+        }
+        uploader = {
+          username: profile.username,
+          avatar_url: avatar,
+          verified: (roles ?? []).some((r) => r.role === "admin"),
+        };
+      }
+    }
+
+    return { rom: record as Rom | null, uploader };
   });
 
 export const createRom = createServerFn({ method: "POST" })
