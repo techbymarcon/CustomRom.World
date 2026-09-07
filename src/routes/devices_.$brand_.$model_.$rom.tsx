@@ -53,6 +53,7 @@ function RomPage() {
     queryFn: () => getRom({ data: { brand, device_slug: model, slug: romSlug } }),
   });
   const rom = query.data?.rom ?? null;
+  const uploader = query.data?.uploader ?? null;
 
   return (
     <div className="relative min-h-screen bg-background text-foreground">
