@@ -100,6 +100,41 @@ function RomPage() {
                 {rom.codename ? ` (${rom.codename})` : ""}
               </h1>
 
+              {uploader && (
+                <div className="mt-4 inline-flex items-center gap-2 rounded-full border-2 border-primary/60 bg-background/40 px-3 py-1.5 backdrop-blur-sm">
+                  {uploader.avatar_url ? (
+                    <img
+                      src={uploader.avatar_url}
+                      alt={`${uploader.username} profile picture`}
+                      className="h-7 w-7 rounded-full object-cover"
+                    />
+                  ) : (
+                    <span className="flex h-7 w-7 items-center justify-center rounded-full bg-primary/20 text-xs font-extrabold uppercase text-primary">
+                      {uploader.username.slice(0, 1)}
+                    </span>
+                  )}
+                  <span className="text-sm font-bold">{uploader.username}</span>
+                  {uploader.verified && (
+                    <svg
+                      viewBox="0 0 24 24"
+                      className="h-4 w-4 text-primary"
+                      aria-label="Verified"
+                      role="img"
+                    >
+                      <path
+                        fill="currentColor"
+                        d="M12 1.5l2.4 2 3.1-.3 1 3 2.7 1.6-1.1 2.9 1.1 2.9-2.7 1.6-1 3-3.1-.3-2.4 2-2.4-2-3.1.3-1-3L3.8 15.1 4.9 12.2 3.8 9.3 6.5 7.7l1-3 3.1.3z"
+                      />
+                      <path
+                        fill="hsl(var(--background))"
+                        d="M10.9 15.4l-3-3 1.3-1.3 1.7 1.7 4-4 1.3 1.3z"
+                      />
+                    </svg>
+                  )}
+                </div>
+              )}
+
+
               <div className="mt-6 grid grid-cols-2 gap-4">
                 <RomCover romName={rom.rom_name} />
                 <AndroidCover version={rom.android_version} />
