@@ -4,7 +4,9 @@ import { createFileRoute, Link } from "@tanstack/react-router";
 import { AndroidCover, RomCover } from "@/components/AndroidCover";
 import { Fog } from "@/components/Fog";
 import { Header } from "@/components/Header";
+import { RomComments } from "@/components/RomComments";
 import { RomRating } from "@/components/RomRating";
+
 import { getRom } from "@/lib/roms.functions";
 import { ROM_TYPE_LABELS } from "@/lib/roms";
 
@@ -205,6 +207,9 @@ function RomPage() {
               </Bubble>
 
               <RomRating romId={rom.id} />
+
+              <RomComments romId={rom.id} />
+
 
 
 
