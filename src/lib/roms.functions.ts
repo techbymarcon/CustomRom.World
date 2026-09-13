@@ -102,6 +102,38 @@ export const createRom = createServerFn({ method: "POST" })
     return { ok: true as const };
   });
 
+export const updateRom = createServerFn({ method: "POST" })
+  .middleware([requireSupabaseAuth])
+  .inputValidator(
+    (input: {
+      id: string;
+      codename: string | null;
+      rom_name: string;
+      rom_version: string | null;
+      android_version: string;
+      rom_type: string;
+      source_url: string | null;
+      download_url: string | null;
+      made_by: string;
+      found_on: string;
+      official_status: string | null;
+      installation_guide: string | null;
+      additional_info: string | null;
+    }) => input,
+  )
+  .handler(async ({ data, context }) => {
+    const { id, ...patch } = data;
+    const { data: rows, error } = await context.supabase
+      .from("roms")
+      .update(patch)
+      .eq("id", id)
+      .select("id");
+    if (error) return { ok: false as const, error: error.message };
+    if (!rows || rows.length === 0)
+      return { ok: false as const, error: "You can't edit this ROM page." };
+    return { ok: true as const };
+  });
+
 export const deleteRom = createServerFn({ method: "POST" })
   .middleware([requireSupabaseAuth])
   .inputValidator((input: { id: string }) => input)
