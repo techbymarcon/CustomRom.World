@@ -7,6 +7,7 @@ export type RomComment = {
   body: string;
   created_at: string;
   user_id: string;
+  parent_id: string | null;
   username: string;
   avatar_url: string | null;
   verified: boolean;
