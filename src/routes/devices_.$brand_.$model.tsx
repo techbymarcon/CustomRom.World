@@ -9,11 +9,12 @@ import { Fog } from "@/components/Fog";
 import { Header } from "@/components/Header";
 import { useSite } from "@/lib/site";
 import { deviceNameFromSlug, getBrand } from "@/lib/devices";
-import { createRom, deleteRom, listRoms } from "@/lib/roms.functions";
+import { createRom, deleteRom, listRoms, updateRom } from "@/lib/roms.functions";
 import { listDeviceArticles } from "@/lib/articles.functions";
 import { ArticleEditor } from "@/components/ArticleEditor";
 import { ANDROID_LOGOS, ANDROID_VERSIONS, ROM_NAMES, ROM_TYPE_LABELS } from "@/lib/roms";
 import { normalizeRomFamily, romSlug, romTypeForFamily } from "@/lib/rom-import";
+import type { Rom } from "@/lib/roms";
 
 import { RomButtonParticles } from "@/components/RomButtonParticles";
 
@@ -66,6 +67,7 @@ function ModelPage() {
   const queryClient = useQueryClient();
   const [open, setOpen] = useState(false);
   const [articleOpen, setArticleOpen] = useState(false);
+  const [editing, setEditing] = useState<Rom | null>(null);
 
   const romsQuery = useQuery({
     queryKey: ["roms", brand, model],
@@ -217,6 +219,14 @@ function ModelPage() {
                     )}
 
                   </Link>
+                  {canUpload && (
+                    <button
+                      onClick={() => setEditing(rom)}
+                      className="relative z-10 rounded-full border border-primary px-3 py-1.5 text-xs font-bold text-primary"
+                    >
+                      Edit
+                    </button>
+                  )}
                   {isAdmin && (
                     <button
                       onClick={() => remove.mutate(rom.id)}
@@ -245,6 +255,20 @@ function ModelPage() {
         />
       )}
 
+      {editing && (
+        <RomForm
+          brand={brand}
+          model={model}
+          deviceName={deviceName}
+          rom={editing}
+          onClose={() => setEditing(null)}
+          onSaved={async () => {
+            await queryClient.invalidateQueries({ queryKey: ["roms", brand, model] });
+            setEditing(null);
+          }}
+        />
+      )}
+
       {articleOpen && (
         <ArticleEditor
           article={null}
@@ -267,28 +291,35 @@ function RomForm({
   brand,
   model,
   deviceName,
+  rom,
   onClose,
   onSaved,
 }: {
   brand: string;
   model: string;
   deviceName: string;
+  rom?: Rom;
   onClose: () => void;
   onSaved: () => void;
 }) {
   const createFn = useServerFn(createRom);
+  const updateFn = useServerFn(updateRom);
   const navigate = useNavigate();
-  const [romName, setRomName] = useState<string>(ROM_NAMES[0]!);
-  const [version, setVersion] = useState<string>(ANDROID_VERSIONS[ANDROID_VERSIONS.length - 1]!);
-  const [romVersion, setRomVersion] = useState("");
-  const [codename, setCodename] = useState("");
-  const [sourceUrl, setSourceUrl] = useState("");
-  const [official, setOfficial] = useState<"" | "official" | "unofficial">("");
-  const [downloadUrl, setDownloadUrl] = useState("");
-  const [madeBy, setMadeBy] = useState("");
-  const [foundOn, setFoundOn] = useState("");
-  const [guide, setGuide] = useState("");
-  const [extra, setExtra] = useState("");
+  const [romName, setRomName] = useState<string>(rom?.rom_name ?? ROM_NAMES[0]!);
+  const [version, setVersion] = useState<string>(
+    rom?.android_version ?? ANDROID_VERSIONS[ANDROID_VERSIONS.length - 1]!,
+  );
+  const [romVersion, setRomVersion] = useState(rom?.rom_version ?? "");
+  const [codename, setCodename] = useState(rom?.codename ?? "");
+  const [sourceUrl, setSourceUrl] = useState(rom?.source_url ?? "");
+  const [official, setOfficial] = useState<"" | "official" | "unofficial">(
+    (rom?.official_status as "official" | "unofficial" | null) ?? "",
+  );
+  const [downloadUrl, setDownloadUrl] = useState(rom?.download_url ?? "");
+  const [madeBy, setMadeBy] = useState(rom?.made_by ?? "");
+  const [foundOn, setFoundOn] = useState(rom?.found_on ?? "");
+  const [guide, setGuide] = useState(rom?.installation_guide ?? "");
+  const [extra, setExtra] = useState(rom?.additional_info ?? "");
   const [saving, setSaving] = useState(false);
 
   const submit = async () => {
@@ -301,6 +332,38 @@ function RomForm({
       return;
     }
     setSaving(true);
+    const romType = normalizeRomFamily(romName)
+      ? romTypeForFamily(normalizeRomFamily(romName)!)
+      : "aosp";
+
+    if (rom) {
+      const res = await updateFn({
+        data: {
+          id: rom.id,
+          codename: codename.trim() || null,
+          rom_name: romName,
+          rom_version: romVersion.trim() || null,
+          android_version: version,
+          rom_type: romType,
+          source_url: sourceUrl.trim() || null,
+          download_url: downloadUrl.trim() || null,
+          made_by: madeBy.trim(),
+          found_on: foundOn.trim(),
+          official_status: official || null,
+          installation_guide: guide.trim() || null,
+          additional_info: extra.trim() || null,
+        },
+      });
+      setSaving(false);
+      if (!res.ok) {
+        toast.error(res.error);
+        return;
+      }
+      toast.success("ROM page updated");
+      onSaved();
+      return;
+    }
+
     const family = normalizeRomFamily(romName) ?? romName;
     const slug = romSlug(family, romVersion.trim() || null, version);
     const res = await createFn({
@@ -340,7 +403,9 @@ function RomForm({
     <div className="fixed inset-0 z-[100] flex animate-fade-in items-start justify-center overflow-y-auto bg-black/60 p-4 backdrop-blur-sm">
       <div className="w-full max-w-lg animate-scale-in rounded-3xl border-2 border-primary bg-card p-6 shadow-2xl">
         <div className="mb-4 flex items-center justify-between">
-          <h3 className="text-lg font-bold">New ROM page — {deviceName}</h3>
+          <h3 className="text-lg font-bold">
+            {rom ? "Edit" : "New"} ROM page — {deviceName}
+          </h3>
           <button onClick={onClose} className="text-sm text-muted-foreground hover:text-foreground">
             Close
           </button>
@@ -432,7 +497,13 @@ function RomForm({
             onClick={submit}
             className="rounded-full bg-primary py-2.5 text-sm font-bold text-primary-foreground disabled:opacity-60"
           >
-            {saving ? "Publishing…" : "Publish ROM page"}
+            {saving
+              ? rom
+                ? "Saving…"
+                : "Publishing…"
+              : rom
+                ? "Save changes"
+                : "Publish ROM page"}
           </button>
         </div>
       </div>
