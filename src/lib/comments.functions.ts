@@ -7,6 +7,7 @@ export type RomComment = {
   body: string;
   created_at: string;
   user_id: string;
+  parent_id: string | null;
   username: string;
   avatar_url: string | null;
   verified: boolean;
@@ -67,7 +68,7 @@ export const listRomComments = createServerFn({ method: "GET" })
     const { getPublicClient } = await import("./public-client.server");
     const { data: rows } = await getPublicClient()
       .from("rom_comments")
-      .select("id, body, created_at, user_id")
+      .select("id, body, created_at, user_id, parent_id")
       .eq("rom_id", data.rom_id)
       .order("created_at", { ascending: false })
       .limit(100);
@@ -88,7 +89,7 @@ export const listLatestComments = createServerFn({ method: "GET" }).handler(asyn
   const { data: rows } = await getPublicClient()
     .from("rom_comments")
     .select(
-      "id, body, created_at, user_id, roms(brand, device_slug, slug, rom_name, device_name)",
+      "id, body, created_at, user_id, parent_id, roms(brand, device_slug, slug, rom_name, device_name)",
     )
     .order("created_at", { ascending: false })
     .limit(8);
@@ -102,6 +103,7 @@ export const listLatestComments = createServerFn({ method: "GET" }).handler(asyn
       body: row.body,
       created_at: row.created_at,
       user_id: row.user_id,
+      parent_id: row.parent_id,
       username: people.get(row.user_id)?.username ?? "member",
       avatar_url: people.get(row.user_id)?.avatar_url ?? null,
       verified: people.get(row.user_id)?.verified ?? false,
@@ -113,16 +115,19 @@ export const listLatestComments = createServerFn({ method: "GET" }).handler(asyn
 
 export const addRomComment = createServerFn({ method: "POST" })
   .middleware([requireSupabaseAuth])
-  .inputValidator((input: { rom_id: string; body: string }) => {
+  .inputValidator((input: { rom_id: string; body: string; parent_id?: string | null }) => {
     const body = input.body.trim();
     if (!body) throw new Error("Write something first");
     if (body.length > 2000) throw new Error("Comment is too long");
-    return { rom_id: input.rom_id, body };
+    return { rom_id: input.rom_id, body, parent_id: input.parent_id ?? null };
   })
   .handler(async ({ data, context }) => {
-    const { error } = await context.supabase
-      .from("rom_comments")
-      .insert({ rom_id: data.rom_id, user_id: context.userId, body: data.body });
+    const { error } = await context.supabase.from("rom_comments").insert({
+      rom_id: data.rom_id,
+      user_id: context.userId,
+      body: data.body,
+      parent_id: data.parent_id,
+    });
     if (error) return { ok: false as const, error: error.message };
     return { ok: true as const };
   });

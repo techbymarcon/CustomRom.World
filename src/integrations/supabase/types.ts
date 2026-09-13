@@ -56,6 +56,42 @@ export type Database = {
         }
         Relationships: []
       }
+      notifications: {
+        Row: {
+          body: string | null
+          created_at: string
+          id: string
+          kind: string
+          link_path: string | null
+          read: boolean
+          title: string
+          updated_at: string
+          user_id: string
+        }
+        Insert: {
+          body?: string | null
+          created_at?: string
+          id?: string
+          kind: string
+          link_path?: string | null
+          read?: boolean
+          title: string
+          updated_at?: string
+          user_id: string
+        }
+        Update: {
+          body?: string | null
+          created_at?: string
+          id?: string
+          kind?: string
+          link_path?: string | null
+          read?: boolean
+          title?: string
+          updated_at?: string
+          user_id?: string
+        }
+        Relationships: []
+      }
       profiles: {
         Row: {
           avatar_url: string | null
@@ -85,6 +121,7 @@ export type Database = {
           body: string
           created_at: string
           id: string
+          parent_id: string | null
           rom_id: string
           updated_at: string
           user_id: string
@@ -93,6 +130,7 @@ export type Database = {
           body: string
           created_at?: string
           id?: string
+          parent_id?: string | null
           rom_id: string
           updated_at?: string
           user_id: string
@@ -101,11 +139,19 @@ export type Database = {
           body?: string
           created_at?: string
           id?: string
+          parent_id?: string | null
           rom_id?: string
           updated_at?: string
           user_id?: string
         }
         Relationships: [
+          {
+            foreignKeyName: "rom_comments_parent_id_fkey"
+            columns: ["parent_id"]
+            isOneToOne: false
+            referencedRelation: "rom_comments"
+            referencedColumns: ["id"]
+          },
           {
             foreignKeyName: "rom_comments_rom_id_fkey"
             columns: ["rom_id"]

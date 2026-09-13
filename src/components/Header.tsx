@@ -1,5 +1,6 @@
 import { EditableImage } from "@/components/Editable";
 import { MainMenu } from "@/components/MainMenu";
+import { NotificationsBell } from "@/components/NotificationsBell";
 import logoAsset from "@/assets/evo-logo.png.asset.json";
 
 export function Header() {
@@ -12,7 +13,10 @@ export function Header() {
         alt="Custom Rom World logo"
         className="max-w-[24vw] sm:max-w-[6rem] md:max-w-[7rem]"
       />
-      <MainMenu />
+      <div className="flex items-center gap-2">
+        <NotificationsBell />
+        <MainMenu />
+      </div>
     </header>
   );
 }
