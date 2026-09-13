@@ -1,5 +1,4 @@
 import { useMutation, useQuery, useQueryClient } from "@tanstack/react-query";
-import { Link } from "@tanstack/react-router";
 import { useServerFn } from "@tanstack/react-start";
 import { useState } from "react";
 
@@ -76,14 +75,14 @@ export function NotificationsBell() {
                 item.read ? "border-primary/25" : "border-primary bg-primary/10"
               }`;
               return item.link_path ? (
-                <Link
+                <a
                   key={item.id}
-                  to={item.link_path}
+                  href={item.link_path}
                   onClick={() => setOpen(false)}
                   className={className}
                 >
                   {inner}
-                </Link>
+                </a>
               ) : (
                 <div key={item.id} className={className}>
                   {inner}
