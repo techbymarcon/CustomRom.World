@@ -67,7 +67,10 @@ export const getRom = createServerFn({ method: "GET" })
           avatar_url: avatar,
           verified: (roles ?? []).some((r) => r.role === "admin"),
         };
+        }
       }
+    } catch {
+      uploader = null;
     }
 
     return { rom: record as Rom | null, uploader };
