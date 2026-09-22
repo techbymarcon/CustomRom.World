@@ -42,7 +42,8 @@ export const getRom = createServerFn({ method: "GET" })
     const record = (row as (Rom & { created_by: string | null }) | null) ?? null;
     let uploader: RomUploader | null = null;
 
-    if (record?.created_by) {
+    try {
+      if (record?.created_by) {
       const { data: profile } = await client
         .from("profiles")
         .select("username, avatar_url")
@@ -66,7 +67,10 @@ export const getRom = createServerFn({ method: "GET" })
           avatar_url: avatar,
           verified: (roles ?? []).some((r) => r.role === "admin"),
         };
+        }
       }
+    } catch {
+      uploader = null;
     }
 
     return { rom: record as Rom | null, uploader };

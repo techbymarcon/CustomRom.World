@@ -18,7 +18,15 @@ import type { Rom } from "@/lib/roms";
 
 import { RomButtonParticles } from "@/components/RomButtonParticles";
 
+const romsQueryOptions = (brand: string, model: string) => ({
+  queryKey: ["roms", brand, model] as const,
+  queryFn: () => listRoms({ data: { brand, device_slug: model } }),
+  staleTime: 60_000,
+});
+
 export const Route = createFileRoute("/devices_/$brand_/$model")({
+  loader: ({ context, params }) =>
+    context.queryClient.ensureQueryData(romsQueryOptions(params.brand, params.model)),
   head: () => ({
     meta: [
       { title: "Device ROMs — Custom Rom World" },
@@ -69,10 +77,7 @@ function ModelPage() {
   const [articleOpen, setArticleOpen] = useState(false);
   const [editing, setEditing] = useState<Rom | null>(null);
 
-  const romsQuery = useQuery({
-    queryKey: ["roms", brand, model],
-    queryFn: () => listRoms({ data: { brand, device_slug: model } }),
-  });
+  const romsQuery = useQuery(romsQueryOptions(brand, model));
 
   const articlesQuery = useQuery({
     queryKey: ["articles", brand, model],
