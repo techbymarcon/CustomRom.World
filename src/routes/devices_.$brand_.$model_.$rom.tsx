@@ -60,10 +60,7 @@ function Bubble({ title, children }: { title: string; children: React.ReactNode 
 
 function RomPage() {
   const { brand, model, rom: romSlug } = Route.useParams();
-  const query = useQuery({
-    queryKey: ["rom", brand, model, romSlug],
-    queryFn: () => getRom({ data: { brand, device_slug: model, slug: romSlug } }),
-  });
+  const query = useQuery(romQueryOptions(brand, model, romSlug));
   const rom = query.data?.rom ?? null;
   const uploader = query.data?.uploader ?? null;
 
