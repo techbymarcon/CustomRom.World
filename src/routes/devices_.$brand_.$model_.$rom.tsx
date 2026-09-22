@@ -11,7 +11,17 @@ import { getRom } from "@/lib/roms.functions";
 import { ROM_TYPE_LABELS } from "@/lib/roms";
 
 
+const romQueryOptions = (brand: string, model: string, romSlug: string) => ({
+  queryKey: ["rom", brand, model, romSlug] as const,
+  queryFn: () => getRom({ data: { brand, device_slug: model, slug: romSlug } }),
+  staleTime: 60_000,
+});
+
 export const Route = createFileRoute("/devices_/$brand_/$model_/$rom")({
+  loader: ({ context, params }) =>
+    context.queryClient.ensureQueryData(
+      romQueryOptions(params.brand, params.model, params.rom),
+    ),
   head: () => ({
     meta: [
       { title: "Custom ROM page — Custom Rom World" },
